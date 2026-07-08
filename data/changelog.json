@@ -1,0 +1,27 @@
+[
+  {
+    "lemma": "Position",
+    "from": "police station",
+    "to": "position"
+  },
+  {
+    "lemma": "Schnupfen",
+    "from": "to sniff",
+    "to": "cold / runny nose"
+  },
+  {
+    "lemma": "kreativ",
+    "from": "people",
+    "to": "creative"
+  },
+  {
+    "lemma": "verzögern",
+    "from": "to hesitate",
+    "to": "to delay"
+  },
+  {
+    "lemma": "zahlen",
+    "from": "to count",
+    "to": "to pay"
+  }
+]

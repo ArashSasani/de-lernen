@@ -1,0 +1,11 @@
+TODO.md
+CLAUDE.md
+tmp/
+coverage/
+data/sources/
+docs/
+scripts/
+.claude/
+.vscode/
+jest.config.js
+tsconfig.tsbuildinfo

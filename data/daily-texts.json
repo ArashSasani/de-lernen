@@ -1,0 +1,6286 @@
+[
+  {
+    "id": "abendessen-familie",
+    "title": "Abendessen mit der Familie",
+    "topic": "Essen",
+    "text": "Am Abend essen wir zusammen als Familie. Heute gibt es Fleisch mit Kartoffeln und Salat. Mein Vater trinkt ein Bier und die Kinder trinken Saft. Wir reden über unseren Tag. Das Essen schmeckt allen gut. Nach dem Essen wasche ich das Geschirr ab und meine Tochter hilft mir. Dann sehen wir zusammen fern.",
+    "wordIds": [
+      "abend",
+      "bier",
+      "essen",
+      "familie",
+      "fernsehen",
+      "fleisch",
+      "helfen",
+      "kartoffel",
+      "saft",
+      "salat",
+      "schmecken",
+      "tag",
+      "tochter",
+      "vater"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 8,
+        "wordId": "abend"
+      },
+      {
+        "start": 9,
+        "end": 14,
+        "wordId": "essen"
+      },
+      {
+        "start": 32,
+        "end": 39,
+        "wordId": "familie"
+      },
+      {
+        "start": 55,
+        "end": 62,
+        "wordId": "fleisch"
+      },
+      {
+        "start": 67,
+        "end": 77,
+        "wordId": "kartoffel"
+      },
+      {
+        "start": 82,
+        "end": 87,
+        "wordId": "salat"
+      },
+      {
+        "start": 94,
+        "end": 99,
+        "wordId": "vater"
+      },
+      {
+        "start": 111,
+        "end": 115,
+        "wordId": "bier"
+      },
+      {
+        "start": 139,
+        "end": 143,
+        "wordId": "saft"
+      },
+      {
+        "start": 168,
+        "end": 171,
+        "wordId": "tag"
+      },
+      {
+        "start": 183,
+        "end": 191,
+        "wordId": "schmecken"
+      },
+      {
+        "start": 255,
+        "end": 262,
+        "wordId": "tochter"
+      },
+      {
+        "start": 263,
+        "end": 268,
+        "wordId": "helfen"
+      },
+      {
+        "start": 298,
+        "end": 302,
+        "wordId": "fernsehen"
+      }
+    ]
+  },
+  {
+    "id": "anmeldung-kurs",
+    "title": "Anmeldung für einen Kurs",
+    "topic": "Formular",
+    "text": "Ich möchte mich für einen Deutschkurs anmelden. Auf dem Formular schreibe ich meinen Vornamen und meinen Nachnamen. Ich gebe auch meine Adresse und meine Postleitzahl an. Dann kommt mein Geburtsdatum und mein Wohnort. Unten brauche ich noch meine Unterschrift. Der Kurs beginnt im September und kostet hundert Euro.",
+    "wordIds": [
+      "adresse",
+      "anmelden",
+      "beginnen",
+      "deutschkurs",
+      "euro",
+      "formular",
+      "kosten",
+      "nachname",
+      "postleitzahl",
+      "september",
+      "unterschrift",
+      "vorname",
+      "wohnort"
+    ],
+    "spans": [
+      {
+        "start": 26,
+        "end": 37,
+        "wordId": "deutschkurs"
+      },
+      {
+        "start": 38,
+        "end": 46,
+        "wordId": "anmelden"
+      },
+      {
+        "start": 56,
+        "end": 64,
+        "wordId": "formular"
+      },
+      {
+        "start": 85,
+        "end": 93,
+        "wordId": "vorname"
+      },
+      {
+        "start": 105,
+        "end": 114,
+        "wordId": "nachname"
+      },
+      {
+        "start": 136,
+        "end": 143,
+        "wordId": "adresse"
+      },
+      {
+        "start": 154,
+        "end": 166,
+        "wordId": "postleitzahl"
+      },
+      {
+        "start": 209,
+        "end": 216,
+        "wordId": "wohnort"
+      },
+      {
+        "start": 247,
+        "end": 259,
+        "wordId": "unterschrift"
+      },
+      {
+        "start": 270,
+        "end": 277,
+        "wordId": "beginnen"
+      },
+      {
+        "start": 281,
+        "end": 290,
+        "wordId": "september"
+      },
+      {
+        "start": 295,
+        "end": 301,
+        "wordId": "kosten"
+      },
+      {
+        "start": 310,
+        "end": 314,
+        "wordId": "euro"
+      }
+    ]
+  },
+  {
+    "id": "apotheke",
+    "title": "In der Apotheke",
+    "topic": "Gesundheit",
+    "text": "Ich gehe in die Apotheke, weil ich Husten habe. Die Frau hinter dem Tresen fragt nach meinen Problemen. Ich brauche einen Hustensaft und Tabletten gegen Schmerzen. Sie gibt mir auch eine Salbe für meinen Rücken. Das Medikament kostet zwölf Euro. Sie sagt, ich soll viel Tee trinken und schlafen. Gute Besserung!",
+    "wordIds": [
+      "apotheke",
+      "besserung",
+      "brauchen",
+      "fragen",
+      "husten",
+      "kosten",
+      "medikament",
+      "ruecken",
+      "salbe",
+      "schlafen",
+      "schmerz",
+      "tablette",
+      "tee",
+      "trinken"
+    ],
+    "spans": [
+      {
+        "start": 16,
+        "end": 24,
+        "wordId": "apotheke"
+      },
+      {
+        "start": 35,
+        "end": 41,
+        "wordId": "husten"
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "wordId": "fragen"
+      },
+      {
+        "start": 108,
+        "end": 115,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 137,
+        "end": 146,
+        "wordId": "tablette"
+      },
+      {
+        "start": 153,
+        "end": 162,
+        "wordId": "schmerz"
+      },
+      {
+        "start": 187,
+        "end": 192,
+        "wordId": "salbe"
+      },
+      {
+        "start": 204,
+        "end": 210,
+        "wordId": "ruecken"
+      },
+      {
+        "start": 216,
+        "end": 226,
+        "wordId": "medikament"
+      },
+      {
+        "start": 227,
+        "end": 233,
+        "wordId": "kosten"
+      },
+      {
+        "start": 270,
+        "end": 273,
+        "wordId": "tee"
+      },
+      {
+        "start": 274,
+        "end": 281,
+        "wordId": "trinken"
+      },
+      {
+        "start": 286,
+        "end": 294,
+        "wordId": "schlafen"
+      },
+      {
+        "start": 301,
+        "end": 310,
+        "wordId": "besserung"
+      }
+    ]
+  },
+  {
+    "id": "arbeit-buero",
+    "title": "Mein Arbeitstag",
+    "topic": "Arbeit",
+    "text": "Ich arbeite in einem Büro als Bürokaufmann. Mein Arbeitstag beginnt um acht Uhr. Ich schreibe E-Mails und telefoniere mit Kunden. Mein Chef ist nett und meine Kollegen sind freundlich. Mittags machen wir eine Pause und essen zusammen. Am Freitag ist um vier Uhr Feierabend. Ich verdiene genug Geld für meine Familie.",
+    "wordIds": [
+      "arbeiten",
+      "arbeitstag",
+      "buero",
+      "buerokaufmann",
+      "chef",
+      "feierabend",
+      "freitag",
+      "geld",
+      "kollege",
+      "kunde",
+      "nett",
+      "pause",
+      "schreiben",
+      "telefonieren",
+      "verdienen"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 11,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 21,
+        "end": 25,
+        "wordId": "buero"
+      },
+      {
+        "start": 30,
+        "end": 42,
+        "wordId": "buerokaufmann"
+      },
+      {
+        "start": 49,
+        "end": 59,
+        "wordId": "arbeitstag"
+      },
+      {
+        "start": 85,
+        "end": 93,
+        "wordId": "schreiben"
+      },
+      {
+        "start": 106,
+        "end": 117,
+        "wordId": "telefonieren"
+      },
+      {
+        "start": 122,
+        "end": 128,
+        "wordId": "kunde"
+      },
+      {
+        "start": 135,
+        "end": 139,
+        "wordId": "chef"
+      },
+      {
+        "start": 144,
+        "end": 148,
+        "wordId": "nett"
+      },
+      {
+        "start": 159,
+        "end": 167,
+        "wordId": "kollege"
+      },
+      {
+        "start": 209,
+        "end": 214,
+        "wordId": "pause"
+      },
+      {
+        "start": 238,
+        "end": 245,
+        "wordId": "freitag"
+      },
+      {
+        "start": 262,
+        "end": 272,
+        "wordId": "feierabend"
+      },
+      {
+        "start": 278,
+        "end": 286,
+        "wordId": "verdienen"
+      },
+      {
+        "start": 293,
+        "end": 297,
+        "wordId": "geld"
+      }
+    ]
+  },
+  {
+    "id": "bahnhof-fahrkarte",
+    "title": "Am Bahnhof",
+    "topic": "Reisen",
+    "text": "Am Bahnhof kaufe ich eine Fahrkarte nach Berlin. Der Zug fährt um zehn Uhr von Gleis vier. Ich muss in Hannover einmal umsteigen. Die Reise dauert vier Stunden. Mein Gepäck ist schwer, aber ich habe nur einen Koffer. Auf dem Bahnsteig warte ich auf den Zug. Eine Durchsage sagt, der Zug hat zehn Minuten Verspätung.",
+    "wordIds": [
+      "bahnhof",
+      "bahnsteig",
+      "dauern",
+      "durchsage",
+      "fahren",
+      "fahrkarte",
+      "gepaeck",
+      "gleis",
+      "koffer",
+      "minute",
+      "reise",
+      "schwer",
+      "stunde",
+      "umsteigen",
+      "zug"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "bahnhof"
+      },
+      {
+        "start": 26,
+        "end": 35,
+        "wordId": "fahrkarte"
+      },
+      {
+        "start": 53,
+        "end": 56,
+        "wordId": "zug"
+      },
+      {
+        "start": 57,
+        "end": 62,
+        "wordId": "fahren"
+      },
+      {
+        "start": 79,
+        "end": 84,
+        "wordId": "gleis"
+      },
+      {
+        "start": 119,
+        "end": 128,
+        "wordId": "umsteigen"
+      },
+      {
+        "start": 134,
+        "end": 139,
+        "wordId": "reise"
+      },
+      {
+        "start": 140,
+        "end": 146,
+        "wordId": "dauern"
+      },
+      {
+        "start": 152,
+        "end": 159,
+        "wordId": "stunde"
+      },
+      {
+        "start": 166,
+        "end": 172,
+        "wordId": "gepaeck"
+      },
+      {
+        "start": 177,
+        "end": 183,
+        "wordId": "schwer"
+      },
+      {
+        "start": 209,
+        "end": 215,
+        "wordId": "koffer"
+      },
+      {
+        "start": 225,
+        "end": 234,
+        "wordId": "bahnsteig"
+      },
+      {
+        "start": 253,
+        "end": 256,
+        "wordId": "zug"
+      },
+      {
+        "start": 263,
+        "end": 272,
+        "wordId": "durchsage"
+      },
+      {
+        "start": 283,
+        "end": 286,
+        "wordId": "zug"
+      },
+      {
+        "start": 296,
+        "end": 303,
+        "wordId": "minute"
+      }
+    ]
+  },
+  {
+    "id": "beim-arzt",
+    "title": "Beim Arzt",
+    "topic": "Gesundheit",
+    "text": "Frau Klein geht heute zum Hausarzt. Sie ist krank und hat starke Kopfschmerzen. Im Wartezimmer wartet sie zwanzig Minuten. Der Arzt fragt: Wo tut es weh? Sie hat auch Husten und Fieber. Der Arzt sagt, sie hat eine Grippe. Er gibt ihr ein Medikament und sie soll viel Tee trinken und schlafen.",
+    "wordIds": [
+      "fieber",
+      "fragen",
+      "grippe",
+      "hausarzt",
+      "husten",
+      "kopfschmerzen",
+      "krank",
+      "medikament",
+      "minute",
+      "schlafen",
+      "tee",
+      "trinken",
+      "warten",
+      "wartezimmer"
+    ],
+    "spans": [
+      {
+        "start": 26,
+        "end": 34,
+        "wordId": "hausarzt"
+      },
+      {
+        "start": 44,
+        "end": 49,
+        "wordId": "krank"
+      },
+      {
+        "start": 65,
+        "end": 78,
+        "wordId": "kopfschmerzen"
+      },
+      {
+        "start": 83,
+        "end": 94,
+        "wordId": "wartezimmer"
+      },
+      {
+        "start": 95,
+        "end": 101,
+        "wordId": "warten"
+      },
+      {
+        "start": 114,
+        "end": 121,
+        "wordId": "minute"
+      },
+      {
+        "start": 132,
+        "end": 137,
+        "wordId": "fragen"
+      },
+      {
+        "start": 167,
+        "end": 173,
+        "wordId": "husten"
+      },
+      {
+        "start": 178,
+        "end": 184,
+        "wordId": "fieber"
+      },
+      {
+        "start": 214,
+        "end": 220,
+        "wordId": "grippe"
+      },
+      {
+        "start": 238,
+        "end": 248,
+        "wordId": "medikament"
+      },
+      {
+        "start": 267,
+        "end": 270,
+        "wordId": "tee"
+      },
+      {
+        "start": 271,
+        "end": 278,
+        "wordId": "trinken"
+      },
+      {
+        "start": 283,
+        "end": 291,
+        "wordId": "schlafen"
+      }
+    ]
+  },
+  {
+    "id": "bus-fahren",
+    "title": "Mit dem Bus fahren",
+    "topic": "Verkehr",
+    "text": "Jeden Morgen fahre ich mit dem Bus zur Arbeit. An der Bushaltestelle warte ich auf den Bus. Ich kaufe eine Fahrkarte beim Fahrer. Der Bus ist oft voll und ich finde keinen Platz. Nach fünf Stationen muss ich aussteigen. Manchmal nehme ich auch die U-Bahn, weil sie schneller ist. Heute war der Bus pünktlich.",
+    "wordIds": [
+      "arbeit",
+      "aussteigen",
+      "bus",
+      "bushaltestelle",
+      "fahren",
+      "fahrer",
+      "fahrkarte",
+      "morgen",
+      "platz",
+      "puenktlich",
+      "schnell",
+      "u-bahn",
+      "voll",
+      "warten"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 12,
+        "wordId": "morgen"
+      },
+      {
+        "start": 13,
+        "end": 18,
+        "wordId": "fahren"
+      },
+      {
+        "start": 31,
+        "end": 34,
+        "wordId": "bus"
+      },
+      {
+        "start": 39,
+        "end": 45,
+        "wordId": "arbeit"
+      },
+      {
+        "start": 54,
+        "end": 68,
+        "wordId": "bushaltestelle"
+      },
+      {
+        "start": 69,
+        "end": 74,
+        "wordId": "warten"
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "wordId": "bus"
+      },
+      {
+        "start": 107,
+        "end": 116,
+        "wordId": "fahrkarte"
+      },
+      {
+        "start": 122,
+        "end": 128,
+        "wordId": "fahrer"
+      },
+      {
+        "start": 134,
+        "end": 137,
+        "wordId": "bus"
+      },
+      {
+        "start": 146,
+        "end": 150,
+        "wordId": "voll"
+      },
+      {
+        "start": 172,
+        "end": 177,
+        "wordId": "platz"
+      },
+      {
+        "start": 208,
+        "end": 218,
+        "wordId": "aussteigen"
+      },
+      {
+        "start": 248,
+        "end": 254,
+        "wordId": "u-bahn"
+      },
+      {
+        "start": 265,
+        "end": 274,
+        "wordId": "schnell"
+      },
+      {
+        "start": 294,
+        "end": 297,
+        "wordId": "bus"
+      },
+      {
+        "start": 298,
+        "end": 307,
+        "wordId": "puenktlich"
+      }
+    ]
+  },
+  {
+    "id": "computer-internet",
+    "title": "Mein Computer",
+    "topic": "Alltag",
+    "text": "Ich arbeite oft am Computer. Im Internet lese ich die Nachrichten und schreibe E-Mails. Mein Handy benutze ich auch für Fotos und Musik. Manchmal funktioniert der Computer nicht und ich habe ein Problem. Dann hilft mir mein Bruder, weil er Techniker ist. Am Abend spiele ich ein Computerspiel oder sehe einen Film online.",
+    "wordIds": [
+      "arbeiten",
+      "benutzen",
+      "bruder",
+      "computer",
+      "computerspiel",
+      "e-mail",
+      "foto",
+      "handy",
+      "internet",
+      "lesen",
+      "nachricht",
+      "online",
+      "problem",
+      "techniker"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 11,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 19,
+        "end": 27,
+        "wordId": "computer"
+      },
+      {
+        "start": 32,
+        "end": 40,
+        "wordId": "internet"
+      },
+      {
+        "start": 41,
+        "end": 45,
+        "wordId": "lesen"
+      },
+      {
+        "start": 54,
+        "end": 65,
+        "wordId": "nachricht"
+      },
+      {
+        "start": 79,
+        "end": 86,
+        "wordId": "e-mail"
+      },
+      {
+        "start": 93,
+        "end": 98,
+        "wordId": "handy"
+      },
+      {
+        "start": 99,
+        "end": 106,
+        "wordId": "benutzen"
+      },
+      {
+        "start": 120,
+        "end": 125,
+        "wordId": "foto"
+      },
+      {
+        "start": 163,
+        "end": 171,
+        "wordId": "computer"
+      },
+      {
+        "start": 195,
+        "end": 202,
+        "wordId": "problem"
+      },
+      {
+        "start": 224,
+        "end": 230,
+        "wordId": "bruder"
+      },
+      {
+        "start": 240,
+        "end": 249,
+        "wordId": "techniker"
+      },
+      {
+        "start": 279,
+        "end": 292,
+        "wordId": "computerspiel"
+      },
+      {
+        "start": 314,
+        "end": 320,
+        "wordId": "online"
+      }
+    ]
+  },
+  {
+    "id": "einkauf-supermarkt",
+    "title": "Im Supermarkt",
+    "topic": "Einkaufen",
+    "text": "Heute gehe ich in den Supermarkt. Ich brauche Äpfel, Brot und Milch. Der Apfel ist heute im Angebot, das ist sehr günstig. An der Kasse bezahle ich mit Karte. Die Kassiererin gibt mir den Kassenbon. Zu Hause mache ich einen Obstsalat.",
+    "wordIds": [
+      "angebot",
+      "apfel",
+      "bezahlen",
+      "brauchen",
+      "brot",
+      "guenstig",
+      "karte",
+      "kasse",
+      "kassenbon",
+      "kassiererin",
+      "milch",
+      "obstsalat",
+      "supermarkt"
+    ],
+    "spans": [
+      {
+        "start": 22,
+        "end": 32,
+        "wordId": "supermarkt"
+      },
+      {
+        "start": 38,
+        "end": 45,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 46,
+        "end": 51,
+        "wordId": "apfel"
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "wordId": "brot"
+      },
+      {
+        "start": 62,
+        "end": 67,
+        "wordId": "milch"
+      },
+      {
+        "start": 73,
+        "end": 78,
+        "wordId": "apfel"
+      },
+      {
+        "start": 92,
+        "end": 99,
+        "wordId": "angebot"
+      },
+      {
+        "start": 114,
+        "end": 121,
+        "wordId": "guenstig"
+      },
+      {
+        "start": 130,
+        "end": 135,
+        "wordId": "kasse"
+      },
+      {
+        "start": 136,
+        "end": 143,
+        "wordId": "bezahlen"
+      },
+      {
+        "start": 152,
+        "end": 157,
+        "wordId": "karte"
+      },
+      {
+        "start": 163,
+        "end": 174,
+        "wordId": "kassiererin"
+      },
+      {
+        "start": 188,
+        "end": 197,
+        "wordId": "kassenbon"
+      },
+      {
+        "start": 224,
+        "end": 233,
+        "wordId": "obstsalat"
+      }
+    ]
+  },
+  {
+    "id": "email-absage",
+    "title": "Eine Absage an den Kurs",
+    "topic": "E-Mail",
+    "text": "Sehr geehrte Frau Schmidt,\n\nleider bin ich heute krank und kann nicht zum Deutschkurs kommen. Ich habe Fieber und Halsschmerzen. Der Arzt hat gesagt, ich muss zu Hause bleiben. Ich hole die Hausaufgaben später ab. Es tut mir leid. Hoffentlich bin ich nächste Woche wieder gesund.\n\nMit freundlichen Grüßen\nTom Becker",
+    "wordIds": [
+      "abholen",
+      "arzt",
+      "bleiben",
+      "deutschkurs",
+      "fieber",
+      "frau",
+      "geehrter-geehrte",
+      "hausaufgabe",
+      "hoffentlich",
+      "krank",
+      "leid",
+      "leider",
+      "muessen",
+      "naechste",
+      "spaeter",
+      "wieder",
+      "woche"
+    ],
+    "spans": [
+      {
+        "start": 5,
+        "end": 12,
+        "wordId": "geehrter-geehrte"
+      },
+      {
+        "start": 13,
+        "end": 17,
+        "wordId": "frau"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "wordId": "leider"
+      },
+      {
+        "start": 49,
+        "end": 54,
+        "wordId": "krank"
+      },
+      {
+        "start": 74,
+        "end": 85,
+        "wordId": "deutschkurs"
+      },
+      {
+        "start": 103,
+        "end": 109,
+        "wordId": "fieber"
+      },
+      {
+        "start": 133,
+        "end": 137,
+        "wordId": "arzt"
+      },
+      {
+        "start": 154,
+        "end": 158,
+        "wordId": "muessen"
+      },
+      {
+        "start": 168,
+        "end": 175,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 190,
+        "end": 202,
+        "wordId": "hausaufgabe"
+      },
+      {
+        "start": 203,
+        "end": 209,
+        "wordId": "spaeter"
+      },
+      {
+        "start": 210,
+        "end": 212,
+        "wordId": "abholen"
+      },
+      {
+        "start": 225,
+        "end": 229,
+        "wordId": "leid"
+      },
+      {
+        "start": 231,
+        "end": 242,
+        "wordId": "hoffentlich"
+      },
+      {
+        "start": 251,
+        "end": 258,
+        "wordId": "naechste"
+      },
+      {
+        "start": 259,
+        "end": 264,
+        "wordId": "woche"
+      },
+      {
+        "start": 265,
+        "end": 271,
+        "wordId": "wieder"
+      }
+    ]
+  },
+  {
+    "id": "email-einladung",
+    "title": "Eine Einladung zum Geburtstag",
+    "topic": "E-Mail",
+    "text": "Liebe Maria,\n\nam Samstag habe ich Geburtstag und ich möchte dich einladen. Die Feier beginnt um sieben Uhr bei mir zu Hause. Wir essen zusammen und hören Musik. Bitte bring keinen Kuchen mit, das mache ich schon. Kannst du kommen? Bitte antworte mir bald.\n\nViele liebe Grüße\nLena",
+    "wordIds": [
+      "antworten",
+      "bald",
+      "beginnen",
+      "einladen",
+      "essen",
+      "feier",
+      "geburtstag",
+      "gruss",
+      "hoeren",
+      "kommen",
+      "kuchen",
+      "liebe-lieber",
+      "musik",
+      "samstag",
+      "uhr"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 5,
+        "wordId": "liebe-lieber"
+      },
+      {
+        "start": 17,
+        "end": 24,
+        "wordId": "samstag"
+      },
+      {
+        "start": 34,
+        "end": 44,
+        "wordId": "geburtstag"
+      },
+      {
+        "start": 65,
+        "end": 73,
+        "wordId": "einladen"
+      },
+      {
+        "start": 79,
+        "end": 84,
+        "wordId": "feier"
+      },
+      {
+        "start": 85,
+        "end": 92,
+        "wordId": "beginnen"
+      },
+      {
+        "start": 103,
+        "end": 106,
+        "wordId": "uhr"
+      },
+      {
+        "start": 129,
+        "end": 134,
+        "wordId": "essen"
+      },
+      {
+        "start": 148,
+        "end": 153,
+        "wordId": "hoeren"
+      },
+      {
+        "start": 154,
+        "end": 159,
+        "wordId": "musik"
+      },
+      {
+        "start": 180,
+        "end": 186,
+        "wordId": "kuchen"
+      },
+      {
+        "start": 223,
+        "end": 229,
+        "wordId": "kommen"
+      },
+      {
+        "start": 237,
+        "end": 245,
+        "wordId": "antworten"
+      },
+      {
+        "start": 250,
+        "end": 254,
+        "wordId": "bald"
+      },
+      {
+        "start": 269,
+        "end": 274,
+        "wordId": "gruss"
+      }
+    ]
+  },
+  {
+    "id": "email-freund-treffen",
+    "title": "E-Mail: Wollen wir uns treffen?",
+    "topic": "E-Mail",
+    "text": "Hallo Sven,\n\nwie geht es dir? Ich habe am Wochenende Zeit. Wollen wir uns treffen? Wir können ins Kino gehen oder einen Spaziergang machen. Am Samstag ist das Wetter schön. Hast du Lust? Schreib mir bitte, wann du Zeit hast. Ich freue mich auf deine Antwort.\n\nBis bald\nJonas",
+    "wordIds": [
+      "antwort",
+      "bald",
+      "freuen",
+      "gehen",
+      "hallo",
+      "kino",
+      "lust",
+      "samstag",
+      "schoen",
+      "schreiben",
+      "treffen",
+      "wetter",
+      "wochenende",
+      "zeit"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 5,
+        "wordId": "hallo"
+      },
+      {
+        "start": 17,
+        "end": 21,
+        "wordId": "gehen"
+      },
+      {
+        "start": 42,
+        "end": 52,
+        "wordId": "wochenende"
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "wordId": "zeit"
+      },
+      {
+        "start": 74,
+        "end": 81,
+        "wordId": "treffen"
+      },
+      {
+        "start": 98,
+        "end": 102,
+        "wordId": "kino"
+      },
+      {
+        "start": 143,
+        "end": 150,
+        "wordId": "samstag"
+      },
+      {
+        "start": 159,
+        "end": 165,
+        "wordId": "wetter"
+      },
+      {
+        "start": 166,
+        "end": 171,
+        "wordId": "schoen"
+      },
+      {
+        "start": 181,
+        "end": 185,
+        "wordId": "lust"
+      },
+      {
+        "start": 187,
+        "end": 194,
+        "wordId": "schreiben"
+      },
+      {
+        "start": 214,
+        "end": 218,
+        "wordId": "zeit"
+      },
+      {
+        "start": 229,
+        "end": 234,
+        "wordId": "freuen"
+      },
+      {
+        "start": 250,
+        "end": 257,
+        "wordId": "antwort"
+      },
+      {
+        "start": 264,
+        "end": 268,
+        "wordId": "bald"
+      }
+    ]
+  },
+  {
+    "id": "fahrrad-tour",
+    "title": "Eine Fahrradtour",
+    "topic": "Freizeit",
+    "text": "Am Sonntag machen wir eine Tour mit dem Fahrrad. Das Wetter ist schön und die Sonne scheint. Wir fahren durch den Wald und an einem See vorbei. Nach zwei Stunden machen wir eine Pause und essen ein Brot. Die Natur ist wunderschön und die Luft ist frisch. Am Nachmittag fahren wir wieder zurück nach Hause. Wir sind müde, aber zufrieden.",
+    "wordIds": [
+      "brot",
+      "fahren",
+      "fahrrad",
+      "frisch",
+      "muede",
+      "natur",
+      "pause",
+      "scheinen",
+      "see",
+      "sonne",
+      "sonntag",
+      "stunde",
+      "wald",
+      "wetter"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "sonntag"
+      },
+      {
+        "start": 40,
+        "end": 47,
+        "wordId": "fahrrad"
+      },
+      {
+        "start": 53,
+        "end": 59,
+        "wordId": "wetter"
+      },
+      {
+        "start": 78,
+        "end": 83,
+        "wordId": "sonne"
+      },
+      {
+        "start": 84,
+        "end": 91,
+        "wordId": "scheinen"
+      },
+      {
+        "start": 97,
+        "end": 103,
+        "wordId": "fahren"
+      },
+      {
+        "start": 114,
+        "end": 118,
+        "wordId": "wald"
+      },
+      {
+        "start": 132,
+        "end": 135,
+        "wordId": "see"
+      },
+      {
+        "start": 154,
+        "end": 161,
+        "wordId": "stunde"
+      },
+      {
+        "start": 178,
+        "end": 183,
+        "wordId": "pause"
+      },
+      {
+        "start": 198,
+        "end": 202,
+        "wordId": "brot"
+      },
+      {
+        "start": 208,
+        "end": 213,
+        "wordId": "natur"
+      },
+      {
+        "start": 247,
+        "end": 253,
+        "wordId": "frisch"
+      },
+      {
+        "start": 269,
+        "end": 275,
+        "wordId": "fahren"
+      },
+      {
+        "start": 315,
+        "end": 319,
+        "wordId": "muede"
+      }
+    ]
+  },
+  {
+    "id": "familie-vorstellen",
+    "title": "Meine Familie",
+    "topic": "Familie",
+    "text": "Ich heiße Anna und ich möchte meine Familie vorstellen. Mein Vater ist Lehrer und meine Mutter arbeitet im Krankenhaus. Ich habe einen Bruder und eine Schwester. Mein Bruder ist noch jung und geht in die Schule. Wir wohnen zusammen in einer Wohnung in der Stadt. Am Wochenende besuchen wir oft die Großeltern.",
+    "wordIds": [
+      "arbeiten",
+      "bruder",
+      "familie",
+      "grosseltern",
+      "heissen",
+      "jung",
+      "krankenhaus",
+      "lehrer",
+      "mutter",
+      "schule",
+      "schwester",
+      "stadt",
+      "vater",
+      "vorstellen",
+      "wohnen",
+      "wohnung"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 9,
+        "wordId": "heissen"
+      },
+      {
+        "start": 36,
+        "end": 43,
+        "wordId": "familie"
+      },
+      {
+        "start": 44,
+        "end": 54,
+        "wordId": "vorstellen"
+      },
+      {
+        "start": 61,
+        "end": 66,
+        "wordId": "vater"
+      },
+      {
+        "start": 71,
+        "end": 77,
+        "wordId": "lehrer"
+      },
+      {
+        "start": 88,
+        "end": 94,
+        "wordId": "mutter"
+      },
+      {
+        "start": 95,
+        "end": 103,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 107,
+        "end": 118,
+        "wordId": "krankenhaus"
+      },
+      {
+        "start": 135,
+        "end": 141,
+        "wordId": "bruder"
+      },
+      {
+        "start": 151,
+        "end": 160,
+        "wordId": "schwester"
+      },
+      {
+        "start": 167,
+        "end": 173,
+        "wordId": "bruder"
+      },
+      {
+        "start": 183,
+        "end": 187,
+        "wordId": "jung"
+      },
+      {
+        "start": 204,
+        "end": 210,
+        "wordId": "schule"
+      },
+      {
+        "start": 216,
+        "end": 222,
+        "wordId": "wohnen"
+      },
+      {
+        "start": 241,
+        "end": 248,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 256,
+        "end": 261,
+        "wordId": "stadt"
+      },
+      {
+        "start": 298,
+        "end": 308,
+        "wordId": "grosseltern"
+      }
+    ]
+  },
+  {
+    "id": "freunde-cafe",
+    "title": "Im Café mit Freunden",
+    "topic": "Freizeit",
+    "text": "Am Nachmittag treffe ich meine Freundin im Café. Wir sitzen am Fenster und reden viel. Ich trinke einen Kaffee und sie nimmt einen Tee. Wir bestellen auch ein Stück Kuchen. Das Café ist gemütlich und die Musik ist leise. Wir lachen zusammen und die Zeit vergeht schnell. Am Ende bezahlen wir und gehen nach Hause.",
+    "wordIds": [
+      "bezahlen",
+      "caf",
+      "fenster",
+      "freundin",
+      "gemuetlich",
+      "kaffee",
+      "kuchen",
+      "lachen",
+      "nachmittag",
+      "reden",
+      "sitzen",
+      "stueck",
+      "tee",
+      "treffen"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 13,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 14,
+        "end": 20,
+        "wordId": "treffen"
+      },
+      {
+        "start": 31,
+        "end": 39,
+        "wordId": "freundin"
+      },
+      {
+        "start": 43,
+        "end": 47,
+        "wordId": "caf"
+      },
+      {
+        "start": 53,
+        "end": 59,
+        "wordId": "sitzen"
+      },
+      {
+        "start": 63,
+        "end": 70,
+        "wordId": "fenster"
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "wordId": "reden"
+      },
+      {
+        "start": 104,
+        "end": 110,
+        "wordId": "kaffee"
+      },
+      {
+        "start": 131,
+        "end": 134,
+        "wordId": "tee"
+      },
+      {
+        "start": 159,
+        "end": 164,
+        "wordId": "stueck"
+      },
+      {
+        "start": 165,
+        "end": 171,
+        "wordId": "kuchen"
+      },
+      {
+        "start": 177,
+        "end": 181,
+        "wordId": "caf"
+      },
+      {
+        "start": 186,
+        "end": 195,
+        "wordId": "gemuetlich"
+      },
+      {
+        "start": 225,
+        "end": 231,
+        "wordId": "lachen"
+      },
+      {
+        "start": 279,
+        "end": 287,
+        "wordId": "bezahlen"
+      }
+    ]
+  },
+  {
+    "id": "fruehlingstag",
+    "title": "Ein schöner Frühlingstag",
+    "topic": "Wetter",
+    "text": "Heute ist ein schöner Tag im Frühling. Die Sonne scheint und es ist warm. Die Bäume sind grün und die Blumen blühen. Viele Menschen sind draußen im Park. Die Kinder spielen und die Vögel singen. Ich sitze auf einer Bank und lese ein Buch. Solche Tage machen mich glücklich und froh.",
+    "wordIds": [
+      "baum",
+      "blume",
+      "froh",
+      "fruehling",
+      "gluecklich",
+      "gruen",
+      "lesen",
+      "mensch",
+      "park",
+      "scheinen",
+      "schoen",
+      "singen",
+      "sitzen",
+      "sonne",
+      "warm"
+    ],
+    "spans": [
+      {
+        "start": 14,
+        "end": 21,
+        "wordId": "schoen"
+      },
+      {
+        "start": 29,
+        "end": 37,
+        "wordId": "fruehling"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "wordId": "sonne"
+      },
+      {
+        "start": 49,
+        "end": 56,
+        "wordId": "scheinen"
+      },
+      {
+        "start": 68,
+        "end": 72,
+        "wordId": "warm"
+      },
+      {
+        "start": 78,
+        "end": 83,
+        "wordId": "baum"
+      },
+      {
+        "start": 89,
+        "end": 93,
+        "wordId": "gruen"
+      },
+      {
+        "start": 102,
+        "end": 108,
+        "wordId": "blume"
+      },
+      {
+        "start": 123,
+        "end": 131,
+        "wordId": "mensch"
+      },
+      {
+        "start": 148,
+        "end": 152,
+        "wordId": "park"
+      },
+      {
+        "start": 187,
+        "end": 193,
+        "wordId": "singen"
+      },
+      {
+        "start": 199,
+        "end": 204,
+        "wordId": "sitzen"
+      },
+      {
+        "start": 224,
+        "end": 228,
+        "wordId": "lesen"
+      },
+      {
+        "start": 263,
+        "end": 272,
+        "wordId": "gluecklich"
+      },
+      {
+        "start": 277,
+        "end": 281,
+        "wordId": "froh"
+      }
+    ]
+  },
+  {
+    "id": "fruehstueck",
+    "title": "Das Frühstück",
+    "topic": "Essen",
+    "text": "Am Morgen frühstücke ich gern zusammen mit meiner Familie. Wir essen Brötchen mit Butter und Marmelade. Mein Sohn mag ein Ei und Käse. Ich trinke Kaffee mit Milch und meine Tochter trinkt Kakao. Manchmal gibt es auch Joghurt mit Obst. Am Sonntag haben wir viel Zeit und das Frühstück dauert lange.",
+    "wordIds": [
+      "broetchen",
+      "dauern",
+      "ei",
+      "familie",
+      "fruehstueck",
+      "fruehstuecken",
+      "joghurt",
+      "kaese",
+      "kaffee",
+      "kakao",
+      "marmelade",
+      "milch",
+      "morgen",
+      "sohn",
+      "tochter"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 9,
+        "wordId": "morgen"
+      },
+      {
+        "start": 10,
+        "end": 20,
+        "wordId": "fruehstuecken"
+      },
+      {
+        "start": 50,
+        "end": 57,
+        "wordId": "familie"
+      },
+      {
+        "start": 69,
+        "end": 77,
+        "wordId": "broetchen"
+      },
+      {
+        "start": 93,
+        "end": 102,
+        "wordId": "marmelade"
+      },
+      {
+        "start": 109,
+        "end": 113,
+        "wordId": "sohn"
+      },
+      {
+        "start": 122,
+        "end": 124,
+        "wordId": "ei"
+      },
+      {
+        "start": 129,
+        "end": 133,
+        "wordId": "kaese"
+      },
+      {
+        "start": 146,
+        "end": 152,
+        "wordId": "kaffee"
+      },
+      {
+        "start": 157,
+        "end": 162,
+        "wordId": "milch"
+      },
+      {
+        "start": 173,
+        "end": 180,
+        "wordId": "tochter"
+      },
+      {
+        "start": 188,
+        "end": 193,
+        "wordId": "kakao"
+      },
+      {
+        "start": 217,
+        "end": 224,
+        "wordId": "joghurt"
+      },
+      {
+        "start": 274,
+        "end": 283,
+        "wordId": "fruehstueck"
+      },
+      {
+        "start": 284,
+        "end": 290,
+        "wordId": "dauern"
+      }
+    ]
+  },
+  {
+    "id": "garten-arbeit",
+    "title": "Arbeit im Garten",
+    "topic": "Alltag",
+    "text": "Im Sommer arbeite ich gern im Garten. Ich pflanze Blumen und Gemüse. Wir haben Tomaten, Bohnen und Erbsen. Jeden Tag gebe ich den Pflanzen Wasser. Die Bäume geben uns Schatten, wenn es heiß ist. Am Abend sitzen wir auf der Terrasse und grillen. Der Garten macht viel Arbeit, aber auch viel Freude.",
+    "wordIds": [
+      "arbeiten",
+      "baum",
+      "blume",
+      "bohne",
+      "erbse",
+      "garten",
+      "gemuese",
+      "grillen",
+      "heiss",
+      "pflanze",
+      "sommer",
+      "terrasse",
+      "tomate",
+      "wasser"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 9,
+        "wordId": "sommer"
+      },
+      {
+        "start": 10,
+        "end": 17,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "wordId": "garten"
+      },
+      {
+        "start": 50,
+        "end": 56,
+        "wordId": "blume"
+      },
+      {
+        "start": 61,
+        "end": 67,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 79,
+        "end": 86,
+        "wordId": "tomate"
+      },
+      {
+        "start": 88,
+        "end": 94,
+        "wordId": "bohne"
+      },
+      {
+        "start": 99,
+        "end": 105,
+        "wordId": "erbse"
+      },
+      {
+        "start": 130,
+        "end": 138,
+        "wordId": "pflanze"
+      },
+      {
+        "start": 139,
+        "end": 145,
+        "wordId": "wasser"
+      },
+      {
+        "start": 151,
+        "end": 156,
+        "wordId": "baum"
+      },
+      {
+        "start": 185,
+        "end": 189,
+        "wordId": "heiss"
+      },
+      {
+        "start": 223,
+        "end": 231,
+        "wordId": "terrasse"
+      },
+      {
+        "start": 236,
+        "end": 243,
+        "wordId": "grillen"
+      },
+      {
+        "start": 249,
+        "end": 255,
+        "wordId": "garten"
+      }
+    ]
+  },
+  {
+    "id": "geburtstag-planen",
+    "title": "Die Party planen",
+    "topic": "Feste",
+    "text": "Nächsten Monat habe ich Geburtstag und ich plane eine Party. Ich möchte zwanzig Gäste einladen. Wir feiern bei mir im Garten. Ich kaufe Getränke, mache einen Salat und backe einen Kuchen. Meine Freunde bringen Musik mit und wir tanzen. Ich kaufe auch Luftballons und schmücke die Terrasse. Ich hoffe, das Wetter ist schön und es regnet nicht.",
+    "wordIds": [
+      "backen",
+      "einladen",
+      "freund",
+      "garten",
+      "gast",
+      "geburtstag",
+      "getraenk",
+      "kuchen",
+      "luftballon",
+      "monat",
+      "planen",
+      "salat",
+      "tanzen",
+      "terrasse"
+    ],
+    "spans": [
+      {
+        "start": 9,
+        "end": 14,
+        "wordId": "monat"
+      },
+      {
+        "start": 24,
+        "end": 34,
+        "wordId": "geburtstag"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "wordId": "planen"
+      },
+      {
+        "start": 80,
+        "end": 85,
+        "wordId": "gast"
+      },
+      {
+        "start": 86,
+        "end": 94,
+        "wordId": "einladen"
+      },
+      {
+        "start": 118,
+        "end": 124,
+        "wordId": "garten"
+      },
+      {
+        "start": 136,
+        "end": 144,
+        "wordId": "getraenk"
+      },
+      {
+        "start": 158,
+        "end": 163,
+        "wordId": "salat"
+      },
+      {
+        "start": 168,
+        "end": 173,
+        "wordId": "backen"
+      },
+      {
+        "start": 180,
+        "end": 186,
+        "wordId": "kuchen"
+      },
+      {
+        "start": 194,
+        "end": 201,
+        "wordId": "freund"
+      },
+      {
+        "start": 228,
+        "end": 234,
+        "wordId": "tanzen"
+      },
+      {
+        "start": 251,
+        "end": 262,
+        "wordId": "luftballon"
+      },
+      {
+        "start": 280,
+        "end": 288,
+        "wordId": "terrasse"
+      }
+    ]
+  },
+  {
+    "id": "geburtstagsfeier",
+    "title": "Die Geburtstagsfeier",
+    "topic": "Feste",
+    "text": "Gestern hatte mein Bruder Geburtstag. Wir haben eine Feier im Garten gemacht. Viele Gäste sind gekommen und haben Geschenke gebracht. Meine Mutter hat einen Kuchen gebacken und eine Torte gekauft. Wir haben gegessen, getrunken und getanzt. Die Kinder haben im Garten gespielt. Es war ein schönes Fest und alle waren glücklich.",
+    "wordIds": [
+      "backen",
+      "bruder",
+      "feier",
+      "fest",
+      "garten",
+      "gast",
+      "geburtstag",
+      "geschenk",
+      "gestern",
+      "gluecklich",
+      "kuchen",
+      "mutter",
+      "spielen",
+      "tanzen",
+      "torte"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 7,
+        "wordId": "gestern"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "wordId": "bruder"
+      },
+      {
+        "start": 26,
+        "end": 36,
+        "wordId": "geburtstag"
+      },
+      {
+        "start": 53,
+        "end": 58,
+        "wordId": "feier"
+      },
+      {
+        "start": 62,
+        "end": 68,
+        "wordId": "garten"
+      },
+      {
+        "start": 84,
+        "end": 89,
+        "wordId": "gast"
+      },
+      {
+        "start": 114,
+        "end": 123,
+        "wordId": "geschenk"
+      },
+      {
+        "start": 140,
+        "end": 146,
+        "wordId": "mutter"
+      },
+      {
+        "start": 157,
+        "end": 163,
+        "wordId": "kuchen"
+      },
+      {
+        "start": 164,
+        "end": 172,
+        "wordId": "backen"
+      },
+      {
+        "start": 182,
+        "end": 187,
+        "wordId": "torte"
+      },
+      {
+        "start": 231,
+        "end": 238,
+        "wordId": "tanzen"
+      },
+      {
+        "start": 260,
+        "end": 266,
+        "wordId": "garten"
+      },
+      {
+        "start": 267,
+        "end": 275,
+        "wordId": "spielen"
+      },
+      {
+        "start": 296,
+        "end": 300,
+        "wordId": "fest"
+      },
+      {
+        "start": 316,
+        "end": 325,
+        "wordId": "gluecklich"
+      }
+    ]
+  },
+  {
+    "id": "geld-bank",
+    "title": "Auf der Bank",
+    "topic": "Alltag",
+    "text": "Heute gehe ich zur Bank, weil ich Geld brauche. Am Automaten hole ich hundert Euro. Ich möchte auch meine Miete bezahlen. Die Frau am Schalter hilft mir und ist sehr freundlich. Ich habe eine Frage zu meiner Karte. Sie erklärt mir alles genau. Am Ende sage ich danke und gehe wieder.",
+    "wordIds": [
+      "automat",
+      "bank",
+      "bezahlen",
+      "brauchen",
+      "danke",
+      "erklaeren",
+      "euro",
+      "frage",
+      "frau",
+      "freundlich",
+      "geld",
+      "helfen",
+      "karte",
+      "miete"
+    ],
+    "spans": [
+      {
+        "start": 19,
+        "end": 23,
+        "wordId": "bank"
+      },
+      {
+        "start": 34,
+        "end": 38,
+        "wordId": "geld"
+      },
+      {
+        "start": 39,
+        "end": 46,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 51,
+        "end": 60,
+        "wordId": "automat"
+      },
+      {
+        "start": 78,
+        "end": 82,
+        "wordId": "euro"
+      },
+      {
+        "start": 106,
+        "end": 111,
+        "wordId": "miete"
+      },
+      {
+        "start": 112,
+        "end": 120,
+        "wordId": "bezahlen"
+      },
+      {
+        "start": 126,
+        "end": 130,
+        "wordId": "frau"
+      },
+      {
+        "start": 143,
+        "end": 148,
+        "wordId": "helfen"
+      },
+      {
+        "start": 166,
+        "end": 176,
+        "wordId": "freundlich"
+      },
+      {
+        "start": 192,
+        "end": 197,
+        "wordId": "frage"
+      },
+      {
+        "start": 208,
+        "end": 213,
+        "wordId": "karte"
+      },
+      {
+        "start": 219,
+        "end": 226,
+        "wordId": "erklaeren"
+      },
+      {
+        "start": 261,
+        "end": 266,
+        "wordId": "danke"
+      }
+    ]
+  },
+  {
+    "id": "geschaeft-umtausch",
+    "title": "Eine Hose umtauschen",
+    "topic": "Einkaufen",
+    "text": "Guten Tag, ich möchte diese Hose umtauschen. Sie ist leider zu klein und passt mir nicht. Hier ist der Kassenbon. Haben Sie die Hose in einer anderen Größe? Die Farbe gefällt mir gut, aber ich brauche sie größer. Wenn es nicht geht, möchte ich mein Geld zurück. Vielen Dank für Ihre Hilfe.",
+    "wordIds": [
+      "brauchen",
+      "farbe",
+      "gefallen",
+      "geld",
+      "groesse",
+      "hilfe",
+      "hose",
+      "kassenbon",
+      "klein",
+      "passen",
+      "tag",
+      "umtauschen",
+      "zurueck"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 9,
+        "wordId": "tag"
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "wordId": "hose"
+      },
+      {
+        "start": 33,
+        "end": 43,
+        "wordId": "umtauschen"
+      },
+      {
+        "start": 63,
+        "end": 68,
+        "wordId": "klein"
+      },
+      {
+        "start": 73,
+        "end": 78,
+        "wordId": "passen"
+      },
+      {
+        "start": 103,
+        "end": 112,
+        "wordId": "kassenbon"
+      },
+      {
+        "start": 128,
+        "end": 132,
+        "wordId": "hose"
+      },
+      {
+        "start": 150,
+        "end": 155,
+        "wordId": "groesse"
+      },
+      {
+        "start": 161,
+        "end": 166,
+        "wordId": "farbe"
+      },
+      {
+        "start": 167,
+        "end": 174,
+        "wordId": "gefallen"
+      },
+      {
+        "start": 193,
+        "end": 200,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 249,
+        "end": 253,
+        "wordId": "geld"
+      },
+      {
+        "start": 254,
+        "end": 260,
+        "wordId": "zurueck"
+      },
+      {
+        "start": 283,
+        "end": 288,
+        "wordId": "hilfe"
+      }
+    ]
+  },
+  {
+    "id": "geschenk-suchen",
+    "title": "Ein Geschenk suchen",
+    "topic": "Einkaufen",
+    "text": "Meine Freundin hat bald Geburtstag und ich suche ein Geschenk. Vielleicht kaufe ich ein Buch oder eine schöne Tasche. Im Geschäft sehe ich einen Ring und eine Kette. Der Ring ist sehr teuer. Ich nehme lieber die Tasche, denn sie gefällt ihr bestimmt. Die Verkäuferin macht mir ein schönes Paket. Ich hoffe, sie freut sich über das Geschenk.",
+    "wordIds": [
+      "buch",
+      "freuen",
+      "freundin",
+      "geburtstag",
+      "gefallen",
+      "geschaeft",
+      "geschenk",
+      "kaufen",
+      "paket",
+      "ring",
+      "suchen",
+      "tasche",
+      "teuer",
+      "verkaeuferin"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 14,
+        "wordId": "freundin"
+      },
+      {
+        "start": 24,
+        "end": 34,
+        "wordId": "geburtstag"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "wordId": "suchen"
+      },
+      {
+        "start": 53,
+        "end": 61,
+        "wordId": "geschenk"
+      },
+      {
+        "start": 74,
+        "end": 79,
+        "wordId": "kaufen"
+      },
+      {
+        "start": 88,
+        "end": 92,
+        "wordId": "buch"
+      },
+      {
+        "start": 110,
+        "end": 116,
+        "wordId": "tasche"
+      },
+      {
+        "start": 121,
+        "end": 129,
+        "wordId": "geschaeft"
+      },
+      {
+        "start": 145,
+        "end": 149,
+        "wordId": "ring"
+      },
+      {
+        "start": 170,
+        "end": 174,
+        "wordId": "ring"
+      },
+      {
+        "start": 184,
+        "end": 189,
+        "wordId": "teuer"
+      },
+      {
+        "start": 212,
+        "end": 218,
+        "wordId": "tasche"
+      },
+      {
+        "start": 229,
+        "end": 236,
+        "wordId": "gefallen"
+      },
+      {
+        "start": 255,
+        "end": 266,
+        "wordId": "verkaeuferin"
+      },
+      {
+        "start": 289,
+        "end": 294,
+        "wordId": "paket"
+      },
+      {
+        "start": 311,
+        "end": 316,
+        "wordId": "freuen"
+      },
+      {
+        "start": 331,
+        "end": 339,
+        "wordId": "geschenk"
+      }
+    ]
+  },
+  {
+    "id": "haushalt",
+    "title": "Im Haushalt helfen",
+    "topic": "Alltag",
+    "text": "Am Samstag räumen wir die Wohnung auf. Ich putze das Badezimmer und wasche die Wäsche. Mein Mann kocht das Mittagessen und wäscht das Geschirr ab. Die Kinder räumen ihr Kinderzimmer auf. Danach gehe ich mit dem Müll nach unten. Am Abend ist die Wohnung sauber und wir sind müde, aber zufrieden.",
+    "wordIds": [
+      "abend",
+      "aufraeumen",
+      "badezimmer",
+      "kind",
+      "kinderzimmer",
+      "kochen",
+      "mann",
+      "mittagessen",
+      "muede",
+      "muell",
+      "putzen",
+      "samstag",
+      "waschen",
+      "wohnung"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "samstag"
+      },
+      {
+        "start": 26,
+        "end": 33,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 34,
+        "end": 37,
+        "wordId": "aufraeumen"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "wordId": "putzen"
+      },
+      {
+        "start": 53,
+        "end": 63,
+        "wordId": "badezimmer"
+      },
+      {
+        "start": 68,
+        "end": 74,
+        "wordId": "waschen"
+      },
+      {
+        "start": 92,
+        "end": 96,
+        "wordId": "mann"
+      },
+      {
+        "start": 97,
+        "end": 102,
+        "wordId": "kochen"
+      },
+      {
+        "start": 107,
+        "end": 118,
+        "wordId": "mittagessen"
+      },
+      {
+        "start": 151,
+        "end": 157,
+        "wordId": "kind"
+      },
+      {
+        "start": 169,
+        "end": 181,
+        "wordId": "kinderzimmer"
+      },
+      {
+        "start": 182,
+        "end": 185,
+        "wordId": "aufraeumen"
+      },
+      {
+        "start": 211,
+        "end": 215,
+        "wordId": "muell"
+      },
+      {
+        "start": 231,
+        "end": 236,
+        "wordId": "abend"
+      },
+      {
+        "start": 245,
+        "end": 252,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 273,
+        "end": 277,
+        "wordId": "muede"
+      }
+    ]
+  },
+  {
+    "id": "haustier",
+    "title": "Unser Haustier",
+    "topic": "Familie",
+    "text": "Wir haben ein Haustier, einen Hund. Er heißt Max und ist noch jung. Jeden Tag gehe ich mit dem Hund spazieren. Meine Tochter liebt Tiere und möchte auch eine Katze. Aber eine Katze und ein Hund zusammen ist vielleicht schwierig. Der Hund spielt gern im Garten mit dem Ball. Er ist ein gutes und liebes Tier.",
+    "wordIds": [
+      "ball",
+      "garten",
+      "haustier",
+      "heissen",
+      "hund",
+      "jung",
+      "katze",
+      "lieb",
+      "lieben",
+      "spazieren",
+      "spielen",
+      "tier",
+      "tochter"
+    ],
+    "spans": [
+      {
+        "start": 14,
+        "end": 22,
+        "wordId": "haustier"
+      },
+      {
+        "start": 30,
+        "end": 34,
+        "wordId": "hund"
+      },
+      {
+        "start": 39,
+        "end": 44,
+        "wordId": "heissen"
+      },
+      {
+        "start": 62,
+        "end": 66,
+        "wordId": "jung"
+      },
+      {
+        "start": 95,
+        "end": 99,
+        "wordId": "hund"
+      },
+      {
+        "start": 100,
+        "end": 109,
+        "wordId": "spazieren"
+      },
+      {
+        "start": 117,
+        "end": 124,
+        "wordId": "tochter"
+      },
+      {
+        "start": 125,
+        "end": 130,
+        "wordId": "lieben"
+      },
+      {
+        "start": 131,
+        "end": 136,
+        "wordId": "tier"
+      },
+      {
+        "start": 158,
+        "end": 163,
+        "wordId": "katze"
+      },
+      {
+        "start": 175,
+        "end": 180,
+        "wordId": "katze"
+      },
+      {
+        "start": 189,
+        "end": 193,
+        "wordId": "hund"
+      },
+      {
+        "start": 233,
+        "end": 237,
+        "wordId": "hund"
+      },
+      {
+        "start": 238,
+        "end": 244,
+        "wordId": "spielen"
+      },
+      {
+        "start": 253,
+        "end": 259,
+        "wordId": "garten"
+      },
+      {
+        "start": 268,
+        "end": 272,
+        "wordId": "ball"
+      },
+      {
+        "start": 295,
+        "end": 301,
+        "wordId": "lieb"
+      }
+    ]
+  },
+  {
+    "id": "hobbys",
+    "title": "Meine Hobbys",
+    "topic": "Freizeit",
+    "text": "In meiner Freizeit habe ich viele Hobbys. Ich spiele gern Fußball und ich höre Musik. Am Wochenende gehe ich oft schwimmen oder ich fahre Fahrrad. Meine Schwester spielt Klavier und singt im Chor. Abends lese ich ein Buch oder ich sehe einen Film. Im Sommer wandern wir gern in den Bergen.",
+    "wordIds": [
+      "buch",
+      "fahrrad",
+      "film",
+      "fussball",
+      "hobby",
+      "hoeren",
+      "klavier",
+      "lesen",
+      "musik",
+      "schwimmen",
+      "singen",
+      "sommer",
+      "spielen",
+      "wandern",
+      "wochenende"
+    ],
+    "spans": [
+      {
+        "start": 34,
+        "end": 40,
+        "wordId": "hobby"
+      },
+      {
+        "start": 46,
+        "end": 52,
+        "wordId": "spielen"
+      },
+      {
+        "start": 58,
+        "end": 65,
+        "wordId": "fussball"
+      },
+      {
+        "start": 74,
+        "end": 78,
+        "wordId": "hoeren"
+      },
+      {
+        "start": 79,
+        "end": 84,
+        "wordId": "musik"
+      },
+      {
+        "start": 89,
+        "end": 99,
+        "wordId": "wochenende"
+      },
+      {
+        "start": 113,
+        "end": 122,
+        "wordId": "schwimmen"
+      },
+      {
+        "start": 138,
+        "end": 145,
+        "wordId": "fahrrad"
+      },
+      {
+        "start": 170,
+        "end": 177,
+        "wordId": "klavier"
+      },
+      {
+        "start": 182,
+        "end": 187,
+        "wordId": "singen"
+      },
+      {
+        "start": 204,
+        "end": 208,
+        "wordId": "lesen"
+      },
+      {
+        "start": 217,
+        "end": 221,
+        "wordId": "buch"
+      },
+      {
+        "start": 242,
+        "end": 246,
+        "wordId": "film"
+      },
+      {
+        "start": 251,
+        "end": 257,
+        "wordId": "sommer"
+      },
+      {
+        "start": 258,
+        "end": 265,
+        "wordId": "wandern"
+      }
+    ]
+  },
+  {
+    "id": "hochzeit",
+    "title": "Eine Hochzeit",
+    "topic": "Feste",
+    "text": "Am Samstag feiert meine Schwester ihre Hochzeit. Die Feier ist in einem schönen Hotel. Die Braut trägt ein weißes Kleid. Viele Gäste kommen und bringen Geschenke. Es gibt ein großes Essen und eine Torte. Wir trinken Sekt und tanzen bis spät in die Nacht. Alle sind fröhlich und wünschen dem Paar viel Glück.",
+    "wordIds": [
+      "braut",
+      "feier",
+      "gast",
+      "geschenk",
+      "glueck",
+      "hochzeit",
+      "hotel",
+      "kleid",
+      "nacht",
+      "samstag",
+      "schwester",
+      "sekt",
+      "tanzen",
+      "torte"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "samstag"
+      },
+      {
+        "start": 24,
+        "end": 33,
+        "wordId": "schwester"
+      },
+      {
+        "start": 39,
+        "end": 47,
+        "wordId": "hochzeit"
+      },
+      {
+        "start": 53,
+        "end": 58,
+        "wordId": "feier"
+      },
+      {
+        "start": 80,
+        "end": 85,
+        "wordId": "hotel"
+      },
+      {
+        "start": 91,
+        "end": 96,
+        "wordId": "braut"
+      },
+      {
+        "start": 114,
+        "end": 119,
+        "wordId": "kleid"
+      },
+      {
+        "start": 127,
+        "end": 132,
+        "wordId": "gast"
+      },
+      {
+        "start": 152,
+        "end": 161,
+        "wordId": "geschenk"
+      },
+      {
+        "start": 197,
+        "end": 202,
+        "wordId": "torte"
+      },
+      {
+        "start": 216,
+        "end": 220,
+        "wordId": "sekt"
+      },
+      {
+        "start": 225,
+        "end": 231,
+        "wordId": "tanzen"
+      },
+      {
+        "start": 248,
+        "end": 253,
+        "wordId": "nacht"
+      },
+      {
+        "start": 301,
+        "end": 306,
+        "wordId": "glueck"
+      }
+    ]
+  },
+  {
+    "id": "jahreszeiten",
+    "title": "Die Jahreszeiten",
+    "topic": "Wetter",
+    "text": "In Deutschland gibt es vier Jahreszeiten. Im Frühling wird es warm und die Blumen blühen. Im Sommer ist es heiß und wir gehen schwimmen. Im Herbst regnet es oft und der Wind ist stark. Im Winter ist es kalt und es schneit. Ich mag den Frühling am liebsten, weil die Natur dann schön ist.",
+    "wordIds": [
+      "blume",
+      "fruehling",
+      "heiss",
+      "herbst",
+      "jahreszeit",
+      "kalt",
+      "natur",
+      "regnen",
+      "schneien",
+      "schwimmen",
+      "sommer",
+      "stark",
+      "warm",
+      "winter"
+    ],
+    "spans": [
+      {
+        "start": 28,
+        "end": 40,
+        "wordId": "jahreszeit"
+      },
+      {
+        "start": 45,
+        "end": 53,
+        "wordId": "fruehling"
+      },
+      {
+        "start": 62,
+        "end": 66,
+        "wordId": "warm"
+      },
+      {
+        "start": 75,
+        "end": 81,
+        "wordId": "blume"
+      },
+      {
+        "start": 93,
+        "end": 99,
+        "wordId": "sommer"
+      },
+      {
+        "start": 107,
+        "end": 111,
+        "wordId": "heiss"
+      },
+      {
+        "start": 126,
+        "end": 135,
+        "wordId": "schwimmen"
+      },
+      {
+        "start": 140,
+        "end": 146,
+        "wordId": "herbst"
+      },
+      {
+        "start": 147,
+        "end": 153,
+        "wordId": "regnen"
+      },
+      {
+        "start": 178,
+        "end": 183,
+        "wordId": "stark"
+      },
+      {
+        "start": 188,
+        "end": 194,
+        "wordId": "winter"
+      },
+      {
+        "start": 202,
+        "end": 206,
+        "wordId": "kalt"
+      },
+      {
+        "start": 214,
+        "end": 221,
+        "wordId": "schneien"
+      },
+      {
+        "start": 235,
+        "end": 243,
+        "wordId": "fruehling"
+      },
+      {
+        "start": 266,
+        "end": 271,
+        "wordId": "natur"
+      }
+    ]
+  },
+  {
+    "id": "kind-schule",
+    "title": "Mein Kind in der Schule",
+    "topic": "Schule",
+    "text": "Mein Sohn geht gern in die Schule. Sein Lieblingsfach ist Mathematik. Jeden Tag macht er seine Hausaufgaben am Schreibtisch. In der Pause spielt er mit Freunden auf dem Schulhof. Manchmal schreibt er eine Klassenarbeit und bekommt eine gute Note. Am Nachmittag lernt er für die Schule. Er ist ein guter Schüler.",
+    "wordIds": [
+      "bekommen",
+      "freund",
+      "hausaufgabe",
+      "klassenarbeit",
+      "lernen",
+      "mathematik",
+      "nachmittag",
+      "note",
+      "pause",
+      "schreiben",
+      "schueler",
+      "schule",
+      "sohn",
+      "spielen"
+    ],
+    "spans": [
+      {
+        "start": 5,
+        "end": 9,
+        "wordId": "sohn"
+      },
+      {
+        "start": 27,
+        "end": 33,
+        "wordId": "schule"
+      },
+      {
+        "start": 58,
+        "end": 68,
+        "wordId": "mathematik"
+      },
+      {
+        "start": 95,
+        "end": 107,
+        "wordId": "hausaufgabe"
+      },
+      {
+        "start": 132,
+        "end": 137,
+        "wordId": "pause"
+      },
+      {
+        "start": 138,
+        "end": 144,
+        "wordId": "spielen"
+      },
+      {
+        "start": 152,
+        "end": 160,
+        "wordId": "freund"
+      },
+      {
+        "start": 188,
+        "end": 196,
+        "wordId": "schreiben"
+      },
+      {
+        "start": 205,
+        "end": 218,
+        "wordId": "klassenarbeit"
+      },
+      {
+        "start": 223,
+        "end": 230,
+        "wordId": "bekommen"
+      },
+      {
+        "start": 241,
+        "end": 245,
+        "wordId": "note"
+      },
+      {
+        "start": 250,
+        "end": 260,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 261,
+        "end": 266,
+        "wordId": "lernen"
+      },
+      {
+        "start": 278,
+        "end": 284,
+        "wordId": "schule"
+      },
+      {
+        "start": 303,
+        "end": 310,
+        "wordId": "schueler"
+      }
+    ]
+  },
+  {
+    "id": "kleidung-kaufen",
+    "title": "Neue Kleidung kaufen",
+    "topic": "Einkaufen",
+    "text": "Im Kaufhaus suche ich neue Kleidung. Ich brauche eine Hose und ein Hemd für die Arbeit. Die Jacke gefällt mir, aber sie ist zu teuer. Welche Größe haben Sie? Diese Schuhe passen sehr gut. Im Winter trage ich gern einen warmen Mantel und eine Mütze. Ich bezahle an der Kasse vierzig Euro.",
+    "wordIds": [
+      "euro",
+      "gefallen",
+      "groesse",
+      "hemd",
+      "hose",
+      "jacke",
+      "kaufhaus",
+      "kleidung",
+      "mantel",
+      "muetze",
+      "passen",
+      "schuh",
+      "teuer",
+      "tragen",
+      "winter"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 11,
+        "wordId": "kaufhaus"
+      },
+      {
+        "start": 27,
+        "end": 35,
+        "wordId": "kleidung"
+      },
+      {
+        "start": 54,
+        "end": 58,
+        "wordId": "hose"
+      },
+      {
+        "start": 67,
+        "end": 71,
+        "wordId": "hemd"
+      },
+      {
+        "start": 92,
+        "end": 97,
+        "wordId": "jacke"
+      },
+      {
+        "start": 98,
+        "end": 105,
+        "wordId": "gefallen"
+      },
+      {
+        "start": 127,
+        "end": 132,
+        "wordId": "teuer"
+      },
+      {
+        "start": 141,
+        "end": 146,
+        "wordId": "groesse"
+      },
+      {
+        "start": 164,
+        "end": 170,
+        "wordId": "schuh"
+      },
+      {
+        "start": 171,
+        "end": 177,
+        "wordId": "passen"
+      },
+      {
+        "start": 191,
+        "end": 197,
+        "wordId": "winter"
+      },
+      {
+        "start": 198,
+        "end": 203,
+        "wordId": "tragen"
+      },
+      {
+        "start": 226,
+        "end": 232,
+        "wordId": "mantel"
+      },
+      {
+        "start": 242,
+        "end": 247,
+        "wordId": "muetze"
+      },
+      {
+        "start": 282,
+        "end": 286,
+        "wordId": "euro"
+      }
+    ]
+  },
+  {
+    "id": "kleidung-wetter",
+    "title": "Die richtige Kleidung",
+    "topic": "Alltag",
+    "text": "Im Winter ziehe ich warme Kleidung an. Ich trage einen dicken Mantel, eine Mütze und Handschuhe. Wenn es regnet, brauche ich einen Schirm. Im Sommer trage ich ein T-Shirt und kurze Hosen. An den Füßen habe ich dann nur leichte Schuhe. Heute ist es kalt, deshalb nehme ich auch einen Schal mit.",
+    "wordIds": [
+      "anziehen",
+      "fuss",
+      "handschuh",
+      "hose",
+      "kalt",
+      "kleidung",
+      "mantel",
+      "muetze",
+      "regnen",
+      "schal",
+      "schuh",
+      "sommer",
+      "t-shirt",
+      "tragen",
+      "winter"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 9,
+        "wordId": "winter"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "wordId": "kleidung"
+      },
+      {
+        "start": 35,
+        "end": 37,
+        "wordId": "anziehen"
+      },
+      {
+        "start": 43,
+        "end": 48,
+        "wordId": "tragen"
+      },
+      {
+        "start": 62,
+        "end": 68,
+        "wordId": "mantel"
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "wordId": "muetze"
+      },
+      {
+        "start": 85,
+        "end": 95,
+        "wordId": "handschuh"
+      },
+      {
+        "start": 105,
+        "end": 111,
+        "wordId": "regnen"
+      },
+      {
+        "start": 142,
+        "end": 148,
+        "wordId": "sommer"
+      },
+      {
+        "start": 149,
+        "end": 154,
+        "wordId": "tragen"
+      },
+      {
+        "start": 163,
+        "end": 170,
+        "wordId": "t-shirt"
+      },
+      {
+        "start": 181,
+        "end": 186,
+        "wordId": "hose"
+      },
+      {
+        "start": 195,
+        "end": 200,
+        "wordId": "fuss"
+      },
+      {
+        "start": 227,
+        "end": 233,
+        "wordId": "schuh"
+      },
+      {
+        "start": 248,
+        "end": 252,
+        "wordId": "kalt"
+      },
+      {
+        "start": 283,
+        "end": 288,
+        "wordId": "schal"
+      }
+    ]
+  },
+  {
+    "id": "kleinanzeige-moebel",
+    "title": "Anzeige: Möbel zu verkaufen",
+    "topic": "Anzeige",
+    "text": "Wir ziehen um und verkaufen unsere Möbel. Wir haben ein Sofa, einen Tisch und vier Stühle. Der Schrank und das Regal sind auch noch gut. Alles ist günstig und nicht teuer. Das Sofa kostet fünfzig Euro. Bei Interesse schreiben Sie eine E-Mail oder rufen Sie an. Sie können die Möbel am Wochenende abholen.",
+    "wordIds": [
+      "abholen",
+      "e-mail",
+      "euro",
+      "guenstig",
+      "kosten",
+      "moebel",
+      "regal",
+      "schrank",
+      "sofa",
+      "stuhl",
+      "teuer",
+      "tisch",
+      "verkaeufer",
+      "wochenende"
+    ],
+    "spans": [
+      {
+        "start": 18,
+        "end": 27,
+        "wordId": "verkaeufer"
+      },
+      {
+        "start": 35,
+        "end": 40,
+        "wordId": "moebel"
+      },
+      {
+        "start": 56,
+        "end": 60,
+        "wordId": "sofa"
+      },
+      {
+        "start": 68,
+        "end": 73,
+        "wordId": "tisch"
+      },
+      {
+        "start": 83,
+        "end": 89,
+        "wordId": "stuhl"
+      },
+      {
+        "start": 95,
+        "end": 102,
+        "wordId": "schrank"
+      },
+      {
+        "start": 111,
+        "end": 116,
+        "wordId": "regal"
+      },
+      {
+        "start": 147,
+        "end": 154,
+        "wordId": "guenstig"
+      },
+      {
+        "start": 165,
+        "end": 170,
+        "wordId": "teuer"
+      },
+      {
+        "start": 176,
+        "end": 180,
+        "wordId": "sofa"
+      },
+      {
+        "start": 181,
+        "end": 187,
+        "wordId": "kosten"
+      },
+      {
+        "start": 196,
+        "end": 200,
+        "wordId": "euro"
+      },
+      {
+        "start": 235,
+        "end": 241,
+        "wordId": "e-mail"
+      },
+      {
+        "start": 276,
+        "end": 281,
+        "wordId": "moebel"
+      },
+      {
+        "start": 285,
+        "end": 295,
+        "wordId": "wochenende"
+      },
+      {
+        "start": 296,
+        "end": 303,
+        "wordId": "abholen"
+      }
+    ]
+  },
+  {
+    "id": "kochen-rezept",
+    "title": "Ein einfaches Rezept",
+    "topic": "Essen",
+    "text": "Heute koche ich eine Suppe. Ich brauche Kartoffeln, eine Zwiebel und eine Möhre. Zuerst wasche und schneide ich das Gemüse. Dann gebe ich alles in einen Topf mit Wasser. Ich koche die Suppe zwanzig Minuten. Zum Schluss gebe ich Salz und Pfeffer dazu. Die Suppe schmeckt sehr lecker mit frischem Brot.",
+    "wordIds": [
+      "brauchen",
+      "brot",
+      "geben",
+      "gemuese",
+      "kartoffel",
+      "kochen",
+      "lecker",
+      "minute",
+      "moehre",
+      "salz",
+      "schmecken",
+      "suppe",
+      "waschen",
+      "wasser",
+      "zwiebel"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 11,
+        "wordId": "kochen"
+      },
+      {
+        "start": 21,
+        "end": 26,
+        "wordId": "suppe"
+      },
+      {
+        "start": 32,
+        "end": 39,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 40,
+        "end": 50,
+        "wordId": "kartoffel"
+      },
+      {
+        "start": 57,
+        "end": 64,
+        "wordId": "zwiebel"
+      },
+      {
+        "start": 74,
+        "end": 79,
+        "wordId": "moehre"
+      },
+      {
+        "start": 88,
+        "end": 94,
+        "wordId": "waschen"
+      },
+      {
+        "start": 116,
+        "end": 122,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 129,
+        "end": 133,
+        "wordId": "geben"
+      },
+      {
+        "start": 162,
+        "end": 168,
+        "wordId": "wasser"
+      },
+      {
+        "start": 174,
+        "end": 179,
+        "wordId": "kochen"
+      },
+      {
+        "start": 184,
+        "end": 189,
+        "wordId": "suppe"
+      },
+      {
+        "start": 198,
+        "end": 205,
+        "wordId": "minute"
+      },
+      {
+        "start": 219,
+        "end": 223,
+        "wordId": "geben"
+      },
+      {
+        "start": 228,
+        "end": 232,
+        "wordId": "salz"
+      },
+      {
+        "start": 255,
+        "end": 260,
+        "wordId": "suppe"
+      },
+      {
+        "start": 261,
+        "end": 269,
+        "wordId": "schmecken"
+      },
+      {
+        "start": 275,
+        "end": 281,
+        "wordId": "lecker"
+      },
+      {
+        "start": 295,
+        "end": 299,
+        "wordId": "brot"
+      }
+    ]
+  },
+  {
+    "id": "koerper-gesund",
+    "title": "Gesund bleiben",
+    "topic": "Gesundheit",
+    "text": "Ich möchte gesund bleiben und mache deshalb viel Sport. Jeden Morgen laufe ich eine halbe Stunde. Ich esse viel Obst und Gemüse und trinke wenig Cola. Wenn mir der Kopf wehtut, nehme ich eine Tablette. Mein Rücken tut manchmal weh, weil ich zu lange am Computer sitze. Gesundheit ist sehr wichtig.",
+    "wordIds": [
+      "bleiben",
+      "cola",
+      "computer",
+      "gemuese",
+      "gesundheit",
+      "kopf",
+      "laufen",
+      "obst",
+      "ruecken",
+      "sitzen",
+      "sport",
+      "stunde",
+      "tablette",
+      "wichtig"
+    ],
+    "spans": [
+      {
+        "start": 18,
+        "end": 25,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 49,
+        "end": 54,
+        "wordId": "sport"
+      },
+      {
+        "start": 69,
+        "end": 74,
+        "wordId": "laufen"
+      },
+      {
+        "start": 90,
+        "end": 96,
+        "wordId": "stunde"
+      },
+      {
+        "start": 112,
+        "end": 116,
+        "wordId": "obst"
+      },
+      {
+        "start": 121,
+        "end": 127,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 145,
+        "end": 149,
+        "wordId": "cola"
+      },
+      {
+        "start": 164,
+        "end": 168,
+        "wordId": "kopf"
+      },
+      {
+        "start": 192,
+        "end": 200,
+        "wordId": "tablette"
+      },
+      {
+        "start": 207,
+        "end": 213,
+        "wordId": "ruecken"
+      },
+      {
+        "start": 253,
+        "end": 261,
+        "wordId": "computer"
+      },
+      {
+        "start": 262,
+        "end": 267,
+        "wordId": "sitzen"
+      },
+      {
+        "start": 269,
+        "end": 279,
+        "wordId": "gesundheit"
+      },
+      {
+        "start": 289,
+        "end": 296,
+        "wordId": "wichtig"
+      }
+    ]
+  },
+  {
+    "id": "koerperteile",
+    "title": "Der Körper",
+    "topic": "Gesundheit",
+    "text": "Der Mensch hat viele Körperteile. Oben ist der Kopf mit den Augen, der Nase und dem Mund. Der Hals verbindet den Kopf mit dem Körper. Wir haben zwei Arme und zwei Hände. Unten sind die Beine und die Füße. Wenn ich krank bin, tut mir oft der Bauch weh. Bewegung ist gut für den ganzen Körper.",
+    "wordIds": [
+      "arm",
+      "auge",
+      "bauch",
+      "bein",
+      "bewegung",
+      "fuss",
+      "hals",
+      "hand",
+      "koerper",
+      "koerperteil",
+      "kopf",
+      "mensch",
+      "mund",
+      "nase"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 10,
+        "wordId": "mensch"
+      },
+      {
+        "start": 21,
+        "end": 32,
+        "wordId": "koerperteil"
+      },
+      {
+        "start": 47,
+        "end": 51,
+        "wordId": "kopf"
+      },
+      {
+        "start": 60,
+        "end": 65,
+        "wordId": "auge"
+      },
+      {
+        "start": 71,
+        "end": 75,
+        "wordId": "nase"
+      },
+      {
+        "start": 84,
+        "end": 88,
+        "wordId": "mund"
+      },
+      {
+        "start": 94,
+        "end": 98,
+        "wordId": "hals"
+      },
+      {
+        "start": 113,
+        "end": 117,
+        "wordId": "kopf"
+      },
+      {
+        "start": 126,
+        "end": 132,
+        "wordId": "koerper"
+      },
+      {
+        "start": 149,
+        "end": 153,
+        "wordId": "arm"
+      },
+      {
+        "start": 163,
+        "end": 168,
+        "wordId": "hand"
+      },
+      {
+        "start": 185,
+        "end": 190,
+        "wordId": "bein"
+      },
+      {
+        "start": 199,
+        "end": 203,
+        "wordId": "fuss"
+      },
+      {
+        "start": 241,
+        "end": 246,
+        "wordId": "bauch"
+      },
+      {
+        "start": 252,
+        "end": 260,
+        "wordId": "bewegung"
+      },
+      {
+        "start": 284,
+        "end": 290,
+        "wordId": "koerper"
+      }
+    ]
+  },
+  {
+    "id": "krank-melden",
+    "title": "Sich krankmelden",
+    "topic": "Arbeit",
+    "text": "Frau Lange ruft heute Morgen ihren Chef an. Sie ist krank und kann nicht zur Arbeit kommen. Sie hat Fieber und Halsschmerzen. Der Chef sagt, sie soll zum Arzt gehen. Der Arzt gibt ihr eine Krankmeldung für drei Tage. Sie soll im Bett bleiben und sich ausruhen. Hoffentlich ist sie bald wieder gesund.",
+    "wordIds": [
+      "anrufen",
+      "arbeit",
+      "arzt",
+      "bald",
+      "bett",
+      "bleiben",
+      "chef",
+      "fieber",
+      "frau",
+      "hoffentlich",
+      "krank",
+      "krankmeldung",
+      "tag",
+      "wieder"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 4,
+        "wordId": "frau"
+      },
+      {
+        "start": 11,
+        "end": 15,
+        "wordId": "anrufen"
+      },
+      {
+        "start": 35,
+        "end": 39,
+        "wordId": "chef"
+      },
+      {
+        "start": 52,
+        "end": 57,
+        "wordId": "krank"
+      },
+      {
+        "start": 77,
+        "end": 83,
+        "wordId": "arbeit"
+      },
+      {
+        "start": 100,
+        "end": 106,
+        "wordId": "fieber"
+      },
+      {
+        "start": 130,
+        "end": 134,
+        "wordId": "chef"
+      },
+      {
+        "start": 154,
+        "end": 158,
+        "wordId": "arzt"
+      },
+      {
+        "start": 170,
+        "end": 174,
+        "wordId": "arzt"
+      },
+      {
+        "start": 189,
+        "end": 201,
+        "wordId": "krankmeldung"
+      },
+      {
+        "start": 211,
+        "end": 215,
+        "wordId": "tag"
+      },
+      {
+        "start": 229,
+        "end": 233,
+        "wordId": "bett"
+      },
+      {
+        "start": 234,
+        "end": 241,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 261,
+        "end": 272,
+        "wordId": "hoffentlich"
+      },
+      {
+        "start": 281,
+        "end": 285,
+        "wordId": "bald"
+      },
+      {
+        "start": 286,
+        "end": 292,
+        "wordId": "wieder"
+      }
+    ]
+  },
+  {
+    "id": "monate-jahr",
+    "title": "Die Monate im Jahr",
+    "topic": "Alltag",
+    "text": "Ein Jahr hat zwölf Monate. Im Januar ist es kalt und im Februar oft auch. Im April wird das Wetter besser. Im Juli und August haben die Kinder Ferien. Mein Geburtstag ist im Mai. Im Dezember feiern wir Weihnachten. Jeder Monat hat seine eigene Jahreszeit und sein eigenes Wetter.",
+    "wordIds": [
+      "april",
+      "august",
+      "dezember",
+      "februar",
+      "ferien",
+      "geburtstag",
+      "jahr",
+      "jahreszeit",
+      "januar",
+      "juli",
+      "kalt",
+      "mai",
+      "monat",
+      "wetter"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 8,
+        "wordId": "jahr"
+      },
+      {
+        "start": 19,
+        "end": 25,
+        "wordId": "monat"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "wordId": "januar"
+      },
+      {
+        "start": 44,
+        "end": 48,
+        "wordId": "kalt"
+      },
+      {
+        "start": 56,
+        "end": 63,
+        "wordId": "februar"
+      },
+      {
+        "start": 77,
+        "end": 82,
+        "wordId": "april"
+      },
+      {
+        "start": 92,
+        "end": 98,
+        "wordId": "wetter"
+      },
+      {
+        "start": 110,
+        "end": 114,
+        "wordId": "juli"
+      },
+      {
+        "start": 119,
+        "end": 125,
+        "wordId": "august"
+      },
+      {
+        "start": 143,
+        "end": 149,
+        "wordId": "ferien"
+      },
+      {
+        "start": 156,
+        "end": 166,
+        "wordId": "geburtstag"
+      },
+      {
+        "start": 174,
+        "end": 177,
+        "wordId": "mai"
+      },
+      {
+        "start": 182,
+        "end": 190,
+        "wordId": "dezember"
+      },
+      {
+        "start": 244,
+        "end": 254,
+        "wordId": "jahreszeit"
+      },
+      {
+        "start": 272,
+        "end": 278,
+        "wordId": "wetter"
+      }
+    ]
+  },
+  {
+    "id": "nachbarn",
+    "title": "Meine Nachbarn",
+    "topic": "Wohnen",
+    "text": "Wir wohnen in einem Mehrfamilienhaus mit netten Nachbarn. Frau Klein wohnt über uns und ist sehr freundlich. Manchmal trinken wir zusammen Kaffee. Der Nachbar unten hat einen Hund und einen großen Garten. Am Wochenende ist es leider oft laut, weil die Kinder spielen. Aber wir verstehen uns gut und helfen einander.",
+    "wordIds": [
+      "frau",
+      "freundlich",
+      "garten",
+      "helfen",
+      "hund",
+      "kaffee",
+      "kind",
+      "laut",
+      "mehrfamilienhaus",
+      "nachbar",
+      "nett",
+      "spielen",
+      "verstehen",
+      "wochenende",
+      "wohnen"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 10,
+        "wordId": "wohnen"
+      },
+      {
+        "start": 20,
+        "end": 36,
+        "wordId": "mehrfamilienhaus"
+      },
+      {
+        "start": 41,
+        "end": 47,
+        "wordId": "nett"
+      },
+      {
+        "start": 48,
+        "end": 56,
+        "wordId": "nachbar"
+      },
+      {
+        "start": 58,
+        "end": 62,
+        "wordId": "frau"
+      },
+      {
+        "start": 97,
+        "end": 107,
+        "wordId": "freundlich"
+      },
+      {
+        "start": 139,
+        "end": 145,
+        "wordId": "kaffee"
+      },
+      {
+        "start": 175,
+        "end": 179,
+        "wordId": "hund"
+      },
+      {
+        "start": 197,
+        "end": 203,
+        "wordId": "garten"
+      },
+      {
+        "start": 208,
+        "end": 218,
+        "wordId": "wochenende"
+      },
+      {
+        "start": 237,
+        "end": 241,
+        "wordId": "laut"
+      },
+      {
+        "start": 252,
+        "end": 258,
+        "wordId": "kind"
+      },
+      {
+        "start": 259,
+        "end": 266,
+        "wordId": "spielen"
+      },
+      {
+        "start": 277,
+        "end": 286,
+        "wordId": "verstehen"
+      },
+      {
+        "start": 299,
+        "end": 305,
+        "wordId": "helfen"
+      }
+    ]
+  },
+  {
+    "id": "neue-arbeit-suchen",
+    "title": "Eine neue Stelle suchen",
+    "topic": "Arbeit",
+    "text": "Ich suche eine neue Arbeit, weil meine alte Firma zu weit weg ist. Heute lese ich die Anzeigen in der Zeitung und im Internet. Ein Restaurant sucht einen Koch. Ich schreibe eine E-Mail und schicke meine Papiere. Vielleicht bekomme ich bald ein Gespräch. Ich hoffe, die neue Stelle ist interessant und ich verdiene genug Geld.",
+    "wordIds": [
+      "anzeige",
+      "arbeit",
+      "bekommen",
+      "firma",
+      "gespraech",
+      "interessant",
+      "internet",
+      "koch",
+      "lesen",
+      "schicken",
+      "suchen",
+      "verdienen",
+      "weit",
+      "zeitung"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 9,
+        "wordId": "suchen"
+      },
+      {
+        "start": 20,
+        "end": 26,
+        "wordId": "arbeit"
+      },
+      {
+        "start": 44,
+        "end": 49,
+        "wordId": "firma"
+      },
+      {
+        "start": 53,
+        "end": 57,
+        "wordId": "weit"
+      },
+      {
+        "start": 73,
+        "end": 77,
+        "wordId": "lesen"
+      },
+      {
+        "start": 86,
+        "end": 94,
+        "wordId": "anzeige"
+      },
+      {
+        "start": 102,
+        "end": 109,
+        "wordId": "zeitung"
+      },
+      {
+        "start": 117,
+        "end": 125,
+        "wordId": "internet"
+      },
+      {
+        "start": 154,
+        "end": 158,
+        "wordId": "koch"
+      },
+      {
+        "start": 189,
+        "end": 196,
+        "wordId": "schicken"
+      },
+      {
+        "start": 223,
+        "end": 230,
+        "wordId": "bekommen"
+      },
+      {
+        "start": 244,
+        "end": 252,
+        "wordId": "gespraech"
+      },
+      {
+        "start": 285,
+        "end": 296,
+        "wordId": "interessant"
+      },
+      {
+        "start": 305,
+        "end": 313,
+        "wordId": "verdienen"
+      }
+    ]
+  },
+  {
+    "id": "neue-wohnung-umzug",
+    "title": "Der Umzug",
+    "topic": "Wohnen",
+    "text": "Nächste Woche ziehen wir in eine neue Wohnung um. Die Wohnung ist größer und hat einen schönen Balkon. Meine Freunde helfen mir und wir tragen die Möbel zusammen. Der Tisch und das Bett sind sehr schwer. Im neuen Wohnzimmer stellen wir das Sofa ans Fenster. Danach essen wir zusammen Pizza. Ich freue mich auf das neue Zuhause.",
+    "wordIds": [
+      "balkon",
+      "bett",
+      "fenster",
+      "freuen",
+      "freund",
+      "helfen",
+      "moebel",
+      "naechste",
+      "schwer",
+      "sofa",
+      "stellen",
+      "tisch",
+      "tragen",
+      "woche",
+      "wohnung",
+      "wohnzimmer"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 7,
+        "wordId": "naechste"
+      },
+      {
+        "start": 8,
+        "end": 13,
+        "wordId": "woche"
+      },
+      {
+        "start": 38,
+        "end": 45,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 54,
+        "end": 61,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 95,
+        "end": 101,
+        "wordId": "balkon"
+      },
+      {
+        "start": 109,
+        "end": 116,
+        "wordId": "freund"
+      },
+      {
+        "start": 117,
+        "end": 123,
+        "wordId": "helfen"
+      },
+      {
+        "start": 136,
+        "end": 142,
+        "wordId": "tragen"
+      },
+      {
+        "start": 147,
+        "end": 152,
+        "wordId": "moebel"
+      },
+      {
+        "start": 167,
+        "end": 172,
+        "wordId": "tisch"
+      },
+      {
+        "start": 181,
+        "end": 185,
+        "wordId": "bett"
+      },
+      {
+        "start": 196,
+        "end": 202,
+        "wordId": "schwer"
+      },
+      {
+        "start": 213,
+        "end": 223,
+        "wordId": "wohnzimmer"
+      },
+      {
+        "start": 224,
+        "end": 231,
+        "wordId": "stellen"
+      },
+      {
+        "start": 240,
+        "end": 244,
+        "wordId": "sofa"
+      },
+      {
+        "start": 249,
+        "end": 256,
+        "wordId": "fenster"
+      },
+      {
+        "start": 295,
+        "end": 300,
+        "wordId": "freuen"
+      }
+    ]
+  },
+  {
+    "id": "obst-gemuese",
+    "title": "Obst und Gemüse",
+    "topic": "Essen",
+    "text": "Ich esse jeden Tag Obst und Gemüse, weil es gesund ist. Am Morgen esse ich einen Apfel oder eine Banane. Zum Mittagessen mag ich Salat mit Tomaten und Gurken. Im Sommer sind Erdbeeren und Kirschen sehr lecker. Mein Sohn isst nicht gern Gemüse, aber Obst mag er. Frisches Obst kaufe ich auf dem Markt.",
+    "wordIds": [
+      "apfel",
+      "banane",
+      "erdbeere",
+      "essen",
+      "gemuese",
+      "kirsche",
+      "lecker",
+      "markt",
+      "mittagessen",
+      "obst",
+      "salat",
+      "sohn",
+      "sommer",
+      "tomate"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 8,
+        "wordId": "essen"
+      },
+      {
+        "start": 19,
+        "end": 23,
+        "wordId": "obst"
+      },
+      {
+        "start": 28,
+        "end": 34,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 66,
+        "end": 70,
+        "wordId": "essen"
+      },
+      {
+        "start": 81,
+        "end": 86,
+        "wordId": "apfel"
+      },
+      {
+        "start": 97,
+        "end": 103,
+        "wordId": "banane"
+      },
+      {
+        "start": 109,
+        "end": 120,
+        "wordId": "mittagessen"
+      },
+      {
+        "start": 129,
+        "end": 134,
+        "wordId": "salat"
+      },
+      {
+        "start": 139,
+        "end": 146,
+        "wordId": "tomate"
+      },
+      {
+        "start": 162,
+        "end": 168,
+        "wordId": "sommer"
+      },
+      {
+        "start": 174,
+        "end": 183,
+        "wordId": "erdbeere"
+      },
+      {
+        "start": 188,
+        "end": 196,
+        "wordId": "kirsche"
+      },
+      {
+        "start": 202,
+        "end": 208,
+        "wordId": "lecker"
+      },
+      {
+        "start": 215,
+        "end": 219,
+        "wordId": "sohn"
+      },
+      {
+        "start": 236,
+        "end": 242,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 249,
+        "end": 253,
+        "wordId": "obst"
+      },
+      {
+        "start": 271,
+        "end": 275,
+        "wordId": "obst"
+      },
+      {
+        "start": 294,
+        "end": 299,
+        "wordId": "markt"
+      }
+    ]
+  },
+  {
+    "id": "restaurant",
+    "title": "Im Restaurant",
+    "topic": "Essen",
+    "text": "Am Abend gehen wir in ein Restaurant. Der Kellner bringt die Karte. Ich nehme eine Suppe und einen Salat. Mein Freund bestellt Fisch mit Reis. Wir trinken Wasser und ein Glas Wein. Das Essen schmeckt sehr gut. Am Ende bezahlen wir und geben ein Trinkgeld. Der Nachtisch war ein Eis.",
+    "wordIds": [
+      "abend",
+      "bezahlen",
+      "bringen",
+      "eis",
+      "fisch",
+      "freund",
+      "glas",
+      "karte",
+      "kellner",
+      "reis",
+      "restaurant",
+      "salat",
+      "schmecken",
+      "suppe",
+      "wasser",
+      "wein"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 8,
+        "wordId": "abend"
+      },
+      {
+        "start": 26,
+        "end": 36,
+        "wordId": "restaurant"
+      },
+      {
+        "start": 42,
+        "end": 49,
+        "wordId": "kellner"
+      },
+      {
+        "start": 50,
+        "end": 56,
+        "wordId": "bringen"
+      },
+      {
+        "start": 61,
+        "end": 66,
+        "wordId": "karte"
+      },
+      {
+        "start": 83,
+        "end": 88,
+        "wordId": "suppe"
+      },
+      {
+        "start": 99,
+        "end": 104,
+        "wordId": "salat"
+      },
+      {
+        "start": 111,
+        "end": 117,
+        "wordId": "freund"
+      },
+      {
+        "start": 127,
+        "end": 132,
+        "wordId": "fisch"
+      },
+      {
+        "start": 137,
+        "end": 141,
+        "wordId": "reis"
+      },
+      {
+        "start": 155,
+        "end": 161,
+        "wordId": "wasser"
+      },
+      {
+        "start": 170,
+        "end": 174,
+        "wordId": "glas"
+      },
+      {
+        "start": 175,
+        "end": 179,
+        "wordId": "wein"
+      },
+      {
+        "start": 191,
+        "end": 199,
+        "wordId": "schmecken"
+      },
+      {
+        "start": 218,
+        "end": 226,
+        "wordId": "bezahlen"
+      },
+      {
+        "start": 278,
+        "end": 281,
+        "wordId": "eis"
+      }
+    ]
+  },
+  {
+    "id": "sprachkurs",
+    "title": "Im Deutschkurs",
+    "topic": "Schule",
+    "text": "Ich besuche einen Deutschkurs in der Sprachschule. Wir sind zwölf Kursteilnehmer aus vielen Ländern. Die Lehrerin erklärt die Grammatik und wir machen Übungen. Wir lesen einen Text und schreiben neue Wörter in das Heft. Manchmal sprechen wir in Gruppen. Die Hausaufgaben sind nicht schwer. Ich lerne jeden Tag neue Wörter.",
+    "wordIds": [
+      "besuchen",
+      "deutschkurs",
+      "erklaeren",
+      "grammatik",
+      "gruppe",
+      "hausaufgabe",
+      "heft",
+      "kursteilnehmer",
+      "land",
+      "lehrerin",
+      "lesen",
+      "sprachschule",
+      "sprechen",
+      "text",
+      "uebung",
+      "wort"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 11,
+        "wordId": "besuchen"
+      },
+      {
+        "start": 18,
+        "end": 29,
+        "wordId": "deutschkurs"
+      },
+      {
+        "start": 37,
+        "end": 49,
+        "wordId": "sprachschule"
+      },
+      {
+        "start": 66,
+        "end": 80,
+        "wordId": "kursteilnehmer"
+      },
+      {
+        "start": 92,
+        "end": 99,
+        "wordId": "land"
+      },
+      {
+        "start": 105,
+        "end": 113,
+        "wordId": "lehrerin"
+      },
+      {
+        "start": 114,
+        "end": 121,
+        "wordId": "erklaeren"
+      },
+      {
+        "start": 126,
+        "end": 135,
+        "wordId": "grammatik"
+      },
+      {
+        "start": 151,
+        "end": 158,
+        "wordId": "uebung"
+      },
+      {
+        "start": 164,
+        "end": 169,
+        "wordId": "lesen"
+      },
+      {
+        "start": 176,
+        "end": 180,
+        "wordId": "text"
+      },
+      {
+        "start": 200,
+        "end": 206,
+        "wordId": "wort"
+      },
+      {
+        "start": 214,
+        "end": 218,
+        "wordId": "heft"
+      },
+      {
+        "start": 229,
+        "end": 237,
+        "wordId": "sprechen"
+      },
+      {
+        "start": 245,
+        "end": 252,
+        "wordId": "gruppe"
+      },
+      {
+        "start": 258,
+        "end": 270,
+        "wordId": "hausaufgabe"
+      },
+      {
+        "start": 315,
+        "end": 321,
+        "wordId": "wort"
+      }
+    ]
+  },
+  {
+    "id": "stadt-besuch",
+    "title": "Ein Tag in der Stadt",
+    "topic": "Reisen",
+    "text": "Am Sonntag fahren wir in die Stadt. Zuerst besuchen wir das Museum und sehen alte Bilder. Dann gehen wir über den Marktplatz und schauen die Kirche an. Mittags essen wir in einem Restaurant. Am Nachmittag gehen wir in den Park und machen Fotos. Die Stadt ist sehr schön und es gibt viel zu sehen. Am Abend fahren wir wieder nach Hause.",
+    "wordIds": [
+      "abend",
+      "besuchen",
+      "bild",
+      "fahren",
+      "foto",
+      "kirche",
+      "marktplatz",
+      "nachmittag",
+      "park",
+      "restaurant",
+      "schoen",
+      "sehen",
+      "sonntag",
+      "stadt"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "sonntag"
+      },
+      {
+        "start": 11,
+        "end": 17,
+        "wordId": "fahren"
+      },
+      {
+        "start": 29,
+        "end": 34,
+        "wordId": "stadt"
+      },
+      {
+        "start": 43,
+        "end": 51,
+        "wordId": "besuchen"
+      },
+      {
+        "start": 71,
+        "end": 76,
+        "wordId": "sehen"
+      },
+      {
+        "start": 82,
+        "end": 88,
+        "wordId": "bild"
+      },
+      {
+        "start": 114,
+        "end": 124,
+        "wordId": "marktplatz"
+      },
+      {
+        "start": 141,
+        "end": 147,
+        "wordId": "kirche"
+      },
+      {
+        "start": 179,
+        "end": 189,
+        "wordId": "restaurant"
+      },
+      {
+        "start": 194,
+        "end": 204,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 222,
+        "end": 226,
+        "wordId": "park"
+      },
+      {
+        "start": 238,
+        "end": 243,
+        "wordId": "foto"
+      },
+      {
+        "start": 249,
+        "end": 254,
+        "wordId": "stadt"
+      },
+      {
+        "start": 264,
+        "end": 269,
+        "wordId": "schoen"
+      },
+      {
+        "start": 290,
+        "end": 295,
+        "wordId": "sehen"
+      },
+      {
+        "start": 300,
+        "end": 305,
+        "wordId": "abend"
+      },
+      {
+        "start": 306,
+        "end": 312,
+        "wordId": "fahren"
+      }
+    ]
+  },
+  {
+    "id": "supermarkt-liste",
+    "title": "Der Einkaufszettel",
+    "topic": "Einkaufen",
+    "text": "Bevor ich einkaufen gehe, schreibe ich einen Einkaufszettel. Heute brauche ich Mehl, Zucker, Butter und Eier für einen Kuchen. Ich brauche auch Reis, Nudeln und eine Dose Tomaten. Im Supermarkt nehme ich einen Wagen. Das Mehl finde ich nicht und frage eine Verkäuferin. An der Kasse bezahle ich dreißig Euro.",
+    "wordIds": [
+      "bezahlen",
+      "brauchen",
+      "dose",
+      "ei",
+      "einkaufen",
+      "einkaufszettel",
+      "kasse",
+      "kuchen",
+      "mehl",
+      "nudel",
+      "reis",
+      "schreiben",
+      "supermarkt",
+      "verkaeuferin",
+      "zucker"
+    ],
+    "spans": [
+      {
+        "start": 10,
+        "end": 19,
+        "wordId": "einkaufen"
+      },
+      {
+        "start": 26,
+        "end": 34,
+        "wordId": "schreiben"
+      },
+      {
+        "start": 45,
+        "end": 59,
+        "wordId": "einkaufszettel"
+      },
+      {
+        "start": 67,
+        "end": 74,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 79,
+        "end": 83,
+        "wordId": "mehl"
+      },
+      {
+        "start": 85,
+        "end": 91,
+        "wordId": "zucker"
+      },
+      {
+        "start": 104,
+        "end": 108,
+        "wordId": "ei"
+      },
+      {
+        "start": 119,
+        "end": 125,
+        "wordId": "kuchen"
+      },
+      {
+        "start": 131,
+        "end": 138,
+        "wordId": "brauchen"
+      },
+      {
+        "start": 144,
+        "end": 148,
+        "wordId": "reis"
+      },
+      {
+        "start": 150,
+        "end": 156,
+        "wordId": "nudel"
+      },
+      {
+        "start": 166,
+        "end": 170,
+        "wordId": "dose"
+      },
+      {
+        "start": 183,
+        "end": 193,
+        "wordId": "supermarkt"
+      },
+      {
+        "start": 221,
+        "end": 225,
+        "wordId": "mehl"
+      },
+      {
+        "start": 257,
+        "end": 268,
+        "wordId": "verkaeuferin"
+      },
+      {
+        "start": 277,
+        "end": 282,
+        "wordId": "kasse"
+      },
+      {
+        "start": 283,
+        "end": 290,
+        "wordId": "bezahlen"
+      }
+    ]
+  },
+  {
+    "id": "tagesablauf",
+    "title": "Mein Tag",
+    "topic": "Alltag",
+    "text": "Ich stehe jeden Morgen um sechs Uhr auf. Zuerst frühstücke ich und trinke einen Kaffee. Dann fahre ich mit dem Bus zur Arbeit. Mittags mache ich eine Pause und esse in der Kantine. Am Nachmittag arbeite ich am Computer. Abends koche ich zu Hause und sehe fern. Um elf Uhr gehe ich ins Bett.",
+    "wordIds": [
+      "arbeit",
+      "aufstehen",
+      "bett",
+      "bus",
+      "computer",
+      "fahren",
+      "fernsehen",
+      "fruehstuecken",
+      "kaffee",
+      "kantine",
+      "kochen",
+      "morgen",
+      "pause",
+      "uhr"
+    ],
+    "spans": [
+      {
+        "start": 16,
+        "end": 22,
+        "wordId": "morgen"
+      },
+      {
+        "start": 32,
+        "end": 35,
+        "wordId": "uhr"
+      },
+      {
+        "start": 36,
+        "end": 39,
+        "wordId": "aufstehen"
+      },
+      {
+        "start": 48,
+        "end": 58,
+        "wordId": "fruehstuecken"
+      },
+      {
+        "start": 80,
+        "end": 86,
+        "wordId": "kaffee"
+      },
+      {
+        "start": 93,
+        "end": 98,
+        "wordId": "fahren"
+      },
+      {
+        "start": 111,
+        "end": 114,
+        "wordId": "bus"
+      },
+      {
+        "start": 119,
+        "end": 125,
+        "wordId": "arbeit"
+      },
+      {
+        "start": 150,
+        "end": 155,
+        "wordId": "pause"
+      },
+      {
+        "start": 172,
+        "end": 179,
+        "wordId": "kantine"
+      },
+      {
+        "start": 210,
+        "end": 218,
+        "wordId": "computer"
+      },
+      {
+        "start": 227,
+        "end": 232,
+        "wordId": "kochen"
+      },
+      {
+        "start": 255,
+        "end": 259,
+        "wordId": "fernsehen"
+      },
+      {
+        "start": 268,
+        "end": 271,
+        "wordId": "uhr"
+      },
+      {
+        "start": 285,
+        "end": 289,
+        "wordId": "bett"
+      }
+    ]
+  },
+  {
+    "id": "telefon-nachricht",
+    "title": "Eine Nachricht am Telefon",
+    "topic": "Kommunikation",
+    "text": "Guten Tag, hier ist Frau Meyer. Ich rufe an, weil ich morgen nicht kommen kann. Mein Kind ist krank und ich muss zu Hause bleiben. Bitte rufen Sie mich zurück. Meine Handynummer ist null eins sieben drei. Es ist dringend. Vielen Dank und auf Wiederhören.",
+    "wordIds": [
+      "anrufen",
+      "bleiben",
+      "dank",
+      "dringend",
+      "frau",
+      "handynummer",
+      "kind",
+      "kommen",
+      "krank",
+      "muessen",
+      "tag",
+      "wiederhoeren"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 9,
+        "wordId": "tag"
+      },
+      {
+        "start": 20,
+        "end": 24,
+        "wordId": "frau"
+      },
+      {
+        "start": 36,
+        "end": 40,
+        "wordId": "anrufen"
+      },
+      {
+        "start": 67,
+        "end": 73,
+        "wordId": "kommen"
+      },
+      {
+        "start": 85,
+        "end": 89,
+        "wordId": "kind"
+      },
+      {
+        "start": 94,
+        "end": 99,
+        "wordId": "krank"
+      },
+      {
+        "start": 108,
+        "end": 112,
+        "wordId": "muessen"
+      },
+      {
+        "start": 122,
+        "end": 129,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 166,
+        "end": 177,
+        "wordId": "handynummer"
+      },
+      {
+        "start": 212,
+        "end": 220,
+        "wordId": "dringend"
+      },
+      {
+        "start": 229,
+        "end": 233,
+        "wordId": "dank"
+      },
+      {
+        "start": 242,
+        "end": 253,
+        "wordId": "wiederhoeren"
+      }
+    ]
+  },
+  {
+    "id": "termin-praxis",
+    "title": "Einen Termin machen",
+    "topic": "Gesundheit",
+    "text": "Guten Tag, hier ist die Praxis Dr. Wagner. Ich möchte einen Termin machen. Haben Sie am Dienstag Zeit? Am Vormittag ist die Sprechstunde leider voll. Am Nachmittag um drei Uhr ist noch ein Termin frei. Bitte bringen Sie Ihre Gesundheitskarte mit. Wie ist Ihr Name und Ihre Telefonnummer?",
+    "wordIds": [
+      "bringen",
+      "dienstag",
+      "frei",
+      "gesundheitskarte",
+      "nachmittag",
+      "name",
+      "praxis",
+      "sprechstunde",
+      "tag",
+      "telefonnummer",
+      "termin",
+      "voll",
+      "vormittag",
+      "zeit"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 9,
+        "wordId": "tag"
+      },
+      {
+        "start": 24,
+        "end": 30,
+        "wordId": "praxis"
+      },
+      {
+        "start": 60,
+        "end": 66,
+        "wordId": "termin"
+      },
+      {
+        "start": 88,
+        "end": 96,
+        "wordId": "dienstag"
+      },
+      {
+        "start": 97,
+        "end": 101,
+        "wordId": "zeit"
+      },
+      {
+        "start": 106,
+        "end": 115,
+        "wordId": "vormittag"
+      },
+      {
+        "start": 124,
+        "end": 136,
+        "wordId": "sprechstunde"
+      },
+      {
+        "start": 144,
+        "end": 148,
+        "wordId": "voll"
+      },
+      {
+        "start": 153,
+        "end": 163,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 189,
+        "end": 195,
+        "wordId": "termin"
+      },
+      {
+        "start": 196,
+        "end": 200,
+        "wordId": "frei"
+      },
+      {
+        "start": 208,
+        "end": 215,
+        "wordId": "bringen"
+      },
+      {
+        "start": 225,
+        "end": 241,
+        "wordId": "gesundheitskarte"
+      },
+      {
+        "start": 259,
+        "end": 263,
+        "wordId": "name"
+      },
+      {
+        "start": 273,
+        "end": 286,
+        "wordId": "telefonnummer"
+      }
+    ]
+  },
+  {
+    "id": "uhrzeit-tag",
+    "title": "Wie spät ist es?",
+    "topic": "Alltag",
+    "text": "Wie spät ist es? Es ist jetzt halb neun. Am Morgen stehe ich früh auf. Um Viertel nach acht fahre ich zur Arbeit. Mittags um zwölf Uhr esse ich. Am Nachmittag habe ich um drei Uhr einen Termin. Abends bin ich meistens um sechs Uhr wieder zu Hause. Ich bin fast immer pünktlich.",
+    "wordIds": [
+      "arbeit",
+      "frueh",
+      "halb",
+      "immer",
+      "meistens",
+      "morgen",
+      "nachmittag",
+      "puenktlich",
+      "spaet",
+      "termin",
+      "uhr",
+      "viertel"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 8,
+        "wordId": "spaet"
+      },
+      {
+        "start": 30,
+        "end": 34,
+        "wordId": "halb"
+      },
+      {
+        "start": 44,
+        "end": 50,
+        "wordId": "morgen"
+      },
+      {
+        "start": 61,
+        "end": 65,
+        "wordId": "frueh"
+      },
+      {
+        "start": 74,
+        "end": 81,
+        "wordId": "viertel"
+      },
+      {
+        "start": 106,
+        "end": 112,
+        "wordId": "arbeit"
+      },
+      {
+        "start": 131,
+        "end": 134,
+        "wordId": "uhr"
+      },
+      {
+        "start": 148,
+        "end": 158,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 176,
+        "end": 179,
+        "wordId": "uhr"
+      },
+      {
+        "start": 186,
+        "end": 192,
+        "wordId": "termin"
+      },
+      {
+        "start": 209,
+        "end": 217,
+        "wordId": "meistens"
+      },
+      {
+        "start": 227,
+        "end": 230,
+        "wordId": "uhr"
+      },
+      {
+        "start": 261,
+        "end": 266,
+        "wordId": "immer"
+      },
+      {
+        "start": 267,
+        "end": 276,
+        "wordId": "puenktlich"
+      }
+    ]
+  },
+  {
+    "id": "urlaub-postkarte",
+    "title": "Grüße aus dem Urlaub",
+    "topic": "Reisen",
+    "text": "Liebe Oma,\n\nwir sind jetzt im Urlaub am Meer. Das Hotel ist sehr schön und das Wetter ist toll. Jeden Tag schwimmen wir und liegen am Strand. Gestern haben wir eine Insel mit dem Schiff besucht. Das Essen hier ist lecker. Morgen machen wir einen Ausflug in die Berge. Wir kommen am Sonntag wieder nach Hause.\n\nViele Grüße",
+    "wordIds": [
+      "ausflug",
+      "besuchen",
+      "gestern",
+      "hotel",
+      "insel",
+      "lecker",
+      "liebe-lieber",
+      "meer",
+      "oma",
+      "schiff",
+      "schoen",
+      "schwimmen",
+      "sonntag",
+      "strand",
+      "urlaub",
+      "wetter"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 5,
+        "wordId": "liebe-lieber"
+      },
+      {
+        "start": 6,
+        "end": 9,
+        "wordId": "oma"
+      },
+      {
+        "start": 30,
+        "end": 36,
+        "wordId": "urlaub"
+      },
+      {
+        "start": 40,
+        "end": 44,
+        "wordId": "meer"
+      },
+      {
+        "start": 50,
+        "end": 55,
+        "wordId": "hotel"
+      },
+      {
+        "start": 65,
+        "end": 70,
+        "wordId": "schoen"
+      },
+      {
+        "start": 79,
+        "end": 85,
+        "wordId": "wetter"
+      },
+      {
+        "start": 106,
+        "end": 115,
+        "wordId": "schwimmen"
+      },
+      {
+        "start": 134,
+        "end": 140,
+        "wordId": "strand"
+      },
+      {
+        "start": 142,
+        "end": 149,
+        "wordId": "gestern"
+      },
+      {
+        "start": 165,
+        "end": 170,
+        "wordId": "insel"
+      },
+      {
+        "start": 179,
+        "end": 185,
+        "wordId": "schiff"
+      },
+      {
+        "start": 186,
+        "end": 193,
+        "wordId": "besuchen"
+      },
+      {
+        "start": 214,
+        "end": 220,
+        "wordId": "lecker"
+      },
+      {
+        "start": 246,
+        "end": 253,
+        "wordId": "ausflug"
+      },
+      {
+        "start": 282,
+        "end": 289,
+        "wordId": "sonntag"
+      }
+    ]
+  },
+  {
+    "id": "verspaetung-entschuldigung",
+    "title": "Entschuldigung für die Verspätung",
+    "topic": "E-Mail",
+    "text": "Sehr geehrter Herr Bauer,\n\nentschuldigen Sie bitte, dass ich heute zu spät komme. Mein Zug hatte eine Verspätung und ich musste lange am Bahnhof warten. Ich bin in zwanzig Minuten im Büro. Die wichtigen Papiere bringe ich mit. Es tut mir sehr leid. Ich hoffe, das ist kein großes Problem.\n\nMit freundlichen Grüßen\nKlaus Wolf",
+    "wordIds": [
+      "bahnhof",
+      "bringen",
+      "buero",
+      "entschuldigen",
+      "geehrter-geehrte",
+      "herr",
+      "hoffen",
+      "kommen",
+      "leid",
+      "minute",
+      "problem",
+      "spaet",
+      "warten",
+      "wichtig",
+      "zug"
+    ],
+    "spans": [
+      {
+        "start": 5,
+        "end": 13,
+        "wordId": "geehrter-geehrte"
+      },
+      {
+        "start": 14,
+        "end": 18,
+        "wordId": "herr"
+      },
+      {
+        "start": 27,
+        "end": 40,
+        "wordId": "entschuldigen"
+      },
+      {
+        "start": 70,
+        "end": 74,
+        "wordId": "spaet"
+      },
+      {
+        "start": 75,
+        "end": 80,
+        "wordId": "kommen"
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "wordId": "zug"
+      },
+      {
+        "start": 137,
+        "end": 144,
+        "wordId": "bahnhof"
+      },
+      {
+        "start": 145,
+        "end": 151,
+        "wordId": "warten"
+      },
+      {
+        "start": 172,
+        "end": 179,
+        "wordId": "minute"
+      },
+      {
+        "start": 183,
+        "end": 187,
+        "wordId": "buero"
+      },
+      {
+        "start": 193,
+        "end": 202,
+        "wordId": "wichtig"
+      },
+      {
+        "start": 211,
+        "end": 217,
+        "wordId": "bringen"
+      },
+      {
+        "start": 243,
+        "end": 247,
+        "wordId": "leid"
+      },
+      {
+        "start": 253,
+        "end": 258,
+        "wordId": "hoffen"
+      },
+      {
+        "start": 280,
+        "end": 287,
+        "wordId": "problem"
+      }
+    ]
+  },
+  {
+    "id": "vorstellung-neu",
+    "title": "Ich stelle mich vor",
+    "topic": "Begrüßung",
+    "text": "Hallo, ich heiße Pavel und ich komme aus Polen. Ich bin dreißig Jahre alt und ich wohne jetzt in München. Ich bin verheiratet und habe zwei Kinder. Von Beruf bin ich Mechaniker. Ich lerne Deutsch, weil ich hier arbeiten möchte. Meine Sprache ist nicht so gut, aber ich übe jeden Tag. Schön, euch kennenzulernen!",
+    "wordIds": [
+      "alt",
+      "arbeiten",
+      "beruf",
+      "hallo",
+      "heissen",
+      "jahr",
+      "kennenlernen",
+      "kind",
+      "kommen",
+      "lernen",
+      "mechaniker",
+      "sprache",
+      "ueben",
+      "verheiratet",
+      "wohnen"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 5,
+        "wordId": "hallo"
+      },
+      {
+        "start": 11,
+        "end": 16,
+        "wordId": "heissen"
+      },
+      {
+        "start": 31,
+        "end": 36,
+        "wordId": "kommen"
+      },
+      {
+        "start": 64,
+        "end": 69,
+        "wordId": "jahr"
+      },
+      {
+        "start": 70,
+        "end": 73,
+        "wordId": "alt"
+      },
+      {
+        "start": 82,
+        "end": 87,
+        "wordId": "wohnen"
+      },
+      {
+        "start": 114,
+        "end": 125,
+        "wordId": "verheiratet"
+      },
+      {
+        "start": 140,
+        "end": 146,
+        "wordId": "kind"
+      },
+      {
+        "start": 152,
+        "end": 157,
+        "wordId": "beruf"
+      },
+      {
+        "start": 166,
+        "end": 176,
+        "wordId": "mechaniker"
+      },
+      {
+        "start": 182,
+        "end": 187,
+        "wordId": "lernen"
+      },
+      {
+        "start": 211,
+        "end": 219,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 234,
+        "end": 241,
+        "wordId": "sprache"
+      },
+      {
+        "start": 269,
+        "end": 272,
+        "wordId": "ueben"
+      },
+      {
+        "start": 296,
+        "end": 310,
+        "wordId": "kennenlernen"
+      }
+    ]
+  },
+  {
+    "id": "wegbeschreibung",
+    "title": "Der Weg zur Post",
+    "topic": "Orientierung",
+    "text": "Entschuldigung, wie komme ich zur Post? Gehen Sie hier geradeaus bis zur Ampel. Dann gehen Sie nach links in die Bahnhofstraße. An der Kreuzung sehen Sie rechts eine Apotheke. Die Post ist direkt neben der Bank. Es ist nicht weit, nur fünf Minuten zu Fuß. Sie können auch mit der Straßenbahn fahren.",
+    "wordIds": [
+      "ampel",
+      "apotheke",
+      "bank",
+      "entschuldigung",
+      "fahren",
+      "geradeaus",
+      "kreuzung",
+      "links",
+      "minute",
+      "post",
+      "rechts",
+      "strassenbahn",
+      "weit",
+      "zu-fuss"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 14,
+        "wordId": "entschuldigung"
+      },
+      {
+        "start": 34,
+        "end": 38,
+        "wordId": "post"
+      },
+      {
+        "start": 55,
+        "end": 64,
+        "wordId": "geradeaus"
+      },
+      {
+        "start": 73,
+        "end": 78,
+        "wordId": "ampel"
+      },
+      {
+        "start": 100,
+        "end": 105,
+        "wordId": "links"
+      },
+      {
+        "start": 135,
+        "end": 143,
+        "wordId": "kreuzung"
+      },
+      {
+        "start": 154,
+        "end": 160,
+        "wordId": "rechts"
+      },
+      {
+        "start": 166,
+        "end": 174,
+        "wordId": "apotheke"
+      },
+      {
+        "start": 180,
+        "end": 184,
+        "wordId": "post"
+      },
+      {
+        "start": 206,
+        "end": 210,
+        "wordId": "bank"
+      },
+      {
+        "start": 225,
+        "end": 229,
+        "wordId": "weit"
+      },
+      {
+        "start": 240,
+        "end": 247,
+        "wordId": "minute"
+      },
+      {
+        "start": 248,
+        "end": 254,
+        "wordId": "zu-fuss"
+      },
+      {
+        "start": 280,
+        "end": 291,
+        "wordId": "strassenbahn"
+      },
+      {
+        "start": 292,
+        "end": 298,
+        "wordId": "fahren"
+      }
+    ]
+  },
+  {
+    "id": "weihnachten",
+    "title": "Weihnachten bei uns",
+    "topic": "Feste",
+    "text": "Weihnachten ist mein Lieblingsfest. Die ganze Familie kommt zusammen. Wir haben einen Weihnachtsbaum im Wohnzimmer. Die Kinder bekommen viele Geschenke. Meine Mutter kocht ein großes Essen und wir essen zusammen. Draußen ist es kalt und vielleicht schneit es. Wir singen Lieder und sind glücklich. Ich wünsche allen frohe Weihnachten.",
+    "wordIds": [
+      "bekommen",
+      "essen",
+      "familie",
+      "geschenk",
+      "gluecklich",
+      "kalt",
+      "kind",
+      "kochen",
+      "schneien",
+      "singen",
+      "weihnachten",
+      "weihnachtsbaum",
+      "wohnzimmer",
+      "wuenschen"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 11,
+        "wordId": "weihnachten"
+      },
+      {
+        "start": 46,
+        "end": 53,
+        "wordId": "familie"
+      },
+      {
+        "start": 86,
+        "end": 100,
+        "wordId": "weihnachtsbaum"
+      },
+      {
+        "start": 104,
+        "end": 114,
+        "wordId": "wohnzimmer"
+      },
+      {
+        "start": 120,
+        "end": 126,
+        "wordId": "kind"
+      },
+      {
+        "start": 127,
+        "end": 135,
+        "wordId": "bekommen"
+      },
+      {
+        "start": 142,
+        "end": 151,
+        "wordId": "geschenk"
+      },
+      {
+        "start": 166,
+        "end": 171,
+        "wordId": "kochen"
+      },
+      {
+        "start": 183,
+        "end": 188,
+        "wordId": "essen"
+      },
+      {
+        "start": 228,
+        "end": 232,
+        "wordId": "kalt"
+      },
+      {
+        "start": 248,
+        "end": 255,
+        "wordId": "schneien"
+      },
+      {
+        "start": 264,
+        "end": 270,
+        "wordId": "singen"
+      },
+      {
+        "start": 287,
+        "end": 296,
+        "wordId": "gluecklich"
+      },
+      {
+        "start": 302,
+        "end": 309,
+        "wordId": "wuenschen"
+      },
+      {
+        "start": 322,
+        "end": 333,
+        "wordId": "weihnachten"
+      }
+    ]
+  },
+  {
+    "id": "wetter-anruf",
+    "title": "Wie ist das Wetter bei euch?",
+    "topic": "E-Mail",
+    "text": "Liebe Tante,\n\nwie geht es dir? Bei uns ist das Wetter gerade sehr schlecht. Es regnet jeden Tag und der Himmel ist grau. Es ist auch kalt und windig. Ich hoffe, bei euch im Süden scheint die Sonne. Nächste Woche kommen wir euch besuchen. Hoffentlich wird das Wetter dann besser.\n\nLiebe Grüße\nNina",
+    "wordIds": [
+      "besser",
+      "besuchen",
+      "gehen",
+      "grau",
+      "hoffen",
+      "kalt",
+      "liebe-lieber",
+      "regnen",
+      "scheinen",
+      "schlecht",
+      "sonne",
+      "sueden",
+      "wetter",
+      "woche"
+    ],
+    "spans": [
+      {
+        "start": 0,
+        "end": 5,
+        "wordId": "liebe-lieber"
+      },
+      {
+        "start": 18,
+        "end": 22,
+        "wordId": "gehen"
+      },
+      {
+        "start": 47,
+        "end": 53,
+        "wordId": "wetter"
+      },
+      {
+        "start": 66,
+        "end": 74,
+        "wordId": "schlecht"
+      },
+      {
+        "start": 79,
+        "end": 85,
+        "wordId": "regnen"
+      },
+      {
+        "start": 115,
+        "end": 119,
+        "wordId": "grau"
+      },
+      {
+        "start": 133,
+        "end": 137,
+        "wordId": "kalt"
+      },
+      {
+        "start": 154,
+        "end": 159,
+        "wordId": "hoffen"
+      },
+      {
+        "start": 173,
+        "end": 178,
+        "wordId": "sueden"
+      },
+      {
+        "start": 179,
+        "end": 186,
+        "wordId": "scheinen"
+      },
+      {
+        "start": 191,
+        "end": 196,
+        "wordId": "sonne"
+      },
+      {
+        "start": 206,
+        "end": 211,
+        "wordId": "woche"
+      },
+      {
+        "start": 228,
+        "end": 236,
+        "wordId": "besuchen"
+      },
+      {
+        "start": 259,
+        "end": 265,
+        "wordId": "wetter"
+      },
+      {
+        "start": 271,
+        "end": 277,
+        "wordId": "besser"
+      },
+      {
+        "start": 280,
+        "end": 285,
+        "wordId": "liebe-lieber"
+      }
+    ]
+  },
+  {
+    "id": "wetterbericht",
+    "title": "Das Wetter heute",
+    "topic": "Wetter",
+    "text": "Guten Morgen! Hier ist der Wetterbericht. Heute ist es im Norden kalt und es regnet. Im Süden scheint die Sonne und es ist warm. Am Nachmittag kommt Wind und am Abend schneit es in den Bergen. Morgen wird das Wetter besser. Es bleibt trocken und die Temperatur steigt.",
+    "wordIds": [
+      "abend",
+      "besser",
+      "bleiben",
+      "kalt",
+      "morgen",
+      "nachmittag",
+      "norden",
+      "regnen",
+      "scheinen",
+      "schneien",
+      "sonne",
+      "sueden",
+      "trocken",
+      "warm",
+      "wetter",
+      "wetterbericht"
+    ],
+    "spans": [
+      {
+        "start": 6,
+        "end": 12,
+        "wordId": "morgen"
+      },
+      {
+        "start": 27,
+        "end": 40,
+        "wordId": "wetterbericht"
+      },
+      {
+        "start": 58,
+        "end": 64,
+        "wordId": "norden"
+      },
+      {
+        "start": 65,
+        "end": 69,
+        "wordId": "kalt"
+      },
+      {
+        "start": 77,
+        "end": 83,
+        "wordId": "regnen"
+      },
+      {
+        "start": 88,
+        "end": 93,
+        "wordId": "sueden"
+      },
+      {
+        "start": 94,
+        "end": 101,
+        "wordId": "scheinen"
+      },
+      {
+        "start": 106,
+        "end": 111,
+        "wordId": "sonne"
+      },
+      {
+        "start": 123,
+        "end": 127,
+        "wordId": "warm"
+      },
+      {
+        "start": 132,
+        "end": 142,
+        "wordId": "nachmittag"
+      },
+      {
+        "start": 161,
+        "end": 166,
+        "wordId": "abend"
+      },
+      {
+        "start": 167,
+        "end": 174,
+        "wordId": "schneien"
+      },
+      {
+        "start": 193,
+        "end": 199,
+        "wordId": "morgen"
+      },
+      {
+        "start": 209,
+        "end": 215,
+        "wordId": "wetter"
+      },
+      {
+        "start": 216,
+        "end": 222,
+        "wordId": "besser"
+      },
+      {
+        "start": 227,
+        "end": 233,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 234,
+        "end": 241,
+        "wordId": "trocken"
+      }
+    ]
+  },
+  {
+    "id": "winterurlaub",
+    "title": "Urlaub im Winter",
+    "topic": "Reisen",
+    "text": "Im Winter machen wir Urlaub in den Bergen. Dort liegt viel Schnee und es ist sehr kalt. Wir fahren Ski und bauen einen Schneemann. Am Abend sind wir müde und trinken einen heißen Kakao. Das Ferienhaus ist klein, aber warm und gemütlich. Wir bleiben eine Woche und kommen dann wieder nach Hause.",
+    "wordIds": [
+      "abend",
+      "bleiben",
+      "ferienhaus",
+      "gemuetlich",
+      "heiss",
+      "kakao",
+      "kalt",
+      "muede",
+      "schnee",
+      "schneemann",
+      "ski",
+      "urlaub",
+      "winter",
+      "woche"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 9,
+        "wordId": "winter"
+      },
+      {
+        "start": 21,
+        "end": 27,
+        "wordId": "urlaub"
+      },
+      {
+        "start": 59,
+        "end": 65,
+        "wordId": "schnee"
+      },
+      {
+        "start": 82,
+        "end": 86,
+        "wordId": "kalt"
+      },
+      {
+        "start": 99,
+        "end": 102,
+        "wordId": "ski"
+      },
+      {
+        "start": 119,
+        "end": 129,
+        "wordId": "schneemann"
+      },
+      {
+        "start": 134,
+        "end": 139,
+        "wordId": "abend"
+      },
+      {
+        "start": 149,
+        "end": 153,
+        "wordId": "muede"
+      },
+      {
+        "start": 172,
+        "end": 178,
+        "wordId": "heiss"
+      },
+      {
+        "start": 179,
+        "end": 184,
+        "wordId": "kakao"
+      },
+      {
+        "start": 190,
+        "end": 200,
+        "wordId": "ferienhaus"
+      },
+      {
+        "start": 226,
+        "end": 235,
+        "wordId": "gemuetlich"
+      },
+      {
+        "start": 241,
+        "end": 248,
+        "wordId": "bleiben"
+      },
+      {
+        "start": 254,
+        "end": 259,
+        "wordId": "woche"
+      }
+    ]
+  },
+  {
+    "id": "wochenende-plan",
+    "title": "Am Wochenende",
+    "topic": "Freizeit",
+    "text": "Am Wochenende habe ich viel Zeit. Am Samstag schlafe ich lange und dann gehe ich einkaufen. Am Nachmittag treffe ich meine Freunde im Café. Wir trinken Kaffee und reden zusammen. Am Sonntag machen wir einen Spaziergang im Park. Das Wetter ist schön und die Sonne scheint. Abends koche ich für meine Familie.",
+    "wordIds": [
+      "caf",
+      "einkaufen",
+      "freund",
+      "kochen",
+      "park",
+      "reden",
+      "samstag",
+      "scheinen",
+      "schlafen",
+      "sonne",
+      "sonntag",
+      "treffen",
+      "wetter",
+      "wochenende",
+      "zeit"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 13,
+        "wordId": "wochenende"
+      },
+      {
+        "start": 28,
+        "end": 32,
+        "wordId": "zeit"
+      },
+      {
+        "start": 37,
+        "end": 44,
+        "wordId": "samstag"
+      },
+      {
+        "start": 45,
+        "end": 52,
+        "wordId": "schlafen"
+      },
+      {
+        "start": 81,
+        "end": 90,
+        "wordId": "einkaufen"
+      },
+      {
+        "start": 106,
+        "end": 112,
+        "wordId": "treffen"
+      },
+      {
+        "start": 123,
+        "end": 130,
+        "wordId": "freund"
+      },
+      {
+        "start": 134,
+        "end": 138,
+        "wordId": "caf"
+      },
+      {
+        "start": 163,
+        "end": 168,
+        "wordId": "reden"
+      },
+      {
+        "start": 182,
+        "end": 189,
+        "wordId": "sonntag"
+      },
+      {
+        "start": 222,
+        "end": 226,
+        "wordId": "park"
+      },
+      {
+        "start": 232,
+        "end": 238,
+        "wordId": "wetter"
+      },
+      {
+        "start": 257,
+        "end": 262,
+        "wordId": "sonne"
+      },
+      {
+        "start": 263,
+        "end": 270,
+        "wordId": "scheinen"
+      },
+      {
+        "start": 279,
+        "end": 284,
+        "wordId": "kochen"
+      }
+    ]
+  },
+  {
+    "id": "wochenmarkt",
+    "title": "Auf dem Wochenmarkt",
+    "topic": "Einkaufen",
+    "text": "Am Samstag kaufe ich auf dem Wochenmarkt ein. Das Obst und das Gemüse sind hier frisch. Ich nehme Tomaten, eine Paprika und Kartoffeln. Der Verkäufer ist sehr freundlich. Ein Kilo Erdbeeren kostet drei Euro. Das ist nicht teuer.",
+    "wordIds": [
+      "erdbeere",
+      "euro",
+      "freundlich",
+      "frisch",
+      "gemuese",
+      "kartoffel",
+      "kaufen",
+      "kilo",
+      "kosten",
+      "obst",
+      "paprika",
+      "samstag",
+      "teuer",
+      "tomate",
+      "verkaeufer",
+      "wochenmarkt"
+    ],
+    "spans": [
+      {
+        "start": 3,
+        "end": 10,
+        "wordId": "samstag"
+      },
+      {
+        "start": 11,
+        "end": 16,
+        "wordId": "kaufen"
+      },
+      {
+        "start": 29,
+        "end": 40,
+        "wordId": "wochenmarkt"
+      },
+      {
+        "start": 50,
+        "end": 54,
+        "wordId": "obst"
+      },
+      {
+        "start": 63,
+        "end": 69,
+        "wordId": "gemuese"
+      },
+      {
+        "start": 80,
+        "end": 86,
+        "wordId": "frisch"
+      },
+      {
+        "start": 98,
+        "end": 105,
+        "wordId": "tomate"
+      },
+      {
+        "start": 112,
+        "end": 119,
+        "wordId": "paprika"
+      },
+      {
+        "start": 124,
+        "end": 134,
+        "wordId": "kartoffel"
+      },
+      {
+        "start": 140,
+        "end": 149,
+        "wordId": "verkaeufer"
+      },
+      {
+        "start": 159,
+        "end": 169,
+        "wordId": "freundlich"
+      },
+      {
+        "start": 175,
+        "end": 179,
+        "wordId": "kilo"
+      },
+      {
+        "start": 180,
+        "end": 189,
+        "wordId": "erdbeere"
+      },
+      {
+        "start": 190,
+        "end": 196,
+        "wordId": "kosten"
+      },
+      {
+        "start": 202,
+        "end": 206,
+        "wordId": "euro"
+      },
+      {
+        "start": 222,
+        "end": 227,
+        "wordId": "teuer"
+      }
+    ]
+  },
+  {
+    "id": "wochentage",
+    "title": "Meine Woche",
+    "topic": "Alltag",
+    "text": "Die Woche hat sieben Tage. Von Montag bis Freitag arbeite ich. Am Dienstag habe ich abends einen Deutschkurs. Am Mittwoch gehe ich nach der Arbeit zum Sport. Am Donnerstag kaufe ich ein. Am Samstag und Sonntag habe ich frei. Dann schlafe ich lange und mache einen Ausflug mit der Familie.",
+    "wordIds": [
+      "arbeiten",
+      "ausflug",
+      "dienstag",
+      "donnerstag",
+      "frei",
+      "freitag",
+      "mittwoch",
+      "montag",
+      "samstag",
+      "schlafen",
+      "sonntag",
+      "sport",
+      "tag",
+      "woche"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 9,
+        "wordId": "woche"
+      },
+      {
+        "start": 21,
+        "end": 25,
+        "wordId": "tag"
+      },
+      {
+        "start": 31,
+        "end": 37,
+        "wordId": "montag"
+      },
+      {
+        "start": 42,
+        "end": 49,
+        "wordId": "freitag"
+      },
+      {
+        "start": 50,
+        "end": 57,
+        "wordId": "arbeiten"
+      },
+      {
+        "start": 66,
+        "end": 74,
+        "wordId": "dienstag"
+      },
+      {
+        "start": 113,
+        "end": 121,
+        "wordId": "mittwoch"
+      },
+      {
+        "start": 151,
+        "end": 156,
+        "wordId": "sport"
+      },
+      {
+        "start": 161,
+        "end": 171,
+        "wordId": "donnerstag"
+      },
+      {
+        "start": 190,
+        "end": 197,
+        "wordId": "samstag"
+      },
+      {
+        "start": 202,
+        "end": 209,
+        "wordId": "sonntag"
+      },
+      {
+        "start": 219,
+        "end": 223,
+        "wordId": "frei"
+      },
+      {
+        "start": 230,
+        "end": 237,
+        "wordId": "schlafen"
+      },
+      {
+        "start": 264,
+        "end": 271,
+        "wordId": "ausflug"
+      }
+    ]
+  },
+  {
+    "id": "wohnung-anzeige",
+    "title": "Eine Wohnung suchen",
+    "topic": "Wohnen",
+    "text": "Wir suchen eine neue Wohnung in der Stadt. Die Wohnung soll drei Zimmer haben: ein Schlafzimmer, ein Kinderzimmer und ein großes Wohnzimmer. Die Küche und das Badezimmer sind auch wichtig. Die Miete ist nicht zu hoch und wir bezahlen eine Kaution. Es gibt einen Balkon und einen Keller. Der Vermieter zeigt uns die Wohnung am Montag.",
+    "wordIds": [
+      "badezimmer",
+      "balkon",
+      "kaution",
+      "keller",
+      "kinderzimmer",
+      "kueche",
+      "miete",
+      "montag",
+      "schlafzimmer",
+      "stadt",
+      "suchen",
+      "wichtig",
+      "wohnung",
+      "wohnzimmer",
+      "zeigen",
+      "zimmer"
+    ],
+    "spans": [
+      {
+        "start": 4,
+        "end": 10,
+        "wordId": "suchen"
+      },
+      {
+        "start": 21,
+        "end": 28,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 36,
+        "end": 41,
+        "wordId": "stadt"
+      },
+      {
+        "start": 47,
+        "end": 54,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 65,
+        "end": 71,
+        "wordId": "zimmer"
+      },
+      {
+        "start": 83,
+        "end": 95,
+        "wordId": "schlafzimmer"
+      },
+      {
+        "start": 101,
+        "end": 113,
+        "wordId": "kinderzimmer"
+      },
+      {
+        "start": 129,
+        "end": 139,
+        "wordId": "wohnzimmer"
+      },
+      {
+        "start": 145,
+        "end": 150,
+        "wordId": "kueche"
+      },
+      {
+        "start": 159,
+        "end": 169,
+        "wordId": "badezimmer"
+      },
+      {
+        "start": 180,
+        "end": 187,
+        "wordId": "wichtig"
+      },
+      {
+        "start": 193,
+        "end": 198,
+        "wordId": "miete"
+      },
+      {
+        "start": 239,
+        "end": 246,
+        "wordId": "kaution"
+      },
+      {
+        "start": 262,
+        "end": 268,
+        "wordId": "balkon"
+      },
+      {
+        "start": 279,
+        "end": 285,
+        "wordId": "keller"
+      },
+      {
+        "start": 301,
+        "end": 306,
+        "wordId": "zeigen"
+      },
+      {
+        "start": 315,
+        "end": 322,
+        "wordId": "wohnung"
+      },
+      {
+        "start": 326,
+        "end": 332,
+        "wordId": "montag"
+      }
+    ]
+  },
+  {
+    "id": "zimmer-beschreibung",
+    "title": "Mein Zimmer",
+    "topic": "Wohnen",
+    "text": "Mein Zimmer ist nicht groß, aber sehr gemütlich. An der Wand steht mein Bett und daneben ein kleiner Tisch. Vor dem Fenster habe ich einen Schreibtisch mit meinem Computer. Meine Bücher stehen im Regal. An der Wand hängt ein Bild und ein Poster. Der Teppich auf dem Boden ist weich. Abends mache ich die Lampe an und lese.",
+    "wordIds": [
+      "bett",
+      "bild",
+      "buch",
+      "computer",
+      "fenster",
+      "gemuetlich",
+      "haengen",
+      "lampe",
+      "poster",
+      "regal",
+      "teppich",
+      "tisch",
+      "wand",
+      "zimmer"
+    ],
+    "spans": [
+      {
+        "start": 5,
+        "end": 11,
+        "wordId": "zimmer"
+      },
+      {
+        "start": 38,
+        "end": 47,
+        "wordId": "gemuetlich"
+      },
+      {
+        "start": 56,
+        "end": 60,
+        "wordId": "wand"
+      },
+      {
+        "start": 72,
+        "end": 76,
+        "wordId": "bett"
+      },
+      {
+        "start": 101,
+        "end": 106,
+        "wordId": "tisch"
+      },
+      {
+        "start": 116,
+        "end": 123,
+        "wordId": "fenster"
+      },
+      {
+        "start": 163,
+        "end": 171,
+        "wordId": "computer"
+      },
+      {
+        "start": 179,
+        "end": 185,
+        "wordId": "buch"
+      },
+      {
+        "start": 196,
+        "end": 201,
+        "wordId": "regal"
+      },
+      {
+        "start": 210,
+        "end": 214,
+        "wordId": "wand"
+      },
+      {
+        "start": 215,
+        "end": 220,
+        "wordId": "haengen"
+      },
+      {
+        "start": 225,
+        "end": 229,
+        "wordId": "bild"
+      },
+      {
+        "start": 238,
+        "end": 244,
+        "wordId": "poster"
+      },
+      {
+        "start": 250,
+        "end": 257,
+        "wordId": "teppich"
+      },
+      {
+        "start": 304,
+        "end": 309,
+        "wordId": "lampe"
+      }
+    ]
+  }
+]

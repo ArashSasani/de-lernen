@@ -1,0 +1,4804 @@
+[
+  {
+    "article": null,
+    "lemma": "ab",
+    "plural": null,
+    "en": "",
+    "examples": ["Ab morgen haben wir Ferien."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aber",
+    "plural": null,
+    "en": "",
+    "examples": ["Der Film ist traurig, aber sehr schön."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "abfahren",
+    "plural": null,
+    "en": "",
+    "examples": ["Der Zug fährt gleich ab."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "abgeben",
+    "plural": null,
+    "en": "",
+    "examples": ["Kann ich das Buch hier abgeben?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "abholen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich hole dich am Bahnhof ab."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Achtung",
+    "plural": null,
+    "en": "",
+    "examples": ["Achtung! Jetzt fängt es an."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Adresse",
+    "plural": "Adressen",
+    "en": "",
+    "examples": ["Ich weiß die Adresse nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Ahnung",
+    "plural": "Ahnungen",
+    "en": "",
+    "examples": ["Ich habe keine Ahnung!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "alle",
+    "plural": null,
+    "en": "",
+    "examples": ["Sind alle da? Hast du alles?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "allein",
+    "plural": null,
+    "en": "",
+    "examples": ["Er arbeitet gern allein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "also",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir haben viel Platz, du kannst also bei uns schlafen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "alt",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie alt bist du? Unser Haus ist sehr alt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Alter",
+    "plural": null,
+    "en": "",
+    "examples": ["Alter: 15 Jahre"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "an",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Am Sonntag/am Abend/am Anfang/am Meer/ am Fenster/an den See/am Marktplatz"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ander-",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Gefällt dir die Jacke? / Nein, die andere finde ich schöner."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Anfang",
+    "plural": "Anfänge",
+    "en": "",
+    "examples": ["Am Anfang ist das Buch langweilig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anfangen",
+    "plural": null,
+    "en": "",
+    "examples": ["Fangt bitte mit Übung 12 an. / Fängst du an?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Angst",
+    "plural": "Ängste",
+    "en": "",
+    "examples": ["Er hat Angst."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ankommen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wann kommt ihr in Berlin an?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anrufen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich rufe dich morgen an."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Anruf",
+    "plural": "Anrufe",
+    "en": "",
+    "examples": ["Ich warte dann auf deinen Anruf - okay?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Anrufbeantworter",
+    "plural": null,
+    "en": "",
+    "examples": ["Sind Nachrichten auf dem Anrufbeantworter?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Antwort",
+    "plural": "Antworten",
+    "en": "",
+    "examples": ["Weißt du die Antwort?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "antworten",
+    "plural": null,
+    "en": "",
+    "examples": ["Warum antwortest du nicht?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Anzeige",
+    "plural": "Anzeigen",
+    "en": "",
+    "examples": ["Lies bitte die Anzeige in der Zeitung!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Apfel",
+    "plural": "Äpfel",
+    "en": "",
+    "examples": ["Schmeckt dir der Apfel?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Apotheke",
+    "plural": "Apotheken",
+    "en": "",
+    "examples": ["Aspirin? Das bekommen Sie in der Apotheke."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Appetit",
+    "plural": null,
+    "en": "",
+    "examples": ["Guten Appetit!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Arbeit",
+    "plural": "Arbeiten",
+    "en": "",
+    "examples": ["War die Physikarbeit schwer?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "arbeiten",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Vater arbeitet bei einer Autofirma."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "arbeitslos",
+    "plural": null,
+    "en": "",
+    "examples": ["Meine Mutter ist arbeitslos."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arm",
+    "plural": "Arme",
+    "en": "",
+    "examples": ["Mein Arm tut weh."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Artikel",
+    "plural": "Artikel",
+    "en": "",
+    "examples": ["Der Artikel in der Zeitung ist sehr interessant."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arzt",
+    "plural": "Ärzte",
+    "en": "",
+    "examples": ["Er war beim Arzt."],
+    "sources": ["goethe"],
+    "categories": ["berufe"]
+  },
+  {
+    "article": "die",
+    "lemma": "Ärztin",
+    "plural": "Ärztinnen",
+    "en": "",
+    "examples": ["Die Ärztin arbeitet im Krankenhaus."],
+    "sources": ["goethe"],
+    "categories": ["berufe"]
+  },
+  {
+    "article": null,
+    "lemma": "auch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte auch mitspielen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "auf",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Die Zeitung ist auf dem Tisch./ Auf dem Foto bin ich mit meiner Schwester./ Wie heißt das auf Deutsch?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufmachen",
+    "plural": null,
+    "en": "",
+    "examples": ["Kannst du bitte das Fenster aufmachen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufpassen",
+    "plural": null,
+    "en": "",
+    "examples": ["Könnt ihr bitte aufpassen? Ich zeige euch, wie es geht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufräumen",
+    "plural": null,
+    "en": "",
+    "examples": ["Räum bitte dein Zimmer auf."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "auf sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Fenster ist auf."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufstehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Um acht Uhr stehen wir auf."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Auge",
+    "plural": "Augen",
+    "en": "",
+    "examples": ["Seine Augen sind grün."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aus",
+    "plural": null,
+    "en": "",
+    "examples": ["Wann kommt ihr aus der Schule?/ Ich komme aus Deutschland."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ausflug",
+    "plural": "Ausflüge",
+    "en": "",
+    "examples": ["Wir machen mit der Schule einen Ausflug."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Ausland",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Vater war lange im Ausland."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aussehen",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Das Buch sieht sehr interessant aus. Du siehst heute hübsch aus."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aus sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Um ein Uhr ist die Schule aus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aussteigen",
+    "plural": null,
+    "en": "",
+    "examples": ["Du musst am Marktplatz aussteigen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Auto",
+    "plural": "Autos",
+    "en": "",
+    "examples": ["Wir kommen mit dem Auto."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Automat",
+    "plural": "Automaten",
+    "en": "",
+    "examples": ["Die Fahrkarte bekommst du am Automaten."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Baby",
+    "plural": "Babys",
+    "en": "",
+    "examples": ["Meine Schwester ist noch ein Baby."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": "das",
+    "lemma": "Bad",
+    "plural": "Bäder",
+    "en": "",
+    "examples": ["Wo ist das Bad?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bahnhof",
+    "plural": "Bahnhöfe",
+    "en": "",
+    "examples": ["Wir gehen zum Bahnhof."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bahnsteig",
+    "plural": "Bahnsteige",
+    "en": "",
+    "examples": ["Der Zug kommt auf Bahnsteig zehn an."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bald",
+    "plural": null,
+    "en": "",
+    "examples": ["Bis bald!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ball",
+    "plural": "Bälle",
+    "en": "",
+    "examples": ["Wir spielen mit dem Ball."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Banane",
+    "plural": "Bananen",
+    "en": "",
+    "examples": ["Kann ich eine Banane haben? Ich habe Hunger."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Band",
+    "plural": "Bands",
+    "en": "",
+    "examples": ["Die Schülerband spielt heute um 9."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Basketball",
+    "plural": "Basketbälle",
+    "en": "",
+    "examples": ["Meine Hobbys sind Basketball und Musik."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "basteln",
+    "plural": null,
+    "en": "",
+    "examples": ["Basteln ist mein Hobby."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bauch",
+    "plural": "Bäuche",
+    "en": "",
+    "examples": ["Mein Bauch tut weh."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Baum",
+    "plural": "Bäume",
+    "en": "",
+    "examples": ["Die Bäume sind schon grün."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bedeuten",
+    "plural": null,
+    "en": "",
+    "examples": ["Was bedeutet das?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bei",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Er wohnt bei seinen Freunden./ Sie arbeitet bei Herrn Müller."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "beide",
+    "plural": null,
+    "en": "",
+    "examples": ["Meine Schwester und ich, wir beide sind immer zusammen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bekommen",
+    "plural": null,
+    "en": "",
+    "examples": ["Was bekommst du zum Geburtstag?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Beruf",
+    "plural": "Berufe",
+    "en": "",
+    "examples": ["Was ist deine Mutter von Beruf?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "besetzt",
+    "plural": null,
+    "en": "",
+    "examples": ["Der Platz ist besetzt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "besonders",
+    "plural": null,
+    "en": "",
+    "examples": ["Das finde ich besonders interessant."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "besser",
+    "plural": null,
+    "en": "",
+    "examples": ["Hoffentlich geht es dir bald besser."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "beste",
+    "plural": null,
+    "en": "",
+    "examples": ["der beste Schüler, die beste Freundin, das beste Buch"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "besuchen",
+    "plural": null,
+    "en": "",
+    "examples": ["Im Sommer besuche ich dich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Bett",
+    "plural": "Betten",
+    "en": "",
+    "examples": ["Wann gehst du ins Bett?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bezahlen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wo muss ich bezahlen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bibliothek",
+    "plural": "Bibliotheken",
+    "en": "",
+    "examples": ["In der Bibliothek gibt es dreißigtausend Bücher."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "billig",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Brötchen sind hier billig und gut."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bis",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Wir haben bis ein Uhr Unterricht./ Wir fahren nur bis Mannheim."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bisschen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich helfe dir ein bisschen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bitte",
+    "plural": null,
+    "en": "",
+    "examples": ["Können Sie mir bitte helfen? Bitte komm schnell!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bleiben",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir bleiben zu Hause."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bleistift",
+    "plural": "Bleistifte",
+    "en": "",
+    "examples": ["Hier ist dein Bleistift."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "blöd",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde dich blöd!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Blume",
+    "plural": "Blumen",
+    "en": "",
+    "examples": ["Hier sind Blumen für dich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bluse",
+    "plural": "Blusen",
+    "en": "",
+    "examples": ["Ich möchte eine rote Bluse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "brauchen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich brauche einen Taschenrechner."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Brief",
+    "plural": "Briefe",
+    "en": "",
+    "examples": ["Sie bekommt immer viele Briefe."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bringen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bringe dir die Bücher morgen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Brot",
+    "plural": "Brote",
+    "en": "",
+    "examples": ["Wir müssen auch Brot kaufen./ Bitte ein Wurstbrot."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Brötchen",
+    "plural": "Brötchen",
+    "en": "",
+    "examples": ["Ich esse lieber Brötchen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Buch",
+    "plural": "Bücher",
+    "en": "",
+    "examples": ["Die Bücher sind schon im Rucksack."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bus",
+    "plural": "Busse",
+    "en": "",
+    "examples": ["Sie fährt mit dem Bus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "CD",
+    "plural": "CDs",
+    "en": "",
+    "examples": ["Wir können ihm eine CD schenken."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": "der",
+    "lemma": "Comic",
+    "plural": "Comics",
+    "en": "",
+    "examples": ["Liest du gern Comics?"],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": "der",
+    "lemma": "Computer",
+    "plural": "Computer",
+    "en": "",
+    "examples": ["Mein Computer ist schon alt."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": null,
+    "lemma": "da",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Zeitung ist da auf dem Tisch./Ist Erika auch da?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Dank",
+    "plural": null,
+    "en": "",
+    "examples": ["Vielen Dank!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "danken",
+    "plural": null,
+    "en": "",
+    "examples": ["Die CD ist wunderbar, ich danke dir."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dann",
+    "plural": null,
+    "en": "",
+    "examples": ["Gib mir deine Adresse, dann schreibe ich dir!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dein",
+    "plural": "deine",
+    "en": "",
+    "examples": ["Hier ist dein Platz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "denken",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich denke, die Hausaufgaben sind sehr einfach."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "der, die, das",
+    "plural": null,
+    "en": "",
+    "examples": ["Möchtest du das da?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "deshalb",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich muss lernen, deshalb bleibe ich zu Hause."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dick",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bin leider sehr dick."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Disco",
+    "plural": "Discos",
+    "en": "",
+    "examples": ["Sie geht gern in die Diskothek."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "doch",
+    "plural": null,
+    "en": "",
+    "examples": ["Magst du das nicht? – Doch, es schmeckt gut."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dort",
+    "plural": null,
+    "en": "",
+    "examples": ["Du gehst in die Stadt? Und was machst du dort?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "du",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie heißt du?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dumm",
+    "plural": null,
+    "en": "",
+    "examples": ["Das finde ich dumm."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "durch",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir fahren durch die Stadt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Durst",
+    "plural": null,
+    "en": "",
+    "examples": ["Hast du Durst?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "duschen",
+    "plural": null,
+    "en": "",
+    "examples": ["Erst dusche ich, dann gehe ich zum Frühstück."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Ei",
+    "plural": "Eier",
+    "en": "",
+    "examples": ["Möchtest du ein Ei zum Frühstück?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ein",
+    "plural": "eine",
+    "en": "",
+    "examples": ["Haben Sie ein Buch von Michael Ende?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einfach",
+    "plural": null,
+    "en": "",
+    "examples": ["Du kannst ihn einfach fragen./ Die Übung ist ganz einfach."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einkaufen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wer kauft bei euch ein?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einladen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich lade dich ein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Einladung",
+    "plural": "Einladungen",
+    "en": "",
+    "examples": ["Das ist eine Einladung zur Geburtstagsparty."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einmal",
+    "plural": null,
+    "en": "",
+    "examples": ["Kannst du mir das noch einmal erklären?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Eins",
+    "plural": null,
+    "en": "",
+    "examples": ["In Englisch habe ich eine Eins."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einsteigen",
+    "plural": null,
+    "en": "",
+    "examples": ["Bitte steigen Sie ein!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einverstanden sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Bist du einverstanden?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Eis",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte ein großes Eis."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Eltern",
+    "plural": "Eltern",
+    "en": "",
+    "examples": ["Meine Eltern leben in Spanien."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Ende (Sg)",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Ende war sehr traurig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "endlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Wann antwortest du endlich?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "entschuldigen",
+    "plural": null,
+    "en": "",
+    "examples": ["Bitte, entschuldigen Sie!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Entschuldigung",
+    "plural": "Entschuldigungen",
+    "en": "",
+    "examples": ["Oh, Entschuldigung!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "er",
+    "plural": null,
+    "en": "",
+    "examples": ["Was macht er jetzt?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erklären",
+    "plural": null,
+    "en": "",
+    "examples": ["Können Sie das bitte erklären?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Erwachsene",
+    "plural": "Erwachsenen",
+    "en": "",
+    "examples": ["Dieser Film ist nur für Erwachsene."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erzählen",
+    "plural": null,
+    "en": "",
+    "examples": ["Kannst du die Geschichte erzählen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "es",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Heute ist es sehr warm./Hier gibt es auch ein altes Schloss./Wie geht es dir/Ihnen?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "essen",
+    "plural": null,
+    "en": "",
+    "examples": ["Was wollt ihr essen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "etwas",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bringe dir etwas."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "euer",
+    "plural": null,
+    "en": "",
+    "examples": ["Ist das euer Hund?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fach",
+    "plural": "Fächer",
+    "en": "",
+    "examples": ["Chemie ist mein Lieblingsfach."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fahren",
+    "plural": null,
+    "en": "",
+    "examples": ["Wohin fahrt ihr?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Fahrkarte",
+    "plural": "Fahrkarten",
+    "en": "",
+    "examples": ["Sie brauchen eine Fahrkarte."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fahrplan",
+    "plural": "Fahrpläne",
+    "en": "",
+    "examples": ["Da ist der Fahrplan!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fahrrad",
+    "plural": "Fahrräder",
+    "en": "",
+    "examples": ["Wir kommen mit dem Fahrrad."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Familie",
+    "plural": "Familien",
+    "en": "",
+    "examples": ["Er hat eine große Familie."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Familienname",
+    "plural": "Familiennamen",
+    "en": "",
+    "examples": ["Mein Familienname ist Schmidt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fehler",
+    "plural": "Fehler",
+    "en": "",
+    "examples": ["Ich hatte vier Fehler in der Englischarbeit."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fenster",
+    "plural": "Fenster",
+    "en": "",
+    "examples": ["Ich möchte einen Platz am Fenster."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Ferien",
+    "plural": "Ferien",
+    "en": "",
+    "examples": ["Was macht ihr in den Ferien?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fernsehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Siehst du viel fern?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fertig sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bin schon fertig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Film",
+    "plural": "Filme",
+    "en": "",
+    "examples": ["Wie war der Film?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "finden",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Ich kann die Zeitung nicht finden./ Ich finde deinen Pullover schön."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fisch",
+    "plural": "Fische",
+    "en": "",
+    "examples": ["Ich mag keinen Fisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Flasche",
+    "plural": "Flaschen",
+    "en": "",
+    "examples": ["Bitte eine Flasche Mineralwasser."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fleisch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich esse kein Fleisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fliegen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir fliegen nach Athen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Flughafen",
+    "plural": "Flughäfen",
+    "en": "",
+    "examples": ["Wir müssen um sieben Uhr am Flughafen sein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Flugzeug",
+    "plural": "Flugzeuge",
+    "en": "",
+    "examples": ["Im Flugzeug hatte meine Mutter Angst."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fluss",
+    "plural": "Flüsse",
+    "en": "",
+    "examples": ["Der Rhein ist ein großer Fluss."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Foto",
+    "plural": "Fotos",
+    "en": "",
+    "examples": ["Auf dem Foto bin ich mit meinem Hund."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fotoapparat",
+    "plural": "Fotoapparate",
+    "en": "",
+    "examples": ["Sie hat einen teuren Fotoapparat."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fragen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte etwas fragen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Frage",
+    "plural": "Fragen",
+    "en": "",
+    "examples": ["Wiederholen Sie bitte die Frage."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Frau",
+    "plural": "Frauen",
+    "en": "",
+    "examples": ["Siehst du die Frau dort? Das ist Frau Bergner."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "frei",
+    "plural": null,
+    "en": "",
+    "examples": ["Ist der Platz frei?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Freund",
+    "plural": "Freunde",
+    "en": "",
+    "examples": ["Mein bester Freund heißt Ivan."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Freundin",
+    "plural": "Freundinnen",
+    "en": "",
+    "examples": ["Ich habe viele Freundinnen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "freundlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Der Schuldirektor war sehr freundlich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "froh",
+    "plural": null,
+    "en": "",
+    "examples": ["Frohe Weihnachten!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "früh",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir stehen immer früh auf."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Frühstück",
+    "plural": null,
+    "en": "",
+    "examples": ["Zum Frühstück trinke ich Milch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "frühstücken",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir frühstücken nicht zusammen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "für",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich kaufe einen Comic für meine Schwester."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fuß",
+    "plural": "Füße",
+    "en": "",
+    "examples": ["Mein Fuß tut weh./Wir gehen zu Fuß."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fußball",
+    "plural": "Fußbälle",
+    "en": "",
+    "examples": ["Am Nachmittag spielen wir Fußball."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Garten",
+    "plural": "Gärten",
+    "en": "",
+    "examples": ["Wir suchen ein Haus mit Garten."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "geben",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Geben Sie mir bitte zwei Fahrkarten./ Was gibt es heute im Fernsehen?/ Gibt es hier auch ein Theater?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "geboren",
+    "plural": null,
+    "en": "",
+    "examples": ["Wo bist du geboren?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Geburtstag",
+    "plural": "Geburtstage",
+    "en": "",
+    "examples": ["Heute ist mein Geburtstag."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gefallen",
+    "plural": null,
+    "en": "",
+    "examples": ["Das gefällt mir nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wohin wollt ihr gehen?/Wie geht es dir?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Geld",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich habe nicht genug Geld."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gemüse",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich esse sehr gern Gemüse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gemütlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Zimmer ist gemütlich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "genug",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist genug."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gepäck",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist nicht mein Gepäck."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gerade",
+    "plural": null,
+    "en": "",
+    "examples": ["Was machst du gerade?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "geradeaus",
+    "plural": null,
+    "en": "",
+    "examples": ["Gehen Sie hier geradeaus, dann sehen Sie das Rathaus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gern",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir sehen gern Krimis."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Geschäft",
+    "plural": "Geschäfte",
+    "en": "",
+    "examples": ["Meine Mutter wartet vor dem Geschäft."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Geschenk",
+    "plural": "Geschenke",
+    "en": "",
+    "examples": ["Hier ist ein Geschenk für dich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Geschichte",
+    "plural": "Geschichten",
+    "en": "",
+    "examples": ["Kennst du die Geschichte?/In Geschichte hat er eine Eins."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "geschlossen sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Apotheke ist heute geschlossen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gestern",
+    "plural": null,
+    "en": "",
+    "examples": ["Gestern war Sonntag."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gewinnen",
+    "plural": null,
+    "en": "",
+    "examples": ["Man kann eine Reise gewinnen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Glas",
+    "plural": "Gläser",
+    "en": "",
+    "examples": ["Bitte ein Glas Cola."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "glauben",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich glaube, Karin spricht sehr gut Englisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gleich",
+    "plural": null,
+    "en": "",
+    "examples": ["Er kommt gleich./Das ist mir gleich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gleis",
+    "plural": "Gleise",
+    "en": "",
+    "examples": ["Der Zug kommt auf Gleis vier an."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Glück",
+    "plural": null,
+    "en": "",
+    "examples": ["Viel Glück!/Hoffentlich hast du Glück."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "glücklich",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich war in Deutschland sehr glücklich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Glückwunsch",
+    "plural": "Glückwünsche",
+    "en": "",
+    "examples": ["Herzlichen Glückwunsch!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "groß",
+    "plural": null,
+    "en": "",
+    "examples": ["Unser Haus ist groß."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Großeltern",
+    "plural": "Großeltern",
+    "en": "",
+    "examples": ["Meine Großeltern wohnen nicht bei uns."],
+    "sources": ["goethe"],
+    "categories": ["familie"]
+  },
+  {
+    "article": "der",
+    "lemma": "Gruß",
+    "plural": "Grüße",
+    "en": "",
+    "examples": ["Viele Grüße von Angelika."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gut",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Das Essen ist hier immer sehr gut./Ich finde deine Idee nicht so gut."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Haar",
+    "plural": "Haare",
+    "en": "",
+    "examples": ["Sie hat lange Haare."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "haben",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir haben einen Hund und zwei Katzen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hallo",
+    "plural": null,
+    "en": "",
+    "examples": ["Hallo! Bist du Michael Schmidt?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Hals",
+    "plural": "Hälse",
+    "en": "",
+    "examples": ["Mein Hals tut so weh!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "halten",
+    "plural": null,
+    "en": "",
+    "examples": ["Alle Busse halten hier."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Haltestelle",
+    "plural": "Haltestellen",
+    "en": "",
+    "examples": ["Da ist die Haltestelle."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Handy",
+    "plural": "Handys",
+    "en": "",
+    "examples": ["Du kannst mit dem Handy telefonieren."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Haus",
+    "plural": "Häuser",
+    "en": "",
+    "examples": ["Ich bin zu Haus./Ich gehe nach Haus./ Da ist unser Haus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Hausaufgabe",
+    "plural": "Hausaufgaben",
+    "en": "",
+    "examples": ["Wir machen zusammen Hausaufgaben."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Heft",
+    "plural": "Hefte",
+    "en": "",
+    "examples": ["Schreibt die Übung ins Heft."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "heiraten",
+    "plural": null,
+    "en": "",
+    "examples": ["Nächste Woche heiratet meine Schwester."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "heißen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie heißt du?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "helfen",
+    "plural": null,
+    "en": "",
+    "examples": ["Hilf mir bitte!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Herr; -en",
+    "plural": null,
+    "en": "",
+    "examples": ["Sind Sie Herr Braunmüller?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "herzlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Herzliche Grüße von Michael."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "heute",
+    "plural": null,
+    "en": "",
+    "examples": ["Heute kommt meine Freundin aus Italien."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hier",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir wohnen hier."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Hobby",
+    "plural": "Hobbys",
+    "en": "",
+    "examples": ["Meine Hobbys sind Lesen und Tanzen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Hochzeit",
+    "plural": "Hochzeiten",
+    "en": "",
+    "examples": ["Die Hochzeit war sehr langweilig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hoffen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich hoffe, du antwortest bald."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hoffentlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Hoffentlich kommt er mit."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hören",
+    "plural": null,
+    "en": "",
+    "examples": ["Hörst du gern Musik?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hübsch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde sie wirklich hübsch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Hund",
+    "plural": "Hunde",
+    "en": "",
+    "examples": ["Hast du einen Hund?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Hunger",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir haben Hunger."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ich",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich wohne in Berlin."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Idee",
+    "plural": "Ideen",
+    "en": "",
+    "examples": ["Das ist eine tolle Idee."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Ihr",
+    "plural": "Ihre",
+    "en": "",
+    "examples": ["Ist das Ihr Hund/Ihre Katze?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "immer",
+    "plural": null,
+    "en": "",
+    "examples": ["Mathe ist immer so langweilig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "in",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "In Spanien/in der Stadt/ins Schwimmbad/ in den Wald/in den Ferien/im Sommer"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Information",
+    "plural": "Informationen",
+    "en": "",
+    "examples": ["Hier kann man Informationen bekommen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Insel",
+    "plural": "Inseln",
+    "en": "",
+    "examples": ["Rügen ist eine Insel."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "interessant",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Buch ist interessant."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Internet",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir suchen die Informationen im Internet."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": null,
+    "lemma": "ja",
+    "plural": null,
+    "en": "",
+    "examples": ["Kommst du mit? - Ja, gern."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Jacke",
+    "plural": "Jacken",
+    "en": "",
+    "examples": ["Du brauchst eine Jacke, es ist kalt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Jeans",
+    "plural": "Jeans",
+    "en": "",
+    "examples": ["Sie trägt heute Jeans und ein Hemd."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jeder",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir fahren jeden Sommer nach München."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jetzt",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist jetzt nicht mehr wichtig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Jugendliche",
+    "plural": "Jugendlichen",
+    "en": "",
+    "examples": ["Ist das ein Film für Jugendliche?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jung",
+    "plural": null,
+    "en": "",
+    "examples": ["Meine Eltern sind noch jung."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Junge",
+    "plural": "Jungen",
+    "en": "",
+    "examples": ["Der Junge ist neu in unserer Klasse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kaffee",
+    "plural": null,
+    "en": "",
+    "examples": ["Möchtest du eine Tasse Kaffee?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kakao",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich trinke lieber Kakao."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kamera",
+    "plural": "Kameras",
+    "en": "",
+    "examples": ["Ich zeige dir meine neue Digitalkamera."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kalt",
+    "plural": null,
+    "en": "",
+    "examples": ["Heute ist es sehr kalt./Mir ist kalt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kaputt",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Radio ist kaputt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Karte",
+    "plural": "Karten",
+    "en": "",
+    "examples": ["Wir können unsren Freunden eine Karte schicken."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kartoffel",
+    "plural": "Kartoffeln",
+    "en": "",
+    "examples": ["Ich möchte keine Kartoffeln."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Käse",
+    "plural": null,
+    "en": "",
+    "examples": ["Bitte ein Brötchen mit Käse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Katze",
+    "plural": "Katzen",
+    "en": "",
+    "examples": ["Das ist Timmy, meine Katze."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kaufen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte einen CD-Player kaufen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kein",
+    "plural": "keine",
+    "en": "",
+    "examples": ["Ich habe keine Lust."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kennen",
+    "plural": null,
+    "en": "",
+    "examples": ["Kennst du Manuela?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kennenlernen",
+    "plural": null,
+    "en": "",
+    "examples": ["Möchtest du meine Freunde kennenlernen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kind",
+    "plural": "Kinder",
+    "en": "",
+    "examples": ["Die Kinder sind noch in der Schule."],
+    "sources": ["goethe"],
+    "categories": ["familie"]
+  },
+  {
+    "article": "das",
+    "lemma": "Kino",
+    "plural": "Kinos",
+    "en": "",
+    "examples": ["Geht ihr ins Kino?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kiosk",
+    "plural": "Kioske",
+    "en": "",
+    "examples": ["Am Kiosk bekommt man Zeitungen und Eis."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "klar",
+    "plural": null,
+    "en": "",
+    "examples": ["Können wir das mitnehmen? Na klar!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Klasse",
+    "plural": "Klassen",
+    "en": "",
+    "examples": ["In unserer Klasse sind 25 Teilnehmende."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Klassenarbeit",
+    "plural": "Klassenarbeiten",
+    "en": "",
+    "examples": ["Ich muss lernen, morgen schreiben wir eine Klassenarbeit."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Klavier",
+    "plural": "Klaviere",
+    "en": "",
+    "examples": ["Spielst du auch Klavier?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kleid",
+    "plural": "Kleider",
+    "en": "",
+    "examples": ["Das Kleid ist sehr teuer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "klein",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Zimmer ist klein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kochen",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Vater kocht für uns."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kommen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich komme aus Polen./Warum willst du nicht mitkommen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "können",
+    "plural": null,
+    "en": "",
+    "examples": ["Er kann gut kochen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kopf",
+    "plural": "Köpfe",
+    "en": "",
+    "examples": ["Mein Kopf tut weh."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kosten",
+    "plural": null,
+    "en": "",
+    "examples": ["Das kostet 20 Euro."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "krank",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich war gestern krank."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Krankenhaus",
+    "plural": "Krankenhäuser",
+    "en": "",
+    "examples": ["Meine Freundin ist im Krankenhaus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kuchen",
+    "plural": "Kuchen",
+    "en": "",
+    "examples": ["Ich mag keinen Kuchen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Küche",
+    "plural": "Küchen",
+    "en": "",
+    "examples": ["Wir frühstücken in der Küche."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kühlschrank",
+    "plural": "Kühlschränke",
+    "en": "",
+    "examples": ["Im Kühlschrank ist Limonade."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kugelschreiber",
+    "plural": "Kugelschreiber",
+    "en": "",
+    "examples": ["Wo ist mein Kugelschreiber?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kurs",
+    "plural": "Kurse",
+    "en": "",
+    "examples": ["In den Ferien mache ich einen Englischkurs."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kurz",
+    "plural": null,
+    "en": "",
+    "examples": ["Seine Haare sind kurz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lachen",
+    "plural": null,
+    "en": "",
+    "examples": ["Lisa lacht immer viel."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Lampe",
+    "plural": "Lampen",
+    "en": "",
+    "examples": ["Die Lampe ist kaputt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Land",
+    "plural": "Länder",
+    "en": "",
+    "examples": ["Österreich ist ein kleines Land."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lang",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Kleid ist zu kurz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lange",
+    "plural": null,
+    "en": "",
+    "examples": ["Wartest du schon lange?/Ich bin schon lange hier."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "langsam",
+    "plural": null,
+    "en": "",
+    "examples": ["Sprich langsam, ich verstehe dich nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "langweilig",
+    "plural": null,
+    "en": "",
+    "examples": ["Physik ist langweilig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lassen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ihr könnt die Bücher zu Hause lassen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "laufen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir laufen schnell nach Hause."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "leben",
+    "plural": null,
+    "en": "",
+    "examples": ["Er lebt in Berlin."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "leicht",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Hausaufgaben sind leicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "leid",
+    "plural": null,
+    "en": "",
+    "examples": ["Es tut mir leid."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "leider",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich kann leider nicht kommen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lernen",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Ich komme nicht mit, ich muss noch Vokabeln lernen./ Karin lernt Tennis spielen."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lesen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich lese viel."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Leute",
+    "plural": "Leute",
+    "en": "",
+    "examples": ["In unserem Haus wohnen viele Leute."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lieb",
+    "plural": null,
+    "en": "",
+    "examples": ["Lieber Franz!/Meine Lehrerin ist sehr lieb."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lieben",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich liebe meinen Hund Toby."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lieber",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte lieber ein Eis."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Lieblings-",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Lieblingsfach ist Sozialkunde."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "links",
+    "plural": null,
+    "en": "",
+    "examples": ["Gehen Sie hier geradeaus, dann sehen Sie links den Bahnhof."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Lust",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich habe keine Lust."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lustig",
+    "plural": null,
+    "en": "",
+    "examples": ["Jan ist nett und lustig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "machen",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Am Samstag machen wir einen Ausflug./ Das macht nichts./Das macht 4,00 Euro."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Mädchen",
+    "plural": "Mädchen",
+    "en": "",
+    "examples": ["Die Mädchen spielen auch Fußball."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Mail",
+    "plural": "Mails",
+    "en": "",
+    "examples": ["Danke für deine Mail."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": "das",
+    "lemma": "Mal",
+    "plural": "Male",
+    "en": "",
+    "examples": ["Ich war zwei Mal in England./Bis zum nächsten Mal!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "man",
+    "plural": null,
+    "en": "",
+    "examples": ["Hier kann man auch Eis essen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "manchmal",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bin manchmal sehr traurig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Mann",
+    "plural": "Männer",
+    "en": "",
+    "examples": ["Ein Mann geht mit seinem Hund spazieren."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Mantel",
+    "plural": "Mäntel",
+    "en": "",
+    "examples": ["Er trägt einen Mantel."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Markt",
+    "plural": "Märkte",
+    "en": "",
+    "examples": ["Heute ist hier Markt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Marktplatz",
+    "plural": "Marktplätze",
+    "en": "",
+    "examples": ["Der Bus fährt zum Marktplatz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Marmelade",
+    "plural": "Marmeladen",
+    "en": "",
+    "examples": ["Ich esse Brot mit Marmelade."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mehr",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich habe kein Geld mehr./Du musst mir noch mehr erzählen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mein",
+    "plural": "meine",
+    "en": "",
+    "examples": ["Meine Freundin heißt Gaby."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Milch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich mag keine Milch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mindestens",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Schreibe mindestens 30 Wörter./ Das kostet mindestens 10 Euro."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Mineralwasser",
+    "plural": "Mineralwässer",
+    "en": "",
+    "examples": ["Haben Sie auch Mineralwasser?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mit",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich spiele mit Andrea./Er fährt mit dem Bus."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitbringen",
+    "plural": null,
+    "en": "",
+    "examples": ["Was bringst du mit?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitkommen",
+    "plural": null,
+    "en": "",
+    "examples": ["Kommst du auch mit?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitmachen",
+    "plural": null,
+    "en": "",
+    "examples": ["Komm, mach mit!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitnehmen",
+    "plural": null,
+    "en": "",
+    "examples": ["Was nehmen wir zu der Party mit?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mögen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich mag gern Spaghetti und Fleisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "möglich",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich kann nicht kommen, es ist leider nicht möglich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "morgen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir gehen morgen ins Schwimmbad."],
+    "sources": ["goethe"],
+    "categories": ["tageszeiten"]
+  },
+  {
+    "article": null,
+    "lemma": "müde",
+    "plural": null,
+    "en": "",
+    "examples": ["Bist du sehr müde?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Musik",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich höre gern Disco-Musik."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "müssen",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Zimmer muss ich allein aufräumen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nach",
+    "plural": null,
+    "en": "",
+    "examples": ["Sie fährt mit dem Bus nach Berlin."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Nachricht",
+    "plural": "Nachrichten",
+    "en": "",
+    "examples": [
+      "Du hörst die Nachricht noch einmal./ Das ist eine gute Nachricht."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nächste",
+    "plural": null,
+    "en": "",
+    "examples": ["Nächsten Monat bekommen wir Zeugnisse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Name",
+    "plural": "Namen",
+    "en": "",
+    "examples": ["Mein Name ist Peter Niemöller."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nehmen",
+    "plural": null,
+    "en": "",
+    "examples": ["Nehmen Sie den Bus zum Marktplatz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nein",
+    "plural": null,
+    "en": "",
+    "examples": ["Kommst du mit? - Nein, leider nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nett",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde, sie ist nett und lustig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "neu",
+    "plural": null,
+    "en": "",
+    "examples": ["Ist der Computer neu?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nicht",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich kann dich nicht verstehen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nichts",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte nichts essen./Das macht nichts."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nie",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich war noch nie in Frankreich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "niemand",
+    "plural": null,
+    "en": "",
+    "examples": ["Kann mir niemand helfen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "noch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich muss noch Hausaufgaben machen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "normal",
+    "plural": null,
+    "en": "",
+    "examples": ["Eine ganz normale Situation."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Note",
+    "plural": "Noten",
+    "en": "",
+    "examples": ["Hast du gute Noten in Englisch?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Nummer",
+    "plural": "Nummern",
+    "en": "",
+    "examples": [
+      "Bitte, sag mir deine Telefonnummer./ Welche Hausnummer hast du?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nur",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte nur ein Glas Wasser."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Obst",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir essen immer viel Obst."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "oder",
+    "plural": null,
+    "en": "",
+    "examples": ["Trinkst du Tee oder Kaffee?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "offen",
+    "plural": null,
+    "en": "",
+    "examples": ["Jetzt ist die Tür offen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "oft",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir gehen oft im Park spazieren."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ohne",
+    "plural": null,
+    "en": "",
+    "examples": ["Ein Sonntag ohne meine Freunde ist langweilig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ohrring",
+    "plural": "Ohrringe",
+    "en": "",
+    "examples": ["Sie trägt einen kleinen Ohrring."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Ordnung",
+    "plural": "Ordnungen",
+    "en": "",
+    "examples": ["Das ist in Ordnung./Kannst du hier Ordnung machen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Paket",
+    "plural": "Pakete",
+    "en": "",
+    "examples": ["Ist das Paket für mich?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Park",
+    "plural": "Parks",
+    "en": "",
+    "examples": ["Wir gehen in den Park. ."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "passieren",
+    "plural": null,
+    "en": "",
+    "examples": ["Was passiert hier?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Pause",
+    "plural": "Pausen",
+    "en": "",
+    "examples": ["Jetzt machen wir eine Pause."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Pferd",
+    "plural": "Pferde",
+    "en": "",
+    "examples": ["Das Pferd ist schon alt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Pizza",
+    "plural": "Pizzaen",
+    "en": "",
+    "examples": ["Heute gibt es bei uns Pizza mit Tomaten und Käse."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Platz",
+    "plural": "Plätze",
+    "en": "",
+    "examples": [
+      "Das ist mein Platz./In meiner Wohnung ist wenig Platz./Ist der Platz noch frei?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Post",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich gehe zur Post, kommst du mit?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Poster",
+    "plural": "Poster",
+    "en": "",
+    "examples": ["In meinem Zimmer sind viele Poster."],
+    "sources": ["goethe"],
+    "categories": ["anglizismen"]
+  },
+  {
+    "article": "die",
+    "lemma": "Postkarte",
+    "plural": "Postkarten",
+    "en": "",
+    "examples": ["Wir schreiben ihm eine Postkarte."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Problem",
+    "plural": "Probleme",
+    "en": "",
+    "examples": ["Hast du Probleme?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Pullover",
+    "plural": "Pullover",
+    "en": "",
+    "examples": ["Du brauchst keinen Pullover, es ist warm."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "pünktlich",
+    "plural": null,
+    "en": "",
+    "examples": ["Kommt bitte pünktlich!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Quatsch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde, das ist Quatsch!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Quiz",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist ein Quiz für Kinder."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Rad",
+    "plural": "Räder",
+    "en": "",
+    "examples": ["Ich fahre mit dem Rad in die Schule."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Radiergummi",
+    "plural": "Radiergummis",
+    "en": "",
+    "examples": ["Gibst du mir deinen Radiergummi?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Radio",
+    "plural": "Radios",
+    "en": "",
+    "examples": ["Ich habe ein neues Radio."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "raten",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist ein Spiel, man muss die Städte raten."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Rätsel",
+    "plural": "Rätsel",
+    "en": "",
+    "examples": ["Ich finde das Rätsel zu schwer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "recht haben",
+    "plural": null,
+    "en": "",
+    "examples": ["Du hast recht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "rechts",
+    "plural": null,
+    "en": "",
+    "examples": ["Hier rechts ist unsere Schule."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Regen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich mag den Regen nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "regnen",
+    "plural": null,
+    "en": "",
+    "examples": ["Es regnet oft bei uns."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Reise",
+    "plural": "Reisen",
+    "en": "",
+    "examples": ["Wir machen eine Reise."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "reiten",
+    "plural": null,
+    "en": "",
+    "examples": ["Reiten ist mein Hobby."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "reparieren",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Vater kann das Fahrrad reparieren."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Restaurant",
+    "plural": "Restaurants",
+    "en": "",
+    "examples": ["Wir essen heute im Restaurant."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "richtig",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Antwort ist nicht richtig."],
+    "sources": ["goethe"],
+    "categories": ["anweisungssprache"]
+  },
+  {
+    "article": "der",
+    "lemma": "Ring",
+    "plural": "Ringe",
+    "en": "",
+    "examples": ["Sie trägt viele Ringe."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Rucksack",
+    "plural": "Rucksäcke",
+    "en": "",
+    "examples": ["Der Rucksack für die Schule ist fertig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ruhig",
+    "plural": null,
+    "en": "",
+    "examples": ["Seid jetzt bitte ruhig!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Sache",
+    "plural": "Sachen",
+    "en": "",
+    "examples": ["Wo sind meine Schulsachen?/Das ist eine tolle Sache."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Saft",
+    "plural": "Säfte",
+    "en": "",
+    "examples": ["Möchtest du Wasser oder Saft?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sagen",
+    "plural": null,
+    "en": "",
+    "examples": ["Eva sagt, sie kommt heute nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Salat",
+    "plural": "Salate",
+    "en": "",
+    "examples": ["Am Abend gibt es immer Salat."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schade",
+    "plural": null,
+    "en": "",
+    "examples": ["Du kannst nicht kommen? Das ist schade!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schenken",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte Anna einen Pullover schenken."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schiff",
+    "plural": "Schiffe",
+    "en": "",
+    "examples": ["Sie fahren mit dem Schiff."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlafen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wo kann ich schlafen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlecht",
+    "plural": null,
+    "en": "",
+    "examples": ["Mir ist so schlecht./Das Essen hier ist nicht schlecht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schmecken",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie schmeckt der Hamburger?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schmerz",
+    "plural": "Schmerzen",
+    "en": "",
+    "examples": ["Ich habe Bauchschmerzen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schnell",
+    "plural": null,
+    "en": "",
+    "examples": ["Mach schnell!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schokolade",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich esse keine Schokolade."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schon",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich habe schon sechs Computerspiele."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schön",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Zimmer ist sehr schön und gemütlich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schreiben",
+    "plural": null,
+    "en": "",
+    "examples": ["Erika schreibt mir jeden Tag."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schwer",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde die Hausaufgaben sehr schwer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schwimmbad",
+    "plural": "Schwimmbäder",
+    "en": "",
+    "examples": ["Im Sommer gehen wir oft ins Schwimmbad."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schwimmen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich kann gut schwimmen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "See",
+    "plural": "Seen",
+    "en": "",
+    "examples": [
+      "Der See ist sehr groß./Wir wohnen am See./ Wir fahren zum Ammersee."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Siehst du das große Haus? Da wohne ich."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sehr",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich liebe ihn sehr./Das ist sehr wichtig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sein",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Ich bin 13 Jahre alt./Das ist mein Bruder./ Er ist Student./ Die Kinder sind im Garten."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Seite",
+    "plural": "Seiten",
+    "en": "",
+    "examples": ["Das steht auf Seite 3."],
+    "sources": ["goethe"],
+    "categories": ["berufe"]
+  },
+  {
+    "article": null,
+    "lemma": "sicher",
+    "plural": null,
+    "en": "",
+    "examples": ["Du bist sicher gut in der Schule."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sie",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist Frau Meyer, sie wohnt hier."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "so",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Ich mache das nicht so./Das schmeckt so gut./ Sie ist so alt wie ich."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sofort",
+    "plural": null,
+    "en": "",
+    "examples": ["Warte, ich komme sofort!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Spaß",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir haben immer viel Spaß zusammen./Viel Spaß!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "spät",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Mach schnell, es ist spät!/Ich komme zu spät./ Wie spät ist es?"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "später",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich mache die Hausaufgaben später."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "spazieren gehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wollen wir spazieren gehen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Spiel",
+    "plural": "Spiele",
+    "en": "",
+    "examples": ["Ich kenne ein neues Spiel."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "spielen",
+    "plural": null,
+    "en": "",
+    "examples": ["Willst du mit uns spielen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Spielplatz",
+    "plural": "Spielplätze",
+    "en": "",
+    "examples": ["Sie ist mit Ben auf dem Spielplatz."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Sport",
+    "plural": null,
+    "en": "",
+    "examples": ["Sport ist mein Hobby."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Sprache",
+    "plural": "Sprachen",
+    "en": "",
+    "examples": ["Er spricht fünf Sprachen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sprechen",
+    "plural": null,
+    "en": "",
+    "examples": ["Sie spricht mit dem Lehrer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Stadt",
+    "plural": "Städte",
+    "en": "",
+    "examples": ["Unsere Stadt ist nicht so groß."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Strand",
+    "plural": "Strände",
+    "en": "",
+    "examples": ["Wir spielen am Strand."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Straße",
+    "plural": "Straßen",
+    "en": "",
+    "examples": ["Wir wohnen in der Goethe-Straße."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Stück",
+    "plural": "Stücke",
+    "en": "",
+    "examples": ["Willst du noch ein Stück Kuchen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "suchen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich suche meinen Kugelschreiber."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Supermarkt",
+    "plural": "Supermärkte",
+    "en": "",
+    "examples": ["Wir kaufen immer im Supermarkt ein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Suppe",
+    "plural": "Suppen",
+    "en": "",
+    "examples": ["Ich kann auch Suppe kochen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "süß",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Der Kaffee ist zu süß./Der neue Tennislehrer ist wirklich süß!"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Süßigkeiten",
+    "plural": "Süßigkeiten",
+    "en": "",
+    "examples": ["Am liebsten esse ich Süßigkeiten."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "sympathisch",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich finde ihn sehr sympathisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "tanzen",
+    "plural": null,
+    "en": "",
+    "examples": ["Leider kann er nicht gut tanzen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tasche",
+    "plural": "Taschen",
+    "en": "",
+    "examples": ["Die Tasche ist sehr schwer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Taschengeld",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie viel Taschengeld bekommst du?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tasse",
+    "plural": "Tassen",
+    "en": "",
+    "examples": ["Ich möchte eine Tasse Kakao."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Tee",
+    "plural": "Tees",
+    "en": "",
+    "examples": ["Am Abend trinken wir Tee."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "telefonieren",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich telefoniere oft mit meiner Freundin in Frankfurt."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Tennis spielen",
+    "plural": null,
+    "en": "",
+    "examples": ["Er spielt gut Tennis."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "teuer",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein neues Kleid war sehr teuer, aber es ist wunderbar."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Theater",
+    "plural": "Theater",
+    "en": "",
+    "examples": ["Am Sonntag waren wir im Theater."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Thema",
+    "plural": "Themen",
+    "en": "",
+    "examples": ["Wie heißt das Thema des Buchs?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Tier",
+    "plural": "Tiere",
+    "en": "",
+    "examples": ["Ich möchte ein Tier haben: eine Katze oder einen Hund."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Tisch",
+    "plural": "Tische",
+    "en": "",
+    "examples": ["Am Fenster ist ein Tisch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Toilette",
+    "plural": "Toiletten",
+    "en": "",
+    "examples": ["Wo ist die Toilette?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "toll",
+    "plural": null,
+    "en": "",
+    "examples": ["In den Ferien war es toll."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "tragen",
+    "plural": null,
+    "en": "",
+    "examples": ["Er trägt Jeans"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "traurig",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich bin oft traurig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "treffen",
+    "plural": null,
+    "en": "",
+    "examples": ["Am Nachmittag treffe ich meine Freunde."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "trinken",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir trinken gern Saft."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "T-Shirt",
+    "plural": "T-Shirts",
+    "en": "",
+    "examples": ["Wie gefällt dir mein neues T-Shirt?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "tschüss!",
+    "plural": null,
+    "en": "",
+    "examples": ["Also bis bald - tschüss!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tür",
+    "plural": "Türen",
+    "en": "",
+    "examples": ["Die Tür ist auf."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "U-Bahn",
+    "plural": "U-Bahnen",
+    "en": "",
+    "examples": ["Wir nehmen die U-Bahn."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "üben",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich muss jeden Tag Klavier üben."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "über",
+    "plural": null,
+    "en": "",
+    "examples": ["Jetzt gehen wir über die Straße."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "überall",
+    "plural": null,
+    "en": "",
+    "examples": ["In der Altstadt gibt es überall kleine Cafés."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Uhr",
+    "plural": "Uhren",
+    "en": "",
+    "examples": ["Hast du keine Uhr?/Wie viel Uhr ist es?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "um",
+    "plural": null,
+    "en": "",
+    "examples": ["Um 7.30 Uhr kommt der Zug."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "und",
+    "plural": null,
+    "en": "",
+    "examples": ["Karl und Susanne kommen auch."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "und so weiter",
+    "plural": null,
+    "en": "",
+    "examples": ["usw."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unser",
+    "plural": "unsere",
+    "en": "",
+    "examples": ["Das ist unser neues Auto."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Unterricht",
+    "plural": null,
+    "en": "",
+    "examples": ["Der Unterricht macht mir Spaß."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verdienen",
+    "plural": null,
+    "en": "",
+    "examples": ["In den Ferien möchte ich ein bisschen Geld verdienen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vergessen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich vergesse oft die Vokabeln."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verrückt",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Ich finde die Idee verrückt. Sie trägt so verrückte Kleider."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verstehen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich verstehe dich nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "viel",
+    "plural": "viele",
+    "en": "",
+    "examples": ["Hast du viele Freunde?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vielleicht",
+    "plural": null,
+    "en": "",
+    "examples": ["Kannst du mir vielleicht helfen?/Vielleicht kommt er."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "von",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Der Computer ist ein Geschenk von meinem Onkel./ Sie arbeitet von sieben bis neun./Er kommt von der Arbeit."
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vor",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich treffe Peter vor dem Kino./Vor dem Frühstück."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Vorname",
+    "plural": "Vornamen",
+    "en": "",
+    "examples": ["Wie ist dein Vorname?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vorstellen (sich)",
+    "plural": null,
+    "en": "",
+    "examples": ["Stell dich bitte vor!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wahr",
+    "plural": null,
+    "en": "",
+    "examples": ["Das ist sicher nicht wahr./Das schmeckt gut, nicht wahr?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Wald",
+    "plural": "Wälder",
+    "en": "",
+    "examples": ["In Thüringen gibt es sehr viel Wald."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wandern",
+    "plural": null,
+    "en": "",
+    "examples": ["Am Wochenende wandern wir zum Tüngelsee."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wann",
+    "plural": null,
+    "en": "",
+    "examples": ["Wann hast du Geburtstag?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "warm",
+    "plural": null,
+    "en": "",
+    "examples": ["Gestern war es hier schon sehr warm."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "warten",
+    "plural": null,
+    "en": "",
+    "examples": ["Wartest du schon lange?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "warum",
+    "plural": null,
+    "en": "",
+    "examples": ["Warum antwortest du nicht?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "was",
+    "plural": null,
+    "en": "",
+    "examples": ["Was kann man hier kaufen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "waschen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich will meine Haare waschen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Wasser",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Wasser ist so kalt./Gib mir bitte ein Glas Wasser."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wecken",
+    "plural": null,
+    "en": "",
+    "examples": ["Meine Mutter weckt mich um 7.30 Uhr."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "weh tun",
+    "plural": null,
+    "en": "",
+    "examples": ["Mein Kopf tut so weh."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "weit",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir fahren zum See, das ist nicht weit."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "weiter",
+    "plural": null,
+    "en": "",
+    "examples": ["Lies bitte weiter."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "welch-",
+    "plural": null,
+    "en": "",
+    "examples": ["Welche CD möchtest du?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wenig",
+    "plural": "wenige",
+    "en": "",
+    "examples": ["Ich habe heute wenig Zeit."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wer",
+    "plural": null,
+    "en": "",
+    "examples": ["Wer ist die elegante Frau?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "werden",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte Architekt werden."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wichtig",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich glaube, die Frage ist wichtig."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wie",
+    "plural": null,
+    "en": "",
+    "examples": [
+      "Wie heißt du?/Wie groß ist Berlin?/Wie alt ist er?/ Das ist wie im Kino!"
+    ],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wieder",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich möchte wieder nach Deutschland fahren."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wiederholen",
+    "plural": null,
+    "en": "",
+    "examples": ["Können Sie das bitte wiederholen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Wiedersehen",
+    "plural": "Wiedersehen",
+    "en": "",
+    "examples": ["Auf Wiedersehen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wie viel",
+    "plural": null,
+    "en": "",
+    "examples": ["Wie viel kostet das?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "willkommen",
+    "plural": null,
+    "en": "",
+    "examples": ["Willkommen bei uns!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wir",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir haben eine neue Lehrerin."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wirklich",
+    "plural": null,
+    "en": "",
+    "examples": ["Willst du das wirklich kaufen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wissen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich weiß es nicht."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wo",
+    "plural": null,
+    "en": "",
+    "examples": ["Wo wohnt ihr?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "woher",
+    "plural": null,
+    "en": "",
+    "examples": ["Woher kommt der Zug?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wohin",
+    "plural": null,
+    "en": "",
+    "examples": ["Wohin fährt der Bus?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wohnen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wo wohnst du?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Wohnung",
+    "plural": "Wohnungen",
+    "en": "",
+    "examples": ["Unsere Wohnung hat drei Zimmer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Wohnzimmer",
+    "plural": "Wohnzimmer",
+    "en": "",
+    "examples": ["Ich mache die Hausaufgaben im Wohnzimmer."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wollen",
+    "plural": null,
+    "en": "",
+    "examples": ["Willst du meine Freunde kennenlernen?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Wort",
+    "plural": "Wörter",
+    "en": "",
+    "examples": ["Wie viele Wörter hat dein Brief?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wunderbar",
+    "plural": null,
+    "en": "",
+    "examples": ["Das Essen schmeckt wunderbar."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wünschen",
+    "plural": null,
+    "en": "",
+    "examples": ["Ich wünsche dir schöne Ferien."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Wurst",
+    "plural": "Würste",
+    "en": "",
+    "examples": ["Ich möchte eine Curry-Wurst."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Zahn",
+    "plural": "Zähne",
+    "en": "",
+    "examples": ["Mein Zahn tut weh."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zeigen",
+    "plural": null,
+    "en": "",
+    "examples": ["Zeigst du mir deinen Computer?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Zeit",
+    "plural": "Zeiten",
+    "en": "",
+    "examples": ["Wann hast du Zeit für mich?"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Zeitung",
+    "plural": "Zeitungen",
+    "en": "",
+    "examples": ["Meine Mutter liest am Morgen die Zeitung."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Zimmer",
+    "plural": "Zimmer",
+    "en": "",
+    "examples": ["Mein Zimmer ist sehr klein."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zu",
+    "plural": null,
+    "en": "",
+    "examples": ["zu groß/zum Frühstück/zum Zahnarzt/zur Post/"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zum Geburtstag",
+    "plural": null,
+    "en": "",
+    "examples": [],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zuerst",
+    "plural": null,
+    "en": "",
+    "examples": ["Sagen Sie bitte zuerst den Vornamen."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Zug",
+    "plural": "Züge",
+    "en": "",
+    "examples": ["Wir nehmen den Zug."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zum Beispiel",
+    "plural": null,
+    "en": "",
+    "examples": ["z. B."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zumachen",
+    "plural": null,
+    "en": "",
+    "examples": ["Mach die Tür zu!"],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zusammen",
+    "plural": null,
+    "en": "",
+    "examples": ["Wir machen zusammen Hausaufgaben."],
+    "sources": ["goethe"],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zu sein",
+    "plural": null,
+    "en": "",
+    "examples": ["Die Bibliothek ist in den Ferien zu."],
+    "sources": ["goethe"],
+    "categories": []
+  }
+]
