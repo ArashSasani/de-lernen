@@ -76,7 +76,7 @@ Cross-device sync turns on once `KV_*` is set.
 
 ---
 
-## Deploy (Vercel CLI, no GitHub)
+## Deploy (Vercel CLI)
 
 ```bash
 npm i -g vercel          # or use npx vercel
@@ -98,7 +98,7 @@ the installable app.
 ## Project layout
 
 ```
-de-flashcards/
+de-lernen/
 ├─ CLAUDE.md                ← durable spec / rules for the AI agent
 ├─ README.md                ← you are here
 ├─ docs/adrs/               ← Architecture Decision Records (design rationale)
