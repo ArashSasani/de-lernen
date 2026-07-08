@@ -1,11 +1,35 @@
 # de·lernen — German A1 Flashcard based app
 
+[![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
+[![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8)](#stack)
+
 A single-user, offline-first flashcard app for German A1 vocabulary, using Leitner-box
 spaced repetition. Vocabulary is compiled once from three source PDFs (Telc A1.1, Telc A1.2,
 Goethe _Fit in Deutsch 1_) into a static dataset. There is **no runtime LLM** — the app just
 reads a committed `words.json`.
 
 Built to run as an installable PWA on iPhone and Mac, with progress synced across both devices.
+
+- **Study** (`/study`) — Leitner-box flashcards: German ↔ English, graded Miss / Got it / Easy.
+- **Lesen** (`/read`) — daily A1 reading text, auto-picked and highlighted around your
+  struggling words, with tap-for-gloss translations.
+- **Diktat** (`/dictation`) — spelling/dictation drills targeting tricky German patterns
+  (umlauts, ß, ie/ei, silent-h).
+- **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
+  multiple-choice practice quiz.
+
+<img width="390" alt="Study screen demo" src="https://github.com/user-attachments/assets/9c1d9056-b6aa-4a10-af85-30e0c81cfd40" />
+
+---
+
+## Contents
+
+- [Stack](#stack)
+- [How it's put together](#how-its-put-together-the-important-idea)
+- [Quick start (local)](#quick-start-local)
+- [Deploy (Vercel CLI)](#deploy-vercel-cli)
+- [Project layout](#project-layout)
+- [Daily use](#daily-use)
 
 ---
 
@@ -124,8 +148,6 @@ de-lernen/
 ---
 
 ## Daily use
-
-<img width="390" height="836" alt="ScreenRecording2026-07-08at11 18 15PM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/9c1d9056-b6aa-4a10-af85-30e0c81cfd40" />
 
 - Open the app → it shows cards **due today** (Leitner schedule).
 - Tap a card to flip German → English + example.
