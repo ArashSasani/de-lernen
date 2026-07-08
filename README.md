@@ -125,6 +125,8 @@ de-lernen/
 
 ## Daily use
 
+<img width="390" height="836" alt="ScreenRecording2026-07-08at11 18 15PM-ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/9c1d9056-b6aa-4a10-af85-30e0c81cfd40" />
+
 - Open the app → it shows cards **due today** (Leitner schedule).
 - Tap a card to flip German → English + example.
 - Before flipping: tap **Skip** to move past the card without grading it (box unchanged, stays due).
