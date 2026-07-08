@@ -1,4 +1,4 @@
-# de·lernen — German A1 Flashcards
+# de·lernen — German A1 Flashcard based app
 
 A single-user, offline-first flashcard app for German A1 vocabulary, using Leitner-box
 spaced repetition. Vocabulary is compiled once from three source PDFs (Telc A1.1, Telc A1.2,
