@@ -53,6 +53,7 @@ User: one person. No multi-user auth, no user database. A single password gate i
 type Article = 'der' | 'die' | 'das';
 type Pos = 'noun' | 'verb' | 'adj' | 'adv' | 'other';
 type Box = 1 | 2 | 3 | 4 | 5;
+type Level = 'a1' | 'a2' | 'b1';
 
 interface Word {
   id: string; // slug of lemma: lowercase, ä→ae ö→oe ü→ue ß→ss, non-alnum→'-'
@@ -62,7 +63,8 @@ interface Word {
   en: string; // English translation
   pos: Pos;
   examples: string[]; // example sentences (may be empty)
-  sources: string[]; // any of: 'telc-a1.1' | 'telc-a1.2' | 'goethe'
+  sources: string[]; // any of: 'telc-a1.1' | 'telc-a1.2' | 'goethe' | 'telc-a2.1' | 'telc-a2.2' | 'goethe-a2'
+  levels: Level[]; // every level whose source material includes this word; merge-on-id accumulates this
   corrected?: boolean; // true if its English/example was fixed in the build
 }
 
@@ -90,6 +92,14 @@ interface GrammarQuizTopicProgress {
 }
 type GrammarQuizProgressMap = Record<string, GrammarQuizTopicProgress>; // keyed by topicId
 ```
+
+`words.json` stays a **single flat array** across all levels — a word reused across levels (e.g.
+introduced at A1, reappearing in A2 source material) is one merged entry whose `levels[]` accumulates
+every level it appears in, not split per-level files. For filtering, `lib/words.ts`'s `wordLevel(word)`
+resolves a word's **lowest** level (`a1` < `a2` < `b1`), so a word tagged `['a1', 'a2']` is scoped under
+the A1 filter only — levels never overlap in the study queue. `FilterBar` exposes this as a "Level" chip
+row (`FilterBar/index.helpers.ts`'s `LEVEL_CHIPS`) alongside Box/Type; `b1` is hidden from the chips
+until a B1 source is extracted (nothing currently carries that level).
 
 Dictation progress is a **separate track** from the Leitner `ProgressMap` — stored in its own
 IndexedDB object store (`dictation`) and **synced to KV** (`user:dictation`). Merge strategy:
@@ -169,26 +179,34 @@ See **[ADR 002](docs/adrs/002-build-time-data-pipeline.md)** for the full ration
 runtime LLM, why `pdftotext` not vision, the two-build split). Key facts — two stages, keep messy
 extraction separate from deterministic merge:
 
-1. **Extract (text-layer parse + targeted AI cleanup, once per source):** the PDFs in
-   `data/sources/a1/` all have a clean embedded text layer — **do not vision-read them** (huge
-   context, slow; that's what stalls this step). Extract with `pdftotext -layout` (poppler) and
-   parse into a faithful normalized file per source: `data/sources/telc-a1-1.json`,
-   `telc-a1-2.json`, `goethe-a1.json`. Deterministic parsers (`scripts/extract-telc.mjs`,
-   `scripts/extract-goethe.mjs`) do the bulk; rows they can't confidently parse get pushed to a
-   `<source>_flagged.json` sidecar and AI resolves only those. One source per session, finishing
-   and verifying each before moving on (no git commit — see invariant 6).
+1. **Extract (text-layer parse + targeted AI cleanup, once per source):** source PDFs live in
+   `data/sources/<level>/` (`a1/`, `a2/`, …), namespaced per level — the author drops a level's
+   PDFs into its own folder; adding a new level is a drop-in, no code change. All of them have a
+   clean embedded text layer — **do not vision-read them** (huge context, slow; that's what stalls
+   this step). Extract with `pdftotext -layout` (poppler) and parse into a faithful normalized file
+   alongside its PDFs: `data/sources/a1/telc-a1-1.json`, `data/sources/a2/telc-a2-1.json`, etc.
+   Deterministic parsers (`scripts/extract-telc.mjs --source <level>.<part> [--level <level>]`,
+   `scripts/extract-goethe.mjs --level <level>`) take the level as an argument rather than
+   hardcoding A1; a PDF whose layout differs enough from its sibling levels gets its own small
+   variant script (e.g. `scripts/extract-goethe-a2.mjs`) rather than forcing one parser to cover
+   every edition. Rows the parser can't confidently parse get pushed to a
+   `data/sources/<level>/<source>_flagged.json` sidecar and AI resolves only those. One source per
+   session, finishing and verifying each before moving on (no git commit — see invariant 6).
    - Telc rows are tabular: `Artikel | Deutsch | Plural | Englisch | Beispielsatz` (fixed column
      offsets; some cells wrap across physical lines — merge continuations onto the prior row).
    - Goethe is alphabetical with `r/e/s` = der/die/das, plural notation like `ä, -e`, example
      sentences, and **no English** — leave `en` empty here.
    - Also capture Goethe word-groups (numbers, colors, months, days, family, professions,
      countries) as `categories`.
-2. **Refine + merge (deterministic, re-runnable):** `scripts/build-words.mjs`
-   - Fill `en` for entries missing it (Goethe-only). These are all A1 words — translate directly.
+2. **Refine + merge (deterministic, re-runnable):** `scripts/build-words.mjs` globs
+   `data/sources/*/*.json` (skipping `*_flagged.json`), tagging each source by its folder's level —
+   adding a level's extracts to the build needs no code edit.
+   - Fill `en` for entries missing it (Goethe-only). These are all A1/A2 words — translate directly.
    - Apply **only obvious** corrections (see below); set `corrected: true`; append to changelog.
-   - Merge on `id` (slug). Combine `sources`; reconcile `article`/`plural`
-     conflicts (Goethe's r/e/s markers are a reliable tiebreaker); dedupe examples.
-     (Goethe word-groups are captured in the source file but not carried into `words.json`.)
+   - Merge on `id` (slug). Combine `sources` and `levels` (accumulate every level a word's source
+     material appears in); reconcile `article`/`plural` conflicts (Goethe's r/e/s markers are a
+     reliable tiebreaker); dedupe examples. (Goethe word-groups are captured in the source file but
+     not carried into `words.json`.)
    - Emit `data/words.json` and `data/changelog.json`.
 3. **Daily reading corpus (built after `words.json` is final):** the agent authors A1
    exam-style texts once into `data/sources/daily-texts.src.json` (each text records the exact
@@ -264,7 +282,7 @@ src/
       index.tsx
       index.helpers.ts   # article/plural colours, resultBoxes()
       index.helpers.test.ts
-    FilterBar/           # box (incl. "Due") / type chips
+    FilterBar/           # box (incl. "Due") / type / level chips
       index.tsx
       index.helpers.ts   # POS_CHIPS, BOX_CHIPS
       index.helpers.test.ts
@@ -337,7 +355,7 @@ scripts/
   build-words.mjs        # refine + merge → words.json + changelog.json
   build-daily-texts.mjs  # annotate + validate daily-texts.src.json → daily-texts.json
   gen-icons.mjs          # generate PWA icons + apple-touch-icon.png
-data/    sources/ (a1/*.pdf, *.json, _text/ [gitignored], daily-texts.src.json), words.json, changelog.json, daily-texts.json, grammar.json
+data/    sources/ (<level>/*.pdf + *.json per level, e.g. a1/, a2/; _text/ [gitignored]; daily-texts.src.json stays at root), words.json, changelog.json, daily-texts.json, grammar.json
 ```
 
 ## PWA notes

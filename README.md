@@ -3,10 +3,10 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
 [![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8)](#stack)
 
-A single-user, offline-first flashcard app for German A1 vocabulary, using Leitner-box
-spaced repetition. Vocabulary is compiled once from three source PDFs (Telc A1.1, Telc A1.2,
-Goethe _Fit in Deutsch 1_) into a static dataset. There is **no runtime LLM** — the app just
-reads a committed `words.json`.
+A single-user, offline-first flashcard app for German vocabulary (A1, with A2 added), using
+Leitner-box spaced repetition. Vocabulary is compiled once per level from source PDFs (Telc + Goethe
+wordlists) into a static dataset. There is **no runtime LLM** — the app just reads a committed
+`words.json`.
 
 Built to run as an installable PWA on mobile and desktop, with progress synced across both devices.
 
@@ -55,8 +55,11 @@ Running cost target: **\$0** on Vercel Hobby + KV free tier. A custom domain is 
 
 There are **two separate builds**, and only one ever touches an LLM:
 
-1. **Data build (one-time, local).** Parse the three PDFs → merge → fix obvious errors →
-   fill missing English → emit `data/words.json` + `data/changelog.json`. Then author the
+1. **Data build (one-time, local).** Parse each level's source PDFs (`data/sources/<level>/`) →
+   merge → fix obvious errors → fill missing English → emit `data/words.json` + `data/changelog.json`.
+   A word reused across levels is one merged entry whose `levels[]` accumulates every level it
+   appears in — adding a level (drop PDFs into a new `data/sources/<level>/` folder) needs no code
+   change to the merge step. Then author the
    daily reading corpus once and annotate it into `data/daily-texts.json` (see below). Run
    rarely (only if the source lists change). Output is committed. This is the _only_ place any
    LLM/text-authoring work happens.
@@ -129,20 +132,22 @@ de-lernen/
 ├─ README.md                ← you are here
 ├─ docs/adrs/               ← Architecture Decision Records (design rationale)
 ├─ data/
-│  ├─ sources/a1/                ← put the 3 source PDFs here (you provide them)
-│  ├─ sources/*.json             ← normalized per-source extracts (generated)
-│  ├─ sources/daily-texts.src.json ← authored daily reading texts (source)
-│  ├─ words.json                 ← final merged dataset (generated, committed)
+│  ├─ sources/<level>/            ← put each level's source PDFs here (you provide them), e.g. a1/, a2/
+│  ├─ sources/<level>/*.json      ← normalized per-source extracts (generated), incl. `*_flagged.json`
+│  ├─ sources/daily-texts.src.json ← authored daily reading texts (source, stays at root)
+│  ├─ words.json                 ← final merged dataset across all levels (generated, committed)
 │  ├─ daily-texts.json           ← annotated daily reading corpus (generated, committed)
 │  ├─ grammar.json               ← A1 grammar reference (authored once, committed)
 │  └─ changelog.json             ← record of every correction made (generated, committed)
-├─ scripts/build-words.mjs       ← deterministic merge → words.json
+├─ scripts/build-words.mjs       ← deterministic merge → words.json (globs data/sources/*/*.json)
+├─ scripts/extract-telc.mjs      ← --source <level>.<part> [--level <level>] → data/sources/<level>/telc-*.json
+├─ scripts/extract-goethe.mjs    ← --level <level> → data/sources/<level>/goethe-<level>.json
 ├─ scripts/build-daily-texts.mjs ← annotate + validate → daily-texts.json
 ├─ public/                       ← manifest.json, sw.js, icons
 └─ src/
    ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz) + api/{login,progress,dictation}
-   ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar, LeitnerStats, DailyReading, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
-   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB-only), words, daily, daily-texts, speech
+   ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
+   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB-only), words (incl. wordLevel), daily, daily-texts, speech
    ├─ hooks/                ← useProgressSync, useDictationSync, useGrammarQuizProgress, useSpeech
    └─ types/
 ```
@@ -157,7 +162,8 @@ de-lernen/
 - After flipping, grade: **Miss** (back to box 1), **Got it** (next box), **Easy** (jump to box 5).
 - Tap the speaker icon on any card or gloss popover to hear the German pronunciation
   (uses the browser's built-in speech synthesis — works offline, no API key).
-- Filter by box (or "Due") and word type (noun / verb / adj).
+- Filter by box (or "Due"), word type (noun / verb / adj), and level (A1 / A2 — a word reused
+  across levels only counts under the lowest one, so the level filters never overlap).
 - Progress syncs to KV in the background and merges across mobile + desktop.
 - Open **Diktat** (`/dictation`) for dictation practice: hear a word, fill in the missing
   letters (targeting the hardest German spelling patterns — umlauts, ß, ie/ei, silent-h, sch,

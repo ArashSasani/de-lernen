@@ -11,6 +11,7 @@ function w(overrides: Partial<Word> = {}): Word {
     pos: 'noun',
     examples: [],
     sources: [],
+    levels: ['a1'],
     ...overrides,
   };
 }
@@ -41,7 +42,9 @@ describe('checkAnswer', () => {
 
 describe('fullDisplay', () => {
   it('includes article when present', () => {
-    expect(fullDisplay(w({ article: 'der', lemma: 'Tisch' }))).toBe('der Tisch');
+    expect(fullDisplay(w({ article: 'der', lemma: 'Tisch' }))).toBe(
+      'der Tisch',
+    );
     expect(fullDisplay(w({ article: 'die', lemma: 'Frau' }))).toBe('die Frau');
     expect(fullDisplay(w({ article: 'das', lemma: 'Kind' }))).toBe('das Kind');
   });

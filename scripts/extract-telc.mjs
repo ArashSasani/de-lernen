@@ -2,8 +2,8 @@
 /**
  * Extract vocabulary from Telc Einfach gut A1.1 / A1.2 PDFs.
  * Usage:
- *   node scripts/extract-telc.mjs --source a1.1
- *   node scripts/extract-telc.mjs --source a1.2
+ *   node scripts/extract-telc.mjs --source a1.1 [--level a1]
+ *   node scripts/extract-telc.mjs --source a1.2 [--level a1]
  */
 import { writeFileSync } from 'fs';
 import { join } from 'path';
@@ -16,19 +16,28 @@ const ROOT = new URL('../', import.meta.url).pathname;
 
 const args = process.argv.slice(2);
 const srcArg = args[args.indexOf('--source') + 1];
-if (!srcArg || !['a1.1', 'a1.2'].includes(srcArg)) {
-  console.error('Usage: node scripts/extract-telc.mjs --source a1.1|a1.2');
+const srcMatch = srcArg && srcArg.match(/^([ab]\d)\.([12])$/);
+if (!srcMatch) {
+  console.error(
+    'Usage: node scripts/extract-telc.mjs --source a1.1|a1.2|a2.1|a2.2 [--level a1|a2|b1]',
+  );
+  process.exit(1);
+}
+const [, srcLevel, srcPart] = srcMatch;
+const level = args.includes('--level')
+  ? args[args.indexOf('--level') + 1]
+  : srcLevel;
+if (!['a1', 'a2', 'b1'].includes(level)) {
+  console.error('--level must be a1, a2, or b1');
   process.exit(1);
 }
 
-const isA11 = srcArg === 'a1.1';
-const pdfFile = isA11
-  ? 'Einfach_gut_A1.1_Wortschatzliste_Englisch.pdf'
-  : 'Einfach_gut_A1.2_Wortschatzliste_Englisch.pdf';
-const outName = isA11 ? 'telc-a1-1' : 'telc-a1-2';
+const isA11 = srcPart === '1';
+const pdfFile = `Einfach_gut_${srcLevel.toUpperCase()}.${srcPart}_Wortschatzliste_Englisch.pdf`;
+const outName = `telc-${srcLevel}-${srcPart}`;
 
-const pdfPath = join(ROOT, 'data/sources/a1', pdfFile);
-const outPath = join(ROOT, `data/sources/${outName}.json`);
+const pdfPath = join(ROOT, `data/sources/${level}`, pdfFile);
+const outPath = join(ROOT, `data/sources/${level}/${outName}.json`);
 
 // ─── Regexes / helpers ──────────────────────────────────────────────────────
 
@@ -66,7 +75,7 @@ function parseArticle(raw) {
 // ─── Parse ──────────────────────────────────────────────────────────────────
 
 function parse(text, sourceName) {
-  const flag = createFlagger(outName);
+  const flag = createFlagger(outName, { level });
   const entries = [];
 
   let colPl = 47;
@@ -329,9 +338,30 @@ const FIXES_A11 = [
   },
 ];
 
+const FIXES_A21 = [
+  // verehrt, verehrte: "Verehrte Fahrgäste…" split across Verbindung (prefix) and verehrt (tail)
+  (m) => {
+    const verbindung = m.get('verbindung');
+    const verehrt = m.get('verehrt, verehrte');
+    if (verbindung) verbindung.examples = [];
+    if (verehrt)
+      verehrt.examples = [
+        '„Verehrte Fahrgäste, achten Sie bitte auf die Durchsagen!“',
+      ];
+  },
+  // abstellen: "Wir stellen das Fahrrad…" split across Ablesung (prefix) and abstellen (tail)
+  (m) => {
+    const ablesung = m.get('ablesung');
+    const abstellen = m.get('abstellen');
+    if (ablesung) ablesung.examples = [];
+    if (abstellen)
+      abstellen.examples = ['Wir stellen das Fahrrad in der Garage ab.'];
+  },
+];
+
 // ─── Main ────────────────────────────────────────────────────────────────────
 
-const sourceName = isA11 ? 'telc-a1.1' : 'telc-a1.2';
+const sourceName = `telc-${srcLevel}.${srcPart}`;
 console.log(`Extracting ${sourceName} from ${pdfFile} …`);
 
 const text = extractText(pdfPath);
@@ -355,9 +385,12 @@ for (const e of cleaned) {
   }
 }
 
-// Apply known PDF layout fixes (A1.1 only)
-if (isA11) {
+// Apply known PDF layout fixes (source-specific)
+if (isA11 && level === 'a1') {
   for (const fix of FIXES_A11) fix(seen);
+}
+if (isA11 && level === 'a2') {
+  for (const fix of FIXES_A21) fix(seen);
 }
 
 const deduped = [...seen.values()];
@@ -365,5 +398,5 @@ const deduped = [...seen.values()];
 writeFileSync(outPath, JSON.stringify(deduped, null, 2) + '\n', 'utf8');
 console.log(`✓ Wrote ${deduped.length} entries to ${outPath}`);
 console.log(
-  `  Flagged ${flagCount} rows → data/sources/${outName}_flagged.json`,
+  `  Flagged ${flagCount} rows → data/sources/${level}/${outName}_flagged.json`,
 );

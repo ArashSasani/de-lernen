@@ -29,6 +29,8 @@ export const ARTICLE = {
 
 export const BOXES = [1, 2, 3, 4, 5] as const;
 
+export const LEVELS = ['a1', 'a2', 'b1'] as const;
+
 export const FILTER = {
   ALL: 'all',
   DUE: 'due',

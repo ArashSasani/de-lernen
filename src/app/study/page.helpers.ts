@@ -2,7 +2,7 @@ import type { Box, ProgressMap, Word, WordProgress } from '@/types';
 import type { Filter } from '@/types/filter';
 import type { Grade } from '@/types/grade';
 import { defaultProgress, isDue, onGood, onMiss, onEasy } from '@/lib/leitner';
-import { filterWords } from '@/lib/words';
+import { filterWords, wordLevel } from '@/lib/words';
 import { shuffle } from '@/lib/shuffle';
 import { GRADE, FILTER } from '@/constants';
 
@@ -31,7 +31,9 @@ export function buildQueue(
   words: Word[] = filterWords(),
 ): Word[] {
   const base = words.filter(
-    (w) => filter.pos === FILTER.ALL || w.pos === filter.pos,
+    (w) =>
+      (filter.pos === FILTER.ALL || w.pos === filter.pos) &&
+      (filter.level === FILTER.ALL || wordLevel(w) === filter.level),
   );
 
   const withProgress = base.map((w) => ({ w, p: progressFor(progress, w.id) }));

@@ -14,6 +14,7 @@ const word = (id: string, pos: Word['pos']): Word => ({
   pos,
   examples: [],
   sources: [],
+  levels: ['a1'],
 });
 
 const prog = (box: WordProgress['box'], nextDue: number): WordProgress => ({
@@ -58,7 +59,7 @@ describe('buildQueue', () => {
   ];
 
   it('filters by part of speech', () => {
-    const filter: Filter = { box: 'all', pos: 'verb' };
+    const filter: Filter = { box: 'all', pos: 'verb', level: 'all' };
     const q = buildQueue(filter, {}, words);
     expect(q.map((w) => w.id)).toEqual(['verb1']);
   });
@@ -69,7 +70,7 @@ describe('buildQueue', () => {
       verb1: prog(2, now + DAY), // not due
       // adj1 has no entry → default (nextDue 0) → due
     };
-    const filter: Filter = { box: 'due', pos: 'all' };
+    const filter: Filter = { box: 'due', pos: 'all', level: 'all' };
     const ids = buildQueue(filter, progress, words).map((w) => w.id);
     expect(ids).toContain('noun1');
     expect(ids).toContain('adj1');
@@ -81,7 +82,7 @@ describe('buildQueue', () => {
       noun1: prog(3, now),
       verb1: prog(5, now),
     };
-    const filter: Filter = { box: 3, pos: 'all' };
+    const filter: Filter = { box: 3, pos: 'all', level: 'all' };
     expect(buildQueue(filter, progress, words).map((w) => w.id)).toEqual([
       'noun1',
     ]);
@@ -93,11 +94,22 @@ describe('buildQueue', () => {
       verb1: prog(1, now - 3 * DAY),
       adj1: prog(1, now - 2 * DAY),
     };
-    const filter: Filter = { box: 'all', pos: 'all' };
+    const filter: Filter = { box: 'all', pos: 'all', level: 'all' };
     expect(buildQueue(filter, progress, words).map((w) => w.id)).toEqual([
       'verb1',
       'adj1',
       'noun1',
+    ]);
+  });
+
+  it('filters by level', () => {
+    const leveled: Word[] = [
+      { ...word('a1word', 'noun'), levels: ['a1'] },
+      { ...word('a2word', 'noun'), levels: ['a2'] },
+    ];
+    const filter: Filter = { box: 'all', pos: 'all', level: 'a2' };
+    expect(buildQueue(filter, {}, leveled).map((w) => w.id)).toEqual([
+      'a2word',
     ]);
   });
 });
