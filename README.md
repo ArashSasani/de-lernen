@@ -18,7 +18,7 @@ Built to run as an installable PWA on iPhone and Mac, with progress synced acros
 - **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
   multiple-choice practice quiz.
 
-<img width="390" alt="Study screen demo" src="https://github.com/user-attachments/assets/9c1d9056-b6aa-4a10-af85-30e0c81cfd40" />
+<img width="3874" height="1200" alt="merged-screens-mobile" src="https://github.com/user-attachments/assets/52781ffc-de50-46b7-b24c-5ab5f76a8d7d" />
 
 ---
 
