@@ -228,29 +228,37 @@ function GrammarPageInner() {
               </button>
               {isOpen && (
                 <ul className="flex flex-col divide-y divide-white/5 border-t border-white/10">
-                  {g.topics.map((topic) => (
-                    <li key={topic.id} className="flex items-center gap-1">
-                      <button
-                        onClick={() => setSelectedTopic(topic)}
-                        className="flex-1 px-4 py-2.5 text-left transition-colors hover:bg-white/[0.04]"
+                  {g.topics.map((topic) => {
+                    const isActive = selectedTopic?.id === topic.id;
+                    return (
+                      <li
+                        key={topic.id}
+                        className={`flex items-center gap-1 ${isActive ? 'bg-indigo-500/10' : ''}`}
                       >
-                        <p className="text-sm text-slate-300 hover:text-slate-100">
-                          {topic.title}
-                        </p>
-                        <p className="mt-0.5 text-xs text-slate-500">
-                          {topic.summary}
-                        </p>
-                      </button>
-                      {isQuizzableTopic(topic.id) && (
-                        <Link
-                          href={`/grammar/quiz?topic=${topic.id}`}
-                          className="mr-2 shrink-0 rounded-lg border border-white/10 px-2.5 py-1.5 text-xs text-slate-400 transition-colors hover:bg-white/[0.06] hover:text-slate-200"
+                        <button
+                          onClick={() => setSelectedTopic(topic)}
+                          className="flex-1 px-4 py-2.5 text-left transition-colors hover:bg-white/[0.04]"
                         >
-                          Quiz
-                        </Link>
-                      )}
-                    </li>
-                  ))}
+                          <p
+                            className={`text-sm hover:text-slate-100 ${isActive ? 'text-indigo-300' : 'text-slate-300'}`}
+                          >
+                            {topic.title}
+                          </p>
+                          <p className="mt-0.5 text-xs text-slate-500">
+                            {topic.summary}
+                          </p>
+                        </button>
+                        {isQuizzableTopic(topic.id) && (
+                          <Link
+                            href={`/grammar/quiz?topic=${topic.id}`}
+                            className="mr-2 shrink-0 rounded-lg border border-white/10 px-2.5 py-1.5 text-xs text-slate-400 transition-colors hover:bg-white/[0.06] hover:text-slate-200"
+                          >
+                            Quiz
+                          </Link>
+                        )}
+                      </li>
+                    );
+                  })}
                 </ul>
               )}
             </div>

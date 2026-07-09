@@ -65,7 +65,7 @@ export default function FlashCard({
                     key={b}
                     className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] text-slate-500"
                   >
-                    {remainingByBox[b]}
+                    B{b}: {remainingByBox[b]}
                   </span>
                 ) : null,
               )}

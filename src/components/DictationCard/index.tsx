@@ -213,14 +213,14 @@ export default function DictationCard({
         <button
           onClick={submit}
           disabled={input.trim().length === 0}
-          className="w-full rounded-xl bg-indigo-500/20 px-3 py-3 font-medium text-indigo-300 transition-colors hover:bg-indigo-500/30 disabled:opacity-40"
+          className="w-full rounded-xl bg-indigo-500/20 px-3 py-3 font-medium text-indigo-300 transition-colors hover:bg-indigo-500/30 disabled:bg-white/5 disabled:text-slate-500"
         >
           Check
         </button>
       ) : (
         <button
           onClick={onNext}
-          className="w-full rounded-xl bg-white/5 px-3 py-3 font-medium text-slate-300 transition-colors hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
+          className="w-full rounded-xl bg-indigo-500 px-3 py-3 font-medium text-white transition-colors hover:bg-indigo-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
         >
           Next →
         </button>

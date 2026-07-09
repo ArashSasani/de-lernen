@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import { CheckIcon } from '@heroicons/react/24/outline';
 import type { DailyText } from '@/types';
 import { ARTICLE_COLOR } from '@/constants';
@@ -8,6 +8,8 @@ import {
   toSegments,
   glossFor,
   resolveHighlight,
+  shouldFlipBelow,
+  horizontalOffset,
   type Gloss,
 } from './index.helpers';
 import { useSpeech } from '@/hooks/useSpeech';
@@ -117,9 +119,22 @@ function Highlight({
   const style = isStruggling
     ? 'bg-indigo-500/20 text-indigo-200 decoration-indigo-400/40 hover:bg-indigo-500/30'
     : 'bg-slate-500/20 text-slate-300 decoration-slate-400/40 hover:bg-slate-500/30';
+  const buttonRef = useRef<HTMLButtonElement>(null);
+  const [placeBelow, setPlaceBelow] = useState(false);
+  const [xOffset, setXOffset] = useState(0);
+
+  useLayoutEffect(() => {
+    if (!open) return;
+    const rect = buttonRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    setPlaceBelow(shouldFlipBelow(rect.top));
+    setXOffset(horizontalOffset(rect.left + rect.width / 2, window.innerWidth));
+  }, [open]);
+
   return (
     <span className="relative z-[11] inline-block">
       <button
+        ref={buttonRef}
         type="button"
         onClick={onToggle}
         className={`rounded px-1 py-0.5 font-medium underline decoration-dotted underline-offset-2 ${style}`}
@@ -127,7 +142,12 @@ function Highlight({
         {surface}
       </button>
       {open && gloss && (
-        <span className="absolute bottom-full left-1/2 z-[10] mb-1 w-max max-w-[16rem] -translate-x-1/2 rounded-lg border border-white/10 bg-slate-800 px-3 py-2 text-center text-sm shadow-lg">
+        <span
+          style={{ transform: `translateX(calc(-50% + ${xOffset}px))` }}
+          className={`absolute left-1/2 z-[10] w-max max-w-[16rem] rounded-lg border border-white/10 bg-slate-800 px-3 py-2 text-center text-sm shadow-lg ${
+            placeBelow ? 'top-full mt-1' : 'bottom-full mb-1'
+          }`}
+        >
           <span className="flex items-center justify-center gap-2 font-medium">
             <span>
               {gloss.article && (

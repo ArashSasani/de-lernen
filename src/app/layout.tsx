@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: 'de·lernen',
-  description: 'German A1 vocabulary, Leitner spaced repetition.',
+  description: 'German vocabulary, Leitner spaced repetition.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,

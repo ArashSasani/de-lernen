@@ -37,9 +37,7 @@ export default function LoginPage() {
       >
         <div className="text-center">
           <h1 className="text-3xl font-semibold tracking-tight">de·lernen</h1>
-          <p className="mt-1 text-sm text-slate-400">
-            German A1 · spaced repetition
-          </p>
+          <p className="mt-1 text-sm text-slate-400">Spaced repetition</p>
         </div>
         <input
           type="password"
@@ -55,7 +53,7 @@ export default function LoginPage() {
         <button
           type="submit"
           disabled={loading || !password}
-          className="w-full rounded-xl bg-indigo-500 px-4 py-3 font-medium text-white transition-colors hover:bg-indigo-400 disabled:opacity-40"
+          className="w-full rounded-xl bg-indigo-500 px-4 py-3 font-medium text-white transition-colors hover:bg-indigo-400 disabled:bg-white/5 disabled:text-slate-500"
         >
           {loading ? 'Checking…' : 'Enter'}
         </button>

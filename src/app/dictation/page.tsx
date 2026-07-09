@@ -133,7 +133,7 @@ export default function DictationPage() {
         </div>
       </div>
 
-      <section className="mt-2 flex-1">
+      <section className="mt-2 flex flex-1 flex-col">
         {empty && starredOnly ? (
           <div className="flex flex-col items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] py-16 text-center">
             <p className="text-lg font-medium">No starred words yet</p>
@@ -157,7 +157,7 @@ export default function DictationPage() {
             </button>
           </div>
         ) : (
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-1 flex-col justify-center gap-3">
             <p className="text-right text-xs text-slate-500">
               {index + 1} / {queue.length}
             </p>

@@ -139,7 +139,7 @@ function GrammarQuizInner() {
         </div>
       </header>
 
-      <section className="mt-2 flex-1">
+      <section className="mt-2 flex flex-1 flex-col">
         {finished ? (
           <div className="flex flex-col items-center gap-6 py-12 text-center">
             <div>
@@ -156,7 +156,7 @@ function GrammarQuizInner() {
             </button>
           </div>
         ) : (
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-1 flex-col justify-center gap-3">
             <p className="text-right text-xs text-slate-500">
               {index + 1} / {queue.length}
             </p>
