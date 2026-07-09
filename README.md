@@ -8,7 +8,7 @@ spaced repetition. Vocabulary is compiled once from three source PDFs (Telc A1.1
 Goethe _Fit in Deutsch 1_) into a static dataset. There is **no runtime LLM** — the app just
 reads a committed `words.json`.
 
-Built to run as an installable PWA on iPhone and Mac, with progress synced across both devices.
+Built to run as an installable PWA on mobile and desktop, with progress synced across both devices.
 
 - **Study** (`/study`) — Leitner-box flashcards: German ↔ English, graded Miss / Got it / Easy.
 - **Lesen** (`/read`) — daily A1 reading text, auto-picked and highlighted around your
@@ -116,7 +116,7 @@ vercel env pull .env.local   # pull the KV_* vars locally
 vercel --prod            # deploy
 ```
 
-Then on iPhone (Safari → Share → Add to Home Screen) and Mac (Safari/Chrome → Install) to get
+Then on mobile (Safari/Chrome → Share → Add to Home Screen) and desktop (Safari/Chrome → Install) to get
 the installable app.
 
 ## Project layout
@@ -156,7 +156,7 @@ de-lernen/
 - Tap the speaker icon on any card or gloss popover to hear the German pronunciation
   (uses the browser's built-in speech synthesis — works offline, no API key).
 - Filter by box (or "Due") and word type (noun / verb / adj).
-- Progress syncs to KV in the background and merges across iPhone + Mac.
+- Progress syncs to KV in the background and merges across mobile + desktop.
 - Open **Diktat** (`/dictation`) for dictation practice: hear a word, fill in the missing
   letters (targeting the hardest German spelling patterns — umlauts, ß, ie/ei, silent-h, sch,
   double consonants). Sessions are 15 words, prioritizing never-seen and weak words. Dictation
