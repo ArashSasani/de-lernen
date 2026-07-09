@@ -17,8 +17,10 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
   (umlauts, ß, ie/ei, silent-h).
 - **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
   multiple-choice practice quiz.
-
-<img width="3874" height="1200" alt="merged-screens-mobile" src="https://github.com/user-attachments/assets/52781ffc-de50-46b7-b24c-5ab5f76a8d7d" />
+  
+<img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
+<br>
+<img width="2214" height="1200" alt="merged-mobile_images_2" src="https://github.com/user-attachments/assets/7322b29c-b6d2-492d-912c-e2ddbf6df434" />
 
 ---
 
