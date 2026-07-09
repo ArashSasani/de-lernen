@@ -1,4 +1,4 @@
-# de·lernen — German A1 Flashcard based app
+# de·lernen — German Flashcard based app
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
 [![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8)](#stack)
