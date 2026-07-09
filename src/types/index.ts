@@ -40,6 +40,7 @@ export interface DailyText {
   id: string;
   title: string;
   topic: string;
+  level: Level;
   text: string;
   wordIds: string[];
   spans: DailyTextSpan[];

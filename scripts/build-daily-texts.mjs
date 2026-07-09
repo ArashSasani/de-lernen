@@ -3,7 +3,7 @@
 //
 // Reads the agent-authored source:
 //   data/sources/daily-texts.src.json
-//     [{ id, title, topic, text, used: [{ wordId, surface }] }]
+//     [{ id, title, topic, level, text, used: [{ wordId, surface }] }]
 // and emits the immutable runtime corpus:
 //   data/daily-texts.json   (array of DailyText, sorted by id)
 //
@@ -27,6 +27,8 @@ const DATA = join(ROOT, 'data');
 
 const words = JSON.parse(readFileSync(join(DATA, 'words.json'), 'utf8'));
 const wordIds = new Set(words.map((w) => w.id));
+
+const LEVELS = new Set(['a1', 'a2', 'b1']);
 
 const src = JSON.parse(
   readFileSync(join(DATA, 'sources', 'daily-texts.src.json'), 'utf8'),
@@ -57,9 +59,13 @@ const seenIds = new Set();
 const texts = [];
 
 for (const entry of src) {
-  const { id, title, topic, text, used } = entry;
+  const { id, title, topic, level, text, used } = entry;
   if (!id || !title || !topic || !text || !Array.isArray(used)) {
     problems.push(`Entry "${id ?? '?'}" is missing required fields.`);
+    continue;
+  }
+  if (!LEVELS.has(level)) {
+    problems.push(`[${id}] missing or invalid level "${level}".`);
     continue;
   }
   if (seenIds.has(id)) problems.push(`Duplicate text id "${id}".`);
@@ -100,6 +106,7 @@ for (const entry of src) {
     id,
     title,
     topic,
+    level,
     text,
     wordIds: [...ids].sort(),
     spans: kept,
@@ -127,10 +134,19 @@ const avgTargets = (
   texts.reduce((n, t) => n + t.wordIds.length, 0) / (texts.length || 1)
 ).toFixed(1);
 const topics = new Set(texts.map((t) => t.topic));
+const byLevel = texts.reduce((acc, t) => {
+  acc[t.level] = (acc[t.level] ?? 0) + 1;
+  return acc;
+}, {});
 
 console.log(
   `daily-texts: ${texts.length}  topics: ${topics.size}  ` +
     `spans: ${totalSpans}  avg targets/text: ${avgTargets}`,
+);
+console.log(
+  `by level: ${Object.entries(byLevel)
+    .map(([l, n]) => `${l}=${n}`)
+    .join('  ')}`,
 );
 console.log(
   `vocab coverage: ${covered.size}/${wordIds.size} word ids appear in ≥1 text`,

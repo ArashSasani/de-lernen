@@ -9,6 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import AppNav from '@/components/AppNav';
 import type { DailyText } from '@/types';
+import type { LevelFilter } from '@/types/filter';
 import { dailyTexts, dailyTextById } from '@/lib/daily-texts';
 import { localLoad, fullSync, getToken } from '@/lib/sync';
 import { useProgressSync } from '@/hooks/useProgressSync';
@@ -21,7 +22,9 @@ import {
   setTodaysPick,
 } from '@/lib/daily';
 import DailyReading from '@/components/DailyReading';
-import { groupByTopic } from './page.helpers';
+import { FILTER } from '@/constants';
+import { LEVEL_CHIPS } from '@/components/FilterBar/index.helpers';
+import { groupByTopic, filterByLevel } from './page.helpers';
 
 export default function ReadPage() {
   const router = useRouter();
@@ -30,6 +33,7 @@ export default function ReadPage() {
   const [todayText, setTodayText] = useState<DailyText | null>(null);
   const [modalText, setModalText] = useState<DailyText | null>(null);
   const [openTopic, setOpenTopic] = useState<string | null>(null);
+  const [level, setLevel] = useState<LevelFilter>(FILTER.ALL);
 
   // Box-1 words drive both the highlight set and the daily pick; derive it from
   // the synced progress so it stays current as cards are graded here.
@@ -72,7 +76,10 @@ export default function ReadPage() {
 
   const handleGrade = (wordId: string) => grade(wordId, onGood);
 
-  const groups = useMemo(() => groupByTopic(dailyTexts), []);
+  const groups = useMemo(
+    () => groupByTopic(filterByLevel(dailyTexts, level)),
+    [level],
+  );
 
   const toggleTopic = (topic: string) =>
     setOpenTopic((cur) => (cur === topic ? null : topic));
@@ -110,7 +117,32 @@ export default function ReadPage() {
       )}
 
       {/* Right column on desktop / below on mobile */}
-      <section className="flex flex-col gap-2 md:overflow-y-auto">
+      <section className="flex flex-col gap-3 md:overflow-y-auto">
+        <div className="flex flex-col gap-1">
+          <span className="text-[10px] font-medium tracking-wider text-slate-500 uppercase">
+            Level
+          </span>
+          <div className="flex flex-wrap gap-1 text-xs">
+            {LEVEL_CHIPS.map((l) => (
+              <button
+                key={l.value}
+                onClick={() => setLevel(l.value)}
+                className={`rounded-full px-2.5 py-0.5 transition-colors ${
+                  level === l.value
+                    ? 'bg-indigo-500 text-white'
+                    : 'bg-white/5 text-slate-300 hover:bg-white/10'
+                }`}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+        </div>
+        {groups.length === 0 && (
+          <p className="px-1 text-sm text-slate-400">
+            No texts at this level yet.
+          </p>
+        )}
         {groups.map((g) => {
           const isOpen = openTopic === g.topic;
           return (

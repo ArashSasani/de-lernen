@@ -11,8 +11,8 @@ wordlists) into a static dataset. There is **no runtime LLM** — the app just r
 Built to run as an installable PWA on mobile and desktop, with progress synced across both devices.
 
 - **Study** (`/study`) — Leitner-box flashcards: German ↔ English, graded Miss / Got it / Easy.
-- **Lesen** (`/read`) — daily A1 reading text, auto-picked and highlighted around your
-  struggling words, with tap-for-gloss translations.
+- **Lesen** (`/read`) — daily A1/A2 reading text, auto-picked and highlighted around your
+  struggling words, with tap-for-gloss translations; browse the full corpus by level and topic.
 - **Diktat** (`/dictation`) — spelling/dictation drills targeting tricky German patterns
   (umlauts, ß, ie/ei, silent-h).
 - **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
@@ -69,11 +69,12 @@ There are **two separate builds**, and only one ever touches an LLM:
 
 `words.json`, `daily-texts.json`, and `grammar.json` are the handoff artifacts between the two.
 
-The **daily reading** feature follows the same rule: once a day a short A1 text is surfaced,
+The **daily reading** feature follows the same rule: once a day a short A1/A2 text is surfaced,
 chosen because it contains the box-1 words you're struggling with, and its target vocabulary is
-highlighted and tap-to-gloss. The texts are authored once at build time and pre-annotated with
-exact highlight offsets, so the running app does **zero NLP and zero LLM** — it just matches your
-box-1 words to pre-built texts. See [ADR 007](docs/adrs/007-daily-reading-corpus.md).
+highlighted and tap-to-gloss. The corpus spans both levels — A1 texts and A2 texts whose target
+vocabulary is predominantly A2-specific. The texts are authored once at build time and
+pre-annotated with exact highlight offsets, so the running app does **zero NLP and zero LLM** — it
+just matches your box-1 words to pre-built texts. See [ADR 007](docs/adrs/007-daily-reading-corpus.md).
 
 ---
 
@@ -172,10 +173,11 @@ de-lernen/
   double consonants). Sessions are 15 words, prioritizing never-seen and weak words. Dictation
   progress is tracked separately from Leitner boxes (its own IndexedDB store) but still synced
   across devices via its own `user:dictation` KV key; you can star words for focused practice.
-- Once a day on open, a **daily reading** pops up: a short A1 text chosen for your box-1
+- Once a day on open, a **daily reading** pops up: a short A1/A2 text chosen for your box-1
   (struggling) words, with only those words highlighted — tap one for its translation. Open
-  **Lesen** (the `/read` route) anytime to reread today's text or browse all texts by topic;
-  there, every annotated word is tappable but struggling words are indigo and the rest are slate.
+  **Lesen** (the `/read` route) anytime to reread today's text or browse the full corpus, filtered
+  by level (A1 / A2) and grouped by topic; there, every annotated word is tappable but struggling
+  words are indigo and the rest are slate.
 - Open **Grammatik** (`/grammar`) for a browsable A1 grammar reference: verb conjugation,
   articles & cases, pronouns, sentence structure, prepositions, and negation. Topics are grouped
   by category with expandable cards showing rules, conjugation/declension tables, examples, and

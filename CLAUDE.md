@@ -208,9 +208,11 @@ extraction separate from deterministic merge:
      reliable tiebreaker); dedupe examples. (Goethe word-groups are captured in the source file but
      not carried into `words.json`.)
    - Emit `data/words.json` and `data/changelog.json`.
-3. **Daily reading corpus (built after `words.json` is final):** the agent authors A1
-   exam-style texts once into `data/sources/daily-texts.src.json` (each text records the exact
-   surface form of every embedded word), then the deterministic, re-runnable
+3. **Daily reading corpus (built after `words.json` is final):** the agent authors A1 and A2
+   exam-style texts once into `data/sources/daily-texts.src.json` (each entry carries a `level`,
+   and each text records the exact surface form of every embedded word). Author A2 texts so their
+   target vocabulary is predominantly **A2-specific** — words whose `levels` are `['a2']` only, not
+   the `['a1','a2']` words already scoped under A1. Then the deterministic, re-runnable
    `scripts/build-daily-texts.mjs` resolves those words against `words.json` and turns the surfaces
    into highlight spans, emitting `data/daily-texts.json`. Same build-time-LLM / zero-runtime-LLM
    split as above; the running app only matches box-1 words to pre-annotated texts. See
@@ -274,7 +276,7 @@ src/
     api/dictation/route.ts
   components/             # one folder per component: index.tsx + index.helpers.ts + test
     AppNav/              # hamburger menu (mobile) + inline links (desktop); logout; active-route highlight
-    DailyReading/        # daily A1 text: highlighted target words, tap-for-gloss popover
+    DailyReading/        # daily A1/A2 text: highlighted target words, tap-for-gloss popover
       index.tsx          # props: text, strugglingIds?, highlightAll? (filter vs two-tier mode)
       index.helpers.ts   # toSegments() / glossFor() / resolveHighlight()
       index.helpers.test.ts
