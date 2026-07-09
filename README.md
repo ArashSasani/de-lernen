@@ -3,6 +3,15 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org)
 [![PWA](https://img.shields.io/badge/PWA-installable-5A0FC8)](#stack)
 
+## Life gets busy, and finding time to learn German isn't always easy! 🇩🇪
+
+If you've got a few spare minutes—like some dead time on the **S-Bahn**—this tool might help you learn something new or simply test what you already know.
+It's a fun little vibe project, born from lots of brainstorming, and it's still a work in progress that I'm building in my spare time. The goal is to cover the **A1–B1** German levels, mainly to help people prepare for the exams.
+Feel free to fork the project, contribute, or share your ideas. Thanks! 😊
+
+
+## What is this app anyway!
+
 A single-user, offline-first flashcard app for German vocabulary (A1, with A2 added), using
 Leitner-box spaced repetition. Vocabulary is compiled once per level from source PDFs (Telc + Goethe
 wordlists) into a static dataset. There is **no runtime LLM** — the app just reads a committed
