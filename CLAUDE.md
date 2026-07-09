@@ -6,9 +6,9 @@ self-contained.
 
 ## What this is
 
-A single-user, offline-first, installable PWA for studying German A1 vocabulary with
-Leitner-box spaced repetition. Vocabulary is compiled **once** from three PDFs into a static
-`data/words.json`. The deployed app makes **zero LLM calls**.
+A single-user, offline-first, installable PWA for studying German vocabulary (A1, A2;
+extensible to further levels) with Leitner-box spaced repetition. Vocabulary is compiled
+**once** from source PDFs into a static `data/words.json`. The deployed app makes **zero LLM calls**.
 
 User: one person. No multi-user auth, no user database. A single password gate is enough.
 
@@ -284,7 +284,7 @@ src/
       index.helpers.test.ts
     FilterBar/           # box (incl. "Due") / type / level chips
       index.tsx
-      index.helpers.ts   # POS_CHIPS, BOX_CHIPS
+      index.helpers.ts   # POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS
       index.helpers.test.ts
     LeitnerStats/        # box distribution bars
       index.tsx
@@ -307,7 +307,7 @@ src/
       index.helpers.ts   # speakButtonClass()
       index.helpers.test.ts
   constants/
-    index.ts             # GRADE / POS / ARTICLE / BOXES / FILTER value constants
+    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / BOXES / LEVELS / FILTER value constants
   lib/
     words.ts             # import words.json; wordById + source-filter helper
     daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
@@ -328,12 +328,13 @@ src/
   hooks/                 # React hooks (stateful glue), kept out of lib/ which is framework-agnostic logic
     useProgressSync.ts   # shared study/read sync: debounced KV push + keepalive flush on hide/pagehide/unmount
     useDictationSync.ts  # dictation sync: recordAttempt + toggleStar → IndexedDB + KV (mirrors useProgressSync)
+    useDictationProgress.ts # local dictation progress state: recordAttempt → IndexedDB only (no KV, no star)
     useGrammarQuizProgress.ts # grammar-quiz progress: recordAttempt(topicId, correct) → IndexedDB (no KV sync)
     useSpeech.ts         # German pronunciation: available/speaking state + speak(text)
   types/
     index.ts             # Word, WordProgress, ProgressMap, Article, Pos, Box, DailyText, DailyTextSpan, GrammarTopic (+ related)
     grade.ts             # Grade
-    filter.ts            # Filter, BoxFilter, PosFilter
+    filter.ts            # Filter, BoxFilter, PosFilter, LevelFilter
     stats.ts             # StatBar
     auth.ts              # LoginResult
     dictation.ts         # DictationWordProgress, DictationProgressMap
@@ -346,12 +347,14 @@ src/
     daily.test.ts        # strugglingIds / scoreText / pickDailyText assertions
     dictation.test.ts    # generateGap ruleset assertions
     shuffle.test.ts      # shuffle permutation/immutability assertions
+    words.test.ts        # wordById / wordLevel / source-filter assertions
 public/  manifest.json, sw.js, icons/, apple-touch-icon.png
 scripts/
   lib/pdf-text.mjs       # pdftotext -layout wrapper + _text/ cache
   lib/flag.mjs           # push uncertain rows to <source>_flagged.json
   extract-telc.mjs       # parse telc text → telc-a1-{1,2}.json
-  extract-goethe.mjs     # parse goethe text → goethe-a1.json
+  extract-goethe.mjs     # parse goethe text → goethe-a1.json (A1 layout)
+  extract-goethe-a2.mjs  # parse goethe A2 text → goethe-a2.json (A2 layout variant)
   build-words.mjs        # refine + merge → words.json + changelog.json
   build-daily-texts.mjs  # annotate + validate daily-texts.src.json → daily-texts.json
   gen-icons.mjs          # generate PWA icons + apple-touch-icon.png

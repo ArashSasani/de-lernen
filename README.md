@@ -17,7 +17,7 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
   (umlauts, ß, ie/ei, silent-h).
 - **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
   multiple-choice practice quiz.
-  
+
 <img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
 <br>
 <img width="2214" height="1200" alt="merged-mobile_images_2" src="https://github.com/user-attachments/assets/7322b29c-b6d2-492d-912c-e2ddbf6df434" />
@@ -141,14 +141,16 @@ de-lernen/
 │  └─ changelog.json             ← record of every correction made (generated, committed)
 ├─ scripts/build-words.mjs       ← deterministic merge → words.json (globs data/sources/*/*.json)
 ├─ scripts/extract-telc.mjs      ← --source <level>.<part> [--level <level>] → data/sources/<level>/telc-*.json
-├─ scripts/extract-goethe.mjs    ← --level <level> → data/sources/<level>/goethe-<level>.json
+├─ scripts/extract-goethe.mjs    ← --level <level> → data/sources/<level>/goethe-<level>.json (A1 layout)
+├─ scripts/extract-goethe-a2.mjs ← A2 layout variant of the Goethe extractor → data/sources/a2/goethe-a2.json
 ├─ scripts/build-daily-texts.mjs ← annotate + validate → daily-texts.json
+├─ scripts/gen-icons.mjs         ← generate PWA icons + apple-touch-icon.png
 ├─ public/                       ← manifest.json, sw.js, icons
 └─ src/
    ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz) + api/{login,progress,dictation}
    ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
    ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB-only), words (incl. wordLevel), daily, daily-texts, speech
-   ├─ hooks/                ← useProgressSync, useDictationSync, useGrammarQuizProgress, useSpeech
+   ├─ hooks/                ← useProgressSync, useDictationSync, useDictationProgress, useGrammarQuizProgress, useSpeech
    └─ types/
 ```
 
