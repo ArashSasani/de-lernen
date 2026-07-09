@@ -11,6 +11,7 @@ const text = (id: string, wordIds: string[]): DailyText => ({
   id,
   title: id,
   topic: 'test',
+  level: 'a1',
   text: '...',
   wordIds,
   spans: [],

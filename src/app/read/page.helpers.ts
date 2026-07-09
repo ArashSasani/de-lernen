@@ -1,8 +1,18 @@
 import type { DailyText } from '@/types';
+import type { LevelFilter } from '@/types/filter';
+import { FILTER } from '@/constants';
 
 export interface TopicGroup {
   topic: string;
   texts: DailyText[];
+}
+
+// Narrow the browsable corpus to one level, or pass everything through for "all".
+export function filterByLevel(
+  texts: DailyText[],
+  level: LevelFilter,
+): DailyText[] {
+  return level === FILTER.ALL ? texts : texts.filter((t) => t.level === level);
 }
 
 // Group the corpus by topic for the browsable list, with topics and titles in
