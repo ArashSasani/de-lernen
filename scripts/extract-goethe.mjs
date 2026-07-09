@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 /**
  * Extract vocabulary from the Goethe-Zertifikat A1 Fit-in-Deutsch-1 Wortliste PDF.
- * Produces data/sources/goethe-a1.json.
+ * Produces data/sources/<level>/goethe-<level>.json.
  * en is intentionally left empty — filled in Phase 1b (build-words.mjs).
+ * Usage: node scripts/extract-goethe.mjs [--level a1]
  */
 import { writeFileSync } from 'fs';
 import { join } from 'path';
@@ -10,18 +11,29 @@ import { extractText } from './lib/pdf-text.mjs';
 import { createFlagger } from './lib/flag.mjs';
 
 const ROOT = new URL('../', import.meta.url).pathname;
+
+const args = process.argv.slice(2);
+const level = args.includes('--level')
+  ? args[args.indexOf('--level') + 1]
+  : 'a1';
+if (!['a1', 'a2', 'b1'].includes(level)) {
+  console.error('--level must be a1, a2, or b1');
+  process.exit(1);
+}
+const outName = `goethe-${level}`;
+
 const PDF_PATH = join(
   ROOT,
-  'data/sources/a1/Goethe-Zertifikat_A1_Fit1_Wortliste.pdf',
+  `data/sources/${level}/Goethe-Zertifikat_A1_Fit1_Wortliste.pdf`,
 );
-const OUT_PATH = join(ROOT, 'data/sources/goethe-a1.json');
+const OUT_PATH = join(ROOT, `data/sources/${level}/${outName}.json`);
 
 const ALPHA_FIRST = 9;
 const ALPHA_LAST = 21;
 const WG_FIRST = 6;
 const WG_LAST = 8;
 
-const flag = createFlagger('goethe-a1');
+const flag = createFlagger(outName, { level });
 
 // ─── Plural expansion ────────────────────────────────────────────────────────
 
@@ -512,5 +524,5 @@ const flagCount = flag.save();
 writeFileSync(OUT_PATH, JSON.stringify(deduped, null, 2) + '\n', 'utf8');
 console.log(`✓ Wrote ${deduped.length} entries to ${OUT_PATH}`);
 console.log(
-  `  Flagged ${flagCount} rows → data/sources/goethe-a1_flagged.json`,
+  `  Flagged ${flagCount} rows → data/sources/${level}/${outName}_flagged.json`,
 );

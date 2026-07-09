@@ -8,13 +8,14 @@ const SOURCES_DIR = join(ROOT, 'data/sources');
 /**
  * Create a flagger for a given source.
  * Usage:
- *   const flag = createFlagger('telc-a1-1');
+ *   const flag = createFlagger('telc-a1-1', { level: 'a1' });
  *   flag({ page: 3, rawLine: '...', reason: 'ambiguous continuation' });
  *   flag.save();
  */
-export function createFlagger(sourceName) {
+export function createFlagger(sourceName, { level } = {}) {
   const flags = [];
-  const flagPath = join(SOURCES_DIR, `${sourceName}_flagged.json`);
+  const dir = level ? join(SOURCES_DIR, level) : SOURCES_DIR;
+  const flagPath = join(dir, `${sourceName}_flagged.json`);
 
   function flag(entry) {
     flags.push(entry);

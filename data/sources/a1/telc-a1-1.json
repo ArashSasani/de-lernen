@@ -4,8 +4,12 @@
     "lemma": "Abend",
     "plural": "Abende",
     "en": "evening",
-    "examples": ["Guten Abend!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Guten Abend!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -14,7 +18,9 @@
     "plural": null,
     "en": "everything",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -23,7 +29,9 @@
     "plural": null,
     "en": "answer (you answer)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -32,7 +40,9 @@
     "plural": null,
     "en": "also/too",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -41,7 +51,9 @@
     "plural": null,
     "en": "on",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -49,8 +61,12 @@
     "lemma": "aus",
     "plural": null,
     "en": "from",
-    "examples": ["Ich komme aus Syrien."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich komme aus Syrien."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -59,7 +75,9 @@
     "plural": "Aussagen",
     "en": "statement",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -67,8 +85,12 @@
     "lemma": "bisschen",
     "plural": null,
     "en": "a little/a bit",
-    "examples": ["Er spricht ein bisschen Englisch."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Er spricht ein bisschen Englisch."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -77,7 +99,9 @@
     "plural": null,
     "en": "please/thank you",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -86,7 +110,9 @@
     "plural": null,
     "en": "thank you",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -95,7 +121,9 @@
     "plural": null,
     "en": "then",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -104,7 +132,9 @@
     "plural": null,
     "en": "the (neuter noun)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -113,7 +143,9 @@
     "plural": null,
     "en": "the (masculine noun)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -121,8 +153,12 @@
     "lemma": "Deutsch",
     "plural": null,
     "en": "German",
-    "examples": ["Ich spreche Deutsch."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich spreche Deutsch."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -131,7 +167,9 @@
     "plural": "Dialoge",
     "en": "Dialogue",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -140,7 +178,9 @@
     "plural": null,
     "en": "the (feminine noun)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -148,8 +188,12 @@
     "lemma": "dir",
     "plural": null,
     "en": "(to) you",
-    "examples": ["Wie geht es dir?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie geht es dir?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -157,8 +201,12 @@
     "lemma": "du",
     "plural": null,
     "en": "you",
-    "examples": ["Bist du aus Polen?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Bist du aus Polen?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -167,7 +215,9 @@
     "plural": null,
     "en": "a/one",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -176,7 +226,9 @@
     "plural": null,
     "en": "apology",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -185,7 +237,9 @@
     "plural": null,
     "en": "he",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -194,7 +248,9 @@
     "plural": null,
     "en": "it",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -203,7 +259,9 @@
     "plural": "Formen",
     "en": "form/type",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -212,7 +270,9 @@
     "plural": "Fragen",
     "en": "question",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -221,7 +281,9 @@
     "plural": null,
     "en": "ask (you ask)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -230,7 +292,9 @@
     "plural": "Frauen",
     "en": "woman/mrs",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -238,8 +302,12 @@
     "lemma": "ganz",
     "plural": null,
     "en": "quite",
-    "examples": ["Es geht mir ganz gut."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Es geht mir ganz gut."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -247,8 +315,12 @@
     "lemma": "gehen",
     "plural": null,
     "en": "to do (ok/not ok)(it's going ok)",
-    "examples": ["Es geht mir gut."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Es geht mir gut."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -257,7 +329,9 @@
     "plural": null,
     "en": "grammar",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -266,7 +340,9 @@
     "plural": null,
     "en": "good",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -275,7 +351,9 @@
     "plural": null,
     "en": "hello",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -283,8 +361,12 @@
     "lemma": "heißen",
     "plural": null,
     "en": "to be called",
-    "examples": ["Ich heiße Anna."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich heiße Anna."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -293,7 +375,9 @@
     "plural": "Herren",
     "en": "man/mr",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -302,7 +386,9 @@
     "plural": null,
     "en": "hear (you hear)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -311,7 +397,9 @@
     "plural": null,
     "en": "I/me",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -319,8 +407,12 @@
     "lemma": "Ihnen",
     "plural": null,
     "en": "(to) you (formal)",
-    "examples": ["Wie geht es Ihnen?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie geht es Ihnen?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -329,7 +421,9 @@
     "plural": null,
     "en": "her/their",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -337,8 +431,12 @@
     "lemma": "im",
     "plural": null,
     "en": "in",
-    "examples": ["Fragen Sie im Kurs."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Fragen Sie im Kurs."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -347,7 +445,9 @@
     "plural": null,
     "en": "yes",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -355,8 +455,12 @@
     "lemma": "klar",
     "plural": null,
     "en": "of course",
-    "examples": ["Ja, klar."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ja, klar."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -364,8 +468,12 @@
     "lemma": "kommen",
     "plural": null,
     "en": "to come from",
-    "examples": ["Woher kommst du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Woher kommst du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -374,7 +482,9 @@
     "plural": "Kurse",
     "en": "course",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -383,7 +493,9 @@
     "plural": "Kursteilnehmer",
     "en": "course participant (male)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -392,7 +504,9 @@
     "plural": "Kursteilnehmerinnen",
     "en": "course participant (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -401,7 +515,9 @@
     "plural": "Länder",
     "en": "country",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -410,7 +526,9 @@
     "plural": null,
     "en": "read (you read)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -419,7 +537,9 @@
     "plural": "Männer",
     "en": "man",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -428,7 +548,9 @@
     "plural": null,
     "en": "my, mine",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -437,7 +559,9 @@
     "plural": null,
     "en": "with",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -445,8 +569,12 @@
     "lemma": "morgen",
     "plural": null,
     "en": "tomorrow",
-    "examples": ["Bis morgen!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Bis morgen!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -454,8 +582,12 @@
     "lemma": "Nacht",
     "plural": "Nächte",
     "en": "night",
-    "examples": ["Gute Nacht!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Gute Nacht!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -464,7 +596,9 @@
     "plural": "Namen",
     "en": "name",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -472,8 +606,12 @@
     "lemma": "nein",
     "plural": null,
     "en": "no",
-    "examples": ["Nein, danke."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Nein, danke."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -482,7 +620,9 @@
     "plural": null,
     "en": "new",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -491,7 +631,9 @@
     "plural": null,
     "en": "not",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -500,7 +642,9 @@
     "plural": null,
     "en": "or",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -509,7 +653,9 @@
     "plural": "Personen",
     "en": "person",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -517,8 +663,12 @@
     "lemma": "richtig",
     "plural": null,
     "en": "correct",
-    "examples": ["Das ist richtig!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Das ist richtig!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -527,7 +677,9 @@
     "plural": "Sätze",
     "en": "sentence",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -536,7 +688,9 @@
     "plural": null,
     "en": "write (you write)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -545,7 +699,9 @@
     "plural": null,
     "en": "very",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -553,8 +709,12 @@
     "lemma": "sein",
     "plural": null,
     "en": "(I am – you are – he is – they/you are)",
-    "examples": ["Seid ihr aus Afghanistan?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Seid ihr aus Afghanistan?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -563,7 +723,9 @@
     "plural": null,
     "en": "they",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -572,7 +734,9 @@
     "plural": null,
     "en": "so",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -581,7 +745,9 @@
     "plural": "Sprachen",
     "en": "language",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -590,7 +756,9 @@
     "plural": null,
     "en": "(I speak – you speak – he speaks)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -599,7 +767,9 @@
     "plural": null,
     "en": "very good",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -607,8 +777,12 @@
     "lemma": "Tag",
     "plural": "Tage",
     "en": "day",
-    "examples": ["Guten Tag, Herr Maier."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Guten Tag, Herr Maier."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -616,8 +790,12 @@
     "lemma": "Tschüss",
     "plural": null,
     "en": "bye",
-    "examples": ["Tschüss, bis bald!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Tschüss, bis bald!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -626,7 +804,9 @@
     "plural": null,
     "en": "and",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -634,8 +814,12 @@
     "lemma": "was",
     "plural": null,
     "en": "what",
-    "examples": ["Was machst du morgen?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Was machst du morgen?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -643,8 +827,12 @@
     "lemma": "welche",
     "plural": null,
     "en": "which",
-    "examples": ["Welche Sprachen sprichst du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Welche Sprachen sprichst du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -652,8 +840,12 @@
     "lemma": "wer",
     "plural": null,
     "en": "who",
-    "examples": ["Wer ist das?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wer ist das?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -661,8 +853,12 @@
     "lemma": "Wiedersehen",
     "plural": null,
     "en": "good bye",
-    "examples": ["Auf Wiedersehen!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Auf Wiedersehen!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -670,8 +866,12 @@
     "lemma": "wie",
     "plural": null,
     "en": "how",
-    "examples": ["Wie heißt du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie heißt du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -680,7 +880,9 @@
     "plural": null,
     "en": "to know",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -688,8 +890,12 @@
     "lemma": "wo",
     "plural": null,
     "en": "where",
-    "examples": ["Wo wohnst du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wo wohnst du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -697,8 +903,12 @@
     "lemma": "woher",
     "plural": null,
     "en": "where … from",
-    "examples": ["Woher kommst du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Woher kommst du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -707,7 +917,9 @@
     "plural": "Wörter",
     "en": "word",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -716,7 +928,9 @@
     "plural": null,
     "en": "but",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -725,7 +939,9 @@
     "plural": "Adressen",
     "en": "address",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -734,7 +950,9 @@
     "plural": null,
     "en": "old",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -743,7 +961,9 @@
     "plural": null,
     "en": "register",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -752,7 +972,9 @@
     "plural": null,
     "en": "registration",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -761,7 +983,9 @@
     "plural": null,
     "en": "work (you work)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -770,7 +994,9 @@
     "plural": "Bilder",
     "en": "image/photo",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -779,7 +1005,9 @@
     "plural": "Brüder",
     "en": "brother",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -788,7 +1016,9 @@
     "plural": null,
     "en": "to spell",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -797,7 +1027,9 @@
     "plural": null,
     "en": "your/yours",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -805,8 +1037,12 @@
     "lemma": "einmal",
     "plural": null,
     "en": "once again",
-    "examples": ["Noch einmal, bitte."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Noch einmal, bitte."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -815,7 +1051,9 @@
     "plural": null,
     "en": "parents",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -824,7 +1062,9 @@
     "plural": null,
     "en": "wrong",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -833,7 +1073,9 @@
     "plural": "Familien",
     "en": "family",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -842,7 +1084,9 @@
     "plural": "Familiennamen",
     "en": "surname",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -851,7 +1095,9 @@
     "plural": null,
     "en": "marital status",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -860,7 +1106,9 @@
     "plural": "Formulare",
     "en": "form",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -869,7 +1117,9 @@
     "plural": null,
     "en": "divorced/separated",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -877,8 +1127,12 @@
     "lemma": "Geschwister",
     "plural": null,
     "en": "siblings",
-    "examples": ["Hast du Geschwister?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Hast du Geschwister?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -887,7 +1141,9 @@
     "plural": null,
     "en": "to have",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -895,8 +1151,12 @@
     "lemma": "Handynummer",
     "plural": "Handynummern",
     "en": "mobile number",
-    "examples": ["Wie ist deine Handynummer?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie ist deine Handynummer?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -905,7 +1165,9 @@
     "plural": "Hausnummern",
     "en": "house number",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -914,7 +1176,9 @@
     "plural": "Heimatländer",
     "en": "home country",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -923,7 +1187,9 @@
     "plural": null,
     "en": "here",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -931,8 +1197,12 @@
     "lemma": "Ihr, Ihre",
     "plural": null,
     "en": "your (formal)/yours (formal)",
-    "examples": ["Wie ist Ihre Adresse?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie ist Ihre Adresse?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -941,7 +1211,9 @@
     "plural": null,
     "en": "in",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -950,7 +1222,9 @@
     "plural": "Informationen",
     "en": "information",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -959,7 +1233,9 @@
     "plural": "Jahre",
     "en": "year",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -968,7 +1244,9 @@
     "plural": null,
     "en": "now",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -977,7 +1255,9 @@
     "plural": null,
     "en": "no/none",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -985,8 +1265,12 @@
     "lemma": "Kind",
     "plural": "Kinder",
     "en": "child",
-    "examples": ["Ich habe keine Kinder."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich habe keine Kinder."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -995,7 +1279,9 @@
     "plural": "Kindergärten",
     "en": "nursery",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1004,7 +1290,9 @@
     "plural": "Kontakte",
     "en": "contact",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1012,8 +1300,12 @@
     "lemma": "leben",
     "plural": null,
     "en": "to live",
-    "examples": ["Wo lebst du?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wo lebst du?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1022,7 +1314,9 @@
     "plural": null,
     "en": "single",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1031,7 +1325,9 @@
     "plural": "E-Mails",
     "en": "email",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1040,7 +1336,9 @@
     "plural": null,
     "en": "to like (you like)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1049,7 +1347,9 @@
     "plural": "Mütter",
     "en": "mother",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1058,7 +1358,9 @@
     "plural": null,
     "en": "after",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1067,7 +1369,9 @@
     "plural": "Nachnamen",
     "en": "last name",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1076,7 +1380,9 @@
     "plural": null,
     "en": "also",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1085,7 +1391,9 @@
     "plural": "Postleitzahlen",
     "en": "postcode",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1094,7 +1402,9 @@
     "plural": "Schwestern",
     "en": "sister",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1103,7 +1413,9 @@
     "plural": null,
     "en": "sister-in-law",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1112,7 +1424,9 @@
     "plural": null,
     "en": "step-daughter",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1121,7 +1435,9 @@
     "plural": null,
     "en": "step-father",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1130,7 +1446,9 @@
     "plural": "Söhne",
     "en": "son",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1139,7 +1457,9 @@
     "plural": "Straßen",
     "en": "street",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1148,7 +1468,9 @@
     "plural": "Telefonnummern",
     "en": "telephone number",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1157,7 +1479,9 @@
     "plural": "Töchter",
     "en": "daughter",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1165,8 +1489,12 @@
     "lemma": "über",
     "plural": null,
     "en": "about / via / over",
-    "examples": ["Der Zug nach Basel fährt über Stuttgart."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Der Zug nach Basel fährt über Stuttgart."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1175,7 +1503,9 @@
     "plural": "Väter",
     "en": "father",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1184,7 +1514,9 @@
     "plural": null,
     "en": "compare (you compare)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1192,8 +1524,12 @@
     "lemma": "verheiratet",
     "plural": null,
     "en": "married",
-    "examples": ["Sind Sie verheiratet?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Sind Sie verheiratet?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1202,7 +1538,9 @@
     "plural": null,
     "en": "widowed",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1210,8 +1548,12 @@
     "lemma": "viel, viele",
     "plural": null,
     "en": "many",
-    "examples": ["Wie viele Kinder haben Sie?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wie viele Kinder haben Sie?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1220,7 +1562,9 @@
     "plural": "Vornamen",
     "en": "forename",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1229,7 +1573,9 @@
     "plural": null,
     "en": "introduce",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1238,7 +1584,9 @@
     "plural": null,
     "en": "which",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1246,8 +1594,12 @@
     "lemma": "willkommen",
     "plural": null,
     "en": "welcome",
-    "examples": ["Herzlich willkommen!"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Herzlich willkommen!"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1256,7 +1608,9 @@
     "plural": null,
     "en": "we",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1265,7 +1619,9 @@
     "plural": null,
     "en": "to live",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1274,7 +1630,9 @@
     "plural": null,
     "en": "place of residence",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1283,7 +1641,9 @@
     "plural": "Zahlen",
     "en": "number",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1291,8 +1651,12 @@
     "lemma": "zu",
     "plural": null,
     "en": "too",
-    "examples": ["Das ist jetzt leider zu spät."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Das ist jetzt leider zu spät."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1301,7 +1665,9 @@
     "plural": null,
     "en": "well",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1309,8 +1675,12 @@
     "lemma": "an",
     "plural": null,
     "en": "on",
-    "examples": ["Am Samstag ist kein Deutschkurs."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Am Samstag ist kein Deutschkurs."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1319,7 +1689,9 @@
     "plural": null,
     "en": "other",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1328,7 +1700,9 @@
     "plural": null,
     "en": "use (to use)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1337,7 +1711,9 @@
     "plural": "Blätter",
     "en": "sheet (of paper)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1346,7 +1722,9 @@
     "plural": "Bleistifte",
     "en": "pencil",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1355,7 +1733,9 @@
     "plural": "Bücher",
     "en": "book",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1364,7 +1744,9 @@
     "plural": null,
     "en": "there",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1372,8 +1754,12 @@
     "lemma": "Deutschkurs",
     "plural": null,
     "en": "German course",
-    "examples": ["Der Deutschkurs ist am Montag."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Der Deutschkurs ist am Montag."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1382,7 +1768,9 @@
     "plural": null,
     "en": "Tuesday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1391,7 +1779,9 @@
     "plural": null,
     "en": "indeed (speech particle, postitive confirmation)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1400,7 +1790,9 @@
     "plural": null,
     "en": "Thursday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1409,7 +1801,9 @@
     "plural": null,
     "en": "finally",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1418,7 +1812,9 @@
     "plural": null,
     "en": "to explain",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1427,7 +1823,9 @@
     "plural": null,
     "en": "to explain (you explain)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1436,7 +1834,9 @@
     "plural": null,
     "en": "family photo",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1445,7 +1845,9 @@
     "plural": "Feiertage",
     "en": "public holiday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1454,7 +1856,9 @@
     "plural": null,
     "en": "window",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1463,7 +1867,9 @@
     "plural": null,
     "en": "photo",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1472,7 +1878,9 @@
     "plural": null,
     "en": "Friday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1480,8 +1888,12 @@
     "lemma": "Freund",
     "plural": "Freunde",
     "en": "friend",
-    "examples": ["Hast du schon Freunde hier?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Hast du schon Freunde hier?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1490,7 +1902,9 @@
     "plural": null,
     "en": "for",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1499,7 +1913,9 @@
     "plural": null,
     "en": "exactly",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1508,7 +1924,9 @@
     "plural": null,
     "en": "yesterday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1517,7 +1935,9 @@
     "plural": null,
     "en": "big",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1525,8 +1945,12 @@
     "lemma": "Gruß",
     "plural": "Grüße",
     "en": "greeting",
-    "examples": ["Viele Grüße"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Viele Grüße"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1535,7 +1959,9 @@
     "plural": "Hausaufgaben",
     "en": "homework",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1544,7 +1970,9 @@
     "plural": "Hefte",
     "en": "booklet",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1553,7 +1981,9 @@
     "plural": null,
     "en": "today",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1562,7 +1992,9 @@
     "plural": null,
     "en": "always",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1571,7 +2003,9 @@
     "plural": "Karten",
     "en": "card/map",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1580,7 +2014,9 @@
     "plural": null,
     "en": "small",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1589,7 +2025,9 @@
     "plural": null,
     "en": "tricky",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1598,7 +2036,9 @@
     "plural": "Kugelschreiber",
     "en": "ball-point pen (biro)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1607,7 +2047,9 @@
     "plural": null,
     "en": "course book",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1616,7 +2058,9 @@
     "plural": null,
     "en": "classroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1625,7 +2069,9 @@
     "plural": "Lampen",
     "en": "lamp",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1634,7 +2080,9 @@
     "plural": "Landkarten",
     "en": "map",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1643,7 +2091,9 @@
     "plural": null,
     "en": "slowly",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1652,7 +2102,9 @@
     "plural": "Lehrer",
     "en": "teacher (male)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1661,7 +2113,9 @@
     "plural": "Lehrerinnen",
     "en": "teacher (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1670,7 +2124,9 @@
     "plural": null,
     "en": "to learn",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1678,8 +2134,12 @@
     "lemma": "liebe, lieber",
     "plural": null,
     "en": "dear",
-    "examples": ["Liebe Laura, …"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Liebe Laura, …"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1688,7 +2148,9 @@
     "plural": "Listen",
     "en": "list",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1697,7 +2159,9 @@
     "plural": null,
     "en": "to make",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1706,7 +2170,9 @@
     "plural": null,
     "en": "(to) me",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1715,7 +2181,9 @@
     "plural": null,
     "en": "Wednesday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1724,7 +2192,9 @@
     "plural": null,
     "en": "Monday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1732,8 +2202,12 @@
     "lemma": "natürlich",
     "plural": null,
     "en": "of course",
-    "examples": ["Noch einmal langsam bitte! – Natürlich."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Noch einmal langsam bitte! – Natürlich."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1742,7 +2216,9 @@
     "plural": null,
     "en": "nice",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1751,7 +2227,9 @@
     "plural": null,
     "en": "paper",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1760,7 +2238,9 @@
     "plural": null,
     "en": "waste paper bin",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1769,7 +2249,9 @@
     "plural": "Pausen",
     "en": "break",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1778,7 +2260,9 @@
     "plural": "Probleme",
     "en": "problem",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1787,7 +2271,9 @@
     "plural": null,
     "en": "projector",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1796,7 +2282,9 @@
     "plural": null,
     "en": "eraser",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1805,7 +2293,9 @@
     "plural": null,
     "en": "room",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1814,7 +2304,9 @@
     "plural": null,
     "en": "backpack",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1823,7 +2315,9 @@
     "plural": "Sachen",
     "en": "thing",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1832,7 +2326,9 @@
     "plural": null,
     "en": "to say",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1841,7 +2337,9 @@
     "plural": null,
     "en": "Saturday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1849,8 +2347,12 @@
     "lemma": "sehen",
     "plural": null,
     "en": "to see",
-    "examples": ["Was sehen Sie?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Was sehen Sie?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1859,7 +2361,9 @@
     "plural": null,
     "en": "page",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1868,7 +2372,9 @@
     "plural": "Schlüssel",
     "en": "key",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1877,7 +2383,9 @@
     "plural": null,
     "en": "fast",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1886,7 +2394,9 @@
     "plural": null,
     "en": "Sunday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1895,7 +2405,9 @@
     "plural": null,
     "en": "fun",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1903,8 +2415,12 @@
     "lemma": "spielen",
     "plural": null,
     "en": "to play",
-    "examples": ["Spielen Sie die Dialoge."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Spielen Sie die Dialoge."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1913,7 +2429,9 @@
     "plural": null,
     "en": "pencil sharpener",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1922,7 +2440,9 @@
     "plural": "Stühle",
     "en": "chair",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1931,7 +2451,9 @@
     "plural": null,
     "en": "table",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1940,7 +2462,9 @@
     "plural": null,
     "en": "black/white board",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1949,7 +2473,9 @@
     "plural": null,
     "en": "bag",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1958,7 +2484,9 @@
     "plural": null,
     "en": "text",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1967,7 +2495,9 @@
     "plural": "Tische",
     "en": "table",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1976,7 +2506,9 @@
     "plural": null,
     "en": "door",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1985,7 +2517,9 @@
     "plural": null,
     "en": "the day after tomorrow",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -1994,7 +2528,9 @@
     "plural": "Übungen",
     "en": "exercise",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2003,7 +2539,9 @@
     "plural": null,
     "en": "exercise book",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2012,7 +2550,9 @@
     "plural": null,
     "en": "to understand",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2021,7 +2561,9 @@
     "plural": null,
     "en": "the day before yesterday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2030,7 +2572,9 @@
     "plural": null,
     "en": "wall",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2039,7 +2583,9 @@
     "plural": null,
     "en": "week",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2048,7 +2594,9 @@
     "plural": null,
     "en": "weekend",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2057,7 +2605,9 @@
     "plural": "Wörterbücher",
     "en": "dictionary",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2066,7 +2616,9 @@
     "plural": null,
     "en": "to show (we show)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2075,7 +2627,9 @@
     "plural": "Zettel",
     "en": "note",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2083,8 +2637,12 @@
     "lemma": "zusammen",
     "plural": null,
     "en": "together",
-    "examples": ["Wir gehen zusammen ins Kino."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wir gehen zusammen ins Kino."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2093,7 +2651,9 @@
     "plural": "Angebote",
     "en": "offer",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2102,7 +2662,9 @@
     "plural": "Antworten",
     "en": "answer",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2111,7 +2673,9 @@
     "plural": "Äpfel",
     "en": "apple",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2120,7 +2684,9 @@
     "plural": null,
     "en": "apple juice",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2129,7 +2695,9 @@
     "plural": "Aufgaben",
     "en": "task",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2138,7 +2706,9 @@
     "plural": null,
     "en": "baby food",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2147,7 +2717,9 @@
     "plural": "Bananen",
     "en": "banana",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2155,8 +2727,12 @@
     "lemma": "Becher",
     "plural": "Becher",
     "en": "container",
-    "examples": ["ein Becher Joghurt"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "ein Becher Joghurt"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2165,7 +2741,9 @@
     "plural": "Beispiele",
     "en": "example",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2174,7 +2752,9 @@
     "plural": null,
     "en": "beer",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2183,7 +2763,9 @@
     "plural": "Birnen",
     "en": "pear",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2192,7 +2774,9 @@
     "plural": null,
     "en": "bistro/café",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2201,7 +2785,9 @@
     "plural": "Blaubeeren",
     "en": "blueberry",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2210,7 +2796,9 @@
     "plural": "Bohnen",
     "en": "bean",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2219,7 +2807,9 @@
     "plural": null,
     "en": "to need",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2228,7 +2818,9 @@
     "plural": "Brote",
     "en": "bread",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2237,7 +2829,9 @@
     "plural": "Brötchen",
     "en": "bread roll",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2246,7 +2840,9 @@
     "plural": "Cent",
     "en": "cent",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2255,7 +2851,9 @@
     "plural": "Cola, Colas",
     "en": "cola",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2264,7 +2862,9 @@
     "plural": null,
     "en": "couscous",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2273,7 +2873,9 @@
     "plural": null,
     "en": "because",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2282,7 +2884,9 @@
     "plural": null,
     "en": "this",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2291,7 +2895,9 @@
     "plural": "Dosen",
     "en": "jar",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2300,7 +2906,9 @@
     "plural": null,
     "en": "through",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2309,7 +2917,9 @@
     "plural": "Eier",
     "en": "egg",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2318,7 +2928,9 @@
     "plural": null,
     "en": "shopping list",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2327,7 +2939,9 @@
     "plural": null,
     "en": "a few",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2336,7 +2950,9 @@
     "plural": "Erbsen",
     "en": "pea",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2345,7 +2961,9 @@
     "plural": "Erdbeeren",
     "en": "strawberry",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2354,7 +2972,9 @@
     "plural": null,
     "en": "to eat",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2363,7 +2983,9 @@
     "plural": null,
     "en": "something",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2372,7 +2994,9 @@
     "plural": null,
     "en": "finished",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2381,7 +3005,9 @@
     "plural": "Fische",
     "en": "fish",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2390,7 +3016,9 @@
     "plural": "Flaschen",
     "en": "bottle",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2399,7 +3027,9 @@
     "plural": null,
     "en": "meat",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2408,7 +3038,9 @@
     "plural": null,
     "en": "fresh",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2417,7 +3049,9 @@
     "plural": null,
     "en": "breakfast",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2426,7 +3060,9 @@
     "plural": null,
     "en": "to breakfast",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2435,7 +3071,9 @@
     "plural": null,
     "en": "together",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2444,7 +3082,9 @@
     "plural": null,
     "en": "vegetables",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2452,8 +3092,12 @@
     "lemma": "gern",
     "plural": null,
     "en": "very much",
-    "examples": ["Ich esse gern Tomaten."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich esse gern Tomaten."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2462,7 +3106,9 @@
     "plural": "Getränke",
     "en": "drink",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2471,7 +3117,9 @@
     "plural": "Gläser",
     "en": "glass",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2480,7 +3128,9 @@
     "plural": null,
     "en": "the same",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2489,7 +3139,9 @@
     "plural": "Gramm",
     "en": "gram",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2498,7 +3150,9 @@
     "plural": "Himbeeren",
     "en": "raspberry",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2507,7 +3161,9 @@
     "plural": null,
     "en": "honey",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2516,7 +3172,9 @@
     "plural": "Joghurts",
     "en": "yoghurt",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2525,7 +3183,9 @@
     "plural": null,
     "en": "coffee",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2534,7 +3194,9 @@
     "plural": "Kartoffeln",
     "en": "potato",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2543,7 +3205,9 @@
     "plural": null,
     "en": "cheese",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2552,7 +3216,9 @@
     "plural": null,
     "en": "to buy",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2561,7 +3227,9 @@
     "plural": "Kekse",
     "en": "biscuit",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2570,7 +3238,9 @@
     "plural": "Kichererbsen",
     "en": "chickpea",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2579,7 +3249,9 @@
     "plural": "Kilos",
     "en": "kilo",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2588,7 +3260,9 @@
     "plural": "Kirschen",
     "en": "cherry",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2597,7 +3271,9 @@
     "plural": "Kiwis",
     "en": "kiwi",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2606,7 +3282,9 @@
     "plural": "Kontrollen",
     "en": "control",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2615,7 +3293,9 @@
     "plural": null,
     "en": "to cost",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2624,7 +3304,9 @@
     "plural": null,
     "en": "cake",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2633,7 +3315,9 @@
     "plural": "Kunden",
     "en": "customer (male)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2642,7 +3326,9 @@
     "plural": "Kundinnen",
     "en": "customer (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2651,7 +3337,9 @@
     "plural": null,
     "en": "short",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2660,7 +3348,9 @@
     "plural": null,
     "en": "lamb meat",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2669,7 +3359,9 @@
     "plural": "Lebensmittel",
     "en": "groceries",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2678,7 +3370,9 @@
     "plural": "Limonaden (Limos)",
     "en": "lemonade",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2687,7 +3381,9 @@
     "plural": "Liter",
     "en": "litre",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2696,7 +3392,9 @@
     "plural": null,
     "en": "one/you",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2705,7 +3403,9 @@
     "plural": "Mandarinen",
     "en": "mandarine",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2714,7 +3414,9 @@
     "plural": "Mangos",
     "en": "mango",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2723,7 +3425,9 @@
     "plural": "Märkte",
     "en": "market",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2732,7 +3436,9 @@
     "plural": "Marmeladen",
     "en": "jam",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2741,7 +3447,9 @@
     "plural": null,
     "en": "flour",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2750,7 +3458,9 @@
     "plural": null,
     "en": "mostly",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2759,7 +3469,9 @@
     "plural": null,
     "en": "amount",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2768,7 +3480,9 @@
     "plural": "Melonen",
     "en": "melon",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2777,7 +3491,9 @@
     "plural": null,
     "en": "milk",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2786,7 +3502,9 @@
     "plural": "Milchprodukte",
     "en": "dairy product",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2795,7 +3513,9 @@
     "plural": null,
     "en": "to like",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2804,7 +3524,9 @@
     "plural": "Möhren",
     "en": "carrot",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2813,7 +3535,9 @@
     "plural": null,
     "en": "to have to",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2821,8 +3545,12 @@
     "lemma": "nehmen",
     "plural": null,
     "en": "to take",
-    "examples": ["Sie nehmen die Wohnung für 750 Euro."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Sie nehmen die Wohnung für 750 Euro."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2831,7 +3559,9 @@
     "plural": "Nudeln",
     "en": "pasta/noodles",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2840,7 +3570,9 @@
     "plural": null,
     "en": "only",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2849,7 +3581,9 @@
     "plural": null,
     "en": "fruit",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2858,7 +3592,9 @@
     "plural": null,
     "en": "fruit salad",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2867,7 +3603,9 @@
     "plural": null,
     "en": "olive oil",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2876,7 +3614,9 @@
     "plural": "Orangen",
     "en": "orange",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2885,7 +3625,9 @@
     "plural": null,
     "en": "to order",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2893,8 +3635,12 @@
     "lemma": "Packung",
     "plural": "Packungen",
     "en": "packaging",
-    "examples": ["eine Packung Reis"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "eine Packung Reis"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2903,7 +3649,9 @@
     "plural": "Paprikas",
     "en": "pepper",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2912,7 +3660,9 @@
     "plural": "Partner",
     "en": "partner (male)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2921,7 +3671,9 @@
     "plural": "Partnerinnen",
     "en": "partner (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2930,7 +3682,9 @@
     "plural": null,
     "en": "pound",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2939,7 +3693,9 @@
     "plural": "Pilze",
     "en": "mushroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2948,7 +3704,9 @@
     "plural": null,
     "en": "to plan",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2957,7 +3715,9 @@
     "plural": "Preise",
     "en": "price",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2965,8 +3725,12 @@
     "lemma": "pro",
     "plural": null,
     "en": "per",
-    "examples": ["Die Äpfel kosten 2,50 € pro Kilo."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Die Äpfel kosten 2,50 € pro Kilo."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2975,7 +3739,9 @@
     "plural": null,
     "en": "pudding",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2984,7 +3750,9 @@
     "plural": null,
     "en": "rice",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -2993,7 +3761,9 @@
     "plural": null,
     "en": "beef",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3002,7 +3772,9 @@
     "plural": "Säfte",
     "en": "juice",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3011,7 +3783,9 @@
     "plural": null,
     "en": "cream",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3020,7 +3794,9 @@
     "plural": "Salate",
     "en": "salad",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3029,7 +3805,9 @@
     "plural": null,
     "en": "salt",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3038,7 +3816,9 @@
     "plural": null,
     "en": "oneself",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3047,7 +3827,9 @@
     "plural": null,
     "en": "to taste",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3056,7 +3838,9 @@
     "plural": null,
     "en": "chocolate",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3065,7 +3849,9 @@
     "plural": null,
     "en": "beautiful",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3074,7 +3860,9 @@
     "plural": null,
     "en": "pork",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3083,7 +3871,9 @@
     "plural": null,
     "en": "otherwise",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3092,7 +3882,9 @@
     "plural": null,
     "en": "to stand",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3101,7 +3893,9 @@
     "plural": null,
     "en": "to paint",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3109,8 +3903,12 @@
     "lemma": "Stück",
     "plural": "Stücke",
     "en": "piece",
-    "examples": ["ein Stück Kuchen"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "ein Stück Kuchen"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3119,7 +3917,9 @@
     "plural": "Tassen",
     "en": "cup",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3128,7 +3928,9 @@
     "plural": null,
     "en": "tea",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3137,7 +3939,9 @@
     "plural": null,
     "en": "expensive",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3146,7 +3950,9 @@
     "plural": "Tipps",
     "en": "tip",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3155,7 +3961,9 @@
     "plural": "Tomaten",
     "en": "tomato",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3164,7 +3972,9 @@
     "plural": "Trauben",
     "en": "grape",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3173,7 +3983,9 @@
     "plural": null,
     "en": "to drink",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3182,7 +3994,9 @@
     "plural": null,
     "en": "to emphasize",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3191,7 +4005,9 @@
     "plural": null,
     "en": "to connect",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3200,7 +4016,9 @@
     "plural": "Verkäufer",
     "en": "salesperson (male)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3209,7 +4027,9 @@
     "plural": "Verkäuferinnen",
     "en": "salesperson (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3218,7 +4038,9 @@
     "plural": null,
     "en": "from",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3227,7 +4049,9 @@
     "plural": null,
     "en": "water",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3236,7 +4060,9 @@
     "plural": null,
     "en": "wine",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3245,7 +4071,9 @@
     "plural": "Zitronen",
     "en": "lemon",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3254,7 +4082,9 @@
     "plural": null,
     "en": "sugar",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3263,7 +4093,9 @@
     "plural": "Zwiebeln",
     "en": "onion",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3272,7 +4104,9 @@
     "plural": null,
     "en": "in the evenings",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3281,7 +4115,9 @@
     "plural": null,
     "en": "everyday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3289,8 +4125,12 @@
     "lemma": "anrufen",
     "plural": null,
     "en": "to call",
-    "examples": ["Ich rufe dich an."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich rufe dich an."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3299,7 +4139,9 @@
     "plural": null,
     "en": "work",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3308,7 +4150,9 @@
     "plural": null,
     "en": "to get up",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3317,7 +4161,9 @@
     "plural": null,
     "en": "to start",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3326,7 +4172,9 @@
     "plural": null,
     "en": "both",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3335,7 +4183,9 @@
     "plural": "Betten",
     "en": "bed",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3344,7 +4194,9 @@
     "plural": null,
     "en": "until",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3353,7 +4205,9 @@
     "plural": "Büros",
     "en": "office",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3362,7 +4216,9 @@
     "plural": "Computer",
     "en": "computer",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3371,7 +4227,9 @@
     "plural": "Computerspiele",
     "en": "computer game",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3379,8 +4237,12 @@
     "lemma": "erst",
     "plural": null,
     "en": "first",
-    "examples": ["Wir lernen erst Deutsch, dann gehen wir spazieren."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wir lernen erst Deutsch, dann gehen wir spazieren."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3389,7 +4251,9 @@
     "plural": null,
     "en": "to watch television",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3398,7 +4262,9 @@
     "plural": "Filme",
     "en": "film",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3407,7 +4273,9 @@
     "plural": "Freundinnen",
     "en": "friend (female)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3416,7 +4284,9 @@
     "plural": null,
     "en": "early",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3424,8 +4294,12 @@
     "lemma": "Fußball",
     "plural": null,
     "en": "football",
-    "examples": ["Ich spiele gern Fußball."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich spiele gern Fußball."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3434,7 +4308,9 @@
     "plural": null,
     "en": "open",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3443,7 +4319,9 @@
     "plural": null,
     "en": "to grill/barbeque",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3451,8 +4329,12 @@
     "lemma": "halb",
     "plural": null,
     "en": "half past",
-    "examples": ["Es ist halb zwölf."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Es ist halb zwölf."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3461,7 +4343,9 @@
     "plural": null,
     "en": "hunger",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3470,7 +4354,9 @@
     "plural": "Ideen",
     "en": "idea",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3479,7 +4365,9 @@
     "plural": "Interviews",
     "en": "interview",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3488,7 +4376,9 @@
     "plural": null,
     "en": "to cook",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3497,7 +4387,9 @@
     "plural": null,
     "en": "to be able to",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3506,7 +4398,9 @@
     "plural": null,
     "en": "delicious",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3515,7 +4409,9 @@
     "plural": null,
     "en": "unfortunately",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3524,7 +4420,9 @@
     "plural": null,
     "en": "sometimes",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3533,7 +4431,9 @@
     "plural": null,
     "en": "more",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3542,7 +4442,9 @@
     "plural": null,
     "en": "midday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3551,7 +4453,9 @@
     "plural": null,
     "en": "at midday",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3560,7 +4464,9 @@
     "plural": null,
     "en": "lunchtime",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3569,7 +4475,9 @@
     "plural": null,
     "en": "in the mornings",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3578,7 +4486,9 @@
     "plural": null,
     "en": "tired",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3587,7 +4497,9 @@
     "plural": null,
     "en": "music",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3596,7 +4508,9 @@
     "plural": null,
     "en": "afternoon",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3605,7 +4519,9 @@
     "plural": null,
     "en": "in the afternoons",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3614,7 +4530,9 @@
     "plural": null,
     "en": "at night",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3623,7 +4541,9 @@
     "plural": null,
     "en": "never",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3632,7 +4552,9 @@
     "plural": null,
     "en": "note",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3641,7 +4563,9 @@
     "plural": null,
     "en": "often",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3650,7 +4574,9 @@
     "plural": null,
     "en": "pizza",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3659,7 +4585,9 @@
     "plural": null,
     "en": "to clean",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3668,7 +4596,9 @@
     "plural": null,
     "en": "shame",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3677,7 +4607,9 @@
     "plural": null,
     "en": "to sleep",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3685,8 +4617,12 @@
     "lemma": "Schluss",
     "plural": null,
     "en": "end, end of work",
-    "examples": ["Um eins haben wir Schluss."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Um eins haben wir Schluss."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3695,7 +4631,9 @@
     "plural": "Schulen",
     "en": "school",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3704,7 +4642,9 @@
     "plural": null,
     "en": "late",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3712,8 +4652,12 @@
     "lemma": "spazieren",
     "plural": null,
     "en": "to walk",
-    "examples": ["Wir gehen im Park spazieren."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wir gehen im Park spazieren."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3722,7 +4666,9 @@
     "plural": "Spiele",
     "en": "game",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3731,7 +4677,9 @@
     "plural": null,
     "en": "sport",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3740,7 +4688,9 @@
     "plural": "Stunden",
     "en": "hour",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3749,7 +4699,9 @@
     "plural": null,
     "en": "schedule",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3758,7 +4710,9 @@
     "plural": null,
     "en": "supermarket",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3767,7 +4721,9 @@
     "plural": null,
     "en": "to telephone",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3776,7 +4732,9 @@
     "plural": null,
     "en": "to do",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3784,8 +4742,12 @@
     "lemma": "Uhr",
     "plural": null,
     "en": "clock",
-    "examples": ["Die Uhr steht im Wohnzimmer."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Die Uhr steht im Wohnzimmer."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3793,8 +4755,12 @@
     "lemma": "Uhrzeit",
     "plural": null,
     "en": "time",
-    "examples": ["Es ist 14 Uhr."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Es ist 14 Uhr."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3803,7 +4769,9 @@
     "plural": null,
     "en": "at",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3812,7 +4780,9 @@
     "plural": null,
     "en": "lesson",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3820,8 +4790,12 @@
     "lemma": "Viertel",
     "plural": null,
     "en": "quarter to",
-    "examples": ["Es ist Viertel vor zehn."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Es ist Viertel vor zehn."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3830,7 +4804,9 @@
     "plural": null,
     "en": "before",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3839,7 +4815,9 @@
     "plural": null,
     "en": "morning",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3848,7 +4826,9 @@
     "plural": null,
     "en": "in the morning",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3857,7 +4837,9 @@
     "plural": null,
     "en": "when",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3866,7 +4848,9 @@
     "plural": "Wohnungen",
     "en": "flat",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3875,7 +4859,9 @@
     "plural": null,
     "en": "to draw",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3884,7 +4870,9 @@
     "plural": null,
     "en": "time",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3892,8 +4880,12 @@
     "lemma": "zu Hause",
     "plural": null,
     "en": "at home",
-    "examples": ["Ich bin zu Hause."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Ich bin zu Hause."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3901,8 +4893,12 @@
     "lemma": "ab",
     "plural": null,
     "en": "from",
-    "examples": ["Die Wohnung ist ab 1.5. frei."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Die Wohnung ist ab 1.5. frei."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3911,7 +4907,9 @@
     "plural": null,
     "en": "old building",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3920,7 +4918,9 @@
     "plural": "Angaben",
     "en": "detail",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3929,7 +4929,9 @@
     "plural": "Anzeigen",
     "en": "advert",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3938,7 +4940,9 @@
     "plural": null,
     "en": "workroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3947,7 +4951,9 @@
     "plural": "Bäder",
     "en": "bathroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3956,7 +4962,9 @@
     "plural": null,
     "en": "to bathe",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3965,7 +4973,9 @@
     "plural": null,
     "en": "bathtub",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3974,7 +4984,9 @@
     "plural": null,
     "en": "bathroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3983,7 +4995,9 @@
     "plural": "Balkone",
     "en": "balcony",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -3992,7 +5006,9 @@
     "plural": "Bauernhöfe",
     "en": "farm",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4001,7 +5017,9 @@
     "plural": null,
     "en": "at",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4009,8 +5027,12 @@
     "lemma": "bekommen",
     "plural": null,
     "en": "to receive",
-    "examples": ["Meine Blumen bekommen jeden Tag Wasser."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Meine Blumen bekommen jeden Tag Wasser."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4019,7 +5041,9 @@
     "plural": null,
     "en": "appointment",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4028,7 +5052,9 @@
     "plural": null,
     "en": "better",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4037,7 +5063,9 @@
     "plural": null,
     "en": "cheap",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4046,7 +5074,9 @@
     "plural": null,
     "en": "wide",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4055,7 +5085,9 @@
     "plural": null,
     "en": "around",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4064,7 +5096,9 @@
     "plural": null,
     "en": "in addition",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4073,7 +5107,9 @@
     "plural": null,
     "en": "hallway",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4082,7 +5118,9 @@
     "plural": null,
     "en": "direct",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4091,7 +5129,9 @@
     "plural": null,
     "en": "there",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4100,7 +5140,9 @@
     "plural": null,
     "en": "outside",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4109,7 +5151,9 @@
     "plural": null,
     "en": "urgent",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4118,7 +5162,9 @@
     "plural": null,
     "en": "dark",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4127,7 +5173,9 @@
     "plural": null,
     "en": "shower",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4136,7 +5184,9 @@
     "plural": null,
     "en": "detached hosue",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4145,7 +5195,9 @@
     "plural": null,
     "en": "to shop",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4154,7 +5206,9 @@
     "plural": "Elektrogeräte",
     "en": "electronic device",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4163,7 +5217,9 @@
     "plural": null,
     "en": "ground floor",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4172,7 +5228,9 @@
     "plural": null,
     "en": "to replace",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4181,7 +5239,9 @@
     "plural": "Euros",
     "en": "euro",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4190,7 +5250,9 @@
     "plural": "Fernseher",
     "en": "television",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4199,7 +5261,9 @@
     "plural": null,
     "en": "to find",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4208,7 +5272,9 @@
     "plural": "Firmen",
     "en": "company",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4217,7 +5283,9 @@
     "plural": "Flure",
     "en": "corridor",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4226,7 +5294,9 @@
     "plural": null,
     "en": "free",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4235,7 +5305,9 @@
     "plural": "Garagen",
     "en": "garage",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4244,7 +5316,9 @@
     "plural": "Gärten",
     "en": "garden",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4253,7 +5327,9 @@
     "plural": "Gäste",
     "en": "guest",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4262,7 +5338,9 @@
     "plural": "Gelder",
     "en": "money",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4271,7 +5349,9 @@
     "plural": null,
     "en": "comfortable",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4280,7 +5360,9 @@
     "plural": null,
     "en": "looked after",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4289,7 +5371,9 @@
     "plural": "Geräte",
     "en": "appliance",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4298,7 +5382,9 @@
     "plural": "Geschäfte",
     "en": "business",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4307,7 +5393,9 @@
     "plural": "Gespräche",
     "en": "interview",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4316,7 +5404,9 @@
     "plural": null,
     "en": "size",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4325,7 +5415,9 @@
     "plural": null,
     "en": "green",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4334,7 +5426,9 @@
     "plural": null,
     "en": "to hang",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4343,7 +5437,9 @@
     "plural": null,
     "en": "ugly",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4352,7 +5448,9 @@
     "plural": null,
     "en": "main thing",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4361,7 +5459,9 @@
     "plural": "Häuser",
     "en": "house",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4370,7 +5470,9 @@
     "plural": "Haustiere",
     "en": "pet",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4379,7 +5481,9 @@
     "plural": null,
     "en": "heating",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4388,7 +5492,9 @@
     "plural": null,
     "en": "to help",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4397,7 +5503,9 @@
     "plural": null,
     "en": "light",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4406,7 +5514,9 @@
     "plural": null,
     "en": "stove",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4415,7 +5525,9 @@
     "plural": null,
     "en": "help",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4424,7 +5536,9 @@
     "plural": null,
     "en": "behind",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4433,7 +5547,9 @@
     "plural": null,
     "en": "high-rise building",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4442,7 +5558,9 @@
     "plural": "Immobilien",
     "en": "property",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4451,7 +5569,9 @@
     "plural": null,
     "en": "in total",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4460,7 +5580,9 @@
     "plural": null,
     "en": "interesting",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4469,7 +5591,9 @@
     "plural": null,
     "en": "every",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4478,7 +5602,9 @@
     "plural": null,
     "en": "june",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4487,7 +5613,9 @@
     "plural": null,
     "en": "coffee machine",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4496,7 +5624,9 @@
     "plural": null,
     "en": "cold",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4505,7 +5635,9 @@
     "plural": null,
     "en": "deposit",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4514,7 +5646,9 @@
     "plural": "Keller",
     "en": "celler",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4523,7 +5657,9 @@
     "plural": null,
     "en": "child's room",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4532,7 +5668,9 @@
     "plural": null,
     "en": "wardrobe",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4541,7 +5679,9 @@
     "plural": "Küchen",
     "en": "kitchen",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4550,7 +5690,9 @@
     "plural": "Kühlschränke",
     "en": "fridge",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4559,7 +5701,9 @@
     "plural": null,
     "en": "long",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4567,8 +5711,12 @@
     "lemma": "lassen",
     "plural": null,
     "en": "to let",
-    "examples": ["Lass uns in einem anderen Geschäft schauen."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Lass uns in einem anderen Geschäft schauen."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4577,7 +5725,9 @@
     "plural": null,
     "en": "loud",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4586,7 +5736,9 @@
     "plural": null,
     "en": "favourite (at best)",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4594,8 +5746,12 @@
     "lemma": "liegen",
     "plural": null,
     "en": "to lie",
-    "examples": ["Die Wohnung liegt direkt an der Hauptstraße."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Die Wohnung liegt direkt an der Hauptstraße."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4604,7 +5760,9 @@
     "plural": null,
     "en": "maximal",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4613,7 +5771,9 @@
     "plural": null,
     "en": "apartment building",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4622,7 +5782,9 @@
     "plural": null,
     "en": "rent",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4631,7 +5793,9 @@
     "plural": null,
     "en": "at least",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4640,7 +5804,9 @@
     "plural": null,
     "en": "furniture",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4649,7 +5815,9 @@
     "plural": null,
     "en": "furnished",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4658,7 +5826,9 @@
     "plural": null,
     "en": "modern",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4667,7 +5837,9 @@
     "plural": "Monate",
     "en": "month",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4676,7 +5848,9 @@
     "plural": "Monatsmieten",
     "en": "monthly rent",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4685,7 +5859,9 @@
     "plural": null,
     "en": "rubbish",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4694,7 +5870,9 @@
     "plural": null,
     "en": "next to",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4703,7 +5881,9 @@
     "plural": "Nebenkosten",
     "en": "additional costs",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4712,7 +5892,9 @@
     "plural": null,
     "en": "without",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4721,7 +5903,9 @@
     "plural": null,
     "en": "upper floor",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4730,7 +5914,9 @@
     "plural": "Orte",
     "en": "place",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4739,7 +5925,9 @@
     "plural": "Pflanzen",
     "en": "plant",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4748,7 +5936,9 @@
     "plural": "Pläne",
     "en": "plan",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4756,8 +5946,12 @@
     "lemma": "Platz",
     "plural": "Plätze",
     "en": "place, space",
-    "examples": ["Wir brauchen mehr Platz."],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Wir brauchen mehr Platz."
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4766,7 +5960,9 @@
     "plural": "Quadratmeter",
     "en": "squaremetre",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4775,7 +5971,9 @@
     "plural": "Regale",
     "en": "shelves",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4784,7 +5982,9 @@
     "plural": null,
     "en": "terraced house",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4793,7 +5993,9 @@
     "plural": null,
     "en": "peaceful",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4802,7 +6004,9 @@
     "plural": null,
     "en": "to look",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4811,7 +6015,9 @@
     "plural": null,
     "en": "bedroom",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4820,7 +6026,9 @@
     "plural": null,
     "en": "narrow",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4829,7 +6037,9 @@
     "plural": "Schränke",
     "en": "cupboard",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4838,7 +6048,9 @@
     "plural": "Sessel",
     "en": "chair",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4847,7 +6059,9 @@
     "plural": null,
     "en": "to sing",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4856,7 +6070,9 @@
     "plural": null,
     "en": "to sit",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4865,7 +6081,9 @@
     "plural": "Sofas",
     "en": "sofa",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4874,7 +6092,9 @@
     "plural": null,
     "en": "straight away",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4882,8 +6102,12 @@
     "lemma": "sollen",
     "plural": null,
     "en": "to be supposed to",
-    "examples": ["Sollen wir ins Kino gehen?"],
-    "sources": ["telc-a1.1"],
+    "examples": [
+      "Sollen wir ins Kino gehen?"
+    ],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4892,7 +6116,9 @@
     "plural": "Sonderangebote",
     "en": "special offer",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4901,7 +6127,9 @@
     "plural": null,
     "en": "sun",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4910,7 +6138,9 @@
     "plural": null,
     "en": "other",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4919,7 +6149,9 @@
     "plural": null,
     "en": "language school",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4928,7 +6160,9 @@
     "plural": null,
     "en": "to rinse",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4937,7 +6171,9 @@
     "plural": "Spülmaschinen",
     "en": "dishwasher",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4946,7 +6182,9 @@
     "plural": "Städte",
     "en": "city",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4955,7 +6193,9 @@
     "plural": null,
     "en": "to look for",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4964,7 +6204,9 @@
     "plural": null,
     "en": "super",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4973,7 +6215,9 @@
     "plural": null,
     "en": "carpet",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4982,7 +6226,9 @@
     "plural": "Terrassen",
     "en": "terrace",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -4991,7 +6237,9 @@
     "plural": "Toiletten",
     "en": "toilet",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5000,7 +6248,9 @@
     "plural": null,
     "en": "great",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5009,7 +6259,9 @@
     "plural": null,
     "en": "dream flat",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5018,7 +6270,9 @@
     "plural": null,
     "en": "definitely",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5027,7 +6281,9 @@
     "plural": null,
     "en": "uncomfortable",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5036,7 +6292,9 @@
     "plural": null,
     "en": "our/ours",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5045,7 +6303,9 @@
     "plural": null,
     "en": "why",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5054,7 +6314,9 @@
     "plural": null,
     "en": "to wash",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5063,7 +6325,9 @@
     "plural": null,
     "en": "washing machine",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5072,7 +6336,9 @@
     "plural": null,
     "en": "WC/toilet",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5081,7 +6347,9 @@
     "plural": null,
     "en": "to move away",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5090,7 +6358,9 @@
     "plural": null,
     "en": "further",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5099,7 +6369,9 @@
     "plural": null,
     "en": "if/when",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5108,7 +6380,9 @@
     "plural": null,
     "en": "to become",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5117,7 +6391,9 @@
     "plural": null,
     "en": "important",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5126,7 +6402,9 @@
     "plural": null,
     "en": "flat advertisement",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5135,7 +6413,9 @@
     "plural": null,
     "en": "search for housing",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5144,7 +6424,9 @@
     "plural": null,
     "en": "living room",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5153,7 +6435,9 @@
     "plural": null,
     "en": "very beautiful",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5162,7 +6446,9 @@
     "plural": null,
     "en": "to wish",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5171,7 +6457,9 @@
     "plural": null,
     "en": "to count",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5180,7 +6468,9 @@
     "plural": "Zeitungen",
     "en": "newspaper",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5189,7 +6479,9 @@
     "plural": null,
     "en": "centre",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5198,7 +6490,9 @@
     "plural": "Zimmer",
     "en": "room",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   },
   {
@@ -5207,7 +6501,9 @@
     "plural": null,
     "en": "on foot",
     "examples": [],
-    "sources": ["telc-a1.1"],
+    "sources": [
+      "telc-a1.1"
+    ],
     "categories": []
   }
 ]

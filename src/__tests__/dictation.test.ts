@@ -11,6 +11,7 @@ function w(lemma: string): Word {
     pos: 'noun',
     examples: [],
     sources: [],
+    levels: ['a1'],
   };
 }
 

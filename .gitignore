@@ -43,7 +43,9 @@ next-env.d.ts
 
 # pdftotext cache (re-generated from PDFs on demand)
 data/sources/_text/
-data/sources/a1/
+
+# source PDFs stay out of the repo (licensing); extracted JSON is tracked
+data/sources/*/*.pdf
 
 # local screenshots from manual visual QA passes
 /tmp/

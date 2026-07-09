@@ -1,0 +1,6186 @@
+[
+  {
+    "article": "die",
+    "lemma": "Accessoires",
+    "plural": null,
+    "en": "accessories",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anhaben",
+    "plural": null,
+    "en": "to be wearing",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Apfelschorle",
+    "plural": null,
+    "en": "apple spritzer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Aubergine",
+    "plural": "Auberginen",
+    "en": "aubergine",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Ausrüstung",
+    "plural": null,
+    "en": "equipment",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Babyartikel",
+    "plural": "Babyartikel",
+    "en": "baby items",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Badesachen",
+    "plural": null,
+    "en": "swimwear",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bart",
+    "plural": "Bärte",
+    "en": "beard",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bekleidung",
+    "plural": null,
+    "en": "clothing",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bestimmt",
+    "plural": null,
+    "en": "surely",
+    "examples": [
+      "Der Mantel ist bestimmt sehr teuer."
+    ],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "blond",
+    "plural": null,
+    "en": "blond",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "braten",
+    "plural": null,
+    "en": "to roast",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bummeln",
+    "plural": null,
+    "en": "to stroll",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bunt",
+    "plural": null,
+    "en": "colourful",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Camping",
+    "plural": null,
+    "en": "camping",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Champignon",
+    "plural": "Champignons",
+    "en": "mushroom",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Currywurst",
+    "plural": null,
+    "en": "currywurst",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Dame",
+    "plural": "Damen",
+    "en": "lady",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "darin",
+    "plural": null,
+    "en": "in it",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dick",
+    "plural": null,
+    "en": "fat",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Dieb/in",
+    "plural": null,
+    "en": "thief",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Ding",
+    "plural": "Dinge",
+    "en": "thing",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Duft",
+    "plural": null,
+    "en": "smell",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dünn",
+    "plural": null,
+    "en": "thin",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Duschgel",
+    "plural": null,
+    "en": "shower gel",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "egal",
+    "plural": null,
+    "en": "equal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Ehepaar",
+    "plural": null,
+    "en": "married couple",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einfarbig",
+    "plural": null,
+    "en": "monochromatic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Elektronik",
+    "plural": null,
+    "en": "electronics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fahrradhelm",
+    "plural": null,
+    "en": "cycle helmet",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fantastisch",
+    "plural": null,
+    "en": "fantastic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fast Food",
+    "plural": null,
+    "en": "fast food",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Flipflops",
+    "plural": null,
+    "en": "flip flops",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "frittieren",
+    "plural": null,
+    "en": "to fry",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gemüselasagne",
+    "plural": null,
+    "en": "vegetable lasagne",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gepunktet",
+    "plural": null,
+    "en": "spotty",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gericht",
+    "plural": null,
+    "en": "meal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gestreift",
+    "plural": null,
+    "en": "striped",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "glatt",
+    "plural": null,
+    "en": "smooth",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Glatze",
+    "plural": null,
+    "en": "bald head",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gold",
+    "plural": null,
+    "en": "gold",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "griechisch",
+    "plural": null,
+    "en": "Greek",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gulaschsuppe",
+    "plural": null,
+    "en": "goulash soup",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Gürtel",
+    "plural": null,
+    "en": "belt",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Haarpflege",
+    "plural": null,
+    "en": "hair care",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Hauptgericht",
+    "plural": null,
+    "en": "main meal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Hautpflege",
+    "plural": null,
+    "en": "skin care",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hübsch",
+    "plural": null,
+    "en": "pretty",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kamera",
+    "plural": null,
+    "en": "camera",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kariert",
+    "plural": null,
+    "en": "checkered",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kompliment",
+    "plural": "Komplimente",
+    "en": "compliment",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kopfhörer",
+    "plural": null,
+    "en": "headphones",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kosmetiktasche",
+    "plural": null,
+    "en": "cosmetic bag",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Krawatte",
+    "plural": null,
+    "en": "tie",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Küchengerät",
+    "plural": "Küchengeräte",
+    "en": "kitchen appliance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "laufen",
+    "plural": null,
+    "en": "to run",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Lieblingsfarbe",
+    "plural": null,
+    "en": "favourite colour",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lockig",
+    "plural": null,
+    "en": "curly",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Make-up",
+    "plural": null,
+    "en": "make up",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Maus",
+    "plural": null,
+    "en": "mouse",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Mineralwasser",
+    "plural": null,
+    "en": "mineral water",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Modegeschäft",
+    "plural": null,
+    "en": "fashion shop",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Modeschmuck",
+    "plural": null,
+    "en": "fashion jewellry",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nachher",
+    "plural": null,
+    "en": "afterwards",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Naturkosmetik",
+    "plural": null,
+    "en": "natural cosmetics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Navigationsgerät",
+    "plural": null,
+    "en": "navigation device",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ofen",
+    "plural": null,
+    "en": "oven",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ohrring",
+    "plural": "Ohrringe",
+    "en": "earring",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Parfümerie",
+    "plural": null,
+    "en": "perfumery",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Pfanne",
+    "plural": null,
+    "en": "pan",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "plötzlich",
+    "plural": null,
+    "en": "suddenly",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Polizist/in",
+    "plural": null,
+    "en": "policeman",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schafskäse",
+    "plural": null,
+    "en": "feta cheese",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "scharf",
+    "plural": null,
+    "en": "spicy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schauen",
+    "plural": null,
+    "en": "to look",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schaufenster",
+    "plural": null,
+    "en": "shop window",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schick",
+    "plural": null,
+    "en": "chic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlank",
+    "plural": null,
+    "en": "slim",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schmuck",
+    "plural": null,
+    "en": "jewellry",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schnäppchen",
+    "plural": null,
+    "en": "deal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schnitzel",
+    "plural": null,
+    "en": "schnitzel",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schnurrbart",
+    "plural": null,
+    "en": "moustache",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schrei",
+    "plural": null,
+    "en": "scream",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schuhgröße",
+    "plural": null,
+    "en": "shoe size",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Shorts",
+    "plural": null,
+    "en": "shorts",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Silber",
+    "plural": null,
+    "en": "silver",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Snack",
+    "plural": "Snacks",
+    "en": "snack",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Spielwaren",
+    "plural": null,
+    "en": "toys",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Steak",
+    "plural": null,
+    "en": "steak",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "stehlen",
+    "plural": null,
+    "en": "to steal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Stiefel",
+    "plural": "Stiefel",
+    "en": "boot",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Süßigkeiten",
+    "plural": null,
+    "en": "sweets",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Tattoo",
+    "plural": "Tattoos",
+    "en": "tattoo",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Toaster",
+    "plural": null,
+    "en": "toaster",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ungarisch",
+    "plural": null,
+    "en": "Hungarian",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Unterwäsche",
+    "plural": null,
+    "en": "underwear",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Vanilleeis",
+    "plural": null,
+    "en": "vanilla ice cream",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Vegetarier/in",
+    "plural": null,
+    "en": "vegetarian",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vegetarisch",
+    "plural": null,
+    "en": "vegetarian",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wandern",
+    "plural": null,
+    "en": "to hike",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Wanderschuh",
+    "plural": "Wanderschuhe",
+    "en": "hiking shoes",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Wecker",
+    "plural": null,
+    "en": "alarm",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wirklich",
+    "plural": null,
+    "en": "really",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wunderbar",
+    "plural": null,
+    "en": "wonderful",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zubereiten",
+    "plural": null,
+    "en": "to prepare",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Zucchini",
+    "plural": null,
+    "en": "zucchini",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "absetzen",
+    "plural": null,
+    "en": "to distribute",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Abteilung",
+    "plural": "Abteilungen",
+    "en": "department",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "angeben",
+    "plural": null,
+    "en": "to indicate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Anruf",
+    "plural": "Anrufe",
+    "en": "call",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Anrufer/in",
+    "plural": null,
+    "en": "caller",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Arbeitgeber/in",
+    "plural": null,
+    "en": "employer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arbeitsauftrag",
+    "plural": "Arbeitsaufträge",
+    "en": "work order",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arbeitsbeginn",
+    "plural": null,
+    "en": "start of work",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arbeitsschutz",
+    "plural": null,
+    "en": "occupational safety",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Arbeitsvertrag",
+    "plural": "Arbeitsverträge",
+    "en": "work contract",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Aufzug",
+    "plural": null,
+    "en": "lift",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Außendienst",
+    "plural": null,
+    "en": "sales representatives",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ausmachen",
+    "plural": null,
+    "en": "to account for",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Beauftragte",
+    "plural": null,
+    "en": "agent",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bereit",
+    "plural": null,
+    "en": "ready",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bereitstellen",
+    "plural": null,
+    "en": "to make ready",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "besprechen",
+    "plural": null,
+    "en": "to discuss",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Besprechung",
+    "plural": null,
+    "en": "meeting",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "betätigen",
+    "plural": null,
+    "en": "to operate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "betreffen",
+    "plural": null,
+    "en": "to relate to",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bewahren",
+    "plural": null,
+    "en": "to save from",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bewegen",
+    "plural": null,
+    "en": "to move",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bildschirm",
+    "plural": null,
+    "en": "screen",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Brand",
+    "plural": null,
+    "en": "fire",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Brandbekämpfung",
+    "plural": null,
+    "en": "fire fighting",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Brandfall",
+    "plural": null,
+    "en": "case of fire",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Brandmelder",
+    "plural": null,
+    "en": "fire alarm",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Brandschutz",
+    "plural": null,
+    "en": "fire prevention",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "brennen",
+    "plural": null,
+    "en": "to burn",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Buchhaltung",
+    "plural": null,
+    "en": "accountant",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "danken",
+    "plural": null,
+    "en": "to thank",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "deutlich",
+    "plural": null,
+    "en": "clearly",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "echt",
+    "plural": null,
+    "en": "really",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Einweisung",
+    "plural": null,
+    "en": "instruction",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Elektrik",
+    "plural": null,
+    "en": "electrics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Entwurf",
+    "plural": "Entwürfe",
+    "en": "draft",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erlauben",
+    "plural": null,
+    "en": "to allow",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erwarten",
+    "plural": null,
+    "en": "to wait for",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erwischen",
+    "plural": null,
+    "en": "to catch",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Feuerlöscher",
+    "plural": null,
+    "en": "fire extinguisher",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Flamme",
+    "plural": "Flammen",
+    "en": "flame",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "folgen",
+    "plural": null,
+    "en": "to follow",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gefährden",
+    "plural": null,
+    "en": "to endanger",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gestalten",
+    "plural": null,
+    "en": "to design",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gesund",
+    "plural": null,
+    "en": "healthy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Grafik",
+    "plural": "Grafiken",
+    "en": "graphics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Grafiker/in",
+    "plural": null,
+    "en": "graphic designer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Hektik",
+    "plural": null,
+    "en": "rush",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "heraussuchen",
+    "plural": null,
+    "en": "to pick out",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hinfahren",
+    "plural": null,
+    "en": "to go there",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "höflich",
+    "plural": null,
+    "en": "polite",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Internetzugang",
+    "plural": null,
+    "en": "internet access",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kabelsalat",
+    "plural": null,
+    "en": "cable tangle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kennzeichnen",
+    "plural": null,
+    "en": "to mark",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kerze",
+    "plural": "Kerzen",
+    "en": "candle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Konto",
+    "plural": "Konten",
+    "en": "account",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kontoverbindung",
+    "plural": null,
+    "en": "account connection",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kopieren",
+    "plural": null,
+    "en": "to copy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kraft",
+    "plural": "Kräfte",
+    "en": "power",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kundenbetreuung",
+    "plural": null,
+    "en": "customer support",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Laptop",
+    "plural": null,
+    "en": "laptop",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Marketing",
+    "plural": null,
+    "en": "marketing",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Mehrfachsteckdose",
+    "plural": null,
+    "en": "power strip",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitschreiben",
+    "plural": null,
+    "en": "to take notes",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Nachbereitung",
+    "plural": null,
+    "en": "follow-up",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nennen",
+    "plural": null,
+    "en": "to name",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Personalabteilung",
+    "plural": null,
+    "en": "personnel department",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Personalbüro",
+    "plural": null,
+    "en": "personnel office",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Personalleiter/in",
+    "plural": null,
+    "en": "head of personnel",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Protokoll",
+    "plural": null,
+    "en": "protocol",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "reagieren",
+    "plural": null,
+    "en": "to react",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Regel",
+    "plural": "Regeln",
+    "en": "rule",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Rettungswagen",
+    "plural": null,
+    "en": "ambulance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Rückfrage",
+    "plural": null,
+    "en": "query",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Sekretariat",
+    "plural": null,
+    "en": "secretary's office",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Sicherheit",
+    "plural": null,
+    "en": "security",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Steckdose",
+    "plural": null,
+    "en": "socket",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Steuer",
+    "plural": null,
+    "en": "tax",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Teelicht",
+    "plural": "Teelichter",
+    "en": "tea light",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "überlasten",
+    "plural": null,
+    "en": "to overload",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unbürokratisch",
+    "plural": null,
+    "en": "unbureaucratic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unterstützen",
+    "plural": null,
+    "en": "to support",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verabschieden",
+    "plural": null,
+    "en": "to adopt",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verbessern",
+    "plural": null,
+    "en": "to improve",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verboten",
+    "plural": null,
+    "en": "to forbid",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Verhalten",
+    "plural": null,
+    "en": "behaviour",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verlegen",
+    "plural": null,
+    "en": "to reschedule",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vermeiden",
+    "plural": null,
+    "en": "to avoid",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Vermeidung",
+    "plural": null,
+    "en": "avoidance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Versicherung",
+    "plural": "Versicherungen",
+    "en": "insurance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Vertrieb",
+    "plural": null,
+    "en": "sales",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verwenden",
+    "plural": null,
+    "en": "to use",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vorbeikommen",
+    "plural": null,
+    "en": "to drop by",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vorbereiten",
+    "plural": null,
+    "en": "to prepare",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Vorschrift",
+    "plural": "Vorschriften",
+    "en": "regulation",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Werbeflyer",
+    "plural": null,
+    "en": "flyer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Werbeagentur",
+    "plural": null,
+    "en": "marketing agency",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Werbetexter/in",
+    "plural": null,
+    "en": "copy writer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aggressiv",
+    "plural": null,
+    "en": "aggressive",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anders",
+    "plural": null,
+    "en": "different",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Angst",
+    "plural": "Ängste",
+    "en": "fear",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufhören",
+    "plural": null,
+    "en": "to stop",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufpassen",
+    "plural": null,
+    "en": "to watch out",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ausreichend",
+    "plural": null,
+    "en": "enough",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "befriedigend",
+    "plural": null,
+    "en": "satisfactory",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Begrüßung",
+    "plural": "Begrüßungen",
+    "en": "greeting",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "beraten",
+    "plural": null,
+    "en": "to advise",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bericht",
+    "plural": "Berichte",
+    "en": "report",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Berufskolleg",
+    "plural": null,
+    "en": "vocational college",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Berufswunsch",
+    "plural": null,
+    "en": "career aspiration",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Biologie",
+    "plural": null,
+    "en": "biology",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Bundesland",
+    "plural": null,
+    "en": "federal state",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Chemie",
+    "plural": null,
+    "en": "chemistry",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "damals",
+    "plural": null,
+    "en": "back then",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dieselbe",
+    "plural": null,
+    "en": "the same",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Diplom",
+    "plural": null,
+    "en": "diploma",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Elternabend",
+    "plural": null,
+    "en": "parent's evening",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Elternsprechtag",
+    "plural": null,
+    "en": "parent-teacher day",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Englischlehrer/in",
+    "plural": null,
+    "en": "English teacher",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Erdkunde",
+    "plural": null,
+    "en": "geography",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "etwa",
+    "plural": null,
+    "en": "around",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Fach",
+    "plural": "Fächer",
+    "en": "subject",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Fachhochschule",
+    "plural": null,
+    "en": "technical college",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Fachhochschulreife",
+    "plural": null,
+    "en": "technical college certificate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Fluss",
+    "plural": "Flüsse",
+    "en": "river",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "formell",
+    "plural": null,
+    "en": "formula",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Fotograf/in",
+    "plural": null,
+    "en": "photographer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "freiwillig",
+    "plural": null,
+    "en": "voluntary",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gesamtschule",
+    "plural": null,
+    "en": "comprehensive school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Geschichte",
+    "plural": null,
+    "en": "history",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gipsbein",
+    "plural": null,
+    "en": "leg in plaster",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Glück",
+    "plural": null,
+    "en": "luck",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gymnasium",
+    "plural": null,
+    "en": "Grammar school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Halbjahr",
+    "plural": null,
+    "en": "half-year",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Hauptschule",
+    "plural": null,
+    "en": "secondary school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hinfallen",
+    "plural": null,
+    "en": "to fall over",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Integrationsverein",
+    "plural": null,
+    "en": "integration association",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Jugendliche",
+    "plural": "Jugendlichen",
+    "en": "youth",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Junge",
+    "plural": null,
+    "en": "boy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kindertagesstätte",
+    "plural": "Kindertagesstätten (Kitas)",
+    "en": "nursery school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Klasse",
+    "plural": null,
+    "en": "class",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Klassenarbeit",
+    "plural": null,
+    "en": "classwork",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Klassenlehrer/in",
+    "plural": null,
+    "en": "class teacher",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Knöchel",
+    "plural": null,
+    "en": "knuckle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Korb",
+    "plural": null,
+    "en": "basket",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kunst",
+    "plural": null,
+    "en": "art",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Lieblingsfach",
+    "plural": "Lieblingsfächer",
+    "en": "favourite subject",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "lösen",
+    "plural": null,
+    "en": "to solve",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Lust",
+    "plural": null,
+    "en": "desire",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Mädchen",
+    "plural": "Mädchen",
+    "en": "girl",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mangelhaft",
+    "plural": null,
+    "en": "unsatisfactory",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Mathearbeit",
+    "plural": null,
+    "en": "maths test",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Meinung",
+    "plural": "Meinungen",
+    "en": "opinion",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Nachhilfe",
+    "plural": null,
+    "en": "private tuition",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "normal",
+    "plural": null,
+    "en": "normal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Note",
+    "plural": "Noten",
+    "en": "mark",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Oberschule",
+    "plural": null,
+    "en": "secondary school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "olympisch",
+    "plural": null,
+    "en": "olympic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Pflicht",
+    "plural": null,
+    "en": "duty",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Physik",
+    "plural": null,
+    "en": "physics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Pilot/in",
+    "plural": null,
+    "en": "pilot",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Planung",
+    "plural": null,
+    "en": "schedule",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Realschule",
+    "plural": null,
+    "en": "secondary modern school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Rede",
+    "plural": null,
+    "en": "speech",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Religion",
+    "plural": null,
+    "en": "religious studies",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schaubild",
+    "plural": null,
+    "en": "diagram",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schrecklich",
+    "plural": null,
+    "en": "terrible",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schulform",
+    "plural": null,
+    "en": "type of school",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Schulleiter/in",
+    "plural": null,
+    "en": "headteacher",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schulpflicht",
+    "plural": null,
+    "en": "compulsory school attendance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schulsystem",
+    "plural": null,
+    "en": "school system",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "selbst",
+    "plural": null,
+    "en": "even",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Sozialpädagoge/-pädagogin",
+    "plural": null,
+    "en": "social education worker",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Sportunterricht",
+    "plural": null,
+    "en": "sports lessons",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "streng",
+    "plural": null,
+    "en": "strict",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tagesordnung",
+    "plural": null,
+    "en": "daily schedule",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Teenager",
+    "plural": "Teenager",
+    "en": "teenager",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "teilnehmen",
+    "plural": null,
+    "en": "to take part",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Tier",
+    "plural": "Tiere",
+    "en": "animal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Tierpfleger/in",
+    "plural": null,
+    "en": "zookeeper",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "träumen",
+    "plural": null,
+    "en": "to dream",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "traurig",
+    "plural": null,
+    "en": "sad",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "turnen",
+    "plural": null,
+    "en": "to do gymnastics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "umknicken",
+    "plural": null,
+    "en": "to fold over",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unfair",
+    "plural": null,
+    "en": "unfair",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ungenügend",
+    "plural": null,
+    "en": "unsatisfactory",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Uniform",
+    "plural": null,
+    "en": "uniform",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unten",
+    "plural": null,
+    "en": "under",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Unterschied",
+    "plural": "Unterschiede",
+    "en": "difference",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Variante",
+    "plural": "Varianten",
+    "en": "alternative",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Vergangenheit",
+    "plural": null,
+    "en": "past",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Vokabeltest",
+    "plural": "Vokabeltests",
+    "en": "vocabulary test",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Vortrag",
+    "plural": null,
+    "en": "presentation",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "werfen",
+    "plural": null,
+    "en": "to throw",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Akupunktur",
+    "plural": null,
+    "en": "acupuncture",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Alternative",
+    "plural": null,
+    "en": "alternative",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anerkannt",
+    "plural": null,
+    "en": "recognised",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Anweisung",
+    "plural": "Anweisungen",
+    "en": "instruction",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Auflistung",
+    "plural": null,
+    "en": "list",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Behandlung",
+    "plural": "Behandlungen",
+    "en": "treatment",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "belegen",
+    "plural": null,
+    "en": "to prove",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bescheinigung",
+    "plural": "Bescheinigungen",
+    "en": "certificate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Boden",
+    "plural": "Böden",
+    "en": "floor",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "dagegen",
+    "plural": null,
+    "en": "in contrast",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "damit",
+    "plural": null,
+    "en": "so that",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Eiswürfel",
+    "plural": "Eiswürfel",
+    "en": "ice cube",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "empfindlich",
+    "plural": null,
+    "en": "sensitive",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "engagieren",
+    "plural": null,
+    "en": "to engage",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "entspannen",
+    "plural": null,
+    "en": "to relax",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Entspannung",
+    "plural": null,
+    "en": "relaxation",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erfahren",
+    "plural": null,
+    "en": "to find out",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erstatten",
+    "plural": null,
+    "en": "to compensate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "fit",
+    "plural": null,
+    "en": "fit",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gesamt",
+    "plural": null,
+    "en": "whole",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gesundheitlich",
+    "plural": null,
+    "en": "hygienic",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gymnastik",
+    "plural": null,
+    "en": "gymnastics",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Handgelenk",
+    "plural": null,
+    "en": "wrist",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Hausmittel",
+    "plural": "Hausmittel",
+    "en": "home remedy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Haut",
+    "plural": null,
+    "en": "skin",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hiermit",
+    "plural": null,
+    "en": "hierwith",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hierzu",
+    "plural": null,
+    "en": "hereto",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "hochlegen",
+    "plural": null,
+    "en": "to elevate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "holen",
+    "plural": null,
+    "en": "to fetch",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "klagen",
+    "plural": null,
+    "en": "to sue",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kommunizieren",
+    "plural": null,
+    "en": "to communicate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kompliziert",
+    "plural": null,
+    "en": "complicated",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kostenerstattung",
+    "plural": null,
+    "en": "reimbursement of costs",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kostenübernahme",
+    "plural": null,
+    "en": "cost transfer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kühlen",
+    "plural": null,
+    "en": "to cool",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "leihen",
+    "plural": null,
+    "en": "to lend",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "manche",
+    "plural": null,
+    "en": "some",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Massage",
+    "plural": null,
+    "en": "massage",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "massieren",
+    "plural": null,
+    "en": "to massage",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Meditation",
+    "plural": null,
+    "en": "meditation",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Muskel",
+    "plural": "Muskeln",
+    "en": "muscle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Nebenwirkung",
+    "plural": "Nebenwirkungen",
+    "en": "side effect",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Pilates",
+    "plural": null,
+    "en": "pilates",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Rat",
+    "plural": null,
+    "en": "advice",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "reizen",
+    "plural": null,
+    "en": "to irritate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Rückenmuskulatur",
+    "plural": null,
+    "en": "back muscles",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlafengehen",
+    "plural": null,
+    "en": "to go to sleep",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlagen",
+    "plural": null,
+    "en": "to hit",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schmerztablette",
+    "plural": null,
+    "en": "pain medication",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schwellung",
+    "plural": null,
+    "en": "swelling",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "selber",
+    "plural": null,
+    "en": "by oneself",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "speziell",
+    "plural": null,
+    "en": "special",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Sportart",
+    "plural": null,
+    "en": "type of sport",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Sportverein",
+    "plural": null,
+    "en": "sports club",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ständig",
+    "plural": null,
+    "en": "constant",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "stärken",
+    "plural": null,
+    "en": "to strengthen",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Tanzkurs",
+    "plural": null,
+    "en": "dance class",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Teilnahme",
+    "plural": null,
+    "en": "participation",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Teilnahmebescheinigung",
+    "plural": null,
+    "en": "participation certificate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "telefonisch",
+    "plural": null,
+    "en": "by telephone",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Therapie",
+    "plural": null,
+    "en": "therapy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Trainer/in",
+    "plural": null,
+    "en": "trainer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "treiben",
+    "plural": null,
+    "en": "to do",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tüte",
+    "plural": null,
+    "en": "bag",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Übelkeit",
+    "plural": null,
+    "en": "nausea",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "übersenden",
+    "plural": null,
+    "en": "to send",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "überweisen",
+    "plural": null,
+    "en": "to transfer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "übrigens",
+    "plural": null,
+    "en": "by the way",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Verabschiedung",
+    "plural": null,
+    "en": "approval",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "vermitteln",
+    "plural": null,
+    "en": "to procure",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verschreiben",
+    "plural": null,
+    "en": "to prescribe",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Versicherungsnehmer/in",
+    "plural": null,
+    "en": "policy holder",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Versicherungstarif",
+    "plural": null,
+    "en": "insurance tariff",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Verspannung",
+    "plural": "Verspannungen",
+    "en": "tension",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "während",
+    "plural": null,
+    "en": "during",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Wärmflasche",
+    "plural": null,
+    "en": "hot water bottle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "weggehen",
+    "plural": null,
+    "en": "to go away",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zwischendurch",
+    "plural": null,
+    "en": "occasionally",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "abheben",
+    "plural": null,
+    "en": "to withdraw",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Aktivität",
+    "plural": "Aktivitäten",
+    "en": "activity",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "anfordern",
+    "plural": null,
+    "en": "to request",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Armut",
+    "plural": null,
+    "en": "poverty",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "aufheben",
+    "plural": null,
+    "en": "to cancel",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ausdrucken",
+    "plural": null,
+    "en": "to print",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bankkarte",
+    "plural": null,
+    "en": "bank card",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Bankkaufmann/Bankkauffrau",
+    "plural": null,
+    "en": "banker",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bankleitzahl",
+    "plural": null,
+    "en": "sort code",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Bankschalter",
+    "plural": null,
+    "en": "bank counter",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bar",
+    "plural": null,
+    "en": "in cash",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Bargeld",
+    "plural": null,
+    "en": "cash",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "bargeldlos",
+    "plural": null,
+    "en": "cashless",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Basis",
+    "plural": null,
+    "en": "basis",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "begleichen",
+    "plural": null,
+    "en": "to settle",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "berechnen",
+    "plural": null,
+    "en": "to calculate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bestellnummer",
+    "plural": null,
+    "en": "order number",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Bestellung",
+    "plural": null,
+    "en": "order",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "BIC",
+    "plural": null,
+    "en": "BIC",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Blick",
+    "plural": null,
+    "en": "view",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Broschüre",
+    "plural": null,
+    "en": "brochure",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "drücken",
+    "plural": null,
+    "en": "to press",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "eigen",
+    "plural": null,
+    "en": "own",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Eingabe",
+    "plural": "Eingaben",
+    "en": "input",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "eingeben",
+    "plural": null,
+    "en": "to input",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "einzahlen",
+    "plural": null,
+    "en": "to pay in",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "erledigen",
+    "plural": null,
+    "en": "to manage to",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "eröffnen",
+    "plural": null,
+    "en": "to open",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Filiale",
+    "plural": null,
+    "en": "branch",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "folgend",
+    "plural": null,
+    "en": "following",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "formulieren",
+    "plural": null,
+    "en": "to formulate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gebühr",
+    "plural": "Gebühren",
+    "en": "fee",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Geldautomat",
+    "plural": null,
+    "en": "cash machine",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Geldbörse",
+    "plural": null,
+    "en": "purse",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Geldstück",
+    "plural": "Geldstücke",
+    "en": "coin",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "genießen",
+    "plural": null,
+    "en": "to enjoy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gewinnen",
+    "plural": null,
+    "en": "to win",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Girocard",
+    "plural": null,
+    "en": "girocard",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Girokonto",
+    "plural": null,
+    "en": "current account",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Hufeisen",
+    "plural": null,
+    "en": "horseshoe",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "IBAN",
+    "plural": null,
+    "en": "IBAN",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "indirekt",
+    "plural": null,
+    "en": "indirect",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Innenstadt",
+    "plural": null,
+    "en": "city centre",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jederzeit",
+    "plural": null,
+    "en": "anytime",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kleeblatt",
+    "plural": null,
+    "en": "cloverleaf",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kleingeld",
+    "plural": null,
+    "en": "small change",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kontoauszug",
+    "plural": "Kontoauszüge",
+    "en": "account statement",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Kontoinhaber/in",
+    "plural": null,
+    "en": "account holder",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kontonummer",
+    "plural": "Kontonummern",
+    "en": "account number",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kontostand",
+    "plural": null,
+    "en": "balance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "kontrollieren",
+    "plural": null,
+    "en": "to monitor",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Kreditinstitut",
+    "plural": "Kreditinstitute",
+    "en": "credit institute",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kreditkarte",
+    "plural": "Kreditkarten",
+    "en": "credit card",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kundennummer",
+    "plural": "Kundennummern",
+    "en": "customer number",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Kundenreferenz",
+    "plural": null,
+    "en": "customer reference",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Laden",
+    "plural": "Läden",
+    "en": "premises",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Leistung",
+    "plural": "Leistungen",
+    "en": "service",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Menge",
+    "plural": null,
+    "en": "amount",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mobil",
+    "plural": null,
+    "en": "portable",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "monatlich",
+    "plural": null,
+    "en": "monthly",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Münze",
+    "plural": "Münzen",
+    "en": "coin",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "niemand",
+    "plural": null,
+    "en": "nobody",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Nulltarif",
+    "plural": null,
+    "en": "zero tariff rate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nutzen",
+    "plural": null,
+    "en": "useage",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Online-Banking",
+    "plural": null,
+    "en": "online banking",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Pfennig",
+    "plural": "Pfennige",
+    "en": "penny",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "PIN",
+    "plural": null,
+    "en": "PIN",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Quatsch",
+    "plural": null,
+    "en": "rubbish",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Rechnung",
+    "plural": null,
+    "en": "bill",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Rechnungsbetrag",
+    "plural": null,
+    "en": "invoice amount",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Rechnungsnummer",
+    "plural": null,
+    "en": "invoice number",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "reich",
+    "plural": null,
+    "en": "rich",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Reichtum",
+    "plural": null,
+    "en": "wealth",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Respekt",
+    "plural": null,
+    "en": "respect",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schein",
+    "plural": "Scheine",
+    "en": "bank note",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schieben",
+    "plural": null,
+    "en": "to shut",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "schlachten",
+    "plural": null,
+    "en": "to rob",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Schornsteinfeger/in",
+    "plural": null,
+    "en": "chimney sweep",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Sparkonto",
+    "plural": "Sparkonten",
+    "en": "savings account",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Sparschwein",
+    "plural": "Sparschweine",
+    "en": "piggy bank",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "spätestens",
+    "plural": null,
+    "en": "at the latest",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "stecken",
+    "plural": null,
+    "en": "to put",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "stoßen",
+    "plural": null,
+    "en": "to encounter",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "TAN",
+    "plural": null,
+    "en": "TAN",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Taste",
+    "plural": "Tasten",
+    "en": "button",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Täter/in",
+    "plural": null,
+    "en": "culprit",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Überfall",
+    "plural": "Überfälle",
+    "en": "robbery",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "überfallen",
+    "plural": null,
+    "en": "to rob",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Überwachungskamera",
+    "plural": "Überwachungskameras",
+    "en": "CCTV",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Überweisung",
+    "plural": "Überweisungen",
+    "en": "transfer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Überweisungsformular",
+    "plural": null,
+    "en": "bank transfer form",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Versuch",
+    "plural": "Versuche",
+    "en": "attempt",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Verwendungszweck",
+    "plural": "Verwendungszwecke",
+    "en": "purpose",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Vorteil",
+    "plural": "Vorteile",
+    "en": "advantage",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "weglaufen",
+    "plural": null,
+    "en": "to run away",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Zahlungsempfänger/in",
+    "plural": null,
+    "en": "payee",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Zeitungsartikel",
+    "plural": "Zeitungsartikel",
+    "en": "newspaper article",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Zeuge/Zeugin",
+    "plural": null,
+    "en": "thing",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "zurückgeben",
+    "plural": null,
+    "en": "to return",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "abschalten",
+    "plural": null,
+    "en": "to switch off",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Appetit",
+    "plural": null,
+    "en": "appetite",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ärgern",
+    "plural": null,
+    "en": "to annoy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "asiatisch",
+    "plural": null,
+    "en": "asian",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ausflug",
+    "plural": "Ausflüge",
+    "en": "excursion",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "ausgezeichnet",
+    "plural": null,
+    "en": "excellent",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Ausgleich",
+    "plural": null,
+    "en": "balance",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "außer",
+    "plural": null,
+    "en": "apart from",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Aussicht",
+    "plural": null,
+    "en": "prospect",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Babysitter/in",
+    "plural": null,
+    "en": "babysitter",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Band",
+    "plural": null,
+    "en": "band",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Basketball",
+    "plural": null,
+    "en": "basketball",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "basteln",
+    "plural": null,
+    "en": "to do crafts",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Besteck",
+    "plural": null,
+    "en": "cutlery",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Chor",
+    "plural": null,
+    "en": "choir",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "daheim",
+    "plural": null,
+    "en": "at home",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Daumen",
+    "plural": null,
+    "en": "thumb",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Einlass",
+    "plural": null,
+    "en": "admission",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "entlang",
+    "plural": null,
+    "en": "along",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Event",
+    "plural": null,
+    "en": "event",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Feuerzeug",
+    "plural": null,
+    "en": "lighter",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Freizeit",
+    "plural": null,
+    "en": "free time",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Freizeitaktivität",
+    "plural": "Freizeitaktivitäten",
+    "en": "free time activities",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Freizeitangebot",
+    "plural": "Freizeitangebote",
+    "en": "leisure opportunities",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Freizeitvergnügen",
+    "plural": null,
+    "en": "pastime",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gabel",
+    "plural": "Gabeln",
+    "en": "fork",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Gastronomie",
+    "plural": null,
+    "en": "gastronomy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Gedicht",
+    "plural": "Gedichte",
+    "en": "poem",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Gegensatz",
+    "plural": null,
+    "en": "contrast",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Geiger/in",
+    "plural": null,
+    "en": "violinist",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "gemischt",
+    "plural": null,
+    "en": "mixed",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Geschirr",
+    "plural": null,
+    "en": "crockery",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Grill",
+    "plural": null,
+    "en": "barbecue",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Grillkohle",
+    "plural": null,
+    "en": "barbecue coal",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Grillplatz",
+    "plural": null,
+    "en": "barbecue area",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Grillsoße",
+    "plural": null,
+    "en": "barbecue sauce",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Grillzange",
+    "plural": null,
+    "en": "barbecue tong",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "herrlich",
+    "plural": null,
+    "en": "delightful",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "herum",
+    "plural": null,
+    "en": "around",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "interessieren",
+    "plural": null,
+    "en": "to interest",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Interviewpartner/in",
+    "plural": null,
+    "en": "interview partner",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "irgendwo",
+    "plural": null,
+    "en": "somewhere",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jährlich",
+    "plural": null,
+    "en": "annually",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "jeweils",
+    "plural": null,
+    "en": "respectively",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "knackig",
+    "plural": null,
+    "en": "crispy",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "konzentrieren",
+    "plural": null,
+    "en": "to concentrate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Kumpel",
+    "plural": null,
+    "en": "mate",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Leidenschaft",
+    "plural": null,
+    "en": "passion",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Löffel",
+    "plural": "Löffel",
+    "en": "spoon",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "malen",
+    "plural": null,
+    "en": "to paint",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "meist",
+    "plural": null,
+    "en": "most",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Messer",
+    "plural": "Messer",
+    "en": "knife",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "mitfahren",
+    "plural": null,
+    "en": "to travel with",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "nähen",
+    "plural": null,
+    "en": "to sew",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "normalerweise",
+    "plural": null,
+    "en": "normally",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Open-Air-Konzert",
+    "plural": null,
+    "en": "open air concert",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Poetry-Slam",
+    "plural": null,
+    "en": "poetry slam",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Regie",
+    "plural": null,
+    "en": "management",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Saal",
+    "plural": "Säle",
+    "en": "hall",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Schach",
+    "plural": null,
+    "en": "chess",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Schnupperkurs",
+    "plural": null,
+    "en": "taster course",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Schüssel",
+    "plural": null,
+    "en": "key",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "segeln",
+    "plural": null,
+    "en": "to sail",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Sieg",
+    "plural": null,
+    "en": "victory",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Spielfeld",
+    "plural": null,
+    "en": "playing field",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Sportergebnis",
+    "plural": "Sportergebnisse",
+    "en": "sports result",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Sportplatz",
+    "plural": null,
+    "en": "sports field",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "surfen",
+    "plural": null,
+    "en": "to surf",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Tango",
+    "plural": null,
+    "en": "tango",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "Tänzer/in",
+    "plural": null,
+    "en": "dancer",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tischdecke",
+    "plural": null,
+    "en": "tablecloth",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Tischdekoration",
+    "plural": null,
+    "en": "table decoration",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "trotzdem",
+    "plural": null,
+    "en": "despite",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "umfangreich",
+    "plural": null,
+    "en": "comprehensive",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Umfrage",
+    "plural": null,
+    "en": "survey",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Umkleide",
+    "plural": null,
+    "en": "changing room",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "unterhalten",
+    "plural": null,
+    "en": "to entertain",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "veranstalten",
+    "plural": null,
+    "en": "to organise",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "der",
+    "lemma": "Veranstaltungshinweis",
+    "plural": "Veranstaltungshinweise",
+    "en": "event information",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verbringen",
+    "plural": null,
+    "en": "to spend time",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Verpackung",
+    "plural": "Verpackungen",
+    "en": "packaging",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "verteilen",
+    "plural": null,
+    "en": "to distribute",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "das",
+    "lemma": "Volleyballspiel",
+    "plural": null,
+    "en": "volley ball game",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": "die",
+    "lemma": "Vorlesung",
+    "plural": "Vorlesungen",
+    "en": "lecture",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  },
+  {
+    "article": null,
+    "lemma": "wundervoll",
+    "plural": null,
+    "en": "wonderful",
+    "examples": [],
+    "sources": [
+      "telc-a2.2"
+    ],
+    "categories": []
+  }
+]

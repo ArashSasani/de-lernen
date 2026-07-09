@@ -39,6 +39,7 @@ export default function StudyPage() {
   const [filter, setFilter] = useState<Filter>({
     box: 'due',
     pos: 'all',
+    level: 'all',
   });
   const [queue, setQueue] = useState<Word[]>([]);
   const [index, setIndex] = useState(0);
@@ -170,7 +171,7 @@ export default function StudyPage() {
   const empty = queue.length === 0;
 
   return (
-    <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-5 px-5 py-6 md:max-w-xl md:gap-8 md:px-10 md:py-10">
+    <main className="mx-auto flex w-full max-w-md flex-1 flex-col gap-3 px-5 py-4 md:max-w-xl md:gap-8 md:px-10 md:py-10">
       <header className="flex items-baseline justify-between">
         <h1 className="text-xl font-semibold tracking-tight md:text-2xl">
           de·lernen

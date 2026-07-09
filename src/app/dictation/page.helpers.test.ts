@@ -16,6 +16,7 @@ function makeWords(n: number): Word[] {
     pos: 'noun' as const,
     examples: [],
     sources: [],
+    levels: ['a1'],
   }));
 }
 
@@ -37,6 +38,7 @@ describe('buildDictationQueue', () => {
         pos: 'other',
         examples: [],
         sources: [],
+        levels: ['a1'],
       },
       {
         id: 'b',
@@ -47,6 +49,7 @@ describe('buildDictationQueue', () => {
         pos: 'noun',
         examples: [],
         sources: [],
+        levels: ['a1'],
       },
     ];
     const q = buildDictationQueue({}, { words });
@@ -65,6 +68,7 @@ describe('buildDictationQueue', () => {
         pos: 'other',
         examples: [],
         sources: [],
+        levels: ['a1'],
       },
       {
         id: 'tisch',
@@ -75,6 +79,7 @@ describe('buildDictationQueue', () => {
         pos: 'noun',
         examples: [],
         sources: [],
+        levels: ['a1'],
       },
     ];
     const q = buildDictationQueue({}, { words });

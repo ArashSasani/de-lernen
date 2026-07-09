@@ -1,8 +1,9 @@
-import { ARTICLE, POS, BOXES } from '@/constants';
+import { ARTICLE, POS, BOXES, LEVELS } from '@/constants';
 
 export type Article = (typeof ARTICLE)[keyof typeof ARTICLE];
 export type Pos = (typeof POS)[keyof typeof POS];
 export type Box = (typeof BOXES)[number];
+export type Level = (typeof LEVELS)[number];
 
 export interface Word {
   id: string;
@@ -13,6 +14,7 @@ export interface Word {
   pos: Pos;
   examples: string[];
   sources: string[];
+  levels: Level[];
   corrected?: boolean;
 }
 
