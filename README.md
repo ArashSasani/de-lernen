@@ -8,7 +8,7 @@ Leitner-box spaced repetition. Vocabulary is compiled once per level from source
 wordlists) into a static dataset. There is **no runtime LLM** — the app just reads a committed
 `words.json`.
 
-Built to run as an installable PWA on iPhone and Mac, with progress synced across both devices.
+Built to run as an installable PWA on mobile and desktop, with progress synced across both devices.
 
 - **Study** (`/study`) — Leitner-box flashcards: German ↔ English, graded Miss / Got it / Easy.
 - **Lesen** (`/read`) — daily A1 reading text, auto-picked and highlighted around your
@@ -17,8 +17,10 @@ Built to run as an installable PWA on iPhone and Mac, with progress synced acros
   (umlauts, ß, ie/ei, silent-h).
 - **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
   multiple-choice practice quiz.
-
-<img width="390" alt="Study screen demo" src="https://github.com/user-attachments/assets/9c1d9056-b6aa-4a10-af85-30e0c81cfd40" />
+  
+<img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
+<br>
+<img width="2214" height="1200" alt="merged-mobile_images_2" src="https://github.com/user-attachments/assets/7322b29c-b6d2-492d-912c-e2ddbf6df434" />
 
 ---
 
@@ -119,7 +121,7 @@ vercel env pull .env.local   # pull the KV_* vars locally
 vercel --prod            # deploy
 ```
 
-Then on iPhone (Safari → Share → Add to Home Screen) and Mac (Safari/Chrome → Install) to get
+Then on mobile (Safari/Chrome → Share → Add to Home Screen) and desktop (Safari/Chrome → Install) to get
 the installable app.
 
 ## Project layout
@@ -162,7 +164,7 @@ de-lernen/
   (uses the browser's built-in speech synthesis — works offline, no API key).
 - Filter by box (or "Due"), word type (noun / verb / adj), and level (A1 / A2 — a word reused
   across levels only counts under the lowest one, so the level filters never overlap).
-- Progress syncs to KV in the background and merges across iPhone + Mac.
+- Progress syncs to KV in the background and merges across mobile + desktop.
 - Open **Diktat** (`/dictation`) for dictation practice: hear a word, fill in the missing
   letters (targeting the hardest German spelling patterns — umlauts, ß, ie/ei, silent-h, sch,
   double consonants). Sessions are 15 words, prioritizing never-seen and weak words. Dictation
