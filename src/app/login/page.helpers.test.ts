@@ -1,4 +1,4 @@
-import { requestLogin } from './page.helpers';
+import { formatRetryAfter, requestLogin } from './page.helpers';
 
 const mockFetch = (impl: () => Promise<unknown> | unknown) => {
   (globalThis as { fetch: unknown }).fetch = jest.fn(impl);
@@ -6,6 +6,12 @@ const mockFetch = (impl: () => Promise<unknown> | unknown) => {
 
 afterEach(() => {
   jest.restoreAllMocks();
+});
+
+describe('formatRetryAfter', () => {
+  it('formats seconds as minutes and zero-padded seconds', () => {
+    expect(formatRetryAfter(65)).toBe('1:05');
+  });
 });
 
 describe('requestLogin', () => {
@@ -24,6 +30,20 @@ describe('requestLogin', () => {
     expect(result.ok).toBe(false);
     expect(result.error).toBe('Wrong password.');
     expect(result.token).toBeUndefined();
+  });
+
+  it('reports a retry delay when login is rate limited', async () => {
+    mockFetch(async () => ({
+      ok: false,
+      status: 429,
+      headers: new Headers({ 'Retry-After': '120' }),
+    }));
+
+    await expect(requestLogin('nope')).resolves.toEqual({
+      ok: false,
+      error: 'Too many attempts.',
+      retryAfter: 120,
+    });
   });
 
   it('reports a network error when the request throws', async () => {
