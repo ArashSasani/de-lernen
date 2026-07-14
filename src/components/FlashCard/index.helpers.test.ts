@@ -34,11 +34,16 @@ describe('ARTICLE_COLOR', () => {
 });
 
 describe('lemmaFontSize', () => {
-  it('returns text-4xl for words up to 20 chars', () => {
-    expect(lemmaFontSize(null, 'Hund')).toBe('text-4xl');
-    expect(lemmaFontSize('der', 'Hund')).toBe('text-4xl');
-    expect(lemmaFontSize(null, 'Verantwortlichkeit')).toBe('text-4xl'); // 18 chars
-    expect(lemmaFontSize('der', 'Zusammenhang')).toBe('text-4xl'); // "der Zusammenhang" = 17 chars
+  it('returns text-4xl for words up to 14 chars', () => {
+    expect(lemmaFontSize(null, 'Hund')).toBe('text-4xl'); // 4 chars
+    expect(lemmaFontSize('der', 'Hund')).toBe('text-4xl'); // 8 chars
+    expect(lemmaFontSize('der', 'Abend')).toBe('text-4xl'); // 9 chars
+  });
+
+  it('returns text-2xl for words 15–20 chars', () => {
+    expect(lemmaFontSize('der', 'Zusammenhang')).toBe('text-2xl'); // 16 chars
+    expect(lemmaFontSize(null, 'Verantwortlichkeit')).toBe('text-2xl'); // 18 chars
+    expect(lemmaFontSize(null, 'Zahlungsempfänger/in')).toBe('text-2xl'); // 20 chars
   });
 
   it('returns text-xl for words over 20 chars', () => {

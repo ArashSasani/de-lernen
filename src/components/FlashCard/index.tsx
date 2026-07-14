@@ -74,7 +74,7 @@ export default function FlashCard({
               {word.pos}
             </span>
             <h2
-              className={`${lemmaFontSize(word.article, word.lemma)} font-semibold tracking-tight`}
+              className={`${lemmaFontSize(word.article, word.lemma)} w-full font-semibold tracking-tight break-words`}
             >
               {word.article && (
                 <span className={`${ARTICLE_COLOR[word.article]} font-normal`}>
