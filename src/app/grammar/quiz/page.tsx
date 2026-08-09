@@ -15,8 +15,9 @@ import GrammarQuizCard from '@/components/GrammarQuizCard';
 import { getToken } from '@/lib/sync';
 import {
   loadGrammarQuizProgress,
-  useGrammarQuizProgress,
-} from '@/hooks/useGrammarQuizProgress';
+  useGrammarQuizSync,
+} from '@/hooks/useGrammarQuizSync';
+import { fullGrammarQuizSync } from '@/lib/grammar-quiz-sync';
 import { grammarTopicById } from '@/lib/grammar';
 import type { QuizQuestion } from '@/types/grammar-quiz';
 import { buildSmartQuiz, buildTopicQuiz, sessionStats } from './page.helpers';
@@ -40,7 +41,7 @@ function GrammarQuizInner() {
   const searchParams = useSearchParams();
   const topicId = searchParams.get('topic');
 
-  const { progress, setProgress, recordAttempt } = useGrammarQuizProgress();
+  const { progress, setProgress, recordAttempt } = useGrammarQuizSync();
   const [ready, setReady] = useState(false);
   const [queue, setQueue] = useState<QuizQuestion[]>([]);
   const [index, setIndex] = useState(0);
@@ -51,9 +52,11 @@ function GrammarQuizInner() {
       router.replace('/login');
       return;
     }
-    loadGrammarQuizProgress().then((p) => {
-      setProgress(p);
-      const q = topicId ? buildTopicQuiz(topicId) : buildSmartQuiz(p);
+    loadGrammarQuizProgress().then(async (local) => {
+      setProgress(local);
+      const merged = await fullGrammarQuizSync(local);
+      setProgress(merged);
+      const q = topicId ? buildTopicQuiz(topicId) : buildSmartQuiz(merged);
       setQueue(q);
       startTransition(() => setReady(true));
     });
