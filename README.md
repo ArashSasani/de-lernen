@@ -6,7 +6,7 @@
 ## Life gets busy, and finding time to learn German isn't always easy! 🇩🇪
 
 If you've got a few spare minutes—like some dead time on the **S-Bahn**—this tool might help you learn something new or simply test what you already know.
-It's a fun little vibe project, born from lots of brainstorming, and it's still a work in progress that I'm building in my spare time. The goal is to cover the **A1–B1** German levels, mainly to help people prepare for the exams.
+It's a fun vibe project, born from lots of brainstorming, and it's still a work in progress that I'm building in my spare time. The goal is to cover the **A1–B1** German levels, mainly to help people prepare for the exams.
 Feel free to fork the project, contribute, or share your ideas. Thanks! 😊
 
 ## What is this app anyway!
