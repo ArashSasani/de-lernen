@@ -41,14 +41,15 @@ User: one person. No multi-user auth, no user database. A single password gate i
 
 ## Architecture
 
-- **Next.js App Router + TypeScript.** Client components for the study UI; three serverless
-  routes for auth and sync (`api/login`, `api/progress`, `api/dictation`).
+- **Next.js App Router + TypeScript.** Client components for the study UI; four serverless
+  routes for auth and sync (`api/login`, `api/progress`, `api/dictation`, `api/grammar-quiz`).
 - **Rendering: static shell + client-side app, no per-request SSR.** See
   **[ADR 003](docs/adrs/003-static-rendering-client-app.md)**. Pages are prerendered to a static
   shell at build time (SSG) and run on the client (CSR); `words.json` is a bundled `import`, not a
   server fetch. The layout is a static server component (document shell + PWA metadata); the only
-  per-request server code is `api/login`, `api/progress`, and `api/dictation` (JSON, not HTML). Don't add
-  `force-dynamic` or server-side page data fetching — it would break the offline guarantee.
+  per-request server code is `api/login`, `api/progress`, `api/dictation`, and `api/grammar-quiz`
+  (JSON, not HTML). Don't add `force-dynamic` or server-side page data fetching — it would break
+  the offline guarantee.
 - **Persistence split:** static word data (bundled JSON) is separate from progress (mutable).
   Progress lives in **IndexedDB** locally and a single **Vercel KV** key remotely.
 - **Sync model:** offline-first. Local is authoritative offline; on load / on change (debounced)
@@ -114,6 +115,11 @@ IndexedDB object store (`dictation`) and **synced to KV** (`user:dictation`). Me
 newest-wins by `lastSeen`; `starred` is OR-merged so a bookmark is never lost across devices.
 See [ADR 008](docs/adrs/008-dictation-spelling-exercise.md).
 
+Grammar quiz progress is a **third track**, keyed by topic id instead of word id — stored in its
+own IndexedDB object store (`grammar-quiz`) and **synced to KV** (`user:grammar-quiz`). Merge
+strategy: newest-wins by `lastSeen` (no `starred` field, so no OR-merge needed). See
+[ADR 010](docs/adrs/010-grammar-quiz.md).
+
 Grammar types (`GrammarCategory`, `GrammarTable`, `GrammarExample`, `GrammarTopic`) live in
 `src/types/index.ts` and are imported from `data/grammar.json` by `src/lib/grammar.ts`. Every
 `GrammarTopic` carries a `level: Level` (like `DailyText.level` — one level per topic, not
@@ -121,13 +127,12 @@ Grammar types (`GrammarCategory`, `GrammarTable`, `GrammarExample`, `GrammarTopi
 All/A1/A2 chip row (`LEVEL_CHIPS` in `page.helpers.ts`) alongside the category accordions. Grammar
 **reference** is read-only with no progress track. The grammar **quiz** (`QuizQuestion`,
 `GrammarQuizTopicProgress`, `GrammarQuizProgressMap` in `src/types/grammar-quiz.ts`) adds a third
-**local-only** progress track — its own IndexedDB store (`grammar-quiz`), keyed by topic id, no
-KV sync. See [ADR 009](docs/adrs/009-grammar-reference.md) and
-[ADR 010](docs/adrs/010-grammar-quiz.md).
+progress track — its own IndexedDB store (`grammar-quiz`), keyed by topic id, synced to KV. See
+[ADR 009](docs/adrs/009-grammar-reference.md) and [ADR 010](docs/adrs/010-grammar-quiz.md).
 
 The three IndexedDB object stores in the `de-flashcards` database (`src/lib/idb.ts`): `progress`
 (Leitner, synced to KV `user:progress`), `dictation` (synced to KV `user:dictation`),
-`grammar-quiz` (local-only).
+`grammar-quiz` (synced to KV `user:grammar-quiz`).
 
 ## Leitner spec (`src/lib/leitner.ts`)
 
@@ -192,8 +197,9 @@ Static, build-time-verified item bank. See **[ADR 010](docs/adrs/010-grammar-qui
 - **Smart-mix prioritization** (`buildSmartQuiz`, unchanged by the bank swap): tiered,
   **struggling-first** — (0) struggling `attempts≥2 & accuracy<0.7`, (1) never-seen
   `attempts===0`, (2) stale `>3d`, (3) rest; ~2 questions/topic until `QUIZ_SESSION_SIZE = 12`.
-- **Local-only progress**, keyed by topic id, in its own `grammar-quiz` IndexedDB store. No KV
-  sync, no server route, no auth/merge change — additive, like dictation.
+- **Synced progress**, keyed by topic id, in its own `grammar-quiz` IndexedDB store and **KV**
+  (`user:grammar-quiz` via `api/grammar-quiz`) — newest-wins by `lastSeen`, mirroring dictation
+  (ADR 008) but without the `starred` OR-merge (the type has no such field).
 
 ## Data pipeline (build-time, `scripts/` + `data/`)
 
@@ -296,6 +302,7 @@ src/
     api/login/route.ts
     api/progress/route.ts
     api/dictation/route.ts
+    api/grammar-quiz/route.ts
   components/             # one folder per component: index.tsx + index.helpers.ts + test
     AppNav/              # hamburger menu (mobile) + inline links (desktop); logout; active-route highlight
     DailyReading/        # daily A1/A2 text: highlighted target words, tap-for-gloss popover
@@ -337,14 +344,14 @@ src/
     daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
     grammar.ts           # import grammar.json; grammarTopics, topicsByCategory, grammarTopicById
     grammar-quiz.ts      # thin lookup over the frozen grammar-bank.json; generateQuestionsForTopic / allQuizzableTopicIds / isQuizzableTopic
-    grammar-quiz-sync.ts # IndexedDB load/save for GrammarQuizProgressMap (local-only, no KV)
+    grammar-quiz-sync.ts # IndexedDB load/save + remote sync + mergeGrammarQuiz for GrammarQuizProgressMap
     daily.ts             # strugglingIds / scoreText / pickDailyText + once-per-day localStorage gating
     leitner.ts           # intervals, isDue, onGood/onMiss/onEasy, counts
     shuffle.ts           # shuffle(): Fisher–Yates array shuffle (re-exported by study/page.helpers)
     dictation.ts         # generateGap(): ranked spelling-difficulty ruleset → Gap
     auth.ts              # signToken / verifyToken (jose)
     idb.ts               # shared IndexedDB handle (getDB) — stores: progress, dictation, grammar-quiz
-    db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation (server)
+    db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation + loadGrammarQuiz/saveGrammarQuiz/mergeGrammarQuiz (server)
     sync.ts              # IndexedDB + remote load/sync + token storage + pickChanged/SYNC_DEBOUNCE_MS (client)
     dictation-sync.ts    # IndexedDB load/save + remote sync + mergeDictation for DictationProgressMap
     speech.ts            # Web Speech API: getGermanVoice / speakDE (offline, no API key)
@@ -352,8 +359,7 @@ src/
   hooks/                 # React hooks (stateful glue), kept out of lib/ which is framework-agnostic logic
     useProgressSync.ts   # shared study/read sync: debounced KV push + keepalive flush on hide/pagehide/unmount
     useDictationSync.ts  # dictation sync: recordAttempt + toggleStar → IndexedDB + KV (mirrors useProgressSync)
-    useDictationProgress.ts # local dictation progress state: recordAttempt → IndexedDB only (no KV, no star)
-    useGrammarQuizProgress.ts # grammar-quiz progress: recordAttempt(topicId, correct) → IndexedDB (no KV sync)
+    useGrammarQuizSync.ts # grammar-quiz sync: recordAttempt(topicId, correct) → IndexedDB + KV (mirrors useDictationSync)
     useSpeech.ts         # German pronunciation: available/speaking state + speak(text)
   types/
     index.ts             # Word, WordProgress, ProgressMap, Article, Pos, Box, DailyText, DailyTextSpan, GrammarTopic (+ related)

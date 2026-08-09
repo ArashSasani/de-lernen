@@ -4,6 +4,10 @@ import type {
   DictationProgressMap,
   DictationWordProgress,
 } from '@/types/dictation';
+import type {
+  GrammarQuizProgressMap,
+  GrammarQuizTopicProgress,
+} from '@/types/grammar-quiz';
 
 const KV_KEY = 'user:progress';
 
@@ -70,6 +74,41 @@ export function mergeDictation(
     // OR-merge starred: a bookmark is never lost on merge
     if (localEntry.starred || remoteEntry?.starred) {
       merged[id] = { ...merged[id], starred: true };
+    }
+  }
+  return merged;
+}
+
+const GRAMMAR_QUIZ_KV_KEY = 'user:grammar-quiz';
+
+export async function loadGrammarQuiz(): Promise<GrammarQuizProgressMap> {
+  try {
+    const data = await kv.get<GrammarQuizProgressMap>(GRAMMAR_QUIZ_KV_KEY);
+    return data ?? {};
+  } catch {
+    return {};
+  }
+}
+
+export async function saveGrammarQuiz(
+  p: GrammarQuizProgressMap,
+): Promise<void> {
+  try {
+    await kv.set(GRAMMAR_QUIZ_KV_KEY, p);
+  } catch {
+    // KV not configured (e.g. local dev without KV_*) — no-op
+  }
+}
+
+export function mergeGrammarQuiz(
+  local: GrammarQuizProgressMap,
+  remote: GrammarQuizProgressMap,
+): GrammarQuizProgressMap {
+  const merged: GrammarQuizProgressMap = { ...remote };
+  for (const [id, localEntry] of Object.entries(local)) {
+    const remoteEntry: GrammarQuizTopicProgress | undefined = merged[id];
+    if (!remoteEntry || localEntry.lastSeen > remoteEntry.lastSeen) {
+      merged[id] = localEntry;
     }
   }
   return merged;

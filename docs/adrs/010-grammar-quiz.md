@@ -3,8 +3,11 @@
 **Status:** Accepted  
 **Implementation:** `src/types/grammar-quiz.ts` (question + progress types),
 `src/lib/grammar-quiz.ts` (thin lookup over the frozen item bank),
-`src/lib/grammar-quiz-sync.ts` (IndexedDB load/save, local-only),
-`src/hooks/useGrammarQuizProgress.ts` (`recordAttempt` glue),
+`src/lib/grammar-quiz-sync.ts` (IndexedDB load/save + remote KV sync + merge),
+`src/hooks/useGrammarQuizSync.ts` (`recordAttempt` glue, debounced KV push,
+keepalive flush on hide/pagehide),
+`src/app/api/grammar-quiz/route.ts` (auth + merge-write KV),
+`src/lib/db.ts` (`loadGrammarQuiz`/`saveGrammarQuiz`/`mergeGrammarQuiz`, server),
 `src/app/grammar/quiz/` (page + helpers + tests),
 `src/components/GrammarQuizCard/` (multiple-choice card + helpers + tests),
 `src/app/grammar/page.tsx` (per-topic + smart-quiz entry points),
@@ -24,12 +27,11 @@ Three constraints shape the design — the same ones that shape every other feat
 
 - **Invariant 1 — zero runtime LLM.** Questions are frozen data, not generated code. No
   question-generation API call, ever.
-- **Mirror the dictation track's shape (ADR 008), not the Leitner track.** Like dictation, quiz
-  practice is a self-test with attempts/correct/streak counters — not a spaced-repetition schedule.
-  Unlike dictation, though, the quiz track stays **local-only** with no KV sync: the data is cheap
-  to regenerate, low-stakes, and not worth the per-device merge complexity. (Dictation itself was
-  later upgraded to KV sync — see ADR 008 — but the quiz track has not, and that asymmetry is
-  intentional.)
+- **Mirror the dictation track's shape (ADR 008), including KV sync.** Like dictation, quiz
+  practice is a self-test with attempts/correct/streak counters — not a spaced-repetition schedule
+  — and like dictation it's synced to KV so progress follows the learner across devices, keyed by
+  topic id instead of word id. There's no `starred` field, so the merge is a plain newest-wins by
+  `lastSeen` with no OR-merge step.
 - **Follow the build-time data pipeline pattern (ADR 002).** Author content once into a source
   file, validate and freeze it with a deterministic build script, import the frozen output at
   runtime — the same discipline used for `words.json` and `daily-texts.json`.
@@ -111,7 +113,7 @@ queue-builder's intent (ADR 008) — weak and unseen items first — adapted to 
 > Note the tier ordering is load-bearing: a unit test pins **struggling above never-seen**, so a
 > topic the learner keeps missing is never crowded out by untouched topics.
 
-### Progress: local-only `grammar-quiz` IndexedDB store
+### Progress: synced `grammar-quiz` IndexedDB store + KV
 
 ```ts
 interface GrammarQuizTopicProgress {
@@ -123,12 +125,17 @@ interface GrammarQuizTopicProgress {
 type GrammarQuizProgressMap = Record<string, GrammarQuizTopicProgress>; // keyed by topicId
 ```
 
-Identical shape to `DictationWordProgress` (ADR 008), but **keyed by `topicId`**, not word id —
-the unit of mastery is a grammar topic, not a word. Stored in its own IndexedDB object store
-(`grammar-quiz`) under a single `'data'` key via `grammar-quiz-sync.ts`; the
-`useGrammarQuizProgress` hook's `recordAttempt(topicId, correct)` updates the counters and writes
-through on every answer. **No KV sync, no server route, no change to the auth or `mergeProgress`
-layers** (ADR 004 / ADR 006) — strictly additive, exactly like dictation.
+Identical shape to `DictationWordProgress` (ADR 008) minus `starred`, and **keyed by `topicId`**,
+not word id — the unit of mastery is a grammar topic, not a word. Stored in its own IndexedDB
+object store (`grammar-quiz`) under a single `'data'` key via `grammar-quiz-sync.ts`; the
+`useGrammarQuizSync` hook's `recordAttempt(topicId, correct)` updates the counters, writes
+through to IndexedDB immediately, and debounces (~2s) a push of the changed topic(s) to a new KV
+key, `user:grammar-quiz`, via `GET`/`PUT /api/grammar-quiz` (auth'd the same way as
+`api/dictation`). Merge is newest-wins by `lastSeen` (`mergeGrammarQuiz` in `db.ts`, mirrored
+client-side in `grammar-quiz-sync.ts`) — no OR-merge step since there's no `starred` field to
+preserve. Like the other two tracks, the pending push is flushed synchronously on
+`visibilitychange`/`pagehide` with `fetch(..., { keepalive: true })` so a backgrounded/killed PWA
+doesn't lose the last few answers (see the durability note in the sync spec, ADR 004).
 
 The store is added to the existing `de-flashcards` IndexedDB database in `idb.ts` alongside
 `progress` and `dictation`. (The shared `getDB()` handle gained the `grammar-quiz` store via the
@@ -143,16 +150,15 @@ other routes (ADR 005 / ADR 009).
 ## Consequences
 
 - **Invariants hold.** Zero runtime LLM (questions are frozen committed data);
-  offline-safe (bundled JSON, precached route); no KV/auth/server changes.
+  offline-safe (bundled JSON, precached route); auth reuses the existing JWT gate (ADR 006), no
+  new secrets or user model.
 - **Correctness is reviewable.** Every question is visible in the source file — unlike generated
   questions, there is no hidden logic that could silently produce a wrong answer. The build gate
   catches structural problems; content correctness is reviewed once during authoring.
 - **Adding content = editing one file + rebuilding.** New questions, new topics, or new levels are
   added to `grammar-bank.src.json` and frozen with `npm run build:grammar-bank`. No code changes
   needed, and the same min-8-per-topic gate applies uniformly across every level.
-- **Local-only is a deliberate limitation.** Quiz history does not follow the learner across
-  devices. Accepted for the same reasons as dictation (ADR 008): low-stakes, regenerable, and not
-  worth merge complexity. If this ever needs syncing, it would extend the KV schema the same way
-  the Leitner track does (ADR 004).
+- **Quiz history follows the learner across devices**, same as dictation (ADR 008) and Leitner
+  (ADR 004) — a third KV key (`user:grammar-quiz`) alongside `user:progress` and `user:dictation`.
 - **Multiple-choice ceiling.** No production-style recall (typing the form). Mitigated by
   dictation covering exact spelling; revisit only if recall practice is explicitly wanted.
