@@ -1,5 +1,7 @@
-import type { GrammarCategory, GrammarTopic } from '@/types';
+import type { GrammarCategory, GrammarTopic, Level } from '@/types';
+import type { LevelFilter } from '@/types/filter';
 import type { CategoryGroup } from '@/lib/grammar';
+import { FILTER, LEVELS } from '@/constants';
 
 export const ALLOWED_CATEGORIES: GrammarCategory[] = [
   'verben',
@@ -11,6 +13,16 @@ export const ALLOWED_CATEGORIES: GrammarCategory[] = [
   'adverbien',
   'verben-kasus',
   'zahlen',
+  'adjektive',
+];
+
+// B1 has no grammar topics yet, so its chip is hidden for now.
+export const LEVEL_CHIPS: { value: LevelFilter; label: string }[] = [
+  { value: FILTER.ALL, label: 'All' },
+  ...LEVELS.filter((l): l is Exclude<Level, 'b1'> => l !== 'b1').map((l) => ({
+    value: l,
+    label: l.toUpperCase(),
+  })),
 ];
 
 /**
@@ -66,6 +78,23 @@ export function filterGroups(
     .map((g) => ({
       ...g,
       topics: g.topics.filter((t) => matchesTopic(t, query)),
+    }))
+    .filter((g) => g.topics.length > 0);
+}
+
+/**
+ * Returns groups filtered to topics matching the level filter.
+ * Returns all groups unchanged when the filter is 'all'.
+ */
+export function filterGroupsByLevel(
+  groups: CategoryGroup[],
+  level: LevelFilter,
+): CategoryGroup[] {
+  if (level === FILTER.ALL) return groups;
+  return groups
+    .map((g) => ({
+      ...g,
+      topics: g.topics.filter((t) => t.level === level),
     }))
     .filter((g) => g.topics.length > 0);
 }

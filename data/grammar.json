@@ -2,6 +2,7 @@
   {
     "id": "praesens-regelmaessig",
     "category": "verben",
+    "level": "a1",
     "title": "Präsens — regelmäßige Verben",
     "summary": "Regular present tense: drop -en, add personal endings.",
     "explanation": "Most German verbs are regular in the present tense (Präsens). Take the stem (the infinitive minus -en) and add the personal ending.\n\nThe endings are -e, -st, -t, -en, -t, -en. German uses the present tense both for things happening now and for the near future.",
@@ -20,9 +21,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich lerne Deutsch.", "en": "I am learning German." },
-      { "de": "Wir wohnen in Berlin.", "en": "We live in Berlin." },
-      { "de": "Was machst du heute?", "en": "What are you doing today?" }
+      {
+        "de": "Ich lerne Deutsch.",
+        "en": "I am learning German."
+      },
+      {
+        "de": "Wir wohnen in Berlin.",
+        "en": "We live in Berlin."
+      },
+      {
+        "de": "Was machst du heute?",
+        "en": "What are you doing today?"
+      }
     ],
     "tips": [
       "The wir and sie/Sie forms are identical to the infinitive.",
@@ -32,6 +42,7 @@
   {
     "id": "praesens-rechtschreibung",
     "category": "verben",
+    "level": "a1",
     "title": "Präsens — Schreibweise / Endungen",
     "summary": "Stems ending in -t/-d or -s/-ß need a spelling tweak.",
     "explanation": "When a verb stem ends in -t or -d, an extra -e is inserted before the -st and -t endings so the word stays pronounceable: arbeiten → du arbeitest, er arbeitet.\n\nWhen a stem already ends in an s-sound (-s, -ß, -z, -x), the du form drops the s of -st and just adds -t: heißen → du heißt, tanzen → du tanzt.",
@@ -50,9 +61,18 @@
       }
     ],
     "examples": [
-      { "de": "Du arbeitest viel.", "en": "You work a lot." },
-      { "de": "Wie heißt du?", "en": "What is your name?" },
-      { "de": "Er findet das gut.", "en": "He thinks that is good." }
+      {
+        "de": "Du arbeitest viel.",
+        "en": "You work a lot."
+      },
+      {
+        "de": "Wie heißt du?",
+        "en": "What is your name?"
+      },
+      {
+        "de": "Er findet das gut.",
+        "en": "He thinks that is good."
+      }
     ],
     "tips": [
       "Other -t/-d verbs: finden → du findest, antworten → du antwortest, reden → er redet.",
@@ -62,6 +82,7 @@
   {
     "id": "sein-praesens",
     "category": "verben",
+    "level": "a1",
     "title": "sein (to be) — Präsens",
     "summary": "The most common irregular verb: bin, bist, ist …",
     "explanation": "sein (to be) is completely irregular and must be memorized. It is one of the most frequent verbs in German, used for descriptions, states, professions and locations.",
@@ -79,9 +100,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich bin müde.", "en": "I am tired." },
-      { "de": "Bist du Student?", "en": "Are you a student?" },
-      { "de": "Wir sind aus Spanien.", "en": "We are from Spain." }
+      {
+        "de": "Ich bin müde.",
+        "en": "I am tired."
+      },
+      {
+        "de": "Bist du Student?",
+        "en": "Are you a student?"
+      },
+      {
+        "de": "Wir sind aus Spanien.",
+        "en": "We are from Spain."
+      }
     ],
     "tips": [
       "No article before a profession: \"Ich bin Lehrer\", not \"ich bin ein Lehrer\".",
@@ -91,6 +121,7 @@
   {
     "id": "haben-praesens",
     "category": "verben",
+    "level": "a1",
     "title": "haben (to have) — Präsens",
     "summary": "Irregular: habe, hast, hat, haben, habt, haben.",
     "explanation": "haben (to have) is irregular only in the du and er/sie/es forms, where the -b- drops out: du hast, er hat. It expresses possession and is also the most common helper verb for the Perfekt tense.",
@@ -108,9 +139,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich habe eine Schwester.", "en": "I have a sister." },
-      { "de": "Hast du Zeit?", "en": "Do you have time?" },
-      { "de": "Sie hat Hunger.", "en": "She is hungry." }
+      {
+        "de": "Ich habe eine Schwester.",
+        "en": "I have a sister."
+      },
+      {
+        "de": "Hast du Zeit?",
+        "en": "Do you have time?"
+      },
+      {
+        "de": "Sie hat Hunger.",
+        "en": "She is hungry."
+      }
     ],
     "tips": [
       "German says \"Hunger/Durst haben\" (to have hunger/thirst) where English uses \"to be\".",
@@ -120,6 +160,7 @@
   {
     "id": "verben-stammvokalwechsel",
     "category": "verben",
+    "level": "a1",
     "title": "Verben mit Vokalwechsel",
     "summary": "Stem-changing verbs change the vowel in du/er forms.",
     "explanation": "Some strong verbs change their stem vowel, but only in the du and er/sie/es forms. The endings stay regular.\n\nThe common patterns are a → ä (fahren → du fährst), e → i (sprechen → du sprichst) and e → ie (lesen → du liest).",
@@ -138,9 +179,18 @@
       }
     ],
     "examples": [
-      { "de": "Er fährt nach Hause.", "en": "He drives home." },
-      { "de": "Sprichst du Englisch?", "en": "Do you speak English?" },
-      { "de": "Sie liest ein Buch.", "en": "She is reading a book." }
+      {
+        "de": "Er fährt nach Hause.",
+        "en": "He drives home."
+      },
+      {
+        "de": "Sprichst du Englisch?",
+        "en": "Do you speak English?"
+      },
+      {
+        "de": "Sie liest ein Buch.",
+        "en": "She is reading a book."
+      }
     ],
     "tips": [
       "The vowel change is only in du and er/sie/es — wir/ihr/sie keep the original vowel.",
@@ -150,6 +200,7 @@
   {
     "id": "modalverben",
     "category": "verben",
+    "level": "a1",
     "title": "Modalverben",
     "summary": "können, müssen, wollen, dürfen, sollen, möchten + infinitive at the end.",
     "explanation": "Modal verbs express ability, necessity, wishes and permission. They are irregular in the singular (often no -e in the ich form, and a vowel change).\n\nA modal verb takes a second verb in the infinitive, which goes to the very END of the sentence (the \"Satzklammer\", or sentence bracket).",
@@ -217,8 +268,14 @@
       }
     ],
     "examples": [
-      { "de": "Ich kann gut schwimmen.", "en": "I can swim well." },
-      { "de": "Wir müssen jetzt gehen.", "en": "We have to go now." },
+      {
+        "de": "Ich kann gut schwimmen.",
+        "en": "I can swim well."
+      },
+      {
+        "de": "Wir müssen jetzt gehen.",
+        "en": "We have to go now."
+      },
       {
         "de": "Möchtest du einen Kaffee trinken?",
         "en": "Would you like to drink a coffee?"
@@ -233,6 +290,7 @@
   {
     "id": "trennbare-verben",
     "category": "verben",
+    "level": "a1",
     "title": "Trennbare Verben",
     "summary": "Separable verbs: the prefix splits off to the end of the sentence.",
     "explanation": "Many verbs have a separable prefix (auf-, ein-, an-, mit-, ab-, aus-, zu-…). In a main clause in the present tense, the prefix separates and moves to the END of the sentence, while the conjugated stem stays in position 2.\n\nExamples: aufstehen → ich stehe … auf; einkaufen → ich kaufe … ein.",
@@ -252,8 +310,14 @@
         "de": "Ich stehe um sieben Uhr auf.",
         "en": "I get up at seven o'clock."
       },
-      { "de": "Wann fängt der Film an?", "en": "When does the film start?" },
-      { "de": "Sie ruft ihre Mutter an.", "en": "She calls her mother." }
+      {
+        "de": "Wann fängt der Film an?",
+        "en": "When does the film start?"
+      },
+      {
+        "de": "Sie ruft ihre Mutter an.",
+        "en": "She calls her mother."
+      }
     ],
     "tips": [
       "The stress is on the prefix: AUFstehen, EINkaufen.",
@@ -265,6 +329,7 @@
   {
     "id": "perfekt-mit-haben",
     "category": "verben",
+    "level": "a1",
     "title": "Perfekt mit haben",
     "summary": "Past tense for speaking: haben + Partizip II at the end.",
     "explanation": "The Perfekt is the normal spoken past tense. It is built with a helper verb (haben or sein) in position 2 plus the past participle (Partizip II) at the very end.\n\nMost verbs use haben — especially verbs with an object and verbs that do not express movement.",
@@ -280,9 +345,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich habe einen Kaffee getrunken.", "en": "I drank a coffee." },
-      { "de": "Hast du das Buch gelesen?", "en": "Have you read the book?" },
-      { "de": "Wir haben viel gearbeitet.", "en": "We worked a lot." }
+      {
+        "de": "Ich habe einen Kaffee getrunken.",
+        "en": "I drank a coffee."
+      },
+      {
+        "de": "Hast du das Buch gelesen?",
+        "en": "Have you read the book?"
+      },
+      {
+        "de": "Wir haben viel gearbeitet.",
+        "en": "We worked a lot."
+      }
     ],
     "tips": [
       "Use haben if there is a direct object or the verb has no movement.",
@@ -292,6 +366,7 @@
   {
     "id": "perfekt-mit-sein",
     "category": "verben",
+    "level": "a1",
     "title": "Perfekt mit sein",
     "summary": "Movement and change-of-state verbs use sein as the helper.",
     "explanation": "Some verbs form the Perfekt with sein instead of haben. These are verbs of movement from A to B (gehen, fahren, kommen, fliegen) and verbs of change of state (aufstehen, einschlafen, werden), plus sein and bleiben themselves.",
@@ -315,7 +390,10 @@
         "de": "Der Bus ist pünktlich gekommen.",
         "en": "The bus arrived on time."
       },
-      { "de": "Wir sind nach Italien geflogen.", "en": "We flew to Italy." }
+      {
+        "de": "Wir sind nach Italien geflogen.",
+        "en": "We flew to Italy."
+      }
     ],
     "tips": [
       "Memory aids for sein: gehen, kommen, fahren, fliegen, laufen, reisen, aufstehen, einschlafen, werden, bleiben, sein.",
@@ -325,6 +403,7 @@
   {
     "id": "partizip-zwei",
     "category": "verben",
+    "level": "a1",
     "title": "Partizip II — Bildung",
     "summary": "ge-…-t (regular), ge-…-en (strong), no ge- for -ieren / inseparable.",
     "explanation": "The Partizip II (past participle) is needed for the Perfekt.\n\nRegular (weak) verbs: ge- + stem + -t (machen → gemacht, spielen → gespielt).\n\nIrregular (strong) verbs: ge- + (often changed) stem + -en (trinken → getrunken, sehen → gesehen).\n\nNo ge- prefix: verbs ending in -ieren (studieren → studiert) and inseparable-prefix verbs with be-, ver-, er- etc. (verstehen → verstanden, bezahlen → bezahlt).",
@@ -356,9 +435,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich habe das Wort verstanden.", "en": "I understood the word." },
-      { "de": "Sie hat in München studiert.", "en": "She studied in Munich." },
-      { "de": "Wir haben einen Film gesehen.", "en": "We watched a film." }
+      {
+        "de": "Ich habe das Wort verstanden.",
+        "en": "I understood the word."
+      },
+      {
+        "de": "Sie hat in München studiert.",
+        "en": "She studied in Munich."
+      },
+      {
+        "de": "Wir haben einen Film gesehen.",
+        "en": "We watched a film."
+      }
     ],
     "tips": [
       "Separable verbs insert -ge- after the prefix: eingekauft, angerufen, ausgegangen.",
@@ -368,6 +456,7 @@
   {
     "id": "imperativ",
     "category": "verben",
+    "level": "a1",
     "title": "Imperativ",
     "summary": "Commands and requests: du-, ihr- and Sie-forms.",
     "explanation": "The imperative gives commands, instructions and requests. There are three forms.\n\ndu: usually just the verb stem, no ending and no pronoun (komm!, geh!). Stem-changing e→i verbs keep the change (sprich!, lies!), but a→ä verbs do NOT (fahr!).\n\nihr: the normal ihr-form without the pronoun (kommt!, geht!).\n\nSie: verb + Sie, in that order (Kommen Sie!, Gehen Sie!).",
@@ -383,9 +472,18 @@
       }
     ],
     "examples": [
-      { "de": "Komm bitte her!", "en": "Please come here!" },
-      { "de": "Macht die Bücher auf!", "en": "Open the books!" },
-      { "de": "Sprechen Sie bitte langsam!", "en": "Please speak slowly!" }
+      {
+        "de": "Komm bitte her!",
+        "en": "Please come here!"
+      },
+      {
+        "de": "Macht die Bücher auf!",
+        "en": "Open the books!"
+      },
+      {
+        "de": "Sprechen Sie bitte langsam!",
+        "en": "Please speak slowly!"
+      }
     ],
     "tips": [
       "Add bitte to make a command polite: \"Warte bitte!\"",
@@ -395,6 +493,7 @@
   {
     "id": "praeteritum-haben-sein",
     "category": "verben",
+    "level": "a1",
     "title": "Präteritum — haben und sein",
     "summary": "The simple past of haben (hatte) and sein (war) — used even in speech.",
     "explanation": "While most verbs use the Perfekt in spoken German, haben and sein are almost always used in their Präteritum (simple past) forms instead: ich hatte (I had), ich war (I was). These two forms are used far more often than \"ich habe gehabt\" or \"ich bin gewesen\".",
@@ -429,9 +528,18 @@
         "de": "Ich war gestern in Berlin.",
         "en": "I was in Berlin yesterday."
       },
-      { "de": "Wir hatten viel Spaß.", "en": "We had a lot of fun." },
-      { "de": "Warst du krank?", "en": "Were you sick?" },
-      { "de": "Sie hatte keine Zeit.", "en": "She had no time." }
+      {
+        "de": "Wir hatten viel Spaß.",
+        "en": "We had a lot of fun."
+      },
+      {
+        "de": "Warst du krank?",
+        "en": "Were you sick?"
+      },
+      {
+        "de": "Sie hatte keine Zeit.",
+        "en": "She had no time."
+      }
     ],
     "tips": [
       "ich and er/sie/es have the SAME form — no ending: war, hatte.",
@@ -442,6 +550,7 @@
   {
     "id": "bestimmter-artikel",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Bestimmter Artikel — der/die/das",
     "summary": "The definite article shows gender: der (m), die (f), das (n).",
     "explanation": "Every German noun has a gender: masculine (der), feminine (die) or neuter (das). The plural always uses die. The gender is grammatical and must be learned with each noun.\n\nThere are some hints, but they are only tendencies.",
@@ -457,12 +566,18 @@
       }
     ],
     "examples": [
-      { "de": "Der Mann ist groß.", "en": "The man is tall." },
+      {
+        "de": "Der Mann ist groß.",
+        "en": "The man is tall."
+      },
       {
         "de": "Die Frau liest die Zeitung.",
         "en": "The woman is reading the newspaper."
       },
-      { "de": "Das Kind spielt.", "en": "The child is playing." }
+      {
+        "de": "Das Kind spielt.",
+        "en": "The child is playing."
+      }
     ],
     "tips": [
       "Hints: -ung, -heit, -keit, -tion, -e are usually die; -er, -ling often der; -chen, -lein, -ment usually das.",
@@ -472,6 +587,7 @@
   {
     "id": "unbestimmter-artikel",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Unbestimmter Artikel — ein/eine",
     "summary": "a/an: ein (m/n), eine (f). No plural form.",
     "explanation": "The indefinite article (ein/eine) corresponds to English \"a/an\". It is ein for masculine and neuter nouns and eine for feminine nouns.\n\nThere is no plural indefinite article — the plural simply has no article (\"Ich habe Bücher\").",
@@ -487,9 +603,18 @@
       }
     ],
     "examples": [
-      { "de": "Das ist ein Tisch.", "en": "That is a table." },
-      { "de": "Ich habe eine Frage.", "en": "I have a question." },
-      { "de": "Sie kauft ein Auto.", "en": "She is buying a car." }
+      {
+        "de": "Das ist ein Tisch.",
+        "en": "That is a table."
+      },
+      {
+        "de": "Ich habe eine Frage.",
+        "en": "I have a question."
+      },
+      {
+        "de": "Sie kauft ein Auto.",
+        "en": "She is buying a car."
+      }
     ],
     "tips": [
       "ein covers both masculine and neuter in the Nominativ — they only differ in the Akkusativ.",
@@ -499,6 +624,7 @@
   {
     "id": "negativartikel-kein",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Negativartikel — kein/keine",
     "summary": "kein is the negative of ein: \"not a / no / not any\".",
     "explanation": "kein negates a noun that would otherwise take ein or no article at all. It means \"no\", \"not a\" or \"not any\". It takes the same endings as ein.\n\nUse kein with nouns; use nicht to negate everything else (verbs, adjectives, etc.).",
@@ -514,9 +640,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich habe kein Auto.", "en": "I have no car." },
-      { "de": "Das ist keine gute Idee.", "en": "That is not a good idea." },
-      { "de": "Wir haben keine Zeit.", "en": "We have no time." }
+      {
+        "de": "Ich habe kein Auto.",
+        "en": "I have no car."
+      },
+      {
+        "de": "Das ist keine gute Idee.",
+        "en": "That is not a good idea."
+      },
+      {
+        "de": "Wir haben keine Zeit.",
+        "en": "We have no time."
+      }
     ],
     "tips": [
       "Unlike ein, kein DOES have a plural form: keine.",
@@ -526,6 +661,7 @@
   {
     "id": "nominativ-akkusativ-dativ",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Kasus: Nominativ, Akkusativ, Dativ",
     "summary": "The three A1 cases: subject (Nom), direct object (Akk), indirect object (Dat).",
     "explanation": "German has three cases at A1 level. The Nominativ is the subject (wer/was?). The Akkusativ is the direct object (wen/was?). The Dativ is the indirect object (wem?) and follows certain prepositions.\n\nIn the Akkusativ only the masculine article changes (der→den). In the Dativ ALL genders change: der/das→dem, die→der, plural die→den (+‑n on the noun).",
@@ -572,12 +708,18 @@
         "de": "Der Mann kauft einen Apfel.",
         "en": "The man (Nom) buys an apple (Akk)."
       },
-      { "de": "Ich sehe den Bus.", "en": "I (Nom) see the bus (Akk)." },
+      {
+        "de": "Ich sehe den Bus.",
+        "en": "I (Nom) see the bus (Akk)."
+      },
       {
         "de": "Ich gebe dem Kind einen Ball.",
         "en": "I give the child (Dat) a ball (Akk)."
       },
-      { "de": "Sie hilft der Frau.", "en": "She helps the woman (Dat)." }
+      {
+        "de": "Sie hilft der Frau.",
+        "en": "She helps the woman (Dat)."
+      }
     ],
     "tips": [
       "Akkusativ: only masculine changes (der→den, ein→einen).",
@@ -588,6 +730,7 @@
   {
     "id": "plural-nomen",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Pluralbildung",
     "summary": "Plurals form with -e, -er, -(e)n, -s or an umlaut.",
     "explanation": "German has several plural patterns and the article is always die in the plural. There is no single rule, so the plural should be learned with each noun, but these are the common patterns.",
@@ -609,8 +752,14 @@
         "de": "Die Kinder spielen im Park.",
         "en": "The children are playing in the park."
       },
-      { "de": "Ich kaufe zwei Bücher.", "en": "I am buying two books." },
-      { "de": "Die Autos sind neu.", "en": "The cars are new." }
+      {
+        "de": "Ich kaufe zwei Bücher.",
+        "en": "I am buying two books."
+      },
+      {
+        "de": "Die Autos sind neu.",
+        "en": "The cars are new."
+      }
     ],
     "tips": [
       "Feminine nouns very often take -(e)n in the plural.",
@@ -620,6 +769,7 @@
   {
     "id": "nomen-grossschreibung",
     "category": "nomen-artikel",
+    "level": "a1",
     "title": "Großschreibung der Nomen",
     "summary": "All nouns are capitalized in German — always.",
     "explanation": "In German EVERY noun is written with a capital letter, no matter where it stands in the sentence. This includes concrete things (der Tisch), people (die Frau) and abstract ideas (die Liebe).\n\nThe polite pronoun Sie (you) and its forms (Ihr, Ihnen) are also capitalized.",
@@ -629,8 +779,14 @@
         "de": "Der Hund spielt mit dem Ball im Garten.",
         "en": "The dog plays with the ball in the garden."
       },
-      { "de": "Haben Sie eine Frage?", "en": "Do you have a question?" },
-      { "de": "Die Liebe ist wichtig.", "en": "Love is important." }
+      {
+        "de": "Haben Sie eine Frage?",
+        "en": "Do you have a question?"
+      },
+      {
+        "de": "Die Liebe ist wichtig.",
+        "en": "Love is important."
+      }
     ],
     "tips": [
       "If a word has an article (der/die/das/ein…), it is a noun and must be capitalized.",
@@ -640,6 +796,7 @@
   {
     "id": "personalpronomen-nominativ",
     "category": "pronomen",
+    "level": "a1",
     "title": "Personalpronomen — Nominativ",
     "summary": "ich, du, er, sie, es, wir, ihr, sie, Sie — the subject pronouns.",
     "explanation": "Personal pronouns in the Nominativ replace the subject of a sentence. Note that sie has three meanings: she (singular), they (plural) and — capitalized — Sie, the formal \"you\".",
@@ -658,9 +815,18 @@
       }
     ],
     "examples": [
-      { "de": "Er kommt aus Frankreich.", "en": "He comes from France." },
-      { "de": "Wir lernen Deutsch.", "en": "We are learning German." },
-      { "de": "Woher kommen Sie?", "en": "Where do you come from? (formal)" }
+      {
+        "de": "Er kommt aus Frankreich.",
+        "en": "He comes from France."
+      },
+      {
+        "de": "Wir lernen Deutsch.",
+        "en": "We are learning German."
+      },
+      {
+        "de": "Woher kommen Sie?",
+        "en": "Where do you come from? (formal)"
+      }
     ],
     "tips": [
       "du = one person you know well; ihr = several such people; Sie = polite, always capitalized.",
@@ -670,6 +836,7 @@
   {
     "id": "personalpronomen-akkusativ",
     "category": "pronomen",
+    "level": "a1",
     "title": "Personalpronomen — Akkusativ",
     "summary": "mich, dich, ihn, sie, es, uns, euch, sie, Sie — object pronouns.",
     "explanation": "When a personal pronoun is the direct object, it takes the Akkusativ form. Only some forms change from the Nominativ; sie, es, Sie stay the same.",
@@ -689,8 +856,14 @@
       }
     ],
     "examples": [
-      { "de": "Ich liebe dich.", "en": "I love you." },
-      { "de": "Kennst du ihn?", "en": "Do you know him?" },
+      {
+        "de": "Ich liebe dich.",
+        "en": "I love you."
+      },
+      {
+        "de": "Kennst du ihn?",
+        "en": "Do you know him?"
+      },
       {
         "de": "Wir besuchen euch morgen.",
         "en": "We are visiting you (pl.) tomorrow."
@@ -704,6 +877,7 @@
   {
     "id": "personalpronomen-dativ",
     "category": "pronomen",
+    "level": "a1",
     "title": "Personalpronomen — Dativ",
     "summary": "mir, dir, ihm, ihr, uns, euch, ihnen, Ihnen — indirect object pronouns.",
     "explanation": "When a personal pronoun is the indirect object (to/for whom), it takes the Dativ form. The Dativ is used after Dativ prepositions (mit, von, zu, bei, nach, aus) and with verbs that take a Dativ object (helfen, gefallen, gehören).",
@@ -723,10 +897,22 @@
       }
     ],
     "examples": [
-      { "de": "Kannst du mir helfen?", "en": "Can you help me?" },
-      { "de": "Ich gebe dir das Buch.", "en": "I give you the book." },
-      { "de": "Wie geht es Ihnen?", "en": "How are you? (formal)" },
-      { "de": "Das Kleid gefällt ihr.", "en": "She likes the dress." }
+      {
+        "de": "Kannst du mir helfen?",
+        "en": "Can you help me?"
+      },
+      {
+        "de": "Ich gebe dir das Buch.",
+        "en": "I give you the book."
+      },
+      {
+        "de": "Wie geht es Ihnen?",
+        "en": "How are you? (formal)"
+      },
+      {
+        "de": "Das Kleid gefällt ihr.",
+        "en": "She likes the dress."
+      }
     ],
     "tips": [
       "uns and euch are the same in Akkusativ and Dativ.",
@@ -736,6 +922,7 @@
   {
     "id": "possessivartikel",
     "category": "pronomen",
+    "level": "a1",
     "title": "Possessivartikel",
     "summary": "mein, dein, sein, ihr, unser, euer, ihr, Ihr — and they take ein-endings.",
     "explanation": "Possessive articles show ownership (my, your, his…). Each personal pronoun has a matching possessive: ich → mein, du → dein, er → sein, sie → ihr, wir → unser, ihr → euer, sie → ihr, Sie → Ihr.\n\nThey take the SAME endings as ein/kein, so they agree with the gender, number and case of the noun that follows (not the owner).",
@@ -798,10 +985,22 @@
       }
     ],
     "examples": [
-      { "de": "Das ist meine Schwester.", "en": "That is my sister." },
-      { "de": "Wo ist dein Auto?", "en": "Where is your car?" },
-      { "de": "Ich kenne seinen Bruder.", "en": "I know his brother." },
-      { "de": "Ich helfe meinem Freund.", "en": "I help my friend. (Dativ)" }
+      {
+        "de": "Das ist meine Schwester.",
+        "en": "That is my sister."
+      },
+      {
+        "de": "Wo ist dein Auto?",
+        "en": "Where is your car?"
+      },
+      {
+        "de": "Ich kenne seinen Bruder.",
+        "en": "I know his brother."
+      },
+      {
+        "de": "Ich helfe meinem Freund.",
+        "en": "I help my friend. (Dativ)"
+      }
     ],
     "tips": [
       "Be careful: sein = his, ihr = her — don't mix them up.",
@@ -812,6 +1011,7 @@
   {
     "id": "verb-position-zwei",
     "category": "satzbau",
+    "level": "a1",
     "title": "Verb an Position 2",
     "summary": "In a statement, the conjugated verb is always the second element.",
     "explanation": "The core rule of German word order: in a normal statement, the conjugated verb stands in second position. Position 1 can be the subject, but also a time expression or another element — and then the subject moves after the verb (inversion).\n\n\"Position 2\" means the second sentence element, not the second word.",
@@ -834,7 +1034,10 @@
         "de": "Heute gehe ich ins Kino.",
         "en": "Today I am going to the cinema."
       },
-      { "de": "Am Montag arbeite ich nicht.", "en": "On Monday I don't work." }
+      {
+        "de": "Am Montag arbeite ich nicht.",
+        "en": "On Monday I don't work."
+      }
     ],
     "tips": [
       "If you start with a time/place, the subject comes right AFTER the verb: \"Morgen komme ich.\"",
@@ -844,6 +1047,7 @@
   {
     "id": "ja-nein-fragen",
     "category": "satzbau",
+    "level": "a1",
     "title": "Ja/Nein-Fragen",
     "summary": "Yes/no questions start with the conjugated verb.",
     "explanation": "To ask a question that can be answered with ja or nein, put the conjugated verb in FIRST position, followed by the subject. No question word is used.",
@@ -858,9 +1062,18 @@
       }
     ],
     "examples": [
-      { "de": "Sprichst du Deutsch?", "en": "Do you speak German?" },
-      { "de": "Wohnt ihr in Berlin?", "en": "Do you (pl.) live in Berlin?" },
-      { "de": "Möchten Sie einen Tee?", "en": "Would you like a tea?" }
+      {
+        "de": "Sprichst du Deutsch?",
+        "en": "Do you speak German?"
+      },
+      {
+        "de": "Wohnt ihr in Berlin?",
+        "en": "Do you (pl.) live in Berlin?"
+      },
+      {
+        "de": "Möchten Sie einen Tee?",
+        "en": "Would you like a tea?"
+      }
     ],
     "tips": [
       "Answer a negative question with doch to contradict it: \"Hast du kein Auto?\" — \"Doch!\"",
@@ -870,6 +1083,7 @@
   {
     "id": "w-fragen",
     "category": "satzbau",
+    "level": "a1",
     "title": "W-Fragen",
     "summary": "Question words (wer, was, wo…) + verb in second position.",
     "explanation": "W-questions ask for specific information. They begin with a question word (most start with W), and the conjugated verb comes right after it in second position, then the subject.",
@@ -889,9 +1103,18 @@
       }
     ],
     "examples": [
-      { "de": "Wo wohnst du?", "en": "Where do you live?" },
-      { "de": "Wann beginnt der Kurs?", "en": "When does the course begin?" },
-      { "de": "Wie heißen Sie?", "en": "What is your name? (formal)" }
+      {
+        "de": "Wo wohnst du?",
+        "en": "Where do you live?"
+      },
+      {
+        "de": "Wann beginnt der Kurs?",
+        "en": "When does the course begin?"
+      },
+      {
+        "de": "Wie heißen Sie?",
+        "en": "What is your name? (formal)"
+      }
     ],
     "tips": [
       "woher = from where (origin), wohin = to where (destination) — don't confuse them.",
@@ -901,6 +1124,7 @@
   {
     "id": "konjunktionen-und-oder-aber",
     "category": "satzbau",
+    "level": "a1",
     "title": "Konjunktionen: und, oder, aber, denn",
     "summary": "These connectors join clauses WITHOUT changing word order.",
     "explanation": "The coordinating conjunctions und (and), oder (or), aber (but) and denn (because/for) connect two main clauses. They sit between the clauses in \"position 0\" and do NOT affect the word order — the verb stays in second position in both parts.",
@@ -937,6 +1161,7 @@
   {
     "id": "satzstellung-temporal-modal-lokal",
     "category": "satzbau",
+    "level": "a1",
     "title": "Satzstellung: Zeit – Art – Ort",
     "summary": "Middle-field order at A1: time, then manner, then place.",
     "explanation": "When several pieces of information come in the middle of a sentence, German tends to order them as time (wann) → manner (wie) → place (wo/wohin). This is often summarized as TeKaMoLo (temporal, kausal, modal, lokal); at A1 just remember time before place.",
@@ -972,6 +1197,7 @@
   {
     "id": "praepositionen-akkusativ",
     "category": "praepositionen",
+    "level": "a1",
     "title": "Präpositionen mit Akkusativ",
     "summary": "für, ohne, durch, gegen, um always take the Akkusativ.",
     "explanation": "A small group of prepositions is always followed by the Akkusativ case. Remember them as a fixed list. After them, masculine articles change: der → den, ein → einen.",
@@ -992,8 +1218,14 @@
         "de": "Das Geschenk ist für meinen Bruder.",
         "en": "The present is for my brother."
       },
-      { "de": "Ich gehe ohne dich.", "en": "I am going without you." },
-      { "de": "Wir gehen durch den Park.", "en": "We walk through the park." }
+      {
+        "de": "Ich gehe ohne dich.",
+        "en": "I am going without you."
+      },
+      {
+        "de": "Wir gehen durch den Park.",
+        "en": "We walk through the park."
+      }
     ],
     "tips": [
       "A common memory word: \"FUDGO\" — Für, Um, Durch, Gegen, Ohne.",
@@ -1003,6 +1235,7 @@
   {
     "id": "praepositionen-dativ",
     "category": "praepositionen",
+    "level": "a1",
     "title": "Präpositionen mit Dativ",
     "summary": "mit, nach, bei, von, zu, aus always take the Dativ.",
     "explanation": "Another fixed group of prepositions always takes the Dativ case. In the Dativ the articles become: der/das → dem, die → der, plural → den (+ -n on the noun).\n\nAt A1 it is enough to learn these as set phrases with the right article.",
@@ -1020,9 +1253,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich fahre mit dem Auto.", "en": "I am going by car." },
-      { "de": "Sie kommt aus der Türkei.", "en": "She comes from Turkey." },
-      { "de": "Wir gehen zum Arzt.", "en": "We are going to the doctor." }
+      {
+        "de": "Ich fahre mit dem Auto.",
+        "en": "I am going by car."
+      },
+      {
+        "de": "Sie kommt aus der Türkei.",
+        "en": "She comes from Turkey."
+      },
+      {
+        "de": "Wir gehen zum Arzt.",
+        "en": "We are going to the doctor."
+      }
     ],
     "tips": [
       "A memory phrase: \"aus, bei, mit, nach, von, zu\" — all Dativ.",
@@ -1032,6 +1274,7 @@
   {
     "id": "lokale-praepositionen",
     "category": "praepositionen",
+    "level": "a1",
     "title": "Lokale Präpositionen — wo? wohin? woher?",
     "summary": "Location (wo? + Dativ), direction (wohin? + Akkusativ), origin (woher? + aus/von).",
     "explanation": "The \"Wechselpräpositionen\" in, an, auf, and other location prepositions answer three different questions:\n\nwo? (where? — static location) → Dativ: \"Ich bin in der Schule.\"\nwohin? (where to? — direction/movement) → Akkusativ: \"Ich gehe in die Schule.\"\nwoher? (where from? — origin) → aus / von + Dativ: \"Ich komme aus der Schule.\"\n\nThe same preposition (in, an, auf) switches case depending on whether there is movement to a destination or not.",
@@ -1111,6 +1354,7 @@
   {
     "id": "temporale-praepositionen",
     "category": "praepositionen",
+    "level": "a1",
     "title": "Temporale Präpositionen",
     "summary": "um, am, im, von…bis, ab, seit, vor, nach — when things happen.",
     "explanation": "Temporal prepositions express when something happens. Most are followed by the Dativ case. At A1, learn these as fixed phrases with the right article.",
@@ -1139,7 +1383,10 @@
         "de": "Am Samstag gehe ich einkaufen.",
         "en": "On Saturday I go shopping."
       },
-      { "de": "Im Winter ist es kalt.", "en": "In winter it is cold." },
+      {
+        "de": "Im Winter ist es kalt.",
+        "en": "In winter it is cold."
+      },
       {
         "de": "Ich wohne seit drei Jahren in Berlin.",
         "en": "I have been living in Berlin for three years."
@@ -1153,6 +1400,7 @@
   {
     "id": "negation-nicht-kein",
     "category": "negation",
+    "level": "a1",
     "title": "Negation: nicht oder kein",
     "summary": "kein negates nouns; nicht negates everything else.",
     "explanation": "German has two main words for \"not\".\n\nUse kein to negate a noun that has ein or no article: \"Ich habe ein Auto\" → \"Ich habe kein Auto\".\n\nUse nicht to negate everything else — verbs, adjectives, adverbs, and nouns that have a definite article or possessive: \"Ich arbeite nicht\", \"Das ist nicht mein Auto\".",
@@ -1169,9 +1417,18 @@
       }
     ],
     "examples": [
-      { "de": "Ich habe kein Geld.", "en": "I have no money." },
-      { "de": "Ich kenne den Mann nicht.", "en": "I don't know the man." },
-      { "de": "Das ist nicht richtig.", "en": "That is not correct." }
+      {
+        "de": "Ich habe kein Geld.",
+        "en": "I have no money."
+      },
+      {
+        "de": "Ich kenne den Mann nicht.",
+        "en": "I don't know the man."
+      },
+      {
+        "de": "Das ist nicht richtig.",
+        "en": "That is not correct."
+      }
     ],
     "tips": [
       "Quick test: if you could say \"a/an\" or no article in English, use kein.",
@@ -1181,6 +1438,7 @@
   {
     "id": "position-von-nicht",
     "category": "negation",
+    "level": "a1",
     "title": "Die Position von nicht",
     "summary": "nicht goes at the end, but before the part it negates.",
     "explanation": "For sentence negation (saying the whole action is not happening), nicht usually goes at the END of the sentence: \"Ich verstehe das nicht.\"\n\nBut nicht stands directly BEFORE the specific element it negates — before an adjective, a place expression, or the second part of the verb (infinitive / participle / separable prefix).",
@@ -1196,8 +1454,14 @@
       }
     ],
     "examples": [
-      { "de": "Ich komme heute nicht.", "en": "I am not coming today." },
-      { "de": "Der Kaffee ist nicht heiß.", "en": "The coffee is not hot." },
+      {
+        "de": "Ich komme heute nicht.",
+        "en": "I am not coming today."
+      },
+      {
+        "de": "Der Kaffee ist nicht heiß.",
+        "en": "The coffee is not hot."
+      },
       {
         "de": "Sie wohnt nicht in München.",
         "en": "She does not live in Munich."
@@ -1211,6 +1475,7 @@
   {
     "id": "adverbien",
     "category": "adverbien",
+    "level": "a1",
     "title": "Wichtige Adverbien (A1)",
     "summary": "Frequency, time and place adverbs for everyday sentences.",
     "explanation": "Adverbs describe when, how often, or where something happens. Unlike adjectives, they never change form — no endings, no gender agreement. They typically go in the middle of the sentence (after the verb, before the place).",
@@ -1260,8 +1525,14 @@
       }
     ],
     "examples": [
-      { "de": "Ich gehe oft ins Kino.", "en": "I often go to the cinema." },
-      { "de": "Gestern war ich müde.", "en": "Yesterday I was tired." },
+      {
+        "de": "Ich gehe oft ins Kino.",
+        "en": "I often go to the cinema."
+      },
+      {
+        "de": "Gestern war ich müde.",
+        "en": "Yesterday I was tired."
+      },
       {
         "de": "Die Toilette ist oben links.",
         "en": "The toilet is upstairs on the left."
@@ -1275,6 +1546,7 @@
   {
     "id": "verben-mit-akkusativ",
     "category": "verben-kasus",
+    "level": "a1",
     "title": "Wichtige Verben mit Akkusativ",
     "summary": "Common A1 verbs that take a direct object in the Akkusativ case.",
     "explanation": "Most transitive verbs in German take a direct object in the Akkusativ. The Akkusativ answers the question \"wen oder was?\" (whom or what?). Only the masculine article changes: der/ein → den/einen.",
@@ -1327,6 +1599,7 @@
   {
     "id": "verben-mit-dativ",
     "category": "verben-kasus",
+    "level": "a1",
     "title": "Wichtige Verben mit Dativ",
     "summary": "A1 verbs that need a Dativ object — helfen, gefallen, gehören …",
     "explanation": "Some verbs take their object in the Dativ instead of the Akkusativ. These must be memorized. The Dativ answers \"wem?\" (to/for whom?). In the Dativ: der/ein → dem/einem (m/n), die/eine → der/einer (f), plural die → den (+‑n on the noun).",
@@ -1350,9 +1623,18 @@
       }
     ],
     "examples": [
-      { "de": "Kannst du mir bitte helfen?", "en": "Can you please help me?" },
-      { "de": "Die Stadt gefällt uns sehr.", "en": "We really like the city." },
-      { "de": "Mein Bauch tut mir weh.", "en": "My stomach hurts." }
+      {
+        "de": "Kannst du mir bitte helfen?",
+        "en": "Can you please help me?"
+      },
+      {
+        "de": "Die Stadt gefällt uns sehr.",
+        "en": "We really like the city."
+      },
+      {
+        "de": "Mein Bauch tut mir weh.",
+        "en": "My stomach hurts."
+      }
     ],
     "tips": [
       "gefallen works backwards compared to English: \"Das Buch gefällt mir\" = I like the book (lit. the book pleases me).",
@@ -1362,6 +1644,7 @@
   {
     "id": "ordinalzahlen",
     "category": "zahlen",
+    "level": "a1",
     "title": "Ordinalzahlen",
     "summary": "erste, zweite, dritte … — ordinal numbers add -te / -ste and take adjective endings.",
     "explanation": "Ordinal numbers say which position something is in (first, second, third …). In German, form them by adding -te to numbers 1–19 and -ste from 20 onward. Three are irregular: erste (1st), dritte (3rd), siebte (7th).\n\nOrdinals behave like adjectives — they take the same endings depending on the article and case before them.",
@@ -1384,12 +1667,18 @@
       }
     ],
     "examples": [
-      { "de": "Heute ist der dritte Mai.", "en": "Today is the third of May." },
+      {
+        "de": "Heute ist der dritte Mai.",
+        "en": "Today is the third of May."
+      },
       {
         "de": "Ich wohne im zweiten Stock.",
         "en": "I live on the second floor."
       },
-      { "de": "Das ist mein erstes Auto.", "en": "This is my first car." },
+      {
+        "de": "Das ist mein erstes Auto.",
+        "en": "This is my first car."
+      },
       {
         "de": "Nehmen Sie die erste Straße links.",
         "en": "Take the first street on the left."
@@ -1404,6 +1693,7 @@
   {
     "id": "praepositionen-ab-bis-von-bis",
     "category": "praepositionen",
+    "level": "a1",
     "title": "ab … bis vs von … bis",
     "summary": "ab = from … onward (open end); von … bis = from … to (both endpoints).",
     "explanation": "Both express time spans, but they work differently.\n\nvon … bis names a START and an END: \"von 9 bis 17 Uhr\" (from 9 to 5). Both endpoints are stated.\n\nab names only a START with no fixed end — it means \"from … onward\": \"ab morgen\" (starting tomorrow, continuing). It often implies a permanent or indefinite change.\n\nbis alone marks only the END: \"bis Freitag\" (until/by Friday).",
@@ -1418,7 +1708,10 @@
       }
     ],
     "examples": [
-      { "de": "Ich arbeite von 9 bis 17 Uhr.", "en": "I work from 9 to 5." },
+      {
+        "de": "Ich arbeite von 9 bis 17 Uhr.",
+        "en": "I work from 9 to 5."
+      },
       {
         "de": "Der Laden ist von Montag bis Samstag geöffnet.",
         "en": "The shop is open from Monday to Saturday."
@@ -1431,7 +1724,10 @@
         "de": "Ab Juli bin ich im Urlaub.",
         "en": "From July onward I am on vacation."
       },
-      { "de": "Bis wann hast du Zeit?", "en": "Until when do you have time?" }
+      {
+        "de": "Bis wann hast du Zeit?",
+        "en": "Until when do you have time?"
+      }
     ],
     "tips": [
       "von … bis = both endpoints are named (a defined window). ab = only the start, no end in sight.",
@@ -1442,6 +1738,7 @@
   {
     "id": "kontraktionen-ins-ans",
     "category": "praepositionen",
+    "level": "a1",
     "title": "Kontraktionen: ins, ans (Akkusativ)",
     "summary": "in das → ins, an das → ans — short forms for direction with neuter nouns.",
     "explanation": "When the prepositions in or an are followed by das (neuter Akkusativ, indicating direction/movement), they contract:\n\nin + das → ins: \"Ich gehe ins Kino.\" (into the cinema)\nan + das → ans: \"Wir fahren ans Meer.\" (to the sea)\n\nThese are Akkusativ contractions (movement → wohin?). Compare with the Dativ contractions im (in + dem) and am (an + dem), which express static location (wo?).",
@@ -1484,6 +1781,7 @@
   {
     "id": "unbestimmte-pronomen",
     "category": "pronomen",
+    "level": "a1",
     "title": "Unbestimmte Pronomen: alles, etwas, nichts",
     "summary": "alles = everything, etwas = something, nichts = nothing — always neuter singular.",
     "explanation": "These three indefinite pronouns refer to things, not people. They are always treated as neuter singular and never change form.\n\nalles = everything / all\netwas = something / some (also: a little / somewhat)\nnichts = nothing / not anything\n\nWhen followed by an adjective, the adjective takes a strong neuter ending (-es): etwas Neues (something new), nichts Besonderes (nothing special).",
@@ -1509,14 +1807,26 @@
       }
     ],
     "examples": [
-      { "de": "Alles klar!", "en": "All clear! / Got it!" },
+      {
+        "de": "Alles klar!",
+        "en": "All clear! / Got it!"
+      },
       {
         "de": "Möchtest du etwas essen?",
         "en": "Would you like to eat something?"
       },
-      { "de": "Ich habe nichts gehört.", "en": "I heard nothing." },
-      { "de": "Gibt es etwas Neues?", "en": "Is there something new?" },
-      { "de": "Es ist nichts Schlimmes.", "en": "It's nothing bad." }
+      {
+        "de": "Ich habe nichts gehört.",
+        "en": "I heard nothing."
+      },
+      {
+        "de": "Gibt es etwas Neues?",
+        "en": "Is there something new?"
+      },
+      {
+        "de": "Es ist nichts Schlimmes.",
+        "en": "It's nothing bad."
+      }
     ],
     "tips": [
       "etwas is often shortened to was in casual speech: \"Hast du was gehört?\"",
@@ -1527,6 +1837,7 @@
   {
     "id": "frageartikel-welcher",
     "category": "pronomen",
+    "level": "a1",
     "title": "Frageartikel: welcher / welche / welches",
     "summary": "welcher = which? — takes der-like endings to match gender and case.",
     "explanation": "welcher asks \"which?\" or \"which one?\" and works like a question article before a noun. Its endings follow the same pattern as der/die/das: -er (m), -e (f), -es (n), -e (pl.) in the Nominativ. In the Akkusativ, only the masculine changes to welchen.\n\nUse welcher when there is a choice between several items.",
@@ -1546,8 +1857,14 @@
         "de": "Welcher Bus fährt zum Bahnhof?",
         "en": "Which bus goes to the station?"
       },
-      { "de": "Welche Farbe gefällt dir?", "en": "Which color do you like?" },
-      { "de": "Welches Buch liest du?", "en": "Which book are you reading?" },
+      {
+        "de": "Welche Farbe gefällt dir?",
+        "en": "Which color do you like?"
+      },
+      {
+        "de": "Welches Buch liest du?",
+        "en": "Which book are you reading?"
+      },
       {
         "de": "Welchen Kaffee möchtest du?",
         "en": "Which coffee would you like?"
@@ -1566,6 +1883,7 @@
   {
     "id": "demonstrativartikel-der-die-das",
     "category": "pronomen",
+    "level": "a1",
     "title": "Demonstrativartikel: der / die / das (betont)",
     "summary": "Stressed der/die/das = that one / this one — used in speech instead of dieser.",
     "explanation": "In everyday spoken German, the definite articles der, die, das are used as demonstratives when spoken with stress. They mean \"this one\" or \"that one\" and are far more common than dieser in conversation.\n\nAs demonstratives they can stand alone (without a noun) as pronouns: \"Den nehme ich\" (I'll take that one). Their forms are identical to the normal definite article in Nominativ and Akkusativ.",
@@ -1580,10 +1898,22 @@
       }
     ],
     "examples": [
-      { "de": "Der ist sehr nett.", "en": "That one (he) is very nice." },
-      { "de": "Die kenne ich.", "en": "I know that one (her / them)." },
-      { "de": "Das verstehe ich nicht.", "en": "I don't understand that." },
-      { "de": "Den nehme ich.", "en": "I'll take that one." },
+      {
+        "de": "Der ist sehr nett.",
+        "en": "That one (he) is very nice."
+      },
+      {
+        "de": "Die kenne ich.",
+        "en": "I know that one (her / them)."
+      },
+      {
+        "de": "Das verstehe ich nicht.",
+        "en": "I don't understand that."
+      },
+      {
+        "de": "Den nehme ich.",
+        "en": "I'll take that one."
+      },
       {
         "de": "Wie findest du das Kleid? — Das ist schön.",
         "en": "How do you like the dress? — That one is nice."
@@ -1593,6 +1923,563 @@
       "In speech, DER Mann (stressed) = dieser Mann. Germans strongly prefer the stressed article over dieser.",
       "Standing alone without a noun, der/die/das works as a pronoun: \"Die ist toll!\" (That one is great!).",
       "Don't confuse unstressed der (just the article) with stressed DER (the demonstrative) — only context and intonation distinguish them."
+    ]
+  },
+  {
+    "id": "perfekt-vs-praeteritum",
+    "category": "verben",
+    "level": "a2",
+    "title": "Perfekt vs. Präteritum",
+    "summary": "When to use spoken-tense Perfekt vs. written-tense Präteritum.",
+    "explanation": "German has two past tenses that both translate as English simple past, but they're used in different situations, not different meanings.\n\nPerfekt (haben/sein + Partizip II) is the everyday spoken past — used in conversation, phone calls, and informal writing (emails, chats) for almost every verb. Präteritum is the narrative past — used in written German (news, stories, formal reports) and, regardless of register, almost always for sein, haben, and the modal verbs (war, hatte, konnte, musste…), because their Präteritum forms are short and common even in speech.",
+    "tables": [
+      {
+        "caption": "Same event, two tenses",
+        "headers": ["Situation", "Perfekt (spoken)", "Präteritum (written)"],
+        "rows": [
+          ["regular verb", "Ich habe gearbeitet.", "Ich arbeitete."],
+          ["sein", "Ich bin müde gewesen.", "Ich war müde."],
+          ["haben", "Ich habe Zeit gehabt.", "Ich hatte Zeit."],
+          ["modal verb", "Ich habe gekonnt.", "Ich konnte."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Gestern habe ich einen Film gesehen.",
+        "en": "Yesterday I watched a film. (spoken)"
+      },
+      {
+        "de": "Es war einmal ein König.",
+        "en": "Once upon a time there was a king. (written/narrative)"
+      },
+      {
+        "de": "Ich war gestern krank.",
+        "en": "I was sick yesterday. (sein, spoken too)"
+      },
+      {
+        "de": "Wir hatten keine Zeit.",
+        "en": "We didn't have time. (haben, spoken too)"
+      }
+    ],
+    "tips": [
+      "In conversation, default to Perfekt — except for sein, haben, and modal verbs, where Präteritum sounds more natural even when speaking.",
+      "Both tenses describe the same past time; the choice is about register (spoken vs. written), not meaning."
+    ]
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn",
+    "category": "satzbau",
+    "level": "a2",
+    "title": "Nebensätze: weil, dass, wenn",
+    "summary": "Subordinate clauses send the conjugated verb to the end.",
+    "explanation": "A Nebensatz (subordinate clause) is introduced by a conjunction like weil (because), dass (that), or wenn (if/when) and cannot stand alone. Unlike main clauses, the conjugated verb moves to the very end of the clause.\n\nweil gives a reason, dass introduces a reported statement or fact, and wenn introduces a condition or repeated/future event. The main clause and the Nebensatz are separated by a comma; if the Nebensatz comes first, the main clause's verb comes right after the comma (verb-second still holds for the whole sentence).",
+    "tables": [
+      {
+        "caption": "Word order shift",
+        "headers": ["Main clause order", "With subordinate conjunction"],
+        "rows": [
+          ["Ich bin müde. (verb 2nd)", "..., weil ich müde bin. (verb last)"],
+          ["Er kommt morgen.", "Ich glaube, dass er morgen kommt."],
+          ["Es regnet.", "Wenn es regnet, bleibe ich zu Hause."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich bleibe zu Hause, weil ich krank bin.",
+        "en": "I'm staying home because I'm sick."
+      },
+      {
+        "de": "Sie sagt, dass sie keine Zeit hat.",
+        "en": "She says that she has no time."
+      },
+      {
+        "de": "Wenn ich Geld habe, kaufe ich ein Auto.",
+        "en": "If/When I have money, I'll buy a car."
+      },
+      {
+        "de": "Weil es kalt ist, trage ich eine Jacke.",
+        "en": "Because it's cold, I'm wearing a jacket."
+      }
+    ],
+    "tips": [
+      "Verb-last is the single biggest signal that you're in a Nebensatz — always check the end of the clause, not just after the conjunction.",
+      "If the Nebensatz starts the sentence, the comma is immediately followed by the main clause's conjugated verb."
+    ]
+  },
+  {
+    "id": "relativsaetze",
+    "category": "satzbau",
+    "level": "a2",
+    "title": "Relativsätze",
+    "summary": "Relative clauses with der/die/das add detail about a noun.",
+    "explanation": "A Relativsatz describes a noun using a relative pronoun (der, die, das, plural die) that matches the noun's gender/number but takes its case from its own role inside the clause. Like other subordinate clauses, the verb goes to the end.\n\nThe relative pronoun looks like the definite article but changes for case: nominative der/die/das/die, accusative den/die/das/die, dative dem/der/dem/denen. A comma always separates the Relativsatz from the rest of the sentence.",
+    "tables": [
+      {
+        "caption": "Relativpronomen by case",
+        "headers": ["Case", "maskulin", "feminin", "neutral", "Plural"],
+        "rows": [
+          ["Nominativ", "der", "die", "das", "die"],
+          ["Akkusativ", "den", "die", "das", "die"],
+          ["Dativ", "dem", "der", "dem", "denen"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Mann, der dort steht, ist mein Chef.",
+        "en": "The man who is standing there is my boss."
+      },
+      {
+        "de": "Das Buch, das ich lese, ist spannend.",
+        "en": "The book (that) I'm reading is exciting."
+      },
+      {
+        "de": "Die Frau, der ich geholfen habe, heißt Anna.",
+        "en": "The woman (whom) I helped is called Anna."
+      },
+      {
+        "de": "Das ist der Film, den ich letzte Woche gesehen habe.",
+        "en": "That's the film (that) I saw last week."
+      }
+    ],
+    "tips": [
+      "First decide the noun's gender (fixes the row), then decide the pronoun's own case from its job inside the Relativsatz (fixes the column).",
+      "Unlike English, German never drops the relative pronoun — 'the book I read' still needs das."
+    ]
+  },
+  {
+    "id": "komparativ-superlativ",
+    "category": "adjektive",
+    "level": "a2",
+    "title": "Komparativ und Superlativ",
+    "summary": "Comparing adjectives: -er for more, am -sten for most.",
+    "explanation": "The Komparativ (comparative) adds -er to the adjective, and the Superlativ (superlative) uses am + adjective + -sten. Many short, common adjectives with a, o, or u also add an Umlaut in both forms.\n\nUse als after a comparative to mean 'than', and (genau)so … wie for 'as … as'. A handful of adjectives are irregular and must be memorized, similar to English good/better/best.",
+    "tables": [
+      {
+        "caption": "Regular and irregular patterns",
+        "headers": ["Positiv", "Komparativ", "Superlativ"],
+        "rows": [
+          ["schnell", "schneller", "am schnellsten"],
+          ["alt", "älter", "am ältesten"],
+          ["groß", "größer", "am größten"],
+          ["gut", "besser", "am besten"],
+          ["viel", "mehr", "am meisten"],
+          ["gern", "lieber", "am liebsten"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Der Zug ist schneller als das Auto.",
+        "en": "The train is faster than the car."
+      },
+      {
+        "de": "Mein Bruder ist so groß wie ich.",
+        "en": "My brother is as tall as I am."
+      },
+      {
+        "de": "Berlin ist die größte Stadt in Deutschland.",
+        "en": "Berlin is the biggest city in Germany."
+      },
+      {
+        "de": "Ich esse am liebsten Pizza.",
+        "en": "I like eating pizza the most."
+      }
+    ],
+    "tips": [
+      "als = 'than' after a comparative; wie = 'as' after so...",
+      "gut/besser/am besten and viel/mehr/am meisten don't follow the -er/-sten pattern — learn them as a pair like English."
+    ]
+  },
+  {
+    "id": "wechselpraepositionen",
+    "category": "praepositionen",
+    "level": "a2",
+    "title": "Wechselpräpositionen",
+    "summary": "Nine prepositions that take Akkusativ for movement, Dativ for location.",
+    "explanation": "Nine prepositions (an, auf, hinter, in, neben, über, unter, vor, zwischen) switch case depending on meaning: Akkusativ answers wohin? (movement toward a destination — 'where to'), Dativ answers wo? (static location — 'where at').\n\nThe test is whether the verb describes a change of place (movement into/onto/behind something) or a state of being in a place. Verbs like stellen/legen/hängen (put) usually pair with Akkusativ; stehen/liegen/hängen (be positioned) usually pair with Dativ.",
+    "tables": [
+      {
+        "caption": "wohin? (Akkusativ) vs. wo? (Dativ)",
+        "headers": ["Frage", "Kasus", "Beispiel"],
+        "rows": [
+          ["Wohin?", "Akkusativ", "Ich lege das Buch auf den Tisch."],
+          ["Wo?", "Dativ", "Das Buch liegt auf dem Tisch."],
+          ["Wohin?", "Akkusativ", "Er geht in die Küche."],
+          ["Wo?", "Dativ", "Er ist in der Küche."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich stelle die Vase auf den Tisch.",
+        "en": "I put the vase on the table. (movement)"
+      },
+      {
+        "de": "Die Vase steht auf dem Tisch.",
+        "en": "The vase is (standing) on the table. (location)"
+      },
+      {
+        "de": "Wir gehen ins Kino.",
+        "en": "We're going to the cinema. (movement)"
+      },
+      {
+        "de": "Wir sind im Kino.",
+        "en": "We're at the cinema. (location)"
+      }
+    ],
+    "tips": [
+      "Ask wohin? or wo? first — the answer picks the case, not the preposition itself.",
+      "in + das contracts to ins, in + dem to im, an + das to ans, an + dem to am."
+    ]
+  },
+  {
+    "id": "reflexive-verben",
+    "category": "verben",
+    "level": "a2",
+    "title": "Reflexive Verben",
+    "summary": "Verbs whose action reflects back onto the subject, with sich.",
+    "explanation": "Reflexive verbs pair a verb with a reflexive pronoun (mich, dich, sich, uns, euch, sich) that refers back to the subject. Most reflexive pronouns are Akkusativ, but a few verbs take a Dativ reflexive pronoun when there's also a direct object.\n\nSome verbs are always reflexive (sich freuen — to be happy), while others are only reflexive in certain meanings (sich waschen — to wash oneself, vs. waschen — to wash something else).",
+    "tables": [
+      {
+        "caption": "sich freuen (Akkusativ reflexive)",
+        "headers": ["Person", "Pronomen", "Form"],
+        "rows": [
+          ["ich", "mich", "freue mich"],
+          ["du", "dich", "freust dich"],
+          ["er/sie/es", "sich", "freut sich"],
+          ["wir", "uns", "freuen uns"],
+          ["ihr", "euch", "freut euch"],
+          ["sie/Sie", "sich", "freuen sich"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich freue mich auf das Wochenende.",
+        "en": "I'm looking forward to the weekend."
+      },
+      {
+        "de": "Er wäscht sich jeden Morgen.",
+        "en": "He washes (himself) every morning."
+      },
+      {
+        "de": "Wir treffen uns um acht Uhr.",
+        "en": "We're meeting (each other) at eight o'clock."
+      },
+      {
+        "de": "Ich putze mir die Zähne.",
+        "en": "I brush my teeth. (Dativ mir — die Zähne is the object)"
+      }
+    ],
+    "tips": [
+      "Only sich changes to mir/dir when the sentence already has a direct object (die Zähne) — the reflexive pronoun then takes the leftover Dativ slot.",
+      "Look up new verbs with sich in the dictionary form to know they're reflexive."
+    ]
+  },
+  {
+    "id": "modalverben-praeteritum",
+    "category": "verben",
+    "level": "a2",
+    "title": "Modalverben im Präteritum",
+    "summary": "Past tense of können, müssen, wollen, dürfen, sollen, mögen.",
+    "explanation": "Modal verbs almost always use Präteritum for the past, even in speech, because their forms are short and natural. Like other Präteritum verbs, they lose their Umlaut (können → konnte, müssen → musste, dürfen → durfte) and take the same personal endings as regular Präteritum verbs.\n\nA modal verb's Präteritum still pairs with a second verb in the infinitive at the end of the clause, exactly like the Präsens does.",
+    "tables": [
+      {
+        "caption": "Präteritum stems",
+        "headers": ["Infinitiv", "ich/er-Form", "Beispiel"],
+        "rows": [
+          ["können", "konnte", "Ich konnte nicht kommen."],
+          ["müssen", "musste", "Er musste arbeiten."],
+          ["wollen", "wollte", "Wir wollten ins Kino gehen."],
+          ["dürfen", "durfte", "Sie durfte nicht ausgehen."],
+          ["sollen", "sollte", "Ich sollte früher aufstehen."],
+          ["mögen", "mochte", "Ich mochte das Essen nicht."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich konnte gestern nicht schlafen.",
+        "en": "I couldn't sleep yesterday."
+      },
+      {
+        "de": "Wir mussten den Bus nehmen.",
+        "en": "We had to take the bus."
+      },
+      {
+        "de": "Er wollte Arzt werden.",
+        "en": "He wanted to become a doctor."
+      },
+      {
+        "de": "Durftet ihr als Kinder lange fernsehen?",
+        "en": "Were you allowed to watch TV a lot as children?"
+      }
+    ],
+    "tips": [
+      "ich and er/sie/es share the same Präteritum form for modals, with no extra ending — unlike Präsens.",
+      "The Umlaut disappears in the Präteritum: können→konnte, müssen→musste, dürfen→durfte."
+    ]
+  },
+  {
+    "id": "possessivartikel-dativ",
+    "category": "pronomen",
+    "level": "a2",
+    "title": "Possessivartikel im Dativ",
+    "summary": "Possessives (mein, dein, sein...) declined for the dative case.",
+    "explanation": "Possessivartikel take the same endings as ein/kein, but in the Dativ every gender gets an -em/-er ending: dative masculine and neuter add -em, feminine adds -er, and plural adds -en (on every possessive, regardless of gender).\n\nThe possessive still agrees with the noun it describes, not with the owner — mein Vater but meiner Mutter, because Vater is masculine and Mutter is feminine.",
+    "tables": [
+      {
+        "caption": "mein in the Dativ",
+        "headers": ["Genus", "Artikel", "Beispiel"],
+        "rows": [
+          ["maskulin", "meinem", "mit meinem Vater"],
+          ["feminin", "meiner", "mit meiner Mutter"],
+          ["neutral", "meinem", "mit meinem Kind"],
+          ["Plural", "meinen", "mit meinen Freunden"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich fahre mit meinem Bruder.",
+        "en": "I'm traveling with my brother."
+      },
+      {
+        "de": "Sie hilft ihrer Schwester.",
+        "en": "She helps her sister."
+      },
+      {
+        "de": "Wir wohnen bei unseren Großeltern.",
+        "en": "We live at our grandparents' place."
+      },
+      {
+        "de": "Er schreibt seiner Freundin einen Brief.",
+        "en": "He writes his girlfriend a letter."
+      }
+    ],
+    "tips": [
+      "In the Dativ, the ending depends only on the noun's gender/number, not on who owns it.",
+      "Plural Dativ nouns also add -n to the noun itself if it doesn't already end in -n or -s (den Freunden)."
+    ]
+  },
+  {
+    "id": "genitiv-grundlagen",
+    "category": "nomen-artikel",
+    "level": "a2",
+    "title": "Genitiv — Grundlagen",
+    "summary": "The possessive case: des/der + noun, masculine/neuter nouns add -s.",
+    "explanation": "The Genitiv expresses possession ('the car of the man' / 'the man's car') and appears after certain prepositions (wegen, trotz, während, außerhalb). In everyday speech it's often replaced by von + Dativ, but it's still expected in writing and on exams.\n\nMasculine and neuter nouns in the Genitiv add -(e)s to the noun itself, on top of the article changing to des; feminine and plural nouns only change the article, to der.",
+    "tables": [
+      {
+        "caption": "Genitiv articles",
+        "headers": ["Genus", "bestimmter Artikel", "Beispiel"],
+        "rows": [
+          ["maskulin", "des (+ -s/-es)", "das Auto des Mannes"],
+          ["feminin", "der", "die Tasche der Frau"],
+          ["neutral", "des (+ -s/-es)", "die Farbe des Autos"],
+          ["Plural", "der", "die Namen der Kinder"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das ist das Haus meiner Eltern.",
+        "en": "That's my parents' house."
+      },
+      {
+        "de": "Wegen des Wetters bleiben wir zu Hause.",
+        "en": "Because of the weather we're staying home."
+      },
+      {
+        "de": "Der Titel des Buches gefällt mir.",
+        "en": "I like the title of the book."
+      },
+      {
+        "de": "Trotz des Regens gehen wir spazieren.",
+        "en": "Despite the rain we're going for a walk."
+      }
+    ],
+    "tips": [
+      "In spoken German, 'von + Dativ' (die Tasche von der Frau) is very common instead of the Genitiv — but recognize and use the Genitiv for writing/exams.",
+      "One-syllable masculine/neuter nouns usually add -es (des Mannes), longer ones just -s (des Autos)."
+    ]
+  },
+  {
+    "id": "passiv-praesens",
+    "category": "verben",
+    "level": "a2",
+    "title": "Passiv Präsens",
+    "summary": "The passive voice: werden + Partizip II shifts focus from doer to action.",
+    "explanation": "The Passiv puts the focus on the action or the thing affected rather than who does it: 'the door is opened' instead of 'someone opens the door'. It's formed with a conjugated form of werden plus the Partizip II of the main verb at the end of the clause.\n\nIf the doer still needs to be named, use von + Dativ (for a person/agent) or durch + Akkusativ (for a cause/means). Often the doer is simply left out because it's unknown or unimportant.",
+    "tables": [
+      {
+        "caption": "werden + Partizip II",
+        "headers": ["Person", "werden", "Beispiel"],
+        "rows": [
+          ["ich", "werde", "Ich werde gefragt."],
+          ["du", "wirst", "Du wirst eingeladen."],
+          ["er/sie/es", "wird", "Die Tür wird geöffnet."],
+          ["wir", "werden", "Wir werden informiert."],
+          ["ihr", "werdet", "Ihr werdet gerufen."],
+          ["sie/Sie", "werden", "Die Briefe werden verschickt."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Das Restaurant wird jeden Abend geöffnet.",
+        "en": "The restaurant is opened every evening."
+      },
+      {
+        "de": "Die E-Mail wird von der Chefin geschrieben.",
+        "en": "The email is written by the boss."
+      },
+      {
+        "de": "Das Fenster wird repariert.",
+        "en": "The window is being repaired."
+      },
+      {
+        "de": "Der Brief wird durch die Post zugestellt.",
+        "en": "The letter is delivered by the postal service."
+      }
+    ],
+    "tips": [
+      "Don't confuse Passiv-werden with sein + adjective — 'die Tür wird geöffnet' (process) vs. 'die Tür ist geöffnet' (resulting state, Zustandspassiv).",
+      "The doer (if named) uses von for a person, durch for a cause or means."
+    ]
+  },
+  {
+    "id": "indirekte-fragen",
+    "category": "satzbau",
+    "level": "a2",
+    "title": "Indirekte Fragen",
+    "summary": "Embedding a question inside a sentence: verb moves to the end.",
+    "explanation": "An indirekte Frage embeds a question inside a larger, more polite sentence ('I'd like to know whether...' instead of 'Do you...?'). Like other subordinate clauses, the verb goes to the end.\n\nW-questions (wann, wo, was, warum, wie…) keep their question word as the connector. Yes/no questions use ob ('whether/if') as the connector instead, since there's no question word to reuse.",
+    "tables": [
+      {
+        "caption": "Direct vs. indirect question",
+        "headers": ["Direkte Frage", "Indirekte Frage"],
+        "rows": [
+          ["Wann kommt der Bus?", "Ich weiß nicht, wann der Bus kommt."],
+          ["Wo wohnst du?", "Können Sie mir sagen, wo Sie wohnen?"],
+          ["Kommst du mit?", "Ich frage mich, ob du mitkommst."],
+          ["Hat er angerufen?", "Ich weiß nicht, ob er angerufen hat."]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich weiß nicht, wie viel das kostet.",
+        "en": "I don't know how much that costs."
+      },
+      {
+        "de": "Können Sie mir sagen, ob der Zug pünktlich ist?",
+        "en": "Can you tell me whether the train is on time?"
+      },
+      {
+        "de": "Er fragt, warum ich so spät komme.",
+        "en": "He's asking why I'm coming so late."
+      },
+      {
+        "de": "Weißt du, wo der Bahnhof ist?",
+        "en": "Do you know where the train station is?"
+      }
+    ],
+    "tips": [
+      "No question mark and no verb-second at the start — it's a statement containing a question, so the connector word sends the verb to the end.",
+      "Use ob only when the direct question has no question word (yes/no questions)."
+    ]
+  },
+  {
+    "id": "zu-infinitiv",
+    "category": "verben",
+    "level": "a2",
+    "title": "Infinitiv mit zu",
+    "summary": "zu + infinitive after certain verbs, adjectives, and expressions.",
+    "explanation": "After many verbs (versuchen, hoffen, vergessen, planen…), adjectives (wichtig, schwer, einfach) and expressions like Es macht Spaß, a second verb appears as zu + infinitive at the end of the clause — with a comma before it if the phrase has more than one part.\n\nSeparable verbs insert zu between the prefix and the stem, written as one word: aufzustehen, einzukaufen. Modal verbs and a few others (gehen, lassen, sehen, hören) never take zu.",
+    "tables": [
+      {
+        "caption": "zu-Infinitiv patterns",
+        "headers": ["Muster", "Beispiel"],
+        "rows": [
+          ["Verb + zu + Infinitiv", "Ich versuche, früh aufzustehen."],
+          ["Adjektiv + zu + Infinitiv", "Es ist wichtig, Deutsch zu lernen."],
+          [
+            "um...zu (Zweck)",
+            "Ich lerne Deutsch, um in Deutschland zu arbeiten."
+          ],
+          ["trennbares Verb", "Vergiss nicht, einzukaufen!"]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Ich habe vergessen, dich anzurufen.",
+        "en": "I forgot to call you."
+      },
+      {
+        "de": "Es macht Spaß, Deutsch zu lernen.",
+        "en": "It's fun to learn German."
+      },
+      {
+        "de": "Sie hofft, den Job zu bekommen.",
+        "en": "She hopes to get the job."
+      },
+      {
+        "de": "Wir gehen einkaufen.",
+        "en": "We're going shopping. (gehen never takes zu)"
+      }
+    ],
+    "tips": [
+      "For separable verbs, zu slots inside the word: auf + zu + stehen → aufzustehen.",
+      "um...zu expresses purpose ('in order to'); plain zu just links two verbs."
+    ]
+  },
+  {
+    "id": "je-desto",
+    "category": "satzbau",
+    "level": "a2",
+    "title": "je … desto",
+    "summary": "Correlative comparatives: 'the more..., the more...'.",
+    "explanation": "je … desto links two comparatives to show that one thing changes in proportion to another, like English 'the more..., the more...'. Both clauses use a comparative adjective/adverb right after je and desto.\n\nThe je-clause is a Nebensatz, so its verb goes to the end; the desto-clause is a special main clause where desto + comparative comes first and is immediately followed by the verb (verb-second still applies to the whole desto-clause).",
+    "tables": [
+      {
+        "caption": "Structure",
+        "headers": ["Teil", "Wortstellung", "Beispiel"],
+        "rows": [
+          ["je-Satz", "je + Komparativ ... Verb am Ende", "Je später es wird,"],
+          [
+            "desto-Satz",
+            "desto + Komparativ + Verb ...",
+            "desto müder werde ich."
+          ]
+        ]
+      }
+    ],
+    "examples": [
+      {
+        "de": "Je mehr ich übe, desto besser werde ich.",
+        "en": "The more I practice, the better I get."
+      },
+      {
+        "de": "Je älter er wird, desto ruhiger wird er.",
+        "en": "The older he gets, the calmer he becomes."
+      },
+      {
+        "de": "Je früher wir losfahren, desto weniger Verkehr gibt es.",
+        "en": "The earlier we leave, the less traffic there is."
+      },
+      {
+        "de": "Je größer die Stadt, desto teurer die Miete.",
+        "en": "The bigger the city, the more expensive the rent."
+      }
+    ],
+    "tips": [
+      "The je-clause always sends its verb to the end (it's a Nebensatz); the desto-clause keeps verb-second right after desto + comparative.",
+      "Both comparatives can be adjectives or adverbs, but the je...desto skeleton never changes."
     ]
   }
 ]

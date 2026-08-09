@@ -16,8 +16,15 @@ import GrammarExampleView from '@/components/GrammarExampleView';
 import { getToken } from '@/lib/sync';
 import { topicsByCategory, grammarTopicById } from '@/lib/grammar';
 import { isQuizzableTopic } from '@/lib/grammar-quiz';
-import { activeGroups, splitParagraphs, filterGroups } from './page.helpers';
+import {
+  activeGroups,
+  splitParagraphs,
+  filterGroups,
+  filterGroupsByLevel,
+  LEVEL_CHIPS,
+} from './page.helpers';
 import type { GrammarTopic } from '@/types';
+import type { LevelFilter } from '@/types/filter';
 import type { CategoryGroup } from '@/lib/grammar';
 
 const groups: CategoryGroup[] = topicsByCategory();
@@ -27,9 +34,14 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
     <div className="flex flex-col gap-4">
       <div className="flex items-start justify-between gap-3">
         <div>
-          <p className="text-base font-semibold text-slate-100">
-            {topic.title}
-          </p>
+          <div className="flex items-center gap-2">
+            <p className="text-base font-semibold text-slate-100">
+              {topic.title}
+            </p>
+            <span className="rounded-full border border-white/10 px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-slate-400 uppercase">
+              {topic.level}
+            </span>
+          </div>
           <p className="mt-0.5 text-xs text-slate-500">{topic.summary}</p>
         </div>
         {isQuizzableTopic(topic.id) && (
@@ -121,6 +133,7 @@ function GrammarPageInner() {
     initialTopicId ? (grammarTopicById(initialTopicId) ?? null) : null,
   );
   const [searchQuery, setSearchQuery] = useState('');
+  const [levelFilter, setLevelFilter] = useState<LevelFilter>('all');
 
   useEffect(() => {
     if (!getToken()) {
@@ -131,7 +144,8 @@ function GrammarPageInner() {
   }, [router]);
 
   const visible = activeGroups(groups);
-  const visibleGroups = filterGroups(visible, searchQuery);
+  const byLevel = filterGroupsByLevel(visible, levelFilter);
+  const visibleGroups = filterGroups(byLevel, searchQuery);
   const isSearching = searchQuery.trim().length > 0;
 
   const toggleCategory = (category: string) =>
@@ -189,6 +203,22 @@ function GrammarPageInner() {
               <XMarkIcon className="h-4 w-4" aria-hidden="true" />
             </button>
           )}
+        </div>
+
+        <div className="flex gap-1.5">
+          {LEVEL_CHIPS.map(({ value, label }) => (
+            <button
+              key={value}
+              onClick={() => setLevelFilter(value)}
+              className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
+                levelFilter === value
+                  ? 'border-indigo-400/40 bg-indigo-500/15 text-indigo-300'
+                  : 'border-white/10 text-slate-400 hover:bg-white/[0.04]'
+              }`}
+            >
+              {label}
+            </button>
+          ))}
         </div>
 
         <Link

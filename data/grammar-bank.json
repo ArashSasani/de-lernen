@@ -1,0 +1,7382 @@
+[
+  {
+    "id": "adverbien-01",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„always“ auf Deutsch:",
+    "choices": [
+      "immer",
+      "oft",
+      "manchmal",
+      "nie"
+    ],
+    "correctIndex": 0,
+    "explanation": "immer means always."
+  },
+  {
+    "id": "adverbien-02",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„often“ auf Deutsch:",
+    "choices": [
+      "immer",
+      "oft",
+      "selten",
+      "nie"
+    ],
+    "correctIndex": 1,
+    "explanation": "oft means often."
+  },
+  {
+    "id": "adverbien-03",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„sometimes“ auf Deutsch:",
+    "choices": [
+      "manchmal",
+      "selten",
+      "nie",
+      "oft"
+    ],
+    "correctIndex": 0,
+    "explanation": "manchmal means sometimes."
+  },
+  {
+    "id": "adverbien-04",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„never“ auf Deutsch:",
+    "choices": [
+      "immer",
+      "selten",
+      "manchmal",
+      "nie"
+    ],
+    "correctIndex": 3,
+    "explanation": "nie means never."
+  },
+  {
+    "id": "adverbien-05",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„rarely“ auf Deutsch:",
+    "choices": [
+      "selten",
+      "nie",
+      "manchmal",
+      "oft"
+    ],
+    "correctIndex": 0,
+    "explanation": "selten means rarely."
+  },
+  {
+    "id": "adverbien-06",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„yesterday“ auf Deutsch:",
+    "choices": [
+      "heute",
+      "morgen",
+      "gestern",
+      "jetzt"
+    ],
+    "correctIndex": 2,
+    "explanation": "gestern means yesterday."
+  },
+  {
+    "id": "adverbien-07",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„already“ auf Deutsch:",
+    "choices": [
+      "noch",
+      "schon",
+      "bald",
+      "zuerst"
+    ],
+    "correctIndex": 1,
+    "explanation": "schon means already."
+  },
+  {
+    "id": "adverbien-08",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„still / yet“ auf Deutsch:",
+    "choices": [
+      "noch",
+      "schon",
+      "bald",
+      "dann"
+    ],
+    "correctIndex": 0,
+    "explanation": "noch means still / yet."
+  },
+  {
+    "id": "adverbien-09",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„here“ auf Deutsch:",
+    "choices": [
+      "hier",
+      "dort",
+      "oben",
+      "unten"
+    ],
+    "correctIndex": 0,
+    "explanation": "hier means here."
+  },
+  {
+    "id": "adverbien-10",
+    "topicId": "adverbien",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„outside“ auf Deutsch:",
+    "choices": [
+      "drinnen",
+      "draußen",
+      "vorne",
+      "hinten"
+    ],
+    "correctIndex": 1,
+    "explanation": "draußen means outside."
+  },
+  {
+    "id": "bestimmter-artikel-01",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Mann ist groß.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mann is masculine, so it takes der."
+  },
+  {
+    "id": "bestimmter-artikel-02",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Frau liest die Zeitung.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "Frau is feminine, so it takes die."
+  },
+  {
+    "id": "bestimmter-artikel-03",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Kind spielt.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Dem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kind is neuter, so it takes das."
+  },
+  {
+    "id": "bestimmter-artikel-04",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Tisch ist neu.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tisch is masculine, so it takes der."
+  },
+  {
+    "id": "bestimmter-artikel-05",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Lampe ist kaputt.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Dem"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lampe is feminine, so it takes die."
+  },
+  {
+    "id": "bestimmter-artikel-06",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Haus ist groß.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 2,
+    "explanation": "Haus is neuter, so it takes das."
+  },
+  {
+    "id": "bestimmter-artikel-07",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Männer arbeiten.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "The plural always uses die, regardless of gender."
+  },
+  {
+    "id": "bestimmter-artikel-08",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Stuhl ist bequem.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Dem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stuhl is masculine, so it takes der."
+  },
+  {
+    "id": "bestimmter-artikel-09",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Zeitung liegt hier.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zeitung is feminine, so it takes die."
+  },
+  {
+    "id": "bestimmter-artikel-10",
+    "topicId": "bestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Auto ist neu.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Dem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Auto is neuter, so it takes das."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-01",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ ist sehr nett. (that one = he)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stressed der stands for a masculine person/thing: Der ist sehr nett."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-02",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ kenne ich. (that one = her)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stressed die stands for a feminine person/thing used as the Akkusativ object here: Die kenne ich."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-03",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ verstehe ich nicht. (that = it)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 2,
+    "explanation": "Stressed das stands for a neuter thing (Nominativ and Akkusativ look the same): Das verstehe ich nicht."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-04",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "___ nehme ich. (that one, masculine)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 3,
+    "explanation": "As the Akkusativ object, masculine der becomes den: Den nehme ich."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-05",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wie findest du das Kleid? — ___ ist schön.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kleid is neuter, so the demonstrative is das."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-06",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ ist toll! (that one, feminine)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stressed die stands for a feminine person/thing: Die ist toll!"
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-07",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ mag ich nicht. (that one, neuter)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 2,
+    "explanation": "Stressed das stands for a neuter thing: Das mag ich nicht."
+  },
+  {
+    "id": "demonstrativartikel-der-die-das-08",
+    "topicId": "demonstrativartikel-der-die-das",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "___ kenne ich schon. (that one, masculine)",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 3,
+    "explanation": "As the Akkusativ object, masculine der becomes den: Den kenne ich schon."
+  },
+  {
+    "id": "frageartikel-welcher-01",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Bus fährt zum Bahnhof?",
+    "choices": [
+      "Welcher",
+      "Welche",
+      "Welches",
+      "Welchen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bus is masculine Nominativ, so welcher takes -er."
+  },
+  {
+    "id": "frageartikel-welcher-02",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Farbe gefällt dir?",
+    "choices": [
+      "Welcher",
+      "Welche",
+      "Welches",
+      "Welchen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Farbe is feminine Nominativ, so welcher takes -e."
+  },
+  {
+    "id": "frageartikel-welcher-03",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Buch liest du?",
+    "choices": [
+      "Welcher",
+      "Welche",
+      "Welches",
+      "Welchen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Buch is neuter, and here it's the Akkusativ object; neuter welcher takes -es in both Nominativ and Akkusativ."
+  },
+  {
+    "id": "frageartikel-welcher-04",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "___ Kaffee möchtest du?",
+    "choices": [
+      "Welcher",
+      "Welche",
+      "Welches",
+      "Welchen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Kaffee is masculine and here it's the Akkusativ object, so welcher takes -en: welchen."
+  },
+  {
+    "id": "frageartikel-welcher-05",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "In ___ Stadt wohnst du?",
+    "choices": [
+      "welcher",
+      "welche",
+      "welches",
+      "welchem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stadt is feminine Dativ (after in + wo?), so welcher takes -er."
+  },
+  {
+    "id": "frageartikel-welcher-06",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Auto ist deins?",
+    "choices": [
+      "Welcher",
+      "Welche",
+      "Welches",
+      "Welchen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Auto is neuter Nominativ, so welcher takes -es."
+  },
+  {
+    "id": "frageartikel-welcher-07",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Mit ___ Bus fährst du?",
+    "choices": [
+      "welcher",
+      "welche",
+      "welches",
+      "welchem"
+    ],
+    "correctIndex": 3,
+    "explanation": "mit takes the Dativ; Bus is masculine, so welcher takes -em: welchem."
+  },
+  {
+    "id": "frageartikel-welcher-08",
+    "topicId": "frageartikel-welcher",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "___ Lehrer hilft dir?",
+    "choices": [
+      "welcher",
+      "welche",
+      "welches",
+      "welchem"
+    ],
+    "correctIndex": 3,
+    "explanation": "helfen takes a Dativ object; masculine welcher takes -em: welchem."
+  },
+  {
+    "id": "genitiv-grundlagen-01",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Das ist das Haus ___ Eltern. (Genitiv Plural)",
+    "choices": [
+      "meiner",
+      "meines",
+      "meinem",
+      "meinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Genitiv plural uses der/-er possessive form: meiner Eltern."
+  },
+  {
+    "id": "genitiv-grundlagen-02",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Das ist das Auto ___ Mannes. (Genitiv, maskulin)",
+    "choices": [
+      "des",
+      "der",
+      "dem",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Masculine Genitiv article is des, and the noun adds -es: des Mannes."
+  },
+  {
+    "id": "genitiv-grundlagen-03",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Die Tasche ___ Frau. (Genitiv, feminin)",
+    "choices": [
+      "der",
+      "des",
+      "dem",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Feminine Genitiv article is der, and the noun itself doesn't change: der Frau."
+  },
+  {
+    "id": "genitiv-grundlagen-04",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "___ des Wetters bleiben wir zu Hause.",
+    "choices": [
+      "Wegen",
+      "Trotz",
+      "Während",
+      "Außerhalb"
+    ],
+    "correctIndex": 0,
+    "explanation": "wegen (because of) is one of the common prepositions requiring Genitiv."
+  },
+  {
+    "id": "genitiv-grundlagen-05",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Der Titel ___ Buches gefällt mir. (Genitiv, neutral)",
+    "choices": [
+      "des",
+      "der",
+      "dem",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Neuter Genitiv article is des, and the noun adds -es like masculine: des Buches."
+  },
+  {
+    "id": "genitiv-grundlagen-06",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Was passiert mit maskulinen/neutralen Nomen im Genitiv?",
+    "choices": [
+      "Sie bekommen -(e)s am Nomen selbst.",
+      "Sie bekommen -en am Nomen.",
+      "Sie ändern sich nicht.",
+      "Sie werden Plural."
+    ],
+    "correctIndex": 0,
+    "explanation": "Masculine and neuter nouns add -(e)s in the Genitiv, on top of the article changing to des."
+  },
+  {
+    "id": "genitiv-grundlagen-07",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Was wird im gesprochenen Deutsch oft statt Genitiv benutzt?",
+    "choices": [
+      "von + Dativ",
+      "mit + Akkusativ",
+      "für + Dativ",
+      "zu + Genitiv"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spoken German often replaces the Genitiv with von + Dativ, e.g. die Tasche von der Frau."
+  },
+  {
+    "id": "genitiv-grundlagen-08",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Die Namen ___ Kinder. (Genitiv Plural)",
+    "choices": [
+      "der",
+      "des",
+      "dem",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plural Genitiv article is der, same as feminine singular."
+  },
+  {
+    "id": "genitiv-grundlagen-09",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "___ des Regens gehen wir spazieren.",
+    "choices": [
+      "Trotz",
+      "Wegen",
+      "Statt",
+      "Außer"
+    ],
+    "correctIndex": 0,
+    "explanation": "trotz (despite) is another common preposition taking Genitiv."
+  },
+  {
+    "id": "genitiv-grundlagen-10",
+    "topicId": "genitiv-grundlagen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welche Nomenendung ist bei einsilbigen maskulinen/neutralen Nomen im Genitiv üblich?",
+    "choices": [
+      "-es",
+      "-s",
+      "-en",
+      "-er"
+    ],
+    "correctIndex": 0,
+    "explanation": "One-syllable masculine/neuter nouns usually add -es: des Mannes, des Kindes."
+  },
+  {
+    "id": "haben-praesens-01",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ eine Schwester.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "haben is regular except du/er: ich habe."
+  },
+  {
+    "id": "haben-praesens-02",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du Zeit?",
+    "choices": [
+      "Habe",
+      "Hast",
+      "Hat",
+      "Habt"
+    ],
+    "correctIndex": 1,
+    "explanation": "The -b- drops in the du-form: du hast."
+  },
+  {
+    "id": "haben-praesens-03",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (she) ___ Hunger.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "haben"
+    ],
+    "correctIndex": 2,
+    "explanation": "The -b- drops in the er/sie/es-form: sie hat."
+  },
+  {
+    "id": "haben-praesens-04",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ ein Auto.",
+    "choices": [
+      "habe",
+      "hat",
+      "haben",
+      "habt"
+    ],
+    "correctIndex": 2,
+    "explanation": "wir haben is regular."
+  },
+  {
+    "id": "haben-praesens-05",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ Fragen.",
+    "choices": [
+      "habe",
+      "hast",
+      "habt",
+      "haben"
+    ],
+    "correctIndex": 2,
+    "explanation": "ihr habt is regular."
+  },
+  {
+    "id": "haben-praesens-06",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (they) ___ Kinder.",
+    "choices": [
+      "hat",
+      "habt",
+      "haben",
+      "hast"
+    ],
+    "correctIndex": 2,
+    "explanation": "sie haben is regular."
+  },
+  {
+    "id": "haben-praesens-07",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ keinen Hund.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "haben"
+    ],
+    "correctIndex": 2,
+    "explanation": "The -b- drops in the er-form: er hat."
+  },
+  {
+    "id": "haben-praesens-08",
+    "topicId": "haben-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ einen Termin.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich habe is the regular ich-form."
+  },
+  {
+    "id": "imperativ-01",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Imperativ (du) von „kommen“:",
+    "choices": [
+      "Komm!",
+      "Kommst!",
+      "Kommt!",
+      "Kommen!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The du-imperative is usually just the stem, no ending: Komm!"
+  },
+  {
+    "id": "imperativ-02",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Imperativ (ihr) von „gehen“:",
+    "choices": [
+      "Geht!",
+      "Geh!",
+      "Gehen Sie!",
+      "Gehst!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ihr-imperative is the normal ihr-form without the pronoun: Geht!"
+  },
+  {
+    "id": "imperativ-03",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Imperativ (Sie) von „sprechen“:",
+    "choices": [
+      "Sprechen Sie!",
+      "Sprich!",
+      "Sprecht!",
+      "Spricht!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Sie-imperative is verb + Sie: Sprechen Sie!"
+  },
+  {
+    "id": "imperativ-04",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Imperativ (du) von „sein“:",
+    "choices": [
+      "Sei!",
+      "Bist!",
+      "Seid!",
+      "Sein!"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein has an irregular du-imperative: Sei!"
+  },
+  {
+    "id": "imperativ-05",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Imperativ (Sie) von „kommen“:",
+    "choices": [
+      "Kommen Sie!",
+      "Komm!",
+      "Kommt!",
+      "Kommst!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Sie-imperative is verb + Sie: Kommen Sie!"
+  },
+  {
+    "id": "imperativ-06",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Imperativ (du) von „sprechen“:",
+    "choices": [
+      "Sprich!",
+      "Sprech!",
+      "Sprichst!",
+      "Sprecht!"
+    ],
+    "correctIndex": 0,
+    "explanation": "sprechen keeps its e→i stem change in the du-imperative: Sprich!"
+  },
+  {
+    "id": "imperativ-07",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Imperativ (ihr) von „sein“:",
+    "choices": [
+      "Seid!",
+      "Sei!",
+      "Sind!",
+      "Seien!"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein has an irregular ihr-imperative: Seid!"
+  },
+  {
+    "id": "imperativ-08",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Imperativ (du) von „gehen“:",
+    "choices": [
+      "Geh!",
+      "Gehst!",
+      "Geht!",
+      "Gehen!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The du-imperative is usually just the stem, no ending: Geh!"
+  },
+  {
+    "id": "imperativ-09",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Imperativ (Sie) von „sein“:",
+    "choices": [
+      "Seien Sie!",
+      "Sei!",
+      "Seid!",
+      "Sind Sie!"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein has an irregular Sie-imperative: Seien Sie!"
+  },
+  {
+    "id": "imperativ-10",
+    "topicId": "imperativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Imperativ (ihr) von „kommen“:",
+    "choices": [
+      "Kommt!",
+      "Komm!",
+      "Kommen Sie!",
+      "Kommst!"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ihr-imperative is the normal ihr-form without the pronoun: Kommt!"
+  },
+  {
+    "id": "indirekte-fragen-01",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich weiß nicht, wie viel das ___.",
+    "choices": [
+      "kostet",
+      "kostet es",
+      "es kostet",
+      "kostete es"
+    ],
+    "correctIndex": 0,
+    "explanation": "Indirect questions send the verb to the end: wie viel das kostet."
+  },
+  {
+    "id": "indirekte-fragen-02",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich frage mich, ___ du mitkommst.",
+    "choices": [
+      "ob",
+      "wenn",
+      "dass",
+      "wie"
+    ],
+    "correctIndex": 0,
+    "explanation": "Yes/no questions become indirect with ob (whether)."
+  },
+  {
+    "id": "indirekte-fragen-03",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Können Sie mir sagen, wo Sie ___?",
+    "choices": [
+      "wohnen",
+      "wohnen Sie",
+      "Sie wohnen",
+      "gewohnt"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verb-last: wo Sie wohnen."
+  },
+  {
+    "id": "indirekte-fragen-04",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Direkte Frage: „Hat er angerufen?“ — Indirekt:",
+    "choices": [
+      "Ich weiß nicht, ob er angerufen hat.",
+      "Ich weiß nicht, hat er angerufen.",
+      "Ich weiß nicht, dass er angerufen hat.",
+      "Ich weiß nicht, wenn er angerufen hat."
+    ],
+    "correctIndex": 0,
+    "explanation": "A yes/no question needs ob as the connector in its indirect form."
+  },
+  {
+    "id": "indirekte-fragen-05",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Er fragt, warum ich so spät ___.",
+    "choices": [
+      "komme",
+      "komme ich",
+      "ich komme",
+      "kam ich"
+    ],
+    "correctIndex": 0,
+    "explanation": "W-question word warum keeps its role as connector, verb goes to the end: warum ich ... komme."
+  },
+  {
+    "id": "indirekte-fragen-06",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welches Wort verbindet eine indirekte Ja/Nein-Frage?",
+    "choices": [
+      "ob",
+      "was",
+      "wann",
+      "wer"
+    ],
+    "correctIndex": 0,
+    "explanation": "ob is used specifically because there's no question word in a yes/no question."
+  },
+  {
+    "id": "indirekte-fragen-07",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Weißt du, wo der Bahnhof ___?",
+    "choices": [
+      "ist",
+      "ist er",
+      "er ist",
+      "war er"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verb-last in the indirect question: wo der Bahnhof ist."
+  },
+  {
+    "id": "indirekte-fragen-08",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Warum benutzt man indirekte Fragen oft?",
+    "choices": [
+      "Sie klingen höflicher.",
+      "Sie sind kürzer.",
+      "Sie brauchen kein Verb.",
+      "Sie sind nur in der Schriftsprache erlaubt."
+    ],
+    "correctIndex": 0,
+    "explanation": "Indirect questions embed a question inside a more polite, softer sentence."
+  },
+  {
+    "id": "indirekte-fragen-09",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Hat eine indirekte Frage ein Fragezeichen?",
+    "choices": [
+      "Nicht unbedingt — sie ist oft eine Aussage.",
+      "Immer.",
+      "Nie, sie ist immer ein Ausruf.",
+      "Nur bei ob-Sätzen."
+    ],
+    "correctIndex": 0,
+    "explanation": "An indirect question is grammatically a statement containing a question, so it usually has no question mark of its own when part of a longer statement."
+  },
+  {
+    "id": "indirekte-fragen-10",
+    "topicId": "indirekte-fragen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich möchte wissen, ___ der Zug ankommt.",
+    "choices": [
+      "wann",
+      "ob wann",
+      "wann ob",
+      "wenn"
+    ],
+    "correctIndex": 0,
+    "explanation": "wann is the W-question word carried over as the connector."
+  },
+  {
+    "id": "ja-nein-fragen-01",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du morgen? (kommen)",
+    "choices": [
+      "Kommst",
+      "Kommt",
+      "Komme",
+      "Kommen"
+    ],
+    "correctIndex": 0,
+    "explanation": "A yes/no question starts with the conjugated verb, matching du: Kommst du morgen?"
+  },
+  {
+    "id": "ja-nein-fragen-02",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du Zeit? (haben)",
+    "choices": [
+      "Habe",
+      "Hast",
+      "Hat",
+      "Habt"
+    ],
+    "correctIndex": 1,
+    "explanation": "The verb comes first, matching du: Hast du Zeit?"
+  },
+  {
+    "id": "ja-nein-fragen-03",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ das richtig? (sein)",
+    "choices": [
+      "Bin",
+      "Bist",
+      "Ist",
+      "Sind"
+    ],
+    "correctIndex": 2,
+    "explanation": "The verb comes first, matching das: Ist das richtig?"
+  },
+  {
+    "id": "ja-nein-fragen-04",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ ihr in Berlin? (wohnen)",
+    "choices": [
+      "Wohne",
+      "Wohnst",
+      "Wohnt",
+      "Wohnen"
+    ],
+    "correctIndex": 2,
+    "explanation": "The verb comes first, matching ihr: Wohnt ihr in Berlin?"
+  },
+  {
+    "id": "ja-nein-fragen-05",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Sie einen Tee? (möchten)",
+    "choices": [
+      "Möchte",
+      "Möchtest",
+      "Möchten",
+      "Möchtet"
+    ],
+    "correctIndex": 2,
+    "explanation": "The verb comes first, matching formal Sie: Möchten Sie einen Tee?"
+  },
+  {
+    "id": "ja-nein-fragen-06",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ er Deutsch? (sprechen)",
+    "choices": [
+      "Spreche",
+      "Sprichst",
+      "Spricht",
+      "Sprecht"
+    ],
+    "correctIndex": 2,
+    "explanation": "The verb comes first, matching er with its stem-vowel change: Spricht er Deutsch?"
+  },
+  {
+    "id": "ja-nein-fragen-07",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ sie (she) Zeit? (haben)",
+    "choices": [
+      "Habe",
+      "Hast",
+      "Hat",
+      "Habt"
+    ],
+    "correctIndex": 2,
+    "explanation": "The verb comes first, matching sie (she): Hat sie Zeit?"
+  },
+  {
+    "id": "ja-nein-fragen-08",
+    "topicId": "ja-nein-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ wir jetzt? (gehen)",
+    "choices": [
+      "Gehe",
+      "Gehst",
+      "Geht",
+      "Gehen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The verb comes first, matching wir: Gehen wir jetzt?"
+  },
+  {
+    "id": "je-desto-01",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Je mehr ich übe, ___ besser werde ich.",
+    "choices": [
+      "desto",
+      "je",
+      "als",
+      "wie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The second clause of this correlative always starts with desto + comparative."
+  },
+  {
+    "id": "je-desto-02",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Je älter er wird, desto ruhiger ___ er.",
+    "choices": [
+      "wird",
+      "er wird",
+      "wurde",
+      "wird er"
+    ],
+    "correctIndex": 0,
+    "explanation": "The desto-clause keeps verb-second right after desto + comparative: desto ruhiger wird er."
+  },
+  {
+    "id": "je-desto-03",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Je früher wir losfahren, desto weniger Verkehr ___ es.",
+    "choices": [
+      "gibt",
+      "es gibt",
+      "gab",
+      "gibt es"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verb-second in the desto-clause: desto weniger Verkehr gibt es."
+  },
+  {
+    "id": "je-desto-04",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Wo steht das Verb im je-Satz?",
+    "choices": [
+      "am Ende",
+      "an zweiter Stelle",
+      "am Anfang",
+      "vor je"
+    ],
+    "correctIndex": 0,
+    "explanation": "The je-clause is a Nebensatz, so its verb goes to the end."
+  },
+  {
+    "id": "je-desto-05",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Was drückt je...desto aus?",
+    "choices": [
+      "dass zwei Dinge proportional zueinander wachsen/fallen",
+      "einen Gegensatz",
+      "eine Bedingung",
+      "eine Reihenfolge"
+    ],
+    "correctIndex": 0,
+    "explanation": "je...desto shows one thing changing in proportion to another, like 'the more..., the more...'."
+  },
+  {
+    "id": "je-desto-06",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Je größer die Stadt, ___ teurer die Miete.",
+    "choices": [
+      "desto",
+      "je",
+      "so",
+      "als"
+    ],
+    "correctIndex": 0,
+    "explanation": "desto introduces the second, main-clause part of the comparison."
+  },
+  {
+    "id": "je-desto-07",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Nach je und desto steht immer:",
+    "choices": [
+      "ein Komparativ",
+      "ein Superlativ",
+      "ein Infinitiv",
+      "ein Partizip"
+    ],
+    "correctIndex": 0,
+    "explanation": "Both je and desto are immediately followed by a comparative form."
+  },
+  {
+    "id": "je-desto-08",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ist der je-Satz ein Haupt- oder Nebensatz?",
+    "choices": [
+      "Nebensatz",
+      "Hauptsatz",
+      "Weder noch",
+      "Ein Ausruf"
+    ],
+    "correctIndex": 0,
+    "explanation": "The je-clause behaves like a subordinate clause (verb-last)."
+  },
+  {
+    "id": "je-desto-09",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Je mehr Geld man hat, desto mehr Probleme ___ man.",
+    "choices": [
+      "hat",
+      "man hat",
+      "hatte",
+      "hat man"
+    ],
+    "correctIndex": 0,
+    "explanation": "desto-clause: verb-second right after desto mehr Probleme: hat man."
+  },
+  {
+    "id": "je-desto-10",
+    "topicId": "je-desto",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Können je und desto durch andere Wörter wie „umso“ ersetzt werden?",
+    "choices": [
+      "desto kann durch umso ersetzt werden",
+      "je kann durch umso ersetzt werden",
+      "Keins von beiden",
+      "Beide durch umso"
+    ],
+    "correctIndex": 0,
+    "explanation": "desto is interchangeable with umso in the second clause; je stays je."
+  },
+  {
+    "id": "komparativ-superlativ-01",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Der Zug ist ___ als das Auto. (schnell)",
+    "choices": [
+      "schneller",
+      "schnellst",
+      "am schnellsten",
+      "schnelle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Komparativ adds -er: schneller."
+  },
+  {
+    "id": "komparativ-superlativ-02",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Berlin ist die ___ Stadt in Deutschland. (groß, Superlativ)",
+    "choices": [
+      "größte",
+      "größer",
+      "am größten",
+      "groß"
+    ],
+    "correctIndex": 0,
+    "explanation": "Attributive superlative before a noun uses the -st- form with an adjective ending: die größte Stadt."
+  },
+  {
+    "id": "komparativ-superlativ-03",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich esse ___ Pizza. (gern, Superlativ)",
+    "choices": [
+      "am liebsten",
+      "am liebste",
+      "lieber",
+      "gerner"
+    ],
+    "correctIndex": 0,
+    "explanation": "gern is irregular: gern → lieber → am liebsten."
+  },
+  {
+    "id": "komparativ-superlativ-04",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Mein Bruder ist so groß ___ ich.",
+    "choices": [
+      "wie",
+      "als",
+      "so",
+      "dass"
+    ],
+    "correctIndex": 0,
+    "explanation": "so...wie expresses equal comparison: as tall as."
+  },
+  {
+    "id": "komparativ-superlativ-05",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Der Komparativ von „alt“ ist:",
+    "choices": [
+      "älter",
+      "alter",
+      "am ältesten",
+      "altest"
+    ],
+    "correctIndex": 0,
+    "explanation": "Short adjectives with a/o/u often add an Umlaut in the comparative: alt → älter."
+  },
+  {
+    "id": "komparativ-superlativ-06",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Der Superlativ von „gut“ ist:",
+    "choices": [
+      "am besten",
+      "am gutesten",
+      "gutester",
+      "am guttesten"
+    ],
+    "correctIndex": 0,
+    "explanation": "gut is irregular: gut → besser → am besten."
+  },
+  {
+    "id": "komparativ-superlativ-07",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "„than“ nach einem Komparativ heißt auf Deutsch:",
+    "choices": [
+      "als",
+      "wie",
+      "dann",
+      "denn"
+    ],
+    "correctIndex": 0,
+    "explanation": "als means 'than' after a comparative."
+  },
+  {
+    "id": "komparativ-superlativ-08",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Der Komparativ von „viel“ ist:",
+    "choices": [
+      "mehr",
+      "vieler",
+      "am meisten",
+      "viellig"
+    ],
+    "correctIndex": 0,
+    "explanation": "viel is irregular: viel → mehr → am meisten."
+  },
+  {
+    "id": "komparativ-superlativ-09",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Welches Adjektiv bekommt im Komparativ/Superlativ typischerweise einen Umlaut?",
+    "choices": [
+      "groß (größer)",
+      "schnell (schneller)",
+      "billig (billiger)",
+      "modern (moderner)"
+    ],
+    "correctIndex": 0,
+    "explanation": "groß takes an Umlaut: groß → größer → am größten."
+  },
+  {
+    "id": "komparativ-superlativ-10",
+    "topicId": "komparativ-superlativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Wie bildet man den Superlativ als Adverb?",
+    "choices": [
+      "am + Adjektiv + -sten",
+      "das + Adjektiv + -ste",
+      "Adjektiv + -er",
+      "sehr + Adjektiv"
+    ],
+    "correctIndex": 0,
+    "explanation": "The adverbial superlative uses am + adjective + -sten: am schnellsten."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-01",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich lerne Deutsch ___ ich höre Musik.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 0,
+    "explanation": "und joins two similar actions: and."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-02",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie ist müde, ___ sie arbeitet.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 2,
+    "explanation": "aber marks a contrast: but."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-03",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich bleibe zu Hause, ___ ich bin krank.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 3,
+    "explanation": "denn gives a reason: because/for."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-04",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Möchtest du Tee ___ Kaffee?",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 1,
+    "explanation": "oder offers a choice: or."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-05",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich bin müde, ___ ich schlafe nicht.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 2,
+    "explanation": "aber marks a contrast: but."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-06",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er lernt Deutsch, ___ er arbeitet in Deutschland.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 3,
+    "explanation": "denn gives a reason: because/for."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-07",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich kaufe Brot ___ Butter.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 0,
+    "explanation": "und joins two items: and."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-08",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Kommst du heute ___ morgen?",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 1,
+    "explanation": "oder offers a choice: or."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-09",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie singt ___ tanzt sehr gut.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 0,
+    "explanation": "und joins two similar actions: and."
+  },
+  {
+    "id": "konjunktionen-und-oder-aber-10",
+    "topicId": "konjunktionen-und-oder-aber",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich mag Kaffee, ___ ich trinke lieber Tee.",
+    "choices": [
+      "und",
+      "oder",
+      "aber",
+      "denn"
+    ],
+    "correctIndex": 2,
+    "explanation": "aber marks a contrast: but."
+  },
+  {
+    "id": "kontraktionen-ins-ans-01",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Kommst du mit ___ Schwimmbad?",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 0,
+    "explanation": "in + das (movement, neuter) contracts to ins: ins Schwimmbad."
+  },
+  {
+    "id": "kontraktionen-ins-ans-02",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Die Kinder laufen ___ Wasser.",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 1,
+    "explanation": "an + das (movement, neuter) contracts to ans: ans Wasser."
+  },
+  {
+    "id": "kontraktionen-ins-ans-03",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir fahren ___ Zentrum.",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 0,
+    "explanation": "in + das (movement, neuter) contracts to ins: ins Zentrum."
+  },
+  {
+    "id": "kontraktionen-ins-ans-04",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Schreib deinen Namen ___ Board.",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 1,
+    "explanation": "an + das (movement, neuter) contracts to ans: ans Board."
+  },
+  {
+    "id": "kontraktionen-ins-ans-05",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich bin ___ Kino. (wo?)",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 2,
+    "explanation": "Static location (wo?) uses the Dativ contraction im (in + dem)."
+  },
+  {
+    "id": "kontraktionen-ins-ans-06",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir sitzen ___ Fenster. (wo?)",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 3,
+    "explanation": "Static location (wo?) uses the Dativ contraction am (an + dem)."
+  },
+  {
+    "id": "kontraktionen-ins-ans-07",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wir gehen ___ Kino. (wohin?)",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 0,
+    "explanation": "Movement (wohin?) uses the Akkusativ contraction ins (in + das)."
+  },
+  {
+    "id": "kontraktionen-ins-ans-08",
+    "topicId": "kontraktionen-ins-ans",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Er geht ___ Meer. (wohin?)",
+    "choices": [
+      "ins",
+      "ans",
+      "im",
+      "am"
+    ],
+    "correctIndex": 1,
+    "explanation": "Movement (wohin?) uses the Akkusativ contraction ans (an + das)."
+  },
+  {
+    "id": "lokale-praepositionen-01",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich bin ___ Park. (wo?)",
+    "choices": [
+      "im",
+      "in",
+      "am",
+      "ans"
+    ],
+    "correctIndex": 0,
+    "explanation": "Static location (wo?) uses the Dativ contraction im (in + dem)."
+  },
+  {
+    "id": "lokale-praepositionen-02",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich gehe ___ den Park. (wohin?)",
+    "choices": [
+      "im",
+      "in",
+      "am",
+      "ans"
+    ],
+    "correctIndex": 1,
+    "explanation": "Movement/direction (wohin?) uses in + Akkusativ: in den Park."
+  },
+  {
+    "id": "lokale-praepositionen-03",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie fährt ___ die Schweiz.",
+    "choices": [
+      "im",
+      "in",
+      "am",
+      "nach"
+    ],
+    "correctIndex": 1,
+    "explanation": "Countries with an article take in + Akkusativ: in die Schweiz."
+  },
+  {
+    "id": "lokale-praepositionen-04",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir sitzen ___ Fenster.",
+    "choices": [
+      "im",
+      "am",
+      "ans",
+      "in"
+    ],
+    "correctIndex": 1,
+    "explanation": "Static location (wo?) uses the Dativ contraction am (an + dem)."
+  },
+  {
+    "id": "lokale-praepositionen-05",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Die Kinder laufen ___ Wasser.",
+    "choices": [
+      "im",
+      "am",
+      "ans",
+      "in"
+    ],
+    "correctIndex": 2,
+    "explanation": "Movement/direction (wohin?) uses the Akkusativ contraction ans (an + das)."
+  },
+  {
+    "id": "lokale-praepositionen-06",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er fährt ___ Berlin.",
+    "choices": [
+      "im",
+      "nach",
+      "in",
+      "zum"
+    ],
+    "correctIndex": 1,
+    "explanation": "Cities take nach with no article."
+  },
+  {
+    "id": "lokale-praepositionen-07",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir gehen ___ Arzt.",
+    "choices": [
+      "im",
+      "nach",
+      "zum",
+      "in"
+    ],
+    "correctIndex": 2,
+    "explanation": "zu + dem contracts to zum for people/specific places."
+  },
+  {
+    "id": "lokale-praepositionen-08",
+    "topicId": "lokale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich komme ___ der Schule.",
+    "choices": [
+      "im",
+      "aus",
+      "nach",
+      "in"
+    ],
+    "correctIndex": 1,
+    "explanation": "Origin (woher?) from inside somewhere uses aus + Dativ."
+  },
+  {
+    "id": "modalverben-01",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ gut schwimmen. (können)",
+    "choices": [
+      "kann",
+      "kannst",
+      "könnt",
+      "können"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same modal-verb form with no ending: ich kann."
+  },
+  {
+    "id": "modalverben-02",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ jetzt gehen. (müssen)",
+    "choices": [
+      "muss",
+      "musst",
+      "müssen",
+      "müsst"
+    ],
+    "correctIndex": 2,
+    "explanation": "wir takes the infinitive-like form: wir müssen."
+  },
+  {
+    "id": "modalverben-03",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du einen Kaffee trinken? (möchten)",
+    "choices": [
+      "Möchte",
+      "Möchtest",
+      "Möchtet",
+      "Möchten"
+    ],
+    "correctIndex": 1,
+    "explanation": "The du-form of möchten is möchtest."
+  },
+  {
+    "id": "modalverben-04",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ heute nicht arbeiten. (wollen)",
+    "choices": [
+      "will",
+      "willst",
+      "wollt",
+      "wollen"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same form: er will."
+  },
+  {
+    "id": "modalverben-05",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ hier nicht rauchen. (dürfen)",
+    "choices": [
+      "darf",
+      "darfst",
+      "dürft",
+      "dürfen"
+    ],
+    "correctIndex": 2,
+    "explanation": "The ihr-form of dürfen is dürft."
+  },
+  {
+    "id": "modalverben-06",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Du ___ das machen. (sollen)",
+    "choices": [
+      "soll",
+      "sollst",
+      "sollt",
+      "sollen"
+    ],
+    "correctIndex": 1,
+    "explanation": "The du-form of sollen is sollst."
+  },
+  {
+    "id": "modalverben-07",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich ___ keinen Kaffee. (mögen)",
+    "choices": [
+      "mag",
+      "magst",
+      "mögt",
+      "mögen"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same form: ich mag."
+  },
+  {
+    "id": "modalverben-08",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (they) ___ Deutsch lernen. (wollen)",
+    "choices": [
+      "will",
+      "wollt",
+      "wollen",
+      "wollst"
+    ],
+    "correctIndex": 2,
+    "explanation": "sie takes the infinitive-like form: sie wollen."
+  },
+  {
+    "id": "modalverben-09",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ schwimmen. (können)",
+    "choices": [
+      "kann",
+      "kannst",
+      "könnt",
+      "können"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same form: er kann."
+  },
+  {
+    "id": "modalverben-10",
+    "topicId": "modalverben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ pünktlich sein. (sollen)",
+    "choices": [
+      "soll",
+      "sollt",
+      "sollen",
+      "sollst"
+    ],
+    "correctIndex": 2,
+    "explanation": "wir takes the infinitive-like form: wir sollen."
+  },
+  {
+    "id": "modalverben-praeteritum-01",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ gestern nicht kommen. (können, Präteritum)",
+    "choices": [
+      "konnte",
+      "kann",
+      "könnte",
+      "gekonnt"
+    ],
+    "correctIndex": 0,
+    "explanation": "können's Präteritum stem loses the Umlaut: konnte."
+  },
+  {
+    "id": "modalverben-praeteritum-02",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Er ___ arbeiten. (müssen, Präteritum)",
+    "choices": [
+      "musste",
+      "muss",
+      "müsste",
+      "gemusst"
+    ],
+    "correctIndex": 0,
+    "explanation": "müssen's Präteritum is musste, without the Umlaut."
+  },
+  {
+    "id": "modalverben-praeteritum-03",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir ___ ins Kino gehen. (wollen, Präteritum)",
+    "choices": [
+      "wollten",
+      "wollen",
+      "gewollt",
+      "würden"
+    ],
+    "correctIndex": 0,
+    "explanation": "wollen's Präteritum is wollte/wollten."
+  },
+  {
+    "id": "modalverben-praeteritum-04",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Sie ___ nicht ausgehen. (dürfen, Präteritum)",
+    "choices": [
+      "durfte",
+      "darf",
+      "dürfte",
+      "gedurft"
+    ],
+    "correctIndex": 0,
+    "explanation": "dürfen's Präteritum loses the Umlaut: durfte."
+  },
+  {
+    "id": "modalverben-praeteritum-05",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Welche Form ist für „ich“ und „er“ identisch im Präteritum der Modalverben?",
+    "choices": [
+      "Beide haben keine Endung.",
+      "ich hat -e, er hat -t.",
+      "Nur er hat eine Endung.",
+      "Sie sind nie identisch."
+    ],
+    "correctIndex": 0,
+    "explanation": "Like other Präteritum verbs, ich and er/sie/es share the same unmarked form for modals."
+  },
+  {
+    "id": "modalverben-praeteritum-06",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ das Essen nicht. (mögen, Präteritum)",
+    "choices": [
+      "mochte",
+      "mag",
+      "möchte",
+      "gemocht"
+    ],
+    "correctIndex": 0,
+    "explanation": "mögen's Präteritum is mochte."
+  },
+  {
+    "id": "modalverben-praeteritum-07",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich ___ früher aufstehen. (sollen, Präteritum)",
+    "choices": [
+      "sollte",
+      "soll",
+      "sollst",
+      "gesollt"
+    ],
+    "correctIndex": 0,
+    "explanation": "sollen's Präteritum is sollte."
+  },
+  {
+    "id": "modalverben-praeteritum-08",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Warum benutzt man bei Modalverben meistens Präteritum statt Perfekt?",
+    "choices": [
+      "Die Präteritumformen sind kurz und gebräuchlich.",
+      "Perfekt existiert bei Modalverben nicht.",
+      "Präteritum klingt förmlicher.",
+      "Es gibt eine gesetzliche Regel."
+    ],
+    "correctIndex": 0,
+    "explanation": "Modal verbs' Präteritum forms are short and natural, so they're preferred even in speech."
+  },
+  {
+    "id": "modalverben-praeteritum-09",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Durftet ihr als Kinder lange fernsehen? — Welches Verb steht hier im Präteritum?",
+    "choices": [
+      "dürfen",
+      "sollen",
+      "müssen",
+      "wollen"
+    ],
+    "correctIndex": 0,
+    "explanation": "durftet is the ihr-form Präteritum of dürfen."
+  },
+  {
+    "id": "modalverben-praeteritum-10",
+    "topicId": "modalverben-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Was passiert mit dem Umlaut im Präteritum der Modalverben?",
+    "choices": [
+      "Er verschwindet.",
+      "Er bleibt.",
+      "Er wird verdoppelt.",
+      "Er wird zu ie."
+    ],
+    "correctIndex": 0,
+    "explanation": "können/müssen/dürfen/mögen all lose their Umlaut in the Präteritum: konnte, musste, durfte, mochte."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-01",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich bleibe zu Hause, weil ich krank ___.",
+    "choices": [
+      "bin",
+      "ich bin",
+      "bin ich",
+      "sein"
+    ],
+    "correctIndex": 0,
+    "explanation": "In a weil-clause the conjugated verb moves to the end: ..., weil ich krank bin."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-02",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Sie sagt, dass sie keine Zeit ___.",
+    "choices": [
+      "hat",
+      "sie hat",
+      "hat sie",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "dass sends the verb to the end of its clause: dass sie ... hat."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-03",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wenn es regnet, ___ ich zu Hause.",
+    "choices": [
+      "bleibe",
+      "ich bleibe",
+      "bleiben",
+      "geblieben"
+    ],
+    "correctIndex": 0,
+    "explanation": "After a fronted wenn-clause, the main clause verb comes right after the comma: ..., bleibe ich."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-04",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welches Wort passt: „..., ___ es kalt ist, trage ich eine Jacke.“",
+    "choices": [
+      "weil",
+      "und",
+      "aber",
+      "oder"
+    ],
+    "correctIndex": 0,
+    "explanation": "weil introduces the reason clause here."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-05",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Ich glaube, dass er morgen ___.",
+    "choices": [
+      "kommt",
+      "kommt er",
+      "er kommt",
+      "kam er"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verb-last: dass er morgen kommt."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-06",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Was drückt „wenn“ meistens aus?",
+    "choices": [
+      "eine Bedingung oder ein wiederholtes Ereignis",
+      "einen Grund",
+      "eine Aufzählung",
+      "einen Gegensatz"
+    ],
+    "correctIndex": 0,
+    "explanation": "wenn introduces a condition or a repeated/future event."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-07",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Was drückt „weil“ aus?",
+    "choices": [
+      "einen Grund",
+      "eine Bedingung",
+      "eine Zeit",
+      "einen Ort"
+    ],
+    "correctIndex": 0,
+    "explanation": "weil introduces a reason/cause."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-08",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wie viele Kommas braucht „Ich bleibe zu Hause weil ich krank bin“ korrekt?",
+    "choices": [
+      "eins, vor weil",
+      "keins",
+      "zwei",
+      "eins, nach krank"
+    ],
+    "correctIndex": 0,
+    "explanation": "The main clause and the Nebensatz are separated by a comma before weil."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-09",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Wenn ich Geld ___, kaufe ich ein Auto.",
+    "choices": [
+      "habe",
+      "ich habe",
+      "hätte ich",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verb-last in the wenn-clause: Wenn ich Geld habe, ..."
+  },
+  {
+    "id": "nebensaetze-weil-dass-wenn-10",
+    "topicId": "nebensaetze-weil-dass-wenn",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Wo steht das konjugierte Verb im Nebensatz mit „dass“?",
+    "choices": [
+      "am Ende des Nebensatzes",
+      "an zweiter Stelle",
+      "am Anfang",
+      "direkt nach dass"
+    ],
+    "correctIndex": 0,
+    "explanation": "Subordinate clauses push the conjugated verb to the very end."
+  },
+  {
+    "id": "negation-nicht-kein-01",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Auto.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Auto has no article, so it is negated with kein."
+  },
+  {
+    "id": "negation-nicht-kein-02",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ gut.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "An adjective is negated with nicht, not kein."
+  },
+  {
+    "id": "negation-nicht-kein-03",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir haben ___ Zeit.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Zeit is feminine with no article, so it is negated with keine."
+  },
+  {
+    "id": "negation-nicht-kein-04",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich kenne den Mann ___.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "den Mann has a definite article, so the verb is negated with nicht."
+  },
+  {
+    "id": "negation-nicht-kein-05",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ richtig.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "An adjective is negated with nicht, not kein."
+  },
+  {
+    "id": "negation-nicht-kein-06",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Geld.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Geld has no article, so it is negated with kein."
+  },
+  {
+    "id": "negation-nicht-kein-07",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie hat ___ Schwester.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Schwester is feminine with no article, so it is negated with keine."
+  },
+  {
+    "id": "negation-nicht-kein-08",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er kommt heute ___.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "A verb is negated with nicht, not kein."
+  },
+  {
+    "id": "negation-nicht-kein-09",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das ist ___ mein Buch.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 0,
+    "explanation": "A noun with a possessive is negated with nicht, not kein."
+  },
+  {
+    "id": "negation-nicht-kein-10",
+    "topicId": "negation-nicht-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Frage.",
+    "choices": [
+      "nicht",
+      "kein",
+      "keine",
+      "keinen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Frage is feminine with no article, so it is negated with keine."
+  },
+  {
+    "id": "negativartikel-kein-01",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Auto.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Auto is neuter, so the negative article is kein."
+  },
+  {
+    "id": "negativartikel-kein-02",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ gute Idee.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Idee is feminine, so the negative article is keine."
+  },
+  {
+    "id": "negativartikel-kein-03",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir haben ___ Zeit.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Zeit is feminine, so the negative article is keine."
+  },
+  {
+    "id": "negativartikel-kein-04",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Geld.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Geld is neuter, so the negative article is kein."
+  },
+  {
+    "id": "negativartikel-kein-05",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie hat ___ Schwester.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schwester is feminine, so the negative article is keine."
+  },
+  {
+    "id": "negativartikel-kein-06",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das ist ___ Mann.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mann is masculine, so the Nominativ negative article is kein."
+  },
+  {
+    "id": "negativartikel-kein-07",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich habe ___ Buch.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buch is neuter, so the negative article is kein."
+  },
+  {
+    "id": "negativartikel-kein-08",
+    "topicId": "negativartikel-kein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir haben ___ Frage.",
+    "choices": [
+      "kein",
+      "keine",
+      "keinen",
+      "keiner"
+    ],
+    "correctIndex": 1,
+    "explanation": "Frage is feminine, so the negative article is keine. Unlike ein, kein has a full set of endings including a plural."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-01",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Mann kauft einen Apfel.",
+    "choices": [
+      "Der",
+      "Den",
+      "Dem",
+      "Die"
+    ],
+    "correctIndex": 0,
+    "explanation": "The subject (wer?) is in the Nominativ: der Mann."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-02",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich sehe ___ Bus.",
+    "choices": [
+      "der",
+      "den",
+      "dem",
+      "die"
+    ],
+    "correctIndex": 1,
+    "explanation": "The direct object (wen/was?) is in the Akkusativ; masculine der becomes den."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-03",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich gebe ___ Kind einen Ball.",
+    "choices": [
+      "das",
+      "den",
+      "dem",
+      "der"
+    ],
+    "correctIndex": 2,
+    "explanation": "The indirect object (wem?) is in the Dativ; neuter das becomes dem."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-04",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie hilft ___ Frau.",
+    "choices": [
+      "die",
+      "der",
+      "den",
+      "dem"
+    ],
+    "correctIndex": 1,
+    "explanation": "helfen takes a Dativ object; feminine die becomes der."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-05",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Frau liest ein Buch.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Den"
+    ],
+    "correctIndex": 1,
+    "explanation": "The subject (wer?) is in the Nominativ: die Frau."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-06",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich kenne ___ Film.",
+    "choices": [
+      "der",
+      "den",
+      "dem",
+      "des"
+    ],
+    "correctIndex": 1,
+    "explanation": "kennen takes an Akkusativ object; masculine der becomes den."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-07",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Buch gehört ___ Lehrer.",
+    "choices": [
+      "der",
+      "den",
+      "dem",
+      "die"
+    ],
+    "correctIndex": 2,
+    "explanation": "gehören takes a Dativ object; masculine der becomes dem."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-08",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Kind spielt.",
+    "choices": [
+      "Der",
+      "Die",
+      "Das",
+      "Dem"
+    ],
+    "correctIndex": 2,
+    "explanation": "The subject (wer/was?) is in the Nominativ: das Kind."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-09",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Ich sehe ___ Kinder.",
+    "choices": [
+      "der",
+      "die",
+      "den",
+      "dem"
+    ],
+    "correctIndex": 1,
+    "explanation": "In the Akkusativ plural, die stays die (only masculine singular changes)."
+  },
+  {
+    "id": "nominativ-akkusativ-dativ-10",
+    "topicId": "nominativ-akkusativ-dativ",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wir helfen ___ Kindern.",
+    "choices": [
+      "die",
+      "der",
+      "den",
+      "dem"
+    ],
+    "correctIndex": 2,
+    "explanation": "In the Dativ plural, die becomes den (and the noun adds -n): den Kindern."
+  },
+  {
+    "id": "ordinalzahlen-01",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ordinalzahl von 1:",
+    "choices": [
+      "erste",
+      "einte",
+      "einste",
+      "erstte"
+    ],
+    "correctIndex": 0,
+    "explanation": "1 is one of the three irregular ordinals: erste."
+  },
+  {
+    "id": "ordinalzahlen-02",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ordinalzahl von 2:",
+    "choices": [
+      "zweite",
+      "zweiste",
+      "zwote",
+      "zweitte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers 1-19 add -te: zwei → zweite."
+  },
+  {
+    "id": "ordinalzahlen-03",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ordinalzahl von 3:",
+    "choices": [
+      "dritte",
+      "dreite",
+      "dritste",
+      "driette"
+    ],
+    "correctIndex": 0,
+    "explanation": "3 is one of the three irregular ordinals: dritte."
+  },
+  {
+    "id": "ordinalzahlen-04",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ordinalzahl von 4:",
+    "choices": [
+      "vierte",
+      "vierste",
+      "viertte",
+      "viere"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers 1-19 add -te: vier → vierte."
+  },
+  {
+    "id": "ordinalzahlen-05",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ordinalzahl von 5:",
+    "choices": [
+      "fünfte",
+      "fünfste",
+      "füntte",
+      "fünffte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers 1-19 add -te: fünf → fünfte."
+  },
+  {
+    "id": "ordinalzahlen-06",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ordinalzahl von 7:",
+    "choices": [
+      "siebte",
+      "siebente",
+      "siebste",
+      "siebtte"
+    ],
+    "correctIndex": 0,
+    "explanation": "7 is one of the three irregular ordinals: siebte."
+  },
+  {
+    "id": "ordinalzahlen-07",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ordinalzahl von 8:",
+    "choices": [
+      "achte",
+      "achtte",
+      "achtste",
+      "achste"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers 1-19 add -te: acht → achte."
+  },
+  {
+    "id": "ordinalzahlen-08",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ordinalzahl von 10:",
+    "choices": [
+      "zehnte",
+      "zehnste",
+      "zehntte",
+      "zehnete"
+    ],
+    "correctIndex": 0,
+    "explanation": "Numbers 1-19 add -te: zehn → zehnte."
+  },
+  {
+    "id": "ordinalzahlen-09",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Ordinalzahl von 20:",
+    "choices": [
+      "zwanzigste",
+      "zwanzigte",
+      "zwanzigist",
+      "zwanzigst"
+    ],
+    "correctIndex": 0,
+    "explanation": "From 20 onward, ordinals add -ste: zwanzig → zwanzigste."
+  },
+  {
+    "id": "ordinalzahlen-10",
+    "topicId": "ordinalzahlen",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Ordinalzahl von 100:",
+    "choices": [
+      "hundertste",
+      "hundertte",
+      "hundertst",
+      "hunderte"
+    ],
+    "correctIndex": 0,
+    "explanation": "From 20 onward, ordinals add -ste: hundert → hundertste."
+  },
+  {
+    "id": "partizip-zwei-01",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Partizip II von „machen“:",
+    "choices": [
+      "gemacht",
+      "gemachen",
+      "machte",
+      "gemachte"
+    ],
+    "correctIndex": 0,
+    "explanation": "Regular verbs form ge- + stem + -t: gemacht."
+  },
+  {
+    "id": "partizip-zwei-02",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Partizip II von „trinken“:",
+    "choices": [
+      "getrinkt",
+      "getrunkt",
+      "getrunken",
+      "trinkt"
+    ],
+    "correctIndex": 2,
+    "explanation": "Strong verbs form ge- + (changed) stem + -en: getrunken."
+  },
+  {
+    "id": "partizip-zwei-03",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Partizip II von „studieren“:",
+    "choices": [
+      "gestudiert",
+      "studiert",
+      "studierte",
+      "studiet"
+    ],
+    "correctIndex": 1,
+    "explanation": "-ieren verbs take no ge- prefix: studiert."
+  },
+  {
+    "id": "partizip-zwei-04",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Partizip II von „verstehen“:",
+    "choices": [
+      "geverstanden",
+      "verstehet",
+      "verstandet",
+      "verstanden"
+    ],
+    "correctIndex": 3,
+    "explanation": "Inseparable-prefix verbs (ver-) take no ge- prefix: verstanden."
+  },
+  {
+    "id": "partizip-zwei-05",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Partizip II von „aufstehen“:",
+    "choices": [
+      "geaufstanden",
+      "aufgestehen",
+      "aufgestanden",
+      "aufgestehet"
+    ],
+    "correctIndex": 2,
+    "explanation": "Separable verbs insert -ge- between prefix and stem: aufgestanden."
+  },
+  {
+    "id": "partizip-zwei-06",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Partizip II von „einkaufen“:",
+    "choices": [
+      "geeinkauft",
+      "eingekauft",
+      "eingekaufen",
+      "einkauft"
+    ],
+    "correctIndex": 1,
+    "explanation": "Separable verbs insert -ge- between prefix and stem: eingekauft."
+  },
+  {
+    "id": "partizip-zwei-07",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Partizip II von „ankommen“:",
+    "choices": [
+      "geankommen",
+      "ankommt",
+      "angekommt",
+      "angekommen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Separable verbs insert -ge- between prefix and stem: angekommen."
+  },
+  {
+    "id": "partizip-zwei-08",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Partizip II von „lesen“:",
+    "choices": [
+      "gelest",
+      "gelesst",
+      "lest",
+      "gelesen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Strong verbs form ge- + (changed) stem + -en: gelesen."
+  },
+  {
+    "id": "partizip-zwei-09",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Partizip II von „arbeiten“:",
+    "choices": [
+      "gearbeit",
+      "gearbeitt",
+      "arbeitet",
+      "gearbeitet"
+    ],
+    "correctIndex": 3,
+    "explanation": "Regular verbs with a -t/-d stem form ge- + stem + -et: gearbeitet."
+  },
+  {
+    "id": "partizip-zwei-10",
+    "topicId": "partizip-zwei",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Partizip II von „anrufen“:",
+    "choices": [
+      "geanrufen",
+      "anrufen",
+      "angeruft",
+      "angerufen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Separable verbs insert -ge- between prefix and stem: angerufen."
+  },
+  {
+    "id": "passiv-praesens-01",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Die Tür ___ geöffnet. (werden, Passiv)",
+    "choices": [
+      "wird",
+      "ist",
+      "hat",
+      "war"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Passiv Präsens uses a conjugated form of werden: wird geöffnet."
+  },
+  {
+    "id": "passiv-praesens-02",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ gefragt. (werden)",
+    "choices": [
+      "werde",
+      "bin",
+      "habe",
+      "war"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich-form of werden: werde."
+  },
+  {
+    "id": "passiv-praesens-03",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Die E-Mail wird ___ der Chefin geschrieben. (Agent, Person)",
+    "choices": [
+      "von",
+      "durch",
+      "mit",
+      "bei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The doer/agent (a person) is introduced with von + Dativ."
+  },
+  {
+    "id": "passiv-praesens-04",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Der Brief wird ___ die Post zugestellt. (Mittel/Ursache)",
+    "choices": [
+      "durch",
+      "von",
+      "mit",
+      "für"
+    ],
+    "correctIndex": 0,
+    "explanation": "A cause or means (not a person) is introduced with durch + Akkusativ."
+  },
+  {
+    "id": "passiv-praesens-05",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Wie wird das Passiv Präsens gebildet?",
+    "choices": [
+      "werden (konjugiert) + Partizip II",
+      "sein (konjugiert) + Partizip II",
+      "haben (konjugiert) + Infinitiv",
+      "werden + Infinitiv"
+    ],
+    "correctIndex": 0,
+    "explanation": "Passiv Präsens = conjugated werden + Partizip II at the end."
+  },
+  {
+    "id": "passiv-praesens-06",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Das Fenster ___ repariert. (werden)",
+    "choices": [
+      "wird",
+      "hat",
+      "ist",
+      "war"
+    ],
+    "correctIndex": 0,
+    "explanation": "wird repariert — Passiv Präsens with werden."
+  },
+  {
+    "id": "passiv-praesens-07",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Die Briefe ___ verschickt. (werden, Plural)",
+    "choices": [
+      "werden",
+      "wird",
+      "sind",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plural sie/Sie form of werden: werden."
+  },
+  {
+    "id": "passiv-praesens-08",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Worauf liegt der Fokus im Passiv?",
+    "choices": [
+      "auf der Handlung / dem Betroffenen",
+      "auf dem Täter",
+      "auf der Zeit",
+      "auf dem Ort"
+    ],
+    "correctIndex": 0,
+    "explanation": "Passiv shifts focus from who does the action to the action or the thing affected."
+  },
+  {
+    "id": "passiv-praesens-09",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "„Die Tür ist geöffnet.“ (sein + Adjektiv) beschreibt:",
+    "choices": [
+      "einen Zustand, kein Vorgang",
+      "einen Vorgang",
+      "die Zukunft",
+      "eine Bedingung"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein + Partizip describes a resulting state (Zustandspassiv), unlike werden which describes the process."
+  },
+  {
+    "id": "passiv-praesens-10",
+    "topicId": "passiv-praesens",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir ___ informiert. (werden)",
+    "choices": [
+      "werden",
+      "sind",
+      "haben",
+      "waren"
+    ],
+    "correctIndex": 0,
+    "explanation": "wir-form of werden: werden."
+  },
+  {
+    "id": "perfekt-mit-haben-01",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ einen Kaffee getrunken.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "bin"
+    ],
+    "correctIndex": 0,
+    "explanation": "trinken has an object, so it takes haben: ich habe getrunken."
+  },
+  {
+    "id": "perfekt-mit-haben-02",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du das Buch gelesen?",
+    "choices": [
+      "Habe",
+      "Hast",
+      "Hat",
+      "Bist"
+    ],
+    "correctIndex": 1,
+    "explanation": "lesen takes an object, so it uses haben: du hast gelesen."
+  },
+  {
+    "id": "perfekt-mit-haben-03",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ viel gearbeitet.",
+    "choices": [
+      "haben",
+      "habt",
+      "sind",
+      "hat"
+    ],
+    "correctIndex": 0,
+    "explanation": "arbeiten has no movement, so it takes haben: wir haben gearbeitet."
+  },
+  {
+    "id": "perfekt-mit-haben-04",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (she) ___ Pizza gegessen.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "ist"
+    ],
+    "correctIndex": 2,
+    "explanation": "essen has an object, so it takes haben: sie hat gegessen."
+  },
+  {
+    "id": "perfekt-mit-haben-05",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ gut geschlafen.",
+    "choices": [
+      "habt",
+      "haben",
+      "seid",
+      "hast"
+    ],
+    "correctIndex": 0,
+    "explanation": "schlafen has no movement, so it takes haben: ihr habt geschlafen."
+  },
+  {
+    "id": "perfekt-mit-haben-06",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (they) ___ Fußball gespielt.",
+    "choices": [
+      "hat",
+      "habt",
+      "haben",
+      "sind"
+    ],
+    "correctIndex": 2,
+    "explanation": "spielen takes an object, so it uses haben: sie haben gespielt."
+  },
+  {
+    "id": "perfekt-mit-haben-07",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ Deutsch gelernt.",
+    "choices": [
+      "habe",
+      "bin",
+      "hat",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "lernen has an object, so it takes haben: ich habe gelernt."
+  },
+  {
+    "id": "perfekt-mit-haben-08",
+    "topicId": "perfekt-mit-haben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ die Tür aufgemacht.",
+    "choices": [
+      "habe",
+      "hast",
+      "hat",
+      "ist"
+    ],
+    "correctIndex": 2,
+    "explanation": "aufmachen has an object, so it takes haben: er hat aufgemacht."
+  },
+  {
+    "id": "perfekt-mit-sein-01",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ gestern ins Kino gegangen.",
+    "choices": [
+      "habe",
+      "bin",
+      "hat",
+      "ist"
+    ],
+    "correctIndex": 1,
+    "explanation": "gehen is a movement verb, so it takes sein: ich bin gegangen."
+  },
+  {
+    "id": "perfekt-mit-sein-02",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Der Bus ___ pünktlich gekommen.",
+    "choices": [
+      "hat",
+      "ist",
+      "habe",
+      "sind"
+    ],
+    "correctIndex": 1,
+    "explanation": "kommen is a movement verb, so it takes sein: der Bus ist gekommen."
+  },
+  {
+    "id": "perfekt-mit-sein-03",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ nach Italien geflogen.",
+    "choices": [
+      "haben",
+      "sind",
+      "habt",
+      "seid"
+    ],
+    "correctIndex": 1,
+    "explanation": "fliegen is a movement verb, so it takes sein: wir sind geflogen."
+  },
+  {
+    "id": "perfekt-mit-sein-04",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ du nach Hause gefahren?",
+    "choices": [
+      "Hast",
+      "Bist",
+      "Habt",
+      "Ist"
+    ],
+    "correctIndex": 1,
+    "explanation": "fahren is a movement verb, so it takes sein: bist du gefahren?"
+  },
+  {
+    "id": "perfekt-mit-sein-05",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (she) ___ nach Berlin gefahren.",
+    "choices": [
+      "hat",
+      "ist",
+      "habe",
+      "sind"
+    ],
+    "correctIndex": 1,
+    "explanation": "fahren is a movement verb, so it takes sein: sie ist gefahren."
+  },
+  {
+    "id": "perfekt-mit-sein-06",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ lange geblieben.",
+    "choices": [
+      "habt",
+      "seid",
+      "haben",
+      "sind"
+    ],
+    "correctIndex": 1,
+    "explanation": "bleiben always takes sein, even without movement: ihr seid geblieben."
+  },
+  {
+    "id": "perfekt-mit-sein-07",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie (they) ___ früh aufgestanden.",
+    "choices": [
+      "haben",
+      "sind",
+      "habt",
+      "seid"
+    ],
+    "correctIndex": 1,
+    "explanation": "aufstehen is a change-of-state verb, so it takes sein: sie sind aufgestanden."
+  },
+  {
+    "id": "perfekt-mit-sein-08",
+    "topicId": "perfekt-mit-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich ___ eingeschlafen.",
+    "choices": [
+      "habe",
+      "bin",
+      "hat",
+      "ist"
+    ],
+    "correctIndex": 1,
+    "explanation": "einschlafen is a change-of-state verb, so it takes sein: ich bin eingeschlafen."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-01",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "In gesprochener Sprache benutzt man meistens:",
+    "choices": [
+      "das Perfekt",
+      "das Präteritum",
+      "den Konjunktiv",
+      "das Futur"
+    ],
+    "correctIndex": 0,
+    "explanation": "Perfekt is the everyday spoken past tense in German."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-02",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ gestern müde. (sein, Präteritum)",
+    "choices": [
+      "war",
+      "bin gewesen",
+      "sei",
+      "wäre"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein almost always uses Präteritum, even in speech: war."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-03",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir ___ keine Zeit. (haben, Präteritum)",
+    "choices": [
+      "hatten",
+      "haben gehabt",
+      "hätten",
+      "haben"
+    ],
+    "correctIndex": 0,
+    "explanation": "haben's natural spoken past is Präteritum: hatten."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-04",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ einen Film gesehen. (Perfekt)",
+    "choices": [
+      "habe",
+      "bin",
+      "war",
+      "hatte"
+    ],
+    "correctIndex": 0,
+    "explanation": "sehen forms its Perfekt with haben: habe gesehen."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-05",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welche Aussage stimmt?",
+    "choices": [
+      "Präteritum ist typisch für geschriebene Texte.",
+      "Perfekt existiert nur im Deutschen für Modalverben.",
+      "Präteritum wird nie gesprochen.",
+      "Perfekt braucht kein Partizip II."
+    ],
+    "correctIndex": 0,
+    "explanation": "Präteritum is typical of written German (news, stories, reports)."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-06",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich ___ das Buch gelesen. (Perfekt, lesen)",
+    "choices": [
+      "habe",
+      "bin",
+      "hatte",
+      "las"
+    ],
+    "correctIndex": 0,
+    "explanation": "lesen takes haben in the Perfekt: habe gelesen."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-07",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Er ___ nach Berlin gefahren. (sein, Perfekt)",
+    "choices": [
+      "ist",
+      "hat",
+      "war",
+      "wird"
+    ],
+    "correctIndex": 0,
+    "explanation": "Verbs of motion like fahren use sein as the auxiliary: ist gefahren."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-08",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich ___ das nicht gekonnt. (können, Perfekt)",
+    "choices": [
+      "habe",
+      "bin",
+      "hatte",
+      "war"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modal verbs also use haben when they do appear in the Perfekt."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-09",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "„Es war einmal ein König.“ — Warum Präteritum?",
+    "choices": [
+      "Es ist der Anfang einer geschriebenen Geschichte.",
+      "Weil König ein Verb ist.",
+      "Weil es ein Dialog ist.",
+      "Präteritum ist hier falsch."
+    ],
+    "correctIndex": 0,
+    "explanation": "Narrative/written texts like fairy tales conventionally use Präteritum."
+  },
+  {
+    "id": "perfekt-vs-praeteritum-10",
+    "topicId": "perfekt-vs-praeteritum",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Du ___ gestern nicht da. (sein)",
+    "choices": [
+      "warst",
+      "bist gewesen",
+      "seist",
+      "wärst"
+    ],
+    "correctIndex": 0,
+    "explanation": "du-form Präteritum of sein: warst."
+  },
+  {
+    "id": "personalpronomen-akkusativ-01",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich liebe ___. (you, informal)",
+    "choices": [
+      "dich",
+      "dir",
+      "du",
+      "euch"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Akkusativ of du is dich."
+  },
+  {
+    "id": "personalpronomen-akkusativ-02",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Kennst du ___? (him)",
+    "choices": [
+      "er",
+      "ihn",
+      "ihm",
+      "es"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Akkusativ of er is ihn — the form learners forget most often."
+  },
+  {
+    "id": "personalpronomen-akkusativ-03",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir besuchen ___ morgen. (you, pl.)",
+    "choices": [
+      "euch",
+      "ihr",
+      "uns",
+      "sie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Akkusativ of ihr is euch."
+  },
+  {
+    "id": "personalpronomen-akkusativ-04",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Er kennt ___. (me)",
+    "choices": [
+      "mich",
+      "mir",
+      "ich",
+      "uns"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Akkusativ of ich is mich."
+  },
+  {
+    "id": "personalpronomen-akkusativ-05",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Siehst du ___? (her)",
+    "choices": [
+      "sie",
+      "ihr",
+      "ihn",
+      "es"
+    ],
+    "correctIndex": 0,
+    "explanation": "sie stays the same in the Akkusativ for her."
+  },
+  {
+    "id": "personalpronomen-akkusativ-06",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich rufe ___ an. (us)",
+    "choices": [
+      "uns",
+      "euch",
+      "wir",
+      "mich"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Akkusativ of wir is uns."
+  },
+  {
+    "id": "personalpronomen-akkusativ-07",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Kennst du ___? (them)",
+    "choices": [
+      "sie",
+      "ihnen",
+      "ihr",
+      "es"
+    ],
+    "correctIndex": 0,
+    "explanation": "sie (they) stays the same in the Akkusativ."
+  },
+  {
+    "id": "personalpronomen-akkusativ-08",
+    "topicId": "personalpronomen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich sehe ___ nicht. (it)",
+    "choices": [
+      "es",
+      "sie",
+      "ihn",
+      "er"
+    ],
+    "correctIndex": 0,
+    "explanation": "es stays the same in the Akkusativ for it."
+  },
+  {
+    "id": "personalpronomen-dativ-01",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Kannst du ___ helfen? (me)",
+    "choices": [
+      "mich",
+      "mir",
+      "ich",
+      "uns"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Dativ of ich is mir."
+  },
+  {
+    "id": "personalpronomen-dativ-02",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich gebe ___ das Buch. (you, informal)",
+    "choices": [
+      "dich",
+      "dir",
+      "euch",
+      "du"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Dativ of du is dir."
+  },
+  {
+    "id": "personalpronomen-dativ-03",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wie geht es ___? (formal you)",
+    "choices": [
+      "Sie",
+      "Ihnen",
+      "ihnen",
+      "ihr"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Dativ of formal Sie is Ihnen."
+  },
+  {
+    "id": "personalpronomen-dativ-04",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Kleid gefällt ___. (her)",
+    "choices": [
+      "sie",
+      "ihr",
+      "ihm",
+      "ihn"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Dativ of sie (she) is ihr."
+  },
+  {
+    "id": "personalpronomen-dativ-05",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Buch gehört ___. (him)",
+    "choices": [
+      "er",
+      "ihn",
+      "ihm",
+      "ihr"
+    ],
+    "correctIndex": 2,
+    "explanation": "The Dativ of er is ihm."
+  },
+  {
+    "id": "personalpronomen-dativ-06",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Die Suppe schmeckt ___. (us)",
+    "choices": [
+      "uns",
+      "euch",
+      "wir",
+      "mir"
+    ],
+    "correctIndex": 0,
+    "explanation": "uns is the same in Akkusativ and Dativ."
+  },
+  {
+    "id": "personalpronomen-dativ-07",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich danke ___. (you, pl.)",
+    "choices": [
+      "euch",
+      "ihr",
+      "uns",
+      "dir"
+    ],
+    "correctIndex": 0,
+    "explanation": "euch is the same in Akkusativ and Dativ."
+  },
+  {
+    "id": "personalpronomen-dativ-08",
+    "topicId": "personalpronomen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir gratulieren ___! (them)",
+    "choices": [
+      "sie",
+      "ihnen",
+      "ihr",
+      "Ihnen"
+    ],
+    "correctIndex": 1,
+    "explanation": "The Dativ of sie (they) is ihnen."
+  },
+  {
+    "id": "personalpronomen-nominativ-01",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„I“ auf Deutsch:",
+    "choices": [
+      "ich",
+      "du",
+      "er",
+      "wir"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Nominativ subject pronoun for I is ich."
+  },
+  {
+    "id": "personalpronomen-nominativ-02",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„you“ (informal, singular) auf Deutsch:",
+    "choices": [
+      "ich",
+      "du",
+      "ihr",
+      "Sie"
+    ],
+    "correctIndex": 1,
+    "explanation": "du is the informal singular you."
+  },
+  {
+    "id": "personalpronomen-nominativ-03",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "„we“ auf Deutsch:",
+    "choices": [
+      "ihr",
+      "sie",
+      "wir",
+      "es"
+    ],
+    "correctIndex": 2,
+    "explanation": "wir means we."
+  },
+  {
+    "id": "personalpronomen-nominativ-04",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„they“ auf Deutsch:",
+    "choices": [
+      "er",
+      "sie",
+      "Sie",
+      "ihr"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lowercase sie means they; capitalized Sie is the formal you."
+  },
+  {
+    "id": "personalpronomen-nominativ-05",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "„you“ (formal) auf Deutsch:",
+    "choices": [
+      "sie",
+      "Sie",
+      "ihr",
+      "du"
+    ],
+    "correctIndex": 1,
+    "explanation": "The formal you is always capitalized: Sie."
+  },
+  {
+    "id": "personalpronomen-nominativ-06",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ kommt aus Frankreich. (he)",
+    "choices": [
+      "Er",
+      "Sie",
+      "Es",
+      "Wir"
+    ],
+    "correctIndex": 0,
+    "explanation": "he is er."
+  },
+  {
+    "id": "personalpronomen-nominativ-07",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ lernen Deutsch. (we)",
+    "choices": [
+      "Ich",
+      "Ihr",
+      "Wir",
+      "Sie"
+    ],
+    "correctIndex": 2,
+    "explanation": "we is wir."
+  },
+  {
+    "id": "personalpronomen-nominativ-08",
+    "topicId": "personalpronomen-nominativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Woher kommen ___? (formal you)",
+    "choices": [
+      "sie",
+      "Sie",
+      "ihr",
+      "du"
+    ],
+    "correctIndex": 1,
+    "explanation": "The formal you is capitalized: Sie."
+  },
+  {
+    "id": "plural-nomen-01",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Plural von „der Tisch“:",
+    "choices": [
+      "die Tische",
+      "die Tischer",
+      "die Tischen",
+      "der Tisch"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tisch takes the common -e plural: die Tische."
+  },
+  {
+    "id": "plural-nomen-02",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Plural von „der Stuhl“:",
+    "choices": [
+      "die Stuhle",
+      "die Stühle",
+      "die Stühlen",
+      "der Stuhl"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stuhl takes -e plus an umlaut: die Stühle."
+  },
+  {
+    "id": "plural-nomen-03",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Plural von „das Kind“:",
+    "choices": [
+      "die Kinde",
+      "die Kinden",
+      "die Kinder",
+      "die Kindern"
+    ],
+    "correctIndex": 2,
+    "explanation": "Kind takes the -er plural: die Kinder."
+  },
+  {
+    "id": "plural-nomen-04",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Plural von „das Buch“:",
+    "choices": [
+      "die Buche",
+      "die Bücher",
+      "die Buchen",
+      "die Büche"
+    ],
+    "correctIndex": 1,
+    "explanation": "Buch takes -er plus an umlaut: die Bücher."
+  },
+  {
+    "id": "plural-nomen-05",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Plural von „die Frau“:",
+    "choices": [
+      "die Fraus",
+      "die Frauen",
+      "die Fraue",
+      "die Frauer"
+    ],
+    "correctIndex": 1,
+    "explanation": "Feminine nouns very often take -(e)n in the plural: die Frauen."
+  },
+  {
+    "id": "plural-nomen-06",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Plural von „die Lampe“:",
+    "choices": [
+      "die Lampes",
+      "die Lampe",
+      "die Lampen",
+      "die Lampeen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Feminine nouns very often take -(e)n in the plural: die Lampen."
+  },
+  {
+    "id": "plural-nomen-07",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Plural von „das Auto“:",
+    "choices": [
+      "die Auto",
+      "die Autoen",
+      "die Autos",
+      "die Autor"
+    ],
+    "correctIndex": 2,
+    "explanation": "Borrowed words like Auto often take -s in the plural: die Autos."
+  },
+  {
+    "id": "plural-nomen-08",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Plural von „das Hotel“:",
+    "choices": [
+      "die Hotele",
+      "die Hotels",
+      "die Hoteler",
+      "die Hotelen"
+    ],
+    "correctIndex": 1,
+    "explanation": "Borrowed words like Hotel often take -s in the plural: die Hotels."
+  },
+  {
+    "id": "plural-nomen-09",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Plural von „der Lehrer“:",
+    "choices": [
+      "die Lehrer",
+      "die Lehrers",
+      "die Lehrere",
+      "die Lehreren"
+    ],
+    "correctIndex": 0,
+    "explanation": "Some masculine nouns ending in -er have no plural change: die Lehrer."
+  },
+  {
+    "id": "plural-nomen-10",
+    "topicId": "plural-nomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Plural von „das Handy“:",
+    "choices": [
+      "die Handys",
+      "die Handies",
+      "die Handy",
+      "die Handyen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Borrowed words like Handy often take -s in the plural: die Handys."
+  },
+  {
+    "id": "position-von-nicht-01",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (ganzer Satz verneint: kommen):",
+    "choices": [
+      "Ich komme heute nicht.",
+      "Ich komme nicht heute.",
+      "Nicht ich komme heute.",
+      "Ich nicht komme heute."
+    ],
+    "correctIndex": 0,
+    "explanation": "Negating the whole sentence puts nicht at the end."
+  },
+  {
+    "id": "position-von-nicht-02",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (Adjektiv verneint: heiß):",
+    "choices": [
+      "Der Kaffee ist nicht heiß.",
+      "Der Kaffee ist heiß nicht.",
+      "Nicht der Kaffee ist heiß.",
+      "Der nicht Kaffee ist heiß."
+    ],
+    "correctIndex": 0,
+    "explanation": "nicht stands directly before the adjective it negates."
+  },
+  {
+    "id": "position-von-nicht-03",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (Ort verneint):",
+    "choices": [
+      "Sie wohnt nicht in München.",
+      "Sie wohnt in München nicht.",
+      "Nicht sie wohnt in München.",
+      "Sie nicht wohnt in München."
+    ],
+    "correctIndex": 0,
+    "explanation": "nicht stands directly before the place expression it negates."
+  },
+  {
+    "id": "position-von-nicht-04",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (Infinitiv mit Modalverb: kommen):",
+    "choices": [
+      "Ich kann heute nicht kommen.",
+      "Ich kann heute kommen nicht.",
+      "Ich nicht kann heute kommen.",
+      "Ich kann nicht heute kommen."
+    ],
+    "correctIndex": 0,
+    "explanation": "nicht stands directly before the infinitive at the end."
+  },
+  {
+    "id": "position-von-nicht-05",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (Modalverb + Infinitiv: gehen):",
+    "choices": [
+      "Ich will nicht gehen.",
+      "Ich will gehen nicht.",
+      "Ich nicht will gehen.",
+      "Nicht ich will gehen."
+    ],
+    "correctIndex": 0,
+    "explanation": "With a modal verb, nicht comes before the infinitive."
+  },
+  {
+    "id": "position-von-nicht-06",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wähle den richtigen Satz (trennbares Verb: anrufen):",
+    "choices": [
+      "Ich rufe dich nicht an.",
+      "Ich rufe dich an nicht.",
+      "Ich nicht rufe dich an.",
+      "Nicht ich rufe dich an."
+    ],
+    "correctIndex": 0,
+    "explanation": "nicht goes before the separable prefix at the end."
+  },
+  {
+    "id": "position-von-nicht-07",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (Adjektiv verneint: teuer):",
+    "choices": [
+      "Das Auto ist nicht teuer.",
+      "Das Auto ist teuer nicht.",
+      "Nicht das Auto ist teuer.",
+      "Das nicht Auto ist teuer."
+    ],
+    "correctIndex": 0,
+    "explanation": "nicht stands directly before the adjective it negates."
+  },
+  {
+    "id": "position-von-nicht-08",
+    "topicId": "position-von-nicht",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle den richtigen Satz (ganzer Satz verneint: arbeiten):",
+    "choices": [
+      "Ich arbeite heute nicht.",
+      "Ich arbeite nicht heute.",
+      "Nicht ich arbeite heute.",
+      "Ich nicht arbeite heute."
+    ],
+    "correctIndex": 0,
+    "explanation": "Negating the whole sentence puts nicht at the end."
+  },
+  {
+    "id": "possessivartikel-01",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Schwester. (ich)",
+    "choices": [
+      "mein",
+      "meine",
+      "meinen",
+      "meinem"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schwester is feminine, so ich's possessive takes the -e ending: meine."
+  },
+  {
+    "id": "possessivartikel-02",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wo ist ___ Auto? (du)",
+    "choices": [
+      "dein",
+      "deine",
+      "deinen",
+      "deinem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Auto is neuter, so du's possessive has no ending: dein."
+  },
+  {
+    "id": "possessivartikel-03",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich kenne ___ Bruder. (er)",
+    "choices": [
+      "sein",
+      "seine",
+      "seinen",
+      "seinem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Bruder is masculine and here it's the Akkusativ object, so er's possessive takes -en: seinen."
+  },
+  {
+    "id": "possessivartikel-04",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Ich helfe ___ Freund. (ich)",
+    "choices": [
+      "mein",
+      "meine",
+      "meinen",
+      "meinem"
+    ],
+    "correctIndex": 3,
+    "explanation": "helfen takes a Dativ object; masculine/neuter Dativ takes -em: meinem."
+  },
+  {
+    "id": "possessivartikel-05",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Mutter arbeitet. (sie = she)",
+    "choices": [
+      "ihr",
+      "ihre",
+      "ihren",
+      "sein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mutter is feminine, so her possessive takes -e: ihre. Careful: sein = his, ihr = her."
+  },
+  {
+    "id": "possessivartikel-06",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wo sind ___ Schlüssel? (wir)",
+    "choices": [
+      "unser",
+      "unsere",
+      "unseren",
+      "unserem"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schlüssel here is plural, so wir's possessive takes -e: unsere."
+  },
+  {
+    "id": "possessivartikel-07",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Buch. (er)",
+    "choices": [
+      "sein",
+      "seine",
+      "seinen",
+      "seinem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buch is neuter, so er's possessive has no ending: sein."
+  },
+  {
+    "id": "possessivartikel-08",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich sehe ___ Hund. (du)",
+    "choices": [
+      "dein",
+      "deine",
+      "deinen",
+      "deinem"
+    ],
+    "correctIndex": 2,
+    "explanation": "Hund is masculine and here it's the Akkusativ object, so du's possessive takes -en: deinen."
+  },
+  {
+    "id": "possessivartikel-09",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wie heißt ___ Mutter? (formal, Sie)",
+    "choices": [
+      "ihr",
+      "Ihre",
+      "ihre",
+      "Ihr"
+    ],
+    "correctIndex": 1,
+    "explanation": "Mutter is feminine, so the formal possessive takes -e and stays capitalized: Ihre."
+  },
+  {
+    "id": "possessivartikel-10",
+    "topicId": "possessivartikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Auto. (wir)",
+    "choices": [
+      "unser",
+      "unsere",
+      "unseren",
+      "unserem"
+    ],
+    "correctIndex": 0,
+    "explanation": "Auto is neuter, so wir's possessive has no ending: unser."
+  },
+  {
+    "id": "possessivartikel-dativ-01",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich fahre mit ___ Bruder. (mein, Dativ)",
+    "choices": [
+      "meinem",
+      "meiner",
+      "meinen",
+      "mein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bruder is masculine; Dativ masculine possessive ends in -em: meinem."
+  },
+  {
+    "id": "possessivartikel-dativ-02",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Sie hilft ___ Schwester. (ihr, Dativ)",
+    "choices": [
+      "ihrer",
+      "ihrem",
+      "ihren",
+      "ihre"
+    ],
+    "correctIndex": 0,
+    "explanation": "Schwester is feminine; Dativ feminine possessive ends in -er: ihrer."
+  },
+  {
+    "id": "possessivartikel-dativ-03",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Er schreibt ___ Freundin einen Brief. (sein, Dativ)",
+    "choices": [
+      "seiner",
+      "seinem",
+      "seinen",
+      "sein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Freundin is feminine; Dativ feminine possessive ends in -er: seiner."
+  },
+  {
+    "id": "possessivartikel-dativ-04",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir wohnen bei ___ Großeltern. (unser, Dativ Plural)",
+    "choices": [
+      "unseren",
+      "unserem",
+      "unserer",
+      "unser"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dativ plural possessives always end in -en: unseren."
+  },
+  {
+    "id": "possessivartikel-dativ-05",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Ich helfe ___ Kind. (mein, Dativ neutral)",
+    "choices": [
+      "meinem",
+      "meiner",
+      "meinen",
+      "mein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Neuter nouns also take -em in the Dativ, like masculine: meinem Kind."
+  },
+  {
+    "id": "possessivartikel-dativ-06",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welche Endung bekommt der Possessivartikel im Dativ Feminin?",
+    "choices": [
+      "-er",
+      "-em",
+      "-en",
+      "-e"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dativ feminine ends in -er: meiner, deiner, ihrer..."
+  },
+  {
+    "id": "possessivartikel-dativ-07",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Welche Endung bekommt der Possessivartikel im Dativ Plural?",
+    "choices": [
+      "-en",
+      "-em",
+      "-er",
+      "-es"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dativ plural always ends in -en, regardless of gender."
+  },
+  {
+    "id": "possessivartikel-dativ-08",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Wovon hängt die Endung des Possessivartikels ab — vom Besitzer oder vom Nomen?",
+    "choices": [
+      "vom Nomen (Genus/Numerus/Kasus)",
+      "vom Besitzer",
+      "von beiden gleich",
+      "von keinem"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ending agrees with the noun described (gender/number/case), not with who owns it."
+  },
+  {
+    "id": "possessivartikel-dativ-09",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Der Zug fährt mit ___ Passagieren. (sein, Dativ Plural)",
+    "choices": [
+      "seinen",
+      "seinem",
+      "seiner",
+      "sein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dativ plural possessive: seinen Passagieren."
+  },
+  {
+    "id": "possessivartikel-dativ-10",
+    "topicId": "possessivartikel-dativ",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich gebe ___ Vater das Geschenk. (mein, Dativ)",
+    "choices": [
+      "meinem",
+      "meiner",
+      "meinen",
+      "mein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vater is masculine; Dativ masculine possessive ends in -em: meinem."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-01",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich arbeite ___ 9 bis 17 Uhr.",
+    "choices": [
+      "von",
+      "ab",
+      "bis",
+      "seit"
+    ],
+    "correctIndex": 0,
+    "explanation": "von … bis names both a start and an end."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-02",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Der Laden ist ___ Montag bis Samstag geöffnet.",
+    "choices": [
+      "von",
+      "ab",
+      "bis",
+      "seit"
+    ],
+    "correctIndex": 0,
+    "explanation": "von … bis names both a start and an end."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-03",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ morgen lerne ich jeden Tag Deutsch.",
+    "choices": [
+      "Von",
+      "Ab",
+      "Bis",
+      "Seit"
+    ],
+    "correctIndex": 1,
+    "explanation": "ab names only a start with no fixed end: from tomorrow onward."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-04",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ Juli bin ich im Urlaub.",
+    "choices": [
+      "Von",
+      "Ab",
+      "Bis",
+      "Seit"
+    ],
+    "correctIndex": 1,
+    "explanation": "ab names only a start with no fixed end: from July onward."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-05",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ wann hast du Zeit?",
+    "choices": [
+      "Von",
+      "Ab",
+      "Bis",
+      "Seit"
+    ],
+    "correctIndex": 2,
+    "explanation": "bis marks only the end: until when."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-06",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich bleibe ___ Freitag hier.",
+    "choices": [
+      "von",
+      "ab",
+      "bis",
+      "seit"
+    ],
+    "correctIndex": 2,
+    "explanation": "bis marks only the end: until Friday."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-07",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ nächster Woche arbeite ich mehr.",
+    "choices": [
+      "Von",
+      "Ab",
+      "Bis",
+      "Seit"
+    ],
+    "correctIndex": 1,
+    "explanation": "ab names only a start with no fixed end: starting next week."
+  },
+  {
+    "id": "praepositionen-ab-bis-von-bis-08",
+    "topicId": "praepositionen-ab-bis-von-bis",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Der Kurs geht ___ 9 bis 12 Uhr.",
+    "choices": [
+      "von",
+      "ab",
+      "bis",
+      "seit"
+    ],
+    "correctIndex": 0,
+    "explanation": "von … bis names both a start and an end."
+  },
+  {
+    "id": "praepositionen-akkusativ-01",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das Geschenk ist ___ meinen Bruder.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "gegen"
+    ],
+    "correctIndex": 0,
+    "explanation": "für always takes the Akkusativ: for."
+  },
+  {
+    "id": "praepositionen-akkusativ-02",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich gehe ___ dich.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "um"
+    ],
+    "correctIndex": 1,
+    "explanation": "ohne always takes the Akkusativ: without."
+  },
+  {
+    "id": "praepositionen-akkusativ-03",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir gehen ___ den Park.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "gegen"
+    ],
+    "correctIndex": 2,
+    "explanation": "durch always takes the Akkusativ: through."
+  },
+  {
+    "id": "praepositionen-akkusativ-04",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er läuft ___ die Wand.",
+    "choices": [
+      "für",
+      "durch",
+      "gegen",
+      "um"
+    ],
+    "correctIndex": 2,
+    "explanation": "gegen always takes the Akkusativ: against."
+  },
+  {
+    "id": "praepositionen-akkusativ-05",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir laufen ___ den Tisch.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "um"
+    ],
+    "correctIndex": 3,
+    "explanation": "um always takes the Akkusativ: around."
+  },
+  {
+    "id": "praepositionen-akkusativ-06",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Der Film ist ___ Kinder.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "gegen"
+    ],
+    "correctIndex": 0,
+    "explanation": "für always takes the Akkusativ: for."
+  },
+  {
+    "id": "praepositionen-akkusativ-07",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie kauft nichts ___ Geld.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "gegen"
+    ],
+    "correctIndex": 1,
+    "explanation": "ohne always takes the Akkusativ: without."
+  },
+  {
+    "id": "praepositionen-akkusativ-08",
+    "topicId": "praepositionen-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Auto fährt ___ die Stadt.",
+    "choices": [
+      "für",
+      "ohne",
+      "durch",
+      "um"
+    ],
+    "correctIndex": 2,
+    "explanation": "durch always takes the Akkusativ: through."
+  },
+  {
+    "id": "praepositionen-dativ-01",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich fahre ___ dem Auto.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "von"
+    ],
+    "correctIndex": 0,
+    "explanation": "mit always takes the Dativ: with / by (transport)."
+  },
+  {
+    "id": "praepositionen-dativ-02",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie kommt ___ der Türkei.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "aus"
+    ],
+    "correctIndex": 3,
+    "explanation": "aus always takes the Dativ: from (origin)."
+  },
+  {
+    "id": "praepositionen-dativ-03",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir gehen ___ Arzt.",
+    "choices": [
+      "mit",
+      "nach",
+      "zum",
+      "aus"
+    ],
+    "correctIndex": 2,
+    "explanation": "zu + dem contracts to zum: zu dem Arzt → zum Arzt."
+  },
+  {
+    "id": "praepositionen-dativ-04",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich fahre ___ Berlin.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "von"
+    ],
+    "correctIndex": 1,
+    "explanation": "nach always takes the Dativ, used for cities without an article."
+  },
+  {
+    "id": "praepositionen-dativ-05",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er arbeitet ___ der Firma.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "von"
+    ],
+    "correctIndex": 2,
+    "explanation": "bei always takes the Dativ: at / near."
+  },
+  {
+    "id": "praepositionen-dativ-06",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Buch ist ___ meinem Freund.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "von"
+    ],
+    "correctIndex": 3,
+    "explanation": "von always takes the Dativ: from / of."
+  },
+  {
+    "id": "praepositionen-dativ-07",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich gehe ___ Hause.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "aus"
+    ],
+    "correctIndex": 1,
+    "explanation": "nach Hause is a fixed phrase meaning home."
+  },
+  {
+    "id": "praepositionen-dativ-08",
+    "topicId": "praepositionen-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie wohnt ___ ihrer Schwester.",
+    "choices": [
+      "mit",
+      "nach",
+      "bei",
+      "aus"
+    ],
+    "correctIndex": 2,
+    "explanation": "bei always takes the Dativ: at / with (someone's place)."
+  },
+  {
+    "id": "praesens-rechtschreibung-01",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "du ___ (arbeiten)",
+    "choices": [
+      "arbeitst",
+      "arbeitest",
+      "arbeitet",
+      "arbeite"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stems ending in -t insert an extra -e before -st: arbeitest."
+  },
+  {
+    "id": "praesens-rechtschreibung-02",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "er ___ (arbeiten)",
+    "choices": [
+      "arbeitet",
+      "arbeitt",
+      "arbeite",
+      "arbeitest"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stems ending in -t insert an extra -e before -t: arbeitet."
+  },
+  {
+    "id": "praesens-rechtschreibung-03",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wie ___ du? (heißen)",
+    "choices": [
+      "heißt",
+      "heißst",
+      "heißest",
+      "heiße"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stems ending in an s-sound drop the s of -st: du heißt."
+  },
+  {
+    "id": "praesens-rechtschreibung-04",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "er ___ (heißen)",
+    "choices": [
+      "heißt",
+      "heißet",
+      "heiße",
+      "heißest"
+    ],
+    "correctIndex": 0,
+    "explanation": "The er-form heißt looks identical to the du-form here — that's correct."
+  },
+  {
+    "id": "praesens-rechtschreibung-05",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "du ___ (finden)",
+    "choices": [
+      "findst",
+      "findest",
+      "findet",
+      "finde"
+    ],
+    "correctIndex": 1,
+    "explanation": "finden's stem ends in -d, so it inserts -e before -st: findest."
+  },
+  {
+    "id": "praesens-rechtschreibung-06",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "er ___ (antworten)",
+    "choices": [
+      "antwortet",
+      "antworttet",
+      "antwortest",
+      "antworte"
+    ],
+    "correctIndex": 0,
+    "explanation": "antworten's stem ends in -t, so it inserts -e before -t: antwortet."
+  },
+  {
+    "id": "praesens-rechtschreibung-07",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "du ___ (tanzen)",
+    "choices": [
+      "tanzst",
+      "tanzt",
+      "tanze",
+      "tanzest"
+    ],
+    "correctIndex": 1,
+    "explanation": "tanzen's stem ends in -z (an s-sound), so du drops the s of -st: tanzt."
+  },
+  {
+    "id": "praesens-rechtschreibung-08",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "er ___ (reden)",
+    "choices": [
+      "redet",
+      "redt",
+      "rede",
+      "redest"
+    ],
+    "correctIndex": 0,
+    "explanation": "reden's stem ends in -d, so it inserts -e before -t: redet."
+  },
+  {
+    "id": "praesens-rechtschreibung-09",
+    "topicId": "praesens-rechtschreibung",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "ich ___ (arbeiten)",
+    "choices": [
+      "arbeite",
+      "arbeitest",
+      "arbeitet",
+      "arbeiten"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ich-form has no spelling change: arbeite."
+  },
+  {
+    "id": "praesens-regelmaessig-01",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "ich ___ (spielen)",
+    "choices": [
+      "spiele",
+      "spielst",
+      "spielt",
+      "spielen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ich-form of regular verbs ends in -e: spiele."
+  },
+  {
+    "id": "praesens-regelmaessig-02",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "du ___ (wohnen)",
+    "choices": [
+      "wohne",
+      "wohnst",
+      "wohnt",
+      "wohnen"
+    ],
+    "correctIndex": 1,
+    "explanation": "The du-form of regular verbs ends in -st: wohnst."
+  },
+  {
+    "id": "praesens-regelmaessig-03",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "er ___ (lernen)",
+    "choices": [
+      "lerne",
+      "lernst",
+      "lernt",
+      "lernen"
+    ],
+    "correctIndex": 2,
+    "explanation": "The er/sie/es-form of regular verbs ends in -t: lernt."
+  },
+  {
+    "id": "praesens-regelmaessig-04",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "wir ___ (kommen)",
+    "choices": [
+      "komme",
+      "kommst",
+      "kommt",
+      "kommen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The wir-form is identical to the infinitive: kommen."
+  },
+  {
+    "id": "praesens-regelmaessig-05",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "ihr ___ (machen)",
+    "choices": [
+      "mache",
+      "machst",
+      "macht",
+      "machen"
+    ],
+    "correctIndex": 2,
+    "explanation": "The ihr-form of regular verbs ends in -t: macht."
+  },
+  {
+    "id": "praesens-regelmaessig-06",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "sie/Sie ___ (kaufen)",
+    "choices": [
+      "kaufe",
+      "kaufst",
+      "kauft",
+      "kaufen"
+    ],
+    "correctIndex": 3,
+    "explanation": "The sie/Sie-form is identical to the infinitive: kaufen."
+  },
+  {
+    "id": "praesens-regelmaessig-07",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "ich ___ (brauchen)",
+    "choices": [
+      "brauche",
+      "brauchst",
+      "braucht",
+      "brauchen"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ich-form of regular verbs ends in -e: brauche."
+  },
+  {
+    "id": "praesens-regelmaessig-08",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "du ___ (spielen)",
+    "choices": [
+      "spiele",
+      "spielst",
+      "spielt",
+      "spielen"
+    ],
+    "correctIndex": 1,
+    "explanation": "The du-form of regular verbs ends in -st: spielst."
+  },
+  {
+    "id": "praesens-regelmaessig-09",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "er/sie/es ___ (wohnen)",
+    "choices": [
+      "wohne",
+      "wohnst",
+      "wohnt",
+      "wohnen"
+    ],
+    "correctIndex": 2,
+    "explanation": "The er/sie/es-form of regular verbs ends in -t: wohnt."
+  },
+  {
+    "id": "praesens-regelmaessig-10",
+    "topicId": "praesens-regelmaessig",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Was ___ du heute? (machen)",
+    "choices": [
+      "mache",
+      "machst",
+      "macht",
+      "machen"
+    ],
+    "correctIndex": 1,
+    "explanation": "After a W-question word the verb agrees with du: machst."
+  },
+  {
+    "id": "praeteritum-haben-sein-01",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich ___ gestern in Berlin. (sein)",
+    "choices": [
+      "war",
+      "warst",
+      "waren",
+      "wart"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same Präteritum form: ich war."
+  },
+  {
+    "id": "praeteritum-haben-sein-02",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir ___ viel Spaß. (haben)",
+    "choices": [
+      "hatte",
+      "hattest",
+      "hatten",
+      "hattet"
+    ],
+    "correctIndex": 2,
+    "explanation": "The wir-form of the Präteritum of haben is hatten."
+  },
+  {
+    "id": "praeteritum-haben-sein-03",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ du krank? (sein)",
+    "choices": [
+      "War",
+      "Warst",
+      "Waren",
+      "Wart"
+    ],
+    "correctIndex": 1,
+    "explanation": "The du-form of the Präteritum of sein is warst."
+  },
+  {
+    "id": "praeteritum-haben-sein-04",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie (she) ___ keine Zeit. (haben)",
+    "choices": [
+      "hatte",
+      "hattest",
+      "hatten",
+      "hattet"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same Präteritum form: sie hatte."
+  },
+  {
+    "id": "praeteritum-haben-sein-05",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ pünktlich. (sein)",
+    "choices": [
+      "war",
+      "warst",
+      "waren",
+      "wart"
+    ],
+    "correctIndex": 3,
+    "explanation": "The ihr-form of the Präteritum of sein is wart."
+  },
+  {
+    "id": "praeteritum-haben-sein-06",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie (they) ___ ein großes Haus. (haben)",
+    "choices": [
+      "hatte",
+      "hatten",
+      "hattet",
+      "hattest"
+    ],
+    "correctIndex": 1,
+    "explanation": "The sie-form (plural) of the Präteritum of haben is hatten."
+  },
+  {
+    "id": "praeteritum-haben-sein-07",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Er ___ müde. (sein)",
+    "choices": [
+      "war",
+      "warst",
+      "waren",
+      "wart"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same Präteritum form: er war."
+  },
+  {
+    "id": "praeteritum-haben-sein-08",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ Hunger. (haben)",
+    "choices": [
+      "hatte",
+      "hattest",
+      "hatten",
+      "hattet"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich and er/sie/es share the same Präteritum form: ich hatte."
+  },
+  {
+    "id": "praeteritum-haben-sein-09",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir ___ im Urlaub. (sein)",
+    "choices": [
+      "war",
+      "warst",
+      "waren",
+      "wart"
+    ],
+    "correctIndex": 2,
+    "explanation": "The wir-form of the Präteritum of sein is waren."
+  },
+  {
+    "id": "praeteritum-haben-sein-10",
+    "topicId": "praeteritum-haben-sein",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ ihr Zeit? (haben)",
+    "choices": [
+      "Hatte",
+      "Hattest",
+      "Hatten",
+      "Hattet"
+    ],
+    "correctIndex": 3,
+    "explanation": "The ihr-form of the Präteritum of haben is hattet."
+  },
+  {
+    "id": "reflexive-verben-01",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich freue ___ auf das Wochenende.",
+    "choices": [
+      "mich",
+      "mir",
+      "mein",
+      "meiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "sich freuen takes an Akkusativ reflexive pronoun: ich freue mich."
+  },
+  {
+    "id": "reflexive-verben-02",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Er wäscht ___ jeden Morgen.",
+    "choices": [
+      "sich",
+      "ihn",
+      "ihm",
+      "er"
+    ],
+    "correctIndex": 0,
+    "explanation": "er/sie/es uses sich as the reflexive pronoun."
+  },
+  {
+    "id": "reflexive-verben-03",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir treffen ___ um acht Uhr.",
+    "choices": [
+      "uns",
+      "euch",
+      "sich",
+      "wir"
+    ],
+    "correctIndex": 0,
+    "explanation": "wir takes uns as its reflexive pronoun."
+  },
+  {
+    "id": "reflexive-verben-04",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Ich putze ___ die Zähne.",
+    "choices": [
+      "mir",
+      "mich",
+      "meiner",
+      "ich"
+    ],
+    "correctIndex": 0,
+    "explanation": "Since die Zähne is already the Akkusativ object, the reflexive pronoun takes the Dativ slot: mir."
+  },
+  {
+    "id": "reflexive-verben-05",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Du interessierst ___ für Musik.",
+    "choices": [
+      "dich",
+      "dir",
+      "du",
+      "deiner"
+    ],
+    "correctIndex": 0,
+    "explanation": "sich interessieren für takes an Akkusativ reflexive pronoun: du interessierst dich."
+  },
+  {
+    "id": "reflexive-verben-06",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Das reflexive Pronomen für „ihr“ ist:",
+    "choices": [
+      "euch",
+      "euer",
+      "ihr",
+      "sich"
+    ],
+    "correctIndex": 0,
+    "explanation": "ihr's reflexive pronoun is euch."
+  },
+  {
+    "id": "reflexive-verben-07",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wann bekommt das reflexive Pronomen die Dativform (mir/dir)?",
+    "choices": [
+      "Wenn der Satz schon ein Akkusativobjekt hat",
+      "Immer bei reflexiven Verben",
+      "Nur im Plural",
+      "Nie"
+    ],
+    "correctIndex": 0,
+    "explanation": "The reflexive pronoun shifts to Dativ only when there's already a direct object taking the Akkusativ slot."
+  },
+  {
+    "id": "reflexive-verben-08",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Sie erinnert ___ an den Urlaub.",
+    "choices": [
+      "sich",
+      "ihr",
+      "ihre",
+      "sie"
+    ],
+    "correctIndex": 0,
+    "explanation": "sich erinnern an takes an Akkusativ reflexive pronoun: sich."
+  },
+  {
+    "id": "reflexive-verben-09",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Welches Verb ist IMMER reflexiv?",
+    "choices": [
+      "sich freuen",
+      "waschen",
+      "kaufen",
+      "sehen"
+    ],
+    "correctIndex": 0,
+    "explanation": "sich freuen only exists in its reflexive form, unlike waschen/kaufen/sehen which also have non-reflexive uses."
+  },
+  {
+    "id": "reflexive-verben-10",
+    "topicId": "reflexive-verben",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Das reflexive Pronomen für „ich“ ist:",
+    "choices": [
+      "mich",
+      "mir",
+      "mein",
+      "ich"
+    ],
+    "correctIndex": 0,
+    "explanation": "ich's default (Akkusativ) reflexive pronoun is mich."
+  },
+  {
+    "id": "relativsaetze-01",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Der Mann, ___ dort steht, ist mein Chef.",
+    "choices": [
+      "der",
+      "den",
+      "dem",
+      "die"
+    ],
+    "correctIndex": 0,
+    "explanation": "der Mann is masculine and is the subject (Nominativ) of the Relativsatz: der."
+  },
+  {
+    "id": "relativsaetze-02",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Das ist der Film, ___ ich letzte Woche gesehen habe.",
+    "choices": [
+      "den",
+      "der",
+      "dem",
+      "das"
+    ],
+    "correctIndex": 0,
+    "explanation": "der Film is the direct object (Akkusativ) of gesehen habe: den."
+  },
+  {
+    "id": "relativsaetze-03",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Die Frau, ___ ich geholfen habe, heißt Anna.",
+    "choices": [
+      "der",
+      "die",
+      "den",
+      "dem"
+    ],
+    "correctIndex": 0,
+    "explanation": "helfen takes Dativ, and die Frau is feminine: dative feminine is der."
+  },
+  {
+    "id": "relativsaetze-04",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Das Buch, ___ ich lese, ist spannend.",
+    "choices": [
+      "das",
+      "der",
+      "die",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "das Buch is neuter and the Akkusativ object of lese: das (same as Nominativ for neuter)."
+  },
+  {
+    "id": "relativsaetze-05",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Wovon hängt die Form des Relativpronomens ab?",
+    "choices": [
+      "Genus/Numerus vom Nomen, Kasus von der eigenen Rolle im Nebensatz",
+      "nur vom Kasus des Hauptsatzes",
+      "nur vom Genus des Nomens",
+      "vom Verb des Hauptsatzes"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gender/number come from the noun; case comes from the pronoun's own role in the Relativsatz."
+  },
+  {
+    "id": "relativsaetze-06",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Die Kinder, ___ im Garten spielen, sind laut.",
+    "choices": [
+      "die",
+      "der",
+      "denen",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plural Nominativ relative pronoun is die."
+  },
+  {
+    "id": "relativsaetze-07",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wo steht das Verb im Relativsatz?",
+    "choices": [
+      "am Ende",
+      "an zweiter Stelle",
+      "am Anfang",
+      "vor dem Relativpronomen"
+    ],
+    "correctIndex": 0,
+    "explanation": "A Relativsatz is a subordinate clause, so the verb goes to the end."
+  },
+  {
+    "id": "relativsaetze-08",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Was trennt einen Relativsatz vom Hauptsatz?",
+    "choices": [
+      "ein Komma",
+      "ein Punkt",
+      "nichts",
+      "ein Semikolon"
+    ],
+    "correctIndex": 0,
+    "explanation": "A comma always separates a Relativsatz from the rest of the sentence."
+  },
+  {
+    "id": "relativsaetze-09",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Die Freunde, mit ___ ich reise, sind sehr nett.",
+    "choices": [
+      "denen",
+      "die",
+      "der",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "mit takes Dativ, plural Dativ relative pronoun is denen."
+  },
+  {
+    "id": "relativsaetze-10",
+    "topicId": "relativsaetze",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Kann man das Relativpronomen im Deutschen weglassen?",
+    "choices": [
+      "Nein, nie",
+      "Ja, immer",
+      "Nur im Perfekt",
+      "Nur im Plural"
+    ],
+    "correctIndex": 0,
+    "explanation": "Unlike English, German never drops the relative pronoun."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-01",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle die richtige Wortstellung: morgen, mit dem Bus, nach Hause",
+    "choices": [
+      "Ich fahre morgen mit dem Bus nach Hause.",
+      "Ich fahre mit dem Bus morgen nach Hause.",
+      "Ich fahre nach Hause morgen mit dem Bus.",
+      "Ich fahre mit dem Bus nach Hause morgen."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: morgen → mit dem Bus → nach Hause."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-02",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wähle die richtige Wortstellung: heute Abend, ins Restaurant",
+    "choices": [
+      "Wir gehen heute Abend ins Restaurant.",
+      "Wir gehen ins Restaurant heute Abend.",
+      "Heute Abend wir gehen ins Restaurant.",
+      "Wir heute Abend gehen ins Restaurant."
+    ],
+    "correctIndex": 0,
+    "explanation": "Time comes before place: heute Abend → ins Restaurant."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-03",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle die richtige Wortstellung: um acht Uhr, nach Hause",
+    "choices": [
+      "Ich komme um acht Uhr nach Hause.",
+      "Ich komme nach Hause um acht Uhr.",
+      "Um acht Uhr komme nach Hause ich.",
+      "Ich komme nach um acht Uhr Hause."
+    ],
+    "correctIndex": 0,
+    "explanation": "Time comes before place: um acht Uhr → nach Hause."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-04",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wähle die richtige Wortstellung: heute Abend, zusammen, ins Kino",
+    "choices": [
+      "Wir gehen heute Abend zusammen ins Kino.",
+      "Wir gehen zusammen heute Abend ins Kino.",
+      "Wir gehen ins Kino heute Abend zusammen.",
+      "Wir gehen zusammen ins Kino heute Abend."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: heute Abend → zusammen → ins Kino."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-05",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wähle die richtige Wortstellung: morgen, mit dem Bus, zur Arbeit",
+    "choices": [
+      "Ich fahre morgen mit dem Bus zur Arbeit.",
+      "Ich fahre mit dem Bus zur Arbeit morgen.",
+      "Ich fahre zur Arbeit morgen mit dem Bus.",
+      "Ich fahre mit dem Bus morgen zur Arbeit."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: morgen → mit dem Bus → zur Arbeit."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-06",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wähle die richtige Wortstellung: heute, mit dem Zug, nach Berlin",
+    "choices": [
+      "Sie kommt heute mit dem Zug nach Berlin.",
+      "Sie kommt mit dem Zug heute nach Berlin.",
+      "Sie kommt nach Berlin heute mit dem Zug.",
+      "Sie kommt mit dem Zug nach Berlin heute."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: heute → mit dem Zug → nach Berlin."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-07",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wähle die richtige Wortstellung: morgen, allein, ins Büro",
+    "choices": [
+      "Er fährt morgen allein ins Büro.",
+      "Er fährt allein morgen ins Büro.",
+      "Er fährt ins Büro morgen allein.",
+      "Er fährt allein ins Büro morgen."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: morgen → allein → ins Büro."
+  },
+  {
+    "id": "satzstellung-temporal-modal-lokal-08",
+    "topicId": "satzstellung-temporal-modal-lokal",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wähle die richtige Wortstellung: am Samstag, zusammen, nach Hamburg",
+    "choices": [
+      "Wir fahren am Samstag zusammen nach Hamburg.",
+      "Wir fahren zusammen am Samstag nach Hamburg.",
+      "Wir fahren nach Hamburg am Samstag zusammen.",
+      "Wir fahren zusammen nach Hamburg am Samstag."
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle-field order is time before manner before place: am Samstag → zusammen → nach Hamburg."
+  },
+  {
+    "id": "sein-praesens-01",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ müde.",
+    "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein is irregular: ich bin."
+  },
+  {
+    "id": "sein-praesens-02",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ du Student?",
+    "choices": [
+      "Bin",
+      "Bist",
+      "Ist",
+      "Seid"
+    ],
+    "correctIndex": 1,
+    "explanation": "sein is irregular: du bist."
+  },
+  {
+    "id": "sein-praesens-03",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir ___ aus Spanien.",
+    "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+    ],
+    "correctIndex": 3,
+    "explanation": "sein is irregular: wir sind."
+  },
+  {
+    "id": "sein-praesens-04",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Er ___ Lehrer.",
+    "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+    ],
+    "correctIndex": 2,
+    "explanation": "sein is irregular: er ist. No article before a profession."
+  },
+  {
+    "id": "sein-praesens-05",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ihr ___ nett.",
+    "choices": [
+      "seid",
+      "sind",
+      "seit",
+      "bist"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein is irregular: ihr seid."
+  },
+  {
+    "id": "sein-praesens-06",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Sie (they) ___ zu Hause.",
+    "choices": [
+      "bin",
+      "ist",
+      "sind",
+      "seid"
+    ],
+    "correctIndex": 2,
+    "explanation": "sein is irregular: sie sind."
+  },
+  {
+    "id": "sein-praesens-07",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich ___ dreißig Jahre alt.",
+    "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "sind"
+    ],
+    "correctIndex": 0,
+    "explanation": "sein is irregular: ich bin."
+  },
+  {
+    "id": "sein-praesens-08",
+    "topicId": "sein-praesens",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Du ___ sehr freundlich.",
+    "choices": [
+      "bin",
+      "bist",
+      "ist",
+      "seid"
+    ],
+    "correctIndex": 1,
+    "explanation": "sein is irregular: du bist."
+  },
+  {
+    "id": "temporale-praepositionen-01",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Der Kurs beginnt ___ 9 Uhr.",
+    "choices": [
+      "um",
+      "am",
+      "im",
+      "seit"
+    ],
+    "correctIndex": 0,
+    "explanation": "um is used for clock times: um 9 Uhr."
+  },
+  {
+    "id": "temporale-praepositionen-02",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Samstag gehe ich einkaufen.",
+    "choices": [
+      "Um",
+      "Am",
+      "Im",
+      "Vor"
+    ],
+    "correctIndex": 1,
+    "explanation": "am is used for days: am Samstag."
+  },
+  {
+    "id": "temporale-praepositionen-03",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ Winter ist es kalt.",
+    "choices": [
+      "Um",
+      "Am",
+      "Im",
+      "Vor"
+    ],
+    "correctIndex": 2,
+    "explanation": "im is used for seasons and months: im Winter."
+  },
+  {
+    "id": "temporale-praepositionen-04",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich wohne ___ drei Jahren in Berlin.",
+    "choices": [
+      "um",
+      "ab",
+      "seit",
+      "bis"
+    ],
+    "correctIndex": 2,
+    "explanation": "seit + Präsens expresses an ongoing duration: for three years."
+  },
+  {
+    "id": "temporale-praepositionen-05",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich arbeite von 9 ___ 17 Uhr.",
+    "choices": [
+      "um",
+      "am",
+      "bis",
+      "ab"
+    ],
+    "correctIndex": 2,
+    "explanation": "von … bis marks both endpoints of a time span."
+  },
+  {
+    "id": "temporale-praepositionen-06",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ morgen lerne ich Deutsch.",
+    "choices": [
+      "Um",
+      "Ab",
+      "Im",
+      "Nach"
+    ],
+    "correctIndex": 1,
+    "explanation": "ab marks the start with no fixed end: starting tomorrow."
+  },
+  {
+    "id": "temporale-praepositionen-07",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ dem Essen gehe ich spazieren.",
+    "choices": [
+      "Vor",
+      "Nach",
+      "Seit",
+      "Um"
+    ],
+    "correctIndex": 1,
+    "explanation": "nach expresses after: after the meal."
+  },
+  {
+    "id": "temporale-praepositionen-08",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ zwei Tagen war ich krank.",
+    "choices": [
+      "Vor",
+      "Nach",
+      "Seit",
+      "Ab"
+    ],
+    "correctIndex": 0,
+    "explanation": "vor here means ago: two days ago."
+  },
+  {
+    "id": "temporale-praepositionen-09",
+    "topicId": "temporale-praepositionen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Der Unterricht dauert ___ Freitag.",
+    "choices": [
+      "um",
+      "am",
+      "bis",
+      "seit"
+    ],
+    "correctIndex": 2,
+    "explanation": "bis marks only the endpoint: until Friday."
+  },
+  {
+    "id": "trennbare-verben-01",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich stehe um 7 Uhr ___.",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 0,
+    "explanation": "aufstehen — the prefix auf- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-02",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir kaufen im Supermarkt ___.",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 2,
+    "explanation": "einkaufen — the prefix ein- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-03",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Der Zug kommt um 9 Uhr ___.",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 1,
+    "explanation": "ankommen — the prefix an- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-04",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wann fängt der Film ___?",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 1,
+    "explanation": "anfangen — the prefix an- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-05",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie ruft ihre Mutter ___.",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 1,
+    "explanation": "anrufen — the prefix an- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-06",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich hole dich ___.",
+    "choices": [
+      "auf",
+      "an",
+      "ein",
+      "ab"
+    ],
+    "correctIndex": 3,
+    "explanation": "abholen — the prefix ab- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-07",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir gehen heute ___. (ausgehen)",
+    "choices": [
+      "auf",
+      "aus",
+      "ein",
+      "an"
+    ],
+    "correctIndex": 1,
+    "explanation": "ausgehen — the prefix aus- moves to the end."
+  },
+  {
+    "id": "trennbare-verben-08",
+    "topicId": "trennbare-verben",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Kommst du ___? (mitkommen)",
+    "choices": [
+      "mit",
+      "an",
+      "auf",
+      "ein"
+    ],
+    "correctIndex": 0,
+    "explanation": "mitkommen — the prefix mit- moves to the end."
+  },
+  {
+    "id": "unbestimmte-pronomen-01",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich verstehe ___. (everything)",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 0,
+    "explanation": "alles means everything."
+  },
+  {
+    "id": "unbestimmte-pronomen-02",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich möchte ___ trinken. (something)",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 1,
+    "explanation": "etwas means something."
+  },
+  {
+    "id": "unbestimmte-pronomen-03",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich verstehe ___. (nothing)",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 2,
+    "explanation": "nichts means nothing."
+  },
+  {
+    "id": "unbestimmte-pronomen-04",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Gibt es ___ Neues?",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 1,
+    "explanation": "etwas + adjective (-es ending) means something: etwas Neues."
+  },
+  {
+    "id": "unbestimmte-pronomen-05",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Es ist ___ Schlimmes. (nothing bad)",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 2,
+    "explanation": "nichts + adjective (-es ending) means nothing: nichts Schlimmes."
+  },
+  {
+    "id": "unbestimmte-pronomen-06",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ klar!",
+    "choices": [
+      "Alles",
+      "Etwas",
+      "Nichts",
+      "Niemand"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alles klar! means all clear / got it."
+  },
+  {
+    "id": "unbestimmte-pronomen-07",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich habe ___ gehört. (nothing)",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 2,
+    "explanation": "nichts means nothing: ich habe nichts gehört."
+  },
+  {
+    "id": "unbestimmte-pronomen-08",
+    "topicId": "unbestimmte-pronomen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Möchtest du ___ essen?",
+    "choices": [
+      "alles",
+      "etwas",
+      "nichts",
+      "niemand"
+    ],
+    "correctIndex": 1,
+    "explanation": "etwas means something."
+  },
+  {
+    "id": "unbestimmter-artikel-01",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Tisch.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tisch is masculine, so the Nominativ indefinite article is ein."
+  },
+  {
+    "id": "unbestimmter-artikel-02",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Frau.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Frau is feminine, so the indefinite article is eine."
+  },
+  {
+    "id": "unbestimmter-artikel-03",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Kind.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kind is neuter, and neuter also takes ein in the Nominativ."
+  },
+  {
+    "id": "unbestimmter-artikel-04",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Hier ist ___ Buch.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Buch is neuter, so the Nominativ indefinite article is ein."
+  },
+  {
+    "id": "unbestimmter-artikel-05",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Da ist ___ Lampe.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Lampe is feminine, so the indefinite article is eine."
+  },
+  {
+    "id": "unbestimmter-artikel-06",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Das ist ___ Mann.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mann is masculine, so the Nominativ indefinite article is ein."
+  },
+  {
+    "id": "unbestimmter-artikel-07",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Hier ist ___ Auto.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Auto is neuter, so the Nominativ indefinite article is ein."
+  },
+  {
+    "id": "unbestimmter-artikel-08",
+    "topicId": "unbestimmter-artikel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Da ist ___ Tasche.",
+    "choices": [
+      "ein",
+      "eine",
+      "einen",
+      "kein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Tasche is feminine, so the indefinite article is eine."
+  },
+  {
+    "id": "verb-position-zwei-01",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Heute ___ ich ins Kino. (gehen)",
+    "choices": [
+      "gehe",
+      "gehst",
+      "geht",
+      "gehen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Heute occupies position 1, so the verb stays in position 2, matching ich: gehe."
+  },
+  {
+    "id": "verb-position-zwei-02",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Morgen ___ ich Kaffee. (trinken)",
+    "choices": [
+      "trinke",
+      "trinkst",
+      "trinkt",
+      "trinken"
+    ],
+    "correctIndex": 0,
+    "explanation": "Morgen is in position 1, verb in position 2, matching ich: trinke."
+  },
+  {
+    "id": "verb-position-zwei-03",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Am Montag ___ ich nicht. (arbeiten)",
+    "choices": [
+      "arbeite",
+      "arbeitest",
+      "arbeitet",
+      "arbeiten"
+    ],
+    "correctIndex": 0,
+    "explanation": "Am Montag is in position 1, verb in position 2, matching ich: arbeite."
+  },
+  {
+    "id": "verb-position-zwei-04",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Jeden Tag ___ sie Deutsch. (lernen)",
+    "choices": [
+      "lerne",
+      "lernst",
+      "lernt",
+      "lernen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Jeden Tag is in position 1, verb in position 2, matching sie (she): lernt."
+  },
+  {
+    "id": "verb-position-zwei-05",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Um acht Uhr ___ der Kurs. (beginnen)",
+    "choices": [
+      "beginne",
+      "beginnst",
+      "beginnt",
+      "beginnen"
+    ],
+    "correctIndex": 2,
+    "explanation": "Um acht Uhr is in position 1, verb in position 2, matching der Kurs: beginnt."
+  },
+  {
+    "id": "verb-position-zwei-06",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Heute Abend ___ wir ins Restaurant. (gehen)",
+    "choices": [
+      "gehe",
+      "gehst",
+      "geht",
+      "gehen"
+    ],
+    "correctIndex": 3,
+    "explanation": "Heute Abend is in position 1, verb in position 2, matching wir: gehen."
+  },
+  {
+    "id": "verb-position-zwei-07",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Am Wochenende ___ ich meine Familie. (besuchen)",
+    "choices": [
+      "besuche",
+      "besuchst",
+      "besucht",
+      "besuchen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Am Wochenende is in position 1, verb in position 2, matching ich: besuche."
+  },
+  {
+    "id": "verb-position-zwei-08",
+    "topicId": "verb-position-zwei",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Morgens ___ er Kaffee. (trinken)",
+    "choices": [
+      "trinke",
+      "trinkst",
+      "trinkt",
+      "trinken"
+    ],
+    "correctIndex": 2,
+    "explanation": "Morgens is in position 1, verb in position 2, matching er: trinkt."
+  },
+  {
+    "id": "verben-mit-akkusativ-01",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich brauche ___ Stift.",
+    "choices": [
+      "den",
+      "einen",
+      "eine",
+      "ein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Stift is masculine and indefinite here, so the Akkusativ is einen."
+  },
+  {
+    "id": "verben-mit-akkusativ-02",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Siehst du ___ Mann?",
+    "choices": [
+      "den",
+      "einen",
+      "die",
+      "das"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mann is masculine and definite here, so der becomes den in the Akkusativ."
+  },
+  {
+    "id": "verben-mit-akkusativ-03",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Er trinkt ___ Kaffee.",
+    "choices": [
+      "den",
+      "einen",
+      "eine",
+      "ein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Kaffee is masculine and indefinite here, so the Akkusativ is einen."
+  },
+  {
+    "id": "verben-mit-akkusativ-04",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie kauft ___ Tasche.",
+    "choices": [
+      "den",
+      "einen",
+      "eine",
+      "ein"
+    ],
+    "correctIndex": 2,
+    "explanation": "Tasche is feminine, and feminine is unchanged in the Akkusativ: eine."
+  },
+  {
+    "id": "verben-mit-akkusativ-05",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich lese ___ Buch.",
+    "choices": [
+      "den",
+      "einen",
+      "eine",
+      "ein"
+    ],
+    "correctIndex": 3,
+    "explanation": "Buch is neuter, and neuter is unchanged in the Akkusativ: ein."
+  },
+  {
+    "id": "verben-mit-akkusativ-06",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er kocht ___ Essen.",
+    "choices": [
+      "der",
+      "die",
+      "das",
+      "den"
+    ],
+    "correctIndex": 2,
+    "explanation": "Essen is neuter and definite here, and neuter is unchanged in the Akkusativ: das."
+  },
+  {
+    "id": "verben-mit-akkusativ-07",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich finde ___ Schlüssel.",
+    "choices": [
+      "der",
+      "den",
+      "die",
+      "das"
+    ],
+    "correctIndex": 1,
+    "explanation": "Schlüssel is masculine and definite here, so der becomes den in the Akkusativ."
+  },
+  {
+    "id": "verben-mit-akkusativ-08",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Wir machen ___ Ausflug.",
+    "choices": [
+      "den",
+      "einen",
+      "eine",
+      "ein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ausflug is masculine and indefinite here, so the Akkusativ is einen."
+  },
+  {
+    "id": "verben-mit-akkusativ-09",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Ich verstehe ___ Frage.",
+    "choices": [
+      "der",
+      "die",
+      "das",
+      "den"
+    ],
+    "correctIndex": 1,
+    "explanation": "Frage is feminine, and feminine is unchanged in the Akkusativ: die."
+  },
+  {
+    "id": "verben-mit-akkusativ-10",
+    "topicId": "verben-mit-akkusativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich nehme ___ Bus.",
+    "choices": [
+      "der",
+      "den",
+      "die",
+      "das"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bus is masculine and definite here, so der becomes den in the Akkusativ."
+  },
+  {
+    "id": "verben-mit-dativ-01",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Kannst du ___ helfen?",
+    "choices": [
+      "mir",
+      "dir",
+      "ihm",
+      "uns"
+    ],
+    "correctIndex": 0,
+    "explanation": "helfen takes a Dativ object; ich → mir."
+  },
+  {
+    "id": "verben-mit-dativ-02",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Kleid gefällt ___.",
+    "choices": [
+      "mir",
+      "dir",
+      "ihm",
+      "uns"
+    ],
+    "correctIndex": 0,
+    "explanation": "gefallen takes a Dativ object; ich → mir."
+  },
+  {
+    "id": "verben-mit-dativ-03",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich helfe ___. (du)",
+    "choices": [
+      "mir",
+      "dir",
+      "ihm",
+      "euch"
+    ],
+    "correctIndex": 1,
+    "explanation": "helfen takes a Dativ object; du → dir."
+  },
+  {
+    "id": "verben-mit-dativ-04",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Ich danke ___. (du)",
+    "choices": [
+      "mir",
+      "dir",
+      "ihr",
+      "euch"
+    ],
+    "correctIndex": 1,
+    "explanation": "danken takes a Dativ object; du → dir."
+  },
+  {
+    "id": "verben-mit-dativ-05",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Die Schuhe passen ___ nicht. (sie = she)",
+    "choices": [
+      "ihm",
+      "ihr",
+      "ihnen",
+      "uns"
+    ],
+    "correctIndex": 1,
+    "explanation": "passen takes a Dativ object; sie (she) → ihr."
+  },
+  {
+    "id": "verben-mit-dativ-06",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Buch gehört ___ Lehrer.",
+    "choices": [
+      "der",
+      "den",
+      "dem",
+      "die"
+    ],
+    "correctIndex": 2,
+    "explanation": "gehören takes a Dativ object; masculine der Lehrer becomes dem Lehrer."
+  },
+  {
+    "id": "verben-mit-dativ-07",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Die Suppe schmeckt ___. (wir)",
+    "choices": [
+      "mir",
+      "dir",
+      "uns",
+      "euch"
+    ],
+    "correctIndex": 2,
+    "explanation": "schmecken takes a Dativ object; wir → uns."
+  },
+  {
+    "id": "verben-mit-dativ-08",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Der Kopf tut ___ weh. (er)",
+    "choices": [
+      "ihm",
+      "ihr",
+      "ihnen",
+      "uns"
+    ],
+    "correctIndex": 0,
+    "explanation": "wehtun takes a Dativ object; er → ihm."
+  },
+  {
+    "id": "verben-mit-dativ-09",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "Wir gratulieren ___! (du)",
+    "choices": [
+      "mir",
+      "dir",
+      "euch",
+      "ihm"
+    ],
+    "correctIndex": 1,
+    "explanation": "gratulieren takes a Dativ object; du → dir."
+  },
+  {
+    "id": "verben-mit-dativ-10",
+    "topicId": "verben-mit-dativ",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Kleid steht ___ gut. (du)",
+    "choices": [
+      "mir",
+      "dir",
+      "euch",
+      "ihm"
+    ],
+    "correctIndex": 1,
+    "explanation": "stehen (to suit) takes a Dativ object; du → dir."
+  },
+  {
+    "id": "verben-stammvokalwechsel-01",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ nach Hause. (fahren)",
+    "choices": [
+      "fahrt",
+      "fährt",
+      "fahre",
+      "fahren"
+    ],
+    "correctIndex": 1,
+    "explanation": "fahren changes a→ä in du/er: er fährt."
+  },
+  {
+    "id": "verben-stammvokalwechsel-02",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ du Englisch? (sprechen)",
+    "choices": [
+      "Sprechst",
+      "Sprichst",
+      "Sprecht",
+      "Spreche"
+    ],
+    "correctIndex": 1,
+    "explanation": "sprechen changes e→i in du/er: du sprichst."
+  },
+  {
+    "id": "verben-stammvokalwechsel-03",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie (she) ___ ein Buch. (lesen)",
+    "choices": [
+      "lest",
+      "liest",
+      "lese",
+      "lesen"
+    ],
+    "correctIndex": 1,
+    "explanation": "lesen changes e→ie in du/er: sie liest."
+  },
+  {
+    "id": "verben-stammvokalwechsel-04",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Du ___ einen Apfel. (essen)",
+    "choices": [
+      "esst",
+      "isst",
+      "esse",
+      "essen"
+    ],
+    "correctIndex": 1,
+    "explanation": "essen changes e→i in du/er: du isst."
+  },
+  {
+    "id": "verben-stammvokalwechsel-05",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Er ___ den Bus. (nehmen)",
+    "choices": [
+      "nimmt",
+      "nehmt",
+      "nehme",
+      "nehmen"
+    ],
+    "correctIndex": 0,
+    "explanation": "nehmen changes e→i in du/er: er nimmt."
+  },
+  {
+    "id": "verben-stammvokalwechsel-06",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ du mir das Salz? (geben)",
+    "choices": [
+      "Gebst",
+      "Gibst",
+      "Gebt",
+      "Gebe"
+    ],
+    "correctIndex": 1,
+    "explanation": "geben changes e→i in du/er: du gibst."
+  },
+  {
+    "id": "verben-stammvokalwechsel-07",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Das Kind ___ viel. (schlafen)",
+    "choices": [
+      "schlaft",
+      "schläft",
+      "schlafe",
+      "schlafen"
+    ],
+    "correctIndex": 1,
+    "explanation": "schlafen changes a→ä in du/er: es schläft."
+  },
+  {
+    "id": "verben-stammvokalwechsel-08",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Wir ___ nach Berlin. (fahren)",
+    "choices": [
+      "fahren",
+      "fährt",
+      "fahrt",
+      "fährst"
+    ],
+    "correctIndex": 0,
+    "explanation": "The vowel change only happens in du/er — wir keeps the original vowel: wir fahren."
+  },
+  {
+    "id": "verben-stammvokalwechsel-09",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "hard",
+    "prompt": "Ihr ___ zu schnell. (sprechen)",
+    "choices": [
+      "sprecht",
+      "sprichst",
+      "spricht",
+      "sprich"
+    ],
+    "correctIndex": 0,
+    "explanation": "The vowel change only happens in du/er — ihr keeps the original vowel: ihr sprecht."
+  },
+  {
+    "id": "verben-stammvokalwechsel-10",
+    "topicId": "verben-stammvokalwechsel",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "Sie (she) ___ die Zeitung. (lesen)",
+    "choices": [
+      "lest",
+      "liest",
+      "lesen",
+      "lese"
+    ],
+    "correctIndex": 1,
+    "explanation": "lesen changes e→ie in du/er: sie liest."
+  },
+  {
+    "id": "w-fragen-01",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ ist das? (who)",
+    "choices": [
+      "Wer",
+      "Was",
+      "Wo",
+      "Wie"
+    ],
+    "correctIndex": 0,
+    "explanation": "wer asks who."
+  },
+  {
+    "id": "w-fragen-02",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ machst du? (what)",
+    "choices": [
+      "Wer",
+      "Was",
+      "Wann",
+      "Wie"
+    ],
+    "correctIndex": 1,
+    "explanation": "was asks what."
+  },
+  {
+    "id": "w-fragen-03",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ wohnst du? (where)",
+    "choices": [
+      "Wo",
+      "Wohin",
+      "Woher",
+      "Wann"
+    ],
+    "correctIndex": 0,
+    "explanation": "wo asks where (static location)."
+  },
+  {
+    "id": "w-fragen-04",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ beginnt der Kurs? (when)",
+    "choices": [
+      "Wo",
+      "Wann",
+      "Warum",
+      "Wie"
+    ],
+    "correctIndex": 1,
+    "explanation": "wann asks when."
+  },
+  {
+    "id": "w-fragen-05",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ lernst du Deutsch? (why)",
+    "choices": [
+      "Wie",
+      "Wann",
+      "Warum",
+      "Wer"
+    ],
+    "correctIndex": 2,
+    "explanation": "warum asks why."
+  },
+  {
+    "id": "w-fragen-06",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "easy",
+    "prompt": "___ heißen Sie? (how)",
+    "choices": [
+      "Wie",
+      "Was",
+      "Wer",
+      "Wo"
+    ],
+    "correctIndex": 0,
+    "explanation": "wie asks how."
+  },
+  {
+    "id": "w-fragen-07",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ kommst du? (from where)",
+    "choices": [
+      "Wo",
+      "Wohin",
+      "Woher",
+      "Wann"
+    ],
+    "correctIndex": 2,
+    "explanation": "woher asks from where (origin) — don't confuse it with wohin."
+  },
+  {
+    "id": "w-fragen-08",
+    "topicId": "w-fragen",
+    "level": "a1",
+    "difficulty": "medium",
+    "prompt": "___ gehst du? (to where)",
+    "choices": [
+      "Wo",
+      "Wohin",
+      "Woher",
+      "Wann"
+    ],
+    "correctIndex": 1,
+    "explanation": "wohin asks to where (destination) — don't confuse it with woher."
+  },
+  {
+    "id": "wechselpraepositionen-01",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich lege das Buch auf ___ Tisch. (wohin?)",
+    "choices": [
+      "den",
+      "dem",
+      "der",
+      "des"
+    ],
+    "correctIndex": 0,
+    "explanation": "wohin? (movement) with auf takes Akkusativ: den Tisch."
+  },
+  {
+    "id": "wechselpraepositionen-02",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Das Buch liegt auf ___ Tisch. (wo?)",
+    "choices": [
+      "dem",
+      "den",
+      "der",
+      "des"
+    ],
+    "correctIndex": 0,
+    "explanation": "wo? (location) with auf takes Dativ: dem Tisch."
+  },
+  {
+    "id": "wechselpraepositionen-03",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Er geht in ___ Küche. (wohin?)",
+    "choices": [
+      "die",
+      "der",
+      "den",
+      "das"
+    ],
+    "correctIndex": 0,
+    "explanation": "Movement into a feminine noun (die Küche) with in takes Akkusativ: die Küche."
+  },
+  {
+    "id": "wechselpraepositionen-04",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Er ist in ___ Küche. (wo?)",
+    "choices": [
+      "der",
+      "die",
+      "dem",
+      "den"
+    ],
+    "correctIndex": 0,
+    "explanation": "Static location in a feminine noun with in takes Dativ: der Küche."
+  },
+  {
+    "id": "wechselpraepositionen-05",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Welche Frage zeigt, dass Akkusativ gebraucht wird?",
+    "choices": [
+      "Wohin?",
+      "Wo?",
+      "Wann?",
+      "Warum?"
+    ],
+    "correctIndex": 0,
+    "explanation": "wohin? (direction/destination) signals Akkusativ with Wechselpräpositionen."
+  },
+  {
+    "id": "wechselpraepositionen-06",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir gehen ___ Kino. (wohin?, in + das)",
+    "choices": [
+      "ins",
+      "im",
+      "in der",
+      "in dem"
+    ],
+    "correctIndex": 0,
+    "explanation": "in + das contracts to ins for movement: ins Kino."
+  },
+  {
+    "id": "wechselpraepositionen-07",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir sind ___ Kino. (wo?, in + dem)",
+    "choices": [
+      "im",
+      "ins",
+      "in das",
+      "in den"
+    ],
+    "correctIndex": 0,
+    "explanation": "in + dem contracts to im for location: im Kino."
+  },
+  {
+    "id": "wechselpraepositionen-08",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Welche Präposition gehört NICHT zu den Wechselpräpositionen?",
+    "choices": [
+      "für",
+      "an",
+      "über",
+      "zwischen"
+    ],
+    "correctIndex": 0,
+    "explanation": "für always takes Akkusativ; it's not one of the nine two-way prepositions."
+  },
+  {
+    "id": "wechselpraepositionen-09",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Die Katze sitzt ___ dem Stuhl. (wo?, unter)",
+    "choices": [
+      "unter",
+      "unter den",
+      "unters",
+      "unterm"
+    ],
+    "correctIndex": 0,
+    "explanation": "unter dem Stuhl already shows Dativ (dem) for static location — unter is the correct preposition here."
+  },
+  {
+    "id": "wechselpraepositionen-10",
+    "topicId": "wechselpraepositionen",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich stelle die Vase ___ Tisch. (wohin?, auf)",
+    "choices": [
+      "auf den",
+      "auf dem",
+      "auf der",
+      "auf des"
+    ],
+    "correctIndex": 0,
+    "explanation": "stellen implies movement to a destination, so auf takes Akkusativ: auf den Tisch."
+  },
+  {
+    "id": "zu-infinitiv-01",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Ich habe vergessen, dich ___. (anrufen)",
+    "choices": [
+      "anzurufen",
+      "zu anrufen",
+      "anrufen zu",
+      "zu rufen an"
+    ],
+    "correctIndex": 0,
+    "explanation": "Separable verbs insert zu between prefix and stem, written as one word: anzurufen."
+  },
+  {
+    "id": "zu-infinitiv-02",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Es macht Spaß, Deutsch ___ lernen.",
+    "choices": [
+      "zu",
+      "um",
+      "für",
+      "an"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plain zu-Infinitiv after an adjective/expression: zu lernen."
+  },
+  {
+    "id": "zu-infinitiv-03",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Ich lerne Deutsch, ___ in Deutschland zu arbeiten.",
+    "choices": [
+      "um",
+      "zu",
+      "damit",
+      "weil"
+    ],
+    "correctIndex": 0,
+    "explanation": "um...zu expresses purpose ('in order to')."
+  },
+  {
+    "id": "zu-infinitiv-04",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Welches Verb braucht KEIN zu vor dem Infinitiv?",
+    "choices": [
+      "gehen",
+      "versuchen",
+      "hoffen",
+      "vergessen"
+    ],
+    "correctIndex": 0,
+    "explanation": "gehen (like lassen, sehen, hören, and modal verbs) never takes zu: Wir gehen einkaufen."
+  },
+  {
+    "id": "zu-infinitiv-05",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Vergiss nicht, ___! (einkaufen)",
+    "choices": [
+      "einzukaufen",
+      "zu einkaufen",
+      "einkaufen zu",
+      "zu kaufen ein"
+    ],
+    "correctIndex": 0,
+    "explanation": "zu slots inside the separable verb: ein + zu + kaufen → einzukaufen."
+  },
+  {
+    "id": "zu-infinitiv-06",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Sie hofft, den Job ___ bekommen.",
+    "choices": [
+      "zu",
+      "um",
+      "für",
+      "an"
+    ],
+    "correctIndex": 0,
+    "explanation": "hoffen takes a plain zu-Infinitiv: zu bekommen."
+  },
+  {
+    "id": "zu-infinitiv-07",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "easy",
+    "prompt": "Es ist wichtig, Deutsch ___ lernen.",
+    "choices": [
+      "zu",
+      "um zu",
+      "für",
+      "an zu"
+    ],
+    "correctIndex": 0,
+    "explanation": "wichtig + zu-Infinitiv: wichtig, zu lernen."
+  },
+  {
+    "id": "zu-infinitiv-08",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "hard",
+    "prompt": "Welche Verbgruppe nimmt NIE ein zu vor dem Infinitiv?",
+    "choices": [
+      "Modalverben",
+      "Verben mit sich",
+      "Reflexive Verben",
+      "Trennbare Verben"
+    ],
+    "correctIndex": 0,
+    "explanation": "Modal verbs (können, müssen, wollen...) never take zu before the infinitive."
+  },
+  {
+    "id": "zu-infinitiv-09",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Was drückt „um...zu“ aus?",
+    "choices": [
+      "einen Zweck",
+      "einen Grund",
+      "eine Bedingung",
+      "eine Zeit"
+    ],
+    "correctIndex": 0,
+    "explanation": "um...zu expresses purpose, like English 'in order to'."
+  },
+  {
+    "id": "zu-infinitiv-10",
+    "topicId": "zu-infinitiv",
+    "level": "a2",
+    "difficulty": "medium",
+    "prompt": "Wir gehen ___.  (einkaufen, gehen + Infinitiv)",
+    "choices": [
+      "einkaufen",
+      "zu einkaufen",
+      "einzukaufen",
+      "kaufen zu ein"
+    ],
+    "correctIndex": 0,
+    "explanation": "gehen pairs directly with the plain infinitive, no zu: Wir gehen einkaufen."
+  }
+]
