@@ -1,6 +1,6 @@
 # ADR 007 — Daily Contextual Reading Corpus
 
-**Status:** Accepted
+**Status:** Accepted  
 **Implementation:** `scripts/build-daily-texts.mjs` →
 `data/sources/daily-texts.src.json` (agent-authored) → `data/daily-texts.json`;
 `src/lib/daily.ts`, `src/lib/daily-texts.ts`, `src/components/DailyReading/`,
