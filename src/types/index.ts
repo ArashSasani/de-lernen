@@ -55,7 +55,8 @@ export type GrammarCategory =
   | 'negation'
   | 'adverbien'
   | 'verben-kasus'
-  | 'zahlen';
+  | 'zahlen'
+  | 'adjektive';
 
 export interface GrammarTable {
   caption?: string;
@@ -71,6 +72,7 @@ export interface GrammarExample {
 export interface GrammarTopic {
   id: string;
   category: GrammarCategory;
+  level: Level;
   title: string;
   summary: string;
   explanation: string;

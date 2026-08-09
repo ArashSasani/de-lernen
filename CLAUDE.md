@@ -30,6 +30,14 @@ User: one person. No multi-user auth, no user database. A single password gate i
    unless explicitly asked — just leave finished work in the working tree. `.gitignore` keeps
    secrets, build output, and generated caches out of any commit the user makes. See README →
    "Git".
+7. **No private-planning language in tracked docs.** `docs/new/` and any other private/scratch
+   spec directories are gitignored and stay that way. Tracked docs (README.md, CLAUDE.md,
+   `docs/adrs/*.md`) must **never** reference internal milestone labels (`M1`, `M2`, "v2 spec",
+   "next-phase plan", etc.) or link to gitignored paths. Describe features in their finished
+   state, not by the increment that delivered them — a reader coming to the repo cold shouldn't
+   see planning artifacts. When implementing a milestone from `docs/new/`, land the code and
+   update tracked docs to describe the resulting behavior; leave the milestone label in the
+   private spec.
 
 ## Architecture
 
@@ -107,7 +115,10 @@ newest-wins by `lastSeen`; `starred` is OR-merged so a bookmark is never lost ac
 See [ADR 008](docs/adrs/008-dictation-spelling-exercise.md).
 
 Grammar types (`GrammarCategory`, `GrammarTable`, `GrammarExample`, `GrammarTopic`) live in
-`src/types/index.ts` and are imported from `data/grammar.json` by `src/lib/grammar.ts`. Grammar
+`src/types/index.ts` and are imported from `data/grammar.json` by `src/lib/grammar.ts`. Every
+`GrammarTopic` carries a `level: Level` (like `DailyText.level` — one level per topic, not
+`Word.levels[]`, since a hand-authored topic isn't merged across sources); `/grammar` exposes an
+All/A1/A2 chip row (`LEVEL_CHIPS` in `page.helpers.ts`) alongside the category accordions. Grammar
 **reference** is read-only with no progress track. The grammar **quiz** (`QuizQuestion`,
 `GrammarQuizTopicProgress`, `GrammarQuizProgressMap` in `src/types/grammar-quiz.ts`) adds a third
 **local-only** progress track — its own IndexedDB store (`grammar-quiz`), keyed by topic id, no
@@ -158,18 +169,29 @@ tradeoffs (no refresh tokens, stolen-token window, `localStorage` vs cookie). Ke
 
 ## Grammar quiz spec (`src/lib/grammar-quiz.ts`)
 
-See **[ADR 010](docs/adrs/010-grammar-quiz.md)** for the full rationale. Key facts:
+Static, build-time-verified item bank. See **[ADR 010](docs/adrs/010-grammar-quiz.md)**. Key facts:
 
-- **Zero runtime LLM.** Questions are generated on-device from `grammar.json` (+ real nouns from
-  `words.json`) by ~20 pure template generators in a `GENERATORS` registry; topics without a
-  bespoke generator fall back to `generateFromExample`. **Multiple-choice only** (`choices` +
-  `correctIndex`) — no free-text fill-in.
+- **Zero runtime LLM, questions are frozen data, not generated code.** Each item is
+  `{ id, topicId, level, difficulty, prompt, choices, correctIndex, explanation }`. Authored once
+  into `data/sources/grammar-bank.src.json`, grounded in each topic's `grammar.json`
+  title/explanation/tables/examples, and frozen by `scripts/build-grammar-bank.mjs` into
+  `data/grammar-bank.json` (imported like `words.json`/`daily-texts.json`).
+- **Verification = a deterministic hard gate, not build-time answer-proving.** The build script
+  checks topicId validity + quizzability, level/difficulty enums, 3–4 unique non-empty choices,
+  `correctIndex` in range, non-empty `explanation`, globally unique `id`, no duplicate prompt per
+  topic, and a min-items-per-topic floor (8) — exits non-zero on any problem. Correctness itself is
+  human/AI-reviewed once during authoring and frozen, like V1's hand-written `GOETHE_EN`.
+  **Multiple-choice only** (`choices` + `correctIndex`) — no free-text fill-in.
+- **`src/lib/grammar-quiz.ts` is a thin lookup** over the frozen bank: `generateQuestionsForTopic`
+  filters by `topicId` + shuffles + slices; `allQuizzableTopicIds` returns the distinct topic ids
+  present in the bank; `isQuizzableTopic` checks bank membership. No `GENERATORS` registry, no
+  `Math.random` distractor-picking.
 - **Two entry points, one route.** `/grammar` links to a per-topic quiz
   (`/grammar/quiz?topic=<id>`, up to 10 questions) and a smart mix (`/grammar/quiz`, ~12
   questions). The single page branches on `searchParams.get('topic')` — no `[topicId]` segment.
-- **Smart-mix prioritization** (`buildSmartQuiz`): tiered, **struggling-first** —
-  (0) struggling `attempts≥2 & accuracy<0.7`, (1) never-seen `attempts===0`, (2) stale `>3d`,
-  (3) rest; ~2 questions/topic until `QUIZ_SESSION_SIZE = 12`.
+- **Smart-mix prioritization** (`buildSmartQuiz`, unchanged by the bank swap): tiered,
+  **struggling-first** — (0) struggling `attempts≥2 & accuracy<0.7`, (1) never-seen
+  `attempts===0`, (2) stale `>3d`, (3) rest; ~2 questions/topic until `QUIZ_SESSION_SIZE = 12`.
 - **Local-only progress**, keyed by topic id, in its own `grammar-quiz` IndexedDB store. No KV
   sync, no server route, no auth/merge change — additive, like dictation.
 
@@ -314,7 +336,7 @@ src/
     words.ts             # import words.json; wordById + source-filter helper
     daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
     grammar.ts           # import grammar.json; grammarTopics, topicsByCategory, grammarTopicById
-    grammar-quiz.ts      # template question generators + GENERATORS registry; generateQuestionsForTopic / allQuizzableTopicIds (zero runtime LLM)
+    grammar-quiz.ts      # thin lookup over the frozen grammar-bank.json; generateQuestionsForTopic / allQuizzableTopicIds / isQuizzableTopic
     grammar-quiz-sync.ts # IndexedDB load/save for GrammarQuizProgressMap (local-only, no KV)
     daily.ts             # strugglingIds / scoreText / pickDailyText + once-per-day localStorage gating
     leitner.ts           # intervals, isDue, onGood/onMiss/onEasy, counts
@@ -340,7 +362,7 @@ src/
     stats.ts             # StatBar
     auth.ts              # LoginResult
     dictation.ts         # DictationWordProgress, DictationProgressMap
-    grammar-quiz.ts      # QuizQuestion, GrammarQuizTopicProgress, GrammarQuizProgressMap
+    grammar-quiz.ts      # QuizQuestion, QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap
   __tests__/             # lib-level Jest tests (not co-located)
     leitner.test.ts      # Leitner transition assertions
     merge.test.ts        # mergeProgress newest-wins assertions
@@ -359,8 +381,9 @@ scripts/
   extract-goethe-a2.mjs  # parse goethe A2 text → goethe-a2.json (A2 layout variant)
   build-words.mjs        # refine + merge → words.json + changelog.json
   build-daily-texts.mjs  # annotate + validate daily-texts.src.json → daily-texts.json
+  build-grammar-bank.mjs # hard-gate validate + freeze grammar-bank.src.json → grammar-bank.json
   gen-icons.mjs          # generate PWA icons + apple-touch-icon.png
-data/    sources/ (<level>/*.pdf + *.json per level, e.g. a1/, a2/; _text/ [gitignored]; daily-texts.src.json stays at root), words.json, changelog.json, daily-texts.json, grammar.json
+data/    sources/ (<level>/*.pdf + *.json per level, e.g. a1/, a2/; _text/ [gitignored]; daily-texts.src.json and grammar-bank.src.json stay at root), words.json, changelog.json, daily-texts.json, grammar.json, grammar-bank.json
 ```
 
 ## PWA notes

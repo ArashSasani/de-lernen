@@ -3,6 +3,7 @@ import {
   splitParagraphs,
   matchesTopic,
   filterGroups,
+  filterGroupsByLevel,
   ALLOWED_CATEGORIES,
 } from './page.helpers';
 import type { CategoryGroup } from '@/lib/grammar';
@@ -17,6 +18,7 @@ function makeGroup(
   const topics: GrammarTopic[] = Array.from({ length: count }, (_, i) => ({
     id: `${category}-${i}`,
     category,
+    level: 'a1',
     title: `Title ${i}`,
     summary: `Summary ${i}`,
     explanation: `Explanation ${i}`,
@@ -80,6 +82,7 @@ describe('matchesTopic', () => {
   const base: import('@/types').GrammarTopic = {
     id: 'test',
     category: 'verben',
+    level: 'a1',
     title: 'Dativ',
     summary: 'Uses mir, dir, ihm',
     explanation: 'The dative case marks the indirect object.',
@@ -125,6 +128,7 @@ describe('filterGroups', () => {
           {
             id: 't1',
             category: 'verben' as import('@/types').GrammarCategory,
+            level: 'a1' as import('@/types').Level,
             title: 'seit',
             summary: '',
             explanation: '',
@@ -135,6 +139,7 @@ describe('filterGroups', () => {
           {
             id: 't2',
             category: 'verben' as import('@/types').GrammarCategory,
+            level: 'a1' as import('@/types').Level,
             title: 'Imperativ',
             summary: '',
             explanation: '',
@@ -161,6 +166,48 @@ describe('filterGroups', () => {
   });
 });
 
+describe('filterGroupsByLevel', () => {
+  const a1Group: CategoryGroup = {
+    category: 'verben',
+    label: 'Verben',
+    topics: [
+      {
+        ...makeGroup('verben', 'Verben', 1).topics[0],
+        id: 'a1-topic',
+        level: 'a1',
+      },
+    ],
+  };
+  const mixedGroup: CategoryGroup = {
+    category: 'pronomen',
+    label: 'Pronomen',
+    topics: [
+      {
+        ...makeGroup('pronomen', 'Pronomen', 1).topics[0],
+        id: 'a2-topic',
+        level: 'a2',
+      },
+    ],
+  };
+
+  it('returns all groups unchanged when filter is "all"', () => {
+    const groups = [a1Group, mixedGroup];
+    expect(filterGroupsByLevel(groups, 'all')).toBe(groups);
+  });
+
+  it('keeps only topics matching the selected level', () => {
+    const result = filterGroupsByLevel([a1Group, mixedGroup], 'a1');
+    expect(result).toHaveLength(1);
+    expect(result[0].topics[0].id).toBe('a1-topic');
+  });
+
+  it('drops groups with no topics at the selected level', () => {
+    const result = filterGroupsByLevel([a1Group, mixedGroup], 'a2');
+    expect(result).toHaveLength(1);
+    expect(result[0].topics[0].id).toBe('a2-topic');
+  });
+});
+
 describe('grammar data integrity', () => {
   it('every topic id is unique', () => {
     const ids = grammarTopics.map((t) => t.id);
@@ -172,6 +219,13 @@ describe('grammar data integrity', () => {
     const allowed = new Set<string>(ALLOWED_CATEGORIES);
     for (const topic of grammarTopics) {
       expect(allowed.has(topic.category)).toBe(true);
+    }
+  });
+
+  it('every topic has a valid level', () => {
+    const allowed = new Set(['a1', 'a2', 'b1']);
+    for (const topic of grammarTopics) {
+      expect(allowed.has(topic.level)).toBe(true);
     }
   });
 });

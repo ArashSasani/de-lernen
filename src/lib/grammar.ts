@@ -19,6 +19,7 @@ const CATEGORY_ORDER: { category: GrammarCategory; label: string }[] = [
   { category: 'adverbien', label: 'Adverbien' },
   { category: 'verben-kasus', label: 'Verben mit Kasus' },
   { category: 'zahlen', label: 'Zahlen' },
+  { category: 'adjektive', label: 'Adjektive' },
 ];
 
 export function topicsByCategory(): CategoryGroup[] {

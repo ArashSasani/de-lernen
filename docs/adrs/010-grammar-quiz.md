@@ -2,13 +2,16 @@
 
 **Status:** Accepted  
 **Implementation:** `src/types/grammar-quiz.ts` (question + progress types),
-`src/lib/grammar-quiz.ts` (template question generators + registry),
+`src/lib/grammar-quiz.ts` (thin lookup over the frozen item bank),
 `src/lib/grammar-quiz-sync.ts` (IndexedDB load/save, local-only),
 `src/hooks/useGrammarQuizProgress.ts` (`recordAttempt` glue),
 `src/app/grammar/quiz/` (page + helpers + tests),
 `src/components/GrammarQuizCard/` (multiple-choice card + helpers + tests),
 `src/app/grammar/page.tsx` (per-topic + smart-quiz entry points),
-`src/lib/idb.ts` (`grammar-quiz` object store)
+`src/lib/idb.ts` (`grammar-quiz` object store),
+`data/sources/grammar-bank.src.json` (authored source),
+`data/grammar-bank.json` (frozen build output),
+`scripts/build-grammar-bank.mjs` (build-time validation + freeze)
 
 ## Context
 
@@ -19,35 +22,52 @@ the learner can test each topic and get a smart mix of the topics they're weakes
 
 Three constraints shape the design — the same ones that shape every other feature here:
 
-- **Invariant 1 — zero runtime LLM.** Questions must be generated on-device from data already in
-  the repo (`grammar.json`, `words.json`). No question-generation API call, ever.
+- **Invariant 1 — zero runtime LLM.** Questions are frozen data, not generated code. No
+  question-generation API call, ever.
 - **Mirror the dictation track's shape (ADR 008), not the Leitner track.** Like dictation, quiz
   practice is a self-test with attempts/correct/streak counters — not a spaced-repetition schedule.
   Unlike dictation, though, the quiz track stays **local-only** with no KV sync: the data is cheap
   to regenerate, low-stakes, and not worth the per-device merge complexity. (Dictation itself was
   later upgraded to KV sync — see ADR 008 — but the quiz track has not, and that asymmetry is
   intentional.)
-- **Build on the grammar content already authored.** No new authored artifact — the quiz reads
-  the same `data/grammar.json` the reference page renders.
+- **Follow the build-time data pipeline pattern (ADR 002).** Author content once into a source
+  file, validate and freeze it with a deterministic build script, import the frozen output at
+  runtime — the same discipline used for `words.json` and `daily-texts.json`.
 
 ## Decision
 
-### Template question generators — zero runtime LLM
+### Static, build-time-verified item bank — zero runtime LLM
 
-`src/lib/grammar-quiz.ts` holds ~20 small, pure generator functions, one family per grammar
-shape (conjugation, modal verb, article gender, case declension, pronoun, preposition,
-Perfekt haben/sein, negation, separable verb, Imperativ, Partizip II, possessive, temporal/lokal
-preposition, W-Fragen…). Each takes a `GrammarTopic` and returns a `QuizQuestion` — a prompt, a
-set of multiple-choice `choices`, and the `correctIndex` — built deterministically from the
-topic's tables/examples plus, where useful, real nouns from `words.json` (e.g. article-gender
-questions pull actual `pos: 'noun'` words with a known `article`). A `GENERATORS` registry maps
-`topicId → generator`; any topic without a bespoke generator falls back to `generateFromExample`,
-which turns one of the topic's `{ de, en }` examples into a blank-the-key-word question.
-`allQuizzableTopicIds()` is the set of topics that either have a generator or ≥3 examples.
+Each quiz item is a `{ id, topicId, level, difficulty, prompt, choices, correctIndex,
+explanation }` record. Items are authored once into `data/sources/grammar-bank.src.json`, grounded
+in each topic's `grammar.json` title/explanation/tables/examples. The deterministic build script
+`scripts/build-grammar-bank.mjs` (`npm run build:grammar-bank`) validates every item and freezes
+the bank into `data/grammar-bank.json` — a committed build artifact imported at runtime by
+`src/lib/grammar-quiz.ts`, like `words.json` and `daily-texts.json`.
 
-This is the build-time-LLM / zero-runtime-LLM split (ADR 002) taken one step further: here there
-is **no** LLM at any stage — the questions are computed from already-authored data by ordinary
-code. Randomness (`shuffle`, distractor `pick`) means repeated visits to a topic vary.
+`src/lib/grammar-quiz.ts` is a thin lookup over the frozen bank: `generateQuestionsForTopic`
+filters by `topicId` + shuffles + slices; `allQuizzableTopicIds` returns the distinct topic ids
+present in the bank; `isQuizzableTopic` checks bank membership. Randomness (shuffle) means
+repeated visits to a topic vary the question order.
+
+### Build-time validation — deterministic hard gate
+
+The build script checks every item against:
+
+- `topicId` exists in `data/grammar.json` and isn't in `NO_QUIZ_TOPICS` (`nomen-grossschreibung`
+  is reference-only)
+- `level` ∈ `{a1, a2, b1}`, `difficulty` ∈ `{easy, medium, hard}`
+- `choices` has 3–4 unique, non-empty strings
+- `correctIndex` is an integer in range `[0, choices.length)`
+- `prompt` and `explanation` are non-empty
+- `id` is globally unique
+- `prompt` is unique within its `topicId` (no duplicate prompts per topic)
+- every quizzable topic has ≥ 8 items (the min-items floor)
+
+On any problem, the script prints all problems and exits non-zero. On success, it sorts items by
+`topicId` then `id`, writes `data/grammar-bank.json`, and prints a coverage summary (counts by
+topic, level, difficulty). Correctness itself is human-reviewed once during authoring and frozen,
+like the hand-written translations in `words.json`.
 
 ### Multiple-choice only
 
@@ -55,15 +75,17 @@ code. Randomness (`shuffle`, distractor `pick`) means repeated visits to a topic
 free-text fill-in mode was considered and **not** built: it needs answer-normalization (umlauts,
 articles, capitalization, synonyms) that is exactly the fuzzy work this app pushes to build time
 elsewhere, and the dictation track (ADR 008) already covers exact-spelling recall. Multiple-choice
-keeps grading trivially deterministic and the card simple. (`QuizQuestion.hint` exists in the type
-but the card does not render it — an English gloss was tried and removed as clutter.)
+keeps grading trivially deterministic and the card simple.
+
+After answering, the card shows an explanation panel: "Richtig!" or the correct answer on wrong,
+plus the item's `explanation` text — reinforcing _why_ the answer is what it is.
 
 ### Two entry points, one route
 
 Both entry points live on the existing `/grammar` page (ADR 009):
 
 - **Per-topic quiz** — each topic card links to `/grammar/quiz?topic=<id>` → `buildTopicQuiz`
-  generates up to 10 questions for that one topic.
+  picks up to 10 questions for that one topic.
 - **Smart mix** — the header links to `/grammar/quiz` (no `topic` param) → `buildSmartQuiz`
   builds a ~12-question session across topics, prioritized.
 
@@ -82,7 +104,7 @@ session from the top:
 3. **Everything else**
 
 Within a tier it breaks ties by accuracy (tier 1) or `lastSeen` (tiers 2–3), over a shuffled base
-so equal-priority topics rotate. It then generates ~2 questions per topic until the session size
+so equal-priority topics rotate. It then picks ~2 questions per topic until the session size
 (`QUIZ_SESSION_SIZE = 12`) is filled, and shuffles the result. This mirrors the dictation
 queue-builder's intent (ADR 008) — weak and unseen items first — adapted to per-topic counters.
 
@@ -120,14 +142,14 @@ other routes (ADR 005 / ADR 009).
 
 ## Consequences
 
-- **Invariants hold.** Zero runtime LLM (questions are computed from committed data);
-  offline-safe (generators + bundled JSON, precached route); no KV/auth/server changes.
-- **Practice without new content.** The quiz reuses `grammar.json` and `words.json` — adding or
-  editing a grammar topic automatically changes what can be quizzed; no second artifact to keep
-  in sync.
-- **Coverage scales with generators, with a safe floor.** A topic with a bespoke generator gets
-  rich, varied questions; any topic with ≥3 examples still gets `generateFromExample`. Adding a
-  new question style is one function + one registry entry.
+- **Invariants hold.** Zero runtime LLM (questions are frozen committed data);
+  offline-safe (bundled JSON, precached route); no KV/auth/server changes.
+- **Correctness is reviewable.** Every question is visible in the source file — unlike generated
+  questions, there is no hidden logic that could silently produce a wrong answer. The build gate
+  catches structural problems; content correctness is reviewed once during authoring.
+- **Adding content = editing one file + rebuilding.** New questions, new topics, or new levels are
+  added to `grammar-bank.src.json` and frozen with `npm run build:grammar-bank`. No code changes
+  needed, and the same min-8-per-topic gate applies uniformly across every level.
 - **Local-only is a deliberate limitation.** Quiz history does not follow the learner across
   devices. Accepted for the same reasons as dictation (ADR 008): low-stakes, regenerable, and not
   worth merge complexity. If this ever needs syncing, it would extend the KV schema the same way

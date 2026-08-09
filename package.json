@@ -16,6 +16,7 @@
     "extract:goethe:a2": "node scripts/extract-goethe-a2.mjs",
     "build:words": "node scripts/build-words.mjs",
     "build:daily": "node scripts/build-daily-texts.mjs",
+    "build:grammar-bank": "node scripts/build-grammar-bank.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test": "jest"

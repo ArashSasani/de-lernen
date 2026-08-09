@@ -9,7 +9,9 @@
 
 Learners drilling Leitner flashcards need a reference they can consult when they don't understand
 _why_ a word behaves a certain way — e.g. why "aufstehen" separates, or which article a noun takes.
-A concise, offline-available A1 grammar reference fills this need without adding runtime complexity.
+A concise, offline-available grammar reference fills this need without adding runtime complexity.
+Content spans A1 and A2 in the same static artifact; the grammar quiz (see
+[ADR 010](010-grammar-quiz.md)) is layered on top of it.
 
 Two constraints shape the design:
 
@@ -44,11 +46,16 @@ type GrammarCategory =
   | 'pronomen'
   | 'satzbau'
   | 'praepositionen'
-  | 'negation';
+  | 'negation'
+  | 'adverbien'
+  | 'verben-kasus'
+  | 'zahlen'
+  | 'adjektive';
 
 interface GrammarTopic {
   id: string; // stable slug
   category: GrammarCategory;
+  level: Level; // 'a1' | 'a2' | 'b1' — scopes each topic to exactly one level
   title: string; // e.g. "Präsens — regelmäßige Verben"
   summary: string; // one-line description shown in collapsed card
   explanation: string; // prose; \n\n = paragraph break
@@ -58,7 +65,10 @@ interface GrammarTopic {
 }
 ```
 
-All types live in `src/types/index.ts` per project convention.
+All types live in `src/types/index.ts` per project convention. `level` mirrors `DailyText.level`
+(not `Word.levels[]` — a hand-authored grammar topic belongs to exactly one level, it isn't merged
+across sources like a word can be) and lets `/grammar` filter topics by level the same way
+`FilterBar` filters words.
 
 ### UI — category sections with accordion cards
 
@@ -69,8 +79,10 @@ Layout:
 
 - **Per-category sections** (labelled headings) contain **expandable topic cards** (accordion):
   collapsed shows `title` + `summary`; expanded shows explanation paragraphs, tables
-  (`GrammarTableView`), examples (`GrammarExampleView`), and tips.
-- Pure logic (accordion toggle, paragraph split, active-group filter) lives in
+  (`GrammarTableView`), examples (`GrammarExampleView`), tips, and a small level badge (`a1`/`a2`).
+- A level chip row (All / A1 / A2, `LEVEL_CHIPS` in `page.helpers.ts`, mirroring
+  `FilterBar`'s `LEVEL_CHIPS`) filters the visible topics by `level`, composing with the search box.
+- Pure logic (accordion toggle, paragraph split, active-group filter, level filter) lives in
   `src/app/grammar/page.helpers.ts` with unit tests, keeping JSX free of logic per project
   convention.
 
@@ -92,8 +104,15 @@ force re-installation of the updated shell.
   no new server routes.
 - **No pipeline complexity.** Skipping a build script means `grammar.json` is edited directly.
   When content is updated, redeploy — same as any static file change.
-- **Data integrity net.** `page.helpers.test.ts` asserts every topic `id` is unique and every
-  `category` is in the allowed set, catching hand-edit mistakes before they reach production.
+- **Data integrity net.** `page.helpers.test.ts` asserts every topic `id` is unique, every
+  `category` is in the allowed set, and every `level` is valid, catching hand-edit mistakes before
+  they reach production.
+- **Adding a level is additive, same pattern.** New topics for a level (e.g. the A2 batch —
+  Perfekt vs. Präteritum, Nebensätze, Relativsätze, Komparativ/Superlativ, Wechselpräpositionen,
+  reflexive Verben, Modalverben im Präteritum, Possessivartikel im Dativ, Genitiv-Grundlagen,
+  Passiv Präsens, indirekte Fragen, zu-Infinitiv, je…desto) are appended to `grammar.json` with
+  the appropriate `level` — same authoring process, no schema change, and a new category (e.g.
+  `adjektive`) is added to the union only when a topic doesn't fit an existing one.
 - **Stale-on-schema-change.** If `GrammarTopic` needs a new field, update the type and the
   JSON together — no migration needed since there is no runtime database.
 - **Precedent for future static reference sections** (e.g. numbers, phrases, verb tables) —

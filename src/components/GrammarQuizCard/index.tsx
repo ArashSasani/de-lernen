@@ -75,20 +75,23 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
       )}
 
       {answered && (
-        <div className="flex items-center justify-between">
-          <p
-            className={`text-sm font-medium ${isCorrect ? 'text-emerald-400' : 'text-rose-400'}`}
-          >
-            {isCorrect
-              ? 'Richtig!'
-              : `Richtige Antwort: ${question.choices[question.correctIndex]}`}
-          </p>
-          <button
-            onClick={onNext}
-            className="rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
-          >
-            Next
-          </button>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <p
+              className={`text-sm font-medium ${isCorrect ? 'text-emerald-400' : 'text-rose-400'}`}
+            >
+              {isCorrect
+                ? 'Richtig!'
+                : `Richtige Antwort: ${question.choices[question.correctIndex]}`}
+            </p>
+            <button
+              onClick={onNext}
+              className="rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
+            >
+              Next
+            </button>
+          </div>
+          <p className="text-sm text-slate-400">{question.explanation}</p>
         </div>
       )}
     </div>

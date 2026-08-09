@@ -1,9 +1,16 @@
+import type { Level } from './index';
+
+export type QuizDifficulty = 'easy' | 'medium' | 'hard';
+
 export interface QuizQuestion {
+  id: string;
   topicId: string;
+  level: Level;
+  difficulty: QuizDifficulty;
   prompt: string;
   choices: string[];
   correctIndex: number;
-  hint?: string;
+  explanation: string;
 }
 
 export interface GrammarQuizTopicProgress {

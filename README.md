@@ -9,7 +9,6 @@ If you've got a few spare minutes—like some dead time on the **S-Bahn**—this
 It's a fun little vibe project, born from lots of brainstorming, and it's still a work in progress that I'm building in my spare time. The goal is to cover the **A1–B1** German levels, mainly to help people prepare for the exams.
 Feel free to fork the project, contribute, or share your ideas. Thanks! 😊
 
-
 ## What is this app anyway!
 
 A single-user, offline-first flashcard app for German vocabulary (A1, with A2 added), using
@@ -24,8 +23,8 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
   struggling words, with tap-for-gloss translations; browse the full corpus by level and topic.
 - **Diktat** (`/dictation`) — spelling/dictation drills targeting tricky German patterns
   (umlauts, ß, ie/ei, silent-h).
-- **Grammatik** (`/grammar`) — browsable A1 grammar reference plus an on-device,
-  multiple-choice practice quiz.
+- **Grammatik** (`/grammar`) — browsable A1/A2 grammar reference, filterable by level, plus an
+  on-device, multiple-choice practice quiz.
 
 <img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
 <br>
@@ -100,8 +99,9 @@ cp .env.example .env.local
 #   - KV_*: leave blank for now (sync just no-ops without them; everything else works)
 
 # 3. (One-time) build the static datasets from the sources
-npm run build:words   # merge the source PDFs' extracts → words.json
-npm run build:daily   # annotate + validate the daily reading corpus → daily-texts.json
+npm run build:words          # merge the source PDFs' extracts → words.json
+npm run build:daily          # annotate + validate the daily reading corpus → daily-texts.json
+npm run build:grammar-bank   # validate + freeze the grammar quiz item bank → grammar-bank.json
 
 # 4. Run
 npm run dev      # http://localhost:3000
@@ -145,15 +145,18 @@ de-lernen/
 │  ├─ sources/<level>/            ← put each level's source PDFs here (you provide them), e.g. a1/, a2/
 │  ├─ sources/<level>/*.json      ← normalized per-source extracts (generated), incl. `*_flagged.json`
 │  ├─ sources/daily-texts.src.json ← authored daily reading texts (source, stays at root)
+│  ├─ sources/grammar-bank.src.json ← authored grammar quiz items (source, stays at root)
 │  ├─ words.json                 ← final merged dataset across all levels (generated, committed)
 │  ├─ daily-texts.json           ← annotated daily reading corpus (generated, committed)
-│  ├─ grammar.json               ← A1 grammar reference (authored once, committed)
+│  ├─ grammar.json               ← A1/A2 grammar reference (authored once, committed)
+│  ├─ grammar-bank.json          ← frozen grammar quiz item bank (generated, committed)
 │  └─ changelog.json             ← record of every correction made (generated, committed)
 ├─ scripts/build-words.mjs       ← deterministic merge → words.json (globs data/sources/*/*.json)
 ├─ scripts/extract-telc.mjs      ← --source <level>.<part> [--level <level>] → data/sources/<level>/telc-*.json
 ├─ scripts/extract-goethe.mjs    ← --level <level> → data/sources/<level>/goethe-<level>.json (A1 layout)
 ├─ scripts/extract-goethe-a2.mjs ← A2 layout variant of the Goethe extractor → data/sources/a2/goethe-a2.json
 ├─ scripts/build-daily-texts.mjs ← annotate + validate → daily-texts.json
+├─ scripts/build-grammar-bank.mjs ← validate + freeze → grammar-bank.json
 ├─ scripts/gen-icons.mjs         ← generate PWA icons + apple-touch-icon.png
 ├─ public/                       ← manifest.json, sw.js, icons
 └─ src/
@@ -187,17 +190,17 @@ de-lernen/
   **Lesen** (the `/read` route) anytime to reread today's text or browse the full corpus, filtered
   by level (A1 / A2) and grouped by topic; there, every annotated word is tappable but struggling
   words are indigo and the rest are slate.
-- Open **Grammatik** (`/grammar`) for a browsable A1 grammar reference: verb conjugation,
-  articles & cases, pronouns, sentence structure, prepositions, and negation. Topics are grouped
-  by category with expandable cards showing rules, conjugation/declension tables, examples, and
-  tips. Read-only — no progress tracking, no sync. Content is authored once as static JSON
-  (`data/grammar.json`), bundled at build time. See
-  [ADR 009](docs/adrs/009-grammar-reference.md).
+- Open **Grammatik** (`/grammar`) for a browsable A1/A2 grammar reference: verb conjugation,
+  articles & cases, pronouns, sentence structure, prepositions, negation, adjectives, and more.
+  Topics are grouped by category with expandable cards showing rules, conjugation/declension
+  tables, examples, and tips, and can be filtered by level (All / A1 / A2). Read-only — no
+  progress tracking, no sync. Content is authored once as static JSON (`data/grammar.json`),
+  bundled at build time. See [ADR 009](docs/adrs/009-grammar-reference.md).
 - From **Grammatik**, practice with the **grammar quiz**: tap **Quiz** on any topic for a
   10-question drill on that topic, or **Smart Quiz** in the header for a ~12-question mix that
   prioritizes the topics you're weakest on (struggling first, then never-seen, then stale).
-  Questions are multiple-choice and generated on-device from the grammar tables and your
-  vocabulary — **no runtime LLM**. Quiz progress is tracked separately and stored locally in
+  Questions are multiple-choice, authored once into a static item bank and frozen at build
+  time — **no runtime LLM**. Quiz progress is tracked separately and stored locally in
   IndexedDB (no KV sync), like dictation. See [ADR 010](docs/adrs/010-grammar-quiz.md).
 
 See `CLAUDE.md` for the data model, and `docs/adrs/` for the design rationale behind each major
@@ -211,5 +214,5 @@ decision:
 - [ADR 006](docs/adrs/006-single-password-stateless-auth.md) — single-password, stateless JWT auth
 - [ADR 007](docs/adrs/007-daily-reading-corpus.md) — daily contextual reading corpus (build-time, zero-runtime matching)
 - [ADR 008](docs/adrs/008-dictation-spelling-exercise.md) — Dictation spelling exercise (gap algorithm, separate KV-synced progress track)
-- [ADR 009](docs/adrs/009-grammar-reference.md) — A1 grammar reference (static JSON, read-only, no progress)
-- [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (on-device template questions, local-only progress)
+- [ADR 009](docs/adrs/009-grammar-reference.md) — A1/A2 grammar reference (static JSON, read-only, no progress)
+- [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (static build-time-verified item bank, local-only progress)
