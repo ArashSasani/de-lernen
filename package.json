@@ -2,7 +2,7 @@
   "name": "de-lernen",
   "version": "0.1.0",
   "license": "MIT",
-  "private": true,
+  "author": "Arash Sasani",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
