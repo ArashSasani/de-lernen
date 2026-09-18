@@ -138,7 +138,8 @@ the installable app.
 
 ```
 de-lernen/
-├─ CLAUDE.md                ← durable spec / rules for the AI agent
+├─ CLAUDE.md                ← durable spec / rules for the AI agent (core + rules map)
+├─ .claude/rules/           ← topic-scoped spec files loaded alongside CLAUDE.md
 ├─ README.md                ← you are here
 ├─ docs/adrs/               ← Architecture Decision Records (design rationale)
 ├─ data/
@@ -203,8 +204,8 @@ de-lernen/
   time — **no runtime LLM**. Quiz progress is tracked separately and stored locally in
   IndexedDB (no KV sync), like dictation. See [ADR 010](docs/adrs/010-grammar-quiz.md).
 
-See `CLAUDE.md` for the data model, and `docs/adrs/` for the design rationale behind each major
-decision:
+See `CLAUDE.md` and `.claude/rules/` (e.g. `data-model.md`) for the data model, and `docs/adrs/`
+for the design rationale behind each major decision:
 
 - [ADR 001](docs/adrs/001-leitner-spaced-repetition.md) — Leitner spaced-repetition design
 - [ADR 002](docs/adrs/002-build-time-data-pipeline.md) — build-time data pipeline, zero runtime LLM
