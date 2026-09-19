@@ -1,25 +1,20 @@
 'use client';
 
-import { useLayoutEffect, useRef, useState } from 'react';
-import { CheckIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
 import type { DailyText } from '@/types';
-import { ARTICLE_COLOR } from '@/constants';
-import {
-  toSegments,
-  glossFor,
-  resolveHighlight,
-  shouldFlipBelow,
-  horizontalOffset,
-  type Gloss,
-} from './index.helpers';
+import { toSegments, resolveHighlight } from './index.helpers';
 import { useSpeech } from '@/hooks/useSpeech';
-import SpeakButton from '@/components/SpeakButton';
+import { useOnline } from '@/hooks/useOnline';
+import { useAiConfigured } from '@/hooks/useAiConfigured';
+import { isAiEnabled } from '@/lib/ai-prefs';
+import WordPopover from '@/components/WordPopover';
 
 export default function DailyReading({
   text,
   strugglingIds,
   highlightAll = false,
   onGrade,
+  onUnauthorized,
 }: {
   text: DailyText;
   // Study page: omit highlightAll (default false) — only words in this set
@@ -29,9 +24,18 @@ export default function DailyReading({
   strugglingIds?: ReadonlySet<string>;
   highlightAll?: boolean;
   onGrade?: (wordId: string) => void;
+  onUnauthorized?: () => void;
 }) {
   const [openId, setOpenId] = useState<string | null>(null);
   const { available, speaking, speak } = useSpeech();
+  // Read once here rather than once per highlighted span — a text can have
+  // dozens of spans, each of which would otherwise mount its own `online`
+  // listener pair and re-read localStorage on every render.
+  const online = useOnline();
+  // Deployed without ANTHROPIC_API_KEY: hide the AI chip row even if the
+  // per-device toggle is still on — the layer has nothing to call.
+  const aiConfigured = useAiConfigured(onUnauthorized);
+  const aiEnabled = isAiEnabled() && aiConfigured;
 
   const segments = toSegments(text.text, text.spans);
 
@@ -63,10 +67,10 @@ export default function DailyReading({
           );
 
           return shouldHighlight ? (
-            <Highlight
+            <WordPopover
               key={i}
               surface={seg.text}
-              gloss={glossFor(seg.wordId)}
+              wordId={seg.wordId}
               isStruggling={isStruggling}
               open={openId === `${seg.wordId}-${i}`}
               onToggle={() =>
@@ -85,6 +89,9 @@ export default function DailyReading({
               speakAvailable={available}
               speaking={speaking}
               onSpeak={speak}
+              onUnauthorized={onUnauthorized}
+              online={online}
+              aiEnabled={aiEnabled}
             />
           ) : (
             <span key={i}>{seg.text}</span>
@@ -92,96 +99,5 @@ export default function DailyReading({
         })}
       </p>
     </div>
-  );
-}
-
-function Highlight({
-  surface,
-  gloss,
-  isStruggling,
-  open,
-  onToggle,
-  onGrade,
-  speakAvailable,
-  speaking,
-  onSpeak,
-}: {
-  surface: string;
-  gloss: Gloss | undefined;
-  isStruggling: boolean;
-  open: boolean;
-  onToggle: () => void;
-  onGrade?: () => void;
-  speakAvailable: boolean;
-  speaking: boolean;
-  onSpeak: (text: string) => void;
-}) {
-  const style = isStruggling
-    ? 'bg-indigo-500/20 text-indigo-200 decoration-indigo-400/40 hover:bg-indigo-500/30'
-    : 'bg-slate-500/20 text-slate-300 decoration-slate-400/40 hover:bg-slate-500/30';
-  const buttonRef = useRef<HTMLButtonElement>(null);
-  const [placeBelow, setPlaceBelow] = useState(false);
-  const [xOffset, setXOffset] = useState(0);
-
-  useLayoutEffect(() => {
-    if (!open) return;
-    const rect = buttonRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    setPlaceBelow(shouldFlipBelow(rect.top));
-    setXOffset(horizontalOffset(rect.left + rect.width / 2, window.innerWidth));
-  }, [open]);
-
-  return (
-    <span className="relative z-[11] inline-block">
-      <button
-        ref={buttonRef}
-        type="button"
-        onClick={onToggle}
-        className={`rounded px-1 py-0.5 font-medium underline decoration-dotted underline-offset-2 ${style}`}
-      >
-        {surface}
-      </button>
-      {open && gloss && (
-        <span
-          style={{ transform: `translateX(calc(-50% + ${xOffset}px))` }}
-          className={`absolute left-1/2 z-[10] w-max max-w-[16rem] rounded-lg border border-white/10 bg-slate-800 px-3 py-2 text-center text-sm shadow-lg ${
-            placeBelow ? 'top-full mt-1' : 'bottom-full mb-1'
-          }`}
-        >
-          <span className="flex items-center justify-center gap-2 font-medium">
-            <span>
-              {gloss.article && (
-                <span className={`${ARTICLE_COLOR[gloss.article]} font-normal`}>
-                  {gloss.article}{' '}
-                </span>
-              )}
-              {gloss.lemma}
-            </span>
-            {speakAvailable && (
-              <SpeakButton
-                text={gloss.lemma}
-                speaking={speaking}
-                onSpeak={() => onSpeak(gloss.lemma)}
-              />
-            )}
-            {onGrade && (
-              <button
-                type="button"
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onGrade();
-                }}
-                className="flex items-center justify-center rounded-full border border-indigo-500/50 p-1 text-sm leading-none text-indigo-400 hover:border-indigo-400 hover:bg-indigo-500/20 active:bg-indigo-500/30"
-                aria-label="Mark as known"
-              >
-                <CheckIcon className="h-3.5 w-3.5" aria-hidden="true" />
-              </button>
-            )}
-          </span>
-          <span className="my-2 block border-t border-white/10" />
-          <span className="block text-slate-300">{gloss.en}</span>
-        </span>
-      )}
-    </span>
   );
 }

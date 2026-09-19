@@ -470,7 +470,7 @@
     "article": null,
     "plural": null,
     "en": "similar",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -519,7 +519,7 @@
     "article": null,
     "plural": null,
     "en": "to get angry",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Warum ärgerst du dich? - Ich ärgere mich, weil das Wetter schlecht ist."
     ],
@@ -554,7 +554,7 @@
     "article": null,
     "plural": null,
     "en": "African",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -605,7 +605,7 @@
     "article": null,
     "plural": null,
     "en": "active",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Peter ist sehr aktiv und macht viel Sport."
     ],
@@ -800,7 +800,7 @@
     "article": null,
     "plural": null,
     "en": "old",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Wie alt sind Sie?",
       "Mein Computer ist schon sehr alt.",
@@ -1101,7 +1101,7 @@
     "article": null,
     "plural": null,
     "en": "beginner",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -1226,7 +1226,7 @@
     "article": null,
     "plural": "Angehörigen",
     "en": "relative",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -1393,7 +1393,7 @@
     "article": null,
     "plural": null,
     "en": "to register",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Wo kann ich mich anmelden?",
       "Eine Anmeldung für diesen Kurs ist nicht mehr möglich."
@@ -1511,7 +1511,7 @@
     "article": null,
     "plural": null,
     "en": "caller",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -1609,7 +1609,7 @@
     "article": null,
     "plural": null,
     "en": "contact person",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -1639,7 +1639,7 @@
     "article": null,
     "plural": null,
     "en": "applicant",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -1948,7 +1948,7 @@
     "article": null,
     "plural": null,
     "en": "employer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -2239,7 +2239,7 @@
     "article": null,
     "plural": null,
     "en": "asian",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -2546,7 +2546,7 @@
     "article": null,
     "plural": null,
     "en": "exciting",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Die letzte Woche war sehr aufregend.",
       "Der Film ist nicht besonders aufregend."
@@ -2916,7 +2916,7 @@
     "article": null,
     "plural": null,
     "en": "excellent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -3112,7 +3112,7 @@
     "article": null,
     "plural": null,
     "en": "to rest",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ruh dich erst mal aus! Du bist sicher müde.",
       "Er ruht sich nach der Arbeit immer aus."
@@ -3238,7 +3238,7 @@
     "article": null,
     "plural": null,
     "en": "unscheduled",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -3406,7 +3406,7 @@
     "article": null,
     "plural": "Auszubildende",
     "en": "trainee",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -3497,7 +3497,7 @@
     "article": null,
     "plural": null,
     "en": "automatic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Achtung, die Türen schließen automatisch!"
     ],
@@ -3626,7 +3626,7 @@
     "article": null,
     "plural": null,
     "en": "babysitter",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -3779,7 +3779,7 @@
     "article": null,
     "plural": null,
     "en": "baker's assistant",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -3886,7 +3886,7 @@
     "article": null,
     "plural": null,
     "en": "soon",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Ich komme bald.",
       "Auf Wiedersehen! Bis bald!",
@@ -4024,7 +4024,7 @@
     "article": null,
     "plural": null,
     "en": "banker",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -4069,7 +4069,7 @@
     "article": null,
     "plural": null,
     "en": "in cash",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Muss ich bar zahlen oder geht‘s auch mit Karte?"
     ],
@@ -4102,7 +4102,7 @@
     "article": null,
     "plural": null,
     "en": "cashless",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -4363,7 +4363,7 @@
     "article": null,
     "plural": null,
     "en": "agent",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -4410,7 +4410,7 @@
     "article": null,
     "plural": null,
     "en": "to thank",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich möchte mich noch einmal sehr herzlich für Ihre Hilfe bedanken."
     ],
@@ -4478,7 +4478,7 @@
     "article": null,
     "plural": null,
     "en": "to hurry",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Kannst du dich bitte beeilen? Der Bus fährt gleich ab!"
     ],
@@ -4513,7 +4513,7 @@
     "article": null,
     "plural": null,
     "en": "satisfactory",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -4754,7 +4754,7 @@
     "article": null,
     "plural": null,
     "en": "acquaintance",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Ein Bekannter von mir heißt Klaus."
     ],
@@ -5055,7 +5055,7 @@
     "article": null,
     "plural": null,
     "en": "famous",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Thomas Müller ist ein berühmter Fußballspieler."
     ],
@@ -5093,7 +5093,7 @@
     "article": null,
     "plural": null,
     "en": "professionally",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -5198,7 +5198,7 @@
     "article": null,
     "plural": null,
     "en": "employed",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -5296,7 +5296,7 @@
     "article": null,
     "plural": null,
     "en": "to complain",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "ist es zu laut. Wo können wir uns beschweren?"
     ],
@@ -5313,7 +5313,7 @@
     "article": null,
     "plural": null,
     "en": "occupied / taken",
-    "pos": "adj",
+    "pos": "other",
     "examples": [
       "Ist dieser Platz frei? - Nein, er ist besetzt.",
       "Die Nummer ist immer besetzt.",
@@ -5474,7 +5474,7 @@
     "article": null,
     "plural": null,
     "en": "best",
-    "pos": "adj",
+    "pos": "other",
     "examples": [
       "der beste Schüler, die beste Freundin, das beste Buch"
     ],
@@ -5573,7 +5573,7 @@
     "article": null,
     "plural": null,
     "en": "best (the best)",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -5775,7 +5775,7 @@
     "article": null,
     "plural": null,
     "en": "to apply (for a job)",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich möchte mich um diese Stelle bewerben.",
       "Kannst du mir bei meiner Bewerbung helfen?"
@@ -5793,7 +5793,7 @@
     "article": null,
     "plural": null,
     "en": "applicant",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -6012,7 +6012,7 @@
     "article": null,
     "plural": null,
     "en": "cheap",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das Wörterbuch kostet nur fünf Euro. - Fünf Euro?",
       "Das ist aber billig!",
@@ -6121,7 +6121,7 @@
     "article": null,
     "plural": null,
     "en": "a little/a bit",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Können Sie bitte ein bisschen lauter sprechen?",
       "Ich spreche ein bisschen Französisch.",
@@ -6348,7 +6348,7 @@
     "article": null,
     "plural": "Blogs",
     "en": "blog",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Ich schreibe einen Blog über Mode."
     ],
@@ -7083,7 +7083,7 @@
     "article": null,
     "plural": null,
     "en": "colourful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Anna trägt gern bunte Kleider.",
       "Meine Wohnung ist sehr bunt: Das Wohnzimmer ist rot, die Küche grün und das Bad blau."
@@ -7500,7 +7500,7 @@
     "article": null,
     "plural": null,
     "en": "cousin",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -7607,7 +7607,7 @@
     "article": null,
     "plural": null,
     "en": "in contrast",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Ich bin dafür/dagegen."
     ],
@@ -7707,7 +7707,7 @@
     "article": null,
     "plural": null,
     "en": "next to it / beside it",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Du weißt doch, wo die Post ist. Daneben ist die Bank."
     ],
@@ -8006,7 +8006,7 @@
     "article": null,
     "plural": null,
     "en": "defective",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -8148,7 +8148,7 @@
     "article": null,
     "plural": null,
     "en": "clearly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Sprechen Sie bitte deutlich!",
       "Können Sie das bitte deutlicher schreiben? Ich kann das nicht lesen."
@@ -8297,7 +8297,7 @@
     "article": null,
     "plural": null,
     "en": "thief",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -8642,7 +8642,7 @@
     "article": null,
     "plural": null,
     "en": "outside",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Das Wetter ist so schön. Wollen wir draußen sitzen?",
       "Hunde müssen draußen bleiben."
@@ -8692,7 +8692,7 @@
     "article": null,
     "plural": null,
     "en": "urgent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Bitte kommen Sie schnell. Es ist dringend."
     ],
@@ -8711,7 +8711,7 @@
     "article": null,
     "plural": null,
     "en": "inside",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Wollen Sie drinnen oder draußen sitzen?",
       "Hier drinnen ist es sehr warm."
@@ -8779,7 +8779,7 @@
     "article": null,
     "plural": null,
     "en": "over there",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Da drüben ist die Haltestelle."
     ],
@@ -9027,7 +9027,7 @@
     "article": null,
     "plural": null,
     "en": "to shower",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich bade nicht so gern, ich dusche lieber.",
       "Möchten Sie sich duschen? Das Badezimmer ist dort hinten links."
@@ -9097,7 +9097,7 @@
     "article": null,
     "plural": null,
     "en": "just",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Na, da muss es eben ein Freitag sein."
     ],
@@ -9233,7 +9233,7 @@
     "article": null,
     "plural": null,
     "en": "spouse",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -9301,7 +9301,7 @@
     "article": null,
     "plural": null,
     "en": "actually",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Wir wollten eigentlich Freunde besuchen, aber dann sind wir doch zu Hause geblieben.",
       "Kennst du eigentlich Susanne?"
@@ -9319,7 +9319,7 @@
     "article": null,
     "plural": null,
     "en": "in a hurry / urgent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Hast du es eilig?"
     ],
@@ -9469,7 +9469,7 @@
     "article": null,
     "plural": null,
     "en": "monochromatic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -9785,7 +9785,7 @@
     "article": null,
     "plural": null,
     "en": "to sign up / register",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Tragen Sie sich bitte in diese Liste ein !",
       "Sie müssen Ihren Namen und Ihre Adresse eintragen."
@@ -10197,7 +10197,7 @@
     "article": null,
     "plural": null,
     "en": "sensitive",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -10252,7 +10252,7 @@
     "article": null,
     "plural": null,
     "en": "finally",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Wann kommst du endlich? Der Film fängt gleich an.",
       "Endlich bist du da!",
@@ -10323,7 +10323,7 @@
     "article": null,
     "plural": null,
     "en": "English teacher",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -10338,7 +10338,7 @@
     "article": null,
     "plural": null,
     "en": "grandson",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -10383,7 +10383,7 @@
     "article": null,
     "plural": null,
     "en": "along",
-    "pos": "other",
+    "pos": "adv",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -10659,7 +10659,7 @@
     "article": null,
     "plural": null,
     "en": "required",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -10689,7 +10689,7 @@
     "article": null,
     "plural": null,
     "en": "to remember",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Erinnerst du dich an José? - Nein, ich erinnere mich nicht an ihn, tut mir leid.",
       "Kannst du mich morgen bitte an meinen Arzttermin erinnern?"
@@ -11599,7 +11599,7 @@
     "article": null,
     "plural": null,
     "en": "fantastic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Dein neues Kleid sieht fantastisch aus!",
       "Das Buch ist fantastisch. Du musst es unbedingt lesen!"
@@ -11673,7 +11673,7 @@
     "article": null,
     "plural": null,
     "en": "lazy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Heute sind wir faul: Wir machen keine Hausauf- gaben und arbeiten nicht."
     ],
@@ -11938,7 +11938,7 @@
     "article": null,
     "plural": null,
     "en": "finished",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -12206,7 +12206,7 @@
     "article": null,
     "plural": null,
     "en": "fit",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -12310,7 +12310,7 @@
     "article": null,
     "plural": null,
     "en": "hardworking / diligent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ibrahim ist sehr fleißig. Er macht immer seine Hausaufgaben."
     ],
@@ -12615,7 +12615,7 @@
     "article": null,
     "plural": null,
     "en": "advanced",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -12686,7 +12686,7 @@
     "article": null,
     "plural": null,
     "en": "photographer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -12786,7 +12786,7 @@
     "article": null,
     "plural": null,
     "en": "free",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Entschuldigung, ist dieser Platz noch frei?",
       "Morgen haben wir frei.",
@@ -12824,7 +12824,7 @@
     "article": null,
     "plural": null,
     "en": "voluntary",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Manchmal bleibe ich freiwillig länger im Büro."
     ],
@@ -12938,7 +12938,7 @@
     "article": null,
     "plural": null,
     "en": "to be happy / pleased",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Zum Geburtstag habe ich ein interessantes Buch bekommen. Ich freue mich sehr über das Geschenk.",
       "Die Kinder freuen sich schon auf die Ferien.",
@@ -12998,7 +12998,7 @@
     "article": null,
     "plural": null,
     "en": "friendly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Er ist immer sehr freundlich zu mir.",
       "Mit freundlichen Grüßen",
@@ -13020,7 +13020,7 @@
     "article": null,
     "plural": null,
     "en": "fresh",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das Brot ist noch ganz frisch. Ich habe es gerade gekauft."
     ],
@@ -13039,7 +13039,7 @@
     "article": null,
     "plural": null,
     "en": "hairdresser",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -13069,7 +13069,7 @@
     "article": null,
     "plural": null,
     "en": "glad",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich bin froh, dass du kommen kannst.",
       "Frohes Fest!",
@@ -13092,7 +13092,7 @@
     "article": null,
     "plural": null,
     "en": "early",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Geht es auch später? Sechs Uhr ist mir zu früh.",
       "Ich muss morgen sehr früh aufstehen.",
@@ -13206,7 +13206,7 @@
     "article": null,
     "plural": null,
     "en": "to feel",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Wie fühlen Sie sich?",
       "Ich fühle mich heute nicht gut."
@@ -13316,7 +13316,7 @@
     "article": null,
     "plural": null,
     "en": "terrible",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Er hat furchtbare Schmerzen.",
       "Die Hose sieht ja furchtbar aus. So kannst du nicht zur Arbeit gehen!"
@@ -13594,7 +13594,7 @@
     "article": null,
     "plural": null,
     "en": "born",
-    "pos": "adj",
+    "pos": "other",
     "examples": [
       "Ich bin in Zagreb geboren.",
       "Wann und wo sind Sie geboren?",
@@ -13632,7 +13632,7 @@
     "article": null,
     "plural": null,
     "en": "used",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -13869,7 +13869,7 @@
     "article": null,
     "plural": null,
     "en": "dangerous",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Du darfst nicht bei Rot über die Straße gehen. Das ist gefährlich."
     ],
@@ -13909,7 +13909,7 @@
     "article": null,
     "plural": null,
     "en": "against",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Fahr nicht gegen den Baum!",
       "Ich bin gegen diesen Vorschlag.",
@@ -13944,7 +13944,7 @@
     "article": null,
     "plural": null,
     "en": "mutual",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -14058,7 +14058,7 @@
     "article": null,
     "plural": null,
     "en": "violinist",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -14158,7 +14158,7 @@
     "article": null,
     "plural": null,
     "en": "together",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -14225,7 +14225,7 @@
     "article": null,
     "plural": null,
     "en": "comfortable",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Mein Zimmer ist gemütlich."
     ],
@@ -14435,7 +14435,7 @@
     "article": null,
     "plural": null,
     "en": "straight ahead",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Gehen Sie immer geradeaus!",
       "Gehen Sie hier geradeaus, dann sehen Sie das Rathaus."
@@ -14493,7 +14493,7 @@
     "article": null,
     "plural": null,
     "en": "very much",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Ich helfe Ihnen gern.",
       "Kaffee oder Tee? - Ich trinke lieber einen Tee.",
@@ -14612,7 +14612,7 @@
     "article": null,
     "plural": null,
     "en": "divorced/separated",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -14764,7 +14764,7 @@
     "article": null,
     "plural": null,
     "en": "yesterday",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Gestern wollte ich dich anrufen.",
       "Gestern war Sonntag."
@@ -14785,7 +14785,7 @@
     "article": null,
     "plural": null,
     "en": "striped",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -14800,7 +14800,7 @@
     "article": null,
     "plural": null,
     "en": "healthy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich hatte Grippe. Jetzt bin ich wieder gesund."
     ],
@@ -14837,7 +14837,7 @@
     "article": null,
     "plural": null,
     "en": "hygienic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -15144,7 +15144,7 @@
     "article": null,
     "plural": null,
     "en": "happy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Meine Tochter ist glücklich verheiratet.",
       "Ein glückliches neues Jahr!",
@@ -15258,7 +15258,7 @@
     "article": null,
     "plural": null,
     "en": "graphic designer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -15320,7 +15320,7 @@
     "article": null,
     "plural": null,
     "en": "grey",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -15335,7 +15335,7 @@
     "article": null,
     "plural": null,
     "en": "Greek",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -15482,7 +15482,7 @@
     "article": null,
     "plural": null,
     "en": "big",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Mein Bruder und ich sind gleich groß.",
       "Frankfurt ist eine große Stadt.",
@@ -15522,7 +15522,7 @@
     "article": null,
     "plural": null,
     "en": "green",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -15552,7 +15552,7 @@
     "article": null,
     "plural": null,
     "en": "primary school",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -15625,7 +15625,7 @@
     "article": null,
     "plural": null,
     "en": "valid",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -15657,7 +15657,7 @@
     "article": null,
     "plural": null,
     "en": "good value",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "In diesem Laden gibt es immer günstige Angebote.",
       "Ich suche ein günstiges Sofa."
@@ -15707,7 +15707,7 @@
     "article": null,
     "plural": null,
     "en": "good",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das finde ich gut.",
       "Ich komme um 17 Uhr. – Gut!",
@@ -15859,7 +15859,7 @@
     "article": null,
     "plural": null,
     "en": "ugly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich finde das Kleid hässlich. Es gefällt mir nicht."
     ],
@@ -15895,7 +15895,7 @@
     "article": null,
     "plural": null,
     "en": "half past",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Es ist halb zwölf."
     ],
@@ -16174,7 +16174,7 @@
     "article": null,
     "plural": null,
     "en": "manual",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -16393,7 +16393,7 @@
     "article": null,
     "plural": null,
     "en": "house resident",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -16470,7 +16470,7 @@
     "article": null,
     "plural": null,
     "en": "caretaker",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -16696,7 +16696,7 @@
     "article": null,
     "plural": null,
     "en": "hot",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Vorsicht, der Tee ist heiß!",
       "Mir ist heiß. Kannst du das Fenster öffnen?"
@@ -16989,7 +16989,7 @@
     "article": null,
     "plural": null,
     "en": "delightful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -17121,7 +17121,7 @@
     "article": null,
     "plural": null,
     "en": "hierwith",
-    "pos": "other",
+    "pos": "adv",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -17313,7 +17313,7 @@
     "article": null,
     "plural": null,
     "en": "behind",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Die Tür zum Aussteigen ist hinten.",
       "Bitte hinten aussteigen!"
@@ -17373,7 +17373,7 @@
     "article": null,
     "plural": null,
     "en": "high",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Der Mount Everest ist circa 8.880 Meter hoch.",
       "Die Preise in diesem Laden sind sehr hoch."
@@ -17473,7 +17473,7 @@
     "article": null,
     "plural": null,
     "en": "polite",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -17510,7 +17510,7 @@
     "article": null,
     "plural": null,
     "en": "yard",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -17767,7 +17767,7 @@
     "article": null,
     "plural": null,
     "en": "cough syrup",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -17851,7 +17851,7 @@
     "article": null,
     "plural": null,
     "en": "(to) you (formal)",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Wie geht es Ihnen?"
     ],
@@ -17886,7 +17886,7 @@
     "article": null,
     "plural": null,
     "en": "your (formal)/yours (formal)",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Wie ist Ihre Adresse?"
     ],
@@ -17920,7 +17920,7 @@
     "article": null,
     "plural": null,
     "en": "always",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Frau Bast kommt immer zu spät.",
       "Mathe ist immer so langweilig."
@@ -17995,7 +17995,7 @@
     "article": null,
     "plural": null,
     "en": "IT technician",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -18224,7 +18224,7 @@
     "article": null,
     "plural": null,
     "en": "intelligent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Einstein war sehr intelligent."
     ],
@@ -18256,7 +18256,7 @@
     "article": null,
     "plural": null,
     "en": "interesting",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich lese gerade ein interessantes Buch.",
       "Das Buch ist interessant."
@@ -18309,7 +18309,7 @@
     "article": null,
     "plural": null,
     "en": "to be interested (in)",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich interessiere mich für Fußball.",
       "Den Artikel über Brasilien finde ich sehr interessant."
@@ -18401,7 +18401,7 @@
     "article": null,
     "plural": null,
     "en": "interview partner",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -18474,7 +18474,7 @@
     "article": null,
     "plural": null,
     "en": "annually",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -18606,7 +18606,7 @@
     "article": null,
     "plural": null,
     "en": "anytime",
-    "pos": "other",
+    "pos": "adv",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -18788,7 +18788,7 @@
     "article": null,
     "plural": "Jugendlichen",
     "en": "youth",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Der Eintritt für Kinder und Jugendliche bis 16 Jahre ist frei.",
       "Ist das ein Film für Jugendliche?"
@@ -18992,7 +18992,7 @@
     "article": null,
     "plural": null,
     "en": "cold",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Heute ist es sehr kalt.",
       "Der Kaffee ist kalt. Ich möchte ihn nicht mehr trinken.",
@@ -19072,7 +19072,7 @@
     "article": null,
     "plural": null,
     "en": "checkered",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -19287,7 +19287,7 @@
     "article": null,
     "plural": null,
     "en": "business",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -19904,7 +19904,7 @@
     "article": null,
     "plural": null,
     "en": "class teacher",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -20024,7 +20024,7 @@
     "article": null,
     "plural": null,
     "en": "small",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Unsere Wohnung ist sehr klein.",
       "Unsere Tochter ist noch klein. Sie ist erst zwei Jahre alt.",
@@ -20107,7 +20107,7 @@
     "article": null,
     "plural": null,
     "en": "club",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Ich möchte gern tanzen gehen. Wo gibt es hier einen Club/Klub mit guter Musik?"
     ],
@@ -20124,7 +20124,7 @@
     "article": null,
     "plural": null,
     "en": "smart / clever",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Molly ist ein kluges Mädchen.",
       "Lisa ist sehr klug. Sie bekommt immer gute Noten.",
@@ -20143,7 +20143,7 @@
     "article": null,
     "plural": null,
     "en": "crispy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -20188,7 +20188,7 @@
     "article": null,
     "plural": null,
     "en": "tricky",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -20384,7 +20384,7 @@
     "article": null,
     "plural": null,
     "en": "funny / strange",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Der Film war sehr komisch. Wir haben viel gelacht.",
       "Eine grüne Hose und gelbe Schuhe? Das sieht komisch aus.",
@@ -20584,7 +20584,7 @@
     "article": null,
     "plural": null,
     "en": "account holder",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -20891,7 +20891,7 @@
     "article": null,
     "plural": null,
     "en": "free of charge",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Diese Zeitschrift kostet nichts. Sie ist kostenlos."
     ],
@@ -20954,7 +20954,7 @@
     "article": null,
     "plural": null,
     "en": "ill",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich kann heute nicht zur Arbeit kommen, ich bin krank und liege im Bett.",
       "Ich war gestern krank."
@@ -21289,7 +21289,7 @@
     "article": null,
     "plural": null,
     "en": "cool",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Es ist kühl draußen. Zieh dir eine Jacke an."
     ],
@@ -21342,7 +21342,7 @@
     "article": null,
     "plural": null,
     "en": "to take care of",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Sonja kann nicht arbeiten. Sie muss sich um ihre Tochter kümmern.",
       "Ich habe jetzt keine Zeit. Ich muss mich um das Essen kümmern."
@@ -21877,7 +21877,7 @@
     "article": null,
     "plural": null,
     "en": "slowly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Könnten Sie bitte etwas langsamer sprechen?",
       "Sprich langsam, ich verstehe dich nicht."
@@ -21898,7 +21898,7 @@
     "article": null,
     "plural": null,
     "en": "boring",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Mir ist langweilig.",
       "Sie findet Fußball sehr langweilig.",
@@ -22000,7 +22000,7 @@
     "article": null,
     "plural": null,
     "en": "loud",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Nicht so laut! Das Baby schläft."
     ],
@@ -22076,7 +22076,7 @@
     "article": null,
     "plural": null,
     "en": "life partner",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -22106,7 +22106,7 @@
     "article": null,
     "plural": null,
     "en": "delicious",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -22121,7 +22121,7 @@
     "article": null,
     "plural": null,
     "en": "single",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -22284,7 +22284,7 @@
     "article": null,
     "plural": null,
     "en": "unfortunately",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Leider kann ich nicht kommen. Ich muss zum Arzt.",
       "Ich kann leider nicht kommen."
@@ -22342,7 +22342,7 @@
     "article": null,
     "plural": null,
     "en": "quiet",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Seid leise. Die anderen schlafen schon."
     ],
@@ -22416,7 +22416,7 @@
     "article": null,
     "plural": null,
     "en": "reader",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -22643,7 +22643,7 @@
     "article": null,
     "plural": null,
     "en": "favourite (at best)",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -22675,7 +22675,7 @@
     "article": null,
     "plural": null,
     "en": "supplier",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -22792,7 +22792,7 @@
     "article": null,
     "plural": null,
     "en": "left",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Gehen Sie die nächste Straße links.",
       "Gehen Sie hier geradeaus, dann sehen Sie links den Bahnhof."
@@ -22843,7 +22843,7 @@
     "article": null,
     "plural": null,
     "en": "curly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -22953,7 +22953,7 @@
     "article": null,
     "plural": null,
     "en": "seamless",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -23040,7 +23040,7 @@
     "article": null,
     "plural": null,
     "en": "funny",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Warum lacht ihr? Was ist so lustig?",
       "Ich mag lustige Filme.",
@@ -23107,7 +23107,7 @@
     "article": null,
     "plural": null,
     "en": "male",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Bitte wählen Sie: „weiblich“ oder „männlich“."
     ],
@@ -23237,7 +23237,7 @@
     "article": null,
     "plural": null,
     "en": "broker",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -23398,7 +23398,7 @@
     "article": null,
     "plural": null,
     "en": "unsatisfactory",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -23904,7 +23904,7 @@
     "article": null,
     "plural": null,
     "en": "most (the most)",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -23919,7 +23919,7 @@
     "article": null,
     "plural": null,
     "en": "mostly",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Meistens trinke ich zum Frühstück nur einen Kaffee."
     ],
@@ -24156,7 +24156,7 @@
     "article": null,
     "plural": null,
     "en": "tenant",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -24348,7 +24348,7 @@
     "article": null,
     "plural": null,
     "en": "employee",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -24363,7 +24363,7 @@
     "article": null,
     "plural": null,
     "en": "roommate",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -24727,7 +24727,7 @@
     "article": null,
     "plural": null,
     "en": "fashion designer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -24951,7 +24951,7 @@
     "article": null,
     "plural": null,
     "en": "monthly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -25011,7 +25011,7 @@
     "article": null,
     "plural": null,
     "en": "tomorrow",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Morgen beginnt die Schule erst um zehn Uhr.",
       "Bis morgen!",
@@ -25097,7 +25097,7 @@
     "article": null,
     "plural": null,
     "en": "tired",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich bin müde. Ich gehe schlafen.",
       "Bist du sehr müde?"
@@ -25638,7 +25638,7 @@
     "article": null,
     "plural": null,
     "en": "next",
-    "pos": "adj",
+    "pos": "other",
     "examples": [
       "Sehen wir uns nächste Woche?",
       "Ihr nächster Termin ist in einem Monat.",
@@ -25708,7 +25708,7 @@
     "article": null,
     "plural": null,
     "en": "namely",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -25796,7 +25796,7 @@
     "article": null,
     "plural": null,
     "en": "of course",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Natürlich helfen wir dir.",
       "Kommst du zu meiner Party? – Natürlich.",
@@ -25866,7 +25866,7 @@
     "article": null,
     "plural": null,
     "en": "foggy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -25881,7 +25881,7 @@
     "article": null,
     "plural": null,
     "en": "next to",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Neben mir ist noch ein Platz frei.",
       "Die Apotheke ist neben der Post."
@@ -25948,7 +25948,7 @@
     "article": null,
     "plural": null,
     "en": "foggy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Fahr vorsichtig! Es ist neblig."
     ],
@@ -26045,7 +26045,7 @@
     "article": null,
     "plural": null,
     "en": "nervous",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Bei Prüfungen bin ich immer sehr nervös."
     ],
@@ -26063,7 +26063,7 @@
     "article": null,
     "plural": null,
     "en": "nice",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich habe viele nette Kollegen.",
       "Vielen Dank! Das ist sehr nett von dir.",
@@ -26108,7 +26108,7 @@
     "article": null,
     "plural": null,
     "en": "newsletter",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -26268,7 +26268,7 @@
     "article": null,
     "plural": null,
     "en": "necessary",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -26421,7 +26421,7 @@
     "article": null,
     "plural": null,
     "en": "necessary",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Muss ich noch einmal kommen? – Nein, das ist nicht notwendig."
     ],
@@ -26473,7 +26473,7 @@
     "article": null,
     "plural": null,
     "en": "useful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Danke für den Tipp. Er war sehr nützlich."
     ],
@@ -26595,7 +26595,7 @@
     "article": null,
     "plural": null,
     "en": "at the top",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Ich wohne oben im 4. Stock."
     ],
@@ -26701,7 +26701,7 @@
     "article": null,
     "plural": null,
     "en": "public",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -26914,7 +26914,7 @@
     "article": null,
     "plural": null,
     "en": "olympic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -27067,7 +27067,7 @@
     "article": null,
     "plural": null,
     "en": "properly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -27698,7 +27698,7 @@
     "article": null,
     "plural": null,
     "en": "personal",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -27777,7 +27777,7 @@
     "article": null,
     "plural": null,
     "en": "head of personnel",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -27951,7 +27951,7 @@
     "article": null,
     "plural": null,
     "en": "pilot",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -28104,7 +28104,7 @@
     "article": null,
     "plural": null,
     "en": "on schedule",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -28159,7 +28159,7 @@
     "article": null,
     "plural": null,
     "en": "suddenly",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Plötzlich war das Licht aus."
     ],
@@ -28226,7 +28226,7 @@
     "article": null,
     "plural": null,
     "en": "policeman",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -28494,7 +28494,7 @@
     "article": null,
     "plural": null,
     "en": "inexpensive",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Die Jacke ist sehr preiswert. Sie kostet nur 15 Euro."
     ],
@@ -28807,7 +28807,7 @@
     "article": null,
     "plural": null,
     "en": "on time",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Der Bus fährt pünktlich um acht Uhr.",
       "Herr Müller ist immer pünktlich.",
@@ -29277,7 +29277,7 @@
     "article": null,
     "plural": null,
     "en": "right",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Der Bahnhof ist hier rechts.",
       "Hier rechts ist unsere Schule."
@@ -29363,7 +29363,7 @@
     "article": null,
     "plural": null,
     "en": "regularly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -29484,7 +29484,7 @@
     "article": null,
     "plural": null,
     "en": "abundant",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -30010,7 +30010,7 @@
     "article": null,
     "plural": null,
     "en": "restaurant specialist",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -30092,7 +30092,7 @@
     "article": null,
     "plural": null,
     "en": "rhythmical",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -30107,7 +30107,7 @@
     "article": null,
     "plural": null,
     "en": "correct",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Habe ich das richtig verstanden?",
       "Das ist richtig.",
@@ -30264,7 +30264,7 @@
     "article": null,
     "plural": null,
     "en": "romantic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Dieser Film ist sehr romantisch.",
       "Meine Freundin ist total romantisch."
@@ -30299,7 +30299,7 @@
     "article": null,
     "plural": null,
     "en": "red",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -30437,7 +30437,7 @@
     "article": null,
     "plural": null,
     "en": "peaceful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich möchte ein ruhiges Zimmer.",
       "Seid jetzt bitte ruhig!"
@@ -30715,7 +30715,7 @@
     "article": null,
     "plural": null,
     "en": "clean",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Bringen Sie mir bitte ein sauberes Glas!"
     ],
@@ -30786,7 +30786,7 @@
     "article": null,
     "plural": null,
     "en": "harmful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Rauchen ist schädlich für die Gesundheit."
     ],
@@ -30822,7 +30822,7 @@
     "article": null,
     "plural": null,
     "en": "conductor",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -30885,7 +30885,7 @@
     "article": null,
     "plural": null,
     "en": "spicy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Die Suppe ist mir zu scharf.",
       "Pass auf! Das Messer ist sehr scharf."
@@ -31038,7 +31038,7 @@
     "article": null,
     "plural": null,
     "en": "chic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -31279,7 +31279,7 @@
     "article": null,
     "plural": null,
     "en": "bad",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das Wetter ist schlecht. Wir haben schon seit einer Woche schlechtes Wetter.",
       "Mir ist schlecht!",
@@ -31320,7 +31320,7 @@
     "article": null,
     "plural": null,
     "en": "finally",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -31335,7 +31335,7 @@
     "article": null,
     "plural": null,
     "en": "bad",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Kein Problem, das ist nicht so schlimm."
     ],
@@ -31502,7 +31502,7 @@
     "article": null,
     "plural": null,
     "en": "dirty",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das Handtuch ist schmutzig."
     ],
@@ -31568,7 +31568,7 @@
     "article": null,
     "plural": null,
     "en": "to cut (oneself)",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Das Messer schneidet nicht gut.",
       "Wer schneidet dir die Haare?",
@@ -31607,7 +31607,7 @@
     "article": null,
     "plural": null,
     "en": "fast",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Warum fährst du so schnell?",
       "Mach schnell!"
@@ -31689,7 +31689,7 @@
     "article": null,
     "plural": null,
     "en": "beautiful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Schöne Ferien!",
       "Das Bild ist sehr schön.",
@@ -31784,7 +31784,7 @@
     "article": null,
     "plural": null,
     "en": "chimney sweep",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -31819,7 +31819,7 @@
     "article": null,
     "plural": null,
     "en": "terrible",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich finde ihren Rock schrecklich. Er sieht furchtbar aus!",
       "Ich finde den Film schrecklick. Er macht mir Angst."
@@ -31874,7 +31874,7 @@
     "article": null,
     "plural": null,
     "en": "in writing",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Sie müssen sich schriftlich anmelden.",
       "Die schriftliche Prüfung dauert 70 Minuten."
@@ -32015,7 +32015,7 @@
     "article": null,
     "plural": null,
     "en": "headteacher",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -32090,7 +32090,7 @@
     "article": null,
     "plural": null,
     "en": "weak",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Er ist krank und schwach.",
       "Ich fühle mich sehr schwach.",
@@ -32301,7 +32301,7 @@
     "article": null,
     "plural": null,
     "en": "difficult",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Die Prüfung war nicht schwierig."
     ],
@@ -32629,7 +32629,7 @@
     "article": null,
     "plural": null,
     "en": "rarely",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -32677,7 +32677,7 @@
     "article": null,
     "plural": null,
     "en": "senior",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -32800,7 +32800,7 @@
     "article": null,
     "plural": null,
     "en": "to sit down",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Setz dich doch!"
     ],
@@ -33238,7 +33238,7 @@
     "article": null,
     "plural": null,
     "en": "but",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -33272,7 +33272,7 @@
     "article": null,
     "plural": null,
     "en": "sunny",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Morgen ist das Wetter wieder warm und sonnig."
     ],
@@ -33356,7 +33356,7 @@
     "article": null,
     "plural": null,
     "en": "thoroughly",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -33386,7 +33386,7 @@
     "article": null,
     "plural": null,
     "en": "social education worker",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -33401,7 +33401,7 @@
     "article": null,
     "plural": null,
     "en": "late",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Es ist schon spät, ich muss gehen.",
       "Mach schnell, es ist spät!/Ich komme zu spät./ Wie spät ist es?"
@@ -33422,7 +33422,7 @@
     "article": null,
     "plural": null,
     "en": "later",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Das können wir später machen.",
       "Ich mache die Hausaufgaben später."
@@ -33458,7 +33458,7 @@
     "article": null,
     "plural": null,
     "en": "exciting",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich finde den Film sehr spannend."
     ],
@@ -33870,7 +33870,7 @@
     "article": null,
     "plural": null,
     "en": "athletic / sporty",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Tom ist sehr sportlich."
     ],
@@ -34156,7 +34156,7 @@
     "article": null,
     "plural": null,
     "en": "urban",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -34171,7 +34171,7 @@
     "article": null,
     "plural": null,
     "en": "constant",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -34233,7 +34233,7 @@
     "article": null,
     "plural": null,
     "en": "strong",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Ich habe starke Kopfschmerzen.",
       "Es regnet stark.",
@@ -34815,7 +34815,7 @@
     "article": null,
     "plural": null,
     "en": "to argue",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Die Kinder streiten (sich) oft."
     ],
@@ -34832,7 +34832,7 @@
     "article": null,
     "plural": null,
     "en": "strict",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Der Lehrer von meiner Tochter ist sehr streng."
     ],
@@ -34869,7 +34869,7 @@
     "article": null,
     "plural": null,
     "en": "stressful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Meine Arbeit ist stressig."
     ],
@@ -35375,7 +35375,7 @@
     "article": null,
     "plural": null,
     "en": "dancer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -35390,7 +35390,7 @@
     "article": null,
     "plural": null,
     "en": "culprit",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -35935,7 +35935,7 @@
     "article": null,
     "plural": null,
     "en": "by telephone",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -36116,7 +36116,7 @@
     "article": null,
     "plural": null,
     "en": "expensive",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Das ist mir zu teuer.",
       "Mein neues Kleid war sehr teuer, aber es ist wunderbar."
@@ -36299,7 +36299,7 @@
     "article": null,
     "plural": null,
     "en": "zookeeper",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -36414,7 +36414,7 @@
     "article": null,
     "plural": null,
     "en": "carpenter",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -36715,7 +36715,7 @@
     "article": null,
     "plural": null,
     "en": "trainer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -36868,7 +36868,7 @@
     "article": null,
     "plural": null,
     "en": "to meet",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich treffe in der Stadt einen Kollegen.",
       "Wir treffen uns immer freitags."
@@ -37001,7 +37001,7 @@
     "article": null,
     "plural": null,
     "en": "dry",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [
       "Die Wäsche ist bald trocken."
     ],
@@ -37067,7 +37067,7 @@
     "article": null,
     "plural": null,
     "en": "bye",
-    "pos": "other",
+    "pos": "noun",
     "examples": [
       "Tschüss, bis bald!",
       "Also bis bald - tschüss!"
@@ -37158,7 +37158,7 @@
     "article": null,
     "plural": null,
     "en": "typical",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Diese Musik ist typisch für dieses Land.",
       "Typisch Anna, sie kommt natürlich wieder zu spät."
@@ -37336,7 +37336,7 @@
     "article": null,
     "plural": null,
     "en": "the day after tomorrow",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Morgen habe ich frei. Ich komme übermorgen wieder ins Büro."
     ],
@@ -37847,7 +37847,7 @@
     "article": null,
     "plural": null,
     "en": "unbureaucratic",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -37934,7 +37934,7 @@
     "article": null,
     "plural": null,
     "en": "Hungarian",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -37964,7 +37964,7 @@
     "article": null,
     "plural": null,
     "en": "uncomfortable",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.1"
@@ -37994,7 +37994,7 @@
     "article": null,
     "plural": null,
     "en": "unhappy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -38073,7 +38073,7 @@
     "article": null,
     "plural": null,
     "en": "infrequent",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -38135,7 +38135,7 @@
     "article": null,
     "plural": null,
     "en": "unkind",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -38150,7 +38150,7 @@
     "article": null,
     "plural": null,
     "en": "under",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Er wohnt ganz unten im Haus."
     ],
@@ -38202,7 +38202,7 @@
     "article": null,
     "plural": null,
     "en": "to chat / talk",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Andreas und Nessrin unterhalten sich.",
       "Wir haben uns über das Fußballspiel unterhalten."
@@ -38471,7 +38471,7 @@
     "article": null,
     "plural": null,
     "en": "unsatisfied",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -38580,7 +38580,7 @@
     "article": null,
     "plural": null,
     "en": "vegetarian",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -38595,7 +38595,7 @@
     "article": null,
     "plural": null,
     "en": "vegetarian",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -38812,7 +38812,7 @@
     "article": null,
     "plural": null,
     "en": "to forbid",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -39033,7 +39033,7 @@
     "article": null,
     "plural": null,
     "en": "married",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Sind Sie verheiratet?"
     ],
@@ -39148,7 +39148,7 @@
     "article": null,
     "plural": null,
     "en": "to injure / hurt oneself",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Sind Sie verletzt? – Ja, am Bein.",
       "Haben Sie sich verletzt?"
@@ -39181,7 +39181,7 @@
     "article": null,
     "plural": null,
     "en": "to fall in love",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Ich bin total verliebt."
     ],
@@ -39283,7 +39283,7 @@
     "article": null,
     "plural": null,
     "en": "landlord",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -39415,7 +39415,7 @@
     "article": null,
     "plural": null,
     "en": "different",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [
       "Unsere beiden Kinder sind sehr verschieden.",
       "Ich habe diese Schuhe in verschiedenen Farben."
@@ -39480,7 +39480,7 @@
     "article": null,
     "plural": null,
     "en": "policy holder",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -39558,7 +39558,7 @@
     "article": null,
     "plural": null,
     "en": "understood",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a1.2"
@@ -39863,7 +39863,7 @@
     "article": null,
     "plural": null,
     "en": "full",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Morgens und abends sind die Züge immer sehr voll.",
       "Die Flasche ist noch ganz voll."
@@ -39916,7 +39916,7 @@
     "article": null,
     "plural": null,
     "en": "complete",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -40075,7 +40075,7 @@
     "article": null,
     "plural": null,
     "en": "preparation",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -40090,7 +40090,7 @@
     "article": null,
     "plural": null,
     "en": "the day before yesterday",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Er hat mich vorgestern angerufen."
     ],
@@ -40109,7 +40109,7 @@
     "article": null,
     "plural": null,
     "en": "available",
-    "pos": "verb",
+    "pos": "other",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -40301,7 +40301,7 @@
     "article": null,
     "plural": null,
     "en": "careful",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Sei vorsichtig!",
       "Du musst vorsichtig fahren, es ist neblig."
@@ -40349,7 +40349,7 @@
     "article": null,
     "plural": null,
     "en": "to introduce (oneself)",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Wir wollen uns kennenlernen. Können Sie sich bitte vorstellen?",
       "Darf ich Ihnen meine Frau vorstellen?",
@@ -40555,7 +40555,7 @@
     "article": null,
     "plural": null,
     "en": "probably",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Wahrscheinlich mache ich im Herbst einen Deutschkurs.",
       "Er kommt wahrscheinlich nicht."
@@ -40667,7 +40667,7 @@
     "article": null,
     "plural": null,
     "en": "warm",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Hier ist es sehr warm.",
       "Mittags esse ich oft ein warmes Essen.",
@@ -40789,7 +40789,7 @@
     "article": null,
     "plural": null,
     "en": "to wash (oneself)",
-    "pos": "other",
+    "pos": "verb",
     "examples": [
       "Wo kann ich mir die Hände waschen?"
     ],
@@ -41001,7 +41001,7 @@
     "article": null,
     "plural": null,
     "en": "due to",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Wegen seiner Arbeit kann er leider nicht kommen.",
       "Ich rufe wegen meiner Tochter an."
@@ -41135,7 +41135,7 @@
     "article": null,
     "plural": null,
     "en": "female",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Wählen Sie bitte: „weiblich“ oder „männlich“."
     ],
@@ -41603,7 +41603,7 @@
     "article": null,
     "plural": null,
     "en": "copy writer",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -41771,7 +41771,7 @@
     "article": null,
     "plural": null,
     "en": "important",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Es ist wichtig, dass Sie auch kommen.",
       "Morgen habe ich einen wichtigen Termin.",
@@ -41841,7 +41841,7 @@
     "article": null,
     "plural": null,
     "en": "again",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Stefan kann wieder zum Fußballtraining kommen.",
       "Geht es dir wieder besser?",
@@ -41956,7 +41956,7 @@
     "article": null,
     "plural": null,
     "en": "welcome",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Herzlich willkommen in Berlin!",
       "Herzlich willkommen!",
@@ -41995,7 +41995,7 @@
     "article": null,
     "plural": null,
     "en": "windy",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Heute ist es sehr windig."
     ],
@@ -42135,7 +42135,7 @@
     "article": null,
     "plural": null,
     "en": "funny",
-    "pos": "other",
+    "pos": "adj",
     "examples": [
       "Warum lachst du? Ich finde das nicht witzig."
     ],
@@ -42711,7 +42711,7 @@
     "article": null,
     "plural": null,
     "en": "payee",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -42980,7 +42980,7 @@
     "article": null,
     "plural": null,
     "en": "thing",
-    "pos": "other",
+    "pos": "noun",
     "examples": [],
     "sources": [
       "telc-a2-2"
@@ -43259,7 +43259,7 @@
     "article": null,
     "plural": null,
     "en": "satisfied",
-    "pos": "verb",
+    "pos": "adj",
     "examples": [
       "Ich bin mit der Wohnung zufrieden. Sie ist nicht groß, aber sie hat einen Balkon."
     ],
@@ -43420,7 +43420,7 @@
     "article": null,
     "plural": null,
     "en": "return",
-    "pos": "other",
+    "pos": "adv",
     "examples": [
       "Eine Fahrkarte nach Frankfurt und zurück, bitte.",
       "Fahrt ihr nach der Party zurück nach Hause?"
@@ -43470,7 +43470,7 @@
     "article": null,
     "plural": null,
     "en": "together",
-    "pos": "verb",
+    "pos": "adv",
     "examples": [
       "Wollen wir zusammen essen gehen?",
       "Zahlen, bitte. – Zusammen oder getrennt?",
@@ -43509,7 +43509,7 @@
     "article": null,
     "plural": null,
     "en": "responsible",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -43524,7 +43524,7 @@
     "article": null,
     "plural": null,
     "en": "reliable",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -43539,7 +43539,7 @@
     "article": null,
     "plural": null,
     "en": "plus",
-    "pos": "other",
+    "pos": "adj",
     "examples": [],
     "sources": [
       "telc-a2-1"
@@ -43599,7 +43599,7 @@
     "article": null,
     "plural": null,
     "en": "between",
-    "pos": "verb",
+    "pos": "other",
     "examples": [
       "Heidelberg liegt zwischen Frankfurt und Stuttgart.",
       "Zwischen acht und zehn Uhr bin ich zu Hause."

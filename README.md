@@ -13,18 +13,24 @@ Feel free to fork the project, contribute, or share your ideas. Thanks! 😊
 
 A single-user, offline-first flashcard app for German vocabulary (A1, with A2 added), using
 Leitner-box spaced repetition. Vocabulary is compiled once per level from source PDFs (Telc + Goethe
-wordlists) into a static dataset. There is **no runtime LLM** — the app just reads a committed
-`words.json`.
+wordlists) into a static dataset. The deterministic core (flashcards, dictation, reading, grammar
+reference) ships **zero runtime LLM calls** — it just reads a committed `words.json`. On top of that,
+an **optional, BYOK (bring-your-own-key) AI layer** powers tap-a-word chips on the daily reading
+text: the app itself still ships no inference capability or AI secret — every call runs through
+your own JWT-gated serverless function and your own paid Anthropic key, degrades gracefully offline,
+and can be switched off entirely in Settings.
 
 Built to run as an installable PWA on mobile and desktop, with progress synced across both devices.
 
 - **Study** (`/study`) — Leitner-box flashcards: German ↔ English, graded Miss / Got it / Easy.
 - **Lesen** (`/read`) — daily A1/A2 reading text, auto-picked and highlighted around your
-  struggling words, with tap-for-gloss translations; browse the full corpus by level and topic.
+  struggling words, with tap-for-gloss translations plus optional AI chips (Genitiv, Konjugation,
+  Komparativ, Beispiel, Erklären, free-ask) when a key is configured.
 - **Diktat** (`/dictation`) — spelling/dictation drills targeting tricky German patterns
   (umlauts, ß, ie/ei, silent-h).
 - **Grammatik** (`/grammar`) — browsable A1/A2 grammar reference, filterable by level, plus an
   on-device, multiple-choice practice quiz.
+- **Einstellungen** (`/settings`) — per-device prefs: AI features on/off, learner level.
 
 <img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
 <br>
@@ -36,6 +42,7 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
 
 - [Stack](#stack)
 - [How it's put together](#how-its-put-together-the-important-idea)
+- [Optional AI features (BYOK)](#optional-ai-features-byok)
 - [Quick start (local)](#quick-start-local)
 - [Deploy (Vercel CLI)](#deploy-vercel-cli)
 - [Project layout](#project-layout)
@@ -45,12 +52,13 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
 
 ## Stack
 
-- **Next.js (App Router) + TypeScript** — statically-rendered shell + client-side app, plus three serverless API routes (login, progress, dictation; no per-request SSR; see [ADR 003](docs/adrs/003-static-rendering-client-app.md))
+- **Next.js (App Router) + TypeScript** — statically-rendered shell + client-side app, plus serverless API routes (login, progress, dictation, grammar-quiz, and the BYOK AI proxy at `/api/ai`; no per-request SSR; see [ADR 003](docs/adrs/003-static-rendering-client-app.md))
+- **Anthropic API (BYOK)** — powers the optional tap-a-word AI chips; your own key, server-side only, never in the client bundle or KV
 - **Tailwind CSS** — styling
 - **Heroicons** — SVG icon set (MIT, by the Tailwind team)
 - **Vercel KV (Upstash Redis)** — cross-device progress sync (single key, single user)
 - **IndexedDB** — offline-first local progress cache
-- **jose** — single-password auth (signed JWT, no user database)
+- **jose** — single-password auth (signed JWT, no user database; failed logins are rate-limited per client via KV)
 - **Web Speech API** — German pronunciation (browser built-in, offline, no API key)
 - **PWA** — manifest + minimal service worker (installable, works offline)
 - **Hosting** — Vercel (deployed via the Vercel CLI, **not** GitHub)
@@ -61,7 +69,9 @@ Running cost target: **\$0** on Vercel Hobby + KV free tier. A custom domain is 
 
 ## How it's put together (the important idea)
 
-There are **two separate builds**, and only one ever touches an LLM:
+There are **two separate builds**, and only one ever touches an LLM at build time. A third,
+entirely optional piece adds _runtime_ AI behind your own key — see
+[Optional AI features](#optional-ai-features-byok) below.
 
 1. **Data build (one-time, local).** Parse each level's source PDFs (`data/sources/<level>/`) →
    merge → fix obvious errors → fill missing English → emit `data/words.json` + `data/changelog.json`.
@@ -86,6 +96,26 @@ just matches your box-1 words to pre-built texts. See [ADR 007](docs/adrs/007-da
 
 ---
 
+## Optional AI features (BYOK)
+
+Tapping a highlighted word in **Lesen** shows the same offline gloss as before (article, plural,
+meaning, pronunciation) plus a row of AI chips — Genitiv, Konjugation, Komparativ, Beispiel,
+Erklären — and a free-ask field, when a key is configured. This is the app's only runtime AI
+surface:
+
+- **`POST /api/ai`** is a single JWT-gated, streaming Edge route that every chip/free-ask call goes
+  through. It owns the prompt, model, and token cap for each request — the client only ever sends a
+  word and an intent, never a free-form prompt.
+- **BYOK, no shared secrets.** The key (`ANTHROPIC_API_KEY`) lives only in your own `.env.local` /
+  Vercel env — never in the client bundle, never in KV. Without a key set, the route responds
+  `503` and the chips grey out; nothing else in the app is affected.
+- **Degrades gracefully.** Chips grey out automatically when offline or when AI is turned off in
+  **Einstellungen** (`/settings`) — the deterministic gloss above them always works regardless.
+- **Cheap facts stay data-backed.** Article, plural, and meaning always come from `words.json`;
+  only the generative chips and free-ask call the model.
+
+---
+
 ## Quick start (local)
 
 ```bash
@@ -97,6 +127,7 @@ cp .env.example .env.local
 #   - APP_PASSWORD: whatever you want to type to log in
 #   - TOKEN_SECRET: openssl rand -hex 32
 #   - KV_*: leave blank for now (sync just no-ops without them; everything else works)
+#   - ANTHROPIC_API_KEY: your own Anthropic key (optional — tap-a-word AI chips no-op without it)
 
 # 3. (One-time) build the static datasets from the sources
 npm run build:words          # merge the source PDFs' extracts → words.json
@@ -125,8 +156,9 @@ vercel link              # create/link the project
 # In the Vercel dashboard: Storage → create a KV (Upstash) store, attach to the project.
 vercel env pull .env.local   # pull the KV_* vars locally
 
-# Set the two app secrets in the dashboard (Settings → Environment Variables):
+# Set the app secrets in the dashboard (Settings → Environment Variables):
 #   APP_PASSWORD, TOKEN_SECRET
+#   ANTHROPIC_API_KEY (optional — omit to ship without the tap-a-word AI chips)
 
 vercel --prod            # deploy
 ```
@@ -161,10 +193,10 @@ de-lernen/
 ├─ scripts/gen-icons.mjs         ← generate PWA icons + apple-touch-icon.png
 ├─ public/                       ← manifest.json, sw.js, icons
 └─ src/
-   ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz) + api/{login,progress,dictation}
-   ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
-   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB-only), words (incl. wordLevel), daily, daily-texts, speech
-   ├─ hooks/                ← useProgressSync, useDictationSync, useDictationProgress, useGrammarQuizProgress, useSpeech
+   ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz, settings) + api/{login,progress,dictation,grammar-quiz,ai}
+   ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, WordPopover, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
+   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, auth-security (login rate limit), db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB+remote), words (incl. wordLevel), daily, daily-texts, speech, ai-prefs, ai/{models,prompts,validate,client}
+   ├─ hooks/                ← useProgressSync, useDictationSync, useGrammarQuizSync, useSpeech, useAiChat, useAiConfigured, useOnline
    └─ types/
 ```
 
@@ -190,7 +222,9 @@ de-lernen/
   (struggling) words, with only those words highlighted — tap one for its translation. Open
   **Lesen** (the `/read` route) anytime to reread today's text or browse the full corpus, filtered
   by level (A1 / A2) and grouped by topic; there, every annotated word is tappable but struggling
-  words are indigo and the rest are slate.
+  words are indigo and the rest are slate. Tapping a word also offers AI chips (Genitiv,
+  Konjugation, Komparativ, Beispiel, Erklären) and a free-ask field when a key is configured — see
+  [Optional AI features](#optional-ai-features-byok).
 - Open **Grammatik** (`/grammar`) for a browsable A1/A2 grammar reference: verb conjugation,
   articles & cases, pronouns, sentence structure, prepositions, negation, adjectives, and more.
   Topics are grouped by category with expandable cards showing rules, conjugation/declension
@@ -201,8 +235,14 @@ de-lernen/
   10-question drill on that topic, or **Smart Quiz** in the header for a ~12-question mix that
   prioritizes the topics you're weakest on (struggling first, then never-seen, then stale).
   Questions are multiple-choice, authored once into a static item bank and frozen at build
-  time — **no runtime LLM**. Quiz progress is tracked separately and stored locally in
-  IndexedDB (no KV sync), like dictation. See [ADR 010](docs/adrs/010-grammar-quiz.md).
+  time — **no runtime LLM**. Quiz progress is tracked separately, keyed by topic in its own
+  IndexedDB store and synced across devices via its own `user:grammar-quiz` KV key, like
+  dictation. See [ADR 010](docs/adrs/010-grammar-quiz.md).
+- Open **Einstellungen** (`/settings`) to turn AI features on/off and set your learner level — the
+  register AI explanations aim at (never below it, and never above it unless you explicitly ask
+  about a higher-level construction, which is then explained at your level). A word's own level
+  acts as a floor, so the register used is the higher of the two. Both are per-device prefs —
+  stored locally, never synced.
 
 See `CLAUDE.md` and `.claude/rules/` (e.g. `data-model.md`) for the data model, and `docs/adrs/`
 for the design rationale behind each major decision:
@@ -216,4 +256,4 @@ for the design rationale behind each major decision:
 - [ADR 007](docs/adrs/007-daily-reading-corpus.md) — daily contextual reading corpus (build-time, zero-runtime matching)
 - [ADR 008](docs/adrs/008-dictation-spelling-exercise.md) — Dictation spelling exercise (gap algorithm, separate KV-synced progress track)
 - [ADR 009](docs/adrs/009-grammar-reference.md) — A1/A2 grammar reference (static JSON, read-only, no progress)
-- [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (static build-time-verified item bank, local-only progress)
+- [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (static build-time-verified item bank, KV-synced per-topic progress)

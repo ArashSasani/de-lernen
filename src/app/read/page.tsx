@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import {
   ChevronUpIcon,
@@ -38,6 +38,13 @@ export default function ReadPage() {
   // Box-1 words drive both the highlight set and the daily pick; derive it from
   // the synced progress so it stays current as cards are graded here.
   const struggling = useMemo(() => strugglingIds(progress), [progress]);
+
+  // Stable identity so it doesn't rebuild useAiChat's memoized `ask` on
+  // every WordPopover render.
+  const handleUnauthorized = useCallback(
+    () => router.replace('/login'),
+    [router],
+  );
 
   useEffect(() => {
     if (!getToken()) {
@@ -112,6 +119,7 @@ export default function ReadPage() {
             strugglingIds={struggling}
             highlightAll
             onGrade={handleGrade}
+            onUnauthorized={handleUnauthorized}
           />
         </section>
       )}
@@ -216,6 +224,7 @@ export default function ReadPage() {
               strugglingIds={struggling}
               highlightAll
               onGrade={handleGrade}
+              onUnauthorized={handleUnauthorized}
             />
           </div>
         </div>

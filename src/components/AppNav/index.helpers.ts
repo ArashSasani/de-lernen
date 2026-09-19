@@ -3,6 +3,7 @@ export const NAV_ITEMS = [
   { href: '/read', label: 'Lesen' },
   { href: '/dictation', label: 'Diktat' },
   { href: '/grammar', label: 'Grammatik' },
+  { href: '/settings', label: 'Einstellungen' },
 ];
 
 export function isActivePath(pathname: string, href: string): boolean {

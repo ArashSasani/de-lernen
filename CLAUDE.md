@@ -9,18 +9,23 @@ Code the same way this file is (see "Rules map" below for what lives where).
 
 A single-user, offline-first, installable PWA for studying German vocabulary (A1, A2;
 extensible to further levels) with Leitner-box spaced repetition. Vocabulary is compiled
-**once** from source PDFs into a static `data/words.json`. The deployed app makes **zero LLM calls**.
+**once** from source PDFs into a static `data/words.json`. The deterministic core makes **zero LLM
+calls**; an optional, BYOK runtime-AI layer (tap-a-word chips on the daily reading text) runs behind
+the user's own key and degrades gracefully offline.
 
 User: one person. No multi-user auth, no user database. A single password gate is enough.
 
 ## Hard invariants (do not violate)
 
-1. **No LLM/translation API in the running app or on Vercel.** All translation/fixing and text
-   authoring happens in the one-time local data build, whose output lives in the repo as static
-   files. Vercel only ever sees source code, `words.json`, `daily-texts.json`, `grammar.json`,
-   and env-var secrets.
-2. **Secrets only in env.** `APP_PASSWORD`, `TOKEN_SECRET`, `KV_*` live in `.env.local`
-   (gitignored) and the Vercel dashboard. Never commit them. Never hardcode them.
+1. **The app ships zero inference capability and zero AI secrets of its own.** All build-time
+   translation/fixing/text-authoring happens in the one-time local data build, whose output lives in
+   the repo as static files (`words.json`, `daily-texts.json`, `grammar.json`). The one runtime
+   exception is the optional, user-supplied AI layer: a single JWT-gated Edge route (`/api/ai`)
+   proxies to the deploying user's own paid Anthropic key, is entirely optional, and must degrade
+   gracefully (grey out, never block) when offline or unconfigured — the deterministic core always
+   works without it.
+2. **Secrets only in env.** `APP_PASSWORD`, `TOKEN_SECRET`, `KV_*`, `ANTHROPIC_API_KEY` live in
+   `.env.local` (gitignored) and the Vercel dashboard. Never commit them. Never hardcode them.
 3. **Static word data is immutable at runtime.** The app never writes to `words.json`. The only
    mutable, synced state is the user's `ProgressMap`.
 4. **Offline must work.** Studying, grading, and local persistence must function with no network.

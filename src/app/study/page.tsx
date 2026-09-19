@@ -103,6 +103,13 @@ export default function StudyPage() {
 
   const current = queue[index];
 
+  // Stable identity so it doesn't rebuild useAiChat's memoized `ask` on
+  // every WordPopover render.
+  const handleUnauthorized = useCallback(
+    () => router.replace('/login'),
+    [router],
+  );
+
   const handleSkip = useCallback(() => setIndex((i) => i + 1), []);
 
   const handleGrade = useCallback(
@@ -243,6 +250,7 @@ export default function StudyPage() {
               strugglingIds={strugglingIds(progress)}
               highlightAll
               onGrade={(wordId) => grade(wordId, onGood)}
+              onUnauthorized={handleUnauthorized}
             />
           </div>
         </div>

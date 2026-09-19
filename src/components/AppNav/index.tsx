@@ -10,6 +10,7 @@ import {
   PencilIcon,
   AcademicCapIcon,
   TableCellsIcon,
+  Cog6ToothIcon,
 } from '@heroicons/react/24/outline';
 import { clearToken } from '@/lib/sync';
 import { NAV_ITEMS, isActivePath } from './index.helpers';
@@ -29,8 +30,12 @@ export default function AppNav() {
 
   return (
     <>
-      {/* Desktop nav */}
-      <div className="hidden items-center gap-4 md:flex">
+      {/* Desktop nav — only at lg+: narrower pages (study/dictation/read/settings)
+          keep their content in a max-w-xl column, so this row has to fit
+          alongside a page title within that same ~672px, not the full viewport.
+          Settings renders icon-only here (its label is the longest of the set)
+          to leave room; every other item keeps its label. */}
+      <div className="hidden items-center gap-2.5 lg:flex">
         {NAV_ITEMS.map((item) => {
           const active = isActivePath(pathname, item.href);
           const Icon =
@@ -40,35 +45,40 @@ export default function AppNav() {
                 ? BookOpenIcon
                 : item.href === '/grammar'
                   ? TableCellsIcon
-                  : PencilIcon;
+                  : item.href === '/settings'
+                    ? Cog6ToothIcon
+                    : PencilIcon;
+          const iconOnly = item.href === '/settings';
           return (
             <Link
               key={item.href}
               href={item.href}
-              className={`flex items-center gap-1 text-xs transition-colors ${
+              aria-label={iconOnly ? item.label : undefined}
+              title={iconOnly ? item.label : undefined}
+              className={`flex shrink-0 items-center gap-1 text-xs whitespace-nowrap transition-colors ${
                 active
                   ? 'text-slate-200'
                   : 'text-indigo-400 hover:text-indigo-300'
               }`}
             >
               <Icon className="h-3.5 w-3.5" aria-hidden="true" />
-              {item.label}
+              {!iconOnly && item.label}
             </Link>
           );
         })}
         <button
           onClick={handleLogout}
-          className="text-xs text-slate-500 hover:text-slate-300"
+          className="shrink-0 text-xs whitespace-nowrap text-slate-500 hover:text-slate-300"
         >
           Log out
         </button>
       </div>
 
-      {/* Mobile nav — hamburger + slide-in drawer */}
+      {/* Mobile/tablet nav — hamburger + slide-in drawer, up to lg */}
       <button
         onClick={() => setOpen(true)}
         aria-label="Open menu"
-        className="p-1 text-slate-400 hover:text-slate-200 md:hidden"
+        className="p-1 text-slate-400 hover:text-slate-200 lg:hidden"
       >
         <Bars3Icon className="h-5 w-5" aria-hidden="true" />
       </button>
@@ -116,7 +126,9 @@ export default function AppNav() {
                   ? BookOpenIcon
                   : item.href === '/grammar'
                     ? TableCellsIcon
-                    : PencilIcon;
+                    : item.href === '/settings'
+                      ? Cog6ToothIcon
+                      : PencilIcon;
             return (
               <Link
                 key={item.href}
