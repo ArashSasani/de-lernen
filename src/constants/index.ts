@@ -35,3 +35,17 @@ export const FILTER = {
   ALL: 'all',
   DUE: 'due',
 } as const;
+
+// The fixed set of tap-a-word AI chip intents on /api/ai — the value array
+// backs both WordIntent (src/types/ai.ts) and the server-side enum check in
+// src/lib/ai/validate.ts.
+export const WORD_INTENTS = [
+  'genitiv',
+  'konjugation',
+  'partizip2',
+  'imperativ',
+  'komparativ',
+  'beispiel',
+  'erklaeren',
+  'ask',
+] as const;

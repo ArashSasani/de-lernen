@@ -1,7 +1,8 @@
 # ADR 006 — Single-Password, Stateless JWT Auth
 
 **Status:** Accepted  
-**Implementation:** `src/lib/auth.ts`, `src/app/api/login/route.ts`, `src/app/api/progress/route.ts`
+**Implementation:** `src/lib/auth.ts`, `src/lib/auth-security.ts`, `src/app/api/login/route.ts`,
+`src/app/api/progress/route.ts`
 
 ## Context
 
@@ -26,6 +27,21 @@ A **single shared password** plus a **stateless signed JWT**. No user database, 
 - Return the token; the client stores it in `localStorage`.
 - On mismatch, `401`.
 
+### Rate-limiting failed logins
+
+A single shared password on a public URL is guessable given enough attempts, and a stateless gate
+has nothing else standing in the way. So `POST /api/login` counts failures per client IP
+(`src/lib/auth-security.ts`): **5 failures in a 15-minute window** → `429` with a `Retry-After`
+header until the window expires; a successful login clears the counter.
+
+The counter is the one piece of server-side auth state, and it deliberately reuses KV rather than
+introducing a store — one key per client, `login:failed:<sha256(TOKEN_SECRET:ip)>`, expiring on its
+own via TTL. The IP is hashed with `TOKEN_SECRET` so KV never holds a plaintext address.
+
+Every KV call in the limiter is wrapped to **fail open**: if KV is down, unconfigured (local dev
+without `KV_*`), or errors, login proceeds as if unlimited. Locking the app's only user out of
+their own study data is a worse failure than letting a brute-force attempt continue.
+
 ### Authorizing requests
 
 - `GET /api/progress` and `PUT /api/progress` require `Authorization: Bearer <jwt>`.
@@ -44,6 +60,9 @@ Both `APP_PASSWORD` and `TOKEN_SECRET` live only in `.env.local` and the Vercel 
 - **Stolen-token window:** because there's no session store, a leaked token is valid until it
   expires — there's no server-side revocation. Mitigation if ever needed: rotate `TOKEN_SECRET`
   (invalidates all outstanding tokens at once). Acceptable for a single-user study app.
+- **Rate limiting is best-effort, not a guarantee:** it fails open on KV trouble and keys on a
+  client IP, which a determined attacker can rotate. It raises the cost of online guessing against
+  a single shared password; it is not a substitute for choosing a strong `APP_PASSWORD`.
 - **`localStorage`, not an httpOnly cookie:** simpler for a client-driven PWA and avoids CSRF
   considerations, at the cost of XSS exposure. The app renders no third-party/user-generated HTML,
   so the XSS surface is minimal.

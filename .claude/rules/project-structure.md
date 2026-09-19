@@ -30,15 +30,25 @@ src/
         page.tsx         # grammar quiz: per-topic (?topic=id) or smart-mix session; queue, grading, stats
         page.helpers.ts  # buildSmartQuiz (tiered, struggling-first) / buildTopicQuiz / sessionStats / QUIZ_SESSION_SIZE
         page.helpers.test.ts
+    settings/
+      page.tsx           # AI on/off toggle + learnerLevel chip row (per-device localStorage, no sync)
+      page.helpers.ts    # LEARNER_LEVEL_OPTIONS
+      page.helpers.test.ts
     api/login/route.ts
     api/progress/route.ts
     api/dictation/route.ts
     api/grammar-quiz/route.ts
+    api/ai/route.ts        # GET (configured? boolean) + POST, Edge runtime, streaming: JWT-gated BYOK AI proxy (word-intents only)
+    api/ai/route.test.ts
   components/             # one folder per component: index.tsx + index.helpers.ts + test
     AppNav/              # hamburger menu (mobile) + inline links (desktop); logout; active-route highlight
-    DailyReading/        # daily A1/A2 text: highlighted target words, tap-for-gloss popover
-      index.tsx          # props: text, strugglingIds?, highlightAll? (filter vs two-tier mode)
-      index.helpers.ts   # toSegments() / glossFor() / resolveHighlight()
+    DailyReading/        # daily A1/A2 text: highlighted target words, delegates the tap popover to WordPopover
+      index.tsx          # props: text, strugglingIds?, highlightAll?, onUnauthorized? (filter vs two-tier mode)
+      index.helpers.ts   # toSegments() / resolveHighlight()
+      index.helpers.test.ts
+    WordPopover/         # offline gloss (article/plural/meaning/speak) + AI chip row + free-ask, streamed reply
+      index.tsx
+      index.helpers.ts   # glossFor() / shouldFlipBelow() / horizontalOffset() / chipsForPos() / CHIP_LABELS
       index.helpers.test.ts
     FlashCard/           # 3D flip, German front / English+example back, Skip pre-flip / grade buttons post-flip
       index.tsx
@@ -69,9 +79,9 @@ src/
       index.helpers.ts   # speakButtonClass()
       index.helpers.test.ts
   constants/
-    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / BOXES / LEVELS / FILTER value constants
+    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS value constants
   lib/
-    words.ts             # import words.json; wordById + source-filter helper
+    words.ts             # import words.json; allWords / wordById / wordLevel / filterWords (source + level)
     daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
     grammar.ts           # import grammar.json; grammarTopics, topicsByCategory, grammarTopicById
     grammar-quiz.ts      # thin lookup over the frozen grammar-bank.json; generateQuestionsForTopic / allQuizzableTopicIds / isQuizzableTopic
@@ -81,17 +91,27 @@ src/
     shuffle.ts           # shuffle(): Fisher–Yates array shuffle (re-exported by study/page.helpers)
     dictation.ts         # generateGap(): ranked spelling-difficulty ruleset → Gap
     auth.ts              # signToken / verifyToken (jose)
+    auth-security.ts     # failedLoginRateLimiter: per-client failed-login counter in KV (fails open)
     idb.ts               # shared IndexedDB handle (getDB) — stores: progress, dictation, grammar-quiz
     db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation + loadGrammarQuiz/saveGrammarQuiz/mergeGrammarQuiz (server)
     sync.ts              # IndexedDB + remote load/sync + token storage + pickChanged/SYNC_DEBOUNCE_MS (client)
     dictation-sync.ts    # IndexedDB load/save + remote sync + mergeDictation for DictationProgressMap
     speech.ts            # Web Speech API: getGermanVoice / speakDE (offline, no API key)
     service-worker.ts    # shouldRegisterServiceWorker / registerServiceWorker
+    ai-prefs.ts          # per-device localStorage prefs (never synced): isAiEnabled/setAiEnabled, getLearnerLevel/setLearnerLevel
+    ai/
+      models.ts          # MODEL_FOR_INTENT seam — every WordIntent → 'claude-sonnet-5' today
+      prompts.ts         # GENERATORS-style prompt templates + ceilingLevel() register-ceiling calc (server-only)
+      validate.ts        # parseAiRequest(): untrusted-body → WordIntentRequest | null, enum + length checks
+      client.ts          # streamCompletion(): wraps @anthropic-ai/sdk streaming into a ReadableStream<Uint8Array>
   hooks/                 # React hooks (stateful glue), kept out of lib/ which is framework-agnostic logic
     useProgressSync.ts   # shared study/read sync: debounced KV push + keepalive flush on hide/pagehide/unmount
     useDictationSync.ts  # dictation sync: recordAttempt + toggleStar → IndexedDB + KV (mirrors useProgressSync)
     useGrammarQuizSync.ts # grammar-quiz sync: recordAttempt(topicId, correct) → IndexedDB + KV (mirrors useDictationSync)
     useSpeech.ts         # German pronunciation: available/speaking state + speak(text)
+    useAiChat.ts         # POST /api/ai, streams the reply into state, clears token + onUnauthorized on 401
+    useAiConfigured.ts   # GET /api/ai once on mount → whether ANTHROPIC_API_KEY is set on this deployment
+    useOnline.ts         # navigator.onLine + online/offline listeners → boolean
   types/
     index.ts             # Word, WordProgress, ProgressMap, Article, Pos, Box, DailyText, DailyTextSpan, GrammarTopic (+ related)
     grade.ts             # Grade
@@ -100,6 +120,7 @@ src/
     auth.ts              # LoginResult
     dictation.ts         # DictationWordProgress, DictationProgressMap
     grammar-quiz.ts      # QuizQuestion, QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap
+    ai.ts                # WordIntent, AiWordFields, WordIntentRequest, AiRequest
   __tests__/             # lib-level Jest tests (not co-located)
     leitner.test.ts      # Leitner transition assertions
     merge.test.ts        # mergeProgress newest-wins assertions
@@ -109,6 +130,11 @@ src/
     dictation.test.ts    # generateGap ruleset assertions
     shuffle.test.ts      # shuffle permutation/immutability assertions
     words.test.ts        # wordById / wordLevel / source-filter assertions
+    auth-security.test.ts # failed-login rate-limit counter, window, reset, fail-open assertions
+    ai-models.test.ts    # MODEL_FOR_INTENT coverage
+    ai-prompts.test.ts   # ceilingLevel truth table + buildPrompt per intent
+    ai-validate.test.ts  # parseAiRequest accept/reject cases
+    ai-prefs.test.ts     # isAiEnabled/getLearnerLevel defaults, round-trip, corrupted-value fallback
 public/  manifest.json, sw.js, icons/, apple-touch-icon.png
 scripts/
   lib/pdf-text.mjs       # pdftotext -layout wrapper + _text/ cache

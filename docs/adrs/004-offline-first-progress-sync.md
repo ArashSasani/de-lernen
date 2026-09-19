@@ -92,5 +92,6 @@ For a word touched on **both** devices, the later `lastReviewed` wins.
   `user:dictation`, reached via `api/dictation`. It reuses this same offline-first machinery —
   newest-wins by `lastSeen` (with `starred` OR-merged), plus the keepalive flush — but never touches
   the Leitner `user:progress` key, so the two tracks can't clobber each other. See
-  [ADR 008](008-dictation-spelling-exercise.md). The grammar-quiz track, by contrast, is genuinely
-  local-only (no KV); see [ADR 010](010-grammar-quiz.md).
+  [ADR 008](008-dictation-spelling-exercise.md). The grammar-quiz track is a third instance of the
+  same pattern — its own `grammar-quiz` store and `user:grammar-quiz` key, keyed by topic id and
+  merged newest-wins by `lastSeen`; see [ADR 010](010-grammar-quiz.md).
