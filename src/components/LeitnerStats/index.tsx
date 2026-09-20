@@ -15,17 +15,17 @@ export default function LeitnerStats({
     <div className="flex items-start gap-2">
       {bars.map(({ box, n, pct }) => (
         <div key={box} className="flex flex-1 flex-col items-center gap-1">
-          <div className="flex h-20 w-full items-end overflow-hidden rounded-md bg-white/5">
+          <div className="bg-base-content/5 flex h-20 w-full items-end overflow-hidden rounded-md">
             <div
-              className="w-full rounded-md bg-indigo-500/70 transition-[height] duration-300"
+              className="bg-primary/70 w-full rounded-md transition-[height] duration-300"
               style={{ height: `${pct}%` }}
             />
           </div>
-          <span className="text-xs text-slate-300">{n}</span>
-          <span className="text-center text-[10px] text-slate-500">
+          <span className="text-base-content/80 text-xs">{n}</span>
+          <span className="text-base-content/50 text-center text-[10px]">
             Box {box}
           </span>
-          <span className="text-center text-[9px] leading-tight text-slate-600">
+          <span className="text-base-content/40 text-center text-[9px] leading-tight">
             {BOX_LABELS[box]}
           </span>
         </div>

@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { XMarkIcon } from '@heroicons/react/24/outline';
 import AppNav from '@/components/AppNav';
+import Modal from '@/components/shared/Modal';
+import SessionSummary from '@/components/shared/SessionSummary';
 import type { DailyText, Word } from '@/types';
 import { allWords } from '@/lib/words';
 import { defaultProgress, isDue, boxCounts, onGood } from '@/lib/leitner';
@@ -31,6 +32,7 @@ import {
   queueBoxCounts,
 } from './page.helpers';
 import { makeShuffleDeck } from '@/lib/shuffle';
+import LoadingScreen from '@/components/shared/LoadingScreen';
 
 export default function StudyPage() {
   const router = useRouter();
@@ -167,11 +169,7 @@ export default function StudyPage() {
     [progress],
   );
   if (!ready) {
-    return (
-      <main className="flex flex-1 items-center justify-center text-slate-400">
-        Loading…
-      </main>
-    );
+    return <LoadingScreen />;
   }
 
   const finished = index >= queue.length;
@@ -197,17 +195,11 @@ export default function StudyPage() {
             subtitle="No cards match this filter."
           />
         ) : finished ? (
-          <EmptyState
-            title="All caught up 🎉"
-            subtitle={`Reviewed ${queue.length} card${queue.length === 1 ? '' : 's'}.`}
-            action={
-              <button
-                onClick={studyAgain}
-                className="rounded-xl bg-indigo-500 px-5 py-2.5 font-medium text-white transition-colors hover:bg-indigo-400"
-              >
-                Study again
-              </button>
-            }
+          <SessionSummary
+            heading="All caught up 🎉"
+            subheading={`Reviewed ${queue.length} card${queue.length === 1 ? '' : 's'}.`}
+            actionLabel="Study again"
+            onAction={studyAgain}
           />
         ) : (
           <>
@@ -224,37 +216,21 @@ export default function StudyPage() {
         )}
       </section>
 
-      {dailyText && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setDailyText(null)}
-        >
-          <div
-            className="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-2xl border border-white/10 bg-slate-900 p-6 md:max-w-2xl md:p-10"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setDailyText(null)}
-              aria-label="Close"
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-200"
-            >
-              <XMarkIcon className="h-5 w-5" aria-hidden="true" />
-            </button>
-            <p className="mb-4 text-xs font-medium tracking-wide text-slate-500 uppercase">
-              Tägliche Lektüre
-            </p>
-            <DailyReading
-              text={dailyText}
-              strugglingIds={strugglingIds(progress)}
-              highlightAll
-              onGrade={(wordId) => grade(wordId, onGood)}
-              onUnauthorized={handleUnauthorized}
-            />
-          </div>
-        </div>
-      )}
+      <Modal
+        open={!!dailyText}
+        onClose={() => setDailyText(null)}
+        title="Tägliche Lektüre"
+      >
+        {dailyText && (
+          <DailyReading
+            text={dailyText}
+            strugglingIds={strugglingIds(progress)}
+            highlightAll
+            onGrade={(wordId) => grade(wordId, onGood)}
+            onUnauthorized={handleUnauthorized}
+          />
+        )}
+      </Modal>
     </main>
   );
 }
@@ -269,9 +245,9 @@ function EmptyState({
   action?: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] py-16 text-center">
+    <div className="border-base-300 bg-base-200 flex flex-col items-center justify-center gap-3 rounded-2xl border py-16 text-center">
       <p className="text-lg font-medium">{title}</p>
-      <p className="text-sm text-slate-400">{subtitle}</p>
+      <p className="text-base-content/60 text-sm">{subtitle}</p>
       {action}
     </div>
   );

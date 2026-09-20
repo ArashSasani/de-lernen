@@ -56,9 +56,7 @@ export default function AppNav() {
               aria-label={iconOnly ? item.label : undefined}
               title={iconOnly ? item.label : undefined}
               className={`flex shrink-0 items-center gap-1 text-xs whitespace-nowrap transition-colors ${
-                active
-                  ? 'text-slate-200'
-                  : 'text-indigo-400 hover:text-indigo-300'
+                active ? '' : 'text-primary hover:text-primary/80'
               }`}
             >
               <Icon className="h-3.5 w-3.5" aria-hidden="true" />
@@ -68,7 +66,7 @@ export default function AppNav() {
         })}
         <button
           onClick={handleLogout}
-          className="shrink-0 text-xs whitespace-nowrap text-slate-500 hover:text-slate-300"
+          className="text-base-content/60 hover:text-base-content/80 shrink-0 text-xs whitespace-nowrap"
         >
           Log out
         </button>
@@ -78,7 +76,7 @@ export default function AppNav() {
       <button
         onClick={() => setOpen(true)}
         aria-label="Open menu"
-        className="p-1 text-slate-400 hover:text-slate-200 lg:hidden"
+        className="btn btn-circle btn-text btn-sm !text-base-content/70 lg:hidden"
       >
         <Bars3Icon className="h-5 w-5" aria-hidden="true" />
       </button>
@@ -92,7 +90,7 @@ export default function AppNav() {
       )}
 
       <div
-        className={`fixed top-0 right-0 z-50 flex h-full w-64 flex-col border-l border-white/10 bg-slate-900 transition-transform duration-200 ease-in-out ${
+        className={`bg-base-100 border-base-300 fixed top-0 right-0 z-50 flex h-full w-64 flex-col border-l transition-transform duration-200 ease-in-out ${
           open ? 'translate-x-0' : 'translate-x-full'
         }`}
         style={{
@@ -103,20 +101,20 @@ export default function AppNav() {
         aria-modal="true"
         aria-label="Navigation menu"
       >
-        <div className="flex items-center justify-between border-b border-white/10 px-5 py-5">
-          <span className="text-xs font-medium tracking-wide text-slate-500 uppercase">
+        <div className="border-base-300 flex items-center justify-between border-b px-5 py-5">
+          <span className="text-base-content/60 text-xs font-medium tracking-wide uppercase">
             de·lernen
           </span>
           <button
             onClick={close}
             aria-label="Close menu"
-            className="p-1 text-slate-400 hover:text-slate-200"
+            className="btn btn-circle btn-text btn-sm !text-base-content/70"
           >
             <XMarkIcon className="h-4 w-4" aria-hidden="true" />
           </button>
         </div>
 
-        <nav className="flex-1 px-3 py-4">
+        <nav className="flex-1 overflow-y-auto px-3 py-4">
           {NAV_ITEMS.map((item) => {
             const active = isActivePath(pathname, item.href);
             const Icon =
@@ -136,8 +134,8 @@ export default function AppNav() {
                 onClick={close}
                 className={`flex items-center gap-3 rounded-lg px-4 py-3 text-sm transition-colors ${
                   active
-                    ? 'bg-indigo-500/10 font-medium text-indigo-400'
-                    : 'text-slate-400 hover:bg-white/[0.04] hover:text-slate-200'
+                    ? 'bg-primary/10 text-primary font-medium'
+                    : 'text-base-content/60 hover:bg-base-content/5 hover:text-base-content'
                 }`}
               >
                 <Icon className="h-4 w-4 shrink-0" aria-hidden="true" />
@@ -147,10 +145,10 @@ export default function AppNav() {
           })}
         </nav>
 
-        <div className="border-t border-white/10 px-3 py-4">
+        <div className="border-base-300 border-t px-3 py-4">
           <button
             onClick={handleLogout}
-            className="block w-full rounded-lg px-4 py-3 text-left text-sm text-slate-500 transition-colors hover:bg-white/[0.04] hover:text-slate-300"
+            className="text-base-content/60 hover:bg-base-content/5 hover:text-base-content block w-full rounded-lg px-4 py-3 text-left text-sm transition-colors"
           >
             Log out
           </button>

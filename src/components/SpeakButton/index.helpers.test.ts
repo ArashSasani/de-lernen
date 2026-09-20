@@ -1,13 +1,14 @@
 import { speakButtonClass } from './index.helpers';
 
 describe('speakButtonClass', () => {
-  it('returns pulse + indigo when speaking', () => {
+  it('returns pulse + primary accent when speaking', () => {
     expect(speakButtonClass(true)).toContain('animate-pulse');
-    expect(speakButtonClass(true)).toContain('text-indigo-400');
+    expect(speakButtonClass(true)).toContain('text-primary');
   });
 
-  it('returns slate hover class when not speaking', () => {
-    expect(speakButtonClass(false)).toContain('text-slate-400');
-    expect(speakButtonClass(false)).toContain('hover:text-slate-200');
+  it('returns muted hover class when not speaking', () => {
+    expect(speakButtonClass(false)).toContain('base-content/60');
+    expect(speakButtonClass(false)).toContain('hover:');
+    expect(speakButtonClass(false)).toContain('base-content');
   });
 });

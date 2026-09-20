@@ -49,7 +49,7 @@ introduced at A1, reappearing in A2 source material) is one merged entry whose `
 every level it appears in, not split per-level files. For filtering, `lib/words.ts`'s `wordLevel(word)`
 resolves a word's **lowest** level (`a1` < `a2` < `b1`), so a word tagged `['a1', 'a2']` is scoped under
 the A1 filter only — levels never overlap in the study queue. `FilterBar` exposes this as a "Level" chip
-row (`FilterBar/index.helpers.ts`'s `LEVEL_CHIPS`) alongside Box/Type; `b1` is hidden from the chips
+row (`@/constants`'s `LEVEL_CHIPS`) alongside Box/Type; `b1` is hidden from the chips
 until a B1 source is extracted (nothing currently carries that level).
 
 Dictation progress is a **separate track** from the Leitner `ProgressMap` — stored in its own

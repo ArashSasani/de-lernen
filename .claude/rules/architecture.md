@@ -20,3 +20,15 @@
   `api/ai` (Edge, streaming, JWT-gated) proxies to the user's own Anthropic key — and must always
   degrade gracefully (grey out) rather than block the core when offline, unconfigured, or toggled
   off in Settings.
+- **UI kit: FlyonUI as a Tailwind plugin only — CSS classes, no JS runtime.** Styling is FlyonUI's
+  semantic classes on top of Tailwind v4 (two themes, `delernen-dark`/`delernen-light`, declared in
+  `globals.css`, plus `flyonui/variants.css` for state variants like `accordion-item-active:`).
+  FlyonUI's JS bundle is deliberately **not** loaded, and neither is the
+  [Next.js guide](https://flyonui.com/docs/framework-integrations/nextjs/)'s companion
+  `@source '…/flyonui.js'` line: its plugins keep component state in the DOM, which fights React
+  for anything the app needs to control (deep-linked accordion categories, expand-all while a
+  search is active). React owns every component's state instead — see
+  `components/shared/Accordion`, which reuses FlyonUI's accordion classes but animates open/close
+  with a `0fr → 1fr` grid row rather than a measured JS height. This also keeps the offline
+  guarantee simple: no interactive content depends on a lazily-imported JS chunk being in the
+  service-worker cache.

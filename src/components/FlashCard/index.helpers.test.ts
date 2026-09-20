@@ -1,4 +1,4 @@
-import { resultBoxes, ARTICLE_COLOR, lemmaFontSize } from './index.helpers';
+import { resultBoxes, lemmaFontSize } from './index.helpers';
 import type { WordProgress } from '@/types';
 
 const at = (box: WordProgress['box']): WordProgress => ({
@@ -22,14 +22,6 @@ describe('resultBoxes', () => {
   it('easy always jumps to box 5', () => {
     expect(resultBoxes(at(1)).easy).toBe(5);
     expect(resultBoxes(at(3)).easy).toBe(5);
-  });
-});
-
-describe('ARTICLE_COLOR', () => {
-  it('maps each article to a colour class', () => {
-    expect(ARTICLE_COLOR.der).toContain('text-');
-    expect(ARTICLE_COLOR.die).toContain('text-');
-    expect(ARTICLE_COLOR.das).toContain('text-');
   });
 });
 

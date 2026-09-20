@@ -1,5 +1,5 @@
 export function speakButtonClass(speaking: boolean): string {
   return speaking
-    ? 'animate-pulse text-indigo-400'
-    : 'text-slate-400 hover:text-slate-200';
+    ? 'animate-pulse !text-primary'
+    : '!text-base-content/60 hover:!text-base-content';
 }

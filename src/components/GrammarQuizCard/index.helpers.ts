@@ -5,13 +5,13 @@ export function choiceStyle(
   correctIndex: number,
 ): string {
   if (!answered) {
-    return 'border-white/10 bg-white/[0.02] text-slate-300 hover:bg-white/[0.06]';
+    return 'border-base-300 bg-base-200 text-base-content/80 hover:bg-base-300';
   }
   if (i === correctIndex) {
-    return 'border-emerald-400/30 bg-emerald-500/10 text-emerald-300';
+    return 'border-emerald-400/30 bg-emerald-500/10 text-emerald-300 light:text-emerald-700';
   }
   if (i === selected) {
-    return 'border-rose-400/30 bg-rose-500/10 text-rose-300';
+    return 'border-rose-400/30 bg-rose-500/10 text-rose-300 light:text-rose-700';
   }
-  return 'border-white/5 bg-white/[0.01] text-slate-500';
+  return 'border-base-300/50 bg-base-200/50 text-base-content/60';
 }

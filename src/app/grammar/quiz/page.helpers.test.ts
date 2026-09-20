@@ -1,4 +1,9 @@
-import { sessionStats, buildTopicQuiz, buildSmartQuiz, QUIZ_SESSION_SIZE } from './page.helpers';
+import {
+  sessionStats,
+  buildTopicQuiz,
+  buildSmartQuiz,
+  QUIZ_SESSION_SIZE,
+} from './page.helpers';
 
 describe('sessionStats', () => {
   it('returns zeros for empty results', () => {
@@ -83,7 +88,12 @@ describe('buildSmartQuiz', () => {
 
   it('prioritises topics with low accuracy over never-seen topics', () => {
     const progress = {
-      'sein-praesens': { attempts: 5, correct: 1, streak: 0, lastSeen: Date.now() - 1000 },
+      'sein-praesens': {
+        attempts: 5,
+        correct: 1,
+        streak: 0,
+        lastSeen: Date.now() - 1000,
+      },
     };
     const qs = buildSmartQuiz(progress);
     // The low-accuracy topic should appear in the quiz

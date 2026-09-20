@@ -11,7 +11,8 @@ import type { Word } from '@/types';
 import type { Gap } from '@/lib/dictation';
 import { useSpeech } from '@/hooks/useSpeech';
 import SpeakButton from '@/components/SpeakButton';
-import { ARTICLE_COLOR, checkAnswer, gapInputWidth } from './index.helpers';
+import { ARTICLE_COLOR } from '@/constants';
+import { checkAnswer, gapInputWidth } from './index.helpers';
 
 type Phase = 'question' | 'result';
 
@@ -81,9 +82,9 @@ export default function DictationCard({
       className="flex flex-col gap-5 outline-none"
       onKeyDown={handleKeyDown}
     >
-      <div className="relative flex min-h-72 w-full flex-col items-center justify-center gap-6 rounded-2xl border border-white/10 bg-white/[0.04] p-6 md:min-h-96">
+      <div className="border-base-300 bg-base-200 relative flex min-h-72 w-full flex-col items-center justify-center gap-6 rounded-2xl border p-6 md:min-h-96">
         {/* POS badge */}
-        <span className="absolute top-3 right-4 rounded-full bg-white/5 px-2 py-0.5 text-xs text-slate-400 capitalize">
+        <span className="badge badge-soft badge-sm !text-base-content/60 absolute top-3 right-4 capitalize">
           {word.pos}
         </span>
 
@@ -93,8 +94,10 @@ export default function DictationCard({
             onClick={onToggleStar}
             aria-pressed={starred}
             aria-label={starred ? 'Unstar this word' : 'Star this word'}
-            className={`absolute top-3 left-4 rounded p-0.5 transition-colors ${
-              starred ? 'text-amber-400' : 'text-slate-500 hover:text-amber-400'
+            className={`btn btn-circle btn-text btn-sm absolute top-3 left-4 ${
+              starred
+                ? '!text-amber-400'
+                : '!text-base-content/60 hover:!text-amber-400'
             }`}
           >
             {starred ? (
@@ -116,7 +119,7 @@ export default function DictationCard({
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 style={{ width: gapInputWidth(gap.gap.length) }}
-                className="rounded border-b-2 border-dashed border-indigo-400 bg-transparent text-center text-indigo-200 outline-none focus:border-indigo-300"
+                className="light:text-indigo-800 rounded border-0 border-b-2 border-dashed border-indigo-400 bg-transparent px-1 text-center text-3xl font-semibold tracking-tight text-indigo-200 outline-none focus:border-indigo-300"
                 autoCapitalize="none"
                 autoCorrect="off"
                 autoComplete="off"
@@ -143,7 +146,7 @@ export default function DictationCard({
                 <div className="flex items-start gap-2">
                   <CheckIcon
                     aria-hidden="true"
-                    className="mt-1.5 h-6 w-6 flex-shrink-0 text-slate-200"
+                    className="mt-1.5 h-6 w-6 flex-shrink-0"
                   />
                   <p className="text-3xl font-semibold tracking-tight">
                     {word.article && (
@@ -154,7 +157,7 @@ export default function DictationCard({
                       </span>
                     )}
                     {gap.before}
-                    <span className="underline decoration-slate-200 decoration-2 underline-offset-4">
+                    <span className="decoration-base-content underline decoration-2 underline-offset-4">
                       {gap.gap}
                     </span>
                     {gap.after}
@@ -167,11 +170,11 @@ export default function DictationCard({
                 <div className="flex items-start gap-2">
                   <XMarkIcon
                     aria-hidden="true"
-                    className="mt-1 h-6 w-6 flex-shrink-0 text-slate-400"
+                    className="text-base-content/60 mt-1 h-6 w-6 flex-shrink-0"
                   />
-                  <p className="text-2xl font-semibold tracking-tight text-slate-400 line-through">
+                  <p className="text-base-content/60 text-2xl font-semibold tracking-tight line-through">
                     {gap.before}
-                    <span className="underline decoration-slate-400 decoration-2 underline-offset-4">
+                    <span className="decoration-base-content/60 underline decoration-2 underline-offset-4">
                       {input || '—'}
                     </span>
                     {gap.after}
@@ -187,7 +190,7 @@ export default function DictationCard({
                     </span>
                   )}
                   {gap.before}
-                  <span className="underline decoration-slate-200 decoration-2 underline-offset-4">
+                  <span className="decoration-base-content underline decoration-2 underline-offset-4">
                     {gap.gap}
                   </span>
                   {gap.after}
@@ -195,7 +198,7 @@ export default function DictationCard({
               </div>
             )}
 
-            <p className="text-sm text-slate-400">{word.en}</p>
+            <p className="text-base-content/60 text-sm">{word.en}</p>
 
             {available && (
               <SpeakButton
@@ -213,15 +216,12 @@ export default function DictationCard({
         <button
           onClick={submit}
           disabled={input.trim().length === 0}
-          className="w-full rounded-xl bg-indigo-500/20 px-3 py-3 font-medium text-indigo-300 transition-colors hover:bg-indigo-500/30 disabled:bg-white/5 disabled:text-slate-500"
+          className="btn btn-primary btn-soft btn-block"
         >
           Check
         </button>
       ) : (
-        <button
-          onClick={onNext}
-          className="w-full rounded-xl bg-indigo-500 px-3 py-3 font-medium text-white transition-colors hover:bg-indigo-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30"
-        >
+        <button onClick={onNext} className="btn btn-primary btn-block">
           Next →
         </button>
       )}

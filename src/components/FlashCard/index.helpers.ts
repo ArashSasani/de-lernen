@@ -1,11 +1,6 @@
 import type { WordProgress, Box } from '@/types';
 import type { Grade } from '@/types/grade';
 import { onGood, onMiss, onEasy } from '@/lib/leitner';
-export { ARTICLE_COLOR } from '@/constants';
-
-// Plurals always take "die" in German, but use yellow to distinguish from
-// feminine "die" (a common mnemonic in A1 teaching).
-export const PLURAL_COLOR = 'text-yellow-400';
 
 // Returns a Tailwind text-size class scaled to the displayed word length so
 // long German compound words shrink to fit instead of overflowing the card.

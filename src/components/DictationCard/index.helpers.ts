@@ -1,7 +1,5 @@
 import type { Word } from '@/types';
 
-export { ARTICLE_COLOR } from '@/constants';
-
 export function checkAnswer(input: string, expected: string): boolean {
   return input.trim().toLowerCase() === expected.toLowerCase();
 }

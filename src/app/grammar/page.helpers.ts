@@ -1,7 +1,7 @@
-import type { GrammarCategory, GrammarTopic, Level } from '@/types';
+import type { GrammarCategory, GrammarTopic } from '@/types';
 import type { LevelFilter } from '@/types/filter';
 import type { CategoryGroup } from '@/lib/grammar';
-import { FILTER, LEVELS } from '@/constants';
+import { FILTER } from '@/constants';
 
 export const ALLOWED_CATEGORIES: GrammarCategory[] = [
   'verben',
@@ -14,15 +14,6 @@ export const ALLOWED_CATEGORIES: GrammarCategory[] = [
   'verben-kasus',
   'zahlen',
   'adjektive',
-];
-
-// B1 has no grammar topics yet, so its chip is hidden for now.
-export const LEVEL_CHIPS: { value: LevelFilter; label: string }[] = [
-  { value: FILTER.ALL, label: 'All' },
-  ...LEVELS.filter((l): l is Exclude<Level, 'b1'> => l !== 'b1').map((l) => ({
-    value: l,
-    label: l.toUpperCase(),
-  })),
 ];
 
 /**

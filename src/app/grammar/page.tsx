@@ -1,11 +1,16 @@
 'use client';
 
-import { Suspense, useEffect, useState, startTransition } from 'react';
+import {
+  Suspense,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  startTransition,
+} from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import {
-  ChevronDownIcon,
-  ChevronUpIcon,
   XMarkIcon,
   PuzzlePieceIcon,
   MagnifyingGlassIcon,
@@ -13,7 +18,13 @@ import {
 import AppNav from '@/components/AppNav';
 import GrammarTableView from '@/components/GrammarTableView';
 import GrammarExampleView from '@/components/GrammarExampleView';
+import Accordion from '@/components/shared/Accordion';
+import { toggleExclusive } from '@/components/shared/Accordion/index.helpers';
+import Chip from '@/components/shared/Chip';
+import Modal from '@/components/shared/Modal';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import { getToken } from '@/lib/sync';
+import { DESKTOP_MEDIA_QUERY, LEVEL_CHIPS } from '@/constants';
 import { topicsByCategory, grammarTopicById } from '@/lib/grammar';
 import { isQuizzableTopic } from '@/lib/grammar-quiz';
 import {
@@ -21,11 +32,11 @@ import {
   splitParagraphs,
   filterGroups,
   filterGroupsByLevel,
-  LEVEL_CHIPS,
 } from './page.helpers';
 import type { GrammarTopic } from '@/types';
 import type { LevelFilter } from '@/types/filter';
 import type { CategoryGroup } from '@/lib/grammar';
+import LoadingScreen from '@/components/shared/LoadingScreen';
 
 const groups: CategoryGroup[] = topicsByCategory();
 
@@ -35,19 +46,17 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="flex items-center gap-2">
-            <p className="text-base font-semibold text-slate-100">
-              {topic.title}
-            </p>
-            <span className="rounded-full border border-white/10 px-1.5 py-0.5 text-[10px] font-medium tracking-wide text-slate-400 uppercase">
+            <p className="text-base font-semibold">{topic.title}</p>
+            <span className="badge badge-soft badge-xs !text-base-content/60 uppercase">
               {topic.level}
             </span>
           </div>
-          <p className="mt-0.5 text-xs text-slate-500">{topic.summary}</p>
+          <p className="text-base-content/60 mt-0.5 text-xs">{topic.summary}</p>
         </div>
         {isQuizzableTopic(topic.id) && (
           <Link
             href={`/grammar/quiz?topic=${topic.id}`}
-            className="mr-8 shrink-0 rounded-lg bg-indigo-500 px-3 py-1.5 text-xs font-medium text-white transition-colors hover:bg-indigo-400 md:hidden"
+            className="btn btn-primary btn-xs mr-8 shrink-0 md:hidden"
           >
             Quiz
           </Link>
@@ -57,7 +66,7 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
       {topic.explanation && (
         <div className="flex flex-col gap-2">
           {splitParagraphs(topic.explanation).map((p, i) => (
-            <p key={i} className="text-sm text-slate-300">
+            <p key={i} className="text-base-content/80 text-sm">
               {p}
             </p>
           ))}
@@ -73,8 +82,8 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
       )}
 
       {topic.examples.length > 0 && (
-        <div className="flex flex-col gap-2 rounded-lg border border-white/5 bg-white/[0.02] px-3 py-3">
-          <p className="text-xs font-medium tracking-wide text-slate-500 uppercase">
+        <div className="border-base-300 bg-base-200 flex flex-col gap-2 rounded-lg border px-3 py-3">
+          <p className="text-base-content/60 text-xs font-medium tracking-wide uppercase">
             Beispiele
           </p>
           {topic.examples.map((ex, i) => (
@@ -84,14 +93,14 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
       )}
 
       {topic.tips.length > 0 && (
-        <div className="rounded-lg border border-indigo-400/20 bg-indigo-500/[0.06] px-3 py-3">
-          <p className="mb-1.5 text-xs font-medium tracking-wide text-indigo-400 uppercase">
+        <div className="border-primary/20 bg-primary/5 rounded-lg border px-3 py-3">
+          <p className="text-primary mb-1.5 text-xs font-medium tracking-wide uppercase">
             Tipps
           </p>
           <ul className="flex flex-col gap-1">
             {topic.tips.map((tip, i) => (
-              <li key={i} className="flex gap-2 text-xs text-slate-300">
-                <span className="mt-px text-indigo-400" aria-hidden="true">
+              <li key={i} className="text-base-content/80 flex gap-2 text-xs">
+                <span className="text-primary mt-px" aria-hidden="true">
                   •
                 </span>
                 {tip}
@@ -106,13 +115,7 @@ function TopicContent({ topic }: { topic: GrammarTopic }) {
 
 export default function GrammarPage() {
   return (
-    <Suspense
-      fallback={
-        <main className="flex flex-1 items-center justify-center text-slate-400">
-          Loading…
-        </main>
-      }
-    >
+    <Suspense fallback={<LoadingScreen />}>
       <GrammarPageInner />
     </Suspense>
   );
@@ -126,14 +129,17 @@ function GrammarPageInner() {
   const initialTopicId = searchParams.get('topic');
 
   const [ready, setReady] = useState(false);
-  const [openCategory, setOpenCategory] = useState<string | null>(
-    initialOpenCategory,
-  );
   const [selectedTopic, setSelectedTopic] = useState<GrammarTopic | null>(() =>
     initialTopicId ? (grammarTopicById(initialTopicId) ?? null) : null,
   );
   const [searchQuery, setSearchQuery] = useState('');
   const [levelFilter, setLevelFilter] = useState<LevelFilter>('all');
+  // Deep-linked category (?open=) is just the initial value — after that the
+  // open set is ordinary React state, so there's nothing to re-assert later.
+  const [openCategories, setOpenCategories] = useState<string[]>(() =>
+    initialOpenCategory ? [initialOpenCategory] : [],
+  );
+  const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
 
   useEffect(() => {
     if (!getToken()) {
@@ -143,20 +149,53 @@ function GrammarPageInner() {
     startTransition(() => setReady(true));
   }, [router]);
 
-  const visible = activeGroups(groups);
-  const byLevel = filterGroupsByLevel(visible, levelFilter);
-  const visibleGroups = filterGroups(byLevel, searchQuery);
+  // Clearing `?topic=` matters: /grammar/quiz links back here as
+  // `/grammar?open=<cat>&topic=<id>`, so leaving the param in place would
+  // reopen the topic modal every time the user returns to this page after
+  // having closed it.
+  const closeTopic = useCallback(() => {
+    setSelectedTopic(null);
+    if (!searchParams.has('topic')) return;
+    const params = new URLSearchParams(searchParams.toString());
+    params.delete('topic');
+    const query = params.toString();
+    router.replace(query ? `/grammar?${query}` : '/grammar', { scroll: false });
+  }, [router, searchParams]);
+
+  const visible = useMemo(() => activeGroups(groups), []);
+  const byLevel = useMemo(
+    () => filterGroupsByLevel(visible, levelFilter),
+    [visible, levelFilter],
+  );
+  const visibleGroups = useMemo(
+    () => filterGroups(byLevel, searchQuery),
+    [byLevel, searchQuery],
+  );
   const isSearching = searchQuery.trim().length > 0;
 
-  const toggleCategory = (category: string) =>
-    setOpenCategory((cur) => (cur === category ? null : category));
+  // Search results are easier to scan fully expanded, so while a query is
+  // active every matching category is forced open — re-applied whenever the
+  // matching *set* changes (not on every keystroke that merely re-filters
+  // topics within the same categories), so a category revealed by a narrower
+  // query opens too. Leaving search doesn't re-collapse anything; the user
+  // closes what they don't need, same as any other manual toggle.
+  //
+  // Adjusting state during render is React's documented alternative to an
+  // effect for "derive from a prop/state change" — it re-renders before the
+  // browser paints, so the panels never flash shut and open again.
+  const searchKey = isSearching
+    ? visibleGroups.map((g) => g.category).join(',')
+    : null;
+  const [appliedSearchKey, setAppliedSearchKey] = useState<string | null>(null);
+  if (searchKey !== appliedSearchKey) {
+    setAppliedSearchKey(searchKey);
+    if (searchKey !== null) {
+      setOpenCategories(visibleGroups.map((g) => g.category));
+    }
+  }
 
   if (!ready) {
-    return (
-      <main className="flex flex-1 items-center justify-center text-slate-400">
-        Loading…
-      </main>
-    );
+    return <LoadingScreen />;
   }
 
   return (
@@ -170,12 +209,14 @@ function GrammarPageInner() {
 
       {/* Left column: selected topic content */}
       {selectedTopic ? (
-        <section className="hidden rounded-2xl border border-indigo-400/20 bg-indigo-500/[0.06] p-5 md:block md:overflow-y-auto">
+        <section className="border-primary/20 bg-primary/5 hidden rounded-2xl border p-5 md:block md:overflow-y-auto">
           <TopicContent topic={selectedTopic} />
         </section>
       ) : (
-        <section className="hidden items-center justify-center rounded-2xl border border-white/5 md:flex md:overflow-y-auto">
-          <p className="text-sm text-slate-500">Select a topic from the list</p>
+        <section className="border-base-300 hidden items-center justify-center rounded-2xl border md:flex md:overflow-y-auto">
+          <p className="text-base-content/60 text-sm">
+            Select a topic from the list
+          </p>
         </section>
       )}
 
@@ -184,7 +225,7 @@ function GrammarPageInner() {
         {/* Search */}
         <div className="relative">
           <MagnifyingGlassIcon
-            className="pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2 text-slate-500"
+            className="text-base-content/60 pointer-events-none absolute top-1/2 left-3 h-4 w-4 -translate-y-1/2"
             aria-hidden="true"
           />
           <input
@@ -192,13 +233,13 @@ function GrammarPageInner() {
             placeholder="Grammatik suchen…"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full rounded-xl border border-white/10 bg-white/[0.04] py-2.5 pr-9 pl-9 text-sm text-slate-200 placeholder-slate-500 focus:border-indigo-400/50 focus:outline-none"
+            className="input pr-9 pl-9 text-sm"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
               aria-label="Clear search"
-              className="absolute top-1/2 right-3 -translate-y-1/2 text-slate-500 hover:text-slate-300"
+              className="text-base-content/60 hover:text-base-content/80 absolute top-1/2 right-3 -translate-y-1/2"
             >
               <XMarkIcon className="h-4 w-4" aria-hidden="true" />
             </button>
@@ -207,125 +248,93 @@ function GrammarPageInner() {
 
         <div className="flex gap-1.5">
           {LEVEL_CHIPS.map(({ value, label }) => (
-            <button
+            <Chip
               key={value}
+              active={levelFilter === value}
               onClick={() => setLevelFilter(value)}
-              className={`rounded-full border px-3 py-1 text-xs font-medium transition-colors ${
-                levelFilter === value
-                  ? 'border-indigo-400/40 bg-indigo-500/15 text-indigo-300'
-                  : 'border-white/10 text-slate-400 hover:bg-white/[0.04]'
-              }`}
             >
               {label}
-            </button>
+            </Chip>
           ))}
         </div>
 
         <Link
           href="/grammar/quiz"
-          className="flex items-center gap-2 rounded-xl border border-indigo-400/20 bg-indigo-500/[0.06] px-4 py-3 text-sm font-medium text-indigo-400 transition-colors hover:bg-indigo-500/[0.12]"
+          className="text-primary border-primary/20 bg-primary/5 hover:bg-primary/10 flex items-center gap-2 rounded-xl border px-4 py-3 text-sm font-medium transition-colors"
         >
           <PuzzlePieceIcon className="h-4 w-4" aria-hidden="true" />
           Smart Quiz
         </Link>
 
-        {visibleGroups.map((g) => {
-          const isOpen = isSearching || openCategory === g.category;
-          return (
-            <div
-              key={g.category}
-              className="overflow-hidden rounded-xl border border-white/10"
-            >
-              <button
-                onClick={() => toggleCategory(g.category)}
-                aria-expanded={isOpen}
-                className="flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-white/[0.04]"
-              >
-                <span className="text-xs font-medium tracking-wide text-slate-400 uppercase">
-                  {g.label}
-                </span>
-                {isOpen ? (
-                  <ChevronUpIcon
-                    className="h-3.5 w-3.5 text-slate-500"
-                    aria-hidden="true"
-                  />
-                ) : (
-                  <ChevronDownIcon
-                    className="h-3.5 w-3.5 text-slate-500"
-                    aria-hidden="true"
-                  />
-                )}
-              </button>
-              {isOpen && (
-                <ul className="flex flex-col divide-y divide-white/5 border-t border-white/10">
-                  {g.topics.map((topic) => {
-                    const isActive = selectedTopic?.id === topic.id;
-                    return (
-                      <li
-                        key={topic.id}
-                        className={`flex items-center gap-1 ${isActive ? 'bg-indigo-500/10' : ''}`}
+        <Accordion
+          openIds={openCategories}
+          onToggle={(id) =>
+            setOpenCategories((prev) => toggleExclusive(prev, id))
+          }
+          toggleClassName="hover:bg-base-300/50"
+          items={visibleGroups.map((g) => ({
+            id: g.category,
+            label: (
+              <span className="text-base-content/60 text-xs font-medium tracking-wide uppercase">
+                {g.label}
+              </span>
+            ),
+            content: (
+              <ul className="divide-base-300 border-base-300 flex flex-col divide-y border-t">
+                {g.topics.map((topic) => {
+                  const isActive = selectedTopic?.id === topic.id;
+                  return (
+                    <li
+                      key={topic.id}
+                      className={`flex items-center gap-1 ${isActive ? 'bg-primary/10' : ''}`}
+                    >
+                      <button
+                        onClick={() => setSelectedTopic(topic)}
+                        className="hover:bg-base-300/50 flex-1 px-4 py-2.5 text-left transition-colors"
                       >
-                        <button
-                          onClick={() => setSelectedTopic(topic)}
-                          className="flex-1 px-4 py-2.5 text-left transition-colors hover:bg-white/[0.04]"
+                        <p
+                          className={`hover:text-base-content text-sm ${isActive ? 'text-primary' : 'text-base-content/80'}`}
                         >
-                          <p
-                            className={`text-sm hover:text-slate-100 ${isActive ? 'text-indigo-300' : 'text-slate-300'}`}
-                          >
-                            {topic.title}
-                          </p>
-                          <p className="mt-0.5 text-xs text-slate-500">
-                            {topic.summary}
-                          </p>
-                        </button>
-                        {isQuizzableTopic(topic.id) && (
-                          <Link
-                            href={`/grammar/quiz?topic=${topic.id}`}
-                            className="mr-2 shrink-0 rounded-lg border border-white/10 px-2.5 py-1.5 text-xs text-slate-400 transition-colors hover:bg-white/[0.06] hover:text-slate-200"
-                          >
-                            Quiz
-                          </Link>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              )}
-            </div>
-          );
-        })}
+                          {topic.title}
+                        </p>
+                        <p className="text-base-content/60 mt-0.5 text-xs">
+                          {topic.summary}
+                        </p>
+                      </button>
+                      {isQuizzableTopic(topic.id) && (
+                        <Link
+                          href={`/grammar/quiz?topic=${topic.id}`}
+                          className="btn btn-soft btn-primary btn-xs mr-2 shrink-0"
+                        >
+                          Quiz
+                        </Link>
+                      )}
+                    </li>
+                  );
+                })}
+              </ul>
+            ),
+          }))}
+        />
 
         {isSearching && visibleGroups.length === 0 && (
-          <p className="px-4 py-3 text-sm text-slate-500">Keine Ergebnisse</p>
+          <p className="text-base-content/60 px-4 py-3 text-sm">
+            Keine Ergebnisse
+          </p>
         )}
       </section>
 
-      {/* Modal — mobile only */}
-      {selectedTopic && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 md:hidden"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setSelectedTopic(null)}
-          style={{
-            paddingTop: 'max(1rem, env(safe-area-inset-top))',
-            paddingBottom: 'max(1rem, env(safe-area-inset-bottom))',
-          }}
+      {/* Modal — mobile only; on desktop the left column shows the topic.
+          Gated on a media query rather than `md:hidden` so it doesn't mount
+          (and scroll-lock the body) behind an invisible wrapper on desktop. */}
+      {!isDesktop && (
+        <Modal
+          open={!!selectedTopic}
+          onClose={closeTopic}
+          title={selectedTopic?.title ?? 'Thema'}
         >
-          <div
-            className="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-2xl border border-white/10 bg-slate-900 p-6"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setSelectedTopic(null)}
-              aria-label="Close"
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-200"
-            >
-              <XMarkIcon className="h-5 w-5" aria-hidden="true" />
-            </button>
-            <TopicContent topic={selectedTopic} />
-          </div>
-        </div>
+          {selectedTopic && <TopicContent topic={selectedTopic} />}
+        </Modal>
       )}
     </main>
   );

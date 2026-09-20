@@ -18,7 +18,7 @@ export default function SpeakButton({
     <button
       type="button"
       aria-label="Pronounce"
-      className={`flex items-center justify-center rounded-full p-2 transition-colors ${speakButtonClass(speaking)} ${className ?? ''}`}
+      className={`btn btn-circle btn-text ${speakButtonClass(speaking)} ${className ?? ''}`}
       onClick={(e) => {
         e.stopPropagation();
         onSpeak();
