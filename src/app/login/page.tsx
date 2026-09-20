@@ -54,7 +54,7 @@ export default function LoginPage() {
       >
         <div className="text-center">
           <h1 className="text-3xl font-semibold tracking-tight">de·lernen</h1>
-          <p className="mt-1 text-sm text-slate-400">Spaced repetition</p>
+          <p className="text-base-content/60 mt-1 text-sm">Spaced repetition</p>
         </div>
         <input
           type="password"
@@ -64,15 +64,15 @@ export default function LoginPage() {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-base transition-colors outline-none focus:border-indigo-400/60"
+          className="input input-lg w-full"
         />
         {retryAfter !== null ? (
-          <p aria-live="polite" className="text-sm text-rose-400">
+          <p aria-live="polite" className="text-error text-sm">
             Too many attempts. Try again in {formatRetryAfter(retryAfter)}.
           </p>
         ) : (
           error && (
-            <p aria-live="polite" className="text-sm text-rose-400">
+            <p aria-live="polite" className="text-error text-sm">
               {error}
             </p>
           )
@@ -80,7 +80,7 @@ export default function LoginPage() {
         <button
           type="submit"
           disabled={loading || !password || retryAfter !== null}
-          className="w-full rounded-xl bg-indigo-500 px-4 py-3 font-medium text-white transition-colors hover:bg-indigo-400 disabled:bg-white/5 disabled:text-slate-500"
+          className="btn btn-primary btn-lg btn-block"
         >
           {loading ? 'Checking…' : 'Enter'}
         </button>

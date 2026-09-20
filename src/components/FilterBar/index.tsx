@@ -1,8 +1,8 @@
 'use client';
 
 import type { Filter } from '@/types/filter';
-import { POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS } from './index.helpers';
-import { FILTER } from '@/constants';
+import { FILTER, POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS } from '@/constants';
+import Chip from '@/components/shared/Chip';
 
 export default function FilterBar({
   filter,
@@ -78,33 +78,10 @@ function FilterGroup({
 }) {
   return (
     <div className="flex flex-col gap-1">
-      <span className="text-[10px] font-medium tracking-wider text-slate-500 uppercase">
+      <span className="text-base-content/60 text-[10px] font-medium tracking-wider uppercase">
         {label}
       </span>
       <div className="flex flex-wrap gap-1">{children}</div>
     </div>
-  );
-}
-
-function Chip({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className={`rounded-full px-2.5 py-0.5 transition-colors ${
-        active
-          ? 'bg-indigo-500 text-white'
-          : 'bg-white/5 text-slate-300 hover:bg-white/10'
-      }`}
-    >
-      {children}
-    </button>
   );
 }

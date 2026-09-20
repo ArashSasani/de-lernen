@@ -2,15 +2,9 @@
 
 import { useState } from 'react';
 import type { Word, WordProgress, Box } from '@/types';
-import { BOXES } from '@/constants';
+import { BOXES, ARTICLE_COLOR, PLURAL_COLOR, GRADE } from '@/constants';
 import type { Grade } from '@/types/grade';
-import {
-  ARTICLE_COLOR,
-  PLURAL_COLOR,
-  resultBoxes,
-  lemmaFontSize,
-} from './index.helpers';
-import { GRADE } from '@/constants';
+import { resultBoxes, lemmaFontSize } from './index.helpers';
 import { useSpeech } from '@/hooks/useSpeech';
 import SpeakButton from '@/components/SpeakButton';
 import { ArrowsRightLeftIcon } from '@heroicons/react/24/outline';
@@ -54,8 +48,8 @@ export default function FlashCard({
           }`}
         >
           {/* Front: German */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] p-6 text-center backface-hidden">
-            <span className="absolute top-3 left-4 rounded-full bg-white/5 px-2 py-0.5 text-xs text-slate-400">
+          <div className="border-base-300 bg-base-200 absolute inset-0 flex flex-col items-center justify-center rounded-2xl border p-6 text-center backface-hidden">
+            <span className="badge badge-soft badge-sm !text-base-content/60 absolute top-3 left-4">
               Box {progress.box}
             </span>
             <div className="absolute top-3 left-1/2 flex -translate-x-1/2 gap-2">
@@ -63,14 +57,14 @@ export default function FlashCard({
                 remainingByBox[b] > 0 ? (
                   <span
                     key={b}
-                    className="rounded-full bg-white/5 px-2 py-0.5 text-[10px] text-slate-500"
+                    className="badge badge-soft badge-xs !text-base-content/50"
                   >
                     B{b}: {remainingByBox[b]}
                   </span>
                 ) : null,
               )}
             </div>
-            <span className="absolute top-3 right-4 rounded-full bg-white/5 px-2 py-0.5 text-xs text-slate-400 capitalize">
+            <span className="badge badge-soft badge-sm !text-base-content/60 absolute top-3 right-4 capitalize">
               {word.pos}
             </span>
             <h2
@@ -84,7 +78,7 @@ export default function FlashCard({
               {word.lemma}
             </h2>
             {word.plural && (
-              <p className="mt-2 text-sm text-slate-300">
+              <p className="text-base-content/80 mt-2 text-sm">
                 pl. <span className={PLURAL_COLOR}>die</span> {word.plural}
               </p>
             )}
@@ -104,7 +98,7 @@ export default function FlashCard({
                     onShuffle();
                   }}
                   aria-label="Random card from same box"
-                  className="rounded-full bg-white/5 p-3 text-slate-400 transition-colors hover:text-slate-200 md:p-1.5"
+                  className="btn btn-circle btn-soft btn-sm !text-base-content/70"
                 >
                   <ArrowsRightLeftIcon
                     className="h-5 w-5 md:h-4 md:w-4"
@@ -116,10 +110,10 @@ export default function FlashCard({
           </div>
 
           {/* Back: English + examples */}
-          <div className="absolute inset-0 flex rotate-y-180 flex-col items-center justify-center rounded-2xl border border-indigo-400/20 bg-indigo-500/[0.07] p-6 text-center backface-hidden">
+          <div className="border-primary/20 bg-primary/5 absolute inset-0 flex rotate-y-180 flex-col items-center justify-center rounded-2xl border p-6 text-center backface-hidden">
             <h2 className="text-3xl font-semibold tracking-tight">{word.en}</h2>
             {examples.length > 0 && (
-              <ul className="mt-5 space-y-2 text-sm text-slate-300">
+              <ul className="text-base-content/80 mt-5 space-y-2 text-sm">
                 {examples.map((ex, i) => (
                   <li key={i} className="italic">
                     “{ex}”
@@ -132,32 +126,32 @@ export default function FlashCard({
       </div>
 
       {/* Before flip: Skip button. After flip: grade buttons. */}
-      <div className="min-h-[60px]">
+      <div className="h-[52px]">
         {flipped ? (
-          <div className="grid grid-cols-3 gap-3">
+          <div className="grid h-full grid-cols-3 gap-3">
             <GradeButton
               label="Miss"
               box={resultBox.miss}
-              className="bg-orange-500/15 text-orange-300 hover:bg-orange-500/25"
+              className="light:text-orange-700 bg-orange-500/15 text-orange-300 hover:bg-orange-500/25"
               onClick={() => onGrade(GRADE.MISS)}
             />
             <GradeButton
               label="Got it"
               box={resultBox.good}
-              className="bg-teal-500/15 text-teal-300 hover:bg-teal-500/25"
+              className="light:text-teal-700 bg-teal-500/15 text-teal-300 hover:bg-teal-500/25"
               onClick={() => onGrade(GRADE.GOOD)}
             />
             <GradeButton
               label="Easy"
               box={resultBox.easy}
-              className="bg-violet-500/15 text-violet-300 hover:bg-violet-500/25"
+              className="light:text-violet-700 bg-violet-500/15 text-violet-300 hover:bg-violet-500/25"
               onClick={() => onGrade(GRADE.EASY)}
             />
           </div>
         ) : (
           <button
             onClick={onSkip}
-            className="w-full rounded-xl bg-white/5 px-3 py-3 font-medium text-slate-400 transition-colors hover:bg-white/10 hover:text-slate-300"
+            className="btn btn-soft btn-block !text-base-content/80 h-full"
           >
             Skip
           </button>
@@ -181,10 +175,10 @@ function GradeButton({
   return (
     <button
       onClick={onClick}
-      className={`flex flex-col items-center gap-0.5 rounded-xl px-3 py-3 font-medium transition-colors ${className}`}
+      className={`btn !h-auto !flex-col !gap-0.5 border-none !py-2 leading-tight ${className}`}
     >
       <span>{label}</span>
-      <span className="text-[11px] opacity-70">→ Box {box}</span>
+      <span className="text-[11px] leading-tight opacity-70">→ Box {box}</span>
     </button>
   );
 }

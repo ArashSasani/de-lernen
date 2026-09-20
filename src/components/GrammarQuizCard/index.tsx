@@ -42,10 +42,10 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
   }, [answered, question.choices.length, question.correctIndex, onNext]);
 
   return (
-    <div className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
-      {topic && <p className="text-xs text-slate-500">{topic.title}</p>}
+    <div className="border-base-300 bg-base-200 flex flex-col gap-4 rounded-2xl border p-5">
+      {topic && <p className="text-base-content/60 text-xs">{topic.title}</p>}
 
-      <p className="text-lg font-medium whitespace-pre-line text-slate-100">
+      <p className="text-lg font-medium whitespace-pre-line">
         {question.prompt}
       </p>
 
@@ -67,7 +67,7 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
         <div className="flex justify-end">
           <button
             onClick={onNext}
-            className="rounded-lg border border-white/10 px-4 py-2 text-sm font-medium text-slate-400 transition-colors hover:border-white/20 hover:text-slate-300"
+            className="btn btn-soft btn-sm !text-base-content/80"
           >
             Skip
           </button>
@@ -78,20 +78,17 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
         <div className="flex flex-col gap-2">
           <div className="flex items-center justify-between">
             <p
-              className={`text-sm font-medium ${isCorrect ? 'text-emerald-400' : 'text-rose-400'}`}
+              className={`text-sm font-medium ${isCorrect ? 'light:text-emerald-700 text-emerald-400' : 'light:text-rose-700 text-rose-400'}`}
             >
               {isCorrect
                 ? 'Richtig!'
                 : `Richtige Antwort: ${question.choices[question.correctIndex]}`}
             </p>
-            <button
-              onClick={onNext}
-              className="rounded-lg bg-indigo-500 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-indigo-400"
-            >
+            <button onClick={onNext} className="btn btn-primary btn-sm">
               Next
             </button>
           </div>
-          <p className="text-sm text-slate-400">{question.explanation}</p>
+          <p className="text-base-content/60 text-sm">{question.explanation}</p>
         </div>
       )}
     </div>

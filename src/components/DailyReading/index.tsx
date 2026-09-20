@@ -50,13 +50,13 @@ export default function DailyReading({
         />
       )}
       <header className="flex flex-col gap-1">
-        <span className="text-xs font-medium tracking-wide text-indigo-300 uppercase">
+        <span className="text-primary text-xs font-medium tracking-wide uppercase">
           {text.topic}
         </span>
         <h2 className="text-xl font-semibold tracking-tight">{text.title}</h2>
       </header>
 
-      <p className="text-justify text-[16px] leading-relaxed whitespace-pre-line text-slate-200 md:text-[18px] md:leading-[1.8]">
+      <p className="text-justify text-[16px] leading-relaxed whitespace-pre-line md:text-[18px] md:leading-[1.8]">
         {segments.map((seg, i) => {
           if (!seg.wordId) return <span key={i}>{seg.text}</span>;
 

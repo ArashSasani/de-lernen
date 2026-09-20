@@ -12,6 +12,7 @@ import Link from 'next/link';
 import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import AppNav from '@/components/AppNav';
 import GrammarQuizCard from '@/components/GrammarQuizCard';
+import SessionSummary from '@/components/shared/SessionSummary';
 import { getToken } from '@/lib/sync';
 import {
   loadGrammarQuizProgress,
@@ -21,16 +22,11 @@ import { fullGrammarQuizSync } from '@/lib/grammar-quiz-sync';
 import { grammarTopicById } from '@/lib/grammar';
 import type { QuizQuestion } from '@/types/grammar-quiz';
 import { buildSmartQuiz, buildTopicQuiz, sessionStats } from './page.helpers';
+import LoadingScreen from '@/components/shared/LoadingScreen';
 
 export default function GrammarQuizPage() {
   return (
-    <Suspense
-      fallback={
-        <main className="flex flex-1 items-center justify-center text-slate-400">
-          Loading…
-        </main>
-      }
-    >
+    <Suspense fallback={<LoadingScreen />}>
       <GrammarQuizInner />
     </Suspense>
   );
@@ -89,11 +85,7 @@ function GrammarQuizInner() {
     : '/grammar';
 
   if (!ready) {
-    return (
-      <main className="flex flex-1 items-center justify-center text-slate-400">
-        Loading…
-      </main>
-    );
+    return <LoadingScreen />;
   }
 
   if (queue.length === 0) {
@@ -103,7 +95,7 @@ function GrammarQuizInner() {
           <div className="flex items-center gap-3">
             <Link
               href={backHref}
-              className="text-slate-400 hover:text-slate-200"
+              className="text-base-content/60 hover:text-base-content/80"
               aria-label="Back to grammar"
             >
               <ArrowLeftIcon className="h-4 w-4" aria-hidden="true" />
@@ -114,7 +106,9 @@ function GrammarQuizInner() {
           </div>
           <AppNav />
         </header>
-        <p className="text-sm text-slate-400">Please try a different topic.</p>
+        <p className="text-base-content/60 text-sm">
+          Please try a different topic.
+        </p>
       </main>
     );
   }
@@ -129,7 +123,7 @@ function GrammarQuizInner() {
           <div className="flex items-center gap-3">
             <Link
               href={backHref}
-              className="text-slate-400 hover:text-slate-200"
+              className="text-base-content/60 hover:text-base-content/80"
               aria-label="Back to grammar"
             >
               <ArrowLeftIcon className="h-4 w-4" aria-hidden="true" />
@@ -144,23 +138,15 @@ function GrammarQuizInner() {
 
       <section className="mt-2 flex flex-1 flex-col">
         {finished ? (
-          <div className="flex flex-col items-center gap-6 py-12 text-center">
-            <div>
-              <p className="text-4xl font-semibold">
-                {stats.correct}/{stats.total}
-              </p>
-              <p className="mt-1 text-slate-400">{stats.pct}% richtig</p>
-            </div>
-            <button
-              onClick={practiceAgain}
-              className="rounded-xl bg-indigo-500 px-5 py-2.5 font-medium text-white transition-colors hover:bg-indigo-400"
-            >
-              Practice again
-            </button>
-          </div>
+          <SessionSummary
+            heading={`${stats.correct}/${stats.total}`}
+            subheading={`${stats.pct}% richtig`}
+            actionLabel="Practice again"
+            onAction={practiceAgain}
+          />
         ) : (
           <div className="flex flex-1 flex-col justify-center gap-3">
-            <p className="text-right text-xs text-slate-500">
+            <p className="text-base-content/60 text-right text-xs">
               {index + 1} / {queue.length}
             </p>
             <GrammarQuizCard

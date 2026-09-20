@@ -3,7 +3,7 @@
 ```
 src/
   app/
-    layout.tsx           # static server component: PWA meta, fonts, renders <ServiceWorkerInit/>
+    layout.tsx           # static server component: PWA meta, fonts, blocking inline theme-init script (first node in <body>), renders <ServiceWorkerInit/>
     ServiceWorkerInit.tsx # client island: registers the service worker on mount
     page.tsx             # redirect → /study
     login/
@@ -41,6 +41,23 @@ src/
     api/ai/route.ts        # GET (configured? boolean) + POST, Edge runtime, streaming: JWT-gated BYOK AI proxy (word-intents only)
     api/ai/route.test.ts
   components/             # one folder per component: index.tsx + index.helpers.ts + test
+    shared/              # small cross-page primitives with no feature of their own
+      Accordion/         # FlyonUI accordion classes, React-owned open state, 0fr->1fr grid height animation (no FlyonUI JS)
+        index.tsx
+        index.helpers.ts # toggleExclusive()
+        index.helpers.test.ts
+      Chip/              # toggleable pill button (active/disabled) used by FilterBar and per-page level filters
+        index.tsx
+        index.helpers.ts # chipClass()
+        index.helpers.test.ts
+      Modal/             # centered dialog: safe-area insets, Escape/focus-trap/scroll-lock, initial + restored focus
+        index.tsx
+        index.helpers.ts # focusableElements()
+        index.helpers.test.ts
+      LoadingScreen/     # centered spinner for a page's `!ready` state
+        index.tsx
+      SessionSummary/    # "N/M, X% correct" + a restart button, shared by study/dictation/grammar-quiz
+        index.tsx
     AppNav/              # hamburger menu (mobile) + inline links (desktop); logout; active-route highlight
     DailyReading/        # daily A1/A2 text: highlighted target words, delegates the tap popover to WordPopover
       index.tsx          # props: text, strugglingIds?, highlightAll?, onUnauthorized? (filter vs two-tier mode)
@@ -54,10 +71,8 @@ src/
       index.tsx
       index.helpers.ts   # article/plural colours, resultBoxes()
       index.helpers.test.ts
-    FilterBar/           # box (incl. "Due") / type / level chips
+    FilterBar/           # box (incl. "Due") / type / level chips — chip option lists live in @/constants
       index.tsx
-      index.helpers.ts   # POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS
-      index.helpers.test.ts
     LeitnerStats/        # box distribution bars
       index.tsx
       index.helpers.ts   # statBars()
@@ -79,8 +94,9 @@ src/
       index.helpers.ts   # speakButtonClass()
       index.helpers.test.ts
   constants/
-    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS value constants
+    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / PLURAL_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS / POS_CHIPS / BOX_CHIPS / LEVEL_CHIPS / THEME_COLOR / THEME_STORAGE_KEY / DESKTOP_MEDIA_QUERY value constants
   lib/
+    theme-prefs.ts       # per-device localStorage theme pref (never synced): getTheme/setTheme; also updates the theme-color <meta> tag
     words.ts             # import words.json; allWords / wordById / wordLevel / filterWords (source + level)
     daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
     grammar.ts           # import grammar.json; grammarTopics, topicsByCategory, grammarTopicById
@@ -112,6 +128,7 @@ src/
     useAiChat.ts         # POST /api/ai, streams the reply into state, clears token + onUnauthorized on 401
     useAiConfigured.ts   # GET /api/ai once on mount → whether ANTHROPIC_API_KEY is set on this deployment
     useOnline.ts         # navigator.onLine + online/offline listeners → boolean
+    useMediaQuery.ts     # useSyncExternalStore over matchMedia — for components that must not *mount* at a breakpoint (mobile-only modals), where `md:hidden` would still run their effects
   types/
     index.ts             # Word, WordProgress, ProgressMap, Article, Pos, Box, DailyText, DailyTextSpan, GrammarTopic (+ related)
     grade.ts             # Grade
@@ -121,6 +138,7 @@ src/
     dictation.ts         # DictationWordProgress, DictationProgressMap
     grammar-quiz.ts      # QuizQuestion, QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap
     ai.ts                # WordIntent, AiWordFields, WordIntentRequest, AiRequest
+    accordion.ts         # AccordionItem
   __tests__/             # lib-level Jest tests (not co-located)
     leitner.test.ts      # Leitner transition assertions
     merge.test.ts        # mergeProgress newest-wins assertions
@@ -135,6 +153,8 @@ src/
     ai-prompts.test.ts   # ceilingLevel truth table + buildPrompt per intent
     ai-validate.test.ts  # parseAiRequest accept/reject cases
     ai-prefs.test.ts     # isAiEnabled/getLearnerLevel defaults, round-trip, corrupted-value fallback
+    constants.test.ts    # ARTICLE_COLOR / LEVEL_CHIPS / POS_CHIPS / BOX_CHIPS assertions
+    theme-prefs.test.ts  # getTheme/setTheme round-trip + corrupted-value fallback
 public/  manifest.json, sw.js, icons/, apple-touch-icon.png
 scripts/
   lib/pdf-text.mjs       # pdftotext -layout wrapper + _text/ cache

@@ -1,13 +1,87 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #0c0f1a;
-  --foreground: #e7e9f0;
+/* Lets a handful of reserved, theme-independent colors (grade buttons,
+   der/die/das) swap to a light-safe shade with `light:text-...` instead of
+   `--color-*` tokens, which those colors deliberately don't route through. */
+@custom-variant light (&:where([data-theme='delernen-light'], [data-theme='delernen-light'] *));
+
+@plugin 'flyonui' {
+  themes: delernen-dark, delernen-light;
 }
+@plugin 'flyonui/theme' {
+  name: 'delernen-dark';
+  color-scheme: dark;
+
+  --color-base-100: #0c0f1a;
+  --color-base-200: #12162a;
+  --color-base-300: #1a1f35;
+  --color-base-content: #e7e9f0;
+  --color-primary: #6366f1;
+  --color-primary-content: #eef2ff;
+  --color-secondary: #64748b;
+  --color-secondary-content: #f1f5f9;
+  --color-accent: #38bdf8;
+  --color-accent-content: #04121a;
+  --color-neutral: #1e2333;
+  --color-neutral-content: #cbd0de;
+  --color-info: #38bdf8;
+  --color-info-content: #04121a;
+  --color-success: #34d399;
+  --color-success-content: #052e1f;
+  --color-warning: #fb923c;
+  --color-warning-content: #431407;
+  --color-error: #fb7185;
+  --color-error-content: #4c0519;
+  --radius-selector: 999px;
+  --radius-field: 0.75rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+@plugin 'flyonui/theme' {
+  name: 'delernen-light';
+  color-scheme: light;
+
+  --color-base-100: #f8f9fc;
+  --color-base-200: #eef0f6;
+  --color-base-300: #dde1eb;
+  --color-base-content: #12172a;
+  --color-primary: #4f46e5;
+  --color-primary-content: #f5f5ff;
+  --color-secondary: #64748b;
+  --color-secondary-content: #f8fafc;
+  --color-accent: #0284c7;
+  --color-accent-content: #f0f9ff;
+  --color-neutral: #334155;
+  --color-neutral-content: #f1f5f9;
+  --color-info: #0284c7;
+  --color-info-content: #f0f9ff;
+  --color-success: #059669;
+  --color-success-content: #ecfdf5;
+  --color-warning: #ea580c;
+  --color-warning-content: #fff7ed;
+  --color-error: #e11d48;
+  --color-error-content: #fff1f2;
+  --radius-selector: 999px;
+  --radius-field: 0.75rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+/* Variants only (`accordion-item-active:`, `overlay-open:`, …). The FlyonUI
+   JS bundle is deliberately *not* loaded — its guide's companion
+   `@source '…/flyonui.js'` line would scan that bundle for class names it
+   applies at runtime, and nothing here applies them. See
+   components/shared/Accordion for why the accordion is React-driven. */
+@import 'flyonui/variants.css';
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -17,8 +91,8 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-base-100);
+  color: var(--color-base-content);
   font-family:
     var(--font-sans),
     system-ui,

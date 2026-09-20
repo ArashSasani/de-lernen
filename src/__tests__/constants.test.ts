@@ -1,4 +1,12 @@
-import { POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS } from './index.helpers';
+import { POS_CHIPS, BOX_CHIPS, LEVEL_CHIPS, ARTICLE_COLOR } from '@/constants';
+
+describe('ARTICLE_COLOR', () => {
+  it('maps each article to a colour class', () => {
+    expect(ARTICLE_COLOR.der).toContain('text-');
+    expect(ARTICLE_COLOR.die).toContain('text-');
+    expect(ARTICLE_COLOR.das).toContain('text-');
+  });
+});
 
 describe('LEVEL_CHIPS', () => {
   it('starts with an "All" chip followed by every extracted level', () => {

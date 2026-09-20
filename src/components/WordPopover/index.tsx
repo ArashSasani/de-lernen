@@ -59,8 +59,8 @@ export default function WordPopover({
   aiEnabled: boolean;
 }) {
   const style = isStruggling
-    ? 'bg-indigo-500/20 text-indigo-200 decoration-indigo-400/40 hover:bg-indigo-500/30'
-    : 'bg-slate-500/20 text-slate-300 decoration-slate-400/40 hover:bg-slate-500/30';
+    ? 'bg-primary/20 text-primary decoration-primary/40 hover:bg-primary/30'
+    : 'bg-base-content/10 text-base-content/80 decoration-base-content/30 hover:bg-base-content/15';
   const buttonRef = useRef<HTMLButtonElement>(null);
   const [layout, setLayout] = useState<Layout | null>(null);
   const [question, setQuestion] = useState('');
@@ -162,7 +162,7 @@ export default function WordPopover({
               maxHeight: layout.maxHeight,
               transform: `translateX(calc(-50% + ${layout.xOffset}px))`,
             }}
-            className="z-[70] flex w-[min(90vw,20rem)] flex-col overflow-y-auto rounded-xl border border-white/10 bg-slate-800 p-3 text-sm shadow-2xl"
+            className="border-base-300 bg-base-200 z-[70] flex w-[min(90vw,20rem)] flex-col overflow-y-auto rounded-xl border p-3 text-sm shadow-2xl"
           >
             <div className="flex items-center justify-center gap-2 font-medium">
               <span>
@@ -175,7 +175,7 @@ export default function WordPopover({
                 )}
                 {gloss.lemma}
                 {gloss.plural && (
-                  <span className="ml-1 font-normal text-slate-400">
+                  <span className="text-base-content/60 ml-1 font-normal">
                     ({gloss.plural})
                   </span>
                 )}
@@ -191,18 +191,18 @@ export default function WordPopover({
                 <button
                   type="button"
                   onClick={onGrade}
-                  className="flex items-center justify-center rounded-full border border-indigo-500/50 p-1 text-sm leading-none text-indigo-400 hover:border-indigo-400 hover:bg-indigo-500/20 active:bg-indigo-500/30"
+                  className="btn btn-circle btn-text btn-xs !text-primary"
                   aria-label="Mark as known"
                 >
                   <CheckIcon className="h-3.5 w-3.5" aria-hidden="true" />
                 </button>
               )}
             </div>
-            <div className="my-2 border-t border-white/10" />
-            <p className="text-center text-slate-300">{gloss.en}</p>
+            <div className="border-base-300 my-2 border-t" />
+            <p className="text-base-content/80 text-center">{gloss.en}</p>
 
             {aiEnabled && (
-              <div className="mt-3 rounded-lg border border-white/10 bg-white/[0.03] p-2.5">
+              <div className="border-base-300 bg-base-300/30 mt-3 rounded-lg border p-2.5">
                 <div
                   className={`flex flex-wrap justify-center gap-1 ${
                     online ? '' : 'pointer-events-none opacity-40'
@@ -224,7 +224,7 @@ export default function WordPopover({
                           wordLevel(word),
                         )
                       }
-                      className="rounded-full border border-white/10 bg-white/[0.03] px-2 py-0.5 text-xs text-slate-300 transition-colors hover:bg-white/[0.08]"
+                      className="badge badge-soft badge-sm !text-base-content/70"
                     >
                       {CHIP_LABELS[intent]}
                     </button>
@@ -232,7 +232,7 @@ export default function WordPopover({
                 </div>
 
                 {!online && (
-                  <p className="mt-1.5 text-center text-[11px] text-slate-500">
+                  <p className="text-base-content/60 mt-1.5 text-center text-[11px]">
                     Offline
                   </p>
                 )}
@@ -250,21 +250,21 @@ export default function WordPopover({
                       if (e.key === 'Enter') submitQuestion();
                     }}
                     placeholder="Ask about this word…"
-                    className="min-w-0 flex-1 rounded-lg border border-white/10 bg-white/[0.02] px-2 py-1 text-xs text-slate-200 placeholder:text-slate-500 focus:outline-none"
+                    className="input input-sm min-w-0 flex-1 text-xs"
                   />
                   <button
                     type="button"
                     onClick={submitQuestion}
-                    className="shrink-0 rounded-lg bg-indigo-500 px-2.5 py-1 text-xs font-medium text-white transition-colors hover:bg-indigo-400"
+                    className="btn btn-primary btn-sm shrink-0"
                   >
                     Ask
                   </button>
                 </div>
 
                 {(aiChat.loading || aiChat.reply || aiChat.error) && (
-                  <div className="mt-2 rounded-lg border border-white/10 bg-slate-900/60 p-2.5 text-left text-xs leading-relaxed text-slate-300">
+                  <div className="border-base-300 bg-base-100/60 text-base-content/80 mt-2 rounded-lg border p-2.5 text-left text-xs leading-relaxed">
                     {aiChat.error ? (
-                      <p className="text-rose-400">{aiChat.error}</p>
+                      <p className="text-error">{aiChat.error}</p>
                     ) : aiChat.reply ? (
                       parseReplyLines(aiChat.reply).map((line, i) => (
                         <p
@@ -273,19 +273,22 @@ export default function WordPopover({
                             line.type === 'li'
                               ? 'mb-1 flex gap-1.5 pl-1 last:mb-0'
                               : line.type === 'h'
-                                ? 'mb-1.5 text-[13px] font-semibold text-slate-100 last:mb-0'
+                                ? 'text-base-content mb-1.5 text-[13px] font-semibold last:mb-0'
                                 : 'mb-1.5 last:mb-0'
                           }
                         >
                           {line.type === 'li' && (
-                            <span aria-hidden="true" className="text-slate-500">
+                            <span
+                              aria-hidden="true"
+                              className="text-base-content/60"
+                            >
                               •
                             </span>
                           )}
                           <span>
                             {line.segments.map((seg, j) =>
                               seg.bold ? (
-                                <strong key={j} className="text-slate-200">
+                                <strong key={j} className="text-base-content">
                                   {seg.text}
                                 </strong>
                               ) : (
@@ -296,7 +299,7 @@ export default function WordPopover({
                         </p>
                       ))
                     ) : (
-                      <span className="text-slate-500">…</span>
+                      <span className="text-base-content/60">…</span>
                     )}
                   </div>
                 )}

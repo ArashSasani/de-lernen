@@ -2,12 +2,12 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import {
-  ChevronUpIcon,
-  ChevronDownIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline';
 import AppNav from '@/components/AppNav';
+import Accordion from '@/components/shared/Accordion';
+import { toggleExclusive } from '@/components/shared/Accordion/index.helpers';
+import Chip from '@/components/shared/Chip';
+import Modal from '@/components/shared/Modal';
+import { useMediaQuery } from '@/hooks/useMediaQuery';
 import type { DailyText } from '@/types';
 import type { LevelFilter } from '@/types/filter';
 import { dailyTexts, dailyTextById } from '@/lib/daily-texts';
@@ -22,9 +22,9 @@ import {
   setTodaysPick,
 } from '@/lib/daily';
 import DailyReading from '@/components/DailyReading';
-import { FILTER } from '@/constants';
-import { LEVEL_CHIPS } from '@/components/FilterBar/index.helpers';
+import { DESKTOP_MEDIA_QUERY, FILTER, LEVEL_CHIPS } from '@/constants';
 import { groupByTopic, filterByLevel } from './page.helpers';
+import LoadingScreen from '@/components/shared/LoadingScreen';
 
 export default function ReadPage() {
   const router = useRouter();
@@ -32,8 +32,9 @@ export default function ReadPage() {
   const [ready, setReady] = useState(false);
   const [todayText, setTodayText] = useState<DailyText | null>(null);
   const [modalText, setModalText] = useState<DailyText | null>(null);
-  const [openTopic, setOpenTopic] = useState<string | null>(null);
   const [level, setLevel] = useState<LevelFilter>(FILTER.ALL);
+  const [openTopics, setOpenTopics] = useState<string[]>([]);
+  const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
 
   // Box-1 words drive both the highlight set and the daily pick; derive it from
   // the synced progress so it stays current as cards are graded here.
@@ -88,15 +89,8 @@ export default function ReadPage() {
     [level],
   );
 
-  const toggleTopic = (topic: string) =>
-    setOpenTopic((cur) => (cur === topic ? null : topic));
-
   if (!ready) {
-    return (
-      <main className="flex flex-1 items-center justify-center text-slate-400">
-        Loading…
-      </main>
-    );
+    return <LoadingScreen />;
   }
 
   return (
@@ -110,8 +104,8 @@ export default function ReadPage() {
 
       {/* Left column: today's text, or the text selected from the list on desktop */}
       {(todayText || modalText) && (
-        <section className="rounded-2xl border border-indigo-400/20 bg-indigo-500/[0.06] p-5 md:overflow-y-auto">
-          <p className="mb-3 text-xs font-medium tracking-wide text-indigo-300 uppercase">
+        <section className="border-primary/20 bg-primary/5 rounded-2xl border p-5 md:overflow-y-auto">
+          <p className="text-primary mb-3 text-xs font-medium tracking-wide uppercase">
             Heutiger Text
           </p>
           <DailyReading
@@ -127,98 +121,65 @@ export default function ReadPage() {
       {/* Right column on desktop / below on mobile */}
       <section className="flex flex-col gap-3 md:overflow-y-auto">
         <div className="flex flex-col gap-1">
-          <span className="text-[10px] font-medium tracking-wider text-slate-500 uppercase">
+          <span className="text-base-content/60 text-[10px] font-medium tracking-wider uppercase">
             Level
           </span>
           <div className="flex flex-wrap gap-1 text-xs">
             {LEVEL_CHIPS.map((l) => (
-              <button
+              <Chip
                 key={l.value}
+                active={level === l.value}
                 onClick={() => setLevel(l.value)}
-                className={`rounded-full px-2.5 py-0.5 transition-colors ${
-                  level === l.value
-                    ? 'bg-indigo-500 text-white'
-                    : 'bg-white/5 text-slate-300 hover:bg-white/10'
-                }`}
               >
                 {l.label}
-              </button>
+              </Chip>
             ))}
           </div>
         </div>
         {groups.length === 0 && (
-          <p className="px-1 text-sm text-slate-400">
+          <p className="text-base-content/60 px-1 text-sm">
             No texts at this level yet.
           </p>
         )}
-        {groups.map((g) => {
-          const isOpen = openTopic === g.topic;
-          return (
-            <div
-              key={g.topic}
-              className="overflow-hidden rounded-xl border border-white/10"
-            >
-              <button
-                onClick={() => toggleTopic(g.topic)}
-                className="flex w-full items-center justify-between px-4 py-3 text-left transition-colors hover:bg-white/[0.04]"
-              >
-                <span className="text-xs font-medium tracking-wide text-slate-400 uppercase">
-                  {g.topic}
-                </span>
-                {isOpen ? (
-                  <ChevronUpIcon
-                    className="h-3.5 w-3.5 text-slate-500"
-                    aria-hidden="true"
-                  />
-                ) : (
-                  <ChevronDownIcon
-                    className="h-3.5 w-3.5 text-slate-500"
-                    aria-hidden="true"
-                  />
-                )}
-              </button>
-              {isOpen && (
-                <ul className="flex flex-col divide-y divide-white/5 border-t border-white/10">
-                  {g.texts.map((t) => (
-                    <li key={t.id}>
-                      <button
-                        onClick={() => setModalText(t)}
-                        className="w-full px-4 py-2.5 text-left text-sm text-slate-300 transition-colors hover:bg-white/[0.04] hover:text-slate-100"
-                      >
-                        {t.title}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          );
-        })}
+        <Accordion
+          openIds={openTopics}
+          onToggle={(id) => setOpenTopics((prev) => toggleExclusive(prev, id))}
+          toggleClassName="!py-3"
+          items={groups.map((g) => ({
+            id: g.topic,
+            label: (
+              <span className="text-base-content/60 text-xs font-medium tracking-wide uppercase">
+                {g.topic}
+              </span>
+            ),
+            content: (
+              <ul className="border-base-300 divide-base-300 flex flex-col divide-y border-t">
+                {g.texts.map((t) => (
+                  <li key={t.id}>
+                    <button
+                      onClick={() => setModalText(t)}
+                      className="hover:bg-base-300/40 hover:text-base-content w-full px-4 py-2.5 text-left text-sm"
+                    >
+                      {t.title}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            ),
+          }))}
+        />
       </section>
 
-      {/* Modal — mobile only; on desktop the left panel updates instead */}
-      {modalText && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 md:hidden"
-          role="dialog"
-          aria-modal="true"
-          onClick={() => setModalText(null)}
-          style={{
-            paddingTop: 'max(1rem, env(safe-area-inset-top))',
-            paddingBottom: 'max(1rem, env(safe-area-inset-bottom))',
-          }}
+      {/* Modal — mobile only; on desktop the left panel updates instead.
+          Gated on a media query rather than `md:hidden` so it doesn't mount
+          (and scroll-lock the body) behind an invisible wrapper on desktop. */}
+      {!isDesktop && (
+        <Modal
+          open={!!modalText}
+          onClose={() => setModalText(null)}
+          title={modalText?.title ?? 'Heutiger Text'}
         >
-          <div
-            className="relative max-h-[85vh] w-full max-w-md overflow-y-auto rounded-2xl border border-white/10 bg-slate-900 p-6"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setModalText(null)}
-              aria-label="Close"
-              className="absolute top-4 right-4 text-slate-400 hover:text-slate-200"
-            >
-              <XMarkIcon className="h-5 w-5" aria-hidden="true" />
-            </button>
+          {modalText && (
             <DailyReading
               text={modalText}
               strugglingIds={struggling}
@@ -226,8 +187,8 @@ export default function ReadPage() {
               onGrade={handleGrade}
               onUnauthorized={handleUnauthorized}
             />
-          </div>
-        </div>
+          )}
+        </Modal>
       )}
     </main>
   );

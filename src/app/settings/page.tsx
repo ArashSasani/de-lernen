@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import AppNav from '@/components/AppNav';
+import Chip from '@/components/shared/Chip';
 import { getToken } from '@/lib/sync';
 import { useAiConfigured } from '@/hooks/useAiConfigured';
 import {
@@ -11,7 +12,9 @@ import {
   getLearnerLevel,
   setLearnerLevel,
 } from '@/lib/ai-prefs';
+import { getTheme, setTheme, type ThemeName } from '@/lib/theme-prefs';
 import { LEARNER_LEVEL_OPTIONS } from './page.helpers';
+import LoadingScreen from '@/components/shared/LoadingScreen';
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -19,6 +22,7 @@ export default function SettingsPage() {
   const [aiEnabled, setAiEnabledState] = useState(true);
   const [learnerLevel, setLearnerLevelState] =
     useState<ReturnType<typeof getLearnerLevel>>('a1');
+  const [theme, setThemeState] = useState<ThemeName>('delernen-dark');
   const aiConfigured = useAiConfigured(() => router.replace('/login'));
 
   useEffect(() => {
@@ -29,6 +33,7 @@ export default function SettingsPage() {
     (async () => {
       setAiEnabledState(isAiEnabled());
       setLearnerLevelState(getLearnerLevel());
+      setThemeState(getTheme());
       setReady(true);
     })();
   }, [router]);
@@ -43,11 +48,7 @@ export default function SettingsPage() {
   }, [ready, aiConfigured, aiEnabled]);
 
   if (!ready) {
-    return (
-      <main className="flex flex-1 items-center justify-center text-slate-400">
-        Loading…
-      </main>
-    );
+    return <LoadingScreen />;
   }
 
   const toggleAi = () => {
@@ -55,6 +56,13 @@ export default function SettingsPage() {
     const next = !aiEnabled;
     setAiEnabled(next);
     setAiEnabledState(next);
+  };
+
+  const toggleTheme = () => {
+    const next: ThemeName =
+      theme === 'delernen-dark' ? 'delernen-light' : 'delernen-dark';
+    setTheme(next);
+    setThemeState(next);
   };
 
   return (
@@ -66,63 +74,66 @@ export default function SettingsPage() {
         <AppNav />
       </header>
 
-      <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+      <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
         <div className="flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-medium text-slate-200">AI features</p>
-            <p className="text-xs text-slate-500">
+            <p className="text-sm font-medium">Light theme</p>
+            <p className="text-base-content/60 text-xs">
+              Switch the app to a light color scheme. Defaults to dark.
+            </p>
+          </div>
+          <input
+            type="checkbox"
+            aria-label="Light theme"
+            className="switch switch-primary shrink-0"
+            checked={theme === 'delernen-light'}
+            onChange={toggleTheme}
+          />
+        </div>
+      </section>
+
+      <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-medium">AI features</p>
+            <p className="text-base-content/60 text-xs">
               {aiConfigured
                 ? 'Tap-a-word chips (Genitiv, Konjugation, …) call your own key. Everything else stays offline.'
                 : 'Not configured on this deployment — set ANTHROPIC_API_KEY to enable. Everything else works offline.'}
             </p>
           </div>
-          <button
-            type="button"
-            role="switch"
-            aria-checked={effectiveAiEnabled}
+          <input
+            type="checkbox"
             aria-label="AI features"
             disabled={!aiConfigured}
-            onClick={toggleAi}
-            className={`relative h-6 w-11 shrink-0 rounded-full transition-colors ${
-              effectiveAiEnabled ? 'bg-indigo-500' : 'bg-white/10'
-            } ${!aiConfigured ? 'cursor-not-allowed opacity-50' : ''}`}
-          >
-            <span
-              className={`absolute top-0.5 left-0.5 h-5 w-5 rounded-full bg-white transition-transform ${
-                effectiveAiEnabled ? 'translate-x-5' : 'translate-x-0'
-              }`}
-            />
-          </button>
+            className="switch switch-primary shrink-0"
+            checked={effectiveAiEnabled}
+            onChange={toggleAi}
+          />
         </div>
       </section>
 
-      <section className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-white/[0.02] p-5">
+      <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
         <div>
-          <p className="text-sm font-medium text-slate-200">Learner level</p>
-          <p className="text-xs text-slate-500">
+          <p className="text-sm font-medium">Learner level</p>
+          <p className="text-base-content/60 text-xs">
             Caps how advanced AI explanations get, regardless of a word&apos;s
             own level.
           </p>
         </div>
         <div className="flex gap-1.5">
           {LEARNER_LEVEL_OPTIONS.map(({ value, label }) => (
-            <button
+            <Chip
               key={value}
-              type="button"
-              aria-pressed={learnerLevel === value}
+              active={learnerLevel === value}
               disabled={!aiConfigured}
               onClick={() => {
                 setLearnerLevel(value);
                 setLearnerLevelState(value);
               }}
-              className={`rounded-full px-3 py-1 text-sm transition-colors ${
-                learnerLevel === value
-                  ? 'bg-indigo-500 text-white'
-                  : 'bg-white/5 text-slate-300 hover:bg-white/10'
-              } ${!aiConfigured ? 'cursor-not-allowed opacity-50' : ''}`}
             >
               {label}
-            </button>
+            </Chip>
           ))}
         </div>
       </section>
