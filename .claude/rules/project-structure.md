@@ -31,14 +31,16 @@ src/
         page.helpers.ts  # buildSmartQuiz (tiered, struggling-first) / buildTopicQuiz / sessionStats / QUIZ_SESSION_SIZE
         page.helpers.test.ts
     settings/
-      page.tsx           # AI on/off toggle + learnerLevel chip row (per-device localStorage, no sync)
+      page.tsx           # AI on/off toggle + learnerLevel chip row (per-device localStorage, no sync) + read-only MistakesList
       page.helpers.ts    # LEARNER_LEVEL_OPTIONS
       page.helpers.test.ts
     api/login/route.ts
     api/progress/route.ts
     api/dictation/route.ts
     api/grammar-quiz/route.ts
-    api/ai/route.ts        # GET (configured? boolean) + POST, Edge runtime, streaming: JWT-gated BYOK AI proxy (word-intents only)
+    api/mistakes/route.ts  # GET/PUT, Node runtime: JWT-gated mistakes-corpus sync; validates the PUT body (records eventually feed a prompt)
+    api/mistakes/route.test.ts
+    api/ai/route.ts        # GET (configured? boolean) + POST, Edge runtime: streaming word-intents, plus non-streaming JSON note/judge intents
     api/ai/route.test.ts
   components/             # one folder per component: index.tsx + index.helpers.ts + test
     shared/              # small cross-page primitives with no feature of their own
@@ -93,8 +95,12 @@ src/
       index.tsx
       index.helpers.ts   # speakButtonClass()
       index.helpers.test.ts
+    MistakesList/        # read-only /settings list of recent MistakeRecords, collapsed via shared/Accordion
+      index.tsx
+      index.helpers.ts   # relativeTime() / sortByRecency() / SOURCE_LABELS
+      index.helpers.test.ts
   constants/
-    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / PLURAL_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS / POS_CHIPS / BOX_CHIPS / LEVEL_CHIPS / THEME_COLOR / THEME_STORAGE_KEY / DESKTOP_MEDIA_QUERY value constants
+    index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / PLURAL_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS / STRUCTURED_INTENTS / POS_CHIPS / BOX_CHIPS / LEVEL_CHIPS / THEME_COLOR / THEME_STORAGE_KEY / DESKTOP_MEDIA_QUERY value constants
   lib/
     theme-prefs.ts       # per-device localStorage theme pref (never synced): getTheme/setTheme; also updates the theme-color <meta> tag
     words.ts             # import words.json; allWords / wordById / wordLevel / filterWords (source + level)
@@ -108,24 +114,27 @@ src/
     dictation.ts         # generateGap(): ranked spelling-difficulty ruleset → Gap
     auth.ts              # signToken / verifyToken (jose)
     auth-security.ts     # failedLoginRateLimiter: per-client failed-login counter in KV (fails open)
-    idb.ts               # shared IndexedDB handle (getDB) — stores: progress, dictation, grammar-quiz
-    db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation + loadGrammarQuiz/saveGrammarQuiz/mergeGrammarQuiz (server)
+    idb.ts               # shared IndexedDB handle (getDB) — stores: progress, dictation, grammar-quiz, mistakes (keyed, v2→3)
+    db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation + loadGrammarQuiz/saveGrammarQuiz/mergeGrammarQuiz + loadMistakes/saveMistakes/mergeMistakes (server)
     sync.ts              # IndexedDB + remote load/sync + token storage + pickChanged/SYNC_DEBOUNCE_MS (client)
     dictation-sync.ts    # IndexedDB load/save + remote sync + mergeDictation for DictationProgressMap
+    mistakes-sync.ts     # IndexedDB load/saveMistakesLocal (batched) + remote sync + mergeMistakes (union-by-id) + pickUnpushed/stripLocal
+    mistakes-gate.ts     # gateCandidate/gateCandidateWithJudge: pure write-time quality gate (hygiene + grounding vs graded ground truth + confidence + judge)
     speech.ts            # Web Speech API: getGermanVoice / speakDE (offline, no API key)
     service-worker.ts    # shouldRegisterServiceWorker / registerServiceWorker
     ai-prefs.ts          # per-device localStorage prefs (never synced): isAiEnabled/setAiEnabled, getLearnerLevel/setLearnerLevel
     ai/
-      models.ts          # MODEL_FOR_INTENT seam — every WordIntent → 'claude-sonnet-5' today
-      prompts.ts         # GENERATORS-style prompt templates + ceilingLevel() register-ceiling calc (server-only)
-      validate.ts        # parseAiRequest(): untrusted-body → WordIntentRequest | null, enum + length checks
-      client.ts          # streamCompletion(): wraps @anthropic-ai/sdk streaming into a ReadableStream<Uint8Array>
+      models.ts          # modelForIntent seam — every WordIntent/StructuredIntent → 'claude-sonnet-5' today
+      prompts.ts         # GENERATORS-style word-intent templates + ceilingLevel(); parallel STRUCTURED_GENERATORS + buildStructuredPrompt for note/judge (server-only)
+      validate.ts        # parseAiRequest(): dispatches word/note/judge; parseMistakeCandidate/parseJudgeVerdict re-validate the model's own structured output
+      client.ts          # streamCompletion(): word-intent ReadableStream<Uint8Array>; completeStructured(): note/judge via messages.parse() + jsonSchemaOutputFormat
   hooks/                 # React hooks (stateful glue), kept out of lib/ which is framework-agnostic logic
     useProgressSync.ts   # shared study/read sync: debounced KV push + keepalive flush on hide/pagehide/unmount
     useDictationSync.ts  # dictation sync: recordAttempt + toggleStar → IndexedDB + KV (mirrors useProgressSync)
     useGrammarQuizSync.ts # grammar-quiz sync: recordAttempt(topicId, correct) → IndexedDB + KV (mirrors useDictationSync)
+    useMistakes.ts       # mistakes-corpus transport: load/merge + debounced KV push + keepalive flush; addRecord(record) takes an already-gated record (no producer wired yet)
     useSpeech.ts         # German pronunciation: available/speaking state + speak(text)
-    useAiChat.ts         # POST /api/ai, streams the reply into state, clears token + onUnauthorized on 401
+    useAiChat.ts         # POST /api/ai, streams the reply into state, clears token + onUnauthorized on 401; onDone(result) fires once on natural stream completion
     useAiConfigured.ts   # GET /api/ai once on mount → whether ANTHROPIC_API_KEY is set on this deployment
     useOnline.ts         # navigator.onLine + online/offline listeners → boolean
     useMediaQuery.ts     # useSyncExternalStore over matchMedia — for components that must not *mount* at a breakpoint (mobile-only modals), where `md:hidden` would still run their effects
@@ -137,7 +146,8 @@ src/
     auth.ts              # LoginResult
     dictation.ts         # DictationWordProgress, DictationProgressMap
     grammar-quiz.ts      # QuizQuestion, QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap
-    ai.ts                # WordIntent, AiWordFields, WordIntentRequest, AiRequest
+    mistakes.ts          # MistakeSource, MistakeRecord, MistakeCorpus
+    ai.ts                # WordIntent, StructuredIntent, AiIntent, AiWordFields, WordIntentRequest, NoteIntentRequest, JudgeIntentRequest, MistakeCandidate, JudgeVerdict, AiRequest
     accordion.ts         # AccordionItem
   __tests__/             # lib-level Jest tests (not co-located)
     leitner.test.ts      # Leitner transition assertions
@@ -149,12 +159,15 @@ src/
     shuffle.test.ts      # shuffle permutation/immutability assertions
     words.test.ts        # wordById / wordLevel / source-filter assertions
     auth-security.test.ts # failed-login rate-limit counter, window, reset, fail-open assertions
-    ai-models.test.ts    # MODEL_FOR_INTENT coverage
-    ai-prompts.test.ts   # ceilingLevel truth table + buildPrompt per intent
-    ai-validate.test.ts  # parseAiRequest accept/reject cases
+    ai-models.test.ts    # modelForIntent coverage (word + structured intents)
+    ai-prompts.test.ts   # ceilingLevel truth table + buildPrompt per intent + buildStructuredPrompt for note/judge
+    ai-validate.test.ts  # parseAiRequest accept/reject cases (word/note/judge) + parseMistakeCandidate/parseJudgeVerdict
     ai-prefs.test.ts     # isAiEnabled/getLearnerLevel defaults, round-trip, corrupted-value fallback
     constants.test.ts    # ARTICLE_COLOR / LEVEL_CHIPS / POS_CHIPS / BOX_CHIPS assertions
     theme-prefs.test.ts  # getTheme/setTheme round-trip + corrupted-value fallback
+    mistakes-gate.test.ts # gateCandidate/gateCandidateWithJudge: every GateReject, fail-open judge
+    mistakes-merge.test.ts # mergeMistakes union-by-id, collision, cap, sort assertions
+    mistakes-sync.test.ts  # pickNewMistakes subset + pickUnpushed delta + 64KB keepalive size + stripLocal assertions
 public/  manifest.json, sw.js, icons/, apple-touch-icon.png
 scripts/
   lib/pdf-text.mjs       # pdftotext -layout wrapper + _text/ cache

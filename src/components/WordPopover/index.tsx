@@ -67,6 +67,7 @@ export default function WordPopover({
 
   const word = wordById(wordId);
   const gloss = word && glossForWord(word);
+
   const aiChat = useAiChat(onUnauthorized);
 
   // Close = a clean slate: drop any reply/question so reopening the same

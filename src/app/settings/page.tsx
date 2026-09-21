@@ -4,8 +4,10 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import AppNav from '@/components/AppNav';
 import Chip from '@/components/shared/Chip';
+import MistakesList from '@/components/MistakesList';
 import { getToken } from '@/lib/sync';
 import { useAiConfigured } from '@/hooks/useAiConfigured';
+import { useMistakes } from '@/hooks/useMistakes';
 import {
   isAiEnabled,
   setAiEnabled,
@@ -24,6 +26,7 @@ export default function SettingsPage() {
     useState<ReturnType<typeof getLearnerLevel>>('a1');
   const [theme, setThemeState] = useState<ThemeName>('delernen-dark');
   const aiConfigured = useAiConfigured(() => router.replace('/login'));
+  const { mistakes } = useMistakes();
 
   useEffect(() => {
     if (!getToken()) {
@@ -74,6 +77,10 @@ export default function SettingsPage() {
         <AppNav />
       </header>
 
+      <div className="divider text-base-content/60 text-xs font-medium tracking-wide uppercase">
+        General
+      </div>
+
       <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
         <div className="flex items-center justify-between gap-4">
           <div>
@@ -91,6 +98,10 @@ export default function SettingsPage() {
           />
         </div>
       </section>
+
+      <div className="divider text-base-content/60 text-xs font-medium tracking-wide uppercase">
+        AI
+      </div>
 
       <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
         <div className="flex items-center justify-between gap-4">
@@ -136,6 +147,17 @@ export default function SettingsPage() {
             </Chip>
           ))}
         </div>
+      </section>
+
+      <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
+        <div>
+          <p className="text-sm font-medium">Learning memory</p>
+          <p className="text-base-content/60 text-xs">
+            Notes recorded from your practice mistakes — read-only, synced
+            across devices.
+          </p>
+        </div>
+        <MistakesList mistakes={mistakes} />
       </section>
     </main>
   );

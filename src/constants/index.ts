@@ -59,6 +59,13 @@ export const WORD_INTENTS = [
   'ask',
 ] as const;
 
+// The AI-proxy's structured (non-streaming, JSON) intents — the mistakes
+// pipeline's note-authoring + verification calls. Kept as a separate array
+// from WORD_INTENTS: that array also backs the tap-a-word chip row
+// (CHIP_LABELS, chipsForPos) and src/__tests__/ai-prompts.test.ts's
+// it.each(WORD_INTENTS), neither of which these intents belong to.
+export const STRUCTURED_INTENTS = ['note', 'judge'] as const;
+
 // Shared chip option lists — used by FilterBar and, for the level chips, also
 // by the read/grammar pages' own level filters, so they stay in sync with a
 // single source instead of two hand-copied lists.
@@ -101,3 +108,21 @@ export const DESKTOP_MEDIA_QUERY = '(min-width: 48rem)';
 // Duplicated as a literal in the blocking inline theme script in
 // layout.tsx (which can't import a module) — keep both in sync by hand.
 export const THEME_STORAGE_KEY = 'theme';
+
+// Length caps shared across the mistakes note/judge pipeline (a JSON
+// schema, a validator, the gate, and the route each check these).
+export const AI_MAX_LEMMA_LEN = 64; // word.lemma and a candidate's claimedLemma
+export const MISTAKES_MAX_NOTE_LEN = 160; // the persisted note text
+export const MISTAKES_MAX_EVIDENCE_LEN = 300; // must fit inside a question
+export const MISTAKES_MAX_REASON_LEN = 120; // judge verdict reason, debug-only
+export const MISTAKES_MAX_REPLY_LEN = 1200; // exchange.reply sent to /api/ai
+export const MISTAKES_MAX_CORPUS = 500; // corpus cap after merge
+
+// The valid MistakeSource values as a runtime allow-list. Both load paths
+// filter on it: the corpus is append-only with no tombstones, so one record
+// with an unrecognised source would 400 every PUT from then on.
+export const MISTAKE_SOURCES = [
+  'flashcard',
+  'dictation',
+  'grammar-quiz',
+] as const;

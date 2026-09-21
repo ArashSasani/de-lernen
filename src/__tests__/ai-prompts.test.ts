@@ -1,6 +1,14 @@
-import { ceilingLevel, buildPrompt } from '@/lib/ai/prompts';
+import {
+  ceilingLevel,
+  buildPrompt,
+  buildStructuredPrompt,
+} from '@/lib/ai/prompts';
 import { WORD_INTENTS } from '@/constants';
-import type { WordIntentRequest } from '@/types/ai';
+import type {
+  JudgeIntentRequest,
+  NoteIntentRequest,
+  WordIntentRequest,
+} from '@/types/ai';
 
 const baseWord: WordIntentRequest['word'] = {
   lemma: 'Haus',
@@ -71,5 +79,63 @@ describe('buildPrompt', () => {
   it('still allows an explicitly requested construction above the ceiling', () => {
     const spec = buildPrompt(req({ intent: 'genitiv', level: 'a1' }));
     expect(spec.system).toContain('above A1');
+  });
+});
+
+describe('buildStructuredPrompt', () => {
+  const noteReq: NoteIntentRequest = {
+    intent: 'note',
+    level: 'a1',
+    word: baseWord,
+    exchange: {
+      question: 'why does mit take Dativ',
+      reply: 'mit is always followed by Dativ.',
+    },
+  };
+
+  const judgeReq: JudgeIntentRequest = {
+    intent: 'judge',
+    level: 'a1',
+    word: baseWord,
+    exchange: noteReq.exchange,
+    candidate: {
+      text: 'asked why mit takes Dativ',
+      evidence: 'why does mit take Dativ',
+      claimedLemma: 'mit',
+    },
+  };
+
+  it('returns a non-empty spec + schema for note', () => {
+    const spec = buildStructuredPrompt(noteReq);
+    expect(spec.system.length).toBeGreaterThan(0);
+    expect(spec.user).toContain('why does mit take Dativ');
+    expect(spec.maxTokens).toBeGreaterThan(0);
+    expect(spec.schema.type).toBe('object');
+    expect(spec.schema.required).toEqual(
+      expect.arrayContaining([
+        'found',
+        'text',
+        'evidence',
+        'confidence',
+        'claimedLemma',
+      ]),
+    );
+    expect(spec.schema.additionalProperties).toBe(false);
+  });
+
+  it('returns a non-empty spec + schema for judge', () => {
+    const spec = buildStructuredPrompt(judgeReq);
+    expect(spec.system.length).toBeGreaterThan(0);
+    expect(spec.user).toContain('asked why mit takes Dativ');
+    expect(spec.maxTokens).toBeGreaterThan(0);
+    expect(spec.schema.required).toEqual(
+      expect.arrayContaining(['keep', 'reason']),
+    );
+    expect(spec.schema.additionalProperties).toBe(false);
+  });
+
+  it('respects the register ceiling for structured intents too', () => {
+    const spec = buildStructuredPrompt({ ...noteReq, learnerLevel: 'b1' });
+    expect(spec.system).toContain('B1');
   });
 });

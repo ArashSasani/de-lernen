@@ -78,3 +78,20 @@ are in context every session, exactly like this file:
 - Tailwind for styling; dark theme by default; mobile-first (this lives on a phone).
 - **Icons: use `@heroicons/react` only. Never write raw inline SVG for icons.** Use the `/24/outline` set by default; `/24/solid` only where fill is intentional (e.g. `SpeakerWaveIcon`). Size with Tailwind (`h-4 w-4`, etc.), always add `aria-hidden="true"`.
 - Don't introduce a backend framework or DB beyond KV. Don't add user accounts.
+- **A value used in more than one file is a constant in `src/constants/index.ts`, not a
+  re-declared local.** This applies to numeric caps, enums, and localStorage keys alike — before
+  hardcoding a limit that a JSON schema, a validator, and a UI slice all need to agree on, check
+  whether it's already there, and add it there if it isn't. A constant genuinely local to one
+  module (an internal tuning knob nothing else reads) can stay local.
+- **Code comments: max 2 lines, precise, to the point.** State the non-obvious reason, not the
+  history or a design essay. If it takes more than 2 lines, it belongs in an ADR, not inline.
+- **Comment the code as it is, never as a diff from what it was.** Work sits in the working tree
+  until the user commits it, so an approach that was built and then dropped mid-session was never
+  part of the project — a reader has no "before" to contrast against, and a comment explaining a
+  change they can't see is noise. Never write "removed", "reverted", "no longer", "used to", "an
+  earlier version", "retired X", or "kept for backwards compatibility" in code, test names, or
+  tracked docs. Delete the dropped thing and describe what remains. The same goes for defensive
+  code: justify a guard by the condition it prevents, not by the bug that prompted it. If an
+  abandoned approach is worth recording, an ADR carries it as a **rejected alternative** ("X was
+  considered and rejected because …") — a standing design boundary, not a change log. Git history
+  and the private spec under `docs/new/` are where change itself is tracked.

@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Level } from '@/types';
 import type { WordIntent, AiWordFields } from '@/types/ai';
 import { getToken, clearToken } from '@/lib/sync';
@@ -17,6 +17,9 @@ const INITIAL_STATE: AiChatState = { reply: '', loading: false, error: null };
 export function useAiChat(onUnauthorized?: () => void) {
   const [state, setState] = useState<AiChatState>(INITIAL_STATE);
   const abortRef = useRef<AbortController | null>(null);
+  // Refreshed every render so `ask` can stay a dependency-free useCallback.
+  const onUnauthorizedRef = useRef(onUnauthorized);
+  onUnauthorizedRef.current = onUnauthorized;
 
   const reset = useCallback(() => {
     abortRef.current?.abort();
@@ -32,7 +35,7 @@ export function useAiChat(onUnauthorized?: () => void) {
     ) => {
       const token = getToken();
       if (!token) {
-        onUnauthorized?.();
+        onUnauthorizedRef.current?.();
         return;
       }
 
@@ -61,7 +64,7 @@ export function useAiChat(onUnauthorized?: () => void) {
 
           if (res.status === 401) {
             clearToken();
-            onUnauthorized?.();
+            onUnauthorizedRef.current?.();
             setState((s) => ({ ...s, loading: false, error: 'Unauthorized' }));
             return;
           }
@@ -105,8 +108,12 @@ export function useAiChat(onUnauthorized?: () => void) {
         }
       })();
     },
-    [onUnauthorized],
+    [],
   );
+
+  // Abort any in-flight request on unmount so the stream can't keep running
+  // (and billing) after the component is gone.
+  useEffect(() => () => abortRef.current?.abort(), []);
 
   return { ...state, ask, reset };
 }

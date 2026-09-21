@@ -95,3 +95,7 @@ For a word touched on **both** devices, the later `lastReviewed` wins.
   [ADR 008](008-dictation-spelling-exercise.md). The grammar-quiz track is a third instance of the
   same pattern — its own `grammar-quiz` store and `user:grammar-quiz` key, keyed by topic id and
   merged newest-wins by `lastSeen`; see [ADR 010](010-grammar-quiz.md).
+- **The mistakes corpus syncs on a fourth track with a different merge rule.** Records are
+  immutable, so `mergeMistakes` is a **union by id**, not newest-wins-per-field — its own keyed
+  `mistakes` IndexedDB store (not a blob-at-key-`'data'` map like the other three) and its own KV
+  key, `user:mistakes`, reached via `api/mistakes`. See [ADR 011](011-personal-mistakes-corpus.md).
