@@ -1,15 +1,15 @@
 # Architecture
 
-- **Next.js App Router + TypeScript.** Client components for the study UI; five serverless
+- **Next.js App Router + TypeScript.** Client components for the study UI; six serverless
   routes for auth, sync, and AI (`api/login`, `api/progress`, `api/dictation`, `api/grammar-quiz`,
-  `api/ai`).
+  `api/mistakes`, `api/ai`).
 - **Rendering: static shell + client-side app, no per-request SSR.** See
   **[ADR 003](../../docs/adrs/003-static-rendering-client-app.md)**. Pages are prerendered to a static
   shell at build time (SSG) and run on the client (CSR); `words.json` is a bundled `import`, not a
   server fetch. The layout is a static server component (document shell + PWA metadata); the only
-  per-request server code is `api/login`, `api/progress`, `api/dictation`, `api/grammar-quiz`, and
-  `api/ai` (JSON or a streamed text body, never HTML). Don't add `force-dynamic` or server-side page
-  data fetching — it would break the offline guarantee.
+  per-request server code is `api/login`, `api/progress`, `api/dictation`, `api/grammar-quiz`,
+  `api/mistakes`, and `api/ai` (JSON or a streamed text body, never HTML). Don't add `force-dynamic`
+  or server-side page data fetching — it would break the offline guarantee.
 - **Persistence split:** static word data (bundled JSON) is separate from progress (mutable).
   Progress lives in **IndexedDB** locally and a single **Vercel KV** key remotely.
 - **Sync model:** offline-first. Local is authoritative offline; on load / on change (debounced)
@@ -19,7 +19,10 @@
   works fully offline with zero AI. An optional BYOK runtime-AI tier layers on top —
   `api/ai` (Edge, streaming, JWT-gated) proxies to the user's own Anthropic key — and must always
   degrade gracefully (grey out) rather than block the core when offline, unconfigured, or toggled
-  off in Settings.
+  off in Settings. `api/ai` also serves two **non-streaming, JSON** intents (`note`/`judge`) via
+  `client.messages.parse()` + a raw JSON-Schema `output_config.format` — the mistakes corpus's
+  note-authoring/verification calls, not a chip the learner sees. No caller yet: they exist so the
+  first graded-track producer adds a call site, not a subsystem.
 - **UI kit: FlyonUI as a Tailwind plugin only — CSS classes, no JS runtime.** Styling is FlyonUI's
   semantic classes on top of Tailwind v4 (two themes, `delernen-dark`/`delernen-light`, declared in
   `globals.css`, plus `flyonui/variants.css` for state variants like `accordion-item-active:`).

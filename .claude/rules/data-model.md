@@ -42,6 +42,20 @@ interface GrammarQuizTopicProgress {
   lastSeen: number; // timestamp ms
 }
 type GrammarQuizProgressMap = Record<string, GrammarQuizTopicProgress>; // keyed by topicId
+
+type MistakeSource = 'flashcard' | 'dictation' | 'grammar-quiz';
+
+interface MistakeRecord {
+  id: string; // `${source}:${ref}:${createdAt}` — deterministic, not a uuid
+  source: MistakeSource;
+  text: string; // the payload — a short clause, e.g. "asked why mit takes Dativ"
+  wordId?: string;
+  topicId?: string;
+  level?: Level;
+  createdAt: number; // ms
+  confidence?: number; // local-only debug field, NEVER synced
+}
+type MistakeCorpus = MistakeRecord[]; // an append-only log, not a keyed map
 ```
 
 `words.json` stays a **single flat array** across all levels — a word reused across levels (e.g.
@@ -72,6 +86,17 @@ All/A1/A2 chip row (`LEVEL_CHIPS` in `page.helpers.ts`) alongside the category a
 progress track — its own IndexedDB store (`grammar-quiz`), keyed by topic id, synced to KV. See
 [ADR 009](../../docs/adrs/009-grammar-reference.md) and [ADR 010](../../docs/adrs/010-grammar-quiz.md).
 
-The three IndexedDB object stores in the `de-flashcards` database (`src/lib/idb.ts`): `progress`
+The four IndexedDB object stores in the `de-flashcards` database (`src/lib/idb.ts`): `progress`
 (Leitner, synced to KV `user:progress`), `dictation` (synced to KV `user:dictation`),
-`grammar-quiz` (synced to KV `user:grammar-quiz`).
+`grammar-quiz` (synced to KV `user:grammar-quiz`), and `mistakes` (synced to KV `user:mistakes`).
+
+The mistakes corpus is a **fourth track**, and the odd one out: a growing log of AI-authored
+qualitative notes about the learner's recurring gaps, not a `Record<id, entry>` progress map. It's
+a real **keyed** IndexedDB store (`keyPath: 'id'`, indexes on `createdAt`/`source`), not a blob at
+key `'data'` like the other three, and its sync merge is a **union by id** (records are immutable,
+so there's no newest-wins field to reconcile) rather than newest-wins-per-field. Every record must
+pass a write-time quality gate (`src/lib/mistakes-gate.ts`) before it's stored. **No producer is
+wired yet** — the store/route/sync/gate are built and the corpus stays empty until a graded track
+(grammar quiz first) calls `useMistakes().addRecord()` with a gated record. A tap-a-word question
+is deliberately not a source: asking about a word is a quick check, not a mistake. See
+[ADR 011](../../docs/adrs/011-personal-mistakes-corpus.md).

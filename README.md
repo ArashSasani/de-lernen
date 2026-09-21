@@ -52,7 +52,7 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
 
 ## Stack
 
-- **Next.js (App Router) + TypeScript** — statically-rendered shell + client-side app, plus serverless API routes (login, progress, dictation, grammar-quiz, and the BYOK AI proxy at `/api/ai`; no per-request SSR; see [ADR 003](docs/adrs/003-static-rendering-client-app.md))
+- **Next.js (App Router) + TypeScript** — statically-rendered shell + client-side app, plus serverless API routes (login, progress, dictation, grammar-quiz, mistakes, and the BYOK AI proxy at `/api/ai`; no per-request SSR; see [ADR 003](docs/adrs/003-static-rendering-client-app.md))
 - **Anthropic API (BYOK)** — powers the optional tap-a-word AI chips; your own key, server-side only, never in the client bundle or KV
 - **Tailwind CSS** — styling
 - **Heroicons** — SVG icon set (MIT, by the Tailwind team)
@@ -113,6 +113,12 @@ surface:
   **Einstellungen** (`/settings`) — the deterministic gloss above them always works regardless.
 - **Cheap facts stay data-backed.** Article, plural, and meaning always come from `words.json`;
   only the generative chips and free-ask call the model.
+- **Learning memory.** A personal, synced log of short notes about what you keep getting wrong
+  ("confused Akkusativ and Dativ after mit"), authored from graded practice and screened by a
+  write-time quality gate so a note is never accepted on the model's inference alone. Read-only in
+  **Einstellungen** → Learning memory. The store, sync route and gate are built, but **nothing
+  writes to it yet** — a graded track (grammar quiz first) will be the first producer, so the list
+  starts empty. See [ADR 011](docs/adrs/011-personal-mistakes-corpus.md).
 
 ---
 
@@ -193,9 +199,9 @@ de-lernen/
 ├─ scripts/gen-icons.mjs         ← generate PWA icons + apple-touch-icon.png
 ├─ public/                       ← manifest.json, sw.js, icons
 └─ src/
-   ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz, settings) + api/{login,progress,dictation,grammar-quiz,ai}
+   ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz, settings) + api/{login,progress,dictation,grammar-quiz,mistakes,ai}
    ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, WordPopover, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
-   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, auth-security (login rate limit), db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB+remote), words (incl. wordLevel), daily, daily-texts, speech, ai-prefs, ai/{models,prompts,validate,client}
+   ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, auth-security (login rate limit), db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB+remote), mistakes-sync (IndexedDB+remote), mistakes-gate (write-time quality gate), words (incl. wordLevel), daily, daily-texts, speech, ai-prefs, ai/{models,prompts,validate,client}
    ├─ hooks/                ← useProgressSync, useDictationSync, useGrammarQuizSync, useSpeech, useAiChat, useAiConfigured, useOnline
    └─ types/
 ```
@@ -257,3 +263,4 @@ for the design rationale behind each major decision:
 - [ADR 008](docs/adrs/008-dictation-spelling-exercise.md) — Dictation spelling exercise (gap algorithm, separate KV-synced progress track)
 - [ADR 009](docs/adrs/009-grammar-reference.md) — A1/A2 grammar reference (static JSON, read-only, no progress)
 - [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (static build-time-verified item bank, KV-synced per-topic progress)
+- [ADR 011](docs/adrs/011-personal-mistakes-corpus.md) — personal mistakes corpus (write-time quality gate, union-by-id KV sync)

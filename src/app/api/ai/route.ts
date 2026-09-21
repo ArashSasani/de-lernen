@@ -1,9 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest, verifyToken } from '@/lib/auth';
-import { parseAiRequest } from '@/lib/ai/validate';
-import { buildPrompt } from '@/lib/ai/prompts';
+import {
+  parseAiRequest,
+  parseMistakeCandidate,
+  parseJudgeVerdict,
+} from '@/lib/ai/validate';
+import { buildPrompt, buildStructuredPrompt } from '@/lib/ai/prompts';
 import { modelForIntent } from '@/lib/ai/models';
-import { streamCompletion } from '@/lib/ai/client';
+import { streamCompletion, completeStructured } from '@/lib/ai/client';
 
 // Edge: Vercel Hobby serverless functions cap execution/streaming duration.
 export const runtime = 'edge';
@@ -41,6 +45,46 @@ export async function POST(req: NextRequest) {
   const parsed = parseAiRequest(body);
   if (!parsed) {
     return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+  }
+
+  // note/judge are non-streaming, JSON-returning structured intents — a
+  // parallel branch that leaves the tap-a-word streaming path below
+  // untouched. Two calls, not one generic call with a picked parser: the
+  // conditional-expression form doesn't narrow to a single T for
+  // completeStructured<T>.
+  if (parsed.intent === 'note') {
+    const spec = buildStructuredPrompt(parsed);
+    const result = await completeStructured(
+      modelForIntent(parsed.intent),
+      spec,
+      parseMistakeCandidate,
+    );
+    if (!result.ok) {
+      return NextResponse.json(
+        { error: 'AI request failed', reason: result.reason },
+        { status: 502 },
+      );
+    }
+    return NextResponse.json(result.value, {
+      headers: { 'Cache-Control': 'no-store' },
+    });
+  }
+  if (parsed.intent === 'judge') {
+    const spec = buildStructuredPrompt(parsed);
+    const result = await completeStructured(
+      modelForIntent(parsed.intent),
+      spec,
+      parseJudgeVerdict,
+    );
+    if (!result.ok) {
+      return NextResponse.json(
+        { error: 'AI request failed', reason: result.reason },
+        { status: 502 },
+      );
+    }
+    return NextResponse.json(result.value, {
+      headers: { 'Cache-Control': 'no-store' },
+    });
   }
 
   const spec = buildPrompt(parsed);
