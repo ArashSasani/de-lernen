@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 import type { Level } from '@/types';
 import type { QuizQuestion } from '@/types/grammar-quiz';
 import type {
@@ -98,12 +98,25 @@ async function judge(
 // synchronously (before any fetch), POSTs the `note` intent, runs the gate
 // (or the judge-augmented gate, per the Settings pref), and inserts via the
 // caller's single `useMistakes()` instance if the verdict is `insert`.
-export function useMistakeNotes(mistakesApi: MistakesApi) {
+// `aiEnabled` is the caller's resolved flag (Settings toggle && a key is
+// configured), the same one the quiz queue uses. Authoring is a paid model
+// call, so it has to honour the toggle: gating only question generation
+// would leave "AI off" still spending on every miss.
+export function useMistakeNotes(mistakesApi: MistakesApi, aiEnabled: boolean) {
   const attemptedTopics = useRef<Set<string>>(new Set());
   const authored = useRef(0);
+  const aiEnabledRef = useRef(aiEnabled);
+
+  useEffect(() => {
+    aiEnabledRef.current = aiEnabled;
+  }, [aiEnabled]);
 
   const recordMiss = useCallback(
     (question: QuizQuestion, learnerAnswerIndex: number) => {
+      if (!aiEnabledRef.current) {
+        trace(question.topicId, 'skipped: AI off');
+        return;
+      }
       if (
         !canAuthorNote(
           attemptedTopics.current,

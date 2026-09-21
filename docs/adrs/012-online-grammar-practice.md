@@ -135,6 +135,23 @@ nothing survives is the caller's fallback signal) — one bad item shouldn't cos
 batch. The exception is _within_ an item: a bad field there is dropped whole, since renumbering
 choices after removing one would desync `correctIndex`/`acceptableIndices`.
 
+### The token budget covers reasoning, not just the JSON
+
+`max_tokens` on the `grammar` intent is **8000** — roughly five times the visible output. The
+model's reasoning tokens are charged against the same ceiling and vary widely per call: measured
+at 592, 866 and 2111 reasoning tokens for the same prompt, against ~800–900 of actual JSON. A
+budget sized to the JSON alone is therefore fine most of the time and truncates mid-string
+whenever the model deliberates longer than usual, which surfaces as an unparseable body and a
+silent degrade to the bank. `max_tokens` is a ceiling rather than a charge — only real tokens are
+billed — so the headroom costs nothing and buys determinism.
+
+**Rejected alternative: disabling reasoning** (`thinking: { type: 'disabled' }`). It removes the
+variance, cuts output tokens ~64% and halves latency, but the model then works through
+subject-verb agreement _inside_ the `explanation` field — producing visible self-correction
+("…wait, family is singular so it's 'fährt'…") and, worse, mismarking `correctIndex` on items
+whose correct form wasn't even among the choices. A wrong answer key teaches the wrong thing; an
+occasional bank fallback does not. Reliability was not worth buying with correctness.
+
 ### The mistakes corpus's first producer
 
 A missed quiz question — bank or generated — can author a note in the personal-mistakes corpus
