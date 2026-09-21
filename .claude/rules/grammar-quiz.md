@@ -74,4 +74,8 @@ Static, build-time-verified item bank, plus an online adaptive generator layered
   answers share this one map (see ADR 012's named tradeoff).
 - **A missed question can author a mistakes-corpus note** (`useMistakeNotes.ts`), once per topic
   per session under `MAX_NOTES_PER_SESSION` — see `.claude/rules/data-model.md` for the corpus
-  itself.
+  itself. Authoring is a **paid model call, so it takes the same resolved `aiEnabled` flag as
+  question generation** (Settings toggle && a key configured): the AI toggle has to mean zero AI
+  spend, not just a frozen question source. `/settings` disables the prefs that only shape AI
+  calls (learner level, judge verification) when it is off; the Learning-memory list stays
+  readable, since past notes are the learner's own data rather than a control.

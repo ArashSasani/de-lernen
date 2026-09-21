@@ -284,10 +284,15 @@ The prompt and the choices are German. The explanation is **English**, matching 
 
 Be brief: one sentence per prompt, at most two per explanation — under ${GRAMMAR_MAX_PROMPT_LEN} and ${GRAMMAR_MAX_EXPLANATION_LEN} characters respectively. The API enforces neither, an over-long answer is discarded whole, and the learner is waiting on every token you write.`,
     user: `${blocks.join('\n\n')}\n\nGenerate ${req.batchSize} multiple-choice questions for this topic at "${req.difficulty}" difficulty.`,
-    // Budgeted from the schema's own maxima (batchSize x prompt + 4 choices
-    // + explanation), which the API demotes to advisory prose rather than
-    // enforcing — under-budgeting here truncates the JSON mid-string.
-    maxTokens: GRAMMAR_BATCH_SIZE_MAX * 650 + 200,
+    // Generous on purpose. Reasoning tokens are charged against max_tokens
+    // and vary per call, so a budget sized to the visible JSON alone gets
+    // truncated mid-string whenever the model deliberates longer than
+    // usual — measured at ~1100 reasoning tokens against ~800 of output.
+    // max_tokens is a ceiling, not a cost: only real tokens are billed, so
+    // the headroom is free and buys determinism. Leaving reasoning on is
+    // deliberate — without it the model works through subject-verb
+    // agreement inside the explanation field and mismarks the answer.
+    maxTokens: 8000,
     schema: GRAMMAR_SCHEMA,
   };
 }

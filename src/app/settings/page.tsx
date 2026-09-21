@@ -141,7 +141,7 @@ export default function SettingsPage() {
             <Chip
               key={value}
               active={learnerLevel === value}
-              disabled={!aiConfigured}
+              disabled={!effectiveAiEnabled}
               onClick={() => {
                 setLearnerLevel(value);
                 setLearnerLevelState(value);
@@ -165,9 +165,9 @@ export default function SettingsPage() {
           <input
             type="checkbox"
             aria-label="Verify learning-memory notes"
-            disabled={!aiConfigured}
+            disabled={!effectiveAiEnabled}
             className="switch switch-primary shrink-0"
-            checked={judgeEnabled && aiConfigured}
+            checked={judgeEnabled && effectiveAiEnabled}
             onChange={() => {
               const next = !judgeEnabled;
               setJudgeEnabled(next);
@@ -180,9 +180,12 @@ export default function SettingsPage() {
       <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
         <div>
           <p className="text-sm font-medium">Learning memory</p>
+          {/* Stays readable with AI off: these are your own past notes, not
+              a control. Only new ones need the model. */}
           <p className="text-base-content/60 text-xs">
             Notes recorded from your practice mistakes — read-only, synced
             across devices.
+            {!effectiveAiEnabled && ' New notes need AI features on.'}
           </p>
         </div>
         <MistakesList mistakes={mistakes} />

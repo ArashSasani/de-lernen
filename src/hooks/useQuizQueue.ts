@@ -26,6 +26,7 @@ export type QuizPhase =
   | 'finished';
 
 const WAITING_BATCH_TIMEOUT_MS = 2500;
+const NOTES_READY_TIMEOUT_MS = 2000;
 
 // A single-topic session is served as several same-topic batches (batch =
 // one topic, sized to the AI's 3-4 range) rather than one big request, so
@@ -56,6 +57,11 @@ export interface UseQuizQueueOptions {
   // the *next* batch comes from without disturbing the current one.
   aiEnabled: boolean;
   getNotes?: (topicId: string) => string[];
+  // Whether getNotes can actually see the corpus yet. It loads from
+  // IndexedDB asynchronously, and the first AI batch is requested the
+  // moment the session mounts, so without this the batch that matters
+  // most is built against an empty corpus and injects no notes.
+  notesReady?: boolean;
 }
 
 export interface QuizQueueApi {
@@ -99,9 +105,15 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
   const aiEnabledRef = useRef(aiEnabled);
   const onlineRef = useRef(online);
   const getNotesRef = useRef(opts.getNotes);
+  const notesReadyRef = useRef(opts.notesReady ?? true);
+  const notesWaitersRef = useRef<(() => void)[]>([]);
   // Guards against a slow real fetch and the waiting-batch timeout fallback
   // both appending the same batch index.
   const appendedRef = useRef<Set<number>>(new Set());
+  // Batches the learner outran, already bridged with bank filler. Kept
+  // apart from appendedRef so the filler never stands in for the real
+  // batch — both end up in the queue.
+  const filledRef = useRef<Set<number>>(new Set());
   // Mirrors queue.length for the async chain, which must not read state.
   const queueLenRef = useRef(0);
   const loadFromRef = useRef<(batchIdx: number) => Promise<void>>(
@@ -111,6 +123,13 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
   useEffect(() => {
     getNotesRef.current = opts.getNotes;
   }, [opts.getNotes]);
+
+  useEffect(() => {
+    notesReadyRef.current = opts.notesReady ?? true;
+    if (notesReadyRef.current) {
+      for (const resolve of notesWaitersRef.current.splice(0)) resolve();
+    }
+  }, [opts.notesReady]);
 
   useEffect(() => {
     progressRef.current = progress;
@@ -159,6 +178,20 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
       if (!token) {
         return fromBankExcludingServed(p.topicId, p.count);
       }
+      // The learner is answering the bank-seeded batch 0 while this runs,
+      // so the wait is invisible — but it is raced against a timeout so a
+      // corpus that never loads degrades to "no notes" instead of
+      // blocking generation entirely.
+      if (!notesReadyRef.current) {
+        await Promise.race([
+          new Promise<void>((resolve) => {
+            notesWaitersRef.current.push(resolve);
+          }),
+          new Promise<void>((resolve) =>
+            setTimeout(resolve, NOTES_READY_TIMEOUT_MS),
+          ),
+        ]);
+      }
       const alreadyAsked = seenRef.current.get(p.topicId) ?? [];
       const notes = getNotesRef.current?.(p.topicId) ?? [];
       const recentResults = resultsRef.current.slice(-6);
@@ -180,9 +213,14 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
         notes,
         excludeIds: servedBankIdsRef.current,
       });
-      if (result.degraded) {
+      // Scoped to the live run. An abandoned run's fetch rejects when its
+      // controller is aborted, which reads as a failure — letting that
+      // mutate the shared ref would disable the generator for the run that
+      // replaced it. Strict Mode does this on every mount, and "Practice
+      // again" does it in production.
+      if (result.degraded && runIdRef.current === id) {
         aiAllowedRef.current = false;
-        if (runIdRef.current === id) setDegraded(true);
+        setDegraded(true);
       }
       for (const q of result.questions) servedBankIdsRef.current.add(q.id);
       seenRef.current.set(p.topicId, [
@@ -215,6 +253,7 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
     servedBankIdsRef.current = new Set();
     resultsRef.current = [];
     appendedRef.current = new Set();
+    filledRef.current = new Set();
     queueLenRef.current = 0;
 
     setPlanLength(plan.length);
@@ -294,27 +333,32 @@ export function useQuizQueue(opts: UseQuizQueueOptions): QuizQueueApi {
     };
   }, [runOnce]);
 
-  // A learner who outruns every prefetch falls back to the bank after a
-  // short wait rather than staring at a spinner indefinitely.
+  // A learner who outruns the prefetch gets bank questions to carry on
+  // with — but the batch still in flight is *not* cancelled or discarded.
+  // Generation takes far longer than a question takes to answer, so
+  // claiming the slot here would mean a fast session never shows a
+  // generated question at all, having already paid for every one of them.
+  // The filler is extra content; the real batch appends when it lands.
   useEffect(() => {
     if (phase !== 'waiting-batch') return;
     const id = runIdRef.current;
     const batchIdx = loadedBatches;
     const timer = setTimeout(() => {
-      if (runIdRef.current !== id || appendedRef.current.has(batchIdx)) return;
+      if (runIdRef.current !== id) return;
+      if (
+        appendedRef.current.has(batchIdx) ||
+        filledRef.current.has(batchIdx)
+      ) {
+        return;
+      }
       const p = planRef.current[batchIdx];
       if (!p) return;
-      // This batch only — the generator is not disabled for the rest of the
-      // run. Outrunning one slow response is ordinary, and latching here
-      // turned a single stall into an all-bank session.
-      appendedRef.current.add(batchIdx);
-      setDegraded(true);
+      filledRef.current.add(batchIdx);
       const qs = fromBankExcludingServed(p.topicId, p.count);
+      if (qs.length === 0) return;
       queueLenRef.current += qs.length;
       setQueue((q) => [...q, ...qs]);
-      setLoadedBatches(batchIdx + 1);
-      if (queueLenRef.current > 0) setPhase('active');
-      void loadFromRef.current(batchIdx + 1);
+      setPhase('active');
     }, WAITING_BATCH_TIMEOUT_MS);
     return () => clearTimeout(timer);
   }, [phase, loadedBatches, fromBankExcludingServed]);

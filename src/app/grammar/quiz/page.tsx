@@ -85,8 +85,11 @@ function GrammarQuizSession({
   // Stable, or useAiConfigured's effect re-issues its GET on every render.
   const onUnauthorized = useCallback(() => router.replace('/login'), [router]);
   const aiConfigured = useAiConfigured(onUnauthorized);
+  // One resolved flag for every paid call this page can make — question
+  // generation and note authoring alike.
+  const aiEnabled = aiConfigured && isAiEnabled();
   const mistakesApi = useMistakes();
-  const { recordMiss } = useMistakeNotes(mistakesApi);
+  const { recordMiss } = useMistakeNotes(mistakesApi, aiEnabled);
 
   const getNotes = useCallback(
     (id: string) => notesForPrompt(mistakesApi.mistakes, [id]),
@@ -96,8 +99,9 @@ function GrammarQuizSession({
   const queue = useQuizQueue({
     topicId,
     progress,
-    aiEnabled: aiConfigured && isAiEnabled(),
+    aiEnabled,
     getNotes,
+    notesReady: mistakesApi.ready,
   });
 
   const { current, recordResult } = queue;

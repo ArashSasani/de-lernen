@@ -115,6 +115,10 @@ the app's only runtime AI surface:
 - **BYOK, no shared secrets.** The key (`ANTHROPIC_API_KEY`) lives only in your own `.env.local` /
   Vercel env — never in the client bundle, never in KV. Without a key set, the route responds
   `503` and the chips grey out; nothing else in the app is affected.
+- **Token spend is yours, and this layer is experimental.** Every AI call bills your own key.
+  Usage isn't metered or capped by the app, and quiz generation in particular is the heaviest
+  caller. Turning **AI features** off in Settings stops all of it; the deterministic core is
+  unaffected. Watch your own Anthropic usage — no cost estimate here is a guarantee.
 - **Degrades gracefully.** Chips grey out automatically when offline or when AI is turned off in
   **Einstellungen** (`/settings`); the grammar quiz falls back to the frozen bank on the same
   conditions, silently, with no error shown — the deterministic core above it always works
