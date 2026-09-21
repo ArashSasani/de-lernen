@@ -25,9 +25,7 @@ function candidate(
   return {
     found: true,
     text: 'confused Akkusativ and Dativ after mit',
-    evidence: 'picked Akkusativ',
     confidence: 0.9,
-    claimedLemma: 'mit',
     ...overrides,
   };
 }
@@ -116,6 +114,18 @@ describe('gateCandidate — grammar-quiz ground truth', () => {
     const decision = gateCandidate(
       candidate(),
       { ...quizTruth, learnerAnswerIndex: 1 },
+      NOW,
+    );
+    expect(decision).toEqual({
+      verdict: 'reject',
+      reason: 'learner-was-correct',
+    });
+  });
+
+  it('rejects when the learner picked an acceptable alternative, not just correctIndex', () => {
+    const decision = gateCandidate(
+      candidate(),
+      { ...quizTruth, acceptableIndices: [0, 1], learnerAnswerIndex: 0 },
       NOW,
     );
     expect(decision).toEqual({

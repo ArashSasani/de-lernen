@@ -105,29 +105,27 @@ describe('POST /api/ai', () => {
     expect(spec.maxTokens).toBeGreaterThan(0);
   });
 
+  const validQuiz = {
+    topicId: 'dativ-prepositions',
+    prompt: 'Ich fahre ___ dem Bus.',
+    choices: ['den', 'dem', 'der'],
+    correctIndex: 1,
+    learnerAnswerIndex: 0,
+    explanation: 'mit takes Dativ.',
+  };
+
   it('returns structured JSON for a note request without streaming', async () => {
     mockedCompleteStructured.mockResolvedValue({
       ok: true,
       value: {
         found: true,
-        text: 'asked why mit takes Dativ',
-        evidence: 'why does mit take Dativ',
+        text: 'confused Akkusativ and Dativ after mit',
         confidence: 0.9,
-        claimedLemma: 'mit',
       },
     });
 
     const response = await POST(
-      aiRequest({
-        intent: 'note',
-        level: 'a1',
-        source: 'tap-a-word',
-        word: validWord,
-        exchange: {
-          question: 'why does mit take Dativ',
-          reply: 'mit is always followed by Dativ.',
-        },
-      }),
+      aiRequest({ intent: 'note', level: 'a1', quiz: validQuiz }),
     );
 
     expect(response.status).toBe(200);
@@ -138,10 +136,8 @@ describe('POST /api/ai', () => {
     expect(model).toBe('claude-sonnet-5');
     await expect(response.json()).resolves.toEqual({
       found: true,
-      text: 'asked why mit takes Dativ',
-      evidence: 'why does mit take Dativ',
+      text: 'confused Akkusativ and Dativ after mit',
       confidence: 0.9,
-      claimedLemma: 'mit',
     });
   });
 
@@ -152,20 +148,75 @@ describe('POST /api/ai', () => {
     });
 
     const response = await POST(
-      aiRequest({
-        intent: 'note',
-        level: 'a1',
-        source: 'tap-a-word',
-        word: validWord,
-        exchange: {
-          question: 'why does mit take Dativ',
-          reply: 'mit is always followed by Dativ.',
-        },
-      }),
+      aiRequest({ intent: 'note', level: 'a1', quiz: validQuiz }),
     );
 
     expect(response.status).toBe(502);
     expect(mockedStreamCompletion).not.toHaveBeenCalled();
+  });
+
+  it('returns JSON, not a stream, for a grammar request', async () => {
+    mockedCompleteStructured.mockResolvedValue({
+      ok: true,
+      value: [
+        {
+          prompt: 'Ich ___ Student.',
+          choices: ['bin', 'bist', 'ist'],
+          correctIndex: 0,
+          acceptableIndices: [0],
+          explanation: 'ich bin.',
+        },
+      ],
+    });
+
+    const response = await POST(
+      aiRequest({
+        intent: 'grammar',
+        level: 'a1',
+        topicId: 'sein-praesens',
+        batchSize: 3,
+        difficulty: 'medium',
+      }),
+    );
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get('Content-Type')).toContain('application/json');
+    expect(mockedStreamCompletion).not.toHaveBeenCalled();
+    expect(mockedCompleteStructured).toHaveBeenCalledTimes(1);
+  });
+
+  it('returns 400 for a grammar request naming an unknown topic', async () => {
+    const response = await POST(
+      aiRequest({
+        intent: 'grammar',
+        level: 'a1',
+        topicId: 'does-not-exist',
+        batchSize: 3,
+        difficulty: 'medium',
+      }),
+    );
+
+    expect(response.status).toBe(400);
+    expect(mockedCompleteStructured).not.toHaveBeenCalled();
+  });
+
+  it('returns 502 when the grammar generation call fails', async () => {
+    mockedCompleteStructured.mockResolvedValue({
+      ok: false,
+      reason: 'no_output',
+    });
+
+    const response = await POST(
+      aiRequest({
+        intent: 'grammar',
+        level: 'a1',
+        topicId: 'sein-praesens',
+        batchSize: 3,
+        difficulty: 'medium',
+      }),
+    );
+
+    expect(response.status).toBe(502);
   });
 });
 

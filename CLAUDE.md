@@ -10,8 +10,9 @@ Code the same way this file is (see "Rules map" below for what lives where).
 A single-user, offline-first, installable PWA for studying German vocabulary (A1, A2;
 extensible to further levels) with Leitner-box spaced repetition. Vocabulary is compiled
 **once** from source PDFs into a static `data/words.json`. The deterministic core makes **zero LLM
-calls**; an optional, BYOK runtime-AI layer (tap-a-word chips on the daily reading text) runs behind
-the user's own key and degrades gracefully offline.
+calls**; an optional, BYOK runtime-AI layer (tap-a-word chips on the daily reading text, and an
+adaptive grammar-practice question generator layered on the frozen quiz bank) runs behind the
+user's own key and degrades gracefully offline.
 
 User: one person. No multi-user auth, no user database. A single password gate is enough.
 
@@ -19,11 +20,14 @@ User: one person. No multi-user auth, no user database. A single password gate i
 
 1. **The app ships zero inference capability and zero AI secrets of its own.** All build-time
    translation/fixing/text-authoring happens in the one-time local data build, whose output lives in
-   the repo as static files (`words.json`, `daily-texts.json`, `grammar.json`). The one runtime
-   exception is the optional, user-supplied AI layer: a single JWT-gated Edge route (`/api/ai`)
-   proxies to the deploying user's own paid Anthropic key, is entirely optional, and must degrade
-   gracefully (grey out, never block) when offline or unconfigured — the deterministic core always
-   works without it.
+   the repo as static files (`words.json`, `daily-texts.json`, `grammar.json`, `grammar-bank.json`).
+   The one runtime exception is the optional, user-supplied AI layer: a single JWT-gated Edge route
+   (`/api/ai`) proxies to the deploying user's own paid Anthropic key, is entirely optional, and must
+   degrade gracefully (grey out, or fall back to frozen data, never block) when offline or
+   unconfigured — the deterministic core always works without it. This covers both the streaming
+   tap-a-word chips and the non-streaming structured intents (grammar-question generation, and the
+   mistakes corpus's note-authoring/verification calls) — every one of them falls back to a frozen
+   artifact or a no-op on failure, never to an error state.
 2. **Secrets only in env.** `APP_PASSWORD`, `TOKEN_SECRET`, `KV_*`, `ANTHROPIC_API_KEY` live in
    `.env.local` (gitignored) and the Vercel dashboard. Never commit them. Never hardcode them.
 3. **Static word data is immutable at runtime.** The app never writes to `words.json`. The only

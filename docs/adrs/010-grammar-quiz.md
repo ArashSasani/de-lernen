@@ -25,8 +25,10 @@ the learner can test each topic and get a smart mix of the topics they're weakes
 
 Three constraints shape the design — the same ones that shape every other feature here:
 
-- **Invariant 1 — zero runtime LLM.** Questions are frozen data, not generated code. No
-  question-generation API call, ever.
+- **Invariant 1 — zero runtime LLM by default.** Questions are frozen data, not generated code,
+  and stay the default and the offline fallback. (An online, opt-in generator layered on top of
+  this bank was added later — see [ADR 012](012-online-grammar-practice.md) — but every failure
+  path still degrades silently to exactly this bank.)
 - **Mirror the dictation track's shape (ADR 008), including KV sync.** Like dictation, quiz
   practice is a self-test with attempts/correct/streak counters — not a spaced-repetition schedule
   — and like dictation it's synced to KV so progress follows the learner across devices, keyed by
@@ -73,7 +75,10 @@ like the hand-written translations in `words.json`.
 
 ### Multiple-choice only
 
-`QuizQuestion` carries `choices` + `correctIndex` — every question is multiple-choice. A
+`QuizQuestion` carries `choices` + `correctIndex` — every question is multiple-choice. (An
+optional `acceptableIndices`, letting a question mark more than one choice correct, was added
+later for the online generator — see [ADR 012](012-online-grammar-practice.md); it defaults to
+`[correctIndex]` and every bank item is unaffected.) A
 free-text fill-in mode was considered and **not** built: it needs answer-normalization (umlauts,
 articles, capitalization, synonyms) that is exactly the fuzzy work this app pushes to build time
 elsewhere, and the dictation track (ADR 008) already covers exact-spelling recall. Multiple-choice

@@ -64,7 +64,40 @@ export const WORD_INTENTS = [
 // from WORD_INTENTS: that array also backs the tap-a-word chip row
 // (CHIP_LABELS, chipsForPos) and src/__tests__/ai-prompts.test.ts's
 // it.each(WORD_INTENTS), neither of which these intents belong to.
-export const STRUCTURED_INTENTS = ['note', 'judge'] as const;
+export const STRUCTURED_INTENTS = ['note', 'judge', 'grammar'] as const;
+
+// Online adaptive grammar practice: batch size the model is asked to fill
+// per topic, and how many generated questions a batch can contain.
+export const GRAMMAR_BATCH_SIZE_MIN = 3;
+export const GRAMMAR_BATCH_SIZE_MAX = 4;
+
+// Shape caps for a generated quiz item. The JSON schema, the server-side
+// token budget, and the client re-validation all check these; the API
+// demotes a schema's maxLength/maxItems to advisory prose, so the prompt
+// restates them and the validator is what actually enforces them.
+export const GRAMMAR_MAX_PROMPT_LEN = 300;
+export const GRAMMAR_MAX_CHOICE_LEN = 120;
+// Two sentences. Generation time scales with output tokens, and the
+// explanation is the longest field, so this is the main latency lever that
+// costs nothing else — a quiz card has no room for a 400-char essay anyway.
+export const GRAMMAR_MAX_EXPLANATION_LEN = 280;
+export const GRAMMAR_MIN_CHOICES = 3;
+export const GRAMMAR_MAX_CHOICES = 4;
+
+// Cache-name prefix the service worker versions behind (`de-lernen-v3`).
+// `public/sw.js` is served raw and can't import this, so it repeats the
+// literal; a non-production load matches on this prefix to clear them.
+export const SW_CACHE_PREFIX = 'de-lernen-';
+
+// AI-generated quiz ids are `ai-<topicId>-<uuid8>`; the bank's are
+// `<slug>-<2 digits>`, so the prefix both prevents collision and is what
+// the card reads to label a question as generated.
+export const AI_QUESTION_ID_PREFIX = 'ai-';
+
+// A session-wide cap on authored mistake notes, so a rough session can't
+// spam the corpus — paired with the one-note-per-topic-per-session rule in
+// useMistakeNotes.
+export const MAX_NOTES_PER_SESSION = 5;
 
 // Shared chip option lists — used by FilterBar and, for the level chips, also
 // by the read/grammar pages' own level filters, so they stay in sync with a
@@ -111,11 +144,9 @@ export const THEME_STORAGE_KEY = 'theme';
 
 // Length caps shared across the mistakes note/judge pipeline (a JSON
 // schema, a validator, the gate, and the route each check these).
-export const AI_MAX_LEMMA_LEN = 64; // word.lemma and a candidate's claimedLemma
+export const AI_MAX_LEMMA_LEN = 64; // word.lemma
 export const MISTAKES_MAX_NOTE_LEN = 160; // the persisted note text
-export const MISTAKES_MAX_EVIDENCE_LEN = 300; // must fit inside a question
 export const MISTAKES_MAX_REASON_LEN = 120; // judge verdict reason, debug-only
-export const MISTAKES_MAX_REPLY_LEN = 1200; // exchange.reply sent to /api/ai
 export const MISTAKES_MAX_CORPUS = 500; // corpus cap after merge
 
 // The valid MistakeSource values as a runtime allow-list. Both load paths

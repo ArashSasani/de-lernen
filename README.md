@@ -16,7 +16,8 @@ Leitner-box spaced repetition. Vocabulary is compiled once per level from source
 wordlists) into a static dataset. The deterministic core (flashcards, dictation, reading, grammar
 reference) ships **zero runtime LLM calls** — it just reads a committed `words.json`. On top of that,
 an **optional, BYOK (bring-your-own-key) AI layer** powers tap-a-word chips on the daily reading
-text: the app itself still ships no inference capability or AI secret — every call runs through
+text and, online, an adaptive grammar-practice generator layered on top of the same frozen quiz
+bank: the app itself still ships no inference capability or AI secret — every call runs through
 your own JWT-gated serverless function and your own paid Anthropic key, degrades gracefully offline,
 and can be switched off entirely in Settings.
 
@@ -28,8 +29,10 @@ Built to run as an installable PWA on mobile and desktop, with progress synced a
   Komparativ, Beispiel, Erklären, free-ask) when a key is configured.
 - **Diktat** (`/dictation`) — spelling/dictation drills targeting tricky German patterns
   (umlauts, ß, ie/ei, silent-h).
-- **Grammatik** (`/grammar`) — browsable A1/A2 grammar reference, filterable by level, plus an
-  on-device, multiple-choice practice quiz.
+- **Grammatik** (`/grammar`) — browsable A1/A2 grammar reference, filterable by level, plus a
+  multiple-choice practice quiz. Offline or with AI off it draws from the frozen item bank; online
+  with a key configured it generates questions adapted to the topic and your recent performance,
+  including items with more than one acceptable answer.
 - **Einstellungen** (`/settings`) — per-device prefs: AI features on/off, learner level.
 
 <img width="1660" height="1200" alt="merged-mobile_images_1" src="https://github.com/user-attachments/assets/7107e87a-2444-4fc7-93b6-512b9e8b3f3b" />
@@ -100,25 +103,34 @@ just matches your box-1 words to pre-built texts. See [ADR 007](docs/adrs/007-da
 
 Tapping a highlighted word in **Lesen** shows the same offline gloss as before (article, plural,
 meaning, pronunciation) plus a row of AI chips — Genitiv, Konjugation, Komparativ, Beispiel,
-Erklären — and a free-ask field, when a key is configured. This is the app's only runtime AI
-surface:
+Erklären — and a free-ask field, when a key is configured. Online, with AI on, the **Grammatik**
+quiz also draws on a live question generator instead of only the frozen bank. `POST /api/ai` is
+the app's only runtime AI surface:
 
-- **`POST /api/ai`** is a single JWT-gated, streaming Edge route that every chip/free-ask call goes
-  through. It owns the prompt, model, and token cap for each request — the client only ever sends a
-  word and an intent, never a free-form prompt.
+- **`POST /api/ai`** is a single JWT-gated Edge route that every chip/free-ask/quiz-generation call
+  goes through — streaming plain text for the tap-a-word chips, structured JSON for grammar-quiz
+  generation and the mistakes pipeline's note authoring. It owns the prompt, model, and token cap
+  for each request — the client only ever sends a word/topic and an intent, never a free-form
+  prompt.
 - **BYOK, no shared secrets.** The key (`ANTHROPIC_API_KEY`) lives only in your own `.env.local` /
   Vercel env — never in the client bundle, never in KV. Without a key set, the route responds
   `503` and the chips grey out; nothing else in the app is affected.
 - **Degrades gracefully.** Chips grey out automatically when offline or when AI is turned off in
-  **Einstellungen** (`/settings`) — the deterministic gloss above them always works regardless.
+  **Einstellungen** (`/settings`); the grammar quiz falls back to the frozen bank on the same
+  conditions, silently, with no error shown — the deterministic core above it always works
+  regardless. See [ADR 012](docs/adrs/012-online-grammar-practice.md).
 - **Cheap facts stay data-backed.** Article, plural, and meaning always come from `words.json`;
-  only the generative chips and free-ask call the model.
+  only the generative chips, quiz generation, and free-ask call the model.
+- **Multiple acceptable answers.** A generated quiz item can mark more than one choice correct
+  where German genuinely allows it (e.g. "gehe" vs "fahre" nach Hause) and explain the difference —
+  something the frozen bank's single `correctIndex` can't express. See
+  [ADR 012](docs/adrs/012-online-grammar-practice.md).
 - **Learning memory.** A personal, synced log of short notes about what you keep getting wrong
-  ("confused Akkusativ and Dativ after mit"), authored from graded practice and screened by a
-  write-time quality gate so a note is never accepted on the model's inference alone. Read-only in
-  **Einstellungen** → Learning memory. The store, sync route and gate are built, but **nothing
-  writes to it yet** — a graded track (grammar quiz first) will be the first producer, so the list
-  starts empty. See [ADR 011](docs/adrs/011-personal-mistakes-corpus.md).
+  ("confused Akkusativ and Dativ after mit"), authored from a missed grammar-quiz question and
+  screened by a write-time quality gate so a note is never accepted on the model's inference alone.
+  Read-only in **Einstellungen** → Learning memory. See
+  [ADR 011](docs/adrs/011-personal-mistakes-corpus.md) and
+  [ADR 012](docs/adrs/012-online-grammar-practice.md).
 
 ---
 
@@ -241,14 +253,23 @@ de-lernen/
   10-question drill on that topic, or **Smart Quiz** in the header for a ~12-question mix that
   prioritizes the topics you're weakest on (struggling first, then never-seen, then stale).
   Questions are multiple-choice, authored once into a static item bank and frozen at build
-  time — **no runtime LLM**. Quiz progress is tracked separately, keyed by topic in its own
-  IndexedDB store and synced across devices via its own `user:grammar-quiz` KV key, like
-  dictation. See [ADR 010](docs/adrs/010-grammar-quiz.md).
-- Open **Einstellungen** (`/settings`) to turn AI features on/off and set your learner level — the
-  register AI explanations aim at (never below it, and never above it unless you explicitly ask
-  about a higher-level construction, which is then explained at your level). A word's own level
-  acts as a floor, so the register used is the higher of the two. Both are per-device prefs —
-  stored locally, never synced.
+  time — offline, or with AI off, that bank is the whole session, **no runtime LLM**. Online with
+  a key configured and AI on, each batch of questions for a topic is instead generated fresh,
+  adapted to that topic's own level and your recent performance in the session, and can mark more
+  than one choice acceptable where German allows it; any failure (offline mid-session, a bad
+  response, the deployment having no key) falls back to the same bank silently. A missed generated
+  or bank question can, once per topic per session, author a short note in **Learning memory**
+  about the specific confusion. Quiz progress is tracked separately, keyed by topic in its own
+  IndexedDB store and synced across devices via its own `user:grammar-quiz` KV key, like dictation.
+  See [ADR 010](docs/adrs/010-grammar-quiz.md) and
+  [ADR 012](docs/adrs/012-online-grammar-practice.md).
+- Open **Einstellungen** (`/settings`) to turn AI features on/off, set your learner level, and
+  optionally turn on a second AI verification pass before a learning-memory note is saved
+  (off by default). The learner level raises how advanced AI explanations get — never below a
+  word's own level, and never above it unless you explicitly ask about a higher-level
+  construction, which is then explained at your level. Grammar-quiz _questions_ stay at the
+  topic's own level regardless of this pref — only the explanation register moves. All three are
+  per-device prefs — stored locally, never synced.
 
 See `CLAUDE.md` and `.claude/rules/` (e.g. `data-model.md`) for the data model, and `docs/adrs/`
 for the design rationale behind each major decision:

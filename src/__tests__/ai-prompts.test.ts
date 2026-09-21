@@ -5,10 +5,13 @@ import {
 } from '@/lib/ai/prompts';
 import { WORD_INTENTS } from '@/constants';
 import type {
+  GrammarIntentRequest,
   JudgeIntentRequest,
   NoteIntentRequest,
+  QuizMissContext,
   WordIntentRequest,
 } from '@/types/ai';
+import { grammarTopicById } from '@/lib/grammar';
 
 const baseWord: WordIntentRequest['word'] = {
   lemma: 'Haus',
@@ -82,43 +85,37 @@ describe('buildPrompt', () => {
   });
 });
 
-describe('buildStructuredPrompt', () => {
+const baseQuiz: QuizMissContext = {
+  topicId: 'dativ-prepositions',
+  prompt: 'Ich fahre ___ dem Bus.',
+  choices: ['den', 'dem', 'der'],
+  correctIndex: 1,
+  learnerAnswerIndex: 0,
+  explanation: 'mit takes Dativ.',
+};
+
+describe('buildStructuredPrompt — note/judge', () => {
   const noteReq: NoteIntentRequest = {
     intent: 'note',
     level: 'a1',
-    word: baseWord,
-    exchange: {
-      question: 'why does mit take Dativ',
-      reply: 'mit is always followed by Dativ.',
-    },
+    quiz: baseQuiz,
   };
 
   const judgeReq: JudgeIntentRequest = {
     intent: 'judge',
     level: 'a1',
-    word: baseWord,
-    exchange: noteReq.exchange,
-    candidate: {
-      text: 'asked why mit takes Dativ',
-      evidence: 'why does mit take Dativ',
-      claimedLemma: 'mit',
-    },
+    quiz: baseQuiz,
+    candidate: { text: 'confused Akkusativ and Dativ after mit' },
   };
 
   it('returns a non-empty spec + schema for note', () => {
     const spec = buildStructuredPrompt(noteReq);
     expect(spec.system.length).toBeGreaterThan(0);
-    expect(spec.user).toContain('why does mit take Dativ');
+    expect(spec.user).toContain('Ich fahre ___ dem Bus.');
     expect(spec.maxTokens).toBeGreaterThan(0);
     expect(spec.schema.type).toBe('object');
     expect(spec.schema.required).toEqual(
-      expect.arrayContaining([
-        'found',
-        'text',
-        'evidence',
-        'confidence',
-        'claimedLemma',
-      ]),
+      expect.arrayContaining(['found', 'text', 'confidence']),
     );
     expect(spec.schema.additionalProperties).toBe(false);
   });
@@ -126,7 +123,7 @@ describe('buildStructuredPrompt', () => {
   it('returns a non-empty spec + schema for judge', () => {
     const spec = buildStructuredPrompt(judgeReq);
     expect(spec.system.length).toBeGreaterThan(0);
-    expect(spec.user).toContain('asked why mit takes Dativ');
+    expect(spec.user).toContain('confused Akkusativ and Dativ after mit');
     expect(spec.maxTokens).toBeGreaterThan(0);
     expect(spec.schema.required).toEqual(
       expect.arrayContaining(['keep', 'reason']),
@@ -137,5 +134,64 @@ describe('buildStructuredPrompt', () => {
   it('respects the register ceiling for structured intents too', () => {
     const spec = buildStructuredPrompt({ ...noteReq, learnerLevel: 'b1' });
     expect(spec.system).toContain('B1');
+  });
+});
+
+describe('buildStructuredPrompt — grammar', () => {
+  const topic = grammarTopicById('sein-praesens')!;
+
+  function grammarReq(
+    overrides: Partial<GrammarIntentRequest> = {},
+  ): GrammarIntentRequest {
+    return {
+      intent: 'grammar',
+      level: 'a1',
+      topicId: 'sein-praesens',
+      batchSize: 3,
+      difficulty: 'medium',
+      ...overrides,
+    };
+  }
+
+  it('returns a non-empty spec + schema, fenced with the topic material', () => {
+    const spec = buildStructuredPrompt(grammarReq(), topic);
+    expect(spec.system.length).toBeGreaterThan(0);
+    expect(spec.user).toContain(topic.title);
+    expect(spec.maxTokens).toBeGreaterThan(0);
+    expect(spec.schema.required).toEqual(['items']);
+  });
+
+  it('omits the performance/already-asked/notes blocks when empty', () => {
+    const spec = buildStructuredPrompt(grammarReq(), topic);
+    expect(spec.user).not.toContain('session');
+    expect(spec.user).not.toContain('Already asked');
+    expect(spec.user).not.toContain('Known recurring confusions');
+  });
+
+  it('composes a natural-language performance sentence, not raw JSON', () => {
+    const spec = buildStructuredPrompt(
+      grammarReq({ recentResults: [true, true, false] }),
+      topic,
+    );
+    expect(spec.user).toContain('2 of their last 3');
+    expect(spec.user).not.toContain('[true,true,false]');
+  });
+
+  it('fences already-asked prompts and notes when present', () => {
+    const spec = buildStructuredPrompt(
+      grammarReq({
+        alreadyAsked: ['Wie heißt du?'],
+        notes: ['confuses ist/sind'],
+      }),
+      topic,
+    );
+    expect(spec.user).toContain('Already asked');
+    expect(spec.user).toContain('Wie heißt du?');
+    expect(spec.user).toContain('Known recurring confusions');
+    expect(spec.user).toContain('confuses ist/sind');
+  });
+
+  it('throws if called without a resolved topic', () => {
+    expect(() => buildStructuredPrompt(grammarReq())).toThrow();
   });
 });

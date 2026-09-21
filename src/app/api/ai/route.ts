@@ -4,10 +4,13 @@ import {
   parseAiRequest,
   parseMistakeCandidate,
   parseJudgeVerdict,
+  parseGeneratedQuestions,
 } from '@/lib/ai/validate';
 import { buildPrompt, buildStructuredPrompt } from '@/lib/ai/prompts';
 import { modelForIntent } from '@/lib/ai/models';
 import { streamCompletion, completeStructured } from '@/lib/ai/client';
+import { grammarTopicById } from '@/lib/grammar';
+import type { GeneratedQuizItem } from '@/types/ai';
 
 // Edge: Vercel Hobby serverless functions cap execution/streaming duration.
 export const runtime = 'edge';
@@ -75,6 +78,36 @@ export async function POST(req: NextRequest) {
       modelForIntent(parsed.intent),
       spec,
       parseJudgeVerdict,
+    );
+    if (!result.ok) {
+      return NextResponse.json(
+        { error: 'AI request failed', reason: result.reason },
+        { status: 502 },
+      );
+    }
+    return NextResponse.json(result.value, {
+      headers: { 'Cache-Control': 'no-store' },
+    });
+  }
+  if (parsed.intent === 'grammar') {
+    // Resolved server-side so topic prose in the prompt never comes from
+    // the client, and a model that names the wrong topic can't write into
+    // another topic's progress (the caller stamps topicId from this request).
+    const topic = grammarTopicById(parsed.topicId);
+    if (!topic) {
+      return NextResponse.json({ error: 'Unknown topic' }, { status: 400 });
+    }
+    const spec = buildStructuredPrompt(parsed, topic);
+    const result = await completeStructured<GeneratedQuizItem[]>(
+      modelForIntent(parsed.intent),
+      spec,
+      (raw) => {
+        if (typeof raw !== 'object' || raw === null) return null;
+        const items = parseGeneratedQuestions(
+          (raw as { items?: unknown }).items,
+        );
+        return items.length > 0 ? items : null;
+      },
     );
     if (!result.ok) {
       return NextResponse.json(

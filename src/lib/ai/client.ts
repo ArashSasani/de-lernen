@@ -47,14 +47,18 @@ export function streamCompletion(
 
 export type StructuredResult<T> =
   | { ok: true; value: T }
-  | { ok: false; reason: 'provider' | 'no_output' | 'schema' };
+  | { ok: false; reason: 'provider' | 'no_output' | 'schema' | 'truncated' };
 
-// The structured-output counterpart to streamCompletion, for the note/judge
-// intents. Uses client.messages.parse() + jsonSchemaOutputFormat — raw JSON
-// Schema, no zod, no forced tool_choice (the pre-structured-outputs
-// workaround). `parse` re-validates the model's parsed_output with the same
-// discipline the route applies to client input; a model that ignores its
-// own schema surfaces as a 'schema' result, not a thrown error.
+// The structured-output counterpart to streamCompletion, for the note/judge/
+// grammar intents. Uses jsonSchemaOutputFormat — raw JSON Schema, no zod, no
+// forced tool_choice (the pre-structured-outputs workaround). `parse`
+// re-validates the model's output with the same discipline the route applies
+// to client input; a model that ignores its own schema surfaces as a 'schema'
+// result, not a thrown error.
+//
+// messages.create() + an explicit JSON.parse, not messages.parse(): the SDK's
+// auto-parse throws on a body cut mid-string, which discards stop_reason and
+// reports a max_tokens overrun as an opaque provider error.
 export async function completeStructured<T>(
   model: string,
   spec: StructuredPromptSpec,
@@ -62,7 +66,7 @@ export async function completeStructured<T>(
 ): Promise<StructuredResult<T>> {
   const anthropic = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
   try {
-    const message = await anthropic.messages.parse({
+    const message = await anthropic.messages.create({
       model,
       max_tokens: spec.maxTokens,
       system: spec.system,
@@ -71,10 +75,26 @@ export async function completeStructured<T>(
         format: jsonSchemaOutputFormat(spec.schema as AnthropicJsonSchema),
       },
     });
-    if (message.parsed_output == null) {
-      return { ok: false, reason: 'no_output' };
+    const text = message.content
+      .map((block) => (block.type === 'text' ? block.text : ''))
+      .join('');
+    if (!text) return { ok: false, reason: 'no_output' };
+
+    let raw: unknown;
+    try {
+      raw = JSON.parse(text);
+    } catch {
+      // The API treats the schema's maxLength/maxItems as advisory prose, so
+      // an over-long answer runs past max_tokens and lands here.
+      const reason =
+        message.stop_reason === 'max_tokens' ? 'truncated' : 'schema';
+      console.error(
+        `[ai] completeStructured ${reason}: stop_reason=${message.stop_reason}, ${text.length} chars of unparseable output`,
+      );
+      return { ok: false, reason };
     }
-    const value = parse(message.parsed_output);
+
+    const value = parse(raw);
     return value !== null
       ? { ok: true, value }
       : { ok: false, reason: 'schema' };

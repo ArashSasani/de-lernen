@@ -12,6 +12,10 @@ export type GroundTruth = {
   level: Level;
   choices: readonly string[];
   correctIndex: number;
+  // Every genuinely correct index, not just correctIndex — an answer in
+  // this set but not === correctIndex still grades correct on screen, so a
+  // note must not be authored about it. Defaults to [correctIndex].
+  acceptableIndices?: number[];
   learnerAnswerIndex: number;
 };
 
@@ -82,7 +86,8 @@ export function gateCandidate(
   }
 
   // Layer 1c — grounded validation against the interaction's ground truth.
-  if (truth.learnerAnswerIndex === truth.correctIndex) {
+  const acceptable = truth.acceptableIndices ?? [truth.correctIndex];
+  if (acceptable.includes(truth.learnerAnswerIndex)) {
     return { verdict: 'reject', reason: 'learner-was-correct' };
   }
   const correctChoice = truth.choices[truth.correctIndex];

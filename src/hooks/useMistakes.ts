@@ -23,8 +23,9 @@ export interface MistakesApi {
 }
 
 // The corpus transport — IndexedDB load, remote merge, debounced push, and
-// the keepalive flush the other three tracks use. No producer is wired yet:
-// grammar quiz is the first, and it calls addRecord with a gated record.
+// the keepalive flush the other three tracks use. Its producer is the
+// grammar quiz, via useMistakeNotes, which calls addRecord with a gated
+// record.
 export function useMistakes(): MistakesApi {
   const [mistakes, setMistakesState] = useState<MistakeCorpus>([]);
   const mistakesRef = useRef<MistakeCorpus>([]);
