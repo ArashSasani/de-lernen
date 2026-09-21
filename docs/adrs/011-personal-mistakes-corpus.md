@@ -119,16 +119,17 @@ learner model — it's a qualitative tag ("this exchange looked A2"), not an inp
 
 ## Rollout — infrastructure first, producer second
 
-**Nothing writes to the corpus yet.** The store, route, sync, merge, gate, and the `note`/`judge`
-structured AI intents are all built and tested; `useMistakes` exposes `addRecord(record)`, which
-takes an already-gated record and owns persistence only. Grammar practice is the intended first
-producer: it has a correct answer and the learner's actual pick, which is exactly the shape
-`GroundTruth` takes. `GroundTruth` is a discriminated union of one member for that reason — a
-second graded track adds a variant rather than forcing a reshape.
+**Nothing wrote to the corpus at first.** The store, route, sync, merge, and gate shipped and were
+tested with no producer; `useMistakes` exposes `addRecord(record)`, which takes an already-gated
+record and owns persistence only. Grammar practice was always the intended first producer: it has
+a correct answer and the learner's actual pick, which is exactly the shape `GroundTruth` takes.
+`GroundTruth` is a discriminated union of one member for that reason. It is now the first producer
+— see [ADR 012](012-online-grammar-practice.md).
 
-The `note` prompt in `lib/ai/prompts.ts` is currently written around a word-and-exchange shape and
-will be rewritten by that first producer; the surrounding plumbing (route branch, structured
-output parsing, re-validation) is producer-agnostic and stays.
+The `note`/`judge` intents in `lib/ai/prompts.ts` were originally written around a
+word-and-exchange shape, since no producer existed yet to say what shape it should take; ADR 012
+reshaped both to the quiz-miss shape that producer actually needs. The surrounding plumbing (route
+branch, structured output parsing, re-validation) was producer-agnostic and needed no change.
 
 **Deduplication and retrieval are out of scope.** Near-duplicate notes about the same recurring
 gap are tolerated for now — acceptable while the corpus is small, and a read-only Settings list is
@@ -148,10 +149,12 @@ switching it on needs no IndexedDB migration.
   into other prompts is a second-order risk beyond the direct-request validation every other AI
   route already does; the gate's hygiene layer and the route's own validation both exist because
   of this, not for tidiness.
-- **Shipped empty, on purpose.** With no producer, the corpus stays at zero records and the
-  Settings list shows its empty state. The cost of that is a visibly inert feature; the benefit is
-  that the transport and the gate are settled before any note exists, so the first producer adds
-  one call site instead of a subsystem.
-- **Unproven end to end.** Merge, sync, and gate are unit-tested, but no real record has traversed
-  the full path. The first producer should expect to shake out integration bugs the tests don't
+- **Shipped empty, on purpose, then filled by its first producer.** With no producer, the corpus
+  stayed at zero records and the Settings list showed its empty state. The cost of that was a
+  visibly inert feature; the benefit was that the transport and the gate were settled before any
+  note existed, so the first producer ([ADR 012](012-online-grammar-practice.md)) added one call
+  site instead of a subsystem.
+- **Unproven end to end** at the time this ADR was written. Merge, sync, and gate were
+  unit-tested, but no real record had traversed the full path. The first producer should expect to
+  shake out integration bugs the tests don't
   reach.

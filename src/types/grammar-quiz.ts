@@ -10,6 +10,11 @@ export interface QuizQuestion {
   prompt: string;
   choices: string[];
   correctIndex: number;
+  // Every index that is a genuinely correct answer, not just correctIndex —
+  // German sometimes allows more than one (e.g. "gehe"/"fahre" nach Hause).
+  // Defaults to [correctIndex] when absent, so the 492 frozen bank items
+  // need no change.
+  acceptableIndices?: number[];
   explanation: string;
 }
 

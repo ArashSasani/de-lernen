@@ -1,9 +1,11 @@
 import {
   sessionStats,
-  buildTopicQuiz,
-  buildSmartQuiz,
+  selectQuizTopics,
+  tier,
+  difficultyFor,
   QUIZ_SESSION_SIZE,
 } from './page.helpers';
+import { allQuizzableTopicIds } from '@/lib/grammar-quiz';
 
 describe('sessionStats', () => {
   it('returns zeros for empty results', () => {
@@ -35,69 +37,93 @@ describe('sessionStats', () => {
   });
 });
 
-describe('buildTopicQuiz', () => {
-  it('returns questions for a known topic', () => {
-    const qs = buildTopicQuiz('sein-praesens');
-    expect(qs.length).toBeGreaterThan(0);
-    expect(qs.length).toBeLessThanOrEqual(10);
+describe('tier', () => {
+  const now = Date.now();
+
+  it('ranks struggling (attempts>=2, accuracy<0.7) as tier 0', () => {
+    expect(tier({ attempts: 4, correct: 1, lastSeen: now }, now)).toBe(0);
   });
 
-  it('sets topicId on all returned questions', () => {
-    const qs = buildTopicQuiz('haben-praesens');
-    for (const q of qs) {
-      expect(q.topicId).toBe('haben-praesens');
-    }
+  it('ranks never-seen as tier 1', () => {
+    expect(tier({ attempts: 0, correct: 0, lastSeen: 0 }, now)).toBe(1);
   });
 
-  it('each question has choices and a valid correctIndex', () => {
-    const qs = buildTopicQuiz('praesens-regelmaessig');
-    for (const q of qs) {
-      expect(q.choices.length).toBeGreaterThanOrEqual(3);
-      expect(q.correctIndex).toBeGreaterThanOrEqual(0);
-      expect(q.correctIndex).toBeLessThan(q.choices.length);
-    }
+  it('ranks stale (>3 days) as tier 2', () => {
+    const lastSeen = now - 4 * 24 * 60 * 60 * 1000;
+    expect(tier({ attempts: 3, correct: 3, lastSeen }, now)).toBe(2);
   });
 
-  it('returns empty array for unknown topic', () => {
-    expect(buildTopicQuiz('does-not-exist')).toHaveLength(0);
+  it('ranks everything else as tier 3', () => {
+    expect(tier({ attempts: 3, correct: 3, lastSeen: now }, now)).toBe(3);
   });
 });
 
-describe('buildSmartQuiz', () => {
-  it('returns a non-empty quiz with empty progress', () => {
-    const qs = buildSmartQuiz({});
-    expect(qs.length).toBeGreaterThan(0);
+describe('difficultyFor', () => {
+  it('returns easy for a never-attempted topic', () => {
+    expect(
+      difficultyFor({ attempts: 0, correct: 0, streak: 0, lastSeen: 0 }),
+    ).toBe('easy');
   });
 
-  it('respects the session size cap', () => {
-    const qs = buildSmartQuiz({});
-    expect(qs.length).toBeLessThanOrEqual(QUIZ_SESSION_SIZE);
+  it('holds medium for a struggling topic rather than dropping to easy', () => {
+    expect(
+      difficultyFor({ attempts: 4, correct: 1, streak: 0, lastSeen: 0 }),
+    ).toBe('medium');
   });
 
-  it('each question has valid structure', () => {
-    const qs = buildSmartQuiz({});
-    for (const q of qs) {
-      expect(typeof q.topicId).toBe('string');
-      expect(typeof q.prompt).toBe('string');
-      expect(Array.isArray(q.choices)).toBe(true);
-      expect(q.choices.length).toBeGreaterThanOrEqual(3);
-      expect(q.correctIndex).toBeGreaterThanOrEqual(0);
-      expect(q.correctIndex).toBeLessThan(q.choices.length);
-    }
+  it('returns hard for a well-performing topic with a strong recent run', () => {
+    expect(
+      difficultyFor({ attempts: 10, correct: 9, streak: 5, lastSeen: 0 }, [
+        true,
+        true,
+        true,
+      ]),
+    ).toBe('hard');
   });
 
-  it('prioritises topics with low accuracy over never-seen topics', () => {
+  it('does not jump to hard on a weak recent run despite good history', () => {
+    expect(
+      difficultyFor({ attempts: 10, correct: 9, streak: 0, lastSeen: 0 }, [
+        false,
+        false,
+        true,
+      ]),
+    ).toBe('medium');
+  });
+});
+
+describe('selectQuizTopics', () => {
+  it('places a struggling topic ahead of a never-seen one', () => {
+    const now = Date.now();
+    const topicIds = allQuizzableTopicIds();
+    const strugglingId = topicIds[0];
     const progress = {
-      'sein-praesens': {
-        attempts: 5,
-        correct: 1,
-        streak: 0,
-        lastSeen: Date.now() - 1000,
-      },
+      [strugglingId]: { attempts: 4, correct: 1, streak: 0, lastSeen: now },
     };
-    const qs = buildSmartQuiz(progress);
-    // The low-accuracy topic should appear in the quiz
-    const topicIds = qs.map((q) => q.topicId);
-    expect(topicIds).toContain('sein-praesens');
+    const plan = selectQuizTopics(progress, {
+      now,
+      order: (ids) => [...ids],
+    });
+    const strugglingIndex = plan.findIndex((p) => p.topicId === strugglingId);
+    expect(strugglingIndex).toBe(0);
+    expect(plan[0].tier).toBe(0);
+  });
+
+  it('keeps never-seen topics in shuffle (injected order) order, untouched by the accuracy tiebreak', () => {
+    const now = Date.now();
+    const topicIds = allQuizzableTopicIds().slice(0, 6);
+    const identityOrder = (ids: string[]) => [...ids];
+    const plan = selectQuizTopics({}, { now, order: identityOrder });
+    const planIds = plan.map((p) => p.topicId);
+    expect(planIds.slice(0, topicIds.length)).toEqual(
+      topicIds.slice(0, planIds.length),
+    );
+  });
+
+  it('never exceeds QUIZ_SESSION_SIZE total count', () => {
+    const plan = selectQuizTopics({});
+    const total = plan.reduce((sum, p) => sum + p.count, 0);
+    expect(total).toBeLessThanOrEqual(QUIZ_SESSION_SIZE);
   });
 });
+

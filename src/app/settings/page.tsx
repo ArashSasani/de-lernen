@@ -13,6 +13,8 @@ import {
   setAiEnabled,
   getLearnerLevel,
   setLearnerLevel,
+  isJudgeEnabled,
+  setJudgeEnabled,
 } from '@/lib/ai-prefs';
 import { getTheme, setTheme, type ThemeName } from '@/lib/theme-prefs';
 import { LEARNER_LEVEL_OPTIONS } from './page.helpers';
@@ -22,6 +24,7 @@ export default function SettingsPage() {
   const router = useRouter();
   const [ready, setReady] = useState(false);
   const [aiEnabled, setAiEnabledState] = useState(true);
+  const [judgeEnabled, setJudgeEnabledState] = useState(false);
   const [learnerLevel, setLearnerLevelState] =
     useState<ReturnType<typeof getLearnerLevel>>('a1');
   const [theme, setThemeState] = useState<ThemeName>('delernen-dark');
@@ -35,6 +38,7 @@ export default function SettingsPage() {
     }
     (async () => {
       setAiEnabledState(isAiEnabled());
+      setJudgeEnabledState(isJudgeEnabled());
       setLearnerLevelState(getLearnerLevel());
       setThemeState(getTheme());
       setReady(true);
@@ -128,8 +132,8 @@ export default function SettingsPage() {
         <div>
           <p className="text-sm font-medium">Learner level</p>
           <p className="text-base-content/60 text-xs">
-            Caps how advanced AI explanations get, regardless of a word&apos;s
-            own level.
+            Raises how advanced AI explanations get, never below a word&apos;s
+            own level and never above it unless you explicitly ask.
           </p>
         </div>
         <div className="flex gap-1.5">
@@ -146,6 +150,30 @@ export default function SettingsPage() {
               {label}
             </Chip>
           ))}
+        </div>
+      </section>
+
+      <section className="card border-base-300 bg-base-200 flex flex-col gap-3 border p-5">
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <p className="text-sm font-medium">Verify learning-memory notes</p>
+            <p className="text-base-content/60 text-xs">
+              Adds a second AI check before a mistake note is saved. Off by
+              default — the built-in checks already cover most cases.
+            </p>
+          </div>
+          <input
+            type="checkbox"
+            aria-label="Verify learning-memory notes"
+            disabled={!aiConfigured}
+            className="switch switch-primary shrink-0"
+            checked={judgeEnabled && aiConfigured}
+            onChange={() => {
+              const next = !judgeEnabled;
+              setJudgeEnabled(next);
+              setJudgeEnabledState(next);
+            }}
+          />
         </div>
       </section>
 

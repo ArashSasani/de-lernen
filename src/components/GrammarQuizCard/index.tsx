@@ -1,27 +1,30 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { SparklesIcon } from '@heroicons/react/24/outline';
 import type { QuizQuestion } from '@/types/grammar-quiz';
 import { grammarTopicById } from '@/lib/grammar';
-import { choiceStyle } from './index.helpers';
+import { isAiGenerated } from '@/lib/grammar-quiz-ai';
+import { choiceStyle, isAcceptable, alternativeChoice } from './index.helpers';
 
 interface Props {
   question: QuizQuestion;
-  onAnswer: (correct: boolean) => void;
+  onAnswer: (correct: boolean, choiceIndex: number) => void;
   onNext: () => void;
 }
 
 export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
   const [selected, setSelected] = useState<number | null>(null);
   const answered = selected !== null;
-  const isCorrect = selected === question.correctIndex;
+  const isCorrect = answered && isAcceptable(question, selected);
+  const alternative = answered ? alternativeChoice(question, selected) : null;
 
   const topic = grammarTopicById(question.topicId);
 
   const handleSelect = (index: number) => {
     if (answered) return;
     setSelected(index);
-    onAnswer(index === question.correctIndex);
+    onAnswer(isAcceptable(question, index), index);
   };
 
   useEffect(() => {
@@ -43,7 +46,16 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
 
   return (
     <div className="border-base-300 bg-base-200 flex flex-col gap-4 rounded-2xl border p-5">
-      {topic && <p className="text-base-content/60 text-xs">{topic.title}</p>}
+      <div className="flex items-center justify-between gap-2">
+        <p className="text-base-content/60 text-xs">{topic?.title ?? ''}</p>
+        {/* Bank questions carry no marker — the icon's absence is the tell. */}
+        {isAiGenerated(question) && (
+          <span className="text-primary/70 shrink-0" title="Generated for you">
+            <SparklesIcon className="h-4 w-4" aria-hidden="true" />
+            <span className="sr-only">AI-generated question</span>
+          </span>
+        )}
+      </div>
 
       <p className="text-lg font-medium whitespace-pre-line">
         {question.prompt}
@@ -55,7 +67,7 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
             key={i}
             onClick={() => handleSelect(i)}
             disabled={answered}
-            className={`rounded-xl border px-4 py-3 text-left text-sm transition-colors ${choiceStyle(answered, i, selected, question.correctIndex)}`}
+            className={`rounded-xl border px-4 py-3 text-left text-sm transition-colors ${choiceStyle(answered, i, selected, question.correctIndex, question.acceptableIndices)}`}
           >
             <span className="mr-2 text-xs opacity-40">{i + 1}</span>
             {choice}
@@ -81,7 +93,9 @@ export default function GrammarQuizCard({ question, onAnswer, onNext }: Props) {
               className={`text-sm font-medium ${isCorrect ? 'light:text-emerald-700 text-emerald-400' : 'light:text-rose-700 text-rose-400'}`}
             >
               {isCorrect
-                ? 'Richtig!'
+                ? alternative
+                  ? `Richtig! — ›${alternative}‹ wäre auch möglich.`
+                  : 'Richtig!'
                 : `Richtige Antwort: ${question.choices[question.correctIndex]}`}
             </p>
             <button onClick={onNext} className="btn btn-primary btn-sm">

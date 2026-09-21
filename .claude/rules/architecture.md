@@ -15,14 +15,16 @@
 - **Sync model:** offline-first. Local is authoritative offline; on load / on change (debounced)
   / on reconnect, push changed progress and merge **newest-wins per word** by `lastReviewed`.
   Implement the same merge on client and server so neither device clobbers the other.
-- **Capability tiers:** the deterministic core (flashcards, dictation, reading, grammar reference)
-  works fully offline with zero AI. An optional BYOK runtime-AI tier layers on top —
-  `api/ai` (Edge, streaming, JWT-gated) proxies to the user's own Anthropic key — and must always
-  degrade gracefully (grey out) rather than block the core when offline, unconfigured, or toggled
-  off in Settings. `api/ai` also serves two **non-streaming, JSON** intents (`note`/`judge`) via
-  `client.messages.parse()` + a raw JSON-Schema `output_config.format` — the mistakes corpus's
-  note-authoring/verification calls, not a chip the learner sees. No caller yet: they exist so the
-  first graded-track producer adds a call site, not a subsystem.
+- **Capability tiers:** the deterministic core (flashcards, dictation, reading, grammar reference,
+  the grammar quiz's frozen item bank) works fully offline with zero AI. An optional BYOK
+  runtime-AI tier layers on top — `api/ai` (Edge, JWT-gated) proxies to the user's own Anthropic
+  key — and must always degrade gracefully (grey out, or fall back to frozen/bank data) rather
+  than block the core when offline, unconfigured, or toggled off in Settings. Most intents stream
+  plain text (the tap-a-word chips); three are **non-streaming, JSON** via
+  `client.messages.parse()` + a raw JSON-Schema `output_config.format`: `note`/`judge` (the
+  mistakes corpus's note-authoring/verification calls) and `grammar` (adaptive grammar-quiz
+  question generation, ADR 012) — the first real caller of the `note`/`judge` pair, which
+  previously had none.
 - **UI kit: FlyonUI as a Tailwind plugin only — CSS classes, no JS runtime.** Styling is FlyonUI's
   semantic classes on top of Tailwind v4 (two themes, `delernen-dark`/`delernen-light`, declared in
   `globals.css`, plus `flyonui/variants.css` for state variants like `accordion-item-active:`).

@@ -1,4 +1,7 @@
+import { STRUCTURED_INTENTS } from '@/constants';
 import type { AiIntent } from '@/types/ai';
+
+const STRUCTURED: readonly string[] = STRUCTURED_INTENTS;
 
 // Every model id this route is allowed to call — a typo here fails
 // typecheck instead of silently reaching Anthropic with a bad model string.
@@ -12,13 +15,14 @@ type ModelId = (typeof MODEL_IDS)[number];
 // so that future split stays a change in this file only.
 export const WORD_INTENT_MODEL: ModelId = 'claude-sonnet-5';
 
-// The note/judge structured intents share the same model today. Kept as a
-// separate constant (not folded into WORD_INTENT_MODEL) so the two families
-// can diverge later without touching call sites — modelForIntent is the seam.
+// The note/judge/grammar structured intents share the same model today.
+// Kept as a separate constant (not folded into WORD_INTENT_MODEL) so the
+// two families can diverge later without touching call sites —
+// modelForIntent is the seam.
 export const STRUCTURED_INTENT_MODEL: ModelId = 'claude-sonnet-5';
 
 export function modelForIntent(intent: AiIntent): ModelId {
-  return intent === 'note' || intent === 'judge'
+  return STRUCTURED.includes(intent)
     ? STRUCTURED_INTENT_MODEL
     : WORD_INTENT_MODEL;
 }

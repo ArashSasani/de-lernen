@@ -95,8 +95,9 @@ qualitative notes about the learner's recurring gaps, not a `Record<id, entry>` 
 a real **keyed** IndexedDB store (`keyPath: 'id'`, indexes on `createdAt`/`source`), not a blob at
 key `'data'` like the other three, and its sync merge is a **union by id** (records are immutable,
 so there's no newest-wins field to reconcile) rather than newest-wins-per-field. Every record must
-pass a write-time quality gate (`src/lib/mistakes-gate.ts`) before it's stored. **No producer is
-wired yet** — the store/route/sync/gate are built and the corpus stays empty until a graded track
-(grammar quiz first) calls `useMistakes().addRecord()` with a gated record. A tap-a-word question
-is deliberately not a source: asking about a word is a quick check, not a mistake. See
-[ADR 011](../../docs/adrs/011-personal-mistakes-corpus.md).
+pass a write-time quality gate (`src/lib/mistakes-gate.ts`) before it's stored. **Grammar quiz is
+the first producer** (`src/hooks/useMistakeNotes.ts`): a missed question — bank or AI-generated —
+can author a note via `useMistakes().addRecord()`, once per topic per session under a
+session-wide cap. A tap-a-word question is deliberately not a source: asking about a word is a
+quick check, not a mistake. See [ADR 011](../../docs/adrs/011-personal-mistakes-corpus.md) and
+[ADR 012](../../docs/adrs/012-online-grammar-practice.md).

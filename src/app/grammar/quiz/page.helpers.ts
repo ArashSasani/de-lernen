@@ -1,42 +1,71 @@
-import type { GrammarQuizProgressMap } from '@/types/grammar-quiz';
-import type { QuizQuestion } from '@/types/grammar-quiz';
+import type {
+  GrammarQuizProgressMap,
+  GrammarQuizTopicProgress,
+  QuizDifficulty,
+} from '@/types/grammar-quiz';
 import { defaultGrammarQuizProgress } from '@/lib/grammar-quiz-sync';
-import {
-  allQuizzableTopicIds,
-  generateQuestionsForTopic,
-} from '@/lib/grammar-quiz';
+import { allQuizzableTopicIds } from '@/lib/grammar-quiz';
 import { shuffle } from '@/lib/shuffle';
 
 export const QUIZ_SESSION_SIZE = 12;
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
-type Tier = 0 | 1 | 2 | 3;
+export type Tier = 0 | 1 | 2 | 3;
 
-function tier(p: {
-  attempts: number;
-  correct: number;
-  lastSeen: number;
-}): Tier {
+export function tier(
+  p: { attempts: number; correct: number; lastSeen: number },
+  now: number,
+): Tier {
   // Struggling (low accuracy) is the top priority — fix errors before adding new topics.
   if (p.attempts >= 2 && p.correct / p.attempts < 0.7) return 0;
   if (p.attempts === 0) return 1;
-  if (Date.now() - p.lastSeen > 3 * MS_PER_DAY) return 2;
+  if (now - p.lastSeen > 3 * MS_PER_DAY) return 2;
   return 3;
 }
 
-export function buildSmartQuiz(
+// Skews harder than the bank's default distribution: `easy` is reserved for
+// a topic genuinely new to the learner, not the resting state. A struggling
+// topic holds `medium` rather than dropping to `easy` — the explanation and
+// injected mistake notes do the scaffolding, not a softer question.
+export function difficultyFor(
+  p: GrammarQuizTopicProgress,
+  recentResults: boolean[] = [],
+): QuizDifficulty {
+  if (p.attempts === 0) return 'easy';
+  const accuracy = p.correct / p.attempts;
+  if (accuracy < 0.7) return 'medium';
+  const recentAccuracy =
+    recentResults.length > 0
+      ? recentResults.filter(Boolean).length / recentResults.length
+      : accuracy;
+  return accuracy >= 0.85 && recentAccuracy >= 0.7 ? 'hard' : 'medium';
+}
+
+export interface QuizPlan {
+  topicId: string;
+  count: number;
+  tier: Tier;
+  difficulty: QuizDifficulty;
+}
+
+// Pure planner — ids, counts, and a difficulty hint. Injectable `now`/`order`
+// so the tier logic is testable without mocking Date.now()/shuffle().
+export function selectQuizTopics(
   progress: GrammarQuizProgressMap,
-): QuizQuestion[] {
+  opts?: { now?: number; order?: (ids: string[]) => string[] },
+): QuizPlan[] {
+  const now = opts?.now ?? Date.now();
+  const order = opts?.order ?? shuffle;
   const topicIds = allQuizzableTopicIds();
 
-  const sorted = shuffle(topicIds).sort((a, b) => {
+  const sorted = order(topicIds).sort((a, b) => {
     const pa = progress[a] ?? defaultGrammarQuizProgress();
     const pb = progress[b] ?? defaultGrammarQuizProgress();
-    const ta = tier(pa);
-    const tb = tier(pb);
+    const ta = tier(pa, now);
+    const tb = tier(pb, now);
     if (ta !== tb) return ta - tb;
-    if (ta === 1) {
+    if (ta === 0) {
       return pa.correct / pa.attempts - pb.correct / pb.attempts;
     }
     if (ta === 2 || ta === 3) {
@@ -45,21 +74,22 @@ export function buildSmartQuiz(
     return 0;
   });
 
-  // Pick top topics, generate 2 questions each until we fill the session
-  const questions: QuizQuestion[] = [];
+  const plan: QuizPlan[] = [];
+  let total = 0;
   for (const topicId of sorted) {
-    if (questions.length >= QUIZ_SESSION_SIZE) break;
-    const remaining = QUIZ_SESSION_SIZE - questions.length;
+    if (total >= QUIZ_SESSION_SIZE) break;
+    const remaining = QUIZ_SESSION_SIZE - total;
     const count = Math.min(2, remaining);
-    const qs = generateQuestionsForTopic(topicId, count);
-    questions.push(...qs);
+    const p = progress[topicId] ?? defaultGrammarQuizProgress();
+    plan.push({
+      topicId,
+      count,
+      tier: tier(p, now),
+      difficulty: difficultyFor(p),
+    });
+    total += count;
   }
-
-  return shuffle(questions);
-}
-
-export function buildTopicQuiz(topicId: string): QuizQuestion[] {
-  return generateQuestionsForTopic(topicId, 10);
+  return plan;
 }
 
 export function sessionStats(results: boolean[]): {
