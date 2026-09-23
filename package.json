@@ -4,7 +4,9 @@
   "license": "MIT",
   "author": "Arash Sasani",
   "scripts": {
+    "predev": "node scripts/sync-public-data.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-public-data.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
@@ -19,6 +21,7 @@
     "build:grammar-bank": "node scripts/build-grammar-bank.mjs",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "sync:public-data": "node scripts/sync-public-data.mjs",
     "test": "jest"
   },
   "dependencies": {

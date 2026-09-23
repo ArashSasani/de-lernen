@@ -38,8 +38,9 @@ using the **same pure merge function on both client and server**.
 
 ### The merge function
 
-`mergeProgress(local, remote)` is a pure function, shared between `src/lib/db.ts` (server) and a
-client-safe copy used by `src/lib/sync.ts`:
+`mergeProgress(local, remote)` is a pure function defined once in `src/lib/merge.ts` and
+re-exported by both `src/lib/db.ts` (server) and `src/lib/sync.ts` (client), so the two sides run
+the same code:
 
 - Start from `remote`.
 - For each word in `local`, take the local entry **only if** it is new (not in remote) or has a
@@ -90,7 +91,7 @@ For a word touched on **both** devices, the later `lastReviewed` wins.
 - **Dictation progress syncs on a parallel track.** The Dictation feature has its own
   `DictationProgressMap` in a separate IndexedDB object store (`dictation`) and its own KV key,
   `user:dictation`, reached via `api/dictation`. It reuses this same offline-first machinery —
-  newest-wins by `lastSeen` (with `starred` OR-merged), plus the keepalive flush — but never touches
+  newest-wins by `lastSeen` (with the bookmark merged on its own `starredAt` clock), plus the keepalive flush — but never touches
   the Leitner `user:progress` key, so the two tracks can't clobber each other. See
   [ADR 008](008-dictation-spelling-exercise.md). The grammar-quiz track is a third instance of the
   same pattern — its own `grammar-quiz` store and `user:grammar-quiz` key, keyed by topic id and

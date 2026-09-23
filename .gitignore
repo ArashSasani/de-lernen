@@ -44,6 +44,10 @@ next-env.d.ts
 # pdftotext cache (re-generated from PDFs on demand)
 data/sources/_text/
 
+# corpora published from data/ for runtime fetch (scripts/sync-public-data.mjs,
+# wired into predev/prebuild) — data/ stays the tracked source of truth
+public/data/
+
 # source PDFs stay out of the repo (licensing); extracted JSON is tracked
 data/sources/*/*.pdf
 

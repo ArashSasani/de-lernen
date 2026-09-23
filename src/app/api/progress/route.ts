@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest, verifyToken } from '@/lib/auth';
 import { loadProgress, saveProgress, mergeProgress } from '@/lib/db';
-import type { ProgressMap } from '@/types';
+import { parseProgressMap } from '@/lib/validate-sync';
 
 async function auth(req: NextRequest): Promise<boolean> {
   const token = getTokenFromRequest(req);
@@ -21,9 +21,13 @@ export async function PUT(req: NextRequest) {
   if (!(await auth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-  const body: ProgressMap = await req.json().catch(() => ({}));
+  const body = await req.json().catch(() => null);
+  const parsed = parseProgressMap(body);
+  if (!parsed) {
+    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+  }
   const remote = await loadProgress();
-  const merged = mergeProgress(body, remote);
+  const merged = mergeProgress(parsed, remote);
   try {
     await saveProgress(merged);
   } catch {

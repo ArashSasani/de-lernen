@@ -68,8 +68,12 @@ It is stored in its own IndexedDB object store (`dictation`) within the same `de
 
 **Synced to KV** under its own key, `user:dictation`, via `src/app/api/dictation/route.ts` — mirroring
 the Leitner sync (see [ADR 004](004-offline-first-progress-sync.md)) rather than reusing its key, so
-the two tracks never collide. The merge (`mergeDictation`) is **newest-wins by `lastSeen`**, except
-`starred` is **OR-merged** so a bookmark made on one device is never lost when another device pushes.
+the two tracks never collide. The merge (`mergeDictation`) is **newest-wins by `lastSeen`** for the
+counters, while the bookmark merges **on its own clock**: `toggleStar` stamps `starredAt`, and the
+newer `starredAt` wins, so an un-star on one device propagates instead of being restored by another
+device that still holds the star. An entry with no `starredAt` has no clock to compare, so it falls
+back to an OR-merge — a bookmark is never silently dropped. (A pure OR-merge was considered and
+rejected: it makes a bookmark impossible to remove once any second device has synced it.)
 The same iOS-durability flush applies: the debounced PUT is flushed synchronously on
 `visibilitychange`/`pagehide` with `keepalive: true`.
 
@@ -97,7 +101,8 @@ practice.
 - **Offline-safe:** everything runs on static data + IndexedDB; the network (KV sync) is best-effort
   on top, exactly like the Leitner track.
 - **Survives device switches and iOS eviction:** the `user:dictation` KV key backs up progress and
-  carries it across devices; `starred` bookmarks OR-merge so they are never lost.
+  carries it across devices; bookmarks merge on their own `starredAt` clock, so both starring and
+  un-starring propagate.
 - **Single gap per word:** the ranked ruleset always picks the highest-priority pattern, so a word
   like "Mädchen" always gaps the `ä`, never the `ch`. This keeps difficulty consistent across
   sessions but means each word exercises only one spelling challenge.

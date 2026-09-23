@@ -18,6 +18,7 @@ import {
   setTodaysPick,
 } from '@/lib/daily';
 import DailyReading from '@/components/DailyReading';
+import { loadDataset } from '@/lib/dataset';
 import { localLoad, fullSync, getToken } from '@/lib/sync';
 import { useProgressSync } from '@/hooks/useProgressSync';
 import type { Grade } from '@/types/grade';
@@ -60,6 +61,9 @@ export default function StudyPage() {
     navigator.storage?.persist?.().catch(() => {});
     let cancelled = false;
     (async () => {
+      // The corpora are fetched, not bundled, so nothing may read them
+      // until this resolves — every consumer below is behind `ready`.
+      await loadDataset();
       const local = await localLoad();
       if (!cancelled) setProgress(local);
       const merged = await fullSync(local);

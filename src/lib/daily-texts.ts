@@ -1,8 +1,2 @@
-import dailyData from '../../data/daily-texts.json';
-import type { DailyText } from '@/types';
-
-export const dailyTexts: DailyText[] = dailyData as DailyText[];
-
-export function dailyTextById(id: string): DailyText | undefined {
-  return dailyTexts.find((t) => t.id === id);
-}
+// The corpus itself is fetched at runtime, not bundled — see lib/dataset.ts.
+export { dailyTexts, dailyTextById } from './dataset';

@@ -1,32 +1,18 @@
 'use client';
 
-import type { ProgressMap, WordProgress } from '@/types';
+import type { ProgressMap } from '@/types';
 import { getDB } from './idb';
+
+// Both merges and the dirty-subset picker are shared with the server
+// (lib/db.ts) so neither side can drift; see lib/merge.ts.
+export { pickEntries as pickChanged, mergeProgress } from './merge';
+import { mergeProgress } from './merge';
 
 const STORE = 'progress';
 const TOKEN_KEY = 'auth_token';
 
 // How long to wait after the last grade before pushing progress to KV.
 export const SYNC_DEBOUNCE_MS = 2000;
-
-// Sync sends only the words that changed since the last confirmed push, not the
-// whole ProgressMap. With ~1300 words the full map is ~93KB, which exceeds the
-// 64KB cap the Fetch spec puts on `keepalive` request bodies — so the on-hide /
-// on-pagehide flush (the iOS PWA durability path) would silently reject and the
-// last grades would be lost, reverting graded cards to box 1. The server merge
-// (mergeProgress) starts from the full KV map and overlays whatever subset it
-// receives, so a partial payload is correct as well as small.
-export function pickChanged(
-  progress: ProgressMap,
-  ids: Iterable<string>,
-): ProgressMap {
-  const out: ProgressMap = {};
-  for (const id of ids) {
-    const p = progress[id];
-    if (p) out[id] = p;
-  }
-  return out;
-}
 
 export async function localLoad(): Promise<ProgressMap> {
   try {
@@ -69,20 +55,6 @@ export function clearToken(): void {
   } catch {
     // ignore
   }
-}
-
-export function mergeProgress(
-  local: ProgressMap,
-  remote: ProgressMap,
-): ProgressMap {
-  const merged: ProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: WordProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastReviewed > remoteEntry.lastReviewed) {
-      merged[id] = localEntry;
-    }
-  }
-  return merged;
 }
 
 export async function remoteLoad(): Promise<ProgressMap | null> {

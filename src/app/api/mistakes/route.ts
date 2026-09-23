@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest, verifyToken } from '@/lib/auth';
 import { loadMistakes, saveMistakes, mergeMistakes } from '@/lib/db';
 import { hasControlChars, isDirectiveLike } from '@/lib/mistakes-gate';
+import { isPastTimestamp } from '@/lib/validate-sync';
 import {
   LEVELS,
   MISTAKE_SOURCES,
@@ -38,9 +39,7 @@ function isValidRecord(value: unknown): value is MistakeRecord {
   ) {
     return false;
   }
-  if (typeof r.createdAt !== 'number' || !Number.isFinite(r.createdAt)) {
-    return false;
-  }
+  if (!isPastTimestamp(r.createdAt)) return false;
   if (r.wordId !== undefined && typeof r.wordId !== 'string') return false;
   if (r.topicId !== undefined && typeof r.topicId !== 'string') return false;
   if (r.level !== undefined && !LEVEL_VALUES.includes(r.level as string)) {

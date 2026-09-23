@@ -2,6 +2,8 @@ import type {
   GrammarQuizProgressMap,
   GrammarQuizTopicProgress,
   QuizDifficulty,
+  QuizPlan,
+  QuizTier,
 } from '@/types/grammar-quiz';
 import { defaultGrammarQuizProgress } from '@/lib/grammar-quiz-sync';
 import { allQuizzableTopicIds } from '@/lib/grammar-quiz';
@@ -11,12 +13,10 @@ export const QUIZ_SESSION_SIZE = 12;
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
-export type Tier = 0 | 1 | 2 | 3;
-
 export function tier(
   p: { attempts: number; correct: number; lastSeen: number },
   now: number,
-): Tier {
+): QuizTier {
   // Struggling (low accuracy) is the top priority — fix errors before adding new topics.
   if (p.attempts >= 2 && p.correct / p.attempts < 0.7) return 0;
   if (p.attempts === 0) return 1;
@@ -40,13 +40,6 @@ export function difficultyFor(
       ? recentResults.filter(Boolean).length / recentResults.length
       : accuracy;
   return accuracy >= 0.85 && recentAccuracy >= 0.7 ? 'hard' : 'medium';
-}
-
-export interface QuizPlan {
-  topicId: string;
-  count: number;
-  tier: Tier;
-  difficulty: QuizDifficulty;
 }
 
 // Pure planner — ids, counts, and a difficulty hint. Injectable `now`/`order`

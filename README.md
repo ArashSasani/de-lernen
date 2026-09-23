@@ -218,7 +218,7 @@ de-lernen/
    ├─ app/                  ← routes (study, login, read, dictation, grammar, grammar/quiz, settings) + api/{login,progress,dictation,grammar-quiz,mistakes,ai}
    ├─ components/           ← AppNav, FlashCard, DictationCard, FilterBar (box/type/level), LeitnerStats, DailyReading, WordPopover, GrammarTableView, GrammarExampleView, GrammarQuizCard, SpeakButton
    ├─ lib/                  ← leitner, shuffle, dictation, grammar, grammar-quiz, auth, auth-security (login rate limit), db (KV), sync (IndexedDB+remote), dictation-sync (IndexedDB+remote), grammar-quiz-sync (IndexedDB+remote), mistakes-sync (IndexedDB+remote), mistakes-gate (write-time quality gate), words (incl. wordLevel), daily, daily-texts, speech, ai-prefs, ai/{models,prompts,validate,client}
-   ├─ hooks/                ← useProgressSync, useDictationSync, useGrammarQuizSync, useSpeech, useAiChat, useAiConfigured, useOnline
+   ├─ hooks/                ← useSyncedMap + useDebouncedPush (shared sync lifecycle), useProgressSync, useDictationSync, useGrammarQuizSync, useSpeech, useAiChat, useAiConfigured, useOnline
    └─ types/
 ```
 
@@ -289,3 +289,5 @@ for the design rationale behind each major decision:
 - [ADR 009](docs/adrs/009-grammar-reference.md) — A1/A2 grammar reference (static JSON, read-only, no progress)
 - [ADR 010](docs/adrs/010-grammar-quiz.md) — grammar practice quiz (static build-time-verified item bank, KV-synced per-topic progress)
 - [ADR 011](docs/adrs/011-personal-mistakes-corpus.md) — personal mistakes corpus (write-time quality gate, union-by-id KV sync)
+- [ADR 012](docs/adrs/012-online-grammar-practice.md) — online adaptive grammar practice (AI-generated batches over the frozen bank)
+- [ADR 013](docs/adrs/013-runtime-fetched-corpora.md) — corpora fetched at runtime and SW-precached, not bundled into the JS

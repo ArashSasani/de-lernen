@@ -23,6 +23,7 @@ import { toggleExclusive } from '@/components/shared/Accordion/index.helpers';
 import Chip from '@/components/shared/Chip';
 import Modal from '@/components/shared/Modal';
 import { useMediaQuery } from '@/hooks/useMediaQuery';
+import { loadDataset } from '@/lib/dataset';
 import { getToken } from '@/lib/sync';
 import { DESKTOP_MEDIA_QUERY, LEVEL_CHIPS } from '@/constants';
 import { topicsByCategory, grammarTopicById } from '@/lib/grammar';
@@ -146,7 +147,15 @@ function GrammarPageInner() {
       router.replace('/login');
       return;
     }
-    startTransition(() => setReady(true));
+    // Grammar prose is bundled, but `isQuizzableTopic` reads the fetched
+    // bank — without waiting, every topic renders without its quiz link.
+    let cancelled = false;
+    void loadDataset().then(() => {
+      if (!cancelled) startTransition(() => setReady(true));
+    });
+    return () => {
+      cancelled = true;
+    };
   }, [router]);
 
   // Clearing `?topic=` matters: /grammar/quiz links back here as

@@ -5,7 +5,11 @@ import type {
   DictationWordProgress,
 } from '@/types/dictation';
 import { getDB } from './idb';
+import { mergeDictation } from './merge';
 import { getToken, clearToken } from './sync';
+
+// Shared with the server (lib/db.ts) — see lib/merge.ts.
+export { pickEntries as pickDictationChanged, mergeDictation } from './merge';
 
 const STORE = 'dictation';
 
@@ -32,37 +36,6 @@ export async function saveDictationProgress(
   } catch {
     // IndexedDB unavailable; ignore
   }
-}
-
-export function pickDictationChanged(
-  progress: DictationProgressMap,
-  ids: Iterable<string>,
-): DictationProgressMap {
-  const out: DictationProgressMap = {};
-  for (const id of ids) {
-    const p = progress[id];
-    if (p) out[id] = p;
-  }
-  return out;
-}
-
-// Client-side copy of db.ts mergeDictation — kept in sync manually.
-// Newest-wins by lastSeen; starred is OR-merged so bookmarks are never lost.
-export function mergeDictation(
-  local: DictationProgressMap,
-  remote: DictationProgressMap,
-): DictationProgressMap {
-  const merged: DictationProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: DictationWordProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastSeen > remoteEntry.lastSeen) {
-      merged[id] = localEntry;
-    }
-    if (localEntry.starred || remoteEntry?.starred) {
-      merged[id] = { ...merged[id], starred: true };
-    }
-  }
-  return merged;
 }
 
 export async function remoteDictationLoad(): Promise<DictationProgressMap | null> {

@@ -76,7 +76,9 @@ are in context every session, exactly like this file:
   helper.** Each component is a folder `Name/` with `index.tsx`, `index.helpers.ts`, and
   `index.helpers.test.ts`. Route files must stay `page.tsx` (Next.js), so pages pair with
   `page.helpers.ts` + `page.helpers.test.ts` in the same route folder. Every helper module has a
-  unit-test suite.
+  unit-test suite. Behaviour that only exists once mounted (focus, key handlers, a hook's state
+  machine) gets a co-located `*.test.tsx` render test with a `@jest-environment jsdom` docblock;
+  the default Jest environment stays `node`.
 - **All exported types and interfaces live in `src/types/`.** Import them with `@/types/...`
   directly — not re-exported through helpers or component index files.
 - Tailwind for styling; dark theme by default; mobile-first (this lives on a phone).
