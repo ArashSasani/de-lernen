@@ -33,9 +33,10 @@ Concretely, each route falls into one of three buckets:
 | `app/study/page.tsx`, `app/login/page.tsx`               | `'use client'` → **SSG shell + CSR** | Prerendered to a static shell at build; all state (IndexedDB load, `fullSync`, queue building, grading) runs in `useEffect` **after hydration**. |
 | `app/api/login`, `app/api/progress`, `app/api/dictation` | Serverless functions                 | Per-request on Vercel. Return **JSON, not HTML** — these are the only true runtime-server code.                                                  |
 
-The word data is **not** an SSR fetch: `src/lib/words.ts` does a plain `import wordsData from
-'data/words.json'`, so the dataset is bundled into the client JS and cached by the service worker
-alongside the shell.
+The word data is **not** an SSR fetch. The large corpora are static assets the client fetches once
+and the service worker precaches alongside the shell — see
+[ADR 013](013-runtime-fetched-corpora.md), which amends the bundled-import approach this ADR
+originally took.
 
 Service-worker registration is itself a client concern, so it lives in a tiny client island
 (`app/ServiceWorkerInit.tsx`) rendered by the otherwise-static layout — the layout stays a server

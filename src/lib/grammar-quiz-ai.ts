@@ -5,9 +5,8 @@ import {
   GRAMMAR_BATCH_SIZE_MAX,
   GRAMMAR_BATCH_SIZE_MIN,
 } from '@/constants';
-import type { QuizPlan } from '@/app/grammar/quiz/page.helpers';
 import type { Level } from '@/types';
-import type { QuizQuestion } from '@/types/grammar-quiz';
+import type { QuizPlan, QuizQuestion } from '@/types/grammar-quiz';
 import type { GeneratedQuizItem } from '@/types/ai';
 import { generateQuestionsForTopic } from './grammar-quiz';
 import { grammarTopicById } from './grammar';
@@ -21,6 +20,7 @@ export interface SourceOptions {
   alreadyAsked?: string[];
   notes?: string[];
   excludeIds?: ReadonlySet<string>; // bank ids already served this session
+  servedAt?: ReadonlyMap<string, number>; // cross-session bank rotation
 }
 
 // The one place that decides whether a question came from the generator or
@@ -36,12 +36,14 @@ export interface SourceResult {
   degraded: boolean;
 }
 
-function fromBank(
-  plan: QuizPlan,
-  excludeIds?: ReadonlySet<string>,
-): SourceResult {
+function fromBank(plan: QuizPlan, opts: SourceOptions): SourceResult {
   return {
-    questions: generateQuestionsForTopic(plan.topicId, plan.count, excludeIds),
+    questions: generateQuestionsForTopic(
+      plan.topicId,
+      plan.count,
+      opts.excludeIds,
+      opts.servedAt,
+    ),
     source: 'bank',
     degraded: false,
   };
@@ -76,7 +78,7 @@ export async function sourceQuestions(
   opts: SourceOptions,
 ): Promise<SourceResult> {
   const topic = grammarTopicById(plan.topicId);
-  if (!topic) return fromBank(plan, opts.excludeIds);
+  if (!topic) return fromBank(plan, opts);
 
   const batchSize = Math.max(
     GRAMMAR_BATCH_SIZE_MIN,
@@ -107,15 +109,14 @@ export async function sourceQuestions(
       }),
       signal: opts.signal,
     });
-    if (!res.ok) return { ...fromBank(plan, opts.excludeIds), degraded: true };
+    if (!res.ok) return { ...fromBank(plan, opts), degraded: true };
 
     const data = await res.json().catch(() => null);
     // Re-validated client-side too, against the same rules the server
     // already applied — a shape drift between client and server builds
     // must not reach the card unchecked.
     const items = parseGeneratedQuestions(data);
-    if (items.length === 0)
-      return { ...fromBank(plan, opts.excludeIds), degraded: true };
+    if (items.length === 0) return { ...fromBank(plan, opts), degraded: true };
 
     const questions = stampQuestions(items, plan, topic.level);
     if (questions.length < plan.count) {
@@ -123,6 +124,7 @@ export async function sourceQuestions(
         plan.topicId,
         plan.count - questions.length,
         opts.excludeIds,
+        opts.servedAt,
       );
       return {
         questions: [...questions, ...topUp],
@@ -140,6 +142,6 @@ export async function sourceQuestions(
     };
   } catch {
     // Offline, aborted, or a network error — degrade to the bank silently.
-    return { ...fromBank(plan, opts.excludeIds), degraded: true };
+    return { ...fromBank(plan, opts), degraded: true };
   }
 }

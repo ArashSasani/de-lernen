@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest, verifyToken } from '@/lib/auth';
 import { loadGrammarQuiz, saveGrammarQuiz, mergeGrammarQuiz } from '@/lib/db';
-import type { GrammarQuizProgressMap } from '@/types/grammar-quiz';
+import { parseGrammarQuizMap } from '@/lib/validate-sync';
 
 async function auth(req: NextRequest): Promise<boolean> {
   const token = getTokenFromRequest(req);
@@ -21,9 +21,13 @@ export async function PUT(req: NextRequest) {
   if (!(await auth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-  const body: GrammarQuizProgressMap = await req.json().catch(() => ({}));
+  const body = await req.json().catch(() => null);
+  const parsed = parseGrammarQuizMap(body);
+  if (!parsed) {
+    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+  }
   const remote = await loadGrammarQuiz();
-  const merged = mergeGrammarQuiz(body, remote);
+  const merged = mergeGrammarQuiz(parsed, remote);
   try {
     await saveGrammarQuiz(merged);
   } catch {

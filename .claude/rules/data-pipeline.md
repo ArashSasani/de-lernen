@@ -69,3 +69,10 @@ Verify against the PDF, then fix sensibly:
   English is wrong, and correct the mismatch.
 
 Leave as-is (acceptable): `Becher → container`, `Dose → jar`.
+
+## Publishing for runtime fetch
+
+`scripts/sync-public-data.mjs` copies `words.json`, `daily-texts.json` and `grammar-bank.json`
+from `data/` to `public/data/` (gitignored) — wired into `predev` and `prebuild`, so a rebuilt
+corpus is picked up by the next `npm run dev`/`build` with no extra step. `data/` stays the only
+tracked copy. See [ADR 013](../../docs/adrs/013-runtime-fetched-corpora.md).

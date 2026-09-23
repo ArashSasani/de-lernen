@@ -84,7 +84,7 @@ export const GRAMMAR_MAX_EXPLANATION_LEN = 280;
 export const GRAMMAR_MIN_CHOICES = 3;
 export const GRAMMAR_MAX_CHOICES = 4;
 
-// Cache-name prefix the service worker versions behind (`de-lernen-v3`).
+// Cache-name prefix the service worker versions behind (`de-lernen-v4`).
 // `public/sw.js` is served raw and can't import this, so it repeats the
 // literal; a non-production load matches on this prefix to clear them.
 export const SW_CACHE_PREFIX = 'de-lernen-';
@@ -93,6 +93,10 @@ export const SW_CACHE_PREFIX = 'de-lernen-';
 // `<slug>-<2 digits>`, so the prefix both prevents collision and is what
 // the card reads to label a question as generated.
 export const AI_QUESTION_ID_PREFIX = 'ai-';
+
+// Served-bank-item timestamps kept per device (lib/bank-rotation.ts); above the
+// whole frozen bank, so it only bounds the localStorage value.
+export const BANK_ROTATION_MAX = 1000;
 
 // A session-wide cap on authored mistake notes, so a rough session can't
 // spam the corpus — paired with the one-note-per-topic-per-session rule in
@@ -157,3 +161,14 @@ export const MISTAKE_SOURCES = [
   'dictation',
   'grammar-quiz',
 ] as const;
+
+// Bounds on a synced progress PUT body (src/lib/validate-sync.ts). The cap
+// clears a full-map push — fullSync sends the whole merged map, one entry
+// per word — with headroom, while still bounding a single KV value.
+export const MAX_SYNC_ENTRIES = 5000;
+export const MAX_SYNC_KEY_LEN = 128;
+
+// How far past `now` a "last seen" timestamp may sit before it reads as a
+// skewed device clock. Unbounded, one such value wins every future
+// newest-wins merge and pins that entry permanently.
+export const SYNC_TIMESTAMP_SLACK_MS = 24 * 60 * 60 * 1000;

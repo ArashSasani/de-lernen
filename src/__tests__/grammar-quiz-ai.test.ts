@@ -1,6 +1,6 @@
+import type { QuizPlan } from '@/types/grammar-quiz';
 import { sourceQuestions, isAiGenerated } from '@/lib/grammar-quiz-ai';
 import { generateQuestionsForTopic } from '@/lib/grammar-quiz';
-import type { QuizPlan } from '@/app/grammar/quiz/page.helpers';
 
 const plan: QuizPlan = {
   topicId: 'sein-praesens',

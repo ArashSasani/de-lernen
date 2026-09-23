@@ -6,7 +6,8 @@
 `src/lib/ai/{prompts,validate,models}.ts` (the `grammar` structured intent; the reshaped
 `note`/`judge` intents), `src/app/api/ai/route.ts` (the `grammar` branch, topic resolution),
 `src/lib/grammar-quiz-ai.ts` (`sourceQuestions`), `src/app/grammar/quiz/page.helpers.ts`
-(`selectQuizTopics`, `difficultyFor`), `src/hooks/useQuizQueue.ts` (the batch pipeline),
+(`selectQuizTopics`, `difficultyFor`), `src/lib/quiz-session.ts` + `src/lib/quiz-runner.ts` (the batch pipeline, adapted by
+`src/hooks/useQuizQueue.ts`),
 `src/hooks/useMistakeNotes.ts` (the mistakes corpus's first producer),
 `src/lib/mistakes-prompt.ts` (`notesForPrompt`), `src/lib/ai-prefs.ts` (the judge pref),
 `src/components/GrammarQuizCard/` (`isAcceptable`, the alternative-answer line)
@@ -100,7 +101,7 @@ behaviour from ADR 010's tiering: struggling → never-seen → stale → rest. 
 `QuizPlan[]` of `{ topicId, count, tier, difficulty }` — ids _and_ counts _and_ a difficulty hint,
 since the AI path needs `tier`/`difficulty` to write a useful prompt and the bank fallback needs
 to serve the identical slice. `now`/`order` are injectable so the tier logic tests without mocking
-`Date.now()`/`shuffle()`. The plan's `difficulty` is a starting point only — `useQuizQueue`
+`Date.now()`/`shuffle()`. The plan's `difficulty` is a starting point only — the run
 re-derives it per batch from live progress plus the session's recent results, since the plan is
 built before the session has produced any.
 
@@ -113,12 +114,48 @@ questions instead of being wholly one or the other.
 not online → bank; otherwise POST `/api/ai` with the `grammar` intent, re-validate every item
 client-side with the same rules the server already applied, and on any failure/abort/invalid
 shape return the bank slice with `degraded: true`. All error handling lives here, so
-`useQuizQueue` has no error branch for sourcing.
+the batch runner has no error branch for sourcing.
 
 While splitting the planner out, a latent no-op was fixed: the accuracy tiebreak lived in tier 1
 (`attempts === 0`, so it evaluated `NaN`, which `Array.sort` treats as 0). Accuracy is the
 meaningful tiebreak for tier 0 (struggling); it now sits there, tier 1 stays in shuffle order, and
 both are pinned by tests.
+
+### The batch pipeline: state, driver, adapter
+
+A session is split into three layers so the orchestration is testable without React:
+
+- **`lib/quiz-session.ts` — pure state.** `quizReducer` folds `QuizEvent`s (`started`,
+  `batch-landed`, `filler-landed`, `degraded`, `answered`, `advanced`) into a `QuizState`.
+  `phaseOf` is **derived** from `(plan, queue, index, landedBatches)` by an ordered set of checks,
+  never stored, so every transition — including a trailing batch that lands empty while the
+  learner waits, which ends the session as `finished` — follows from the data. Duplicate-slot
+  guards are reducer invariants: a slot lands once, and filler is dropped for a slot that already
+  landed.
+- **`lib/quiz-runner.ts` — the async driver.** `startRun` draws **batch 0 from the bank
+  synchronously**, so the first question is on screen immediately: generating it takes seconds,
+  and a spinner is the worst use of the moment the learner is most ready to answer. Batches
+  1+ chain rather than run in parallel, so each can react to the previous one's `degraded` state
+  and counts as prefetched while the learner answers. Per-run state (`aiAllowed`, asked prompts,
+  and a `BankCursor` owning in-session dedupe plus the rotation snapshot) lives in the run's
+  closure, so a restart starts clean by construction. The caller scopes `dispatch` to an
+  `AbortSignal`: an abandoned run's aborted fetch reads as a failure, and it must not disable the
+  generator for the run that replaced it (Strict Mode double-mounts, and "Practice again" does
+  the same in production). Generation waits for the IndexedDB mistakes corpus through a latch
+  bounded by `NOTES_READY_TIMEOUT_MS`, so a corpus that never loads costs the notes, not the batch.
+- **`hooks/useQuizQueue.ts` — the React adapter.** `useReducer` over the session, one ref for the
+  live values a run reads per batch (progress, the AI flag, connectivity, results, notes), so a
+  graded answer or a connectivity flip never restarts the run.
+
+**Filler supplements a slow batch; it never replaces it.** A learner who outruns the prefetch
+gets bank questions after `WAITING_BATCH_TIMEOUT_MS`, but the in-flight batch is neither cancelled
+nor discarded — it appends when it lands. Generation takes far longer than answering a question,
+so letting filler claim the slot would mean a fast learner never sees a generated question, having
+already paid for all of them.
+
+Storing `phase` as state and setting it at each transition was considered and rejected: the four
+call sites that each had to agree on it are exactly where a batch landing empty while the learner
+waited left the session on a blank card.
 
 ### Trust boundaries on generated items
 

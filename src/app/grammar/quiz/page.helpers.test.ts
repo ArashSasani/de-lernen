@@ -126,4 +126,3 @@ describe('selectQuizTopics', () => {
     expect(total).toBeLessThanOrEqual(QUIZ_SESSION_SIZE);
   });
 });
-

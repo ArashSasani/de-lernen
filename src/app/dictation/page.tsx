@@ -8,6 +8,7 @@ import AppNav from '@/components/AppNav';
 import Chip from '@/components/shared/Chip';
 import SessionSummary from '@/components/shared/SessionSummary';
 import type { Word } from '@/types';
+import { loadDataset } from '@/lib/dataset';
 import { getToken } from '@/lib/sync';
 import { generateGap } from '@/lib/dictation';
 import type { Gap } from '@/lib/dictation';
@@ -35,12 +36,14 @@ export default function DictationPage() {
       router.replace('/login');
       return;
     }
-    loadDictationProgress().then(async (local) => {
+    (async () => {
+      await loadDataset();
+      const local = await loadDictationProgress();
       setProgress(local);
       const merged = await fullDictationSync(local);
       setProgress(merged);
       setReady(true);
-    });
+    })();
   }, [router, setProgress]);
 
   // Rebuild queue when ready or starredOnly filter changes.

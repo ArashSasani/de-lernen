@@ -11,6 +11,7 @@ import { useMediaQuery } from '@/hooks/useMediaQuery';
 import type { DailyText } from '@/types';
 import type { LevelFilter } from '@/types/filter';
 import { dailyTexts, dailyTextById } from '@/lib/daily-texts';
+import { loadDataset } from '@/lib/dataset';
 import { localLoad, fullSync, getToken } from '@/lib/sync';
 import { useProgressSync } from '@/hooks/useProgressSync';
 import { onGood } from '@/lib/leitner';
@@ -54,6 +55,7 @@ export default function ReadPage() {
     }
     let cancelled = false;
     (async () => {
+      await loadDataset();
       const today = todayKey();
       const local = await localLoad();
       if (!cancelled) setProgress(local);

@@ -4,7 +4,10 @@ tmp/
 coverage/
 data/sources/
 docs/
-scripts/
+# scripts/* (not scripts/) so one file can be re-included: prebuild runs it
+# on Vercel to publish data/*.json into public/data/ (ADR 013).
+scripts/*
+!scripts/sync-public-data.mjs
 .claude/
 .vscode/
 jest.config.js

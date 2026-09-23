@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTokenFromRequest, verifyToken } from '@/lib/auth';
 import { loadDictation, saveDictation, mergeDictation } from '@/lib/db';
-import type { DictationProgressMap } from '@/types/dictation';
+import { parseDictationMap } from '@/lib/validate-sync';
 
 async function auth(req: NextRequest): Promise<boolean> {
   const token = getTokenFromRequest(req);
@@ -21,9 +21,13 @@ export async function PUT(req: NextRequest) {
   if (!(await auth(req))) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
-  const body: DictationProgressMap = await req.json().catch(() => ({}));
+  const body = await req.json().catch(() => null);
+  const parsed = parseDictationMap(body);
+  if (!parsed) {
+    return NextResponse.json({ error: 'Bad request' }, { status: 400 });
+  }
   const remote = await loadDictation();
-  const merged = mergeDictation(body, remote);
+  const merged = mergeDictation(parsed, remote);
   try {
     await saveDictation(merged);
   } catch {

@@ -1,9 +1,14 @@
 'use client';
 
-import { MISTAKE_SOURCES, MISTAKES_MAX_CORPUS } from '@/constants';
+import { MISTAKE_SOURCES } from '@/constants';
 import type { MistakeCorpus, MistakeRecord } from '@/types/mistakes';
 import { getDB } from './idb';
+import { mergeMistakes, stripLocal } from './merge';
 import { getToken, clearToken } from './sync';
+
+// Shared with the server (lib/merge.ts); the client merges without the strip,
+// keeping `confidence` on its own records.
+export { mergeMistakes, stripLocal } from './merge';
 
 const STORE = 'mistakes';
 
@@ -73,35 +78,6 @@ export function pickUnpushed(
 ): MistakeCorpus {
   const remoteIds = new Set(remote.map((r) => r.id));
   return merged.filter((r) => !remoteIds.has(r.id));
-}
-
-// Explicit allow-list, not a destructure-and-discard, so a future local-only
-// field is stripped by default instead of leaking until deny-listed too.
-export function stripLocal(record: MistakeRecord): MistakeRecord {
-  const clean: MistakeRecord = {
-    id: record.id,
-    source: record.source,
-    text: record.text,
-    createdAt: record.createdAt,
-  };
-  if (record.wordId !== undefined) clean.wordId = record.wordId;
-  if (record.topicId !== undefined) clean.topicId = record.topicId;
-  if (record.level !== undefined) clean.level = record.level;
-  return clean;
-}
-
-// Client-side copy of db.ts mergeMistakes, kept in sync manually. Union by
-// id (records are immutable), newest-first, capped so the log can't grow forever.
-export function mergeMistakes(
-  local: MistakeCorpus,
-  remote: MistakeCorpus,
-): MistakeCorpus {
-  const byId = new Map<string, MistakeRecord>();
-  for (const r of remote) byId.set(r.id, r);
-  for (const r of local) if (!byId.has(r.id)) byId.set(r.id, r);
-  return [...byId.values()]
-    .sort((a, b) => b.createdAt - a.createdAt)
-    .slice(0, MISTAKES_MAX_CORPUS);
 }
 
 export async function remoteMistakesLoad(): Promise<MistakeCorpus | null> {

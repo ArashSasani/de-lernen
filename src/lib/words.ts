@@ -1,16 +1,9 @@
-import wordsData from '../../data/words.json';
 import type { Word, Level } from '@/types';
 import { LEVELS } from '@/constants';
+import { allWords, wordById } from './dataset';
 
-export const allWords: Word[] = wordsData as Word[];
-
-// O(1) lookup — WordPopover calls this per highlighted span per render, and
-// an O(n) `.find()` over 2,500+ words adds up fast on a text with many spans.
-const WORDS_BY_ID = new Map(allWords.map((w) => [w.id, w]));
-
-export function wordById(id: string): Word | undefined {
-  return WORDS_BY_ID.get(id);
-}
+// The corpus itself is fetched at runtime, not bundled — see lib/dataset.ts.
+export { allWords, wordById };
 
 // A word first appearing at a1 and reused at a2 carries levels: ['a1', 'a2'];
 // its "home" level for filtering purposes is the lowest one, so it shows up

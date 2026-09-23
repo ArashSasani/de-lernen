@@ -10,7 +10,8 @@ import {
   remoteMistakesSync,
   fullMistakesSync,
 } from '@/lib/mistakes-sync';
-import { getToken, SYNC_DEBOUNCE_MS } from '@/lib/sync';
+import { getToken } from '@/lib/sync';
+import { useDebouncedPush } from './useDebouncedPush';
 
 export { loadMistakes };
 
@@ -30,8 +31,6 @@ export function useMistakes(): MistakesApi {
   const [mistakes, setMistakesState] = useState<MistakeCorpus>([]);
   const mistakesRef = useRef<MistakeCorpus>([]);
   const [ready, setReady] = useState(false);
-  const dirtyRef = useRef<Set<string>>(new Set());
-  const syncTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const setMistakes = useCallback((next: MistakeCorpus) => {
     mistakesRef.current = next;
@@ -54,56 +53,31 @@ export function useMistakes(): MistakesApi {
     };
   }, [setMistakes]);
 
-  const pushNew = useCallback(async (opts: { keepalive?: boolean } = {}) => {
-    if (!getToken()) return;
-    if (dirtyRef.current.size === 0) return;
-    const ids = new Set(dirtyRef.current);
-    const payload = pickNewMistakes(mistakesRef.current, ids);
-    const merged = await remoteMistakesSync(payload, opts);
-    if (merged) {
-      for (const id of ids) dirtyRef.current.delete(id);
+  const push = useCallback(
+    async (ids: ReadonlySet<string>, opts: { keepalive?: boolean }) => {
+      if (!getToken()) return false;
+      const payload = pickNewMistakes(mistakesRef.current, ids);
+      const merged = await remoteMistakesSync(payload, opts);
+      if (!merged) return false;
       const remerged = mergeMistakes(mistakesRef.current, merged);
       mistakesRef.current = remerged;
       setMistakesState(remerged);
-    }
-  }, []);
+      return true;
+    },
+    [],
+  );
 
-  const scheduleSync = useCallback(() => {
-    if (syncTimer.current) clearTimeout(syncTimer.current);
-    syncTimer.current = setTimeout(() => void pushNew(), SYNC_DEBOUNCE_MS);
-  }, [pushNew]);
-
-  const flushSync = useCallback(() => {
-    if (syncTimer.current) {
-      clearTimeout(syncTimer.current);
-      syncTimer.current = null;
-    }
-    void pushNew({ keepalive: true });
-  }, [pushNew]);
-
-  useEffect(() => {
-    const onVisibility = () => {
-      if (document.visibilityState === 'hidden') flushSync();
-    };
-    document.addEventListener('visibilitychange', onVisibility);
-    window.addEventListener('pagehide', flushSync);
-    return () => {
-      flushSync();
-      document.removeEventListener('visibilitychange', onVisibility);
-      window.removeEventListener('pagehide', flushSync);
-    };
-  }, [flushSync]);
+  const { markDirty } = useDebouncedPush(push);
 
   const addRecord = useCallback(
     (record: MistakeRecord) => {
       const next = [record, ...mistakesRef.current];
       mistakesRef.current = next;
       setMistakesState(next);
-      dirtyRef.current.add(record.id);
       void saveMistake(record);
-      scheduleSync();
+      markDirty(record.id);
     },
-    [scheduleSync],
+    [markDirty],
   );
 
   return { mistakes, ready, addRecord };

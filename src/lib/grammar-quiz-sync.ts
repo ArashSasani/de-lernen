@@ -5,7 +5,14 @@ import type {
   GrammarQuizTopicProgress,
 } from '@/types/grammar-quiz';
 import { getDB } from './idb';
+import { mergeGrammarQuiz } from './merge';
 import { getToken, clearToken } from './sync';
+
+// Shared with the server (lib/db.ts) — see lib/merge.ts.
+export {
+  pickEntries as pickGrammarQuizChanged,
+  mergeGrammarQuiz,
+} from './merge';
 
 const STORE = 'grammar-quiz';
 
@@ -32,34 +39,6 @@ export async function saveGrammarQuizProgress(
   } catch {
     // IndexedDB unavailable; ignore
   }
-}
-
-export function pickGrammarQuizChanged(
-  progress: GrammarQuizProgressMap,
-  ids: Iterable<string>,
-): GrammarQuizProgressMap {
-  const out: GrammarQuizProgressMap = {};
-  for (const id of ids) {
-    const p = progress[id];
-    if (p) out[id] = p;
-  }
-  return out;
-}
-
-// Client-side copy of db.ts mergeGrammarQuiz — kept in sync manually.
-// Newest-wins by lastSeen.
-export function mergeGrammarQuiz(
-  local: GrammarQuizProgressMap,
-  remote: GrammarQuizProgressMap,
-): GrammarQuizProgressMap {
-  const merged: GrammarQuizProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: GrammarQuizTopicProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastSeen > remoteEntry.lastSeen) {
-      merged[id] = localEntry;
-    }
-  }
-  return merged;
 }
 
 export async function remoteGrammarQuizLoad(): Promise<GrammarQuizProgressMap | null> {

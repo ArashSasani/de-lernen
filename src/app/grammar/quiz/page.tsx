@@ -13,6 +13,7 @@ import { ArrowLeftIcon, ArrowPathIcon } from '@heroicons/react/24/outline';
 import AppNav from '@/components/AppNav';
 import GrammarQuizCard from '@/components/GrammarQuizCard';
 import SessionSummary from '@/components/shared/SessionSummary';
+import { loadDataset } from '@/lib/dataset';
 import { getToken } from '@/lib/sync';
 import {
   loadGrammarQuizProgress,
@@ -51,12 +52,16 @@ function GrammarQuizInner() {
       router.replace('/login');
       return;
     }
-    loadGrammarQuizProgress().then(async (local) => {
+    (async () => {
+      // The frozen bank is fetched, not bundled — useQuizQueue plans its
+      // first batch from it the moment the session mounts.
+      await loadDataset();
+      const local = await loadGrammarQuizProgress();
       setProgress(local);
       const merged = await fullGrammarQuizSync(local);
       setProgress(merged);
       startTransition(() => setReady(true));
-    });
+    })();
   }, [router, setProgress]);
 
   if (!ready) {

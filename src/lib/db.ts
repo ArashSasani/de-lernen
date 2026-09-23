@@ -1,15 +1,19 @@
 import { kv } from '@vercel/kv';
-import { MISTAKE_SOURCES, MISTAKES_MAX_CORPUS } from '@/constants';
-import type { ProgressMap, WordProgress } from '@/types';
-import type {
-  DictationProgressMap,
-  DictationWordProgress,
-} from '@/types/dictation';
-import type {
-  GrammarQuizProgressMap,
-  GrammarQuizTopicProgress,
-} from '@/types/grammar-quiz';
-import type { MistakeCorpus, MistakeRecord } from '@/types/mistakes';
+import { MISTAKE_SOURCES } from '@/constants';
+import type { ProgressMap } from '@/types';
+import type { DictationProgressMap } from '@/types/dictation';
+import type { GrammarQuizProgressMap } from '@/types/grammar-quiz';
+import type { MistakeCorpus } from '@/types/mistakes';
+import { mergeMistakes as mergeMistakesShared, stripLocal } from './merge';
+
+// Defined once in lib/merge.ts; re-exported so server callers keep one import
+// while the client *-sync.ts modules pull the same functions.
+export {
+  mergeProgress,
+  mergeDictation,
+  mergeGrammarQuiz,
+  pickEntries,
+} from './merge';
 
 const KV_KEY = 'user:progress';
 
@@ -30,20 +34,6 @@ export async function saveProgress(progress: ProgressMap): Promise<void> {
   }
 }
 
-export function mergeProgress(
-  local: ProgressMap,
-  remote: ProgressMap,
-): ProgressMap {
-  const merged: ProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: WordProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastReviewed > remoteEntry.lastReviewed) {
-      merged[id] = localEntry;
-    }
-  }
-  return merged;
-}
-
 const DICTATION_KV_KEY = 'user:dictation';
 
 export async function loadDictation(): Promise<DictationProgressMap> {
@@ -61,24 +51,6 @@ export async function saveDictation(p: DictationProgressMap): Promise<void> {
   } catch {
     // KV not configured (e.g. local dev without KV_*) — no-op
   }
-}
-
-export function mergeDictation(
-  local: DictationProgressMap,
-  remote: DictationProgressMap,
-): DictationProgressMap {
-  const merged: DictationProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: DictationWordProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastSeen > remoteEntry.lastSeen) {
-      merged[id] = localEntry;
-    }
-    // OR-merge starred: a bookmark is never lost on merge
-    if (localEntry.starred || remoteEntry?.starred) {
-      merged[id] = { ...merged[id], starred: true };
-    }
-  }
-  return merged;
 }
 
 const GRAMMAR_QUIZ_KV_KEY = 'user:grammar-quiz';
@@ -102,20 +74,6 @@ export async function saveGrammarQuiz(
   }
 }
 
-export function mergeGrammarQuiz(
-  local: GrammarQuizProgressMap,
-  remote: GrammarQuizProgressMap,
-): GrammarQuizProgressMap {
-  const merged: GrammarQuizProgressMap = { ...remote };
-  for (const [id, localEntry] of Object.entries(local)) {
-    const remoteEntry: GrammarQuizTopicProgress | undefined = merged[id];
-    if (!remoteEntry || localEntry.lastSeen > remoteEntry.lastSeen) {
-      merged[id] = localEntry;
-    }
-  }
-  return merged;
-}
-
 const MISTAKES_KV_KEY = 'user:mistakes';
 
 const KNOWN_SOURCES: readonly string[] = MISTAKE_SOURCES;
@@ -137,33 +95,11 @@ export async function saveMistakes(corpus: MistakeCorpus): Promise<void> {
   await kv.set(MISTAKES_KV_KEY, corpus);
 }
 
-// Server copy of mistakes-sync.ts's stripLocal — strips defensively again
-// in case a stale client smuggles a local-only field into the PUT body.
-function stripLocal(record: MistakeRecord): MistakeRecord {
-  const clean: MistakeRecord = {
-    id: record.id,
-    source: record.source,
-    text: record.text,
-    createdAt: record.createdAt,
-  };
-  if (record.wordId !== undefined) clean.wordId = record.wordId;
-  if (record.topicId !== undefined) clean.topicId = record.topicId;
-  if (record.level !== undefined) clean.level = record.level;
-  return clean;
-}
-
-// Union by id (records are immutable) — no tombstones, unlike the
-// newest-wins-per-field merges above.
+// Strips defensively on insert, in case a stale client smuggles a
+// local-only field (`confidence`) into the PUT body.
 export function mergeMistakes(
   local: MistakeCorpus,
   remote: MistakeCorpus,
 ): MistakeCorpus {
-  const byId = new Map<string, MistakeRecord>();
-  for (const r of remote) byId.set(r.id, r);
-  for (const r of local) {
-    if (!byId.has(r.id)) byId.set(r.id, stripLocal(r));
-  }
-  return [...byId.values()]
-    .sort((a, b) => b.createdAt - a.createdAt)
-    .slice(0, MISTAKES_MAX_CORPUS);
+  return mergeMistakesShared(local, remote, stripLocal);
 }

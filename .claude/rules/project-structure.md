@@ -48,6 +48,7 @@ src/
         index.tsx
         index.helpers.ts # toggleExclusive()
         index.helpers.test.ts
+        index.test.tsx   # render (jsdom): aria-expanded, grid row, collapsed content inert
       Chip/              # toggleable pill button (active/disabled) used by FilterBar and per-page level filters
         index.tsx
         index.helpers.ts # chipClass()
@@ -56,6 +57,7 @@ src/
         index.tsx
         index.helpers.ts # focusableElements()
         index.helpers.test.ts
+        index.test.tsx   # render (jsdom): initial focus, Escape, Tab wrap, scroll lock, focus restore
       LoadingScreen/     # centered spinner for a page's `!ready` state
         index.tsx
       SessionSummary/    # "N/M, X% correct" + a restart button, shared by study/dictation/grammar-quiz
@@ -91,6 +93,7 @@ src/
       index.tsx           # onAnswer(correct, choiceIndex); names the alternative when acceptableIndices has more than one
       index.helpers.ts   # choiceStyle() / isAcceptable() / alternativeChoice()
       index.helpers.test.ts
+      index.test.tsx     # render (jsdom): verdict + index, single answer, keyboard path, alternative line, AI marker
     SpeakButton/         # pronunciation button (Web Speech API, German voice)
       index.tsx
       index.helpers.ts   # speakButtonClass()
@@ -103,11 +106,15 @@ src/
     index.ts             # GRADE / POS / ARTICLE / ARTICLE_COLOR / PLURAL_COLOR / BOXES / LEVELS / FILTER / WORD_INTENTS / STRUCTURED_INTENTS / POS_CHIPS / BOX_CHIPS / LEVEL_CHIPS / THEME_COLOR / THEME_STORAGE_KEY / DESKTOP_MEDIA_QUERY / GRAMMAR_BATCH_SIZE_MIN/MAX / MAX_NOTES_PER_SESSION value constants
   lib/
     theme-prefs.ts       # per-device localStorage theme pref (never synced): getTheme/setTheme; also updates the theme-color <meta> tag
-    words.ts             # import words.json; allWords / wordById / wordLevel / filterWords (source + level)
-    daily-texts.ts       # import daily-texts.json; dailyTexts, dailyTextById
+    dataset.ts           # runtime-fetched corpora (ADR 013): loadDataset() / hydrateDataset(); allWords, dailyTexts, grammarBank populated in place + id indexes
+    words.ts             # accessors over dataset.ts: allWords / wordById / wordLevel / filterWords (source + level)
+    daily-texts.ts       # re-exports dailyTexts, dailyTextById from dataset.ts
     grammar.ts           # import grammar.json; grammarTopics, topicsByCategory, grammarTopicById
-    grammar-quiz.ts      # thin lookup over the frozen grammar-bank.json; generateQuestionsForTopic / allQuizzableTopicIds / isQuizzableTopic
+    grammar-quiz.ts      # thin lookup over the fetched bank; generateQuestionsForTopic (excludeIds + servedAt rotation) / bankPoolSize / allQuizzableTopicIds / isQuizzableTopic
+    bank-rotation.ts     # per-device localStorage (never synced) served-at map: getServedAt / markServed — cross-session bank rotation
     grammar-quiz-ai.ts   # sourceQuestions(): AI-or-bank sourcing for one QuizPlan slice, never throws, re-validates client-side
+    quiz-session.ts      # pure quiz-session state: quizReducer over QuizEvents, derived phaseOf / totalOf / nextFillIndex, planFor (per-topic chunks + AI-off pool clamp, or smart mix)
+    quiz-runner.ts       # React-free batch driver: startRun (bank-seeded batch 0, chained sourcing, abort-scoped events, fill), createBankCursor, createLatch
     grammar-quiz-sync.ts # IndexedDB load/save + remote sync + mergeGrammarQuiz for GrammarQuizProgressMap
     daily.ts             # strugglingIds / scoreText / pickDailyText + once-per-day localStorage gating
     leitner.ts           # intervals, isDue, onGood/onMiss/onEasy, counts
@@ -116,7 +123,8 @@ src/
     auth.ts              # signToken / verifyToken (jose)
     auth-security.ts     # failedLoginRateLimiter: per-client failed-login counter in KV (fails open)
     idb.ts               # shared IndexedDB handle (getDB) — stores: progress, dictation, grammar-quiz, mistakes (keyed, v2→3)
-    db.ts                # KV load/save + mergeProgress + loadDictation/saveDictation/mergeDictation + loadGrammarQuiz/saveGrammarQuiz/mergeGrammarQuiz + loadMistakes/saveMistakes/mergeMistakes (server)
+    merge.ts             # the one definition of every merge (progress/dictation incl. starredAt clock/grammar-quiz/mistakes) + pickEntries + stripLocal — dependency-free, used by both sides
+    db.ts                # KV load/save for all four tracks (server); re-exports the merges from merge.ts, applies stripLocal on mistakes
     sync.ts              # IndexedDB + remote load/sync + token storage + pickChanged/SYNC_DEBOUNCE_MS (client)
     dictation-sync.ts    # IndexedDB load/save + remote sync + mergeDictation for DictationProgressMap
     mistakes-sync.ts     # IndexedDB load/saveMistakesLocal (batched) + remote sync + mergeMistakes (union-by-id) + pickUnpushed/stripLocal
@@ -131,10 +139,14 @@ src/
       validate.ts        # parseAiRequest(): dispatches word/note/judge/grammar; parseMistakeCandidate/parseJudgeVerdict/parseGeneratedQuestions re-validate the model's own structured output
       client.ts          # streamCompletion(): word-intent ReadableStream<Uint8Array>; completeStructured(): note/judge/grammar via messages.parse() + jsonSchemaOutputFormat
   hooks/                 # React hooks (stateful glue), kept out of lib/ which is framework-agnostic logic
-    useProgressSync.ts   # shared study/read sync: debounced KV push + keepalive flush on hide/pagehide/unmount
-    useDictationSync.ts  # dictation sync: recordAttempt + toggleStar → IndexedDB + KV (mirrors useProgressSync)
-    useGrammarQuizSync.ts # grammar-quiz sync: recordAttempt(topicId, correct) → IndexedDB + KV (mirrors useDictationSync)
-    useQuizQueue.ts      # the grammar-quiz batch pipeline: plans via selectQuizTopics, sources each batch (AI-or-bank), phase state machine, waiting-batch timeout fallback
+    useDebouncedPush.ts  # the push lifecycle all four tracks share: dirty ids, debounce, keepalive flush on hide/pagehide/unmount
+    useDebouncedPush.test.tsx
+    useSyncedMap.ts      # generic keyed-track transport on top of useDebouncedPush: IndexedDB now, KV debounced, re-merge on response
+    useProgressSync.ts   # study/read Leitner sync via useSyncedMap (+ route to login on a lost token)
+    useDictationSync.ts  # dictation sync via useSyncedMap: recordAttempt + toggleStar (stamps starredAt)
+    useGrammarQuizSync.ts # grammar-quiz sync via useSyncedMap: recordAttempt(topicId, correct)
+    useQuizQueue.ts      # React adapter over lib/quiz-session (useReducer) + lib/quiz-runner: live-context ref, run per topic/restart, waiting-batch filler timer
+    useQuizQueue.test.tsx # renderHook: batch-0 no-wait, pool clamp, no repeats, filler + late batch, abandoned run, Strict Mode, notes wait, offline, smart mix, toggle flip, trailing empty batch
     useMistakeNotes.ts   # the mistakes corpus's first producer: fire-and-forget note authoring on a quiz miss, per-session budget, optional judge pref
     useMistakeNotes.helpers.ts # canAuthorNote(): pure per-topic/per-session budget decision
     useMistakeNotes.helpers.test.ts
@@ -151,7 +163,7 @@ src/
     stats.ts             # StatBar
     auth.ts              # LoginResult
     dictation.ts         # DictationWordProgress, DictationProgressMap
-    grammar-quiz.ts      # QuizQuestion (incl. acceptableIndices?), QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap
+    grammar-quiz.ts      # QuizQuestion (incl. acceptableIndices?), QuizDifficulty, GrammarQuizTopicProgress, GrammarQuizProgressMap, QuizTier, QuizPlan, QuizPhase, QuizState, QuizEvent, QuizRunContext
     mistakes.ts          # MistakeSource, MistakeRecord, MistakeCorpus
     ai.ts                # WordIntent, StructuredIntent, AiIntent, AiWordFields, WordIntentRequest, QuizMissContext, NoteIntentRequest, JudgeIntentRequest, MistakeCandidate, JudgeVerdict, GrammarIntentRequest, GeneratedQuizItem, AiRequest
     accordion.ts         # AccordionItem
@@ -176,7 +188,11 @@ src/
     mistakes-gate.test.ts # gateCandidate/gateCandidateWithJudge: every GateReject (incl. acceptableIndices set membership), fail-open judge
     mistakes-merge.test.ts # mergeMistakes union-by-id, collision, cap, sort assertions
     mistakes-sync.test.ts  # pickNewMistakes subset + pickUnpushed delta + 64KB keepalive size + stripLocal assertions
-public/  manifest.json, sw.js, icons/, apple-touch-icon.png
+    merge-shared.test.ts   # server/client export the same merge objects; starredAt bookmark clock; per-side mistakes strip
+    bank-rotation.test.ts  # served-at round-trip/corruption/prune + least-recently-served ordering across sessions
+    quiz-session.test.ts   # reducer idempotency (landed/filler), immutability, phaseOf table, totalOf, planFor chunks/clamp/smart mix
+    quiz-runner.test.ts    # latch, BankCursor dedupe/rotation, startRun ordering, generator context, degrade latch, abort silence, fill
+public/  manifest.json, sw.js, offline.html, icons/, apple-touch-icon.png, data/ (generated from data/ by sync-public-data.mjs, gitignored)
 scripts/
   lib/pdf-text.mjs       # pdftotext -layout wrapper + _text/ cache
   lib/flag.mjs           # push uncertain rows to <source>_flagged.json
@@ -187,5 +203,6 @@ scripts/
   build-daily-texts.mjs  # annotate + validate daily-texts.src.json → daily-texts.json
   build-grammar-bank.mjs # hard-gate validate + freeze grammar-bank.src.json → grammar-bank.json
   gen-icons.mjs          # generate PWA icons + apple-touch-icon.png
+  sync-public-data.mjs   # predev/prebuild: publish words/daily-texts/grammar-bank.json to public/data/ for runtime fetch
 data/    sources/ (<level>/*.pdf + *.json per level, e.g. a1/, a2/; _text/ [gitignored]; daily-texts.src.json and grammar-bank.src.json stay at root), words.json, changelog.json, daily-texts.json, grammar.json, grammar-bank.json
 ```

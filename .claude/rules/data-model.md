@@ -32,6 +32,7 @@ interface DictationWordProgress {
   streak: number;
   lastSeen: number; // timestamp ms
   starred?: boolean; // bookmarked for focused practice
+  starredAt?: number; // when `starred` was last set — the bookmark's own merge clock
 }
 type DictationProgressMap = Record<string, DictationWordProgress>; // keyed by Word.id
 
@@ -68,7 +69,9 @@ until a B1 source is extracted (nothing currently carries that level).
 
 Dictation progress is a **separate track** from the Leitner `ProgressMap` — stored in its own
 IndexedDB object store (`dictation`) and **synced to KV** (`user:dictation`). Merge strategy:
-newest-wins by `lastSeen`; `starred` is OR-merged so a bookmark is never lost across devices.
+newest-wins by `lastSeen` for the counters; the bookmark merges **on its own clock**, newest
+`starredAt` wins, so an un-star propagates like a star does. An entry with no `starredAt` (written
+before the field existed) can only be OR-merged, so a bookmark without a clock is never lost.
 See [ADR 008](../../docs/adrs/008-dictation-spelling-exercise.md).
 
 Grammar quiz progress is a **third track**, keyed by topic id instead of word id — stored in its

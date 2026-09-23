@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0c0f1a" />
+    <title>Offline · de·lernen</title>
+    <!-- Static, dependency-free and self-contained: this is what renders when
+         a navigation misses both the network and the cache, so it can't rely
+         on the app's CSS bundle being cached. -->
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 2rem 1.5rem;
+        background: #0c0f1a;
+        color: #e6e8f0;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          -apple-system,
+          sans-serif;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+      }
+      p {
+        margin: 0;
+        max-width: 24rem;
+        font-size: 0.875rem;
+        line-height: 1.5;
+        color: #9aa1b8;
+      }
+      a {
+        margin-top: 0.5rem;
+        padding: 0.5rem 1.25rem;
+        border: 1px solid #2a3145;
+        border-radius: 0.75rem;
+        color: #e6e8f0;
+        font-size: 0.875rem;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Keine Verbindung</h1>
+    <p>
+      This page hasn't been saved for offline use yet. Studying, dictation and
+      the grammar quiz all work offline once you've opened them at least once.
+    </p>
+    <a href="/study">Zum Lernen</a>
+  </body>
+</html>
